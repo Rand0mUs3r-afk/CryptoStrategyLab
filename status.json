@@ -5,26 +5,10 @@
   "mode": "tick",
   "account_verified": true,
   "data_errors": [],
-  "entry_decisions": [
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793168100,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-f7e3eb422f26facfa1b1db4d9103ec6d",
-        "quantity": "0.085015940",
-        "reference_ask": 2352.5,
-        "broker_status": "pending_new",
-        "broker_order_id": "4cbd5578-21cf-43ca-b774-a58c0219a4d6"
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 7,
+  "candidates": 0,
   "error_type": "SafetyError",
   "reason": "Position/fee reconciliation mismatch for ETHUSD; wait for fees or review manual activity",
-  "observed_at_utc": "2026-10-28T06:19:24+00:00"
+  "observed_at_utc": "2026-10-28T06:42:00+00:00"
 }
