@@ -109,6 +109,36 @@
       "error_type": "SafetyError",
       "reason": "Position/fee reconciliation mismatch for ETHUSD; wait for fees or review manual activity",
       "observed_at_utc": "2026-10-28T06:42:00+00:00"
+    },
+    {
+      "status": "FAILED_CLOSED",
+      "paper_only": true,
+      "writes_enabled": true,
+      "mode": "tick",
+      "account_verified": true,
+      "data_errors": [],
+      "entry_decisions": [
+        {
+          "symbol": "SOL/USD",
+          "timeframe": "5m",
+          "strategy": "trend_pullback",
+          "signal_time": 1793172900,
+          "outcome": "order_result",
+          "reason": "broker_order_returned",
+          "details": {
+            "client_order_id": "csl2-84210358f84e330b449fc563d39e4a32",
+            "quantity": "1.962246379",
+            "reference_ask": 101.924,
+            "broker_status": "pending_new",
+            "broker_order_id": "dc7c9a52-6fd5-41c7-9ad9-cad5afcf142e"
+          }
+        }
+      ],
+      "entry_pause_reasons": [],
+      "candidates": 3,
+      "error_type": "SafetyError",
+      "reason": "Position/fee reconciliation mismatch for SOLUSD; wait for fees or review manual activity",
+      "observed_at_utc": "2026-10-28T07:39:58+00:00"
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",
@@ -163,14 +193,15 @@
         "client_order_id": "csl2-84210358f84e330b449fc563d39e4a32"
       },
       "cycle_id": "csl2-84210358f84e330b449fc563d39e4a32",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793173195.7789536,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "1.962246379",
       "broker_order_id": "dc7c9a52-6fd5-41c7-9ad9-cad5afcf142e",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-10-28T07:39:57.279463501Z"
+      "filled_avg_price": 102.0,
+      "filled_at": "2026-10-28T07:39:57.280658642Z",
+      "broker_updated_at": "2026-10-28T07:39:57.322032995Z",
+      "reference_ask": 101.924
     }
   },
   "cycles": [

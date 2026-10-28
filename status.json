@@ -5,10 +5,26 @@
   "mode": "tick",
   "account_verified": true,
   "data_errors": [],
-  "entry_decisions": [],
+  "entry_decisions": [
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793172900,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-84210358f84e330b449fc563d39e4a32",
+        "quantity": "1.962246379",
+        "reference_ask": 101.924,
+        "broker_status": "pending_new",
+        "broker_order_id": "dc7c9a52-6fd5-41c7-9ad9-cad5afcf142e"
+      }
+    }
+  ],
   "entry_pause_reasons": [],
-  "candidates": 0,
+  "candidates": 3,
   "error_type": "SafetyError",
-  "reason": "Position/fee reconciliation mismatch for ETHUSD; wait for fees or review manual activity",
-  "observed_at_utc": "2026-10-28T06:42:00+00:00"
+  "reason": "Position/fee reconciliation mismatch for SOLUSD; wait for fees or review manual activity",
+  "observed_at_utc": "2026-10-28T07:39:58+00:00"
 }
