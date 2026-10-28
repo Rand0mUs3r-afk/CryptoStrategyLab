@@ -1,7 +1,17 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-10-28T20:55:28+00:00",
+  "observed_at_utc": "2026-10-28T21:26:29+00:00",
   "quantities": [
+    {
+      "symbol": "ARBUSD",
+      "filled_quantity": "1129.969038848",
+      "fee_quantity": "0",
+      "expected_quantity": "1129.969038848",
+      "broker_quantity": "1127.14411625",
+      "difference_quantity": "-2.824922598",
+      "tolerance_quantity": "1E-8",
+      "unconfirmed_shortfall": "2.824922598"
+    },
     {
       "symbol": "BTCUSD",
       "filled_quantity": "0.002465863",
@@ -21,6 +31,16 @@
       "difference_quantity": "-0.000212306",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.000212306"
+    },
+    {
+      "symbol": "LINKUSD",
+      "filled_quantity": "16.87763713",
+      "fee_quantity": "0",
+      "expected_quantity": "16.87763713",
+      "broker_quantity": "16.835443037",
+      "difference_quantity": "-0.042194093",
+      "tolerance_quantity": "1E-8",
+      "unconfirmed_shortfall": "0.042194093"
     },
     {
       "symbol": "SOLUSD",
