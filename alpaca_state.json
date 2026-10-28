@@ -1845,7 +1845,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T21:26:29+00:00",
+    "observed_at_utc": "2026-10-28T22:03:40+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -1906,7 +1906,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1793222741.569194,
+  "last_entry_scan_at": 1793225021.0712132,
   "watchlist": {
     "observed_at_utc": "2026-10-28T21:25:44+00:00",
     "status": "partial",
