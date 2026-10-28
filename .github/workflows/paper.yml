@@ -1,0 +1,87 @@
+name: Crypto forward paper lab
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+    inputs:
+      initialize_new_state:
+        description: Allow FIRST initialization only if paper-state branch is absent
+        required: true
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: crypto-paper-state
+  cancel-in-progress: false
+jobs:
+  paper:
+    if: github.event_name == 'workflow_dispatch' || vars.CRYPTO_LAB_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      CRYPTO_PAUSE_ENTRIES: ${{ vars.CRYPTO_PAUSE_ENTRIES }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q
+      - name: Restore durable state
+        id: restore
+        env:
+          INITIALIZE: ${{ inputs.initialize_new_state }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          set +e
+          git ls-remote --exit-code --heads origin paper-state > /tmp/state-ref
+          code=$?
+          set -e
+          if [ "$code" -eq 0 ]; then
+            git fetch origin paper-state
+            git worktree add --detach /tmp/crypto-state FETCH_HEAD
+            test -s /tmp/crypto-state/state.json || { echo 'Missing persisted state; refusing reset'; exit 1; }
+            mkdir -p state
+            cp /tmp/crypto-state/state.json state/state.json
+          elif [ "$code" -eq 2 ] && [ "$INITIALIZE" = "true" ]; then
+            git worktree add --detach /tmp/crypto-state HEAD
+            git -C /tmp/crypto-state checkout --orphan paper-state
+            git -C /tmp/crypto-state rm -rf .
+          else
+            echo 'State unavailable; manual FIRST initialization required. Auth/network errors never reset state.'
+            exit 1
+          fi
+      - name: Observe quotes and evaluate paper books
+        run: python cryptolab.py paper
+      - name: Persist books on separate state branch
+        if: always() && steps.restore.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s state/state.json
+          cp state/state.json /tmp/crypto-state/state.json
+          if [ -d output/paper ]; then cp output/paper/* /tmp/crypto-state/; fi
+          git -C /tmp/crypto-state config user.name 'github-actions[bot]'
+          git -C /tmp/crypto-state config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C /tmp/crypto-state add .
+          if ! git -C /tmp/crypto-state diff --cached --quiet; then
+            git -C /tmp/crypto-state commit -m "Record crypto paper observation $GITHUB_RUN_ID"
+            git -C /tmp/crypto-state push origin HEAD:refs/heads/paper-state
+          fi
+      - name: Publish summary
+        if: always()
+        run: |
+          if [ -f output/paper/summary.md ]; then cat output/paper/summary.md >> "$GITHUB_STEP_SUMMARY"; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: crypto-paper-${{ github.run_id }}
+          path: output/paper/
+          retention-days: 3
+          if-no-files-found: warn

@@ -1,0 +1,49 @@
+name: Crypto strategy experiments
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: Historical experiment scope
+        required: true
+        type: choice
+        options: [smoke, full]
+        default: smoke
+permissions:
+  contents: read
+concurrency:
+  group: crypto-research
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q
+      - name: Run experiments
+        env:
+          SCOPE: ${{ inputs.scope }}
+        run: |
+          if [ "$SCOPE" = "full" ]; then
+            python cryptolab.py research
+          else
+            python cryptolab.py research --products BTC-USD ETH-USD --timeframes 15m 1h --days 60
+          fi
+      - name: Publish summary
+        if: always()
+        run: |
+          if [ -f output/research/summary.md ]; then
+            cat output/research/summary.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: crypto-research-${{ github.run_id }}
+          path: output/research/
+          retention-days: 7
+          if-no-files-found: warn
