@@ -10,12 +10,11 @@ Reason: Position/fee reconciliation mismatch for SOLUSD; wait for fees or review
 
 ## Entry diagnostics
 
-Candidates: 3. Skipped: 0. Broker order results: 1.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| SOL/USD | 5m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "dc7c9a52-6fd5-41c7-9ad9-cad5afcf142e", "broker_status": "pending_new", "client_order_id": "csl2-84210358f84e330b449fc563d39e4a32", "quantity": "1.962246379", "reference_ask": 101.924} |
+No candidates recorded; check run status and data errors before concluding there were no signals.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
