@@ -6,105 +6,47 @@
   "account_verified": true,
   "data_errors": [
     {
+      "symbol": "BONK/USD",
+      "timeframe": "15m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "BONK/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
       "symbol": "ARB/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
-    },
-    {
-      "symbol": "AAVE/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793229000,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793229000,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793229000,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793229000,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793229000,
-      "outcome": "skipped",
-      "reason": "no_fresh_quote",
-      "details": {
-        "max_quote_age_seconds": 30
-      }
-    },
-    {
-      "symbol": "UNI/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793229000,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-34ab604333281388643399b81cda032e",
-        "quantity": "27.601435274",
-        "reference_ask": 7.246,
-        "broker_status": "pending_new",
-        "broker_order_id": "c3c30476-efb3-4390-9ccb-6236405f645f"
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 6,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-10-28T23:44:14+00:00",
+  "next_entry_scan_at_utc": "2026-10-29T00:16:12+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
     "ETH/USD",
     "LINK/USD",
-    "PEPE/USD",
     "SOL/USD",
     "AVAX/USD",
     "LTC/USD",
+    "PEPE/USD",
+    "BONK/USD",
     "ARB/USD",
-    "UNI/USD",
-    "BCH/USD",
-    "AAVE/USD"
+    "BCH/USD"
   ],
-  "observed_at_utc": "2026-10-28T23:14:49+00:00",
+  "observed_at_utc": "2026-10-28T23:46:27+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T23:14:48+00:00",
+    "observed_at_utc": "2026-10-28T23:46:12+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -148,10 +90,10 @@
       },
       {
         "symbol": "PEPEUSD",
-        "filled_quantity": "39682539.68253968",
+        "filled_quantity": "99206.34920635",
         "fee_quantity": "0",
-        "expected_quantity": "39682539.68253968",
-        "broker_quantity": "39583333.33333333",
+        "expected_quantity": "99206.34920635",
+        "broker_quantity": "0",
         "difference_quantity": "-99206.34920635",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "99206.34920635"
@@ -168,10 +110,10 @@
       },
       {
         "symbol": "UNIUSD",
-        "filled_quantity": "27.601435274",
+        "filled_quantity": "0.069003589",
         "fee_quantity": "0",
-        "expected_quantity": "27.601435274",
-        "broker_quantity": "27.532431685",
+        "expected_quantity": "0.069003589",
+        "broker_quantity": "0",
         "difference_quantity": "-0.069003589",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.069003589"
