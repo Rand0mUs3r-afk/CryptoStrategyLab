@@ -1538,7 +1538,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T20:55:28+00:00",
+    "observed_at_utc": "2026-10-28T21:25:41+00:00",
     "quantities": [
       {
         "symbol": "BTCUSD",
@@ -1579,7 +1579,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1793220818.3826911,
+  "last_entry_scan_at": 1793222741.569194,
   "watchlist": {
     "observed_at_utc": "2026-10-28T20:53:39+00:00",
     "status": "partial",
