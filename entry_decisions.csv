@@ -1,11 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,15m,trend_pullback,1793222100,skipped,symbol_already_active,{}
-BTC/USD,1h,macd_momentum,1793221200,skipped,symbol_already_active,{}
-BTC/USD,5m,macd_momentum,1793222700,skipped,symbol_already_active,{}
-ETH/USD,15m,trend_pullback,1793222100,skipped,symbol_already_active,{}
-ETH/USD,5m,macd_momentum,1793222700,skipped,symbol_already_active,{}
-SOL/USD,15m,trend_pullback,1793222100,skipped,symbol_already_active,{}
-LINK/USD,1h,macd_momentum,1793221200,order_result,broker_order_returned,"{""broker_order_id"": ""404d78e5-2a7c-4458-bb83-8b56e671e01e"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-fb2a8e96c27515abbb235fed32ed71e5"", ""quantity"": ""16.877637130"", ""reference_ask"": 11.85}"
-LTC/USD,15m,trend_pullback,1793222100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.529966727107116}"
-ARB/USD,1h,donchian_breakout,1793221200,order_result,broker_order_returned,"{""broker_order_id"": ""7334bf81-62a8-4970-8e44-ff488ad391f2"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-a166de363e36151709c20f8cd813e856"", ""quantity"": ""1129.969038848"", ""reference_ask"": 0.176996}"
-BCH/USD,1h,trend_pullback,1793221200,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+LTC/USD,15m,macd_momentum,1793224800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.48322371862203}"

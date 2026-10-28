@@ -8,21 +8,12 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 10. Skipped: 8. Broker order results: 2.
+Candidates: 1. Skipped: 1. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| BTC/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| BTC/USD | 1h | macd_momentum | skipped | symbol_already_active | {} |
-| BTC/USD | 5m | macd_momentum | skipped | symbol_already_active | {} |
-| ETH/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| ETH/USD | 5m | macd_momentum | skipped | symbol_already_active | {} |
-| SOL/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| LINK/USD | 1h | macd_momentum | order_result | broker_order_returned | {"broker_order_id": "404d78e5-2a7c-4458-bb83-8b56e671e01e", "broker_status": "pending_new", "client_order_id": "csl2-fb2a8e96c27515abbb235fed32ed71e5", "quantity": "16.877637130", "reference_ask": 11.85} |
-| LTC/USD | 15m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 60.529966727107116} |
-| ARB/USD | 1h | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "7334bf81-62a8-4970-8e44-ff488ad391f2", "broker_status": "pending_new", "client_order_id": "csl2-a166de363e36151709c20f8cd813e856", "quantity": "1129.969038848", "reference_ask": 0.176996} |
-| BCH/USD | 1h | trend_pullback | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
+| LTC/USD | 15m | macd_momentum | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 61.48322371862203} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -73,15 +64,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-10-28T21:55:41+00:00
+Next entry scan eligible: 2026-10-28T22:33:41+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-10-28T21:25:44+00:00
+Last refresh: 2026-10-28T22:03:42+00:00
 Source status: partial
-Selected: BTC/USD, ETH/USD, SOL/USD, AVAX/USD, LINK/USD, LTC/USD, PEPE/USD, ARB/USD, UNI/USD, BCH/USD, AAVE/USD
+Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, SOL/USD, AVAX/USD, LTC/USD, PEPE/USD, UNI/USD, BCH/USD, AAVE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
