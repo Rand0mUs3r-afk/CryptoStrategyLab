@@ -2013,14 +2013,15 @@
         "client_order_id": "csl2-34ab604333281388643399b81cda032e"
       },
       "cycle_id": "csl2-34ab604333281388643399b81cda032e",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793229272.4620113,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "27.601435274",
       "broker_order_id": "c3c30476-efb3-4390-9ccb-6236405f645f",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-10-28T23:14:42.670676992Z"
+      "filled_avg_price": 7.248,
+      "filled_at": "2026-10-28T23:14:42.672012861Z",
+      "broker_updated_at": "2026-10-28T23:14:42.721521408Z",
+      "reference_ask": 7.246
     }
   },
   "cycles": [
@@ -2219,11 +2220,17 @@
       "hold_seconds": 3600,
       "id": "csl2-34ab604333281388643399b81cda032e",
       "created_at": 1793229272.4620113,
-      "status": "pending",
+      "status": "open",
       "distance": 0.03399033867453179,
       "target_r": 2.0,
       "reference_ask": 7.246,
-      "remaining_qty": 0.0
+      "remaining_qty": 27.532431685,
+      "entry_price": 7.248,
+      "entry_qty": 27.601435274,
+      "entry_notional_usd": 200.055202865952,
+      "tp": 7.315980677349064,
+      "sl": 7.214009661325468,
+      "entry_time_utc": "2026-10-28T23:14:42.672012861Z"
     }
   ],
   "seen": {
@@ -2272,7 +2279,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T23:14:41+00:00",
+    "observed_at_utc": "2026-10-28T23:14:48+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -2333,6 +2340,16 @@
         "difference_quantity": "-0.009793202",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.009793202"
+      },
+      {
+        "symbol": "UNIUSD",
+        "filled_quantity": "27.601435274",
+        "fee_quantity": "0",
+        "expected_quantity": "27.601435274",
+        "broker_quantity": "27.532431685",
+        "difference_quantity": "-0.069003589",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "0.069003589"
       }
     ],
     "entries_blocked": false,
