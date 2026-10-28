@@ -1,0 +1,29 @@
+{
+  "mode": "simulation_only",
+  "products": ["BTC-USD", "ETH-USD", "SOL-USD", "LINK-USD", "LTC-USD", "AVAX-USD"],
+  "timeframes": {
+    "5m": {"seconds": 300, "hold": 12, "days": 30},
+    "15m": {"seconds": 900, "hold": 24, "days": 90},
+    "1h": {"seconds": 3600, "hold": 72, "days": 365},
+    "6h": {"seconds": 21600, "hold": 28, "days": 730}
+  },
+  "strategies": ["ema_cross", "trend_pullback", "donchian_breakout", "bollinger_reversion", "rsi_rebound", "macd_momentum", "squeeze_breakout", "rolling_vwap_reclaim"],
+  "initial_equity": 10000,
+  "risk_fraction": 0.005,
+  "notional_cap": 0.20,
+  "stop_atr": 1.5,
+  "target_r": 2.0,
+  "min_stop": 0.002,
+  "max_stop": 0.12,
+  "fee_bps": 40,
+  "slippage_bps": 5,
+  "half_spread_bps": 5,
+  "stress_multiplier": 2,
+  "daily_loss_pause": 0.02,
+  "drawdown_pause": 0.10,
+  "min_review_trades": 50,
+  "max_quote_age": 120,
+  "max_spread_bps": 50,
+  "max_observation_gap": 7200,
+  "warmup": 210
+}
