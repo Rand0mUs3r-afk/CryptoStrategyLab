@@ -8,29 +8,13 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 9. Skipped: 6. Broker order results: 3.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| AVAX/USD | 5m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 61.230169774561325} |
-| BTC/USD | 1h | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "4413ffc1-97ac-4fc9-9077-00e1b1aa394c", "broker_status": "pending_new", "client_order_id": "csl2-6b2e6d5b8ccd8e342e88996b9425e5d9", "quantity": "0.002465863", "reference_ask": 81107.5} |
-| ETH/USD | 1h | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "bfbe6b2c-2452-4d73-848f-f13202152c65", "broker_status": "pending_new", "client_order_id": "csl2-83e653f18f8fd4109a38d511fde13b99", "quantity": "0.084922083", "reference_ask": 2355.1} |
-| ETH/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
-| LINK/USD | 1h | trend_pullback | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
-| SOL/USD | 1h | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "d1f0ccef-7483-4313-9337-80116d0da440", "broker_status": "pending_new", "client_order_id": "csl2-63f0da2773ab28df68341d27e5779921", "quantity": "1.955034213", "reference_ask": 102.3} |
-| SOL/USD | 1h | macd_momentum | skipped | symbol_already_active | {} |
-| BCH/USD | 1h | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 56.87138051808393} |
-| BCH/USD | 1h | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 56.87138051808393} |
+Entries paused: entry_scan_interval_not_elapsed.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
-
-## Data errors
-
-| Coin | Bar | Stage | Error type |
-| --- | --- | --- | --- |
-| ARB/USD | 5m | candles | ValueError |
-| AAVE/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -67,7 +51,7 @@ PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
 New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
-Entry scan status: completed_with_data_errors
+Entry scan status: not_due
 Next entry scan eligible: 2026-10-28T21:23:38+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
