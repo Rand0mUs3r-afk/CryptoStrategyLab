@@ -1,0 +1,27 @@
+{
+  "status": "mismatch",
+  "observed_at_utc": "2026-10-28T09:13:45+00:00",
+  "broker_fee_records": 1,
+  "quantities": [
+    {
+      "symbol": "ETHUSD",
+      "filled_quantity": "0.08501594",
+      "fee_quantity": "-0.00021254",
+      "expected_quantity": "0.08480340",
+      "broker_quantity": "0.0848034",
+      "difference_quantity": "0E-8",
+      "tolerance_quantity": "1E-8"
+    },
+    {
+      "symbol": "SOLUSD",
+      "filled_quantity": "1.962246379",
+      "fee_quantity": "0",
+      "expected_quantity": "1.962246379",
+      "broker_quantity": "1.957340763",
+      "difference_quantity": "-0.004905616",
+      "tolerance_quantity": "1E-8"
+    }
+  ],
+  "attempts": 3,
+  "retry_exhausted": true
+}

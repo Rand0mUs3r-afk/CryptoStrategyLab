@@ -1,0 +1,3 @@
+symbol,filled_quantity,fee_quantity,expected_quantity,broker_quantity,difference_quantity,tolerance_quantity
+ETHUSD,0.08501594,-0.00021254,0.08480340,0.0848034,0E-8,1E-8
+SOLUSD,1.962246379,0,1.962246379,1.957340763,-0.004905616,1E-8
