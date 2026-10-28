@@ -1,9 +1,10 @@
 {
-  "status": "FAILED_CLOSED",
+  "status": "PAPER_TICK_COMPLETED",
   "paper_only": true,
-  "writes_enabled": false,
+  "writes_enabled": true,
   "mode": "tick",
-  "error_type": "SafetyError",
-  "reason": "Set paper execution and dedicated-account variables true for tick",
-  "observed_at_utc": "2026-10-28T05:29:19+00:00"
+  "account_verified": true,
+  "candidates": 1,
+  "data_errors": [],
+  "observed_at_utc": "2026-10-28T05:45:46+00:00"
 }

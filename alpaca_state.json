@@ -45,6 +45,16 @@
       "error_type": "SafetyError",
       "reason": "Set paper execution and dedicated-account variables true for tick",
       "observed_at_utc": "2026-10-28T05:29:19+00:00"
+    },
+    {
+      "status": "PAPER_TICK_COMPLETED",
+      "paper_only": true,
+      "writes_enabled": true,
+      "mode": "tick",
+      "account_verified": true,
+      "candidates": 1,
+      "data_errors": [],
+      "observed_at_utc": "2026-10-28T05:45:46+00:00"
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",
@@ -55,5 +65,12 @@
   "fees": {},
   "orders": {},
   "cycles": [],
-  "seen": {}
+  "seen": {
+    "BTC/USD|5m|trend_pullback|1793166300": 1793166346.4377913
+  },
+  "day": "2026-10-28",
+  "day_start_equity": 100000.0,
+  "daily_paused": false,
+  "high_water": 100000.0,
+  "drawdown_paused": false
 }
