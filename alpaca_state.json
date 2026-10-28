@@ -933,6 +933,54 @@
         "retry_exhausted": true,
         "warning": "Fee-sized shortfall is unconfirmed, not a posted fee. Only validated exits allowed."
       }
+    },
+    {
+      "status": "PAPER_TICK_COMPLETED",
+      "paper_only": true,
+      "writes_enabled": true,
+      "mode": "tick",
+      "account_verified": true,
+      "data_errors": [],
+      "entry_decisions": [],
+      "entry_pause_reasons": [
+        "fee_pending"
+      ],
+      "candidates": 0,
+      "entry_scan_interval_seconds": 1800,
+      "entry_scan_status": "fee_pending",
+      "observed_at_utc": "2026-10-28T20:46:10+00:00",
+      "reconciliation": {
+        "status": "fee_pending",
+        "observed_at_utc": "2026-10-28T20:46:10+00:00",
+        "quantities": [
+          {
+            "symbol": "ETHUSD",
+            "filled_quantity": "0.00021254",
+            "fee_quantity": "-0.00021254",
+            "expected_quantity": "0E-8",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-8",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "SOLUSD",
+            "filled_quantity": "0.004905616",
+            "fee_quantity": "0",
+            "expected_quantity": "0.004905616",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.004905616",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.004905616"
+          }
+        ],
+        "entries_blocked": true,
+        "exit_checks_allowed": true,
+        "accounting_final": false,
+        "attempts": 3,
+        "retry_exhausted": true,
+        "warning": "Fee-sized shortfall is unconfirmed, not a posted fee. Only validated exits allowed."
+      }
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",
@@ -1100,7 +1148,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T20:15:37+00:00",
+    "observed_at_utc": "2026-10-28T20:46:10+00:00",
     "quantities": [
       {
         "symbol": "ETHUSD",
