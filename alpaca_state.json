@@ -2013,10 +2013,14 @@
         "client_order_id": "csl2-34ab604333281388643399b81cda032e"
       },
       "cycle_id": "csl2-34ab604333281388643399b81cda032e",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1793229272.4620113,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "c3c30476-efb3-4390-9ccb-6236405f645f",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-10-28T23:14:42.670676992Z"
     }
   },
   "cycles": [
