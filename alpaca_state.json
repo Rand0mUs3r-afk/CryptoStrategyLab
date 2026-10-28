@@ -73,10 +73,44 @@
   "fee_after": "2026-10-28T00:00:00Z",
   "baseline_fee_ids": [],
   "fees": {},
-  "orders": {},
-  "cycles": [],
+  "orders": {
+    "csl2-f7e3eb422f26facfa1b1db4d9103ec6d": {
+      "payload": {
+        "symbol": "ETH/USD",
+        "side": "buy",
+        "qty": "0.085015940",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-f7e3eb422f26facfa1b1db4d9103ec6d"
+      },
+      "cycle_id": "csl2-f7e3eb422f26facfa1b1db4d9103ec6d",
+      "status": "queued",
+      "created_at": 1793168361.255562,
+      "attempted": true,
+      "filled_qty": "0"
+    }
+  },
+  "cycles": [
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793168100,
+      "atr": 5.334204137870305,
+      "signal_close": 2352.12,
+      "hold_seconds": 21600,
+      "id": "csl2-f7e3eb422f26facfa1b1db4d9103ec6d",
+      "created_at": 1793168361.255562,
+      "status": "pending",
+      "distance": 8.001306206805458,
+      "target_r": 2.0,
+      "reference_ask": 2352.5,
+      "remaining_qty": 0.0
+    }
+  ],
   "seen": {
-    "BTC/USD|5m|trend_pullback|1793166300": 1793166346.4377913
+    "BTC/USD|5m|trend_pullback|1793166300": 1793166346.4377913,
+    "ETH/USD|15m|trend_pullback|1793168100": 1793168361.255562
   },
   "day": "2026-10-28",
   "day_start_equity": 100000.0,
