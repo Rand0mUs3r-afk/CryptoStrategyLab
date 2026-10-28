@@ -1,0 +1,73 @@
+{
+  "deliverable": "Local replacement overlay, not deployed or committed",
+  "tests_passed": 108,
+  "broker_tested": false,
+  "changes": {
+    "alpaca_crypto.py": {
+      "action": "replace",
+      "original_sha256": "4afcd09b11aa7c7efcc4aaaf192d25e5cf4cceb1078457de832472db579f32c6",
+      "replacement_sha256": "555bb23bf3e8c624aeb84bd101ae65b9f35db0f91462d2e548b057d98d41d2c6"
+    },
+    "alpaca_config.json": {
+      "action": "add",
+      "original_sha256": null,
+      "replacement_sha256": "6d9527309d0b056aeb475e94f24e08b3db769e2d79aa4fc527cbafe026e61e37"
+    },
+    "README.md": {
+      "action": "replace",
+      "original_sha256": "80dd309c1bd62a2279ddb246a3db56cb055e762492d2208e998bdd5af281f3ed",
+      "replacement_sha256": "2f04580e39f3f35a36393f1030fe397bbf3b4bdaf1b7bfeb7aa50fe2aea10a92"
+    },
+    "ALPACA_SETUP.md": {
+      "action": "replace",
+      "original_sha256": "35719d3eddd6871cb08592f06b1fcf465aaf4fdbfb3d8eb6d000e410c53b2c80",
+      "replacement_sha256": "652b2b0cc926bd73468079ec8cfafee240172e325027377b3c4cbc12e1ef847a"
+    },
+    ".github/workflows/alpaca-crypto-paper.yml": {
+      "action": "replace",
+      "original_sha256": "498fe33f553b441c3cc7739fc3f43a084473569354f61697761b49beaf0bb23b",
+      "replacement_sha256": "643039dfd692ec5f9dc735f7f86be2ef102c6a9e21a0b75f261f55270ddb5f55"
+    },
+    ".github/workflows/ci.yml": {
+      "action": "replace",
+      "original_sha256": "00139f6672a7266892debadf50bbf971d1891a97af33710087b2505dea6190f6",
+      "replacement_sha256": "9a4da2baea50b1dde8a9b145061945df1fe3753c7df19ecc1eabe1ba57ca2721"
+    },
+    "tests/test_journal_alpaca.py": {
+      "action": "replace",
+      "original_sha256": "5e94f9326e1bca800aaf63b378d33a4c9a3520882bfb4fa1bb0f4a4ad82bc41f",
+      "replacement_sha256": "75650dd90bf139cf776d6cd5b6467eac84b7c92c65c828cd4e6b37780da9f35d"
+    },
+    "tests/test_alpaca_execution.py": {
+      "action": "add",
+      "original_sha256": null,
+      "replacement_sha256": "2bb4a660708b70368a5e8bc9697c9ab284da06545b0b0de98c891b3042499f66"
+    }
+  },
+  "unchanged_files": [
+    "cryptolab.py",
+    "paper_report.py",
+    "config.json",
+    "requirements.txt",
+    "tests/test_lab.py",
+    ".github/workflows/paper.yml"
+  ],
+  "files": {
+    "README.md": "2f04580e39f3f35a36393f1030fe397bbf3b4bdaf1b7bfeb7aa50fe2aea10a92",
+    "requirements.txt": "5d212165cad53a435b6fb5e17200d26bcffd68ea9fe6100532d3b03e29e3f43f",
+    "config.json": "5e119487386cf3ed705a2395eafa858e055f5a88d44a4ff85bdb50ac7e030b41",
+    "paper_report.py": "b786debea42da9e21bd8bff84ef3602274d54f40f5dbd844a2aed89f61804483",
+    "alpaca_crypto.py": "555bb23bf3e8c624aeb84bd101ae65b9f35db0f91462d2e548b057d98d41d2c6",
+    "INSTALL_FIRST.md": "6348f2fb1090fb5476ede1e78a5d7c644548eb3567a368c3ce69c52daca79bfe",
+    "alpaca_config.json": "6d9527309d0b056aeb475e94f24e08b3db769e2d79aa4fc527cbafe026e61e37",
+    "ALPACA_SETUP.md": "652b2b0cc926bd73468079ec8cfafee240172e325027377b3c4cbc12e1ef847a",
+    "TEST_RESULTS.md": "0a9a1f7bc29e596673e82ee9f44774e41d61f1f7873ce3599e78dc4e274c594f",
+    "cryptolab.py": "3ff7415dc0a4077d91ef838f4823871a92c3d153288c17bf22ebe072823dee19",
+    "tests/test_journal_alpaca.py": "75650dd90bf139cf776d6cd5b6467eac84b7c92c65c828cd4e6b37780da9f35d",
+    "tests/test_lab.py": "3beaa03a08a5c343b0f003d000afc1dc339c00b953a7b8574b0ab13d2243af77",
+    "tests/test_alpaca_execution.py": "2bb4a660708b70368a5e8bc9697c9ab284da06545b0b0de98c891b3042499f66",
+    ".github/workflows/paper.yml": "201cf835adb2136a01608977139140b5788c5dd32565477e9c7fc9fae1e20484",
+    ".github/workflows/alpaca-crypto-paper.yml": "643039dfd692ec5f9dc735f7f86be2ef102c6a9e21a0b75f261f55270ddb5f55",
+    ".github/workflows/ci.yml": "9a4da2baea50b1dde8a9b145061945df1fe3753c7df19ecc1eabe1ba57ca2721"
+  }
+}

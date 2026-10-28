@@ -1,8 +1,27 @@
 # CryptoStrategyLab
 
-Standalone crypto-only research and forward paper simulation. **No real orders,
-exchange keys, leverage, short selling or connection to ChatGptTrader.** This
-repository does not import or modify the stock project or its account state.
+Standalone crypto research, independent virtual experiments, and optional
+Alpaca PAPER order execution in a dedicated account. No real-money endpoint,
+leverage, short selling or changes to ChatGptTrader are included.
+
+## Alpaca broker paper bot
+
+The replacement adapter can submit and manage crypto paper orders through
+`--mode tick`; it is no longer a read-only stub. See [ALPACA_SETUP.md](ALPACA_SETUP.md)
+for the exact secrets, variables, browser startup, journal paths and limitations.
+The workflow is `.github/workflows/alpaca-crypto-paper.yml`; scheduling is opt-in.
+
+Broker capital settings live in `alpaca_config.json`. The original research
+configuration `config.json`, virtual books and `paper-state` ledger are unchanged.
+Only one broker position per coin is allowed; competing signals use explicit
+configured priority, not claimed optimal strategy selection.
+
+Broker TP/SL checks run at workflow observations, not continuously and not as native
+bracket orders. Missing quotes, fee reconciliation issues or a stopped workflow can
+leave positions open. Read the operational limits before enabling scheduled ticks.
+
+The remaining sections describe the ORIGINAL independent virtual experiments,
+not Alpaca broker execution or a funded combined portfolio.
 
 ## Start in your browser
 
@@ -110,13 +129,10 @@ python cryptolab.py research --products BTC-USD --timeframes 1h --days 60
 python cryptolab.py paper --pause-entries
 ```
 
-Configuration is `config.json`; engine and CLI are `cryptolab.py`. This deployment
-was rebuilt from the earlier design because the previous sandbox archive did not
-persist. This exact revision was re-tested: **37 mechanical tests passed**; actual
-BTC hourly/60-day smoke data completed with zero errors; paused forward observation
-validated six product quotes and all configured candle horizons with zero errors.
-These checks do not prove profitability. Hosted workflow execution and recurring
-scheduling must be verified separately in Actions; a commit is not a successful run.
+Research configuration is `config.json`; its engine and CLI are `cryptolab.py`.
+Broker configuration and CLI are `alpaca_config.json` and `alpaca_crypto.py`.
+See TEST_RESULTS.md for this replacement package's local test results. No hosted
+workflow, broker credential check or market-performance test was performed here.
 
 ## Method references
 
