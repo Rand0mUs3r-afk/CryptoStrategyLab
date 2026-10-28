@@ -1,29 +1,12 @@
 {
   "paper_only": true,
-  "symbols": [
-    "BTC/USD",
-    "ETH/USD",
-    "SOL/USD",
-    "LINK/USD",
-    "LTC/USD",
-    "AVAX/USD"
-  ],
-  "timeframes": [
-    "15m",
-    "1h",
-    "6h",
-    "5m"
-  ],
-  "strategies": [
-    "ema_cross",
-    "trend_pullback",
-    "donchian_breakout",
-    "bollinger_reversion",
-    "rsi_rebound",
-    "macd_momentum",
-    "squeeze_breakout",
-    "rolling_vwap_reclaim"
-  ],
+  "symbols": ["BTC/USD", "ETH/USD", "SOL/USD", "LINK/USD", "LTC/USD", "AVAX/USD"],
+  "timeframes": ["15m", "1h", "6h", "5m"],
+  "strategies": ["ema_cross", "trend_pullback", "donchian_breakout", "bollinger_reversion", "rsi_rebound", "macd_momentum", "squeeze_breakout", "rolling_vwap_reclaim"],
+  "entry_scan_interval_seconds": 1800,
+  "allow_fee_pending_exits": true,
+  "pending_fee_rate_bps": 25,
+  "pending_fee_max_age_seconds": 172800,
   "max_trade_notional_usd": 200,
   "max_total_notional_usd": 1200,
   "max_positions": 6,
