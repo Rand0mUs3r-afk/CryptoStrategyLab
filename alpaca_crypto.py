@@ -178,16 +178,17 @@ class API:
             return {}
         raw = self.call('GET', '/v1beta3/crypto/us/latest/quotes',
                         params={'symbols': ','.join(wanted)}, data=True)
+        received_at = time.time()
         result = {}
         for s in wanted:
             q = raw.get('quotes', {}).get(s)
             if not q:
                 continue
             bid, ask = number(q['bp'], True), number(q['ap'], True)
-            age = now-stamp(q['t'])
+            age = received_at-stamp(q['t'])
             if ask >= bid and 0 <= age <= self.max_quote_age:
                 result[s] = dict(symbol=s, bid=bid, ask=ask, provider_time_utc=q['t'],
-                                 spread_bps=(ask-bid)/((ask+bid)/2)*10000)
+                                 spread_bps=(ask-bid)/((ask+bid)/2)*10000, age_seconds=age)
         return result
 
     def lookup(self, cid):
@@ -500,8 +501,18 @@ def manage_exits(api, store, cfg, assets):
         submit_intent(api, store, payload(c['symbol'], 'sell', qty, cid), c['id'], now)
 
 
-def execute(api, store, cfg, lab, account, market, errors):
+def execute(api, store, cfg, lab, account, market, errors, diagnostics=None, quotes=None):
     s = store.state
+    diagnostics = diagnostics if diagnostics is not None else {}
+    diagnostics.update(entry_decisions=[], entry_pause_reasons=[], candidates=0)
+    quotes = quotes if quotes is not None else {}
+
+    def record(idea, reason, outcome='skipped', **details):
+        decision = {k: idea[k] for k in ('symbol', 'timeframe', 'strategy', 'signal_time')}
+        decision.update(outcome=outcome, reason=reason, details=details)
+        diagnostics['entry_decisions'].append(decision)
+        return decision
+
     positions, opened = api.snapshot()
     activate(api, store, positions, opened, time.time())
     reconcile_orders(api, store)
@@ -515,32 +526,57 @@ def execute(api, store, cfg, lab, account, market, errors):
     actual, _ = owned_positions(api, store)
     refresh_cycles(s, actual, time.time())
     account = api.account(s['account_id'])
-    paused = portfolio_pause(s, account, cfg, time.time()) or os.getenv('ALPACA_CRYPTO_PAUSE_ENTRIES', '').lower() == 'true'
-    if paused:
+    portfolio_pause(s, account, cfg, time.time())
+    if s.get('daily_paused'):
+        diagnostics['entry_pause_reasons'].append('daily_loss_pause')
+    if s.get('drawdown_paused'):
+        diagnostics['entry_pause_reasons'].append('drawdown_pause')
+    if os.getenv('ALPACA_CRYPTO_PAUSE_ENTRIES', '').lower() == 'true':
+        diagnostics['entry_pause_reasons'].append('entries_paused_by_variable')
+    if diagnostics['entry_pause_reasons']:
         return []
     ideas = candidates(cfg, lab, assets, market, errors)
+    diagnostics['candidates'] = len(ideas)
     for idea in ideas:
         now = time.time()
         sym = idea['symbol']
         token = sym+'|'+idea['timeframe']+'|'+idea['strategy']+'|'+str(idea['signal_time'])
         if token in s['seen']:
+            record(idea, 'already_seen')
             continue
         s['seen'][token] = now
-        if now-idea['signal_time'] > lab['timeframes'][idea['timeframe']]['seconds']:
+        signal_age = now-idea['signal_time']
+        max_signal_age = lab['timeframes'][idea['timeframe']]['seconds']
+        if signal_age > max_signal_age:
+            record(idea, 'stale_signal', age_seconds=signal_age, max_age_seconds=max_signal_age)
             continue
         active = [c for c in s['cycles'] if c['status'] != 'closed']
-        if any(c['symbol'] == sym for c in active) or len(active) >= cfg['max_positions']:
+        if any(c['symbol'] == sym for c in active):
+            record(idea, 'symbol_already_active')
+            continue
+        if len(active) >= cfg['max_positions']:
+            record(idea, 'max_positions', active_positions=len(active), max_positions=cfg['max_positions'])
             continue
         if any(c['symbol'] == sym and c.get('closed_at', '')[:10] == utc(now)[:10]
                and now-stamp(c['closed_at']) < 300 for c in s['cycles']):
+            record(idea, 'symbol_cooldown', cooldown_seconds=300)
             continue
         q = api.latest([sym], now).get(sym)
-        if not q or q['spread_bps'] > cfg['max_spread_bps']:
+        if not q:
+            record(idea, 'no_fresh_quote', max_quote_age_seconds=cfg['max_quote_age'])
             continue
-        if abs(q['ask']/idea['signal_close']-1) > cfg['max_signal_price_deviation']:
+        quotes[sym] = dict(q)
+        if q['spread_bps'] > cfg['max_spread_bps']:
+            record(idea, 'spread_too_wide', spread_bps=q['spread_bps'], max_spread_bps=cfg['max_spread_bps'])
+            continue
+        deviation = abs(q['ask']/idea['signal_close']-1)
+        if deviation > cfg['max_signal_price_deviation']:
+            record(idea, 'signal_price_deviation', ask=q['ask'], signal_close=idea['signal_close'],
+                   deviation=deviation, max_deviation=cfg['max_signal_price_deviation'])
             continue
         distance = max(idea['atr']*lab['stop_atr'], q['ask']*lab['min_stop'])
         if distance/q['ask'] > lab['max_stop']:
+            record(idea, 'stop_distance_too_large', stop_fraction=distance/q['ask'], max_stop=lab['max_stop'])
             continue
         account = api.account(s['account_id'])
         actual, _ = owned_positions(api, store)
@@ -557,12 +593,19 @@ def execute(api, store, cfg, lab, account, market, errors):
         qty = round_qty(min(max(0, budget)/q['ask'], number(account['equity'])*cfg['risk_fraction']/unit_risk),
                         assets[sym]['min_trade_increment'])
         if qty < dec(assets[sym]['min_order_size']):
+            record(idea, 'quantity_below_minimum', quantity=str(qty),
+                   min_order_size=str(assets[sym]['min_order_size']), budget_usd=budget,
+                   cash_usd=cash, exposure_usd=exposure, reserved_usd=reserved)
             continue
         cid = client_id(s['account_id'], token)
         cycle = dict(idea, id=cid, created_at=now, status='pending', distance=distance,
                      target_r=lab['target_r'], reference_ask=q['ask'], remaining_qty=0.)
         s['cycles'].append(cycle)
+        decision = record(idea, 'entry_checks_passed', outcome='order_intent',
+                          client_order_id=cid, quantity=str(qty), reference_ask=q['ask'])
         order = submit_intent(api, store, payload(sym, 'buy', qty, cid), cid, now)
+        decision.update(outcome='order_result', reason='broker_order_returned')
+        decision['details'].update(broker_status=order['status'], broker_order_id=order.get('broker_order_id'))
         order['reference_ask'] = q['ask']
         reconcile_orders(api, store)
         update_fees(api, store)
@@ -575,7 +618,12 @@ def execute(api, store, cfg, lab, account, market, errors):
 def report(state, status, quotes, out):
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
-    write_csv(out/'quotes.csv', list(quotes.values()), ['symbol', 'bid', 'ask', 'provider_time_utc'])
+    write_csv(out/'quotes.csv', list(quotes.values()),
+              ['symbol', 'bid', 'ask', 'provider_time_utc', 'spread_bps', 'age_seconds'])
+    decisions = status.get('entry_decisions', [])
+    write_csv(out/'entry_decisions.csv',
+              [dict(d, details=json.dumps(d.get('details', {}), sort_keys=True)) for d in decisions],
+              ['symbol', 'timeframe', 'strategy', 'signal_time', 'outcome', 'reason', 'details'])
     rows = []
     for cid, o in state.get('orders', {}).items():
         c = next((c for c in state.get('cycles', []) if c['id'] == o['cycle_id']), {})
@@ -601,6 +649,28 @@ def report(state, status, quotes, out):
              'Fees can post later. P&L below is before USD fees; no fabricated net performance.', '']
     if status.get('reason'):
         lines += ['Reason: '+status['reason'], '']
+    if status.get('mode') == 'tick' or 'entry_decisions' in status:
+        lines += ['## Entry diagnostics', '',
+                  'Candidates: '+str(status.get('candidates', 0))+'. '
+                  'Skipped: '+str(sum(d['outcome'] == 'skipped' for d in decisions))+'. '
+                  'Broker order results: '+str(sum(d['outcome'] == 'order_result' for d in decisions))+'.',
+                  'Broker order results are not proof of fills; see orders.csv.', '']
+        pauses = status.get('entry_pause_reasons', [])
+        if pauses:
+            lines += ['Entries paused: '+', '.join(pauses)+'.', '']
+        elif not status.get('candidates'):
+            lines += ['No candidates recorded; check run status and data errors before concluding there were no signals.', '']
+        if decisions:
+            lines += table(['Coin', 'Bar', 'Strategy', 'Outcome', 'Reason', 'Details'],
+                           [[d['symbol'], d['timeframe'], d['strategy'], d['outcome'], d['reason'],
+                             json.dumps(d.get('details', {}), sort_keys=True)] for d in decisions])
+        lines += ['', 'Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.', '']
+    if status.get('data_errors'):
+        lines += ['## Data errors', '']
+        lines += table(['Coin', 'Bar', 'Stage', 'Error type'],
+                       [[e.get(k, '') for k in ('symbol', 'timeframe', 'stage', 'error_type')]
+                        for e in status['data_errors']])
+        lines += ['']
     for title, values in [('Open / pending positions', opened), ('Closed cycles', closed)]:
         lines += ['## '+title, '']
         lines += table(['Coin', 'Bar', 'Strategy', 'Entry', 'Filled qty', 'Entry dollars', 'Remaining', 'TP', 'SL', 'Status'],
@@ -641,8 +711,9 @@ def run(mode, state_path, output, execution_config='alpaca_config.json', checkpo
                 raise SafetyError('Timeframes not present in research config')
             errors = []
             if mode == 'tick':
-                status['writes_enabled'] = True
-                ideas = execute(api, store, cfg, lab, account, PublicMarket(), errors)
+                status.update(writes_enabled=True, data_errors=errors)
+                ideas = execute(api, store, cfg, lab, account, PublicMarket(), errors,
+                                diagnostics=status, quotes=quotes)
                 status.update(status='PAPER_TICK_COMPLETED', candidates=len(ideas), data_errors=errors)
             else:
                 status.update(inventory(api))

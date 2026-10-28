@@ -61,6 +61,7 @@ def test_missing_or_stale_quote_not_marked(sample, tmp_path, quotes):
     assert opened[0]['mark_bid'] is None
     assert opened[0]['estimated_open_net_pnl_usd'] is None
     assert opened[0]['marked_equity_usd'] is None
+    assert opened[0]['estimated_liquidation_equity_usd'] is None
     assert 'n/a' in (tmp_path/'summary.md').read_text()
 
 
@@ -160,10 +161,12 @@ def test_broker_ledger_corruption_refused(tmp_path):
         a.load(path)
 
 
-def test_quotes_age_spread_and_symbol():
+def test_quotes_age_spread_and_symbol(monkeypatch):
     api = a.API('key', 'secret')
     api.call = Mock(return_value=dict(quotes={'BTC/USD': dict(bp=100., ap=100.1, t='1970-01-01T00:01:40Z')}))
+    monkeypatch.setattr(a.time, 'time', lambda: 101.)
     assert 'BTC/USD' in api.latest(['BTC/USD'], 101.)
+    monkeypatch.setattr(a.time, 'time', lambda: 200.)
     assert api.latest(['BTC/USD'], 200.) == {}
     with pytest.raises(a.SafetyError):
         api.latest(['SPY'], 101.)
