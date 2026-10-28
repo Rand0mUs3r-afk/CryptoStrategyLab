@@ -57,8 +57,8 @@ jobs:
             echo 'State unavailable; manual FIRST initialization required. Auth/network errors never reset state.'
             exit 1
           fi
-      - name: Observe quotes and evaluate paper books
-        run: python cryptolab.py paper
+      - name: Observe quotes and write readable trade journal
+        run: python paper_report.py
       - name: Persist books on separate state branch
         if: always() && steps.restore.outcome == 'success'
         shell: bash

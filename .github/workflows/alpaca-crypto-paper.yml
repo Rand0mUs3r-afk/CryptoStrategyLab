@@ -1,0 +1,94 @@
+name: Alpaca crypto PAPER readiness
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Read-only check or market/reconciliation diagnostics; trading is blocked for stock-account compatibility
+        type: choice
+        options: [check, plan]
+        default: check
+        required: true
+      initialize_new_state:
+        description: Allow first alpaca-crypto-state initialization only
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: alpaca-crypto-paper-state
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      ALPACA_EXPECTED_PAPER_ACCOUNT_ID: ${{ vars.ALPACA_EXPECTED_PAPER_ACCOUNT_ID }}
+      ALPACA_CRYPTO_PAPER_ENABLED: 'false'
+      ALPACA_SHARED_ACCOUNT_REVIEWED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q
+      - name: Restore independent broker ledger
+        id: restore
+        env:
+          INITIALIZE: ${{ inputs.initialize_new_state }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          set +e
+          git ls-remote --exit-code --heads origin alpaca-crypto-state > /tmp/alpaca-ref
+          code=$?
+          set -e
+          if [ "$code" -eq 0 ]; then
+            git fetch origin alpaca-crypto-state
+            git worktree add --detach /tmp/alpaca-state FETCH_HEAD
+            test -s /tmp/alpaca-state/alpaca_state.json || { echo 'Missing broker ledger; refusing reset'; exit 1; }
+            mkdir -p state
+            cp /tmp/alpaca-state/alpaca_state.json state/alpaca_state.json
+          elif [ "$code" -eq 2 ] && [ "$INITIALIZE" = 'true' ]; then
+            git worktree add --detach /tmp/alpaca-state HEAD
+            git -C /tmp/alpaca-state checkout --orphan alpaca-crypto-state
+            git -C /tmp/alpaca-state rm -rf .
+          else
+            echo 'Broker state unavailable; explicit first initialization required. Never reset on network/auth error.'
+            exit 1
+          fi
+      - name: Verify paper account or collect read-only diagnostics
+        env:
+          MODE: ${{ inputs.mode }}
+          ALPACA_PAPER_KEY_ID: ${{ secrets.ALPACA_PAPER_KEY_ID }}
+          ALPACA_PAPER_SECRET_KEY: ${{ secrets.ALPACA_PAPER_SECRET_KEY }}
+        run: python alpaca_crypto.py --mode "$MODE"
+      - name: Persist independent broker journal
+        if: always() && steps.restore.outcome == 'success'
+        run: |
+          set -euo pipefail
+          test -s state/alpaca_state.json
+          cp state/alpaca_state.json /tmp/alpaca-state/alpaca_state.json
+          if [ -d output/alpaca ]; then cp output/alpaca/* /tmp/alpaca-state/; fi
+          git -C /tmp/alpaca-state config user.name 'github-actions[bot]'
+          git -C /tmp/alpaca-state config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C /tmp/alpaca-state add .
+          if ! git -C /tmp/alpaca-state diff --cached --quiet; then
+            git -C /tmp/alpaca-state commit -m "Record read-only Alpaca crypto check $GITHUB_RUN_ID"
+            git -C /tmp/alpaca-state push origin HEAD:refs/heads/alpaca-crypto-state
+          fi
+      - name: Publish diagnostic summary
+        if: always()
+        run: |
+          if [ -f output/alpaca/summary.md ]; then cat output/alpaca/summary.md >> "$GITHUB_STEP_SUMMARY"; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: alpaca-crypto-readiness-${{ github.run_id }}
+          path: output/alpaca/
+          retention-days: 3
+          if-no-files-found: warn
