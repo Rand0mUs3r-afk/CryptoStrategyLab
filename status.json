@@ -4,45 +4,192 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [],
-  "entry_decisions": [],
-  "entry_pause_reasons": [
-    "fee_pending"
+  "data_errors": [
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    }
   ],
-  "candidates": 0,
+  "entry_decisions": [
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793220600,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 61.230169774561325,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793217600,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-6b2e6d5b8ccd8e342e88996b9425e5d9",
+        "quantity": "0.002465863",
+        "reference_ask": 81107.5,
+        "broker_status": "pending_new",
+        "broker_order_id": "4413ffc1-97ac-4fc9-9077-00e1b1aa394c"
+      }
+    },
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793217600,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-83e653f18f8fd4109a38d511fde13b99",
+        "quantity": "0.084922083",
+        "reference_ask": 2355.1,
+        "broker_status": "pending_new",
+        "broker_order_id": "bfbe6b2c-2452-4d73-848f-f13202152c65"
+      }
+    },
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793220600,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "LINK/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793217600,
+      "outcome": "skipped",
+      "reason": "no_fresh_quote",
+      "details": {
+        "max_quote_age_seconds": 30
+      }
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793217600,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-63f0da2773ab28df68341d27e5779921",
+        "quantity": "1.955034213",
+        "reference_ask": 102.3,
+        "broker_status": "pending_new",
+        "broker_order_id": "d1f0ccef-7483-4313-9337-80116d0da440"
+      }
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "1h",
+      "strategy": "macd_momentum",
+      "signal_time": 1793217600,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "BCH/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793217600,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 56.87138051808393,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "BCH/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793217600,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 56.87138051808393,
+        "max_spread_bps": 50
+      }
+    }
+  ],
+  "entry_pause_reasons": [],
+  "candidates": 9,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "fee_pending",
-  "observed_at_utc": "2026-10-28T20:46:10+00:00",
+  "entry_scan_status": "completed_with_data_errors",
+  "next_entry_scan_at_utc": "2026-10-28T21:23:38+00:00",
+  "watchlist_status": "partial",
+  "watchlist_symbols": [
+    "AVAX/USD",
+    "BTC/USD",
+    "ETH/USD",
+    "LINK/USD",
+    "LTC/USD",
+    "SOL/USD",
+    "PEPE/USD",
+    "ARB/USD",
+    "BCH/USD",
+    "AAVE/USD"
+  ],
+  "observed_at_utc": "2026-10-28T20:54:53+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T20:46:10+00:00",
+    "observed_at_utc": "2026-10-28T20:54:49+00:00",
     "quantities": [
       {
-        "symbol": "ETHUSD",
-        "filled_quantity": "0.00021254",
-        "fee_quantity": "-0.00021254",
-        "expected_quantity": "0E-8",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-8",
+        "symbol": "BTCUSD",
+        "filled_quantity": "0.002465863",
+        "fee_quantity": "0",
+        "expected_quantity": "0.002465863",
+        "broker_quantity": "0.002459697",
+        "difference_quantity": "-0.000006166",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.000006166"
+      },
+      {
+        "symbol": "ETHUSD",
+        "filled_quantity": "0.085134623",
+        "fee_quantity": "-0.00021254",
+        "expected_quantity": "0.084922083",
+        "broker_quantity": "0.084709777",
+        "difference_quantity": "-0.000212306",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "0.000212306"
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "0.004905616",
+        "filled_quantity": "1.959939829",
         "fee_quantity": "0",
-        "expected_quantity": "0.004905616",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.004905616",
+        "expected_quantity": "1.959939829",
+        "broker_quantity": "1.950146627",
+        "difference_quantity": "-0.009793202",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.004905616"
+        "unconfirmed_shortfall": "0.009793202"
       }
     ],
-    "entries_blocked": true,
+    "entries_blocked": false,
     "exit_checks_allowed": true,
     "accounting_final": false,
     "attempts": 3,
     "retry_exhausted": true,
-    "warning": "Fee-sized shortfall is unconfirmed, not a posted fee. Only validated exits allowed."
+    "pending_entry_policy_enabled": true,
+    "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   }
 }

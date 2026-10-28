@@ -1,32 +1,43 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-10-28T20:46:10+00:00",
+  "observed_at_utc": "2026-10-28T20:54:49+00:00",
   "quantities": [
     {
-      "symbol": "ETHUSD",
-      "filled_quantity": "0.00021254",
-      "fee_quantity": "-0.00021254",
-      "expected_quantity": "0E-8",
-      "broker_quantity": "0",
-      "difference_quantity": "0E-8",
+      "symbol": "BTCUSD",
+      "filled_quantity": "0.002465863",
+      "fee_quantity": "0",
+      "expected_quantity": "0.002465863",
+      "broker_quantity": "0.002459697",
+      "difference_quantity": "-0.000006166",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0"
+      "unconfirmed_shortfall": "0.000006166"
+    },
+    {
+      "symbol": "ETHUSD",
+      "filled_quantity": "0.085134623",
+      "fee_quantity": "-0.00021254",
+      "expected_quantity": "0.084922083",
+      "broker_quantity": "0.084709777",
+      "difference_quantity": "-0.000212306",
+      "tolerance_quantity": "1E-8",
+      "unconfirmed_shortfall": "0.000212306"
     },
     {
       "symbol": "SOLUSD",
-      "filled_quantity": "0.004905616",
+      "filled_quantity": "1.959939829",
       "fee_quantity": "0",
-      "expected_quantity": "0.004905616",
-      "broker_quantity": "0",
-      "difference_quantity": "-0.004905616",
+      "expected_quantity": "1.959939829",
+      "broker_quantity": "1.950146627",
+      "difference_quantity": "-0.009793202",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.004905616"
+      "unconfirmed_shortfall": "0.009793202"
     }
   ],
-  "entries_blocked": true,
+  "entries_blocked": false,
   "exit_checks_allowed": true,
   "accounting_final": false,
   "attempts": 3,
   "retry_exhausted": true,
-  "warning": "Fee-sized shortfall is unconfirmed, not a posted fee. Only validated exits allowed."
+  "pending_entry_policy_enabled": true,
+  "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
 }
