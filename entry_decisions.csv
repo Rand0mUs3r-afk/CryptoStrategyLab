@@ -1,9 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,5m,trend_pullback,1793226900,skipped,symbol_already_active,{}
-ETH/USD,5m,trend_pullback,1793226900,skipped,symbol_already_active,{}
-ETH/USD,5m,rolling_vwap_reclaim,1793226900,skipped,symbol_already_active,{}
-LINK/USD,5m,trend_pullback,1793226900,skipped,symbol_already_active,{}
-SOL/USD,5m,trend_pullback,1793226900,skipped,symbol_already_active,{}
-SOL/USD,5m,rolling_vwap_reclaim,1793226900,skipped,symbol_already_active,{}
-AVAX/USD,5m,trend_pullback,1793226900,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-PEPE/USD,5m,trend_pullback,1793226900,order_result,broker_order_returned,"{""broker_order_id"": ""295641db-7e3f-4ad6-b747-7b95590fae00"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-84b898b923e391ae39a551126f9dd068"", ""quantity"": ""39682539.68253968"", ""reference_ask"": 5.04e-06}"
+BTC/USD,5m,trend_pullback,1793229000,skipped,symbol_already_active,{}
+ETH/USD,5m,trend_pullback,1793229000,skipped,symbol_already_active,{}
+LINK/USD,5m,trend_pullback,1793229000,skipped,symbol_already_active,{}
+PEPE/USD,5m,trend_pullback,1793229000,skipped,symbol_already_active,{}
+AVAX/USD,5m,trend_pullback,1793229000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+UNI/USD,5m,trend_pullback,1793229000,order_result,broker_order_returned,"{""broker_order_id"": ""c3c30476-efb3-4390-9ccb-6236405f645f"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-34ab604333281388643399b81cda032e"", ""quantity"": ""27.601435274"", ""reference_ask"": 7.246}"
