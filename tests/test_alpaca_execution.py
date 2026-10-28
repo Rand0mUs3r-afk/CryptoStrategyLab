@@ -82,7 +82,8 @@ class FakeBroker:
 
 
 @pytest.fixture
-def env(tmp_path):
+def env(tmp_path, monkeypatch):
+    monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
     s = dict(version=1, paper_only=True, observations=[], account_id=ACCOUNT)
     store = a.Store(tmp_path/'ledger.json', s)
     cfg = a.settings()
