@@ -1,13 +1,20 @@
-# Alpaca crypto PAPER readiness
+# Alpaca crypto PAPER bot
 
-Status: READ_ONLY_ACCOUNT_VERIFIED_SHARED_EXECUTION_BLOCKED
-Read-only: zero orders submitted by this integration.
-Shared account trading is BLOCKED: the unchanged stock coordinator rejects foreign orders/positions.
-Changing a repository variable cannot enable writes in this revision.
-Use paper-state/journal.md for virtual trade entry, quantity, TP, SL and profit.
-Broker readiness is NOT a broker trade journal or proof of profitability.
+Status: PAPER_ACCOUNT_VERIFIED
+Dedicated paper account only. Broker fills, not virtual experiment fills.
+TP/SL are software checks at workflow runs, NOT standing bracket orders.
+Coinbase closed candles produce signals; fresh Alpaca quotes price decisions.
+Fees can post later. P&L below is before USD fees; no fabricated net performance.
 
-## Latest verified quotes
+## Open / pending positions
 
-| Coin | Bid | Ask | Provider UTC |
-| --- | --- | --- | --- |
+| Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+## Closed cycles
+
+| Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+Order IDs, fill prices/times and quantities: orders.csv.
+Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
+Dust is kept in the ledger; it is not silently written off or counted as a win.

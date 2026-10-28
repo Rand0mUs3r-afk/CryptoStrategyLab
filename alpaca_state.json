@@ -19,6 +19,14 @@
       "shared_account_compatible": false,
       "submitted_orders": 0,
       "account_verified": true
+    },
+    {
+      "status": "PAPER_ACCOUNT_VERIFIED",
+      "paper_only": true,
+      "writes_enabled": false,
+      "mode": "check",
+      "account_verified": true,
+      "observed_at_utc": "2026-10-28T04:45:04+00:00"
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa"
