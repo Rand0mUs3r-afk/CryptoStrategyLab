@@ -1,9 +1,10 @@
 name: Alpaca crypto PAPER bot
+
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: check/plan read only; tick manages PAPER exits and entries when due
+        description: check/plan read only; tick submits orders to your dedicated PAPER account
         type: choice
         options: [check, plan, tick]
         default: check
@@ -12,39 +13,94 @@ on:
         description: First initialization only if the selected state branch does not exist
         type: boolean
         default: false
+
   schedule:
     - cron: '3-58/5 * * * *'
+
 permissions:
   contents: write
+
 concurrency:
   group: alpaca-crypto-paper-state
   cancel-in-progress: false
+
 jobs:
   paper:
     if: github.event_name == 'workflow_dispatch' || vars.ALPACA_CRYPTO_PAPER_ENABLED == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
+
     env:
       ALPACA_EXPECTED_PAPER_ACCOUNT_ID: ${{ vars.ALPACA_EXPECTED_PAPER_ACCOUNT_ID }}
       ALPACA_CRYPTO_PAPER_ENABLED: ${{ vars.ALPACA_CRYPTO_PAPER_ENABLED }}
       ALPACA_CRYPTO_DEDICATED_ACCOUNT: ${{ vars.ALPACA_CRYPTO_DEDICATED_ACCOUNT }}
       ALPACA_CRYPTO_PAUSE_ENTRIES: ${{ vars.ALPACA_CRYPTO_PAUSE_ENTRIES }}
       STATE_BRANCH: ${{ vars.ALPACA_CRYPTO_STATE_BRANCH || 'alpaca-crypto-state' }}
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 1
-      - uses: actions/setup-python@v5
+
+      - name: Check execution switches
+        env:
+          REQUESTED_MODE: ${{ inputs.mode }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          MODE="${REQUESTED_MODE:-tick}"
+
+          printf 'Selected mode: %s\n' "$MODE"
+          printf 'ALPACA_CRYPTO_PAPER_ENABLED=<%s>\n' "$ALPACA_CRYPTO_PAPER_ENABLED"
+          printf 'ALPACA_CRYPTO_DEDICATED_ACCOUNT=<%s>\n' "$ALPACA_CRYPTO_DEDICATED_ACCOUNT"
+
+          case "$MODE" in
+            check|plan|tick) ;;
+            *)
+              echo "::error::Unknown execution mode"
+              exit 1
+              ;;
+          esac
+
+          if [ "$MODE" = "tick" ]; then
+            invalid=0
+
+            if [ "$ALPACA_CRYPTO_PAPER_ENABLED" != "true" ]; then
+              echo "::error::Set Repository variable ALPACA_CRYPTO_PAPER_ENABLED to plain true in Settings > Secrets and variables > Actions > Variables."
+              invalid=1
+            fi
+
+            if [ "$ALPACA_CRYPTO_DEDICATED_ACCOUNT" != "true" ]; then
+              echo "::error::Set Repository variable ALPACA_CRYPTO_DEDICATED_ACCOUNT to plain true for your dedicated crypto paper account."
+              invalid=1
+            fi
+
+            if [ "$invalid" -ne 0 ]; then
+              exit 1
+            fi
+          fi
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: pip
+
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
+
       - name: Run tests
         run: python -m pytest -q
+
       - name: Set ledger worktree path
-        run: echo "STATE_WORKTREE=$RUNNER_TEMP/alpaca-state" >> "$GITHUB_ENV"
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "STATE_WORKTREE=$RUNNER_TEMP/alpaca-state" >> "$GITHUB_ENV"
+
       - name: Restore independent broker ledger
         id: restore
         env:
@@ -53,38 +109,62 @@ jobs:
         run: |
           set -euo pipefail
           git check-ref-format --branch "$STATE_BRANCH"
-          case "$STATE_BRANCH" in main|master|paper-state) echo 'Invalid execution state branch'; exit 1 ;; esac
+
+          case "$STATE_BRANCH" in
+            main|master|paper-state)
+              echo 'Invalid execution state branch'
+              exit 1
+              ;;
+          esac
+
           set +e
-          git ls-remote --exit-code --heads origin "refs/heads/$STATE_BRANCH" > "$RUNNER_TEMP/alpaca-ref"
+          git ls-remote --exit-code --heads origin \
+            "refs/heads/$STATE_BRANCH" > "$RUNNER_TEMP/alpaca-ref"
           code=$?
           set -e
+
           mkdir -p state
+
           if [ "$code" -eq 0 ]; then
             git fetch origin "refs/heads/$STATE_BRANCH"
             git worktree add --detach "$STATE_WORKTREE" FETCH_HEAD
-            test -s "$STATE_WORKTREE/alpaca_state.json" || { echo 'Missing ledger; refusing reset'; exit 1; }
+
+            test -s "$STATE_WORKTREE/alpaca_state.json" || {
+              echo 'Missing ledger; refusing reset'
+              exit 1
+            }
+
             cp "$STATE_WORKTREE/alpaca_state.json" state/alpaca_state.json
+
           elif [ "$code" -eq 2 ] && [ "$INITIALIZE" = 'true' ]; then
             git worktree add --detach "$STATE_WORKTREE" HEAD
             git -C "$STATE_WORKTREE" checkout --orphan "$STATE_BRANCH"
             git -C "$STATE_WORKTREE" rm -rf .
+
           else
-            echo 'State unavailable; explicit first initialization required; never reset on network/auth errors'
+            echo 'State unavailable; explicit first initialization is required. Never reset after network/auth errors.'
             exit 1
           fi
+
           git -C "$STATE_WORKTREE" config user.name 'github-actions[bot]'
-          git -C "$STATE_WORKTREE" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$STATE_WORKTREE" config user.email \
+            '41898282+github-actions[bot]@users.noreply.github.com'
+
           cat > "$RUNNER_TEMP/alpaca-checkpoint.sh" <<'SH'
           set -euo pipefail
           test -s state/alpaca_state.json
           cp state/alpaca_state.json "$STATE_WORKTREE/alpaca_state.json"
           git -C "$STATE_WORKTREE" add alpaca_state.json
+
           if ! git -C "$STATE_WORKTREE" diff --cached --quiet; then
-            git -C "$STATE_WORKTREE" commit -m "Checkpoint Alpaca PAPER ledger $GITHUB_RUN_ID"
-            git -C "$STATE_WORKTREE" push origin "HEAD:refs/heads/$STATE_BRANCH"
+            git -C "$STATE_WORKTREE" commit \
+              -m "Checkpoint Alpaca PAPER ledger $GITHUB_RUN_ID"
+            git -C "$STATE_WORKTREE" push origin \
+              "HEAD:refs/heads/$STATE_BRANCH"
           fi
           SH
-      - name: Verify, plan or execute PAPER tick with reconciliation repair
+
+      - name: Verify, plan or execute PAPER tick
         env:
           REQUESTED_MODE: ${{ inputs.mode }}
           ALPACA_PAPER_KEY_ID: ${{ secrets.ALPACA_PAPER_KEY_ID }}
@@ -93,29 +173,44 @@ jobs:
         run: |
           set -euo pipefail
           MODE="${REQUESTED_MODE:-tick}"
-          python run_alpaca.py --mode "$MODE" --checkpoint-script "$RUNNER_TEMP/alpaca-checkpoint.sh"
+
+          python alpaca_reconciled.py \
+            --mode "$MODE" \
+            --checkpoint-script "$RUNNER_TEMP/alpaca-checkpoint.sh"
+
       - name: Persist independent broker journal even after errors
         if: always() && steps.restore.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
           test -s state/alpaca_state.json
+
           cp state/alpaca_state.json "$STATE_WORKTREE/alpaca_state.json"
+
           if [ -d output/alpaca ]; then
-            find output/alpaca -maxdepth 1 -type f -exec cp -- {} "$STATE_WORKTREE/" \;
+            find output/alpaca -maxdepth 1 -type f \
+              -exec cp -- {} "$STATE_WORKTREE/" \;
           fi
+
           git -C "$STATE_WORKTREE" add .
+
           if ! git -C "$STATE_WORKTREE" diff --cached --quiet; then
-            git -C "$STATE_WORKTREE" commit -m "Record Alpaca PAPER tick $GITHUB_RUN_ID"
-            git -C "$STATE_WORKTREE" push origin "HEAD:refs/heads/$STATE_BRANCH"
+            git -C "$STATE_WORKTREE" commit \
+              -m "Record Alpaca PAPER tick $GITHUB_RUN_ID"
+            git -C "$STATE_WORKTREE" push origin \
+              "HEAD:refs/heads/$STATE_BRANCH"
           fi
+
       - name: Publish journal summary
         if: always()
+        shell: bash
         run: |
           if [ -f output/alpaca/summary.md ]; then
             cat output/alpaca/summary.md >> "$GITHUB_STEP_SUMMARY"
           fi
-      - uses: actions/upload-artifact@v4
+
+      - name: Upload paper journal
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: alpaca-crypto-paper-${{ github.run_id }}
