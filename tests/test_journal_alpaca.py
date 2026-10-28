@@ -125,13 +125,11 @@ def test_unapproved_api_write_or_path_never_sent(method, path):
     api.session.request.assert_not_called()
 
 
-def test_hard_shared_account_block_even_with_flags():
-    api = a.API('key', 'secret')
-    api.verified = True
-    api.call = Mock()
-    with pytest.raises(a.SafetyError, match=a.POLICY):
-        a.execute(dict(intents=[]), api, {}, 0., True, True, True)
-    api.call.assert_not_called()
+def test_paper_tick_requires_explicit_execution_and_dedicated_account(tmp_path, monkeypatch):
+    monkeypatch.delenv('ALPACA_CRYPTO_PAPER_ENABLED', raising=False)
+    monkeypatch.delenv('ALPACA_CRYPTO_DEDICATED_ACCOUNT', raising=False)
+    with pytest.raises(a.SafetyError, match='dedicated-account'):
+        a.run('tick', tmp_path/'state.json', tmp_path/'report')
 
 
 def test_crypto_inventory_read_only():
