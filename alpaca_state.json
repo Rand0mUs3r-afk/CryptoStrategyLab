@@ -1093,14 +1093,15 @@
         "client_order_id": "csl2-6b2e6d5b8ccd8e342e88996b9425e5d9"
       },
       "cycle_id": "csl2-6b2e6d5b8ccd8e342e88996b9425e5d9",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793220834.1265283,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "0.002465863",
       "broker_order_id": "4413ffc1-97ac-4fc9-9077-00e1b1aa394c",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-10-28T20:54:05.143464583Z"
+      "filled_avg_price": 81141.525053225,
+      "filled_at": "2026-10-28T20:54:05.144800901Z",
+      "broker_updated_at": "2026-10-28T20:54:05.172385835Z",
+      "reference_ask": 81107.5
     }
   },
   "cycles": [
@@ -1164,11 +1165,17 @@
       "hold_seconds": 259200,
       "id": "csl2-6b2e6d5b8ccd8e342e88996b9425e5d9",
       "created_at": 1793220834.1265283,
-      "status": "pending",
+      "status": "open",
       "distance": 599.3064425977676,
       "target_r": 2.0,
       "reference_ask": 81107.5,
-      "remaining_qty": 0.0
+      "remaining_qty": 0.002459697,
+      "entry_price": 81141.525053225,
+      "entry_qty": 0.002465863,
+      "entry_notional_usd": 200.08388439232058,
+      "tp": 82340.13793842054,
+      "sl": 80542.21861062724,
+      "entry_time_utc": "2026-10-28T20:54:05.144800901Z"
     }
   ],
   "seen": {
@@ -1185,8 +1192,18 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T20:54:03+00:00",
+    "observed_at_utc": "2026-10-28T20:54:11+00:00",
     "quantities": [
+      {
+        "symbol": "BTCUSD",
+        "filled_quantity": "0.002465863",
+        "fee_quantity": "0",
+        "expected_quantity": "0.002465863",
+        "broker_quantity": "0.002459697",
+        "difference_quantity": "-0.000006166",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "0.000006166"
+      },
       {
         "symbol": "ETHUSD",
         "filled_quantity": "0.00021254",
