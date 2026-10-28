@@ -1983,6 +1983,21 @@
       "filled_at": "2026-10-28T22:39:30.040893116Z",
       "broker_updated_at": "2026-10-28T22:39:30.071797465Z",
       "reference_ask": 5.04e-06
+    },
+    "csl2-fa8cc5a7a4e3a039197cde8b013894ed": {
+      "payload": {
+        "symbol": "ARB/USD",
+        "side": "sell",
+        "qty": "1127.14411625",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-fa8cc5a7a4e3a039197cde8b013894ed"
+      },
+      "cycle_id": "csl2-a166de363e36151709c20f8cd813e856",
+      "status": "queued",
+      "created_at": 1793229238.126368,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -2144,7 +2159,8 @@
       "entry_notional_usd": 199.88700309605582,
       "tp": 0.1847036898550324,
       "sl": 0.17299215507248378,
-      "entry_time_utc": "2026-10-28T21:26:23.441604294Z"
+      "entry_time_utc": "2026-10-28T21:26:23.441604294Z",
+      "exit_reason": "stop"
     },
     {
       "symbol": "PEPE/USD",
@@ -2209,7 +2225,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T22:39:35+00:00",
+    "observed_at_utc": "2026-10-28T23:14:07+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
