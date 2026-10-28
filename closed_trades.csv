@@ -1,1 +1,3 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
+ETH/USD,15m,trend_pullback,2026-10-28T06:19:22.933565852Z,2352.83,0.08501594,200.0280541102,0.0,2368.832612413611,2344.8286937931944,closed,2026-10-28T18:53:31+00:00,time,-0.8569231954000145
+SOL/USD,5m,trend_pullback,2026-10-28T07:39:57.280658642Z,102.0,1.962246379,200.149130658,0.0,102.407696,101.796152,closed,2026-10-28T18:53:31+00:00,time,-0.6961069082999813

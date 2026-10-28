@@ -1,27 +1,32 @@
 {
-  "status": "mismatch",
-  "observed_at_utc": "2026-10-28T18:10:12+00:00",
-  "broker_fee_records": 1,
+  "status": "fee_pending",
+  "observed_at_utc": "2026-10-28T18:53:31+00:00",
   "quantities": [
     {
       "symbol": "ETHUSD",
-      "filled_quantity": "0.08501594",
+      "filled_quantity": "0.00021254",
       "fee_quantity": "-0.00021254",
-      "expected_quantity": "0.08480340",
-      "broker_quantity": "0.0848034",
+      "expected_quantity": "0E-8",
+      "broker_quantity": "0",
       "difference_quantity": "0E-8",
-      "tolerance_quantity": "1E-8"
+      "tolerance_quantity": "1E-8",
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "SOLUSD",
-      "filled_quantity": "1.962246379",
+      "filled_quantity": "0.004905616",
       "fee_quantity": "0",
-      "expected_quantity": "1.962246379",
-      "broker_quantity": "1.957340763",
+      "expected_quantity": "0.004905616",
+      "broker_quantity": "0",
       "difference_quantity": "-0.004905616",
-      "tolerance_quantity": "1E-8"
+      "tolerance_quantity": "1E-8",
+      "unconfirmed_shortfall": "0.004905616"
     }
   ],
+  "entries_blocked": true,
+  "exit_checks_allowed": true,
+  "accounting_final": false,
   "attempts": 3,
-  "retry_exhausted": true
+  "retry_exhausted": true,
+  "warning": "Fee-sized shortfall is unconfirmed, not a posted fee. Only validated exits allowed."
 }

@@ -1,3 +1,1 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
-ETH/USD,15m,trend_pullback,2026-10-28T06:19:22.933565852Z,2352.83,0.08501594,200.0280541102,0.0848034,2368.832612413611,2344.8286937931944,open,,,
-SOL/USD,5m,trend_pullback,,,,,0.0,,,pending,,,

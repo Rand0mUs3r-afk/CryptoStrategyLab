@@ -741,6 +741,54 @@
         "attempts": 3,
         "retry_exhausted": true
       }
+    },
+    {
+      "status": "PAPER_TICK_COMPLETED",
+      "paper_only": true,
+      "writes_enabled": true,
+      "mode": "tick",
+      "account_verified": true,
+      "data_errors": [],
+      "entry_decisions": [],
+      "entry_pause_reasons": [
+        "fee_pending"
+      ],
+      "candidates": 0,
+      "entry_scan_interval_seconds": 1800,
+      "entry_scan_status": "fee_pending",
+      "observed_at_utc": "2026-10-28T18:53:31+00:00",
+      "reconciliation": {
+        "status": "fee_pending",
+        "observed_at_utc": "2026-10-28T18:53:31+00:00",
+        "quantities": [
+          {
+            "symbol": "ETHUSD",
+            "filled_quantity": "0.00021254",
+            "fee_quantity": "-0.00021254",
+            "expected_quantity": "0E-8",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-8",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "SOLUSD",
+            "filled_quantity": "0.004905616",
+            "fee_quantity": "0",
+            "expected_quantity": "0.004905616",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.004905616",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.004905616"
+          }
+        ],
+        "entries_blocked": true,
+        "exit_checks_allowed": true,
+        "accounting_final": false,
+        "attempts": 3,
+        "retry_exhausted": true,
+        "warning": "Fee-sized shortfall is unconfirmed, not a posted fee. Only validated exits allowed."
+      }
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",
@@ -834,14 +882,14 @@
         "client_order_id": "csl2-28b2757ffa5d2f5085f01922ec2c2b8d"
       },
       "cycle_id": "csl2-84210358f84e330b449fc563d39e4a32",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793213594.404796,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "1.957340763",
       "broker_order_id": "d6c99ac2-0b86-443a-ab68-d918cb50104f",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-10-28T18:53:25.385925384Z"
+      "filled_avg_price": 101.9,
+      "filled_at": "2026-10-28T18:53:25.386929236Z",
+      "broker_updated_at": "2026-10-28T18:53:25.422195149Z"
     }
   },
   "cycles": [
@@ -855,18 +903,20 @@
       "hold_seconds": 21600,
       "id": "csl2-f7e3eb422f26facfa1b1db4d9103ec6d",
       "created_at": 1793168361.255562,
-      "status": "open",
+      "status": "closed",
       "distance": 8.001306206805458,
       "target_r": 2.0,
       "reference_ask": 2352.5,
-      "remaining_qty": 0.0848034,
+      "remaining_qty": 0.0,
       "entry_price": 2352.83,
       "entry_qty": 0.08501594,
       "entry_notional_usd": 200.0280541102,
       "tp": 2368.832612413611,
       "sl": 2344.8286937931944,
       "entry_time_utc": "2026-10-28T06:19:22.933565852Z",
-      "exit_reason": "time"
+      "exit_reason": "time",
+      "closed_at": "2026-10-28T18:53:31+00:00",
+      "cashflow_pnl_before_usd_fees": -0.8569231954000145
     },
     {
       "symbol": "SOL/USD",
@@ -878,18 +928,20 @@
       "hold_seconds": 3600,
       "id": "csl2-84210358f84e330b449fc563d39e4a32",
       "created_at": 1793173195.7789536,
-      "status": "open",
+      "status": "closed",
       "distance": 0.20384800000000003,
       "target_r": 2.0,
       "reference_ask": 101.924,
-      "remaining_qty": 1.957340763,
+      "remaining_qty": 0.0,
       "entry_price": 102.0,
       "entry_qty": 1.962246379,
       "entry_notional_usd": 200.149130658,
       "tp": 102.407696,
       "sl": 101.796152,
       "entry_time_utc": "2026-10-28T07:39:57.280658642Z",
-      "exit_reason": "time"
+      "exit_reason": "time",
+      "closed_at": "2026-10-28T18:53:31+00:00",
+      "cashflow_pnl_before_usd_fees": -0.6961069082999813
     }
   ],
   "seen": {
@@ -904,7 +956,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T18:53:22+00:00",
+    "observed_at_utc": "2026-10-28T18:53:31+00:00",
     "quantities": [
       {
         "symbol": "ETHUSD",
@@ -918,10 +970,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "1.962246379",
+        "filled_quantity": "0.004905616",
         "fee_quantity": "0",
-        "expected_quantity": "1.962246379",
-        "broker_quantity": "1.957340763",
+        "expected_quantity": "0.004905616",
+        "broker_quantity": "0",
         "difference_quantity": "-0.004905616",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.004905616"
