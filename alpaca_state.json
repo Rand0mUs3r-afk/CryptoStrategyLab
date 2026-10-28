@@ -116,7 +116,22 @@
   "activated_at": 1793166341.6205962,
   "fee_after": "2026-10-28T00:00:00Z",
   "baseline_fee_ids": [],
-  "fees": {},
+  "fees": {
+    "20261028000000000::87124871-d341-4e05-9671-a8782de92fc3": {
+      "id": "20261028000000000::87124871-d341-4e05-9671-a8782de92fc3",
+      "activity_type": "CFEE",
+      "date": "2026-10-28",
+      "created_at": "2026-10-28T06:19:23.358871Z",
+      "net_amount": "0",
+      "description": "Coin Pair Transaction Fee (Non USD)",
+      "symbol": "ETHUSD",
+      "cusip": "ETH123456",
+      "qty": "-0.00021254",
+      "price": "2352.83",
+      "status": "executed",
+      "currency": "USD"
+    }
+  },
   "orders": {
     "csl2-f7e3eb422f26facfa1b1db4d9103ec6d": {
       "payload": {
@@ -137,6 +152,21 @@
       "filled_at": "2026-10-28T06:19:22.933565852Z",
       "broker_updated_at": "2026-10-28T06:19:22.97201995Z",
       "reference_ask": 2352.5
+    },
+    "csl2-84210358f84e330b449fc563d39e4a32": {
+      "payload": {
+        "symbol": "SOL/USD",
+        "side": "buy",
+        "qty": "1.962246379",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-84210358f84e330b449fc563d39e4a32"
+      },
+      "cycle_id": "csl2-84210358f84e330b449fc563d39e4a32",
+      "status": "queued",
+      "created_at": 1793173195.7789536,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -150,16 +180,39 @@
       "hold_seconds": 21600,
       "id": "csl2-f7e3eb422f26facfa1b1db4d9103ec6d",
       "created_at": 1793168361.255562,
-      "status": "pending",
+      "status": "open",
       "distance": 8.001306206805458,
       "target_r": 2.0,
       "reference_ask": 2352.5,
+      "remaining_qty": 0.0848034,
+      "entry_price": 2352.83,
+      "entry_qty": 0.08501594,
+      "entry_notional_usd": 200.0280541102,
+      "tp": 2368.832612413611,
+      "sl": 2344.8286937931944,
+      "entry_time_utc": "2026-10-28T06:19:22.933565852Z"
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793172900,
+      "atr": 0.11029338103646863,
+      "signal_close": 101.91,
+      "hold_seconds": 3600,
+      "id": "csl2-84210358f84e330b449fc563d39e4a32",
+      "created_at": 1793173195.7789536,
+      "status": "pending",
+      "distance": 0.20384800000000003,
+      "target_r": 2.0,
+      "reference_ask": 101.924,
       "remaining_qty": 0.0
     }
   ],
   "seen": {
     "BTC/USD|5m|trend_pullback|1793166300": 1793166346.4377913,
-    "ETH/USD|15m|trend_pullback|1793168100": 1793168361.255562
+    "ETH/USD|15m|trend_pullback|1793168100": 1793168361.255562,
+    "SOL/USD|5m|trend_pullback|1793172900": 1793173195.7789536
   },
   "day": "2026-10-28",
   "day_start_equity": 100000.0,
