@@ -174,7 +174,7 @@ jobs:
           set -euo pipefail
           MODE="${REQUESTED_MODE:-tick}"
 
-          python alpaca_reconciled.py \
+          python alpaca_watchlist.py \
             --mode "$MODE" \
             --checkpoint-script "$RUNNER_TEMP/alpaca-checkpoint.sh"
 
