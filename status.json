@@ -10,5 +10,5 @@
   "candidates": 0,
   "error_type": "SafetyError",
   "reason": "Position/fee reconciliation mismatch for SOLUSD; wait for fees or review manual activity",
-  "observed_at_utc": "2026-10-28T08:25:33+00:00"
+  "observed_at_utc": "2026-10-28T08:44:52+00:00"
 }
