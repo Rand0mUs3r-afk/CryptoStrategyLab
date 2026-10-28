@@ -1122,6 +1122,21 @@
       "filled_at": "2026-10-28T20:54:24.716335952Z",
       "broker_updated_at": "2026-10-28T20:54:24.721829501Z",
       "reference_ask": 2355.1
+    },
+    "csl2-63f0da2773ab28df68341d27e5779921": {
+      "payload": {
+        "symbol": "SOL/USD",
+        "side": "buy",
+        "qty": "1.955034213",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-63f0da2773ab28df68341d27e5779921"
+      },
+      "cycle_id": "csl2-63f0da2773ab28df68341d27e5779921",
+      "status": "queued",
+      "created_at": 1793220872.5773942,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -1218,6 +1233,22 @@
       "tp": 2403.3986052917962,
       "sl": 2332.000697354102,
       "entry_time_utc": "2026-10-28T20:54:24.716335952Z"
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793217600,
+      "atr": 0.7747158812704414,
+      "signal_close": 102.96,
+      "hold_seconds": 259200,
+      "id": "csl2-63f0da2773ab28df68341d27e5779921",
+      "created_at": 1793220872.5773942,
+      "status": "pending",
+      "distance": 1.162073821905662,
+      "target_r": 2.0,
+      "reference_ask": 102.3,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -1226,7 +1257,10 @@
     "SOL/USD|5m|trend_pullback|1793172900": 1793173195.7789536,
     "AVAX/USD|5m|trend_pullback|1793220600": 1793220833.919515,
     "BTC/USD|1h|trend_pullback|1793217600": 1793220834.1265283,
-    "ETH/USD|1h|trend_pullback|1793217600": 1793220852.7780201
+    "ETH/USD|1h|trend_pullback|1793217600": 1793220852.7780201,
+    "ETH/USD|5m|trend_pullback|1793220600": 1793220872.5203779,
+    "LINK/USD|1h|trend_pullback|1793217600": 1793220872.5204027,
+    "SOL/USD|1h|trend_pullback|1793217600": 1793220872.5773942
   },
   "day": "2026-10-28",
   "day_start_equity": 100000.0,
@@ -1235,7 +1269,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T20:54:30+00:00",
+    "observed_at_utc": "2026-10-28T20:54:41+00:00",
     "quantities": [
       {
         "symbol": "BTCUSD",
