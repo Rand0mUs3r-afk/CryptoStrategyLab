@@ -55,6 +55,16 @@
       "candidates": 1,
       "data_errors": [],
       "observed_at_utc": "2026-10-28T05:45:46+00:00"
+    },
+    {
+      "status": "PAPER_TICK_COMPLETED",
+      "paper_only": true,
+      "writes_enabled": true,
+      "mode": "tick",
+      "account_verified": true,
+      "candidates": 0,
+      "data_errors": [],
+      "observed_at_utc": "2026-10-28T06:00:59+00:00"
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",
