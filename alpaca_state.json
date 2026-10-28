@@ -1102,6 +1102,21 @@
       "filled_at": "2026-10-28T20:54:05.144800901Z",
       "broker_updated_at": "2026-10-28T20:54:05.172385835Z",
       "reference_ask": 81107.5
+    },
+    "csl2-83e653f18f8fd4109a38d511fde13b99": {
+      "payload": {
+        "symbol": "ETH/USD",
+        "side": "buy",
+        "qty": "0.084922083",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-83e653f18f8fd4109a38d511fde13b99"
+      },
+      "cycle_id": "csl2-83e653f18f8fd4109a38d511fde13b99",
+      "status": "queued",
+      "created_at": 1793220852.7780201,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -1176,6 +1191,22 @@
       "tp": 82340.13793842054,
       "sl": 80542.21861062724,
       "entry_time_utc": "2026-10-28T20:54:05.144800901Z"
+    },
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793217600,
+      "atr": 15.866201763931988,
+      "signal_close": 2369.54,
+      "hold_seconds": 259200,
+      "id": "csl2-83e653f18f8fd4109a38d511fde13b99",
+      "created_at": 1793220852.7780201,
+      "status": "pending",
+      "distance": 23.79930264589798,
+      "target_r": 2.0,
+      "reference_ask": 2355.1,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -1183,7 +1214,8 @@
     "ETH/USD|15m|trend_pullback|1793168100": 1793168361.255562,
     "SOL/USD|5m|trend_pullback|1793172900": 1793173195.7789536,
     "AVAX/USD|5m|trend_pullback|1793220600": 1793220833.919515,
-    "BTC/USD|1h|trend_pullback|1793217600": 1793220834.1265283
+    "BTC/USD|1h|trend_pullback|1793217600": 1793220834.1265283,
+    "ETH/USD|1h|trend_pullback|1793217600": 1793220852.7780201
   },
   "day": "2026-10-28",
   "day_start_equity": 100000.0,
@@ -1192,7 +1224,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T20:54:11+00:00",
+    "observed_at_utc": "2026-10-28T20:54:22+00:00",
     "quantities": [
       {
         "symbol": "BTCUSD",
