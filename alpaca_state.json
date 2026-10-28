@@ -1148,7 +1148,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T20:46:10+00:00",
+    "observed_at_utc": "2026-10-28T20:53:38+00:00",
     "quantities": [
       {
         "symbol": "ETHUSD",
@@ -1171,11 +1171,13 @@
         "unconfirmed_shortfall": "0.004905616"
       }
     ],
-    "entries_blocked": true,
+    "entries_blocked": false,
     "exit_checks_allowed": true,
     "accounting_final": false,
     "attempts": 3,
     "retry_exhausted": true,
-    "warning": "Fee-sized shortfall is unconfirmed, not a posted fee. Only validated exits allowed."
-  }
+    "pending_entry_policy_enabled": true,
+    "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
+  },
+  "last_entry_scan_at": 1793220818.3826911
 }
