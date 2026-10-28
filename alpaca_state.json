@@ -36,6 +36,15 @@
       "error_type": "SafetyError",
       "reason": "Set paper execution and dedicated-account variables true for tick",
       "observed_at_utc": "2026-10-28T04:45:48+00:00"
+    },
+    {
+      "status": "FAILED_CLOSED",
+      "paper_only": true,
+      "writes_enabled": false,
+      "mode": "tick",
+      "error_type": "SafetyError",
+      "reason": "Set paper execution and dedicated-account variables true for tick",
+      "observed_at_utc": "2026-10-28T05:29:19+00:00"
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa"
