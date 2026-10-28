@@ -1417,6 +1417,21 @@
       "filled_at": "2026-10-28T21:26:06.83090984Z",
       "broker_updated_at": "2026-10-28T21:26:06.872080417Z",
       "reference_ask": 11.85
+    },
+    "csl2-a166de363e36151709c20f8cd813e856": {
+      "payload": {
+        "symbol": "ARB/USD",
+        "side": "buy",
+        "qty": "1129.969038848",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-a166de363e36151709c20f8cd813e856"
+      },
+      "cycle_id": "csl2-a166de363e36151709c20f8cd813e856",
+      "status": "queued",
+      "created_at": 1793222773.8581357,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -1557,6 +1572,22 @@
       "tp": 12.243345161382472,
       "sl": 11.653327419308763,
       "entry_time_utc": "2026-10-28T21:26:06.83090984Z"
+    },
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "1h",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793221200,
+      "atr": 0.0026025632850108075,
+      "signal_close": 0.17514,
+      "hold_seconds": 259200,
+      "id": "csl2-a166de363e36151709c20f8cd813e856",
+      "created_at": 1793222773.8581357,
+      "status": "pending",
+      "distance": 0.0039038449275162115,
+      "target_r": 2.0,
+      "reference_ask": 0.176996,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -1578,7 +1609,9 @@
     "ETH/USD|15m|trend_pullback|1793222100": 1793222756.8089552,
     "ETH/USD|5m|macd_momentum|1793222700": 1793222756.8089595,
     "SOL/USD|15m|trend_pullback|1793222100": 1793222756.8089635,
-    "LINK/USD|1h|macd_momentum|1793221200": 1793222756.8089678
+    "LINK/USD|1h|macd_momentum|1793221200": 1793222756.8089678,
+    "LTC/USD|15m|trend_pullback|1793222100": 1793222773.8508,
+    "ARB/USD|1h|donchian_breakout|1793221200": 1793222773.8581357
   },
   "day": "2026-10-28",
   "day_start_equity": 100000.0,
@@ -1587,7 +1620,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T21:26:12+00:00",
+    "observed_at_utc": "2026-10-28T21:26:22+00:00",
     "quantities": [
       {
         "symbol": "BTCUSD",
