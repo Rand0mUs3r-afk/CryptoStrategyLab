@@ -1,1 +1,2 @@
 symbol,timeframe,strategy,side,qty,filled_qty,filled_avg_price,tp,sl,status,client_order_id,broker_order_id,created_at_utc,filled_at
+ETH/USD,15m,trend_pullback,buy,0.085015940,0.08501594,2352.83,,,filled,csl2-f7e3eb422f26facfa1b1db4d9103ec6d,4cbd5578-21cf-43ca-b774-a58c0219a4d6,2026-10-28T06:19:21+00:00,2026-10-28T06:19:22.933565852Z

@@ -1,1 +1,2 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
+ETH/USD,15m,trend_pullback,,,,,0.0,,,pending,,,

@@ -65,6 +65,36 @@
       "candidates": 0,
       "data_errors": [],
       "observed_at_utc": "2026-10-28T06:00:59+00:00"
+    },
+    {
+      "status": "FAILED_CLOSED",
+      "paper_only": true,
+      "writes_enabled": true,
+      "mode": "tick",
+      "account_verified": true,
+      "data_errors": [],
+      "entry_decisions": [
+        {
+          "symbol": "ETH/USD",
+          "timeframe": "15m",
+          "strategy": "trend_pullback",
+          "signal_time": 1793168100,
+          "outcome": "order_result",
+          "reason": "broker_order_returned",
+          "details": {
+            "client_order_id": "csl2-f7e3eb422f26facfa1b1db4d9103ec6d",
+            "quantity": "0.085015940",
+            "reference_ask": 2352.5,
+            "broker_status": "pending_new",
+            "broker_order_id": "4cbd5578-21cf-43ca-b774-a58c0219a4d6"
+          }
+        }
+      ],
+      "entry_pause_reasons": [],
+      "candidates": 7,
+      "error_type": "SafetyError",
+      "reason": "Position/fee reconciliation mismatch for ETHUSD; wait for fees or review manual activity",
+      "observed_at_utc": "2026-10-28T06:19:24+00:00"
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",
@@ -84,14 +114,15 @@
         "client_order_id": "csl2-f7e3eb422f26facfa1b1db4d9103ec6d"
       },
       "cycle_id": "csl2-f7e3eb422f26facfa1b1db4d9103ec6d",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793168361.255562,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "0.08501594",
       "broker_order_id": "4cbd5578-21cf-43ca-b774-a58c0219a4d6",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-10-28T06:19:22.932390677Z"
+      "filled_avg_price": 2352.83,
+      "filled_at": "2026-10-28T06:19:22.933565852Z",
+      "broker_updated_at": "2026-10-28T06:19:22.97201995Z",
+      "reference_ask": 2352.5
     }
   },
   "cycles": [
