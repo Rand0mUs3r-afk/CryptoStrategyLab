@@ -1428,14 +1428,15 @@
         "client_order_id": "csl2-a166de363e36151709c20f8cd813e856"
       },
       "cycle_id": "csl2-a166de363e36151709c20f8cd813e856",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793222773.8581357,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "1129.969038848",
       "broker_order_id": "7334bf81-62a8-4970-8e44-ff488ad391f2",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-10-28T21:26:23.440199145Z"
+      "filled_avg_price": 0.176896,
+      "filled_at": "2026-10-28T21:26:23.441604294Z",
+      "broker_updated_at": "2026-10-28T21:26:23.472102039Z",
+      "reference_ask": 0.176996
     }
   },
   "cycles": [
@@ -1587,11 +1588,17 @@
       "hold_seconds": 259200,
       "id": "csl2-a166de363e36151709c20f8cd813e856",
       "created_at": 1793222773.8581357,
-      "status": "pending",
+      "status": "open",
       "distance": 0.0039038449275162115,
       "target_r": 2.0,
       "reference_ask": 0.176996,
-      "remaining_qty": 0.0
+      "remaining_qty": 1127.14411625,
+      "entry_price": 0.176896,
+      "entry_qty": 1129.969038848,
+      "entry_notional_usd": 199.88700309605582,
+      "tp": 0.1847036898550324,
+      "sl": 0.17299215507248378,
+      "entry_time_utc": "2026-10-28T21:26:23.441604294Z"
     }
   ],
   "seen": {
@@ -1624,8 +1631,18 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T21:26:22+00:00",
+    "observed_at_utc": "2026-10-28T21:26:29+00:00",
     "quantities": [
+      {
+        "symbol": "ARBUSD",
+        "filled_quantity": "1129.969038848",
+        "fee_quantity": "0",
+        "expected_quantity": "1129.969038848",
+        "broker_quantity": "1127.14411625",
+        "difference_quantity": "-2.824922598",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "2.824922598"
+      },
       {
         "symbol": "BTCUSD",
         "filled_quantity": "0.002465863",
