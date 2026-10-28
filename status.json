@@ -1,0 +1,8 @@
+{
+  "status": "READ_ONLY_ACCOUNT_VERIFIED_SHARED_EXECUTION_BLOCKED",
+  "paper_only": true,
+  "writes_enabled": false,
+  "shared_account_compatible": false,
+  "submitted_orders": 0,
+  "account_verified": true
+}
