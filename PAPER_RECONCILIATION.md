@@ -1,15 +1,13 @@
-# Paper reconciliation policy
+# Paper reconciliation and entry policy
 
-The scheduled workflow uses alpaca_reconciled.py and the original paper execution engine. Existing account identity checks, durable order-intent checkpoints, client-ID deduplication and risk limits remain in place. Do not reset the state branch.
+The workflow uses alpaca_watchlist.py, alpaca_reconciled.py and the existing paper engine. Account identity checks, durable checkpoints, client-ID deduplication, ownership validation and position/risk limits remain in force. Do not reset the state branch.
 
-Confirmed fees come only from broker CFEE activities. Observed activities are retained by ID across temporarily incomplete responses. Reads are refreshed up to three times.
+At the user's request, estimated_fee_bps is zero for sizing. This is a modeling assumption, not a claim that Alpaca charges no crypto fees. Broker-reported cash, holdings and confirmed CFEE activities are never overwritten or zeroed.
 
-With allow_fee_pending_exits enabled, a negative quantity difference can be classified as fee_pending only when it matches the configured 25 bps cumulative buy-fee calculation, less recorded crypto fee quantities, within the existing 0.00000001 quantity tolerance. The unconfirmed amount is bounded by fills within 48 hours, rounded per fill to nine decimals. This is a narrowly scoped assumption, not proof that a fee posted. Other fee tiers or unexplained differences remain blocked.
+allow_fee_pending_entries is explicitly enabled. After existing pending-fee checks validate a fee-sized discrepancy and matching order history, the journal retains fee_pending and provisional accounting but sets entries_blocked false. New setups can be scanned and eligible buys submitted without waiting solely for that fee activity to post. Setting this option false restores the former pause.
 
-Pending mode also requires filled bot buy orders linked to ledger cycles, no unfinished order for the mismatched symbol, a single active cycle for a positive holding, and a complete matching order-history snapshot since activation. Unknown orders, missing records, or 500-or-more history rows block this exception. No fee is fabricated or added to fees.csv.
+Unexplained discrepancies still block trading. The pending exception retains its configured 25 bps validation calculation, 48-hour recent-fill bound, quantity tolerance and ownership checks. The 25 bps value is not charged or reserved by the sizing model. Unknown orders, missing history or truncated history are not adopted.
 
-All new buys are blocked during fee_pending, including after a cycle has exited, until confirmed fee records reconcile. Software exits may run only for the bot-owned active cycle and may sell no more than the refreshed broker quantity and qty_available. Exit evaluation still requires a fresh quote and remains subject to workflow/API availability; it is not a standing stop order.
+Software exits use no more than the refreshed broker quantity and qty_available. Entry scans remain at most once per 1800 seconds and exit checks retain the existing five-minute workflow cadence. No forced purchases, ledger resets or live-account routes are added.
 
-Entry signal scans occur at most once per 1800 seconds; exit checks remain on the existing five-minute workflow cadence. The timer is durably checkpointed before scanning. Scans are skipped during pending fees or existing risk pauses. Eligible entries are not guaranteed trades.
-
-Review reconciliation.csv, reconciliation.json and the journal. Fee-pending accounting is provisional even if the broker position is zero after an exit. Keep credentials private. This commit was checked with isolated simulated-broker tests, not a live Alpaca run or the full repository suite. GitHub runs the complete test suite before execution.
+Regression tests are included for the new entry exception. This change has not been run locally against the full repository suite or live Alpaca; the workflow runs repository tests before trading.

@@ -8,7 +8,7 @@ import time
 import alpaca_crypto as engine
 
 TOLERANCE = Decimal('0.00000001')
-_POLICY = dict(allow_fee_pending_exits=False, pending_fee_rate_bps=25,
+_POLICY = dict(allow_fee_pending_exits=False, allow_fee_pending_entries=False, pending_fee_rate_bps=25,
                pending_fee_max_age_seconds=172800, entry_scan_interval_seconds=1800)
 _ORIGINAL_SETTINGS = engine.settings
 _ORIGINAL_EXECUTE = engine.execute
@@ -27,8 +27,11 @@ def settings(path='alpaca_config.json'):
     cfg = _ORIGINAL_SETTINGS(path)
     for key, default in _POLICY.items():
         cfg.setdefault(key, default)
-    if not isinstance(cfg['allow_fee_pending_exits'], bool):
-        raise engine.SafetyError('allow_fee_pending_exits must be boolean')
+    for key in ('allow_fee_pending_exits', 'allow_fee_pending_entries'):
+        if not isinstance(cfg[key], bool):
+            raise engine.SafetyError(key + ' must be boolean')
+    if cfg['allow_fee_pending_entries'] and not cfg['allow_fee_pending_exits']:
+        raise engine.SafetyError('Pending entries require validated pending reconciliation enabled')
     for key, low, high in [('entry_scan_interval_seconds', 60, 86400),
                            ('pending_fee_max_age_seconds', 60, 172800)]:
         value = cfg[key]
@@ -162,9 +165,11 @@ def allow_pending(api, store, mismatch):
         raise engine.SafetyError('Owned fill missing from order history; pending-fee exits blocked')
     for row, shortfall in proposed:
         row['unconfirmed_shortfall'] = shortfall
-    state['reconciliation'].update(status='fee_pending', entries_blocked=True,
+    state['reconciliation'].update(status='fee_pending',
+        entries_blocked=not _POLICY['allow_fee_pending_entries'],
+        pending_entry_policy_enabled=_POLICY['allow_fee_pending_entries'],
         exit_checks_allowed=True, accounting_final=False,
-        warning='Fee-sized shortfall is unconfirmed, not a posted fee. Only validated exits allowed.')
+        warning='Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative.')
     return True
 
 
@@ -284,7 +289,9 @@ def report(state, status, quotes, output):
         [row[key] for key in ('symbol', 'expected_quantity', 'broker_quantity', 'difference_quantity', 'unconfirmed_shortfall')]
         for row in diagnostic.get('quantities', [])])
     if diagnostic.get('status') == 'fee_pending':
-        lines += ['', 'PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented. New buys blocked; guarded software exits remain active. Trade accounting is provisional until broker fees arrive.']
+        lines += ['', 'PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.',
+                  'New buys permitted by explicit paper policy; all entry checks still apply.' if not diagnostic.get('entries_blocked', True) else 'New buys blocked until reconciliation.',
+                  'Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.']
     elif diagnostic.get('status') != 'matched':
         lines += ['', 'UNRESOLVED: entries and automated exits blocked. Review the paper holding.']
     lines += ['', 'Entry scan status: ' + status.get('entry_scan_status', 'not_reached'),
