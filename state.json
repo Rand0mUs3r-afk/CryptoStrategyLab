@@ -1,0 +1,4793 @@
+{
+  "engine_version": 1,
+  "config_hash": "da99adf68a5db22fefb82dbc83ada67cf8508711e26e7e8f1b5047a9b7e6ecb7",
+  "books": {
+    "BTC-USD|5m|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|5m|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|5m|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|5m|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|5m|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|5m|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|5m|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|5m|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|15m|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|15m|trend_pullback": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 0.024732428347118557,
+        "entry": 80865.49253999999,
+        "entry_fee": 8.0,
+        "stop": 80621.23943006959,
+        "target": 81353.99875986081,
+        "signal_time": 1793151900,
+        "entry_time": 1793151918.7533386,
+        "risk_usd": 24.040972539914716,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 9991.000252425842
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|15m|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|15m|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|15m|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|15m|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|15m|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|15m|rolling_vwap_reclaim": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 0.024732428347118557,
+        "entry": 80865.49253999999,
+        "entry_fee": 8.0,
+        "stop": 80621.23943006959,
+        "target": 81353.99875986081,
+        "signal_time": 1793151900,
+        "entry_time": 1793151918.7533386,
+        "risk_usd": 24.040972539914716,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 9991.000252425842
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|1h|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|1h|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|1h|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|1h|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|1h|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|1h|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|1h|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|1h|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|6h|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|6h|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|6h|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|6h|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|6h|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|6h|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|6h|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "BTC-USD|6h|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151918.7533386,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|5m|ema_cross": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 0.84934100661123,
+        "entry": 2354.766795,
+        "entry_fee": 8.0,
+        "stop": 2349.069694345515,
+        "target": 2366.1609963089695,
+        "signal_time": 1793151900,
+        "entry_time": 1793151919.6524398,
+        "risk_usd": 22.83878120464563,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 9990.96652610986
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|5m|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|5m|donchian_breakout": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 0.84934100661123,
+        "entry": 2354.766795,
+        "entry_fee": 8.0,
+        "stop": 2349.069694345515,
+        "target": 2366.1609963089695,
+        "signal_time": 1793151900,
+        "entry_time": 1793151919.6524398,
+        "risk_usd": 22.83878120464563,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 9990.96652610986
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|5m|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|5m|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|5m|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|5m|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|5m|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|15m|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|15m|trend_pullback": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 0.84934100661123,
+        "entry": 2354.766795,
+        "entry_fee": 8.0,
+        "stop": 2345.109590300725,
+        "target": 2374.08120439855,
+        "signal_time": 1793151900,
+        "entry_time": 1793151919.6524398,
+        "risk_usd": 26.20225996033297,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 9990.96652610986
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|15m|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|15m|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|15m|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|15m|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|15m|squeeze_breakout": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 0.84934100661123,
+        "entry": 2354.766795,
+        "entry_fee": 8.0,
+        "stop": 2345.109590300725,
+        "target": 2374.08120439855,
+        "signal_time": 1793151900,
+        "entry_time": 1793151919.6524398,
+        "risk_usd": 26.20225996033297,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 9990.96652610986
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|15m|rolling_vwap_reclaim": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 0.84934100661123,
+        "entry": 2354.766795,
+        "entry_fee": 8.0,
+        "stop": 2345.109590300725,
+        "target": 2374.08120439855,
+        "signal_time": 1793151900,
+        "entry_time": 1793151919.6524398,
+        "risk_usd": 26.20225996033297,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 9990.96652610986
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|1h|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|1h|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|1h|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|1h|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|1h|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|1h|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|1h|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|1h|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|6h|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|6h|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|6h|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|6h|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|6h|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|6h|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|6h|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "ETH-USD|6h|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151919.6524398,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|5m|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|5m|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|5m|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|5m|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|5m|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|5m|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|5m|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|5m|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|15m|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|15m|trend_pullback": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 19.686827848632312,
+        "entry": 101.59077,
+        "entry_fee": 8.000000000000002,
+        "stop": 101.19037226934229,
+        "target": 102.39156546131544,
+        "signal_time": 1793151900,
+        "entry_time": 1793151920.574433,
+        "risk_usd": 25.88256119444149,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 9990.606763193153
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|15m|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|15m|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|15m|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|15m|macd_momentum": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 19.686827848632312,
+        "entry": 101.59077,
+        "entry_fee": 8.000000000000002,
+        "stop": 101.19037226934229,
+        "target": 102.39156546131544,
+        "signal_time": 1793151900,
+        "entry_time": 1793151920.574433,
+        "risk_usd": 25.88256119444149,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 9990.606763193153
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|15m|squeeze_breakout": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 19.686827848632312,
+        "entry": 101.59077,
+        "entry_fee": 8.000000000000002,
+        "stop": 101.19037226934229,
+        "target": 102.39156546131544,
+        "signal_time": 1793151900,
+        "entry_time": 1793151920.574433,
+        "risk_usd": 25.88256119444149,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 9990.606763193153
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|15m|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|1h|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|1h|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|1h|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|1h|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|1h|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|1h|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|1h|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|1h|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|6h|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|6h|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|6h|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|6h|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|6h|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|6h|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|6h|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "SOL-USD|6h|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151920.574433,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|5m|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|5m|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|5m|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|5m|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|5m|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|5m|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|5m|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|5m|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|15m|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|15m|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|15m|donchian_breakout": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 172.0754497503766,
+        "entry": 11.6228085,
+        "entry_fee": 8.0,
+        "stop": 11.565615162430184,
+        "target": 11.73719517513963,
+        "signal_time": 1793151900,
+        "entry_time": 1793151921.6416256,
+        "risk_usd": 27.84156928505119,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 9990.484273400874
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|15m|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|15m|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|15m|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|15m|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|15m|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|1h|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|1h|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|1h|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|1h|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|1h|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|1h|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|1h|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|1h|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|6h|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|6h|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|6h|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|6h|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|6h|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|6h|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|6h|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LINK-USD|6h|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151921.6416256,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|5m|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|5m|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|5m|donchian_breakout": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 34.87318132218214,
+        "entry": 57.350661,
+        "entry_fee": 7.999999999999999,
+        "stop": 57.17587202587057,
+        "target": 57.700238948258864,
+        "signal_time": 1793151900,
+        "entry_time": 1793151922.550835,
+        "risk_usd": 24.095447587933847,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 9990.233289761036
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|5m|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|5m|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|5m|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|5m|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|5m|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|15m|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|15m|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|15m|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|15m|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|15m|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|15m|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|15m|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|15m|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|1h|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|1h|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|1h|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|1h|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|1h|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|1h|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|1h|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|1h|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|6h|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|6h|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|6h|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|6h|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|6h|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|6h|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|6h|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "LTC-USD|6h|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151922.550835,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|5m|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|5m|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|5m|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|5m|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|5m|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|5m|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|5m|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|5m|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|15m|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|15m|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|15m|donchian_breakout": {
+      "cash": 7992.0,
+      "position": {
+        "qty": 221.71700307787546,
+        "entry": 9.020508,
+        "entry_fee": 8.0,
+        "stop": 8.97494370499254,
+        "target": 9.111636590014918,
+        "signal_time": 1793151900,
+        "entry_time": 1793151923.4400105,
+        "risk_usd": 28.10237893641013,
+        "regime": "up",
+        "bars": 0
+      },
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": 1793151900,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 9990.335348740891
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|15m|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|15m|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|15m|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|15m|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|15m|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793151000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|1h|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|1h|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|1h|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|1h|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|1h|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|1h|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|1h|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|1h|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793145600,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|6h|ema_cross": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|6h|trend_pullback": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|6h|donchian_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|6h|bollinger_reversion": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|6h|rsi_rebound": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|6h|macd_momentum": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|6h|squeeze_breakout": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    },
+    "AVAX-USD|6h|rolling_vwap_reclaim": {
+      "cash": 10000.0,
+      "position": null,
+      "high_water": 10000.0,
+      "day": "2026-10-28",
+      "day_start": 10000.0,
+      "daily_paused": false,
+      "drawdown_paused": false,
+      "consumed_signal": null,
+      "curve": [
+        {
+          "time": 0,
+          "equity": 10000.0
+        },
+        {
+          "time": 1793151923.4400105,
+          "equity": 10000.0
+        }
+      ],
+      "last_candle": 1793124000,
+      "missed_level_bars": 0
+    }
+  },
+  "trades": [],
+  "events": [
+    {
+      "kind": "signal_observation",
+      "book": "BTC-USD|15m|trend_pullback",
+      "signal_time": 1793151900,
+      "observed_at": 1793151918.7533386,
+      "delay_seconds": 18.75333857536316,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 0.001237239803954566,
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "8ddc59b696942754062c4b19c66a23e97b70b8de0a505d45f3f9dbf4f67cc587"
+    },
+    {
+      "kind": "open",
+      "book": "BTC-USD|15m|trend_pullback",
+      "position": {
+        "qty": 0.024732428347118557,
+        "entry": 80865.49253999999,
+        "entry_fee": 8.0,
+        "stop": 80621.23943006959,
+        "target": 81353.99875986081,
+        "signal_time": 1793151900,
+        "entry_time": 1793151918.7533386,
+        "risk_usd": 24.040972539914716,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "8ddc59b696942754062c4b19c66a23e97b70b8de0a505d45f3f9dbf4f67cc587",
+      "hash": "738f9234ffa100cbf3e2a7a9c4e634f1a06e395ee5ac25791c71be3f5e345cb7"
+    },
+    {
+      "kind": "signal_observation",
+      "book": "BTC-USD|15m|rolling_vwap_reclaim",
+      "signal_time": 1793151900,
+      "observed_at": 1793151918.7533386,
+      "delay_seconds": 18.75333857536316,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 0.001237239803954566,
+      "previous_hash": "738f9234ffa100cbf3e2a7a9c4e634f1a06e395ee5ac25791c71be3f5e345cb7",
+      "hash": "fb8f8493549171850e1848e500cbbfc2bfdc544b8a3f5bb7f1c3ca5e0f7b194c"
+    },
+    {
+      "kind": "open",
+      "book": "BTC-USD|15m|rolling_vwap_reclaim",
+      "position": {
+        "qty": 0.024732428347118557,
+        "entry": 80865.49253999999,
+        "entry_fee": 8.0,
+        "stop": 80621.23943006959,
+        "target": 81353.99875986081,
+        "signal_time": 1793151900,
+        "entry_time": 1793151918.7533386,
+        "risk_usd": 24.040972539914716,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "fb8f8493549171850e1848e500cbbfc2bfdc544b8a3f5bb7f1c3ca5e0f7b194c",
+      "hash": "0f61ec13932841f4d2143d9db9c326a831adb2f92dd7841a6d9f48b84cd21a78"
+    },
+    {
+      "kind": "signal_observation",
+      "book": "ETH-USD|5m|ema_cross",
+      "signal_time": 1793151900,
+      "observed_at": 1793151919.6524398,
+      "delay_seconds": 19.652439832687378,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 0.169954579638437,
+      "previous_hash": "0f61ec13932841f4d2143d9db9c326a831adb2f92dd7841a6d9f48b84cd21a78",
+      "hash": "043f4a0af9538e0d8a45676cad2ea263e5f3e56e3c265b72f4981b339e0aed5a"
+    },
+    {
+      "kind": "open",
+      "book": "ETH-USD|5m|ema_cross",
+      "position": {
+        "qty": 0.84934100661123,
+        "entry": 2354.766795,
+        "entry_fee": 8.0,
+        "stop": 2349.069694345515,
+        "target": 2366.1609963089695,
+        "signal_time": 1793151900,
+        "entry_time": 1793151919.6524398,
+        "risk_usd": 22.83878120464563,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "043f4a0af9538e0d8a45676cad2ea263e5f3e56e3c265b72f4981b339e0aed5a",
+      "hash": "929221d99f6db425a79cadd960a6b0511bdd769b77e115efb44347578b708e31"
+    },
+    {
+      "kind": "signal_observation",
+      "book": "ETH-USD|5m|donchian_breakout",
+      "signal_time": 1793151900,
+      "observed_at": 1793151919.6524398,
+      "delay_seconds": 19.652439832687378,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 0.169954579638437,
+      "previous_hash": "929221d99f6db425a79cadd960a6b0511bdd769b77e115efb44347578b708e31",
+      "hash": "3d2b8ba4fde43e30385742afe7a24cde9345d0382465f66a36d0e921669822b4"
+    },
+    {
+      "kind": "open",
+      "book": "ETH-USD|5m|donchian_breakout",
+      "position": {
+        "qty": 0.84934100661123,
+        "entry": 2354.766795,
+        "entry_fee": 8.0,
+        "stop": 2349.069694345515,
+        "target": 2366.1609963089695,
+        "signal_time": 1793151900,
+        "entry_time": 1793151919.6524398,
+        "risk_usd": 22.83878120464563,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "3d2b8ba4fde43e30385742afe7a24cde9345d0382465f66a36d0e921669822b4",
+      "hash": "eaba5cc78443c23c0acc4c083aa3e7632c57b76086ac715ed4747bcbb9153920"
+    },
+    {
+      "kind": "signal_observation",
+      "book": "ETH-USD|15m|trend_pullback",
+      "signal_time": 1793151900,
+      "observed_at": 1793151919.6524398,
+      "delay_seconds": 19.652439832687378,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 0.169954579638437,
+      "previous_hash": "eaba5cc78443c23c0acc4c083aa3e7632c57b76086ac715ed4747bcbb9153920",
+      "hash": "a71272841b531fe76cd96aad46d940dd76ec11387e47bb933d48ce47a2b7f6af"
+    },
+    {
+      "kind": "open",
+      "book": "ETH-USD|15m|trend_pullback",
+      "position": {
+        "qty": 0.84934100661123,
+        "entry": 2354.766795,
+        "entry_fee": 8.0,
+        "stop": 2345.109590300725,
+        "target": 2374.08120439855,
+        "signal_time": 1793151900,
+        "entry_time": 1793151919.6524398,
+        "risk_usd": 26.20225996033297,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "a71272841b531fe76cd96aad46d940dd76ec11387e47bb933d48ce47a2b7f6af",
+      "hash": "db9a7dbec06d7d13dfb614cc0a2b452122413d34f5bb1e029a89a57c84aba958"
+    },
+    {
+      "kind": "signal_observation",
+      "book": "ETH-USD|15m|squeeze_breakout",
+      "signal_time": 1793151900,
+      "observed_at": 1793151919.6524398,
+      "delay_seconds": 19.652439832687378,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 0.169954579638437,
+      "previous_hash": "db9a7dbec06d7d13dfb614cc0a2b452122413d34f5bb1e029a89a57c84aba958",
+      "hash": "2113f91ef1d2757167e93760aa9fd00745390a3199d3d61ce1e1fe244dcab118"
+    },
+    {
+      "kind": "open",
+      "book": "ETH-USD|15m|squeeze_breakout",
+      "position": {
+        "qty": 0.84934100661123,
+        "entry": 2354.766795,
+        "entry_fee": 8.0,
+        "stop": 2345.109590300725,
+        "target": 2374.08120439855,
+        "signal_time": 1793151900,
+        "entry_time": 1793151919.6524398,
+        "risk_usd": 26.20225996033297,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "2113f91ef1d2757167e93760aa9fd00745390a3199d3d61ce1e1fe244dcab118",
+      "hash": "56ea521f55038a8f501f827b822d24f1979aa81eb49d6daf52408099f2af7e18"
+    },
+    {
+      "kind": "signal_observation",
+      "book": "ETH-USD|15m|rolling_vwap_reclaim",
+      "signal_time": 1793151900,
+      "observed_at": 1793151919.6524398,
+      "delay_seconds": 19.652439832687378,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 0.169954579638437,
+      "previous_hash": "56ea521f55038a8f501f827b822d24f1979aa81eb49d6daf52408099f2af7e18",
+      "hash": "cc4bb41527dc0ba84b2088121cf2604b576d3b0058b6dec78195b58531b6ae0d"
+    },
+    {
+      "kind": "open",
+      "book": "ETH-USD|15m|rolling_vwap_reclaim",
+      "position": {
+        "qty": 0.84934100661123,
+        "entry": 2354.766795,
+        "entry_fee": 8.0,
+        "stop": 2345.109590300725,
+        "target": 2374.08120439855,
+        "signal_time": 1793151900,
+        "entry_time": 1793151919.6524398,
+        "risk_usd": 26.20225996033297,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "cc4bb41527dc0ba84b2088121cf2604b576d3b0058b6dec78195b58531b6ae0d",
+      "hash": "878e6a95b9f6fc5bdae1ffa701e46f7ee81fc8ef6a41a8b45c443b8b0db7b20a"
+    },
+    {
+      "kind": "signal_observation",
+      "book": "SOL-USD|15m|trend_pullback",
+      "signal_time": 1793151900,
+      "observed_at": 1793151920.574433,
+      "delay_seconds": 20.574433088302612,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 1.9698611247917102,
+      "previous_hash": "878e6a95b9f6fc5bdae1ffa701e46f7ee81fc8ef6a41a8b45c443b8b0db7b20a",
+      "hash": "c223873cc78be925a27b7323f8461d29bb7c9f34336b90352639de9f178251b4"
+    },
+    {
+      "kind": "open",
+      "book": "SOL-USD|15m|trend_pullback",
+      "position": {
+        "qty": 19.686827848632312,
+        "entry": 101.59077,
+        "entry_fee": 8.000000000000002,
+        "stop": 101.19037226934229,
+        "target": 102.39156546131544,
+        "signal_time": 1793151900,
+        "entry_time": 1793151920.574433,
+        "risk_usd": 25.88256119444149,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "c223873cc78be925a27b7323f8461d29bb7c9f34336b90352639de9f178251b4",
+      "hash": "7ce592ae488fb191a5c697f2c6a0b0e5726c15f1fd22a9bd45a67cab8dce864c"
+    },
+    {
+      "kind": "signal_observation",
+      "book": "SOL-USD|15m|macd_momentum",
+      "signal_time": 1793151900,
+      "observed_at": 1793151920.574433,
+      "delay_seconds": 20.574433088302612,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 1.9698611247917102,
+      "previous_hash": "7ce592ae488fb191a5c697f2c6a0b0e5726c15f1fd22a9bd45a67cab8dce864c",
+      "hash": "723610fb56be753638f12ec60079d709a0240c0ff1f5a7f141961cb94d125b94"
+    },
+    {
+      "kind": "open",
+      "book": "SOL-USD|15m|macd_momentum",
+      "position": {
+        "qty": 19.686827848632312,
+        "entry": 101.59077,
+        "entry_fee": 8.000000000000002,
+        "stop": 101.19037226934229,
+        "target": 102.39156546131544,
+        "signal_time": 1793151900,
+        "entry_time": 1793151920.574433,
+        "risk_usd": 25.88256119444149,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "723610fb56be753638f12ec60079d709a0240c0ff1f5a7f141961cb94d125b94",
+      "hash": "9df370f1027d9f448338867c5607941353c9765db4277a5dbd3d39119cb40acd"
+    },
+    {
+      "kind": "signal_observation",
+      "book": "SOL-USD|15m|squeeze_breakout",
+      "signal_time": 1793151900,
+      "observed_at": 1793151920.574433,
+      "delay_seconds": 20.574433088302612,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 1.9698611247917102,
+      "previous_hash": "9df370f1027d9f448338867c5607941353c9765db4277a5dbd3d39119cb40acd",
+      "hash": "0cbfe3f42526a525e29c3137f9884cb8c783027cb3de568c4cb58b6abbb66675"
+    },
+    {
+      "kind": "open",
+      "book": "SOL-USD|15m|squeeze_breakout",
+      "position": {
+        "qty": 19.686827848632312,
+        "entry": 101.59077,
+        "entry_fee": 8.000000000000002,
+        "stop": 101.19037226934229,
+        "target": 102.39156546131544,
+        "signal_time": 1793151900,
+        "entry_time": 1793151920.574433,
+        "risk_usd": 25.88256119444149,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "0cbfe3f42526a525e29c3137f9884cb8c783027cb3de568c4cb58b6abbb66675",
+      "hash": "69634860857df02914d9446753846c210edc306d5cfe2da3df755d798b8b5418"
+    },
+    {
+      "kind": "signal_observation",
+      "book": "LINK-USD|15m|donchian_breakout",
+      "signal_time": 1793151900,
+      "observed_at": 1793151921.6416256,
+      "delay_seconds": 21.64162564277649,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 2.582755800439166,
+      "previous_hash": "69634860857df02914d9446753846c210edc306d5cfe2da3df755d798b8b5418",
+      "hash": "c153e5a50f8d215dd81080af820ec624d31dea858f0412de0820259c57d433f1"
+    },
+    {
+      "kind": "open",
+      "book": "LINK-USD|15m|donchian_breakout",
+      "position": {
+        "qty": 172.0754497503766,
+        "entry": 11.6228085,
+        "entry_fee": 8.0,
+        "stop": 11.565615162430184,
+        "target": 11.73719517513963,
+        "signal_time": 1793151900,
+        "entry_time": 1793151921.6416256,
+        "risk_usd": 27.84156928505119,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "c153e5a50f8d215dd81080af820ec624d31dea858f0412de0820259c57d433f1",
+      "hash": "7c94e915091b139d8cfd91e9a4e3a59cb7c09208db40e5822769705005085f94"
+    },
+    {
+      "kind": "signal_observation",
+      "book": "LTC-USD|5m|donchian_breakout",
+      "signal_time": 1793151900,
+      "observed_at": 1793151922.550835,
+      "delay_seconds": 22.550834894180298,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 3.8387046116811034,
+      "previous_hash": "7c94e915091b139d8cfd91e9a4e3a59cb7c09208db40e5822769705005085f94",
+      "hash": "46dded00c13334d13dd6776020c4b9022677c495f5d85625c9c11b341e3e2f79"
+    },
+    {
+      "kind": "open",
+      "book": "LTC-USD|5m|donchian_breakout",
+      "position": {
+        "qty": 34.87318132218214,
+        "entry": 57.350661,
+        "entry_fee": 7.999999999999999,
+        "stop": 57.17587202587057,
+        "target": 57.700238948258864,
+        "signal_time": 1793151900,
+        "entry_time": 1793151922.550835,
+        "risk_usd": 24.095447587933847,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "46dded00c13334d13dd6776020c4b9022677c495f5d85625c9c11b341e3e2f79",
+      "hash": "370439b7cd217692ba1d5c4ccb5c6252973122385ca500a24b363f4b128af784"
+    },
+    {
+      "kind": "signal_observation",
+      "book": "AVAX-USD|15m|donchian_breakout",
+      "signal_time": 1793151900,
+      "observed_at": 1793151923.4400105,
+      "delay_seconds": 23.44001054763794,
+      "accepted": true,
+      "fresh": true,
+      "paused": false,
+      "spread_bps": 3.3279716013091285,
+      "previous_hash": "370439b7cd217692ba1d5c4ccb5c6252973122385ca500a24b363f4b128af784",
+      "hash": "8e56732a65a522f91a4f0344cd773e3f69bd8735e6833b598ea2551a97f90c23"
+    },
+    {
+      "kind": "open",
+      "book": "AVAX-USD|15m|donchian_breakout",
+      "position": {
+        "qty": 221.71700307787546,
+        "entry": 9.020508,
+        "entry_fee": 8.0,
+        "stop": 8.97494370499254,
+        "target": 9.111636590014918,
+        "signal_time": 1793151900,
+        "entry_time": 1793151923.4400105,
+        "risk_usd": 28.10237893641013,
+        "regime": "up",
+        "bars": 0
+      },
+      "previous_hash": "8e56732a65a522f91a4f0344cd773e3f69bd8735e6833b598ea2551a97f90c23",
+      "hash": "0d8625e7d75609222123d3303111dbadee14029403a7a4ba284209266643828b"
+    },
+    {
+      "kind": "heartbeat",
+      "observed_at": 1793151917.9796956,
+      "gap_seconds": null,
+      "entry_pause": false,
+      "fresh_products": 6,
+      "errors": 0,
+      "code_sha": "b963dbd1bcb06ba8a62c1fb8916460eabfbde7e8",
+      "previous_hash": "0d8625e7d75609222123d3303111dbadee14029403a7a4ba284209266643828b",
+      "hash": "ecd96b1640ec8d8d56c683258e33684826bb589516493225ccc0ffe34e317813"
+    }
+  ],
+  "tail_hash": "ecd96b1640ec8d8d56c683258e33684826bb589516493225ccc0ffe34e317813",
+  "last_run": 1793151917.9796956,
+  "runs": 1
+}
