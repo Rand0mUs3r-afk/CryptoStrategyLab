@@ -1113,14 +1113,15 @@
         "client_order_id": "csl2-83e653f18f8fd4109a38d511fde13b99"
       },
       "cycle_id": "csl2-83e653f18f8fd4109a38d511fde13b99",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793220852.7780201,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "0.084922083",
       "broker_order_id": "bfbe6b2c-2452-4d73-848f-f13202152c65",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-10-28T20:54:24.714926967Z"
+      "filled_avg_price": 2355.8,
+      "filled_at": "2026-10-28T20:54:24.716335952Z",
+      "broker_updated_at": "2026-10-28T20:54:24.721829501Z",
+      "reference_ask": 2355.1
     }
   },
   "cycles": [
@@ -1206,11 +1207,17 @@
       "hold_seconds": 259200,
       "id": "csl2-83e653f18f8fd4109a38d511fde13b99",
       "created_at": 1793220852.7780201,
-      "status": "pending",
+      "status": "open",
       "distance": 23.79930264589798,
       "target_r": 2.0,
       "reference_ask": 2355.1,
-      "remaining_qty": 0.0
+      "remaining_qty": 0.084709777,
+      "entry_price": 2355.8,
+      "entry_qty": 0.084922083,
+      "entry_notional_usd": 200.0594431314,
+      "tp": 2403.3986052917962,
+      "sl": 2332.000697354102,
+      "entry_time_utc": "2026-10-28T20:54:24.716335952Z"
     }
   ],
   "seen": {
@@ -1228,7 +1235,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T20:54:22+00:00",
+    "observed_at_utc": "2026-10-28T20:54:30+00:00",
     "quantities": [
       {
         "symbol": "BTCUSD",
@@ -1242,13 +1249,13 @@
       },
       {
         "symbol": "ETHUSD",
-        "filled_quantity": "0.00021254",
+        "filled_quantity": "0.085134623",
         "fee_quantity": "-0.00021254",
-        "expected_quantity": "0E-8",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-8",
+        "expected_quantity": "0.084922083",
+        "broker_quantity": "0.084709777",
+        "difference_quantity": "-0.000212306",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.000212306"
       },
       {
         "symbol": "SOLUSD",
