@@ -10,10 +10,10 @@
   "candidates": 0,
   "error_type": "PositionMismatch",
   "reason": "Position/fee reconciliation mismatch for SOLUSD: expected=1.962246379, broker=1.957340763, difference=-0.004905616, recorded_fee_quantity=0; unresolved after 3 read-only attempts. No fee inferred or position adopted; entries and automated exits blocked. Review reconciliation.csv and the paper holding.",
-  "observed_at_utc": "2026-10-28T09:15:30+00:00",
+  "observed_at_utc": "2026-10-28T09:57:04+00:00",
   "reconciliation": {
     "status": "mismatch",
-    "observed_at_utc": "2026-10-28T09:15:30+00:00",
+    "observed_at_utc": "2026-10-28T09:57:04+00:00",
     "broker_fee_records": 1,
     "quantities": [
       {
