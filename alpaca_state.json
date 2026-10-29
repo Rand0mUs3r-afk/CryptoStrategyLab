@@ -6175,14 +6175,15 @@
         "client_order_id": "csl2-c80e2d0897ace61ff2fd105f35e9d5d0"
       },
       "cycle_id": "csl2-c80e2d0897ace61ff2fd105f35e9d5d0",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793278676.2120104,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "219.884121068",
       "broker_order_id": "9c8467ef-ac43-4403-bb44-48007c98cf5b",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-10-29T12:58:06.474770452Z"
+      "filled_avg_price": 0.9095,
+      "filled_at": "2026-10-29T12:58:06.476147516Z",
+      "broker_updated_at": "2026-10-29T12:58:06.521518665Z",
+      "reference_ask": 0.90957
     }
   },
   "cycles": [
@@ -6698,11 +6699,17 @@
       "hold_seconds": 21600,
       "id": "csl2-c80e2d0897ace61ff2fd105f35e9d5d0",
       "created_at": 1793278676.2120104,
-      "status": "pending",
+      "status": "open",
       "distance": 0.008253895106263832,
       "target_r": 2.0,
       "reference_ask": 0.90957,
-      "remaining_qty": 0.0
+      "remaining_qty": 219.334410765,
+      "entry_price": 0.9095,
+      "entry_qty": 219.884121068,
+      "entry_notional_usd": 199.984608111346,
+      "tp": 0.9260077902125277,
+      "sl": 0.9012461048937361,
+      "entry_time_utc": "2026-10-29T12:58:06.476147516Z"
     }
   ],
   "seen": {
@@ -6806,7 +6813,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T12:58:05+00:00",
+    "observed_at_utc": "2026-10-29T12:58:12+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -6857,6 +6864,16 @@
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
+      },
+      {
+        "symbol": "FILUSD",
+        "filled_quantity": "219.884121068",
+        "fee_quantity": "0",
+        "expected_quantity": "219.884121068",
+        "broker_quantity": "219.334410765",
+        "difference_quantity": "-0.549710303",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "0.549710303"
       },
       {
         "symbol": "HYPEUSD",
