@@ -5349,6 +5349,21 @@
       "filled_at": "2026-10-29T10:54:37.557999933Z",
       "broker_updated_at": "2026-10-29T10:54:37.571283578Z",
       "reference_ask": 8.83417
+    },
+    "csl2-0d9ea0e0707e36dc2d82ad58af22a9b4": {
+      "payload": {
+        "symbol": "HYPE/USD",
+        "side": "buy",
+        "qty": "2.333177788",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-0d9ea0e0707e36dc2d82ad58af22a9b4"
+      },
+      "cycle_id": "csl2-0d9ea0e0707e36dc2d82ad58af22a9b4",
+      "status": "queued",
+      "created_at": 1793271284.9324315,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -5792,6 +5807,22 @@
       "tp": 8.890288014191333,
       "sl": 8.781855992904333,
       "entry_time_utc": "2026-10-29T10:54:37.557999933Z"
+    },
+    {
+      "symbol": "HYPE/USD",
+      "timeframe": "15m",
+      "strategy": "ema_cross",
+      "signal_time": 1793270700,
+      "atr": 0.5839353142300636,
+      "signal_close": 83.81,
+      "hold_seconds": 21600,
+      "id": "csl2-0d9ea0e0707e36dc2d82ad58af22a9b4",
+      "created_at": 1793271284.9324315,
+      "status": "pending",
+      "distance": 0.8759029713450954,
+      "target_r": 2.0,
+      "reference_ask": 85.72,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -5863,7 +5894,10 @@
     "BCH/USD|5m|bollinger_reversion|1793256900": 1793256996.0148711,
     "PEPE/USD|15m|trend_pullback|1793265300": 1793265846.314793,
     "ETH/USD|5m|squeeze_breakout|1793271000": 1793271275.726752,
-    "AVAX/USD|5m|donchian_breakout|1793271000": 1793271275.7267735
+    "AVAX/USD|5m|donchian_breakout|1793271000": 1793271275.7267735,
+    "AVAX/USD|5m|squeeze_breakout|1793271000": 1793271284.9323468,
+    "SOL/USD|5m|squeeze_breakout|1793271000": 1793271284.9323802,
+    "HYPE/USD|15m|ema_cross|1793270700": 1793271284.9324315
   },
   "day": "2026-10-29",
   "day_start_equity": 99984.2,
@@ -5872,7 +5906,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T10:54:43+00:00",
+    "observed_at_utc": "2026-10-29T10:54:54+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
