@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,15m,trend_pullback,1793265300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.70149253731286}"

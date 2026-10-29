@@ -6,13 +6,13 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "DOT/USD",
+      "symbol": "LINK/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     },
     {
-      "symbol": "LINK/USD",
+      "symbol": "DOT/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -24,29 +24,15 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793265300,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 59.70149253731286,
-        "max_spread_bps": 50
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-10-29T09:53:49+00:00",
+  "next_entry_scan_at_utc": "2026-10-29T10:42:24+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
-    "DOT/USD",
     "ETH/USD",
     "SOL/USD",
     "AVAX/USD",
@@ -54,12 +40,13 @@
     "LTC/USD",
     "PEPE/USD",
     "BCH/USD",
+    "DOT/USD",
     "ARB/USD"
   ],
-  "observed_at_utc": "2026-10-29T09:24:06+00:00",
+  "observed_at_utc": "2026-10-29T10:12:38+00:00",
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-10-29T09:23:49+00:00",
+    "observed_at_utc": "2026-10-29T10:12:24+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -83,10 +70,10 @@
       },
       {
         "symbol": "DOTUSD",
-        "filled_quantity": "206.185779572",
+        "filled_quantity": "0.515464449",
         "fee_quantity": "-0.515464449",
-        "expected_quantity": "205.670315123",
-        "broker_quantity": "205.670315123",
+        "expected_quantity": "0E-9",
+        "broker_quantity": "0",
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
