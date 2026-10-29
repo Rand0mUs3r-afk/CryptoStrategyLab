@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-10-29T01:10:58+00:00",
+  "observed_at_utc": "2026-10-29T01:59:54+00:00",
   "quantities": [
     {
       "symbol": "ARBUSD",
@@ -14,50 +14,50 @@
     },
     {
       "symbol": "BTCUSD",
-      "filled_quantity": "0.002465863",
+      "filled_quantity": "0.000006166",
       "fee_quantity": "0",
-      "expected_quantity": "0.002465863",
-      "broker_quantity": "0.002459697",
+      "expected_quantity": "0.000006166",
+      "broker_quantity": "0",
       "difference_quantity": "-0.000006166",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.000006166"
     },
     {
       "symbol": "ETHUSD",
-      "filled_quantity": "0.085134623",
+      "filled_quantity": "0.000424846",
       "fee_quantity": "-0.00021254",
-      "expected_quantity": "0.084922083",
-      "broker_quantity": "0.084709777",
+      "expected_quantity": "0.000212306",
+      "broker_quantity": "0",
       "difference_quantity": "-0.000212306",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.000212306"
     },
     {
       "symbol": "LINKUSD",
-      "filled_quantity": "16.87763713",
+      "filled_quantity": "0.042194093",
       "fee_quantity": "0",
-      "expected_quantity": "16.87763713",
-      "broker_quantity": "16.835443037",
+      "expected_quantity": "0.042194093",
+      "broker_quantity": "0",
       "difference_quantity": "-0.042194093",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.042194093"
     },
     {
       "symbol": "PEPEUSD",
-      "filled_quantity": "39860637.760737165",
+      "filled_quantity": "198609.927735178",
       "fee_quantity": "0",
-      "expected_quantity": "39860637.760737165",
-      "broker_quantity": "39662027.833001987",
+      "expected_quantity": "198609.927735178",
+      "broker_quantity": "0",
       "difference_quantity": "-198609.927735178",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "198609.927735178"
     },
     {
       "symbol": "SOLUSD",
-      "filled_quantity": "1.959939829",
+      "filled_quantity": "0.009793202",
       "fee_quantity": "0",
-      "expected_quantity": "1.959939829",
-      "broker_quantity": "1.950146627",
+      "expected_quantity": "0.009793202",
+      "broker_quantity": "0",
       "difference_quantity": "-0.009793202",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.009793202"
