@@ -7406,7 +7406,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T13:49:56+00:00",
+    "observed_at_utc": "2026-10-29T14:38:56+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
