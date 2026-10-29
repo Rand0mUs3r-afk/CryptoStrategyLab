@@ -1,1 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+PEPE/USD,5m,trend_pullback,1793236200,order_result,broker_order_returned,"{""broker_order_id"": ""95755a73-95e3-40e2-a0b8-46035a6bd882"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-f2803b2f23dbaf63daf00a74fa48b682"", ""quantity"": ""39761431.411530815"", ""reference_ask"": 5.03e-06}"

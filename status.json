@@ -4,19 +4,60 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [],
-  "entry_decisions": [],
-  "entry_pause_reasons": [
-    "entry_scan_interval_not_elapsed"
+  "data_errors": [
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    }
   ],
-  "candidates": 0,
+  "entry_decisions": [
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793236200,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-f2803b2f23dbaf63daf00a74fa48b682",
+        "quantity": "39761431.411530815",
+        "reference_ask": 5.03e-06,
+        "broker_status": "pending_new",
+        "broker_order_id": "95755a73-95e3-40e2-a0b8-46035a6bd882"
+      }
+    }
+  ],
+  "entry_pause_reasons": [],
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "not_due",
-  "next_entry_scan_at_utc": "2026-10-29T00:16:12+00:00",
-  "observed_at_utc": "2026-10-29T00:15:24+00:00",
+  "entry_scan_status": "completed_with_data_errors",
+  "next_entry_scan_at_utc": "2026-10-29T01:40:30+00:00",
+  "watchlist_status": "partial",
+  "watchlist_symbols": [
+    "BTC/USD",
+    "ETH/USD",
+    "LINK/USD",
+    "SOL/USD",
+    "AVAX/USD",
+    "LTC/USD",
+    "PEPE/USD",
+    "UNI/USD",
+    "BCH/USD",
+    "ARB/USD",
+    "AAVE/USD"
+  ],
+  "observed_at_utc": "2026-10-29T01:10:59+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T00:15:24+00:00",
+    "observed_at_utc": "2026-10-29T01:10:58+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -60,13 +101,13 @@
       },
       {
         "symbol": "PEPEUSD",
-        "filled_quantity": "99206.34920635",
+        "filled_quantity": "39860637.760737165",
         "fee_quantity": "0",
-        "expected_quantity": "99206.34920635",
-        "broker_quantity": "0",
-        "difference_quantity": "-99206.34920635",
+        "expected_quantity": "39860637.760737165",
+        "broker_quantity": "39662027.833001987",
+        "difference_quantity": "-198609.927735178",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "99206.34920635"
+        "unconfirmed_shortfall": "198609.927735178"
       },
       {
         "symbol": "SOLUSD",
