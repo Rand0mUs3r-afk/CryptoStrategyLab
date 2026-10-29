@@ -6714,7 +6714,8 @@
       "filled_avg_price": null,
       "filled_at": null,
       "broker_updated_at": "2026-10-29T13:49:29.772027714Z",
-      "reference_ask": 91.05
+      "reference_ask": 91.05,
+      "cancel_requested_at": 1793284737.0464737
     },
     "csl2-469282e1a299f819a3fe3f3b1c8d897f": {
       "payload": {
