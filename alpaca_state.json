@@ -7818,14 +7818,14 @@
         "client_order_id": "csl2-c85038d0825c6862a3a66dc178f9b1a2"
       },
       "cycle_id": "csl2-c85038d0825c6862a3a66dc178f9b1a2",
-      "status": "new",
+      "status": "canceled",
       "created_at": 1793290902.9140375,
       "attempted": true,
       "filled_qty": "0",
       "broker_order_id": "6e2338c1-b328-46d3-959d-f1e2056ab203",
       "filled_avg_price": null,
       "filled_at": null,
-      "broker_updated_at": "2026-10-29T16:21:54.47209574Z",
+      "broker_updated_at": "2026-10-29T17:13:15.221356296Z",
       "reference_ask": 96.007,
       "cancel_requested_at": 1793293993.8734028
     }
@@ -8455,11 +8455,13 @@
       "hold_seconds": 21600,
       "id": "csl2-c85038d0825c6862a3a66dc178f9b1a2",
       "created_at": 1793290902.9140375,
-      "status": "pending",
+      "status": "closed",
       "distance": 2.0303213446929043,
       "target_r": 2.0,
       "reference_ask": 96.007,
-      "remaining_qty": 0.0
+      "remaining_qty": 0.0,
+      "exit_reason": "unfilled_entry",
+      "closed_at": "2026-10-29T17:13:21+00:00"
     }
   ],
   "seen": {
@@ -8604,7 +8606,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T17:13:13+00:00",
+    "observed_at_utc": "2026-10-29T17:13:20+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -8725,7 +8727,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1793290882.38345,
+  "last_entry_scan_at": 1793294001.0756464,
   "watchlist": {
     "observed_at_utc": "2026-10-29T16:21:25+00:00",
     "status": "partial",
