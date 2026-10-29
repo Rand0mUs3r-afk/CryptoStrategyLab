@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-10-29T20:09:32+00:00",
+  "observed_at_utc": "2026-10-29T20:48:50+00:00",
   "quantities": [
     {
       "symbol": "ARBUSD",
@@ -24,10 +24,10 @@
     },
     {
       "symbol": "BTCUSD",
-      "filled_quantity": "0.002497494",
+      "filled_quantity": "0.000012395",
       "fee_quantity": "-0.000012395",
-      "expected_quantity": "0.002485099",
-      "broker_quantity": "0.002485099",
+      "expected_quantity": "0E-9",
+      "broker_quantity": "0",
       "difference_quantity": "0E-9",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0"
@@ -44,10 +44,10 @@
     },
     {
       "symbol": "ETHUSD",
-      "filled_quantity": "0.087207425",
+      "filled_quantity": "0.000641803",
       "fee_quantity": "-0.000641803",
-      "expected_quantity": "0.086565622",
-      "broker_quantity": "0.086565622",
+      "expected_quantity": "0E-9",
+      "broker_quantity": "0",
       "difference_quantity": "0E-9",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0"
