@@ -8,15 +8,13 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 4. Skipped: 2. Broker order results: 2.
+Candidates: 2. Skipped: 1. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| ETH/USD | 1h | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "1c9a8dac-78f5-460d-b9e3-6e2d6b3cce4c", "broker_status": "pending_new", "client_order_id": "csl2-bd9e2505165d0f68e288404cdafc8d4d", "quantity": "0.086782579", "reference_ask": 2304.61} |
-| BCH/USD | 15m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 57.98395093499739} |
-| BCH/USD | 15m | rsi_rebound | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 57.98395093499739} |
-| DOT/USD | 15m | rsi_rebound | order_result | broker_order_returned | {"broker_order_id": "fbc42c6b-4f3c-416c-b323-d7dcc26abff9", "broker_status": "pending_new", "client_order_id": "csl2-837470ffc5b262f99c3c89081318be97", "quantity": "206.185779572", "reference_ask": 0.969999} |
+| ETH/USD | 1h | bollinger_reversion | skipped | already_seen | {} |
+| SOL/USD | 15m | rsi_rebound | order_result | broker_order_returned | {"broker_order_id": "838e21f3-d671-422a-bf31-b2802cbdc288", "broker_status": "pending_new", "client_order_id": "csl2-31dfb354f12b4296b460d05a82927dc0", "quantity": "1.997443272", "reference_ask": 100.128} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -27,6 +25,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | ARB/USD | 15m | bollinger_reversion | 0.16432 | 1217.433649866 | 200.0486973459811 | 1214.390065741 | 0.16884034877884005 | 0.16205982561057997 | open |
 | ETH/USD | 1h | bollinger_reversion | 2305.2 | 0.086782579 | 200.05120111079998 | 0.086565622 | 2359.320736026376 | 2278.1396319868118 | open |
 | DOT/USD | 15m | rsi_rebound | 0.9702 | 206.185779572 | 200.0414433407544 | 205.670315123 | 0.9933076118532437 | 0.958646194073378 | open |
+| SOL/USD | 15m | rsi_rebound | 100.121 | 1.997443272 | 199.98601783591198 | 1.992449663 | 101.35444207935545 | 99.50427896032227 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -62,7 +61,7 @@ Accounting final: False
 | ETHUSD | 0.086994885 | 0.086565622 | -0.000429263 | 0.000429263 |
 | LINKUSD | 0.042194093 | 0 | -0.042194093 | 0.042194093 |
 | PEPEUSD | 300859.416487735 | 0 | -300859.416487735 | 300859.416487735 |
-| SOLUSD | 0.009793202 | 0 | -0.009793202 | 0.009793202 |
+| SOLUSD | 2.007236474 | 1.992449663 | -0.014786811 | 0.014786811 |
 | UNIUSD | 0.069003589 | 0 | -0.069003589 | 0.069003589 |
 
 PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
@@ -70,15 +69,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed
-Next entry scan eligible: 2026-10-29T04:39:05+00:00
+Next entry scan eligible: 2026-10-29T05:20:53+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-10-29T04:09:06+00:00
+Last refresh: 2026-10-29T04:50:54+00:00
 Source status: partial
-Selected: ARB/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, PEPE/USD, BCH/USD, DOT/USD
+Selected: ARB/USD, DOT/USD, ETH/USD, AVAX/USD, BTC/USD, LINK/USD, LTC/USD, SOL/USD, PEPE/USD, BCH/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
