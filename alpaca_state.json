@@ -3282,14 +3282,15 @@
         "client_order_id": "csl2-bd9e2505165d0f68e288404cdafc8d4d"
       },
       "cycle_id": "csl2-bd9e2505165d0f68e288404cdafc8d4d",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793246958.8067548,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "0.086782579",
       "broker_order_id": "1c9a8dac-78f5-460d-b9e3-6e2d6b3cce4c",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-10-29T04:09:29.037772721Z"
+      "filled_avg_price": 2305.2,
+      "filled_at": "2026-10-29T04:09:29.039230497Z",
+      "broker_updated_at": "2026-10-29T04:09:29.071766251Z",
+      "reference_ask": 2304.61
     }
   },
   "cycles": [
@@ -3600,11 +3601,17 @@
       "hold_seconds": 259200,
       "id": "csl2-bd9e2505165d0f68e288404cdafc8d4d",
       "created_at": 1793246958.8067548,
-      "status": "pending",
+      "status": "open",
       "distance": 27.060368013188118,
       "target_r": 2.0,
       "reference_ask": 2304.61,
-      "remaining_qty": 0.0
+      "remaining_qty": 0.086565622,
+      "entry_price": 2305.2,
+      "entry_qty": 0.086782579,
+      "entry_notional_usd": 200.05120111079998,
+      "tp": 2359.320736026376,
+      "sl": 2278.1396319868118,
+      "entry_time_utc": "2026-10-29T04:09:29.039230497Z"
     }
   ],
   "seen": {
@@ -3664,7 +3671,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T04:09:27+00:00",
+    "observed_at_utc": "2026-10-29T04:09:34+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -3688,13 +3695,13 @@
       },
       {
         "symbol": "ETHUSD",
-        "filled_quantity": "0.000424846",
+        "filled_quantity": "0.087207425",
         "fee_quantity": "-0.00021254",
-        "expected_quantity": "0.000212306",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.000212306",
+        "expected_quantity": "0.086994885",
+        "broker_quantity": "0.086565622",
+        "difference_quantity": "-0.000429263",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.000212306"
+        "unconfirmed_shortfall": "0.000429263"
       },
       {
         "symbol": "LINKUSD",
