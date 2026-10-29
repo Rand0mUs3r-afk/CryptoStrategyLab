@@ -8081,10 +8081,14 @@
         "client_order_id": "csl2-80a6bce39a530113a0dd1e7320ffaf97"
       },
       "cycle_id": "csl2-c80e2d0897ace61ff2fd105f35e9d5d0",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1793296563.3512008,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "a703caa1-7a63-4694-90b4-83edb84565c4",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-10-29T17:56:12.952431197Z"
     }
   },
   "cycles": [
