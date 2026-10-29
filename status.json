@@ -32,71 +32,177 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
-      "timeframe": "5m",
+      "symbol": "ARB/USD",
+      "timeframe": "15m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793284500,
+      "signal_time": 1793286900,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793286900,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
       "symbol": "ETH/USD",
-      "timeframe": "5m",
+      "timeframe": "15m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793284500,
+      "signal_time": 1793286900,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793284500,
+      "symbol": "FIL/USD",
+      "timeframe": "15m",
+      "strategy": "macd_momentum",
+      "signal_time": 1793286900,
       "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 62.39237873739252,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "squeeze_breakout",
-      "signal_time": 1793284500,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 62.39237873739252,
-        "max_spread_bps": 50
-      }
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
       "symbol": "SOL/USD",
-      "timeframe": "5m",
+      "timeframe": "15m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793284500,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
+      "signal_time": 1793286900,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "LINK/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793286900,
+      "outcome": "skipped",
+      "reason": "no_fresh_quote",
       "details": {
-        "client_order_id": "csl2-f3ce969f1a3242d096e66c0bf69a5149",
-        "quantity": "1.961938395",
-        "reference_ask": 101.94,
-        "broker_status": "pending_new",
-        "broker_order_id": "a6a604e4-11e9-42bb-9318-8af764d4658c"
+        "max_quote_age_seconds": 30
       }
     },
     {
-      "symbol": "HYPE/USD",
+      "symbol": "LINK/USD",
       "timeframe": "1h",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793282400,
+      "strategy": "trend_pullback",
+      "signal_time": 1793286000,
       "outcome": "skipped",
-      "reason": "symbol_cooldown",
+      "reason": "no_fresh_quote",
       "details": {
-        "cooldown_seconds": 300
+        "max_quote_age_seconds": 30
+      }
+    },
+    {
+      "symbol": "LINK/USD",
+      "timeframe": "1h",
+      "strategy": "rolling_vwap_reclaim",
+      "signal_time": 1793286000,
+      "outcome": "skipped",
+      "reason": "no_fresh_quote",
+      "details": {
+        "max_quote_age_seconds": 30
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793286900,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 61.52914375382923,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793286900,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 61.52914375382923,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "15m",
+      "strategy": "macd_momentum",
+      "signal_time": 1793286900,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 61.52914375382923,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "15m",
+      "strategy": "squeeze_breakout",
+      "signal_time": 1793286900,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 61.52914375382923,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "15m",
+      "strategy": "rolling_vwap_reclaim",
+      "signal_time": 1793286900,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 61.52914375382923,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793286000,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-09db4b88704b79b668e31c7262c8cb3d",
+        "quantity": "38668482.10735587",
+        "reference_ask": 5.03e-06,
+        "broker_status": "pending_new",
+        "broker_order_id": "375b4bba-ee65-4819-8cb2-7b93194f1023"
+      }
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "1h",
+      "strategy": "rolling_vwap_reclaim",
+      "signal_time": 1793286000,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "HYPE/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793286900,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
       }
     },
     {
@@ -116,31 +222,56 @@
       "outcome": "skipped",
       "reason": "already_seen",
       "details": {}
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793286900,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "DOT/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793286900,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 8,
+  "candidates": 20,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-10-29T15:09:19+00:00",
+  "next_entry_scan_at_utc": "2026-10-29T15:58:53+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
     "BTC/USD",
     "ETH/USD",
     "FIL/USD",
+    "SOL/USD",
     "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
-    "SOL/USD",
     "PEPE/USD",
     "HYPE/USD",
+    "UNI/USD",
     "DOT/USD"
   ],
-  "observed_at_utc": "2026-10-29T14:39:53+00:00",
+  "observed_at_utc": "2026-10-29T15:29:25+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T14:39:52+00:00",
+    "observed_at_utc": "2026-10-29T15:29:24+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -224,13 +355,13 @@
       },
       {
         "symbol": "PEPEUSD",
-        "filled_quantity": "499555.461267400",
+        "filled_quantity": "39168037.568623270",
         "fee_quantity": "-396462.677762245",
-        "expected_quantity": "103092.783505155",
-        "broker_quantity": "0",
-        "difference_quantity": "-103092.783505155",
+        "expected_quantity": "38771574.890861025",
+        "broker_quantity": "38571810.90208748",
+        "difference_quantity": "-199763.988773545",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "103092.783505155"
+        "unconfirmed_shortfall": "199763.988773545"
       },
       {
         "symbol": "SOLUSD",
