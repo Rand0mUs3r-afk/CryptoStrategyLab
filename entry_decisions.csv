@@ -1,5 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,6h,donchian_breakout,1793296800,skipped,symbol_already_active,{}
-HYPE/USD,6h,donchian_breakout,1793296800,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-BCH/USD,6h,trend_pullback,1793296800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.20250740031304}"
-BCH/USD,6h,rolling_vwap_reclaim,1793296800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.20250740031304}"
+PEPE/USD,6h,donchian_breakout,1793296800,skipped,already_seen,{}
+SOL/USD,5m,rsi_rebound,1793301900,order_result,broker_order_returned,"{""broker_order_id"": ""18735d5d-f6b1-4b83-9c38-64659e6bbb28"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-80f9e54369f33df92311f4083eef1e5f"", ""quantity"": ""1.994415636"", ""reference_ask"": 100.28}"
+HYPE/USD,6h,donchian_breakout,1793296800,skipped,already_seen,{}
+BCH/USD,6h,trend_pullback,1793296800,skipped,already_seen,{}
+BCH/USD,6h,rolling_vwap_reclaim,1793296800,skipped,already_seen,{}
+BCH/USD,5m,trend_pullback,1793301900,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.322474892023955}"

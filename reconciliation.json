@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-10-29T18:30:53+00:00",
+  "observed_at_utc": "2026-10-29T19:26:15+00:00",
   "quantities": [
     {
       "symbol": "ARBUSD",
@@ -94,13 +94,13 @@
     },
     {
       "symbol": "SOLUSD",
-      "filled_quantity": "0.019691657",
+      "filled_quantity": "2.014107293",
       "fee_quantity": "-0.014786811",
-      "expected_quantity": "0.004904846",
-      "broker_quantity": "0",
-      "difference_quantity": "-0.004904846",
+      "expected_quantity": "1.999320482",
+      "broker_quantity": "1.989429596",
+      "difference_quantity": "-0.009890886",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.004904846"
+      "unconfirmed_shortfall": "0.009890886"
     },
     {
       "symbol": "UNIUSD",
