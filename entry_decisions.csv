@@ -1,16 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,1h,ema_cross,1793289600,skipped,symbol_already_active,{}
-PEPE/USD,15m,donchian_breakout,1793290500,skipped,symbol_already_active,{}
-PEPE/USD,1h,donchian_breakout,1793289600,skipped,symbol_already_active,{}
-PEPE/USD,1h,macd_momentum,1793289600,skipped,symbol_already_active,{}
-AVAX/USD,15m,donchian_breakout,1793290500,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.68922431585098}"
-LTC/USD,15m,donchian_breakout,1793290500,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.269067015779434}"
-LTC/USD,15m,squeeze_breakout,1793290500,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.269067015779434}"
-LTC/USD,1h,trend_pullback,1793289600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.269067015779434}"
-LTC/USD,1h,macd_momentum,1793289600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.269067015779434}"
-HYPE/USD,15m,donchian_breakout,1793290500,order_result,broker_order_returned,"{""broker_order_id"": ""6e2338c1-b328-46d3-959d-f1e2056ab203"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-c85038d0825c6862a3a66dc178f9b1a2"", ""quantity"": ""1.891298999"", ""reference_ask"": 96.007}"
-HYPE/USD,1h,donchian_breakout,1793289600,skipped,symbol_already_active,{}
+BTC/USD,1h,ema_cross,1793293200,skipped,symbol_already_active,{}
+HYPE/USD,1h,donchian_breakout,1793293200,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
 HYPE/USD,6h,ema_cross,1793275200,skipped,already_seen,{}
 HYPE/USD,6h,donchian_breakout,1793275200,skipped,already_seen,{}
-UNI/USD,15m,donchian_breakout,1793290500,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-UNI/USD,1h,donchian_breakout,1793289600,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
