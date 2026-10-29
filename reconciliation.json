@@ -1,13 +1,13 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-10-29T17:13:20+00:00",
+  "observed_at_utc": "2026-10-29T17:56:47+00:00",
   "quantities": [
     {
       "symbol": "ARBUSD",
-      "filled_quantity": "1180.266627686",
+      "filled_quantity": "8.804502026",
       "fee_quantity": "-5.868506723",
-      "expected_quantity": "1174.398120963",
-      "broker_quantity": "1171.46212566",
+      "expected_quantity": "2.935995303",
+      "broker_quantity": "0",
       "difference_quantity": "-2.935995303",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "2.935995303"
@@ -54,10 +54,10 @@
     },
     {
       "symbol": "FILUSD",
-      "filled_quantity": "219.884121068",
+      "filled_quantity": "0.549710303",
       "fee_quantity": "0",
-      "expected_quantity": "219.884121068",
-      "broker_quantity": "219.334410765",
+      "expected_quantity": "0.549710303",
+      "broker_quantity": "0",
       "difference_quantity": "-0.549710303",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.549710303"

@@ -6,18 +6,6 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "ARB/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "FIL/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
       "symbol": "LINK/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -34,6 +22,12 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
+    },
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
@@ -43,7 +37,7 @@
       "strategy": "ema_cross",
       "signal_time": 1793293200,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -52,10 +46,8 @@
       "strategy": "donchian_breakout",
       "signal_time": 1793293200,
       "outcome": "skipped",
-      "reason": "symbol_cooldown",
-      "details": {
-        "cooldown_seconds": 300
-      }
+      "reason": "already_seen",
+      "details": {}
     },
     {
       "symbol": "HYPE/USD",
@@ -74,19 +66,32 @@
       "outcome": "skipped",
       "reason": "already_seen",
       "details": {}
+    },
+    {
+      "symbol": "HYPE/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793296500,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-d59a3dbd4b68aeafedf969859d698bd4",
+        "quantity": "2.120902019",
+        "reference_ask": 94.2995,
+        "broker_status": "pending_new",
+        "broker_order_id": "fd782629-77e5-4b72-ba24-e36d678ab29b"
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 4,
+  "candidates": 5,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-10-29T17:43:21+00:00",
+  "next_entry_scan_at_utc": "2026-10-29T18:26:18+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
-    "ARB/USD",
     "BTC/USD",
     "ETH/USD",
-    "FIL/USD",
     "PEPE/USD",
     "AVAX/USD",
     "LINK/USD",
@@ -94,19 +99,20 @@
     "SOL/USD",
     "HYPE/USD",
     "UNI/USD",
-    "BONK/USD"
+    "BONK/USD",
+    "ARB/USD"
   ],
-  "observed_at_utc": "2026-10-29T17:13:36+00:00",
+  "observed_at_utc": "2026-10-29T17:56:49+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T17:13:20+00:00",
+    "observed_at_utc": "2026-10-29T17:56:47+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
-        "filled_quantity": "1180.266627686",
+        "filled_quantity": "8.804502026",
         "fee_quantity": "-5.868506723",
-        "expected_quantity": "1174.398120963",
-        "broker_quantity": "1171.46212566",
+        "expected_quantity": "2.935995303",
+        "broker_quantity": "0",
         "difference_quantity": "-2.935995303",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "2.935995303"
@@ -153,10 +159,10 @@
       },
       {
         "symbol": "FILUSD",
-        "filled_quantity": "219.884121068",
+        "filled_quantity": "0.549710303",
         "fee_quantity": "0",
-        "expected_quantity": "219.884121068",
-        "broker_quantity": "219.334410765",
+        "expected_quantity": "0.549710303",
+        "broker_quantity": "0",
         "difference_quantity": "-0.549710303",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.549710303"
