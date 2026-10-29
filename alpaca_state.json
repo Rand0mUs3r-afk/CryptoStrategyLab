@@ -6467,6 +6467,21 @@
       "filled_at": null,
       "broker_updated_at": "2026-10-29T13:49:29.772027714Z",
       "reference_ask": 91.05
+    },
+    "csl2-469282e1a299f819a3fe3f3b1c8d897f": {
+      "payload": {
+        "symbol": "PEPE/USD",
+        "side": "buy",
+        "qty": "41237113.40206186",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-469282e1a299f819a3fe3f3b1c8d897f"
+      },
+      "cycle_id": "csl2-469282e1a299f819a3fe3f3b1c8d897f",
+      "status": "queued",
+      "created_at": 1793281777.48787,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -7009,6 +7024,22 @@
       "target_r": 2.0,
       "reference_ask": 91.05,
       "remaining_qty": 0.0
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793281500,
+      "atr": 2.9202998073285803e-08,
+      "signal_close": 4.85e-06,
+      "hold_seconds": 3600,
+      "id": "csl2-469282e1a299f819a3fe3f3b1c8d897f",
+      "created_at": 1793281777.48787,
+      "status": "pending",
+      "distance": 4.3804497109928706e-08,
+      "target_r": 2.0,
+      "reference_ask": 4.85e-06,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -7106,7 +7137,8 @@
     "FIL/USD|15m|donchian_breakout|1793277900": 1793278676.2120104,
     "BTC/USD|5m|bollinger_reversion|1793281500": 1793281758.3525372,
     "LTC/USD|5m|bollinger_reversion|1793281500": 1793281758.352556,
-    "HYPE/USD|1h|donchian_breakout|1793278800": 1793281758.4729476
+    "HYPE/USD|1h|donchian_breakout|1793278800": 1793281758.4729476,
+    "PEPE/USD|5m|bollinger_reversion|1793281500": 1793281777.48787
   },
   "day": "2026-10-29",
   "day_start_equity": 99984.2,
@@ -7115,7 +7147,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T13:49:35+00:00",
+    "observed_at_utc": "2026-10-29T13:49:47+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
