@@ -6164,6 +6164,21 @@
       "filled_at": "2026-10-29T12:57:49.373827249Z",
       "broker_updated_at": "2026-10-29T12:57:49.422308579Z",
       "reference_ask": 0.1703
+    },
+    "csl2-c80e2d0897ace61ff2fd105f35e9d5d0": {
+      "payload": {
+        "symbol": "FIL/USD",
+        "side": "buy",
+        "qty": "219.884121068",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-c80e2d0897ace61ff2fd105f35e9d5d0"
+      },
+      "cycle_id": "csl2-c80e2d0897ace61ff2fd105f35e9d5d0",
+      "status": "queued",
+      "created_at": 1793278676.2120104,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -6668,6 +6683,22 @@
       "tp": 0.1737328821130826,
       "sl": 0.1686135589434587,
       "entry_time_utc": "2026-10-29T12:57:49.373827249Z"
+    },
+    {
+      "symbol": "FIL/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793277900,
+      "atr": 0.005502596737509221,
+      "signal_close": 0.911,
+      "hold_seconds": 21600,
+      "id": "csl2-c80e2d0897ace61ff2fd105f35e9d5d0",
+      "created_at": 1793278676.2120104,
+      "status": "pending",
+      "distance": 0.008253895106263832,
+      "target_r": 2.0,
+      "reference_ask": 0.90957,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -6761,7 +6792,8 @@
     "UNI/USD|1h|ema_cross|1793275200": 1793275751.652186,
     "UNI/USD|1h|trend_pullback|1793275200": 1793275751.7516644,
     "UNI/USD|1h|macd_momentum|1793275200": 1793275751.8053696,
-    "ARB/USD|15m|ema_cross|1793277900": 1793278659.009252
+    "ARB/USD|15m|ema_cross|1793277900": 1793278659.009252,
+    "FIL/USD|15m|donchian_breakout|1793277900": 1793278676.2120104
   },
   "day": "2026-10-29",
   "day_start_equity": 99984.2,
@@ -6770,7 +6802,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T12:57:55+00:00",
+    "observed_at_utc": "2026-10-29T12:58:05+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
