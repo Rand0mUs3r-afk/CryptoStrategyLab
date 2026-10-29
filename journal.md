@@ -8,17 +8,13 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 6. Skipped: 5. Broker order results: 1.
+Candidates: 2. Skipped: 2. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
 | PEPE/USD | 6h | donchian_breakout | skipped | already_seen | {} |
-| SOL/USD | 5m | rsi_rebound | order_result | broker_order_returned | {"broker_order_id": "18735d5d-f6b1-4b83-9c38-64659e6bbb28", "broker_status": "pending_new", "client_order_id": "csl2-80f9e54369f33df92311f4083eef1e5f", "quantity": "1.994415636", "reference_ask": 100.28} |
 | HYPE/USD | 6h | donchian_breakout | skipped | already_seen | {} |
-| BCH/USD | 6h | trend_pullback | skipped | already_seen | {} |
-| BCH/USD | 6h | rolling_vwap_reclaim | skipped | already_seen | {} |
-| BCH/USD | 5m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 59.322474892023955} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -36,7 +32,6 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | ETH/USD | 1h | bollinger_reversion | 2305.2 | 0.086782579 | 200.05120111079998 | 0.086565622 | 2359.320736026376 | 2278.1396319868118 | open |
 | BTC/USD | 1h | bollinger_reversion | 80283.540728391 | 0.002491328 | 200.0126329557809 | 0.002485099 | 81609.51263608344 | 79620.55477454478 | open |
 | PEPE/USD | 1h | trend_pullback | 5.03e-06 | 38668482.10735587 | 194.50246500000003 | 38571810.90208748 | 5.424840282494075e-06 | 4.832579858752963e-06 | open |
-| SOL/USD | 5m | rsi_rebound | 100.3 | 1.994415636 | 200.0398882908 | 1.989429596 | 101.01718373799453 | 99.94140813100273 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -66,6 +61,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | SOL/USD | 5m | donchian_breakout | 101.96 | 1.961938395 | 200.0392387542 | 0.0 | 102.8022141789213 | 101.53889291053935 | closed |
 | HYPE/USD | 15m | donchian_breakout | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
 | HYPE/USD | 5m | bollinger_reversion | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
+| SOL/USD | 5m | rsi_rebound | 100.3 | 1.994415636 | 200.0398882908 | 0.0 | 101.01718373799453 | 99.94140813100273 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -89,7 +85,7 @@ Accounting final: False
 | HYPEUSD | 0 | 0 | 0 | 0 |
 | LINKUSD | 0E-9 | 0 | 0E-9 | 0 |
 | PEPEUSD | 38771574.890861025 | 38571810.90208748 | -199763.988773545 | 199763.988773545 |
-| SOLUSD | 1.999320482 | 1.989429596 | -0.009890886 | 0.009890886 |
+| SOLUSD | 0.009890886 | 0 | -0.009890886 | 0.009890886 |
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 
 PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
@@ -97,15 +93,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-10-29T19:55:45+00:00
+Next entry scan eligible: 2026-10-29T20:39:32+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-10-29T19:25:46+00:00
+Last refresh: 2026-10-29T20:09:33+00:00
 Source status: partial
-Selected: BTC/USD, ETH/USD, PEPE/USD, AVAX/USD, LINK/USD, LTC/USD, SOL/USD, HYPE/USD, BCH/USD, UNI/USD, ARB/USD
+Selected: BTC/USD, ETH/USD, PEPE/USD, AVAX/USD, LINK/USD, LTC/USD, SOL/USD, HYPE/USD, UNI/USD, ARB/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

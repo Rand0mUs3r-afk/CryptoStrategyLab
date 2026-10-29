@@ -29,21 +29,6 @@
       "details": {}
     },
     {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1793301900,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-80f9e54369f33df92311f4083eef1e5f",
-        "quantity": "1.994415636",
-        "reference_ask": 100.28,
-        "broker_status": "pending_new",
-        "broker_order_id": "18735d5d-f6b1-4b83-9c38-64659e6bbb28"
-      }
-    },
-    {
       "symbol": "HYPE/USD",
       "timeframe": "6h",
       "strategy": "donchian_breakout",
@@ -51,43 +36,13 @@
       "outcome": "skipped",
       "reason": "already_seen",
       "details": {}
-    },
-    {
-      "symbol": "BCH/USD",
-      "timeframe": "6h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793296800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "BCH/USD",
-      "timeframe": "6h",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1793296800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "BCH/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793301900,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 59.322474892023955,
-        "max_spread_bps": 50
-      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 6,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-10-29T19:55:45+00:00",
+  "next_entry_scan_at_utc": "2026-10-29T20:39:32+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -98,14 +53,13 @@
     "LTC/USD",
     "SOL/USD",
     "HYPE/USD",
-    "BCH/USD",
     "UNI/USD",
     "ARB/USD"
   ],
-  "observed_at_utc": "2026-10-29T19:26:17+00:00",
+  "observed_at_utc": "2026-10-29T20:09:46+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T19:26:15+00:00",
+    "observed_at_utc": "2026-10-29T20:09:32+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -199,10 +153,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.014107293",
+        "filled_quantity": "0.024677697",
         "fee_quantity": "-0.014786811",
-        "expected_quantity": "1.999320482",
-        "broker_quantity": "1.989429596",
+        "expected_quantity": "0.009890886",
+        "broker_quantity": "0",
         "difference_quantity": "-0.009890886",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.009890886"
