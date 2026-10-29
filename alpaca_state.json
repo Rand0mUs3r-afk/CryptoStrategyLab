@@ -8798,6 +8798,21 @@
       "filled_at": "2026-10-29T19:26:09.953126949Z",
       "broker_updated_at": "2026-10-29T19:26:09.971508928Z",
       "reference_ask": 100.28
+    },
+    "csl2-0abf9a81619612321905d80fafd8fa66": {
+      "payload": {
+        "symbol": "SOL/USD",
+        "side": "sell",
+        "qty": "1.989429596",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-0abf9a81619612321905d80fafd8fa66"
+      },
+      "cycle_id": "csl2-80f9e54369f33df92311f4083eef1e5f",
+      "status": "queued",
+      "created_at": 1793304556.7989705,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -9477,7 +9492,8 @@
       "entry_notional_usd": 200.0398882908,
       "tp": 101.01718373799453,
       "sl": 99.94140813100273,
-      "entry_time_utc": "2026-10-29T19:26:09.953126949Z"
+      "entry_time_utc": "2026-10-29T19:26:09.953126949Z",
+      "exit_reason": "stop"
     }
   ],
   "seen": {
@@ -9631,7 +9647,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T19:26:15+00:00",
+    "observed_at_utc": "2026-10-29T20:09:25+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
