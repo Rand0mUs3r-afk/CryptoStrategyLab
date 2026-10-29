@@ -4,47 +4,85 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    }
-  ],
+  "data_errors": [],
   "entry_decisions": [
     {
-      "symbol": "PEPE/USD",
+      "symbol": "ETH/USD",
       "timeframe": "1h",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1793242800,
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793246400,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-bd9e2505165d0f68e288404cdafc8d4d",
+        "quantity": "0.086782579",
+        "reference_ask": 2304.61,
+        "broker_status": "pending_new",
+        "broker_order_id": "1c9a8dac-78f5-460d-b9e3-6e2d6b3cce4c"
+      }
+    },
+    {
+      "symbol": "BCH/USD",
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793246400,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 57.98395093499739,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "BCH/USD",
+      "timeframe": "15m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1793246400,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 57.98395093499739,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "DOT/USD",
+      "timeframe": "15m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1793246400,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-837470ffc5b262f99c3c89081318be97",
+        "quantity": "206.185779572",
+        "reference_ask": 0.969999,
+        "broker_status": "pending_new",
+        "broker_order_id": "fbc42c6b-4f3c-416c-b323-d7dcc26abff9"
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 4,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-10-29T03:53:42+00:00",
+  "entry_scan_status": "completed",
+  "next_entry_scan_at_utc": "2026-10-29T04:39:05+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
-    "PEPE/USD",
     "AVAX/USD",
     "BTC/USD",
     "ETH/USD",
     "LINK/USD",
     "LTC/USD",
     "SOL/USD",
+    "PEPE/USD",
     "BCH/USD",
     "DOT/USD"
   ],
-  "observed_at_utc": "2026-10-29T03:23:58+00:00",
+  "observed_at_utc": "2026-10-29T04:09:53+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T03:23:42+00:00",
+    "observed_at_utc": "2026-10-29T04:09:51+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -67,14 +105,24 @@
         "unconfirmed_shortfall": "0.000006166"
       },
       {
-        "symbol": "ETHUSD",
-        "filled_quantity": "0.000424846",
-        "fee_quantity": "-0.00021254",
-        "expected_quantity": "0.000212306",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.000212306",
+        "symbol": "DOTUSD",
+        "filled_quantity": "206.185779572",
+        "fee_quantity": "0",
+        "expected_quantity": "206.185779572",
+        "broker_quantity": "205.670315123",
+        "difference_quantity": "-0.515464449",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.000212306"
+        "unconfirmed_shortfall": "0.515464449"
+      },
+      {
+        "symbol": "ETHUSD",
+        "filled_quantity": "0.087207425",
+        "fee_quantity": "-0.00021254",
+        "expected_quantity": "0.086994885",
+        "broker_quantity": "0.086565622",
+        "difference_quantity": "-0.000429263",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "0.000429263"
       },
       {
         "symbol": "LINKUSD",
@@ -88,10 +136,10 @@
       },
       {
         "symbol": "PEPEUSD",
-        "filled_quantity": "41098405.428757673",
+        "filled_quantity": "300859.416487735",
         "fee_quantity": "0",
-        "expected_quantity": "41098405.428757673",
-        "broker_quantity": "40797546.012269938",
+        "expected_quantity": "300859.416487735",
+        "broker_quantity": "0",
         "difference_quantity": "-300859.416487735",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "300859.416487735"
