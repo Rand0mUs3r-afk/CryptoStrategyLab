@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-10-29T04:51:25+00:00",
+  "observed_at_utc": "2026-10-29T05:28:53+00:00",
   "quantities": [
     {
       "symbol": "ARBUSD",
@@ -14,13 +14,13 @@
     },
     {
       "symbol": "BTCUSD",
-      "filled_quantity": "0.000006166",
+      "filled_quantity": "0.002497494",
       "fee_quantity": "0",
-      "expected_quantity": "0.000006166",
-      "broker_quantity": "0",
-      "difference_quantity": "-0.000006166",
+      "expected_quantity": "0.002497494",
+      "broker_quantity": "0.002485099",
+      "difference_quantity": "-0.000012395",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.000006166"
+      "unconfirmed_shortfall": "0.000012395"
     },
     {
       "symbol": "DOTUSD",
@@ -54,13 +54,13 @@
     },
     {
       "symbol": "PEPEUSD",
-      "filled_quantity": "300859.416487735",
+      "filled_quantity": "38542163.926291665",
       "fee_quantity": "0",
-      "expected_quantity": "300859.416487735",
-      "broker_quantity": "0",
-      "difference_quantity": "-300859.416487735",
+      "expected_quantity": "38542163.926291665",
+      "broker_quantity": "38145701.24852942",
+      "difference_quantity": "-396462.677762245",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "300859.416487735"
+      "unconfirmed_shortfall": "396462.677762245"
     },
     {
       "symbol": "SOLUSD",

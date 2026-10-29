@@ -1,3 +1,9 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,1h,bollinger_reversion,1793246400,skipped,already_seen,{}
-SOL/USD,15m,rsi_rebound,1793249100,order_result,broker_order_returned,"{""broker_order_id"": ""838e21f3-d671-422a-bf31-b2802cbdc288"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-31dfb354f12b4296b460d05a82927dc0"", ""quantity"": ""1.997443272"", ""reference_ask"": 100.128}"
+SOL/USD,1h,bollinger_reversion,1793250000,skipped,symbol_already_active,{}
+AVAX/USD,1h,bollinger_reversion,1793250000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+AVAX/USD,1h,rsi_rebound,1793250000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+BTC/USD,1h,bollinger_reversion,1793250000,order_result,broker_order_returned,"{""broker_order_id"": ""de618564-ef84-4ea7-b5dc-f70d6065d7bd"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-cda9918a3e56b6b2708aa959ec7d371a"", ""quantity"": ""0.002491328"", ""reference_ask"": 80278.455}"
+PEPE/USD,15m,trend_pullback,1793250900,order_result,broker_order_returned,"{""broker_order_id"": ""f0cb3e7a-f313-4c0c-8c96-776b08dca4d9"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-c48b36af55f32fd5320bd72230a2142a"", ""quantity"": ""38241304.50980393"", ""reference_ask"": 5.1e-06}"
+PEPE/USD,1h,trend_pullback,1793250000,skipped,symbol_already_active,{}
+BCH/USD,1h,bollinger_reversion,1793250000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+BCH/USD,1h,rsi_rebound,1793250000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
