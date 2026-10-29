@@ -12,18 +12,6 @@
       "error_type": "ValueError"
     },
     {
-      "symbol": "BONK/USD",
-      "timeframe": "15m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "BONK/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
       "symbol": "ARB/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -32,62 +20,55 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
-      "timeframe": "1h",
-      "strategy": "ema_cross",
-      "signal_time": 1793293200,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "HYPE/USD",
-      "timeframe": "1h",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793293200,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "HYPE/USD",
+      "symbol": "PEPE/USD",
       "timeframe": "6h",
-      "strategy": "ema_cross",
-      "signal_time": 1793275200,
+      "strategy": "donchian_breakout",
+      "signal_time": 1793296800,
       "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
     },
     {
       "symbol": "HYPE/USD",
       "timeframe": "6h",
       "strategy": "donchian_breakout",
-      "signal_time": 1793275200,
+      "signal_time": 1793296800,
       "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "HYPE/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793296500,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
+      "reason": "symbol_cooldown",
       "details": {
-        "client_order_id": "csl2-d59a3dbd4b68aeafedf969859d698bd4",
-        "quantity": "2.120902019",
-        "reference_ask": 94.2995,
-        "broker_status": "pending_new",
-        "broker_order_id": "fd782629-77e5-4b72-ba24-e36d678ab29b"
+        "cooldown_seconds": 300
+      }
+    },
+    {
+      "symbol": "BCH/USD",
+      "timeframe": "6h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793296800,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 59.20250740031304,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "BCH/USD",
+      "timeframe": "6h",
+      "strategy": "rolling_vwap_reclaim",
+      "signal_time": 1793296800,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 59.20250740031304,
+        "max_spread_bps": 50
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 5,
+  "candidates": 4,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-10-29T18:26:18+00:00",
+  "next_entry_scan_at_utc": "2026-10-29T19:00:53+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -99,13 +80,13 @@
     "SOL/USD",
     "HYPE/USD",
     "UNI/USD",
-    "BONK/USD",
+    "BCH/USD",
     "ARB/USD"
   ],
-  "observed_at_utc": "2026-10-29T17:56:49+00:00",
+  "observed_at_utc": "2026-10-29T18:31:07+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T17:56:47+00:00",
+    "observed_at_utc": "2026-10-29T18:30:53+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",

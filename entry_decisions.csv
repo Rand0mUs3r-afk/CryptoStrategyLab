@@ -1,6 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,1h,ema_cross,1793293200,skipped,already_seen,{}
-HYPE/USD,1h,donchian_breakout,1793293200,skipped,already_seen,{}
-HYPE/USD,6h,ema_cross,1793275200,skipped,already_seen,{}
-HYPE/USD,6h,donchian_breakout,1793275200,skipped,already_seen,{}
-HYPE/USD,5m,bollinger_reversion,1793296500,order_result,broker_order_returned,"{""broker_order_id"": ""fd782629-77e5-4b72-ba24-e36d678ab29b"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-d59a3dbd4b68aeafedf969859d698bd4"", ""quantity"": ""2.120902019"", ""reference_ask"": 94.2995}"
+PEPE/USD,6h,donchian_breakout,1793296800,skipped,symbol_already_active,{}
+HYPE/USD,6h,donchian_breakout,1793296800,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+BCH/USD,6h,trend_pullback,1793296800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.20250740031304}"
+BCH/USD,6h,rolling_vwap_reclaim,1793296800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.20250740031304}"
