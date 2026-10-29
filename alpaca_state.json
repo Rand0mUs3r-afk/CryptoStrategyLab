@@ -5849,6 +5849,21 @@
       "broker_updated_at": "2026-10-29T11:27:04.921512613Z",
       "reference_ask": 85.72,
       "cancel_requested_at": 1793273223.682543
+    },
+    "csl2-66bed92bd548e19c90a5ca036109fceb": {
+      "payload": {
+        "symbol": "AVAX/USD",
+        "side": "sell",
+        "qty": "22.582766688",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-66bed92bd548e19c90a5ca036109fceb"
+      },
+      "cycle_id": "csl2-a97f503f73f9b5416d8fb740b7a9575b",
+      "status": "queued",
+      "created_at": 1793275698.4470115,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -6291,7 +6306,8 @@
       "entry_notional_usd": 199.63392146061798,
       "tp": 8.890288014191333,
       "sl": 8.781855992904333,
-      "entry_time_utc": "2026-10-29T10:54:37.557999933Z"
+      "entry_time_utc": "2026-10-29T10:54:37.557999933Z",
+      "exit_reason": "stop"
     },
     {
       "symbol": "HYPE/USD",
@@ -6403,7 +6419,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T11:27:10+00:00",
+    "observed_at_utc": "2026-10-29T12:08:27+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
