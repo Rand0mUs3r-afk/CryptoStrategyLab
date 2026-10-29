@@ -2080,6 +2080,106 @@
         "pending_entry_policy_enabled": true,
         "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
       }
+    },
+    {
+      "status": "PAPER_TICK_COMPLETED",
+      "paper_only": true,
+      "writes_enabled": true,
+      "mode": "tick",
+      "account_verified": true,
+      "data_errors": [],
+      "entry_decisions": [],
+      "entry_pause_reasons": [
+        "entry_scan_interval_not_elapsed"
+      ],
+      "candidates": 0,
+      "entry_scan_interval_seconds": 1800,
+      "entry_scan_status": "not_due",
+      "next_entry_scan_at_utc": "2026-10-29T00:16:12+00:00",
+      "observed_at_utc": "2026-10-29T00:15:24+00:00",
+      "reconciliation": {
+        "status": "fee_pending",
+        "observed_at_utc": "2026-10-29T00:15:24+00:00",
+        "quantities": [
+          {
+            "symbol": "ARBUSD",
+            "filled_quantity": "2.824922598",
+            "fee_quantity": "0",
+            "expected_quantity": "2.824922598",
+            "broker_quantity": "0",
+            "difference_quantity": "-2.824922598",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "2.824922598"
+          },
+          {
+            "symbol": "BTCUSD",
+            "filled_quantity": "0.002465863",
+            "fee_quantity": "0",
+            "expected_quantity": "0.002465863",
+            "broker_quantity": "0.002459697",
+            "difference_quantity": "-0.000006166",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.000006166"
+          },
+          {
+            "symbol": "ETHUSD",
+            "filled_quantity": "0.085134623",
+            "fee_quantity": "-0.00021254",
+            "expected_quantity": "0.084922083",
+            "broker_quantity": "0.084709777",
+            "difference_quantity": "-0.000212306",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.000212306"
+          },
+          {
+            "symbol": "LINKUSD",
+            "filled_quantity": "16.87763713",
+            "fee_quantity": "0",
+            "expected_quantity": "16.87763713",
+            "broker_quantity": "16.835443037",
+            "difference_quantity": "-0.042194093",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.042194093"
+          },
+          {
+            "symbol": "PEPEUSD",
+            "filled_quantity": "99206.34920635",
+            "fee_quantity": "0",
+            "expected_quantity": "99206.34920635",
+            "broker_quantity": "0",
+            "difference_quantity": "-99206.34920635",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "99206.34920635"
+          },
+          {
+            "symbol": "SOLUSD",
+            "filled_quantity": "1.959939829",
+            "fee_quantity": "0",
+            "expected_quantity": "1.959939829",
+            "broker_quantity": "1.950146627",
+            "difference_quantity": "-0.009793202",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.009793202"
+          },
+          {
+            "symbol": "UNIUSD",
+            "filled_quantity": "0.069003589",
+            "fee_quantity": "0",
+            "expected_quantity": "0.069003589",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.069003589",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.069003589"
+          }
+        ],
+        "entries_blocked": false,
+        "exit_checks_allowed": true,
+        "accounting_final": false,
+        "attempts": 3,
+        "retry_exhausted": true,
+        "pending_entry_policy_enabled": true,
+        "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
+      }
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",
@@ -2634,14 +2734,14 @@
     "AVAX/USD|5m|trend_pullback|1793229000": 1793229272.4199433,
     "UNI/USD|5m|trend_pullback|1793229000": 1793229272.4620113
   },
-  "day": "2026-10-28",
-  "day_start_equity": 100000.0,
+  "day": "2026-10-29",
+  "day_start_equity": 99984.2,
   "daily_paused": false,
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-28T23:46:12+00:00",
+    "observed_at_utc": "2026-10-29T00:15:24+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
