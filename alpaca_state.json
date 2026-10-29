@@ -5360,14 +5360,15 @@
         "client_order_id": "csl2-0d9ea0e0707e36dc2d82ad58af22a9b4"
       },
       "cycle_id": "csl2-0d9ea0e0707e36dc2d82ad58af22a9b4",
-      "status": "pending_new",
+      "status": "new",
       "created_at": 1793271284.9324315,
       "attempted": true,
       "filled_qty": "0",
       "broker_order_id": "16b65166-8852-4e50-acd6-4e1726075c69",
       "filled_avg_price": null,
       "filled_at": null,
-      "broker_updated_at": "2026-10-29T10:54:55.672064727Z"
+      "broker_updated_at": "2026-10-29T10:54:55.7222401Z",
+      "reference_ask": 85.72
     }
   },
   "cycles": [
@@ -5910,7 +5911,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T10:54:54+00:00",
+    "observed_at_utc": "2026-10-29T10:55:01+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -5959,6 +5960,16 @@
         "expected_quantity": "0.086565622",
         "broker_quantity": "0.086565622",
         "difference_quantity": "0E-9",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "0"
+      },
+      {
+        "symbol": "HYPEUSD",
+        "filled_quantity": "0",
+        "fee_quantity": "0",
+        "expected_quantity": "0",
+        "broker_quantity": "0",
+        "difference_quantity": "0",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
       },
