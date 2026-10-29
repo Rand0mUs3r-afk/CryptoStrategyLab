@@ -3673,6 +3673,21 @@
       "filled_at": "2026-10-29T05:28:29.371315487Z",
       "broker_updated_at": "2026-10-29T05:28:29.422209988Z",
       "reference_ask": 80278.455
+    },
+    "csl2-c48b36af55f32fd5320bd72230a2142a": {
+      "payload": {
+        "symbol": "PEPE/USD",
+        "side": "buy",
+        "qty": "38241304.50980393",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-c48b36af55f32fd5320bd72230a2142a"
+      },
+      "cycle_id": "csl2-c48b36af55f32fd5320bd72230a2142a",
+      "status": "queued",
+      "created_at": 1793251716.3905137,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -4060,6 +4075,22 @@
       "tp": 81609.51263608344,
       "sl": 79620.55477454478,
       "entry_time_utc": "2026-10-29T05:28:29.371315487Z"
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793250900,
+      "atr": 7.719496540455338e-08,
+      "signal_close": 5.15e-06,
+      "hold_seconds": 21600,
+      "id": "csl2-c48b36af55f32fd5320bd72230a2142a",
+      "created_at": 1793251716.3905137,
+      "status": "pending",
+      "distance": 1.1579244810683006e-07,
+      "target_r": 2.0,
+      "reference_ask": 5.1e-06,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -4118,7 +4149,8 @@
     "SOL/USD|1h|bollinger_reversion|1793250000": 1793251698.1483927,
     "AVAX/USD|1h|bollinger_reversion|1793250000": 1793251698.1484132,
     "AVAX/USD|1h|rsi_rebound|1793250000": 1793251698.221975,
-    "BTC/USD|1h|bollinger_reversion|1793250000": 1793251698.307284
+    "BTC/USD|1h|bollinger_reversion|1793250000": 1793251698.307284,
+    "PEPE/USD|15m|trend_pullback|1793250900": 1793251716.3905137
   },
   "day": "2026-10-29",
   "day_start_equity": 99984.2,
@@ -4127,7 +4159,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T05:28:35+00:00",
+    "observed_at_utc": "2026-10-29T05:28:46+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
