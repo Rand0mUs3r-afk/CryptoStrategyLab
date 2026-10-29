@@ -6747,14 +6747,14 @@
         "client_order_id": "csl2-dd8c108ef2084671ea2d50fa6c4296a0"
       },
       "cycle_id": "csl2-469282e1a299f819a3fe3f3b1c8d897f",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793284740.7317362,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "41134020.618556705",
       "broker_order_id": "9c62c3de-adc0-48cd-b460-f03fdbeaab25",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-10-29T14:39:11.556395214Z"
+      "filled_avg_price": 5e-06,
+      "filled_at": "2026-10-29T14:39:11.557417726Z",
+      "broker_updated_at": "2026-10-29T14:39:11.572171238Z"
     }
   },
   "cycles": [
@@ -7292,11 +7292,13 @@
       "hold_seconds": 259200,
       "id": "csl2-53099f495d00d67e03f5b77b372f1d11",
       "created_at": 1793281758.4729476,
-      "status": "pending",
+      "status": "closed",
       "distance": 2.0502946800609325,
       "target_r": 2.0,
       "reference_ask": 91.05,
-      "remaining_qty": 0.0
+      "remaining_qty": 0.0,
+      "exit_reason": "unfilled_entry",
+      "closed_at": "2026-10-29T14:39:19+00:00"
     },
     {
       "symbol": "PEPE/USD",
@@ -7308,18 +7310,20 @@
       "hold_seconds": 3600,
       "id": "csl2-469282e1a299f819a3fe3f3b1c8d897f",
       "created_at": 1793281777.48787,
-      "status": "open",
+      "status": "closed",
       "distance": 4.3804497109928706e-08,
       "target_r": 2.0,
       "reference_ask": 4.85e-06,
-      "remaining_qty": 41134020.61855671,
+      "remaining_qty": 0.0,
       "entry_price": 4.86e-06,
       "entry_qty": 41237113.40206186,
       "entry_notional_usd": 200.41237113402062,
       "tp": 4.947608994219858e-06,
       "sl": 4.816195502890071e-06,
       "entry_time_utc": "2026-10-29T13:49:50.007680601Z",
-      "exit_reason": "target"
+      "exit_reason": "target",
+      "closed_at": "2026-10-29T14:39:19+00:00",
+      "cashflow_pnl_before_usd_fees": 5.257731958762946
     }
   ],
   "seen": {
@@ -7427,7 +7431,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T14:39:10+00:00",
+    "observed_at_utc": "2026-10-29T14:39:19+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -7511,10 +7515,10 @@
       },
       {
         "symbol": "PEPEUSD",
-        "filled_quantity": "41633576.079824105",
+        "filled_quantity": "499555.461267400",
         "fee_quantity": "-396462.677762245",
-        "expected_quantity": "41237113.402061860",
-        "broker_quantity": "41134020.618556705",
+        "expected_quantity": "103092.783505155",
+        "broker_quantity": "0",
         "difference_quantity": "-103092.783505155",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "103092.783505155"
@@ -7548,7 +7552,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1793281741.4961977,
+  "last_entry_scan_at": 1793284759.5309093,
   "watchlist": {
     "observed_at_utc": "2026-10-29T13:49:02+00:00",
     "status": "partial",
