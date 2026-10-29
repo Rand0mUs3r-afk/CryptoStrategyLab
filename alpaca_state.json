@@ -2933,14 +2933,15 @@
         "client_order_id": "csl2-8bccd0bf1d583f6921de70d254d77d50"
       },
       "cycle_id": "csl2-8bccd0bf1d583f6921de70d254d77d50",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793241651.346292,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "1217.433649866",
       "broker_order_id": "11019601-3877-48b3-abff-af7da2d23c38",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-10-29T02:41:01.641830306Z"
+      "filled_avg_price": 0.16432,
+      "filled_at": "2026-10-29T02:41:01.64299918Z",
+      "broker_updated_at": "2026-10-29T02:41:01.671620901Z",
+      "reference_ask": 0.16428
     }
   },
   "cycles": [
@@ -3226,11 +3227,17 @@
       "hold_seconds": 21600,
       "id": "csl2-8bccd0bf1d583f6921de70d254d77d50",
       "created_at": 1793241651.346292,
-      "status": "pending",
+      "status": "open",
       "distance": 0.0022601743894200286,
       "target_r": 2.0,
       "reference_ask": 0.16428,
-      "remaining_qty": 0.0
+      "remaining_qty": 1214.390065741,
+      "entry_price": 0.16432,
+      "entry_qty": 1217.433649866,
+      "entry_notional_usd": 200.0486973459811,
+      "tp": 0.16884034877884005,
+      "sl": 0.16205982561057997,
+      "entry_time_utc": "2026-10-29T02:41:01.64299918Z"
     }
   ],
   "seen": {
@@ -3288,17 +3295,17 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T02:41:00+00:00",
+    "observed_at_utc": "2026-10-29T02:41:07+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
-        "filled_quantity": "2.824922598",
+        "filled_quantity": "1220.258572464",
         "fee_quantity": "0",
-        "expected_quantity": "2.824922598",
-        "broker_quantity": "0",
-        "difference_quantity": "-2.824922598",
+        "expected_quantity": "1220.258572464",
+        "broker_quantity": "1214.390065741",
+        "difference_quantity": "-5.868506723",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "2.824922598"
+        "unconfirmed_shortfall": "5.868506723"
       },
       {
         "symbol": "BTCUSD",
