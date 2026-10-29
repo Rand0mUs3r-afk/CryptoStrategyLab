@@ -8,12 +8,16 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 1. Skipped: 1. Broker order results: 0.
+Candidates: 5. Skipped: 5. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| PEPE/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
+| ARB/USD | 5m | bollinger_reversion | skipped | symbol_already_active | {} |
+| BTC/USD | 5m | bollinger_reversion | skipped | symbol_already_active | {} |
+| AVAX/USD | 5m | bollinger_reversion | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| LTC/USD | 5m | rsi_rebound | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| BCH/USD | 5m | bollinger_reversion | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -70,13 +74,13 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed
-Next entry scan eligible: 2026-10-29T06:38:29+00:00
+Next entry scan eligible: 2026-10-29T07:26:22+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-10-29T06:08:30+00:00
+Last refresh: 2026-10-29T06:56:23+00:00
 Source status: partial
 Selected: ARB/USD, BTC/USD, DOT/USD, ETH/USD, PEPE/USD, SOL/USD, AVAX/USD, LINK/USD, LTC/USD, BCH/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.

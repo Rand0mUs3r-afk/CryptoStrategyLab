@@ -7,20 +7,65 @@
   "data_errors": [],
   "entry_decisions": [
     {
-      "symbol": "PEPE/USD",
+      "symbol": "ARB/USD",
       "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793253900,
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793256900,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
+    },
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793256900,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793256900,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "5m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1793256900,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "BCH/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793256900,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 5,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed",
-  "next_entry_scan_at_utc": "2026-10-29T06:38:29+00:00",
+  "next_entry_scan_at_utc": "2026-10-29T07:26:22+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -34,10 +79,10 @@
     "LTC/USD",
     "BCH/USD"
   ],
-  "observed_at_utc": "2026-10-29T06:08:43+00:00",
+  "observed_at_utc": "2026-10-29T06:56:36+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T06:08:29+00:00",
+    "observed_at_utc": "2026-10-29T06:56:22+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",

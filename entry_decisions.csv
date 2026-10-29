@@ -1,2 +1,6 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,5m,trend_pullback,1793253900,skipped,symbol_already_active,{}
+ARB/USD,5m,bollinger_reversion,1793256900,skipped,symbol_already_active,{}
+BTC/USD,5m,bollinger_reversion,1793256900,skipped,symbol_already_active,{}
+AVAX/USD,5m,bollinger_reversion,1793256900,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+LTC/USD,5m,rsi_rebound,1793256900,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+BCH/USD,5m,bollinger_reversion,1793256900,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
