@@ -7,122 +7,37 @@
   "data_errors": [],
   "entry_decisions": [
     {
-      "symbol": "SOL/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793250000,
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793253900,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793250000,
-      "outcome": "skipped",
-      "reason": "no_fresh_quote",
-      "details": {
-        "max_quote_age_seconds": 30
-      }
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1793250000,
-      "outcome": "skipped",
-      "reason": "no_fresh_quote",
-      "details": {
-        "max_quote_age_seconds": 30
-      }
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793250000,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-cda9918a3e56b6b2708aa959ec7d371a",
-        "quantity": "0.002491328",
-        "reference_ask": 80278.455,
-        "broker_status": "pending_new",
-        "broker_order_id": "de618564-ef84-4ea7-b5dc-f70d6065d7bd"
-      }
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793250900,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-c48b36af55f32fd5320bd72230a2142a",
-        "quantity": "38241304.50980393",
-        "reference_ask": 5.1e-06,
-        "broker_status": "pending_new",
-        "broker_order_id": "f0cb3e7a-f313-4c0c-8c96-776b08dca4d9"
-      }
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793250000,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BCH/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793250000,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "BCH/USD",
-      "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1793250000,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 8,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed",
-  "next_entry_scan_at_utc": "2026-10-29T05:58:02+00:00",
+  "next_entry_scan_at_utc": "2026-10-29T06:38:29+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
+    "BTC/USD",
     "DOT/USD",
     "ETH/USD",
+    "PEPE/USD",
     "SOL/USD",
     "AVAX/USD",
-    "BTC/USD",
     "LINK/USD",
     "LTC/USD",
-    "PEPE/USD",
     "BCH/USD"
   ],
-  "observed_at_utc": "2026-10-29T05:28:54+00:00",
+  "observed_at_utc": "2026-10-29T06:08:43+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T05:28:53+00:00",
+    "observed_at_utc": "2026-10-29T06:08:29+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
