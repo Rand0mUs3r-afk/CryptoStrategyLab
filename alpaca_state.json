@@ -7484,14 +7484,15 @@
         "client_order_id": "csl2-c85038d0825c6862a3a66dc178f9b1a2"
       },
       "cycle_id": "csl2-c85038d0825c6862a3a66dc178f9b1a2",
-      "status": "pending_new",
+      "status": "new",
       "created_at": 1793290902.9140375,
       "attempted": true,
       "filled_qty": "0",
       "broker_order_id": "6e2338c1-b328-46d3-959d-f1e2056ab203",
       "filled_avg_price": null,
       "filled_at": null,
-      "broker_updated_at": "2026-10-29T16:21:54.443516291Z"
+      "broker_updated_at": "2026-10-29T16:21:54.47209574Z",
+      "reference_ask": 96.007
     }
   },
   "cycles": [
@@ -8265,7 +8266,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T16:21:52+00:00",
+    "observed_at_utc": "2026-10-29T16:22:00+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
