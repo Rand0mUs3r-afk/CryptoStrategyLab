@@ -1,10 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,5m,squeeze_breakout,1793271000,skipped,symbol_already_active,{}
-AVAX/USD,5m,donchian_breakout,1793271000,order_result,broker_order_returned,"{""broker_order_id"": ""40fb9914-4ceb-4b87-9c62-15b8638e44c4"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-a97f503f73f9b5416d8fb740b7a9575b"", ""quantity"": ""22.639365101"", ""reference_ask"": 8.83417}"
-AVAX/USD,5m,squeeze_breakout,1793271000,skipped,symbol_already_active,{}
-SOL/USD,5m,squeeze_breakout,1793271000,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-HYPE/USD,15m,ema_cross,1793270700,order_result,broker_order_returned,"{""broker_order_id"": ""16b65166-8852-4e50-acd6-4e1726075c69"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-0d9ea0e0707e36dc2d82ad58af22a9b4"", ""quantity"": ""2.333177788"", ""reference_ask"": 85.72}"
-HYPE/USD,15m,donchian_breakout,1793270700,skipped,symbol_already_active,{}
-HYPE/USD,15m,squeeze_breakout,1793270700,skipped,symbol_already_active,{}
-HYPE/USD,5m,donchian_breakout,1793271000,skipped,stale_signal,"{""age_seconds"": 303.3077144622803, ""max_age_seconds"": 300}"
-PEPE/USD,5m,bollinger_reversion,1793271000,skipped,stale_signal,"{""age_seconds"": 303.30772161483765, ""max_age_seconds"": 300}"
+LTC/USD,1h,trend_pullback,1793271600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 55.933157279535976}"
+HYPE/USD,15m,donchian_breakout,1793272500,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+HYPE/USD,1h,ema_cross,1793271600,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+HYPE/USD,1h,donchian_breakout,1793271600,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+HYPE/USD,1h,macd_momentum,1793271600,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+HYPE/USD,1h,rolling_vwap_reclaim,1793271600,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"

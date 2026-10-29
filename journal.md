@@ -8,20 +8,17 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 9. Skipped: 7. Broker order results: 2.
+Candidates: 6. Skipped: 6. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| ETH/USD | 5m | squeeze_breakout | skipped | symbol_already_active | {} |
-| AVAX/USD | 5m | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "40fb9914-4ceb-4b87-9c62-15b8638e44c4", "broker_status": "pending_new", "client_order_id": "csl2-a97f503f73f9b5416d8fb740b7a9575b", "quantity": "22.639365101", "reference_ask": 8.83417} |
-| AVAX/USD | 5m | squeeze_breakout | skipped | symbol_already_active | {} |
-| SOL/USD | 5m | squeeze_breakout | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
-| HYPE/USD | 15m | ema_cross | order_result | broker_order_returned | {"broker_order_id": "16b65166-8852-4e50-acd6-4e1726075c69", "broker_status": "pending_new", "client_order_id": "csl2-0d9ea0e0707e36dc2d82ad58af22a9b4", "quantity": "2.333177788", "reference_ask": 85.72} |
-| HYPE/USD | 15m | donchian_breakout | skipped | symbol_already_active | {} |
-| HYPE/USD | 15m | squeeze_breakout | skipped | symbol_already_active | {} |
-| HYPE/USD | 5m | donchian_breakout | skipped | stale_signal | {"age_seconds": 303.3077144622803, "max_age_seconds": 300} |
-| PEPE/USD | 5m | bollinger_reversion | skipped | stale_signal | {"age_seconds": 303.30772161483765, "max_age_seconds": 300} |
+| LTC/USD | 1h | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 55.933157279535976} |
+| HYPE/USD | 15m | donchian_breakout | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
+| HYPE/USD | 1h | ema_cross | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
+| HYPE/USD | 1h | donchian_breakout | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
+| HYPE/USD | 1h | macd_momentum | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
+| HYPE/USD | 1h | rolling_vwap_reclaim | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -39,7 +36,6 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | ETH/USD | 1h | bollinger_reversion | 2305.2 | 0.086782579 | 200.05120111079998 | 0.086565622 | 2359.320736026376 | 2278.1396319868118 | open |
 | BTC/USD | 1h | bollinger_reversion | 80283.540728391 | 0.002491328 | 200.0126329557809 | 0.002485099 | 81609.51263608344 | 79620.55477454478 | open |
 | AVAX/USD | 5m | donchian_breakout | 8.818 | 22.639365101 | 199.63392146061798 | 22.582766688 | 8.890288014191333 | 8.781855992904333 | open |
-| HYPE/USD | 15m | ema_cross | n/a | n/a | n/a | 0.0 | n/a | n/a | pending |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -59,6 +55,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | DOT/USD | 15m | rsi_rebound | 0.9702 | 206.185779572 | 200.0414433407544 | 0.0 | 0.9933076118532437 | 0.958646194073378 | closed |
 | SOL/USD | 15m | rsi_rebound | 100.121 | 1.997443272 | 199.98601783591198 | 0.0 | 101.35444207935545 | 99.50427896032227 | closed |
 | PEPE/USD | 15m | trend_pullback | 5.09e-06 | 38241304.50980393 | 194.648239954902 | 0.0 | 5.32158489621366e-06 | 4.9742075518931705e-06 | closed |
+| HYPE/USD | 15m | ema_cross | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -89,15 +86,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-10-29T11:24:19+00:00
+Next entry scan eligible: 2026-10-29T11:57:10+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-10-29T10:54:20+00:00
+Last refresh: 2026-10-29T11:27:11+00:00
 Source status: partial
-Selected: BTC/USD, ETH/USD, AVAX/USD, LINK/USD, LTC/USD, SOL/USD, HYPE/USD, ARB/USD, PEPE/USD, BCH/USD
+Selected: AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, HYPE/USD, UNI/USD, PEPE/USD, BCH/USD, ARB/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
