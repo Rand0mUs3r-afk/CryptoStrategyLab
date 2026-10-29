@@ -8,19 +8,19 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 8. Skipped: 7. Broker order results: 1.
+Candidates: 8. Skipped: 6. Broker order results: 2.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| HYPE/USD | 15m | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "889279cb-7f09-4160-a80b-56f292887631", "broker_status": "pending_new", "client_order_id": "csl2-733ad4e9e07875900b33bfcc9de006c1", "quantity": "2.276167389", "reference_ask": 87.867} |
-| HYPE/USD | 1h | donchian_breakout | skipped | symbol_already_active | {} |
-| HYPE/USD | 6h | ema_cross | skipped | symbol_already_active | {} |
-| HYPE/USD | 6h | donchian_breakout | skipped | symbol_already_active | {} |
-| UNI/USD | 15m | ema_cross | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
-| UNI/USD | 1h | ema_cross | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
-| UNI/USD | 1h | trend_pullback | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
-| UNI/USD | 1h | macd_momentum | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
+| HYPE/USD | 1h | donchian_breakout | skipped | already_seen | {} |
+| HYPE/USD | 6h | ema_cross | skipped | already_seen | {} |
+| HYPE/USD | 6h | donchian_breakout | skipped | already_seen | {} |
+| ARB/USD | 15m | ema_cross | order_result | broker_order_returned | {"broker_order_id": "7ffb5f41-e065-4ca7-b74c-94aee2b810f0", "broker_status": "pending_new", "client_order_id": "csl2-c16570e39fbc91e1c7e698cb9c687511", "quantity": "1174.398120963", "reference_ask": 0.1703} |
+| UNI/USD | 1h | ema_cross | skipped | already_seen | {} |
+| UNI/USD | 1h | trend_pullback | skipped | already_seen | {} |
+| UNI/USD | 1h | macd_momentum | skipped | already_seen | {} |
+| FIL/USD | 15m | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "9c8467ef-ac43-4403-bb44-48007c98cf5b", "broker_status": "pending_new", "client_order_id": "csl2-c80e2d0897ace61ff2fd105f35e9d5d0", "quantity": "219.884121068", "reference_ask": 0.90957} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -39,7 +39,8 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | ETH/USD | 1h | bollinger_reversion | 2305.2 | 0.086782579 | 200.05120111079998 | 0.086565622 | 2359.320736026376 | 2278.1396319868118 | open |
 | BTC/USD | 1h | bollinger_reversion | 80283.540728391 | 0.002491328 | 200.0126329557809 | 0.002485099 | 81609.51263608344 | 79620.55477454478 | open |
-| HYPE/USD | 15m | donchian_breakout | n/a | n/a | n/a | 0.0 | n/a | n/a | pending |
+| ARB/USD | 15m | ema_cross | 0.17032 | 1174.398120963 | 200.0234879624182 | 1171.46212566 | 0.1737328821130826 | 0.1686135589434587 | open |
+| FIL/USD | 15m | donchian_breakout | 0.9095 | 219.884121068 | 199.984608111346 | 219.334410765 | 0.9260077902125277 | 0.9012461048937361 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -61,6 +62,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | PEPE/USD | 15m | trend_pullback | 5.09e-06 | 38241304.50980393 | 194.648239954902 | 0.0 | 5.32158489621366e-06 | 4.9742075518931705e-06 | closed |
 | AVAX/USD | 5m | donchian_breakout | 8.818 | 22.639365101 | 199.63392146061798 | 0.0 | 8.890288014191333 | 8.781855992904333 | closed |
 | HYPE/USD | 15m | ema_cross | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
+| HYPE/USD | 15m | donchian_breakout | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -75,11 +77,12 @@ Accounting final: False
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
-| ARBUSD | 0E-9 | 0 | 0E-9 | 0 |
+| ARBUSD | 1174.398120963 | 1171.46212566 | -2.935995303 | 2.935995303 |
 | AVAXUSD | 0.056598413 | 0 | -0.056598413 | 0.056598413 |
 | BTCUSD | 0.002485099 | 0.002485099 | 0E-9 | 0 |
 | DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
 | ETHUSD | 0.086565622 | 0.086565622 | 0E-9 | 0 |
+| FILUSD | 219.884121068 | 219.334410765 | -0.549710303 | 0.549710303 |
 | HYPEUSD | 0 | 0 | 0 | 0 |
 | LINKUSD | 0E-9 | 0 | 0E-9 | 0 |
 | PEPEUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -91,13 +94,13 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-10-29T12:38:35+00:00
+Next entry scan eligible: 2026-10-29T13:27:24+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-10-29T12:08:36+00:00
+Last refresh: 2026-10-29T12:57:25+00:00
 Source status: partial
 Selected: BTC/USD, ETH/USD, AVAX/USD, LINK/USD, LTC/USD, SOL/USD, HYPE/USD, ARB/USD, UNI/USD, FIL/USD, PEPE/USD, DOT/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.

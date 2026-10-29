@@ -1,16 +1,16 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-10-29T12:09:10+00:00",
+  "observed_at_utc": "2026-10-29T12:58:12+00:00",
   "quantities": [
     {
       "symbol": "ARBUSD",
-      "filled_quantity": "5.868506723",
+      "filled_quantity": "1180.266627686",
       "fee_quantity": "-5.868506723",
-      "expected_quantity": "0E-9",
-      "broker_quantity": "0",
-      "difference_quantity": "0E-9",
+      "expected_quantity": "1174.398120963",
+      "broker_quantity": "1171.46212566",
+      "difference_quantity": "-2.935995303",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0"
+      "unconfirmed_shortfall": "2.935995303"
     },
     {
       "symbol": "AVAXUSD",
@@ -51,6 +51,16 @@
       "difference_quantity": "0E-9",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0"
+    },
+    {
+      "symbol": "FILUSD",
+      "filled_quantity": "219.884121068",
+      "fee_quantity": "0",
+      "expected_quantity": "219.884121068",
+      "broker_quantity": "219.334410765",
+      "difference_quantity": "-0.549710303",
+      "tolerance_quantity": "1E-8",
+      "unconfirmed_shortfall": "0.549710303"
     },
     {
       "symbol": "HYPEUSD",

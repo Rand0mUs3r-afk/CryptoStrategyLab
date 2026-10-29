@@ -1,9 +1,9 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-HYPE/USD,15m,donchian_breakout,1793275200,order_result,broker_order_returned,"{""broker_order_id"": ""889279cb-7f09-4160-a80b-56f292887631"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-733ad4e9e07875900b33bfcc9de006c1"", ""quantity"": ""2.276167389"", ""reference_ask"": 87.867}"
-HYPE/USD,1h,donchian_breakout,1793275200,skipped,symbol_already_active,{}
-HYPE/USD,6h,ema_cross,1793275200,skipped,symbol_already_active,{}
-HYPE/USD,6h,donchian_breakout,1793275200,skipped,symbol_already_active,{}
-UNI/USD,15m,ema_cross,1793275200,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-UNI/USD,1h,ema_cross,1793275200,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-UNI/USD,1h,trend_pullback,1793275200,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-UNI/USD,1h,macd_momentum,1793275200,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+HYPE/USD,1h,donchian_breakout,1793275200,skipped,already_seen,{}
+HYPE/USD,6h,ema_cross,1793275200,skipped,already_seen,{}
+HYPE/USD,6h,donchian_breakout,1793275200,skipped,already_seen,{}
+ARB/USD,15m,ema_cross,1793277900,order_result,broker_order_returned,"{""broker_order_id"": ""7ffb5f41-e065-4ca7-b74c-94aee2b810f0"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-c16570e39fbc91e1c7e698cb9c687511"", ""quantity"": ""1174.398120963"", ""reference_ask"": 0.1703}"
+UNI/USD,1h,ema_cross,1793275200,skipped,already_seen,{}
+UNI/USD,1h,trend_pullback,1793275200,skipped,already_seen,{}
+UNI/USD,1h,macd_momentum,1793275200,skipped,already_seen,{}
+FIL/USD,15m,donchian_breakout,1793277900,order_result,broker_order_returned,"{""broker_order_id"": ""9c8467ef-ac43-4403-bb44-48007c98cf5b"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-c80e2d0897ace61ff2fd105f35e9d5d0"", ""quantity"": ""219.884121068"", ""reference_ask"": 0.90957}"
