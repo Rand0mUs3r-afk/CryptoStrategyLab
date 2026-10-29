@@ -5310,6 +5310,21 @@
       "filled_avg_price": 0.9849,
       "filled_at": "2026-10-29T10:12:23.588542131Z",
       "broker_updated_at": "2026-10-29T10:12:23.622038503Z"
+    },
+    "csl2-9fc830d9b604cb02b996128d3756c0d1": {
+      "payload": {
+        "symbol": "SOL/USD",
+        "side": "sell",
+        "qty": "1.992449663",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-9fc830d9b604cb02b996128d3756c0d1"
+      },
+      "cycle_id": "csl2-31dfb354f12b4296b460d05a82927dc0",
+      "status": "queued",
+      "created_at": 1793271255.7917364,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -5680,7 +5695,8 @@
       "entry_notional_usd": 199.98601783591198,
       "tp": 101.35444207935545,
       "sl": 99.50427896032227,
-      "entry_time_utc": "2026-10-29T04:51:19.124983401Z"
+      "entry_time_utc": "2026-10-29T04:51:19.124983401Z",
+      "exit_reason": "time"
     },
     {
       "symbol": "BTC/USD",
@@ -5806,7 +5822,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-10-29T10:12:24+00:00",
+    "observed_at_utc": "2026-10-29T10:54:16+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
