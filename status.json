@@ -22,102 +22,54 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
-    },
-    {
-      "symbol": "DOT/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
     {
       "symbol": "ARB/USD",
-      "timeframe": "15m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793286900,
+      "timeframe": "1h",
+      "strategy": "ema_cross",
+      "signal_time": 1793289600,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "BTC/USD",
+      "symbol": "PEPE/USD",
       "timeframe": "15m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793286900,
+      "signal_time": 1793290500,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "ETH/USD",
-      "timeframe": "15m",
+      "symbol": "PEPE/USD",
+      "timeframe": "1h",
       "strategy": "donchian_breakout",
-      "signal_time": 1793286900,
+      "signal_time": 1793289600,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "FIL/USD",
-      "timeframe": "15m",
+      "symbol": "PEPE/USD",
+      "timeframe": "1h",
       "strategy": "macd_momentum",
-      "signal_time": 1793286900,
+      "signal_time": 1793289600,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "SOL/USD",
+      "symbol": "AVAX/USD",
       "timeframe": "15m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793286900,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "15m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793286900,
-      "outcome": "skipped",
-      "reason": "no_fresh_quote",
-      "details": {
-        "max_quote_age_seconds": 30
-      }
-    },
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793286000,
-      "outcome": "skipped",
-      "reason": "no_fresh_quote",
-      "details": {
-        "max_quote_age_seconds": 30
-      }
-    },
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "1h",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1793286000,
-      "outcome": "skipped",
-      "reason": "no_fresh_quote",
-      "details": {
-        "max_quote_age_seconds": 30
-      }
-    },
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793286900,
+      "signal_time": 1793290500,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 61.52914375382923,
+        "spread_bps": 60.68922431585098,
         "max_spread_bps": 50
       }
     },
@@ -125,23 +77,11 @@
       "symbol": "LTC/USD",
       "timeframe": "15m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793286900,
+      "signal_time": 1793290500,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 61.52914375382923,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "15m",
-      "strategy": "macd_momentum",
-      "signal_time": 1793286900,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 61.52914375382923,
+        "spread_bps": 62.269067015779434,
         "max_spread_bps": 50
       }
     },
@@ -149,61 +89,61 @@
       "symbol": "LTC/USD",
       "timeframe": "15m",
       "strategy": "squeeze_breakout",
-      "signal_time": 1793286900,
+      "signal_time": 1793290500,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 61.52914375382923,
+        "spread_bps": 62.269067015779434,
         "max_spread_bps": 50
       }
     },
     {
       "symbol": "LTC/USD",
-      "timeframe": "15m",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1793286900,
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793289600,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 61.52914375382923,
+        "spread_bps": 62.269067015779434,
         "max_spread_bps": 50
       }
     },
     {
-      "symbol": "PEPE/USD",
+      "symbol": "LTC/USD",
       "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793286000,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-09db4b88704b79b668e31c7262c8cb3d",
-        "quantity": "38668482.10735587",
-        "reference_ask": 5.03e-06,
-        "broker_status": "pending_new",
-        "broker_order_id": "375b4bba-ee65-4819-8cb2-7b93194f1023"
-      }
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1793286000,
+      "strategy": "macd_momentum",
+      "signal_time": 1793289600,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 62.269067015779434,
+        "max_spread_bps": 50
+      }
     },
     {
       "symbol": "HYPE/USD",
       "timeframe": "15m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793286900,
-      "outcome": "skipped",
-      "reason": "max_positions",
+      "signal_time": 1793290500,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
       "details": {
-        "active_positions": 6,
-        "max_positions": 6
+        "client_order_id": "csl2-c85038d0825c6862a3a66dc178f9b1a2",
+        "quantity": "1.891298999",
+        "reference_ask": 96.007,
+        "broker_status": "pending_new",
+        "broker_order_id": "6e2338c1-b328-46d3-959d-f1e2056ab203"
       }
+    },
+    {
+      "symbol": "HYPE/USD",
+      "timeframe": "1h",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793289600,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
       "symbol": "HYPE/USD",
@@ -227,7 +167,7 @@
       "symbol": "UNI/USD",
       "timeframe": "15m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793286900,
+      "signal_time": 1793290500,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -236,10 +176,10 @@
       }
     },
     {
-      "symbol": "DOT/USD",
-      "timeframe": "15m",
+      "symbol": "UNI/USD",
+      "timeframe": "1h",
       "strategy": "donchian_breakout",
-      "signal_time": 1793286900,
+      "signal_time": 1793289600,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -249,29 +189,28 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 20,
+  "candidates": 15,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-10-29T15:58:53+00:00",
+  "next_entry_scan_at_utc": "2026-10-29T16:51:22+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
     "BTC/USD",
     "ETH/USD",
     "FIL/USD",
-    "SOL/USD",
+    "PEPE/USD",
     "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
-    "PEPE/USD",
+    "SOL/USD",
     "HYPE/USD",
-    "UNI/USD",
-    "DOT/USD"
+    "UNI/USD"
   ],
-  "observed_at_utc": "2026-10-29T15:29:25+00:00",
+  "observed_at_utc": "2026-10-29T16:22:02+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T15:29:24+00:00",
+    "observed_at_utc": "2026-10-29T16:22:00+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -365,10 +304,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "1.976725206",
+        "filled_quantity": "0.019691657",
         "fee_quantity": "-0.014786811",
-        "expected_quantity": "1.961938395",
-        "broker_quantity": "1.957033549",
+        "expected_quantity": "0.004904846",
+        "broker_quantity": "0",
         "difference_quantity": "-0.004904846",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.004904846"
