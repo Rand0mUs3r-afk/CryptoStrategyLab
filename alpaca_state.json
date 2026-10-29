@@ -8051,6 +8051,21 @@
       "broker_updated_at": "2026-10-29T17:13:15.221356296Z",
       "reference_ask": 96.007,
       "cancel_requested_at": 1793293993.8734028
+    },
+    "csl2-92c86e96d57a276139ac25fad0424852": {
+      "payload": {
+        "symbol": "ARB/USD",
+        "side": "sell",
+        "qty": "1171.46212566",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-92c86e96d57a276139ac25fad0424852"
+      },
+      "cycle_id": "csl2-c16570e39fbc91e1c7e698cb9c687511",
+      "status": "queued",
+      "created_at": 1793296552.6504524,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -8554,7 +8569,8 @@
       "entry_notional_usd": 200.0234879624182,
       "tp": 0.1737328821130826,
       "sl": 0.1686135589434587,
-      "entry_time_utc": "2026-10-29T12:57:49.373827249Z"
+      "entry_time_utc": "2026-10-29T12:57:49.373827249Z",
+      "exit_reason": "stop"
     },
     {
       "symbol": "FIL/USD",
@@ -8831,7 +8847,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T17:13:20+00:00",
+    "observed_at_utc": "2026-10-29T17:56:01+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
