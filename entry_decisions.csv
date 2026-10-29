@@ -1,7 +1,9 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,5m,bollinger_reversion,1793281500,skipped,symbol_already_active,{}
-LTC/USD,5m,bollinger_reversion,1793281500,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 56.79061251002204}"
-HYPE/USD,1h,donchian_breakout,1793278800,order_result,broker_order_returned,"{""broker_order_id"": ""e9243147-c04b-4d12-bb0d-2b8efe3a5ff8"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-53099f495d00d67e03f5b77b372f1d11"", ""quantity"": ""2.196595277"", ""reference_ask"": 91.05}"
+BTC/USD,5m,donchian_breakout,1793284500,skipped,symbol_already_active,{}
+ETH/USD,5m,donchian_breakout,1793284500,skipped,symbol_already_active,{}
+AVAX/USD,5m,donchian_breakout,1793284500,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.39237873739252}"
+AVAX/USD,5m,squeeze_breakout,1793284500,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.39237873739252}"
+SOL/USD,5m,donchian_breakout,1793284500,order_result,broker_order_returned,"{""broker_order_id"": ""a6a604e4-11e9-42bb-9318-8af764d4658c"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-f3ce969f1a3242d096e66c0bf69a5149"", ""quantity"": ""1.961938395"", ""reference_ask"": 101.94}"
+HYPE/USD,1h,donchian_breakout,1793282400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
 HYPE/USD,6h,ema_cross,1793275200,skipped,already_seen,{}
 HYPE/USD,6h,donchian_breakout,1793275200,skipped,already_seen,{}
-PEPE/USD,5m,bollinger_reversion,1793281500,order_result,broker_order_returned,"{""broker_order_id"": ""7173db11-0df3-4893-9a0f-f06939280aff"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-469282e1a299f819a3fe3f3b1c8d897f"", ""quantity"": ""41237113.40206186"", ""reference_ask"": 4.85e-06}"

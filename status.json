@@ -34,37 +34,69 @@
     {
       "symbol": "BTC/USD",
       "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793281500,
+      "strategy": "donchian_breakout",
+      "signal_time": 1793284500,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "LTC/USD",
+      "symbol": "ETH/USD",
       "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793281500,
+      "strategy": "donchian_breakout",
+      "signal_time": 1793284500,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "5m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793284500,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 56.79061251002204,
+        "spread_bps": 62.39237873739252,
         "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "5m",
+      "strategy": "squeeze_breakout",
+      "signal_time": 1793284500,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 62.39237873739252,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "5m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793284500,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-f3ce969f1a3242d096e66c0bf69a5149",
+        "quantity": "1.961938395",
+        "reference_ask": 101.94,
+        "broker_status": "pending_new",
+        "broker_order_id": "a6a604e4-11e9-42bb-9318-8af764d4658c"
       }
     },
     {
       "symbol": "HYPE/USD",
       "timeframe": "1h",
       "strategy": "donchian_breakout",
-      "signal_time": 1793278800,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
+      "signal_time": 1793282400,
+      "outcome": "skipped",
+      "reason": "symbol_cooldown",
       "details": {
-        "client_order_id": "csl2-53099f495d00d67e03f5b77b372f1d11",
-        "quantity": "2.196595277",
-        "reference_ask": 91.05,
-        "broker_status": "pending_new",
-        "broker_order_id": "e9243147-c04b-4d12-bb0d-2b8efe3a5ff8"
+        "cooldown_seconds": 300
       }
     },
     {
@@ -84,28 +116,13 @@
       "outcome": "skipped",
       "reason": "already_seen",
       "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793281500,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-469282e1a299f819a3fe3f3b1c8d897f",
-        "quantity": "41237113.40206186",
-        "reference_ask": 4.85e-06,
-        "broker_status": "pending_new",
-        "broker_order_id": "7173db11-0df3-4893-9a0f-f06939280aff"
-      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 6,
+  "candidates": 8,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-10-29T14:19:01+00:00",
+  "next_entry_scan_at_utc": "2026-10-29T15:09:19+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -116,15 +133,14 @@
     "LINK/USD",
     "LTC/USD",
     "SOL/USD",
-    "HYPE/USD",
     "PEPE/USD",
-    "UNI/USD",
+    "HYPE/USD",
     "DOT/USD"
   ],
-  "observed_at_utc": "2026-10-29T13:49:57+00:00",
+  "observed_at_utc": "2026-10-29T14:39:53+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T13:49:56+00:00",
+    "observed_at_utc": "2026-10-29T14:39:52+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
@@ -208,23 +224,23 @@
       },
       {
         "symbol": "PEPEUSD",
-        "filled_quantity": "41633576.079824105",
+        "filled_quantity": "499555.461267400",
         "fee_quantity": "-396462.677762245",
-        "expected_quantity": "41237113.402061860",
-        "broker_quantity": "41134020.618556705",
+        "expected_quantity": "103092.783505155",
+        "broker_quantity": "0",
         "difference_quantity": "-103092.783505155",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "103092.783505155"
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "0.014786811",
+        "filled_quantity": "1.976725206",
         "fee_quantity": "-0.014786811",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "1.961938395",
+        "broker_quantity": "1.957033549",
+        "difference_quantity": "-0.004904846",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.004904846"
       },
       {
         "symbol": "UNIUSD",
