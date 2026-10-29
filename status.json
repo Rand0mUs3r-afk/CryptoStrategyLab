@@ -12,6 +12,12 @@
       "error_type": "ValueError"
     },
     {
+      "symbol": "DOT/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
       "symbol": "LINK/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -23,7 +29,7 @@
   "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-10-29T08:18:28+00:00",
+  "next_entry_scan_at_utc": "2026-10-29T09:03:49+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -37,10 +43,10 @@
     "PEPE/USD",
     "BCH/USD"
   ],
-  "observed_at_utc": "2026-10-29T07:48:42+00:00",
+  "observed_at_utc": "2026-10-29T08:34:02+00:00",
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-10-29T07:48:28+00:00",
+    "observed_at_utc": "2026-10-29T08:33:48+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",

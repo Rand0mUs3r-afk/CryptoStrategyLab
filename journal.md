@@ -21,6 +21,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
 | ARB/USD | 5m | candles | ValueError |
+| DOT/USD | 5m | candles | ValueError |
 | LINK/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
@@ -72,13 +73,13 @@ Accounting final: True
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-10-29T08:18:28+00:00
+Next entry scan eligible: 2026-10-29T09:03:49+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-10-29T07:48:30+00:00
+Last refresh: 2026-10-29T08:33:50+00:00
 Source status: partial
 Selected: ARB/USD, BTC/USD, DOT/USD, ETH/USD, SOL/USD, AVAX/USD, LINK/USD, LTC/USD, PEPE/USD, BCH/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
