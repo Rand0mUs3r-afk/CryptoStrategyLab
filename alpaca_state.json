@@ -2639,6 +2639,21 @@
       "filled_at": "2026-10-29T01:10:53.59468834Z",
       "broker_updated_at": "2026-10-29T01:10:53.622229348Z",
       "reference_ask": 5.03e-06
+    },
+    "csl2-c9a25654cd05351550be1a2cd9c78c99": {
+      "payload": {
+        "symbol": "BTC/USD",
+        "side": "sell",
+        "qty": "0.002459697",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-c9a25654cd05351550be1a2cd9c78c99"
+      },
+      "cycle_id": "csl2-6b2e6d5b8ccd8e342e88996b9425e5d9",
+      "status": "queued",
+      "created_at": 1793239138.695659,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -2712,7 +2727,8 @@
       "entry_notional_usd": 200.08388439232058,
       "tp": 82340.13793842054,
       "sl": 80542.21861062724,
-      "entry_time_utc": "2026-10-28T20:54:05.144800901Z"
+      "entry_time_utc": "2026-10-28T20:54:05.144800901Z",
+      "exit_reason": "stop"
     },
     {
       "symbol": "ETH/USD",
@@ -2925,7 +2941,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-10-29T01:10:58+00:00",
+    "observed_at_utc": "2026-10-29T01:59:07+00:00",
     "quantities": [
       {
         "symbol": "ARBUSD",
