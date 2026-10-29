@@ -8,14 +8,16 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 3. Skipped: 3. Broker order results: 0.
+Candidates: 5. Skipped: 3. Broker order results: 2.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| PAXG/USD | 15m | ema_cross | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 107.64925556967843} |
-| PAXG/USD | 15m | macd_momentum | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 107.64925556967843} |
-| PAXG/USD | 1h | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 107.64925556967843} |
+| PEPE/USD | 5m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "409dbfaf-4456-44b5-91df-d49622a65a77", "broker_status": "pending_new", "client_order_id": "csl2-d8846a400afb88306f6fcf7b39562d71", "quantity": "40899795.501022495", "reference_ask": 4.89e-06} |
+| PEPE/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
+| BCH/USD | 15m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 62.084509648002104} |
+| BCH/USD | 15m | rsi_rebound | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 62.084509648002104} |
+| ARB/USD | 15m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "11019601-3877-48b3-abff-af7da2d23c38", "broker_status": "pending_new", "client_order_id": "csl2-8bccd0bf1d583f6921de70d254d77d50", "quantity": "1217.433649866", "reference_ask": 0.16428} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -23,14 +25,14 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
-| PAXG/USD | 5m | candles | ValueError |
-| AAVE/USD | 5m | candles | ValueError |
 | ARB/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| PEPE/USD | 5m | bollinger_reversion | 4.88e-06 | 40899795.501022495 | 199.59100204498978 | 40797546.01226994 | 5.0278268626405795e-06 | 4.80608656867971e-06 | open |
+| ARB/USD | 15m | bollinger_reversion | 0.16432 | 1217.433649866 | 200.0486973459811 | 1214.390065741 | 0.16884034877884005 | 0.16205982561057997 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -59,11 +61,11 @@ Accounting final: False
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
-| ARBUSD | 2.824922598 | 0 | -2.824922598 | 2.824922598 |
+| ARBUSD | 1220.258572464 | 1214.390065741 | -5.868506723 | 5.868506723 |
 | BTCUSD | 0.000006166 | 0 | -0.000006166 | 0.000006166 |
 | ETHUSD | 0.000212306 | 0 | -0.000212306 | 0.000212306 |
 | LINKUSD | 0.042194093 | 0 | -0.042194093 | 0.042194093 |
-| PEPEUSD | 198609.927735178 | 0 | -198609.927735178 | 198609.927735178 |
+| PEPEUSD | 41098405.428757673 | 40797546.012269938 | -300859.416487735 | 300859.416487735 |
 | SOLUSD | 0.009793202 | 0 | -0.009793202 | 0.009793202 |
 | UNIUSD | 0.069003589 | 0 | -0.069003589 | 0.069003589 |
 
@@ -72,15 +74,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-10-29T02:29:54+00:00
+Next entry scan eligible: 2026-10-29T03:10:20+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-10-29T01:59:55+00:00
+Last refresh: 2026-10-29T02:40:21+00:00
 Source status: partial
-Selected: AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, PEPE/USD, PAXG/USD, BCH/USD, AAVE/USD, ARB/USD
+Selected: AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, PEPE/USD, BCH/USD, DOT/USD, ARB/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
