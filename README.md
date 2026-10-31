@@ -144,3 +144,39 @@ workflow, broker credential check or market-performance test was performed here.
 
 No guaranteed winning percentage or investment recommendation is made. Compare
 net expectancy, loss magnitude and future evidence, not win percentage alone.
+
+FROM PERPLEXITY OCT 30
+
+## Dated review: two separate paper systems
+
+This repository contains both independent virtual strategy experiments and an optional Alpaca broker-paper path. They use different configurations and ledgers. Independent experimental balances must not be added together or mistaken for the broker-paper account. This review inspected documentation and workflow source; it did not run experiments, verify broker credentials, read account balances or establish successful operation.
+
+## Configured automation inspected
+
+### Virtual forward experiments
+
+- Workflow: .github/workflows/paper.yml (Crypto forward paper lab).
+- Cron: 7,37 * * * *, meaning minutes 07 and 37 of every hour, every day, UTC.
+- Scheduled jobs require CRYPTO_LAB_ENABLED=true. Manual workflow dispatch can run independently of that scheduled-job gate.
+- The workflow passes CRYPTO_PAUSE_ENTRIES, restores/persists the paper-state branch, and invokes paper_report.py.
+
+### Alpaca broker-paper runner
+
+- Workflow: .github/workflows/alpaca-crypto-paper.yml (Alpaca crypto PAPER bot).
+- Cron: 3-58/5 * * * *, meaning minutes 03, 08, 13, 18, 23, 28, 33, 38, 43, 48, 53 and 58 of every hour, every day, UTC.
+- Scheduled jobs require ALPACA_CRYPTO_PAPER_ENABLED=true. Scheduled runs select tick; the manual mode default is check.
+- The tick precheck requires both ALPACA_CRYPTO_PAPER_ENABLED=true and ALPACA_CRYPTO_DEDICATED_ACCOUNT=true. The workflow also supplies an expected account ID and separate paper credentials.
+- It invokes alpaca_watchlist.py with checkpointing and restores/persists a separate state branch, default alpaca-crypto-state.
+- ALPACA_CRYPTO_PAUSE_ENTRIES is separate from the virtual lab's CRYPTO_PAUSE_ENTRIES. Do not assume changing one controls both systems.
+
+CURRENT ENABLED/DISABLED STATUS: NOT VERIFIED for either workflow. A configured cron and documented enable flag do not reveal current workflow activation, repository Actions permissions, actual variable values, credential validity or successful execution. Those runtime settings were not exposed by the connected review tools.
+
+## Overlap and manual stop
+
+crypto-signal-bot overlaps in crypto-market coverage but is a separate scanner; its signal log and risk assumptions are not this repository's books or broker account.
+
+To prevent new triggers, disable Crypto forward paper lab and/or Alpaca crypto PAPER bot separately from their Actions workflow menus. Cancel queued/running runs separately. Other repository workflows, including research and CI, have separate controls. Disabling repository-wide Actions stops those too.
+
+Entry-pause flags are not the same as disabling the whole workflow. Stopping observation can stop workflow-managed exit checks; neither stopping a job nor changing an entry flag proves positions were liquidated or broker orders cancelled. Inspect the broker-paper account and preserve its ledger.
+
+This append changes README documentation only, not code, schedules, flags, state branches, credentials or accounts. Existing push-based CI may run if configured and permitted. This dated note is not a continuously refreshed operational dashboard.
