@@ -8,17 +8,18 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 6. Skipped: 6. Broker order results: 0.
+Candidates: 7. Skipped: 6. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| ETH/USD | 15m | donchian_breakout | skipped | symbol_already_active | {} |
-| ETH/USD | 15m | macd_momentum | skipped | symbol_already_active | {} |
-| ETH/USD | 15m | squeeze_breakout | skipped | symbol_already_active | {} |
-| PEPE/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| AVAX/USD | 15m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 56.80678590523451} |
-| BTC/USD | 15m | donchian_breakout | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
+| ETH/USD | 15m | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
+| PEPE/USD | 1h | trend_pullback | skipped | already_seen | {} |
+| AVAX/USD | 15m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 62.39010833191505} |
+| LINK/USD | 5m | trend_pullback | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
+| LTC/USD | 5m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 58.379747378813654} |
+| HYPE/USD | 5m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "c2f2661b-504a-4e62-848c-ed73796506bb", "broker_status": "pending_new", "client_order_id": "csl2-f22af55e2ba9270c667226ad30d9cb25", "quantity": "2.264954361", "reference_ask": 88.302} |
+| HYPE/USD | 5m | macd_momentum | skipped | symbol_already_active | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -36,6 +37,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | PEPE/USD | 1h | trend_pullback | 5.03e-06 | 38668482.10735587 | 194.50246500000003 | 38571810.90208748 | 5.424840282494075e-06 | 4.832579858752963e-06 | open |
 | UNI/USD | 15m | trend_pullback | 7.181 | 27.90492457 | 200.38526333717 | 27.835162258 | 7.300773753751183 | 7.121113123124409 | open |
 | ETH/USD | 15m | trend_pullback | 2268.6 | 0.088187309 | 200.0617291974 | 0.08796684 | 2279.9521028114164 | 2262.9239485942917 | open |
+| HYPE/USD | 5m | trend_pullback | n/a | n/a | n/a | 0.0 | n/a | n/a | pending |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -107,13 +109,13 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-01T09:39:21+00:00
+Next entry scan eligible: 2026-11-01T10:17:20+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-01T09:09:22+00:00
+Last refresh: 2026-11-01T09:47:21+00:00
 Source status: partial
 Selected: ETH/USD, PEPE/USD, UNI/USD, AVAX/USD, BTC/USD, LINK/USD, LTC/USD, SOL/USD, AAVE/USD, HYPE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.

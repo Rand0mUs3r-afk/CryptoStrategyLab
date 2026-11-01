@@ -10516,6 +10516,258 @@
         "pending_entry_policy_enabled": true,
         "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
       }
+    },
+    {
+      "status": "PAPER_TICK_COMPLETED",
+      "paper_only": true,
+      "writes_enabled": true,
+      "mode": "tick",
+      "account_verified": true,
+      "data_errors": [
+        {
+          "symbol": "PEPE/USD",
+          "timeframe": "5m",
+          "stage": "candles",
+          "error_type": "ValueError"
+        },
+        {
+          "symbol": "AAVE/USD",
+          "timeframe": "5m",
+          "stage": "candles",
+          "error_type": "ValueError"
+        }
+      ],
+      "entry_decisions": [
+        {
+          "symbol": "ETH/USD",
+          "timeframe": "15m",
+          "strategy": "rolling_vwap_reclaim",
+          "signal_time": 1793526300,
+          "outcome": "skipped",
+          "reason": "symbol_already_active",
+          "details": {}
+        },
+        {
+          "symbol": "PEPE/USD",
+          "timeframe": "1h",
+          "strategy": "trend_pullback",
+          "signal_time": 1793523600,
+          "outcome": "skipped",
+          "reason": "already_seen",
+          "details": {}
+        },
+        {
+          "symbol": "AVAX/USD",
+          "timeframe": "15m",
+          "strategy": "trend_pullback",
+          "signal_time": 1793526300,
+          "outcome": "skipped",
+          "reason": "spread_too_wide",
+          "details": {
+            "spread_bps": 62.39010833191505,
+            "max_spread_bps": 50
+          }
+        },
+        {
+          "symbol": "LINK/USD",
+          "timeframe": "5m",
+          "strategy": "trend_pullback",
+          "signal_time": 1793526300,
+          "outcome": "skipped",
+          "reason": "no_fresh_quote",
+          "details": {
+            "max_quote_age_seconds": 30
+          }
+        },
+        {
+          "symbol": "LTC/USD",
+          "timeframe": "5m",
+          "strategy": "bollinger_reversion",
+          "signal_time": 1793526300,
+          "outcome": "skipped",
+          "reason": "spread_too_wide",
+          "details": {
+            "spread_bps": 58.379747378813654,
+            "max_spread_bps": 50
+          }
+        },
+        {
+          "symbol": "HYPE/USD",
+          "timeframe": "5m",
+          "strategy": "trend_pullback",
+          "signal_time": 1793526300,
+          "outcome": "order_result",
+          "reason": "broker_order_returned",
+          "details": {
+            "client_order_id": "csl2-f22af55e2ba9270c667226ad30d9cb25",
+            "quantity": "2.264954361",
+            "reference_ask": 88.302,
+            "broker_status": "pending_new",
+            "broker_order_id": "c2f2661b-504a-4e62-848c-ed73796506bb"
+          }
+        },
+        {
+          "symbol": "HYPE/USD",
+          "timeframe": "5m",
+          "strategy": "macd_momentum",
+          "signal_time": 1793526300,
+          "outcome": "skipped",
+          "reason": "symbol_already_active",
+          "details": {}
+        }
+      ],
+      "entry_pause_reasons": [],
+      "candidates": 7,
+      "entry_scan_interval_seconds": 1800,
+      "entry_scan_status": "completed_with_data_errors",
+      "next_entry_scan_at_utc": "2026-11-01T10:17:20+00:00",
+      "watchlist_status": "partial",
+      "watchlist_symbols": [
+        "ETH/USD",
+        "PEPE/USD",
+        "UNI/USD",
+        "AVAX/USD",
+        "BTC/USD",
+        "LINK/USD",
+        "LTC/USD",
+        "SOL/USD",
+        "AAVE/USD",
+        "HYPE/USD"
+      ],
+      "observed_at_utc": "2026-11-01T09:47:55+00:00",
+      "reconciliation": {
+        "status": "fee_pending",
+        "observed_at_utc": "2026-11-01T09:47:54+00:00",
+        "quantities": [
+          {
+            "symbol": "AAVEUSD",
+            "filled_quantity": "0.007329224",
+            "fee_quantity": "0",
+            "expected_quantity": "0.007329224",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.007329224",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.007329224"
+          },
+          {
+            "symbol": "ARBUSD",
+            "filled_quantity": "8.804502026",
+            "fee_quantity": "-8.804502026",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "AVAXUSD",
+            "filled_quantity": "0.171436211",
+            "fee_quantity": "-0.056598413",
+            "expected_quantity": "0.114837798",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.114837798",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.114837798"
+          },
+          {
+            "symbol": "BTCUSD",
+            "filled_quantity": "0.000018832",
+            "fee_quantity": "-0.000012395",
+            "expected_quantity": "0.000006437",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.000006437",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.000006437"
+          },
+          {
+            "symbol": "DOTUSD",
+            "filled_quantity": "0.515464449",
+            "fee_quantity": "-0.515464449",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "ETHUSD",
+            "filled_quantity": "0.089049629",
+            "fee_quantity": "-0.000641803",
+            "expected_quantity": "0.088407826",
+            "broker_quantity": "0.08796684",
+            "difference_quantity": "-0.000440986",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.000440986"
+          },
+          {
+            "symbol": "FILUSD",
+            "filled_quantity": "0.549710303",
+            "fee_quantity": "-0.549710303",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "HYPEUSD",
+            "filled_quantity": "0",
+            "fee_quantity": "0",
+            "expected_quantity": "0",
+            "broker_quantity": "0",
+            "difference_quantity": "0",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "LINKUSD",
+            "filled_quantity": "0.085514142",
+            "fee_quantity": "-0.042194093",
+            "expected_quantity": "0.043320049",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.043320049",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.043320049"
+          },
+          {
+            "symbol": "PEPEUSD",
+            "filled_quantity": "39168037.568623270",
+            "fee_quantity": "-596226.666535790",
+            "expected_quantity": "38571810.902087480",
+            "broker_quantity": "38571810.90208748",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "SOLUSD",
+            "filled_quantity": "0.024677697",
+            "fee_quantity": "-0.024677697",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "UNIUSD",
+            "filled_quantity": "27.973928159",
+            "fee_quantity": "-0.069003589",
+            "expected_quantity": "27.904924570",
+            "broker_quantity": "27.835162258",
+            "difference_quantity": "-0.069762312",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.069762312"
+          }
+        ],
+        "entries_blocked": false,
+        "exit_checks_allowed": true,
+        "accounting_final": false,
+        "attempts": 3,
+        "retry_exhausted": true,
+        "pending_entry_policy_enabled": true,
+        "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
+      }
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",
@@ -13786,7 +14038,8 @@
     "AVAX/USD|15m|trend_pullback|1793526300": 1793526457.5511625,
     "LINK/USD|5m|trend_pullback|1793526300": 1793526457.5929,
     "LTC/USD|5m|bollinger_reversion|1793526300": 1793526457.6404493,
-    "HYPE/USD|5m|trend_pullback|1793526300": 1793526457.6830058
+    "HYPE/USD|5m|trend_pullback|1793526300": 1793526457.6830058,
+    "HYPE/USD|5m|macd_momentum|1793526300": 1793526475.1811357
   },
   "day": "2026-11-01",
   "day_start_equity": 99931.72,
