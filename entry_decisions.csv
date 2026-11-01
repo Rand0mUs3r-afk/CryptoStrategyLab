@@ -1,1 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+AAVE/USD,15m,trend_pullback,1793533500,order_result,broker_order_returned,"{""broker_order_id"": ""44802e20-cb70-44e8-a1b4-3ec336a33138"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-316e8fc07c25377c6c688692956bad33"", ""quantity"": ""1.454545454"", ""reference_ask"": 137.5}"
+BCH/USD,1h,bollinger_reversion,1793530800,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"

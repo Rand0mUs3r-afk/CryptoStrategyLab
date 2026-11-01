@@ -1,16 +1,16 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-01T11:24:28+00:00",
+  "observed_at_utc": "2026-11-01T11:55:47+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
-      "filled_quantity": "0.007329224",
+      "filled_quantity": "1.461874678",
       "fee_quantity": "0",
-      "expected_quantity": "0.007329224",
-      "broker_quantity": "0",
-      "difference_quantity": "-0.007329224",
+      "expected_quantity": "1.461874678",
+      "broker_quantity": "1.45090909",
+      "difference_quantity": "-0.010965588",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.007329224"
+      "unconfirmed_shortfall": "0.010965588"
     },
     {
       "symbol": "ARBUSD",
