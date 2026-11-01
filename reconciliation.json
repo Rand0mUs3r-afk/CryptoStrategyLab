@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-01T04:32:45+00:00",
+  "observed_at_utc": "2026-11-01T05:20:43+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -24,13 +24,13 @@
     },
     {
       "symbol": "AVAXUSD",
-      "filled_quantity": "0.115137512",
+      "filled_quantity": "22.634616861",
       "fee_quantity": "-0.056598413",
-      "expected_quantity": "0.058539099",
-      "broker_quantity": "0",
-      "difference_quantity": "-0.058539099",
+      "expected_quantity": "22.578018448",
+      "broker_quantity": "22.46318065",
+      "difference_quantity": "-0.114837798",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.058539099"
+      "unconfirmed_shortfall": "0.114837798"
     },
     {
       "symbol": "BTCUSD",
@@ -54,10 +54,10 @@
     },
     {
       "symbol": "ETHUSD",
-      "filled_quantity": "0.088848559",
+      "filled_quantity": "0.000862320",
       "fee_quantity": "-0.000641803",
-      "expected_quantity": "0.088206756",
-      "broker_quantity": "0.087986239",
+      "expected_quantity": "0.000220517",
+      "broker_quantity": "0",
       "difference_quantity": "-0.000220517",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.000220517"
@@ -114,13 +114,13 @@
     },
     {
       "symbol": "UNIUSD",
-      "filled_quantity": "0.069003589",
+      "filled_quantity": "27.973928159",
       "fee_quantity": "-0.069003589",
-      "expected_quantity": "0E-9",
-      "broker_quantity": "0",
-      "difference_quantity": "0E-9",
+      "expected_quantity": "27.904924570",
+      "broker_quantity": "27.835162258",
+      "difference_quantity": "-0.069762312",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0"
+      "unconfirmed_shortfall": "0.069762312"
     }
   ],
   "entries_blocked": false,
