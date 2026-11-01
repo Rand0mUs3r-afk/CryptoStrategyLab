@@ -1,2 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-UNI/USD,15m,macd_momentum,1793540700,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+ETH/USD,15m,trend_pullback,1793542500,skipped,stale_signal,"{""age_seconds"": 907.1262674331665, ""max_age_seconds"": 900}"
+PEPE/USD,1h,bollinger_reversion,1793541600,skipped,symbol_already_active,{}
+BTC/USD,15m,macd_momentum,1793543400,order_result,broker_order_returned,"{""broker_order_id"": ""f6ea800b-13a4-4b0f-8017-a3d77c35ed1a"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-fc064afc580856fe75c0f312bb565adf"", ""quantity"": ""0.002567047"", ""reference_ask"": 77910.53}"
+UNI/USD,1h,donchian_breakout,1793541600,order_result,broker_order_returned,"{""broker_order_id"": ""79f568b7-31e7-492b-b839-e71a02fd05de"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-4b9fa2b60937113d7f5b9eafaecf0314"", ""quantity"": ""27.404768429"", ""reference_ask"": 7.298}"
