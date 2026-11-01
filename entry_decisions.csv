@@ -1,1 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+AAVE/USD,1h,trend_pullback,1793570400,skipped,symbol_already_active,{}
+LINK/USD,15m,bollinger_reversion,1793573100,skipped,symbol_already_active,{}
+UNI/USD,1h,trend_pullback,1793570400,skipped,symbol_already_active,{}
+AVAX/USD,15m,bollinger_reversion,1793573100,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+AVAX/USD,15m,rsi_rebound,1793573100,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+SOL/USD,15m,bollinger_reversion,1793573100,order_result,broker_order_returned,"{""broker_order_id"": ""a331dc12-5df3-4207-a13a-d5f3fc01e7e0"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-c3f46539f801ff0124b704afbf141565"", ""quantity"": ""2.130606157"", ""reference_ask"": 93.87}"

@@ -4,19 +4,107 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [],
-  "entry_decisions": [],
-  "entry_pause_reasons": [
-    "entry_scan_interval_not_elapsed"
+  "data_errors": [
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "TRUMP/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    }
   ],
-  "candidates": 0,
+  "entry_decisions": [
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793570400,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "LINK/USD",
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793573100,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793570400,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793573100,
+      "outcome": "skipped",
+      "reason": "no_fresh_quote",
+      "details": {
+        "max_quote_age_seconds": 30
+      }
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "15m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1793573100,
+      "outcome": "skipped",
+      "reason": "no_fresh_quote",
+      "details": {
+        "max_quote_age_seconds": 30
+      }
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793573100,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-c3f46539f801ff0124b704afbf141565",
+        "quantity": "2.130606157",
+        "reference_ask": 93.87,
+        "broker_status": "pending_new",
+        "broker_order_id": "a331dc12-5df3-4207-a13a-d5f3fc01e7e0"
+      }
+    }
+  ],
+  "entry_pause_reasons": [],
+  "candidates": 6,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "not_due",
-  "next_entry_scan_at_utc": "2026-11-01T22:25:25+00:00",
-  "observed_at_utc": "2026-11-01T22:23:03+00:00",
+  "entry_scan_status": "completed_with_data_errors",
+  "next_entry_scan_at_utc": "2026-11-01T23:25:41+00:00",
+  "watchlist_status": "partial",
+  "watchlist_symbols": [
+    "AAVE/USD",
+    "LINK/USD",
+    "TRUMP/USD",
+    "UNI/USD",
+    "AVAX/USD",
+    "BTC/USD",
+    "ETH/USD",
+    "LTC/USD",
+    "SOL/USD"
+  ],
+  "observed_at_utc": "2026-11-01T22:56:11+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T22:23:03+00:00",
+    "observed_at_utc": "2026-11-01T22:56:10+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -120,13 +208,13 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "0.035249180",
+        "filled_quantity": "2.165855337",
         "fee_quantity": "-0.024677697",
-        "expected_quantity": "0.010571483",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.010571483",
+        "expected_quantity": "2.141177640",
+        "broker_quantity": "2.125279641",
+        "difference_quantity": "-0.015897999",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.010571483"
+        "unconfirmed_shortfall": "0.015897999"
       },
       {
         "symbol": "TRUMPUSD",
