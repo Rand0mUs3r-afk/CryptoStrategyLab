@@ -12375,6 +12375,21 @@
       "filled_avg_price": 8.7882,
       "filled_at": "2026-11-01T08:26:05.522167795Z",
       "broker_updated_at": "2026-11-01T08:26:05.571347443Z"
+    },
+    "csl2-903b93b43130eb467c687df198ea8ab3": {
+      "payload": {
+        "symbol": "BTC/USD",
+        "side": "sell",
+        "qty": "0.002567867",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-903b93b43130eb467c687df198ea8ab3"
+      },
+      "cycle_id": "csl2-4dc10ee41e2511291ec8864a5c8e3eb4",
+      "status": "queued",
+      "created_at": 1793524144.0640223,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -13210,7 +13225,8 @@
       "entry_notional_usd": 200.12200636760042,
       "tp": 78049.059568397,
       "sl": 77582.914228397,
-      "entry_time_utc": "2026-11-01T04:32:40.141978923Z"
+      "entry_time_utc": "2026-11-01T04:32:40.141978923Z",
+      "exit_reason": "target"
     },
     {
       "symbol": "AVAX/USD",
@@ -13492,7 +13508,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T08:26:11+00:00",
+    "observed_at_utc": "2026-11-01T09:09:13+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
