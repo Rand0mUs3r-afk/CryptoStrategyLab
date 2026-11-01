@@ -4,93 +4,19 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [
-    {
-      "symbol": "TRUMP/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "AAVE/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    }
+  "data_errors": [],
+  "entry_decisions": [],
+  "entry_pause_reasons": [
+    "entry_scan_interval_not_elapsed"
   ],
-  "entry_decisions": [
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793552400,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "UNI/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793552400,
-      "outcome": "skipped",
-      "reason": "symbol_cooldown",
-      "details": {
-        "cooldown_seconds": 300
-      }
-    },
-    {
-      "symbol": "AAVE/USD",
-      "timeframe": "15m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793552400,
-      "outcome": "skipped",
-      "reason": "symbol_cooldown",
-      "details": {
-        "cooldown_seconds": 300
-      }
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793552400,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 61.79196704428365,
-        "max_spread_bps": 50
-      }
-    }
-  ],
-  "entry_pause_reasons": [],
-  "candidates": 4,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "completed_with_data_errors",
+  "entry_scan_status": "not_due",
   "next_entry_scan_at_utc": "2026-11-01T17:43:35+00:00",
-  "watchlist_status": "partial",
-  "watchlist_symbols": [
-    "BTC/USD",
-    "ETH/USD",
-    "SOL/USD",
-    "AVAX/USD",
-    "LINK/USD",
-    "LTC/USD",
-    "TRUMP/USD",
-    "UNI/USD",
-    "AAVE/USD",
-    "PEPE/USD"
-  ],
-  "observed_at_utc": "2026-11-01T17:13:49+00:00",
+  "observed_at_utc": "2026-11-01T17:40:45+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T17:13:35+00:00",
+    "observed_at_utc": "2026-11-01T17:40:45+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
