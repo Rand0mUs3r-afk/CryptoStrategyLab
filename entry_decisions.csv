@@ -1,3 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,15m,trend_pullback,1793545200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.635146877307754}"
-SOL/USD,1h,bollinger_reversion,1793545200,order_result,broker_order_returned,"{""broker_order_id"": ""4364a7dc-2fd3-42a9-9e64-aa76bd05781e"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-5eaa3d6a95b78e08444f59a4cb687500"", ""quantity"": ""2.107477118"", ""reference_ask"": 94.9002}"
+SOL/USD,1h,bollinger_reversion,1793545200,skipped,already_seen,{}
+TRUMP/USD,1h,donchian_breakout,1793545200,order_result,broker_order_returned,"{""broker_order_id"": ""fe94c8d2-5b6b-4bad-909f-01373fa8f120"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-65e52ac574af3d7acf007fbc7d45444b"", ""quantity"": ""117.164616285"", ""reference_ask"": 1.707}"

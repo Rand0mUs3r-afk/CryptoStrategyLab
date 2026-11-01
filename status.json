@@ -12,6 +12,12 @@
       "error_type": "ValueError"
     },
     {
+      "symbol": "TRUMP/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
       "symbol": "PEPE/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -20,30 +26,27 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "AVAX/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793545200,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 61.635146877307754,
-        "max_spread_bps": 50
-      }
-    },
-    {
       "symbol": "SOL/USD",
       "timeframe": "1h",
       "strategy": "bollinger_reversion",
       "signal_time": 1793545200,
+      "outcome": "skipped",
+      "reason": "already_seen",
+      "details": {}
+    },
+    {
+      "symbol": "TRUMP/USD",
+      "timeframe": "1h",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793545200,
       "outcome": "order_result",
       "reason": "broker_order_returned",
       "details": {
-        "client_order_id": "csl2-5eaa3d6a95b78e08444f59a4cb687500",
-        "quantity": "2.107477118",
-        "reference_ask": 94.9002,
+        "client_order_id": "csl2-65e52ac574af3d7acf007fbc7d45444b",
+        "quantity": "117.164616285",
+        "reference_ask": 1.707,
         "broker_status": "pending_new",
-        "broker_order_id": "4364a7dc-2fd3-42a9-9e64-aa76bd05781e"
+        "broker_order_id": "fe94c8d2-5b6b-4bad-909f-01373fa8f120"
       }
     }
   ],
@@ -51,23 +54,24 @@
   "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-01T15:34:14+00:00",
+  "next_entry_scan_at_utc": "2026-11-01T16:05:15+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "AAVE/USD",
     "BTC/USD",
     "ETH/USD",
-    "PEPE/USD",
+    "SOL/USD",
     "UNI/USD",
     "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
-    "SOL/USD"
+    "TRUMP/USD",
+    "PEPE/USD"
   ],
-  "observed_at_utc": "2026-11-01T15:04:44+00:00",
+  "observed_at_utc": "2026-11-01T15:35:49+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T15:04:42+00:00",
+    "observed_at_utc": "2026-11-01T15:35:48+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -161,10 +165,10 @@
       },
       {
         "symbol": "PEPEUSD",
-        "filled_quantity": "39168037.568623270",
+        "filled_quantity": "596226.666535790",
         "fee_quantity": "-596226.666535790",
-        "expected_quantity": "38571810.902087480",
-        "broker_quantity": "38571810.90208748",
+        "expected_quantity": "0E-9",
+        "broker_quantity": "0",
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
@@ -178,6 +182,16 @@
         "difference_quantity": "-0.005268693",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.005268693"
+      },
+      {
+        "symbol": "TRUMPUSD",
+        "filled_quantity": "117.164616285",
+        "fee_quantity": "0",
+        "expected_quantity": "117.164616285",
+        "broker_quantity": "116.871704744",
+        "difference_quantity": "-0.292911541",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "0.292911541"
       },
       {
         "symbol": "UNIUSD",

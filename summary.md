@@ -13,8 +13,8 @@ Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| AVAX/USD | 15m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 61.635146877307754} |
-| SOL/USD | 1h | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "4364a7dc-2fd3-42a9-9e64-aa76bd05781e", "broker_status": "pending_new", "client_order_id": "csl2-5eaa3d6a95b78e08444f59a4cb687500", "quantity": "2.107477118", "reference_ask": 94.9002} |
+| SOL/USD | 1h | bollinger_reversion | skipped | already_seen | {} |
+| TRUMP/USD | 1h | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "fe94c8d2-5b6b-4bad-909f-01373fa8f120", "broker_status": "pending_new", "client_order_id": "csl2-65e52ac574af3d7acf007fbc7d45444b", "quantity": "117.164616285", "reference_ask": 1.707} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -23,18 +23,19 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
 | AAVE/USD | 5m | candles | ValueError |
+| TRUMP/USD | 5m | candles | ValueError |
 | PEPE/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| PEPE/USD | 1h | trend_pullback | 5.03e-06 | 38668482.10735587 | 194.50246500000003 | 38571810.90208748 | 5.424840282494075e-06 | 4.832579858752963e-06 | open |
 | AAVE/USD | 15m | trend_pullback | 137.614 | 1.454545454 | 200.165818106756 | 1.45090909 | 139.66480060462044 | 136.58859969768977 | open |
 | ETH/USD | 15m | trend_pullback | 2264.065049526 | 0.08838607 | 200.11181195195852 | 0.088165104 | 2276.8293182366338 | 2257.6829151706834 | open |
 | BTC/USD | 15m | macd_momentum | 77940.6 | 0.002567047 | 200.0771834082 | 0.002560629 | 78276.92160587902 | 77772.43919706049 | open |
 | UNI/USD | 1h | donchian_breakout | 7.3045 | 27.404768429 | 200.17813098963052 | 27.336256507 | 7.549550005739403 | 7.181974997130299 | open |
 | SOL/USD | 1h | bollinger_reversion | 94.885 | 2.107477118 | 199.96796634142999 | 2.102208425 | 96.44891526039979 | 94.10304236980012 | open |
+| TRUMP/USD | 1h | donchian_breakout | 1.70826 | 117.164616285 | 200.14762741501409 | 116.871704744 | 1.7793160226095484 | 1.6727319886952257 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -64,6 +65,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | HYPE/USD | 1h | donchian_breakout | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
 | PEPE/USD | 5m | bollinger_reversion | 4.86e-06 | 41237113.40206186 | 200.41237113402062 | 0.0 | 4.947608994219858e-06 | 4.816195502890071e-06 | closed |
 | SOL/USD | 5m | donchian_breakout | 101.96 | 1.961938395 | 200.0392387542 | 0.0 | 102.8022141789213 | 101.53889291053935 | closed |
+| PEPE/USD | 1h | trend_pullback | 5.03e-06 | 38668482.10735587 | 194.50246500000003 | 0.0 | 5.424840282494075e-06 | 4.832579858752963e-06 | closed |
 | HYPE/USD | 15m | donchian_breakout | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
 | HYPE/USD | 5m | bollinger_reversion | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
 | SOL/USD | 5m | rsi_rebound | 100.3 | 1.994415636 | 200.0398882908 | 0.0 | 101.01718373799453 | 99.94140813100273 | closed |
@@ -103,8 +105,9 @@ Accounting final: False
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
 | HYPEUSD | 0 | 0 | 0 | 0 |
 | LINKUSD | 0.085945795 | 0 | -0.085945795 | 0.085945795 |
-| PEPEUSD | 38571810.902087480 | 38571810.90208748 | 0E-9 | 0 |
+| PEPEUSD | 0E-9 | 0 | 0E-9 | 0 |
 | SOLUSD | 2.107477118 | 2.102208425 | -0.005268693 | 0.005268693 |
+| TRUMPUSD | 117.164616285 | 116.871704744 | -0.292911541 | 0.292911541 |
 | UNIUSD | 27.543964578 | 27.336256507 | -0.207708071 | 0.207708071 |
 
 PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
@@ -112,15 +115,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-01T15:34:14+00:00
+Next entry scan eligible: 2026-11-01T16:05:15+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-01T15:04:15+00:00
+Last refresh: 2026-11-01T15:35:16+00:00
 Source status: partial
-Selected: AAVE/USD, BTC/USD, ETH/USD, PEPE/USD, UNI/USD, AVAX/USD, LINK/USD, LTC/USD, SOL/USD
+Selected: AAVE/USD, BTC/USD, ETH/USD, SOL/USD, UNI/USD, AVAX/USD, LINK/USD, LTC/USD, TRUMP/USD, PEPE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
