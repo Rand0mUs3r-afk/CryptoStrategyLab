@@ -6,13 +6,13 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "AAVE/USD",
+      "symbol": "PEPE/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     },
     {
-      "symbol": "PEPE/USD",
+      "symbol": "AAVE/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -20,73 +20,96 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793518200,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "UNI/USD",
-      "timeframe": "1h",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793516400,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "UNI/USD",
+      "symbol": "BTC/USD",
       "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1793518800,
+      "signal_time": 1793521500,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "LINK/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793516400,
+      "symbol": "BTC/USD",
+      "timeframe": "5m",
+      "strategy": "macd_momentum",
+      "signal_time": 1793521500,
       "outcome": "skipped",
-      "reason": "max_positions",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793521500,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793521500,
+      "outcome": "skipped",
+      "reason": "symbol_cooldown",
       "details": {
-        "active_positions": 6,
-        "max_positions": 6
+        "cooldown_seconds": 300
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793521500,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 61.771158578285856,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "5m",
+      "strategy": "rolling_vwap_reclaim",
+      "signal_time": 1793521500,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 61.771158578285856,
+        "max_spread_bps": 50
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 4,
+  "candidates": 6,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-01T08:11:34+00:00",
+  "next_entry_scan_at_utc": "2026-11-01T08:56:11+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
-    "AAVE/USD",
-    "AVAX/USD",
     "BTC/USD",
     "ETH/USD",
     "PEPE/USD",
     "UNI/USD",
+    "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
-    "SOL/USD"
+    "SOL/USD",
+    "AAVE/USD"
   ],
-  "observed_at_utc": "2026-11-01T07:41:47+00:00",
+  "observed_at_utc": "2026-11-01T08:26:26+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T07:41:34+00:00",
+    "observed_at_utc": "2026-11-01T08:26:11+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
-        "filled_quantity": "1.447866446",
+        "filled_quantity": "0.007329224",
         "fee_quantity": "0",
-        "expected_quantity": "1.447866446",
-        "broker_quantity": "1.440537222",
+        "expected_quantity": "0.007329224",
+        "broker_quantity": "0",
         "difference_quantity": "-0.007329224",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.007329224"
@@ -103,10 +126,10 @@
       },
       {
         "symbol": "AVAXUSD",
-        "filled_quantity": "22.634616861",
+        "filled_quantity": "0.171436211",
         "fee_quantity": "-0.056598413",
-        "expected_quantity": "22.578018448",
-        "broker_quantity": "22.46318065",
+        "expected_quantity": "0.114837798",
+        "broker_quantity": "0",
         "difference_quantity": "-0.114837798",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.114837798"

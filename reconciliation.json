@@ -1,13 +1,13 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-01T07:41:34+00:00",
+  "observed_at_utc": "2026-11-01T08:26:11+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
-      "filled_quantity": "1.447866446",
+      "filled_quantity": "0.007329224",
       "fee_quantity": "0",
-      "expected_quantity": "1.447866446",
-      "broker_quantity": "1.440537222",
+      "expected_quantity": "0.007329224",
+      "broker_quantity": "0",
       "difference_quantity": "-0.007329224",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.007329224"
@@ -24,10 +24,10 @@
     },
     {
       "symbol": "AVAXUSD",
-      "filled_quantity": "22.634616861",
+      "filled_quantity": "0.171436211",
       "fee_quantity": "-0.056598413",
-      "expected_quantity": "22.578018448",
-      "broker_quantity": "22.46318065",
+      "expected_quantity": "0.114837798",
+      "broker_quantity": "0",
       "difference_quantity": "-0.114837798",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.114837798"
