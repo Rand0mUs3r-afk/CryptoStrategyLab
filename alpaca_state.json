@@ -14587,6 +14587,21 @@
       "filled_at": "2026-11-01T14:30:17.954265506Z",
       "broker_updated_at": "2026-11-01T14:30:17.971544287Z",
       "reference_ask": 77910.53
+    },
+    "csl2-4b9fa2b60937113d7f5b9eafaecf0314": {
+      "payload": {
+        "symbol": "UNI/USD",
+        "side": "buy",
+        "qty": "27.404768429",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-4b9fa2b60937113d7f5b9eafaecf0314"
+      },
+      "cycle_id": "csl2-4b9fa2b60937113d7f5b9eafaecf0314",
+      "status": "queued",
+      "created_at": 1793543425.2509847,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -15660,6 +15675,22 @@
       "tp": 78276.92160587902,
       "sl": 77772.43919706049,
       "entry_time_utc": "2026-11-01T14:30:17.954265506Z"
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "1h",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793541600,
+      "atr": 0.08168333524646768,
+      "signal_close": 7.3342,
+      "hold_seconds": 259200,
+      "id": "csl2-4b9fa2b60937113d7f5b9eafaecf0314",
+      "created_at": 1793543425.2509847,
+      "status": "pending",
+      "distance": 0.12252500286970151,
+      "target_r": 2.0,
+      "reference_ask": 7.298,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -15902,7 +15933,8 @@
     "UNI/USD|15m|macd_momentum|1793540700": 1793541585.3865561,
     "ETH/USD|15m|trend_pullback|1793542500": 1793543407.1262674,
     "PEPE/USD|1h|bollinger_reversion|1793541600": 1793543407.1262774,
-    "BTC/USD|15m|macd_momentum|1793543400": 1793543407.1262934
+    "BTC/USD|15m|macd_momentum|1793543400": 1793543407.1262934,
+    "UNI/USD|1h|donchian_breakout|1793541600": 1793543425.2509847
   },
   "day": "2026-11-01",
   "day_start_equity": 99931.72,
@@ -15911,7 +15943,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T14:30:23+00:00",
+    "observed_at_utc": "2026-11-01T14:30:34+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
