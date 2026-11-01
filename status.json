@@ -4,52 +4,19 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [
-    {
-      "symbol": "AAVE/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "TRUMP/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    }
+  "data_errors": [],
+  "entry_decisions": [],
+  "entry_pause_reasons": [
+    "entry_scan_interval_not_elapsed"
   ],
-  "entry_decisions": [
-    {
-      "symbol": "TRUMP/USD",
-      "timeframe": "1h",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1793559600,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    }
-  ],
-  "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "completed_with_data_errors",
+  "entry_scan_status": "not_due",
   "next_entry_scan_at_utc": "2026-11-01T20:26:11+00:00",
-  "watchlist_status": "partial",
-  "watchlist_symbols": [
-    "AAVE/USD",
-    "TRUMP/USD",
-    "AVAX/USD",
-    "BTC/USD",
-    "ETH/USD",
-    "LINK/USD",
-    "LTC/USD",
-    "SOL/USD",
-    "UNI/USD"
-  ],
-  "observed_at_utc": "2026-11-01T19:56:24+00:00",
+  "observed_at_utc": "2026-11-01T20:20:37+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T19:56:11+00:00",
+    "observed_at_utc": "2026-11-01T20:20:37+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

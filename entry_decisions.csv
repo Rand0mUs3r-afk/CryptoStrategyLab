@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-TRUMP/USD,1h,rolling_vwap_reclaim,1793559600,skipped,already_seen,{}
