@@ -1,1 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+BTC/USD,5m,bollinger_reversion,1793556600,skipped,symbol_already_active,{}
