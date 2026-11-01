@@ -13761,6 +13761,21 @@
       "filled_at": "2026-11-01T12:26:26.653670103Z",
       "broker_updated_at": "2026-11-01T12:26:26.672416116Z",
       "reference_ask": 77756.853
+    },
+    "csl2-09f5229ff352aca56df58b45e83c7fb5": {
+      "payload": {
+        "symbol": "UNI/USD",
+        "side": "buy",
+        "qty": "27.773534598",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-09f5229ff352aca56df58b45e83c7fb5"
+      },
+      "cycle_id": "csl2-09f5229ff352aca56df58b45e83c7fb5",
+      "status": "queued",
+      "created_at": 1793535993.9472349,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -14759,6 +14774,22 @@
       "tp": 78088.111700058,
       "sl": 77621.570582058,
       "entry_time_utc": "2026-11-01T12:26:26.653670103Z"
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793535900,
+      "atr": 0.021806423197120395,
+      "signal_close": 7.195,
+      "hold_seconds": 3600,
+      "id": "csl2-09f5229ff352aca56df58b45e83c7fb5",
+      "created_at": 1793535993.9472349,
+      "status": "pending",
+      "distance": 0.03270963479568059,
+      "target_r": 2.0,
+      "reference_ask": 7.2011,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -14983,7 +15014,9 @@
     "AAVE/USD|15m|trend_pullback|1793533500": 1793534131.9730701,
     "BCH/USD|1h|bollinger_reversion|1793530800": 1793534149.013507,
     "PEPE/USD|1h|bollinger_reversion|1793534400": 1793535975.7650447,
-    "BTC/USD|5m|bollinger_reversion|1793535900": 1793535975.7650647
+    "BTC/USD|5m|bollinger_reversion|1793535900": 1793535975.7650647,
+    "BTC/USD|5m|rsi_rebound|1793535900": 1793535993.9471993,
+    "UNI/USD|5m|bollinger_reversion|1793535900": 1793535993.9472349
   },
   "day": "2026-11-01",
   "day_start_equity": 99931.72,
@@ -14992,7 +15025,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T12:26:32+00:00",
+    "observed_at_utc": "2026-11-01T12:26:43+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
