@@ -1,3 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-LINK/USD,15m,bollinger_reversion,1793492100,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-AAVE/USD,15m,trend_pullback,1793492100,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+PEPE/USD,15m,ema_cross,1793495700,skipped,symbol_already_active,{}
+PEPE/USD,1h,trend_pullback,1793494800,skipped,symbol_already_active,{}
+AAVE/USD,15m,trend_pullback,1793495700,order_result,broker_order_returned,"{""broker_order_id"": ""52ff01b3-7b73-4c32-9a12-d775f1cd763c"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-28ca080a68cafae1844360010f9eda10"", ""quantity"": ""1.487541837"", ""reference_ask"": 134.45}"
+AAVE/USD,15m,macd_momentum,1793495700,skipped,symbol_already_active,{}

@@ -1,7 +1,17 @@
 {
-  "status": "matched",
-  "observed_at_utc": "2026-11-01T00:18:04+00:00",
+  "status": "fee_pending",
+  "observed_at_utc": "2026-11-01T01:27:50+00:00",
   "quantities": [
+    {
+      "symbol": "AAVEUSD",
+      "filled_quantity": "1.487541837",
+      "fee_quantity": "0",
+      "expected_quantity": "1.487541837",
+      "broker_quantity": "1.483822982",
+      "difference_quantity": "-0.003718855",
+      "tolerance_quantity": "1E-8",
+      "unconfirmed_shortfall": "0.003718855"
+    },
     {
       "symbol": "ARBUSD",
       "filled_quantity": "8.804502026",
@@ -115,7 +125,9 @@
   ],
   "entries_blocked": false,
   "exit_checks_allowed": true,
-  "accounting_final": true,
-  "attempts": 1,
-  "retry_exhausted": false
+  "accounting_final": false,
+  "attempts": 3,
+  "retry_exhausted": true,
+  "pending_entry_policy_enabled": true,
+  "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
 }

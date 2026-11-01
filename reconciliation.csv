@@ -1,4 +1,5 @@
 symbol,filled_quantity,fee_quantity,expected_quantity,broker_quantity,difference_quantity,tolerance_quantity,unconfirmed_shortfall
+AAVEUSD,1.487541837,0,1.487541837,1.483822982,-0.003718855,1E-8,0.003718855
 ARBUSD,8.804502026,-8.804502026,0E-9,0,0E-9,1E-8,0
 AVAXUSD,0.056598413,-0.056598413,0E-9,0,0E-9,1E-8,0
 BTCUSD,0.000012395,-0.000012395,0E-9,0,0E-9,1E-8,0

@@ -1,2 +1,3 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
 PEPE/USD,1h,trend_pullback,2026-10-29T15:29:18.978853769Z,5.03e-06,38668482.10735587,194.50246500000003,38571810.90208748,5.424840282494075e-06,4.832579858752963e-06,open,,,
+AAVE/USD,15m,trend_pullback,2026-11-01T01:27:45.07867995Z,134.489,1.487541837,200.058014116293,1.483822982,136.09900983532222,133.6839950823389,open,,,
