@@ -11019,6 +11019,21 @@
       "filled_at": "2026-11-01T05:20:22.378316928Z",
       "broker_updated_at": "2026-11-01T05:20:22.422150256Z",
       "reference_ask": 8.8812
+    },
+    "csl2-d1f4a8dde84502794d586b7b8d600678": {
+      "payload": {
+        "symbol": "UNI/USD",
+        "side": "buy",
+        "qty": "27.904924570",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-d1f4a8dde84502794d586b7b8d600678"
+      },
+      "cycle_id": "csl2-d1f4a8dde84502794d586b7b8d600678",
+      "status": "queued",
+      "created_at": 1793510428.7205358,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -11871,6 +11886,22 @@
       "tp": 9.01437007758712,
       "sl": 8.80081496120644,
       "entry_time_utc": "2026-11-01T05:20:22.378316928Z"
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793510100,
+      "atr": 0.03992458458372765,
+      "signal_close": 7.1584,
+      "hold_seconds": 21600,
+      "id": "csl2-d1f4a8dde84502794d586b7b8d600678",
+      "created_at": 1793510428.7205358,
+      "status": "pending",
+      "distance": 0.05988687687559147,
+      "target_r": 2.0,
+      "reference_ask": 7.167193715,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -12042,7 +12073,11 @@
     "BTC/USD|5m|trend_pullback|1793507400": 1793507566.7831173,
     "LTC/USD|5m|trend_pullback|1793507400": 1793507566.7831538,
     "AAVE/USD|1h|donchian_breakout|1793509200": 1793510412.8852882,
-    "AVAX/USD|15m|donchian_breakout|1793510100": 1793510412.8853106
+    "AVAX/USD|15m|donchian_breakout|1793510100": 1793510412.8853106,
+    "AVAX/USD|1h|ema_cross|1793509200": 1793510428.7204869,
+    "AVAX/USD|1h|donchian_breakout|1793509200": 1793510428.7205195,
+    "AVAX/USD|1h|squeeze_breakout|1793509200": 1793510428.72053,
+    "UNI/USD|15m|trend_pullback|1793510100": 1793510428.7205358
   },
   "day": "2026-11-01",
   "day_start_equity": 99931.72,
@@ -12051,7 +12086,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T05:20:27+00:00",
+    "observed_at_utc": "2026-11-01T05:20:37+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
