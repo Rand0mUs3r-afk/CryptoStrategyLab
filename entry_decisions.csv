@@ -1,8 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,15m,rolling_vwap_reclaim,1793526300,skipped,symbol_already_active,{}
-PEPE/USD,1h,trend_pullback,1793523600,skipped,already_seen,{}
-AVAX/USD,15m,trend_pullback,1793526300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.39010833191505}"
-LINK/USD,5m,trend_pullback,1793526300,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-LTC/USD,5m,bollinger_reversion,1793526300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 58.379747378813654}"
-HYPE/USD,5m,trend_pullback,1793526300,order_result,broker_order_returned,"{""broker_order_id"": ""c2f2661b-504a-4e62-848c-ed73796506bb"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-f22af55e2ba9270c667226ad30d9cb25"", ""quantity"": ""2.264954361"", ""reference_ask"": 88.302}"
-HYPE/USD,5m,macd_momentum,1793526300,skipped,symbol_already_active,{}
+UNI/USD,15m,trend_pullback,1793528100,skipped,symbol_already_active,{}
+AVAX/USD,15m,trend_pullback,1793528100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.71503596455821}"
+LTC/USD,15m,trend_pullback,1793528100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.177252214234656}"
