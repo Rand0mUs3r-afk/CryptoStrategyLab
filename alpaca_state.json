@@ -15797,6 +15797,166 @@
         "pending_entry_policy_enabled": true,
         "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
       }
+    },
+    {
+      "status": "PAPER_TICK_COMPLETED",
+      "paper_only": true,
+      "writes_enabled": true,
+      "mode": "tick",
+      "account_verified": true,
+      "data_errors": [],
+      "entry_decisions": [],
+      "entry_pause_reasons": [
+        "entry_scan_interval_not_elapsed"
+      ],
+      "candidates": 0,
+      "entry_scan_interval_seconds": 1800,
+      "entry_scan_status": "not_due",
+      "next_entry_scan_at_utc": "2026-11-01T23:25:41+00:00",
+      "observed_at_utc": "2026-11-01T23:22:47+00:00",
+      "reconciliation": {
+        "status": "fee_pending",
+        "observed_at_utc": "2026-11-01T23:22:47+00:00",
+        "quantities": [
+          {
+            "symbol": "AAVEUSD",
+            "filled_quantity": "1.509193932",
+            "fee_quantity": "0",
+            "expected_quantity": "1.509193932",
+            "broker_quantity": "1.494482773",
+            "difference_quantity": "-0.014711159",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.014711159"
+          },
+          {
+            "symbol": "ARBUSD",
+            "filled_quantity": "8.804502026",
+            "fee_quantity": "-8.804502026",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "AVAXUSD",
+            "filled_quantity": "0.171436211",
+            "fee_quantity": "-0.056598413",
+            "expected_quantity": "0.114837798",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.114837798",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.114837798"
+          },
+          {
+            "symbol": "BTCUSD",
+            "filled_quantity": "0.000031682",
+            "fee_quantity": "-0.000012395",
+            "expected_quantity": "0.000019287",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.000019287",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.000019287"
+          },
+          {
+            "symbol": "DOTUSD",
+            "filled_quantity": "0.515464449",
+            "fee_quantity": "-0.515464449",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "ETHUSD",
+            "filled_quantity": "0.001303755",
+            "fee_quantity": "-0.000641803",
+            "expected_quantity": "0.000661952",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.000661952",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.000661952"
+          },
+          {
+            "symbol": "FILUSD",
+            "filled_quantity": "0.549710303",
+            "fee_quantity": "-0.549710303",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "HYPEUSD",
+            "filled_quantity": "0",
+            "fee_quantity": "0",
+            "expected_quantity": "0",
+            "broker_quantity": "0",
+            "difference_quantity": "0",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "LINKUSD",
+            "filled_quantity": "17.758605332",
+            "fee_quantity": "-0.042194093",
+            "expected_quantity": "17.716411239",
+            "broker_quantity": "17.58638928",
+            "difference_quantity": "-0.130021959",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.130021959"
+          },
+          {
+            "symbol": "PEPEUSD",
+            "filled_quantity": "596226.666535790",
+            "fee_quantity": "-596226.666535790",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "SOLUSD",
+            "filled_quantity": "2.165855337",
+            "fee_quantity": "-0.024677697",
+            "expected_quantity": "2.141177640",
+            "broker_quantity": "2.125279641",
+            "difference_quantity": "-0.015897999",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.015897999"
+          },
+          {
+            "symbol": "TRUMPUSD",
+            "filled_quantity": "118.356665968",
+            "fee_quantity": "0",
+            "expected_quantity": "118.356665968",
+            "broker_quantity": "117.76859504",
+            "difference_quantity": "-0.588070928",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.588070928"
+          },
+          {
+            "symbol": "UNIUSD",
+            "filled_quantity": "28.159048199",
+            "fee_quantity": "-0.069003589",
+            "expected_quantity": "28.090044610",
+            "broker_quantity": "27.812630697",
+            "difference_quantity": "-0.277413913",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0.277413913"
+          }
+        ],
+        "entries_blocked": false,
+        "exit_checks_allowed": true,
+        "accounting_final": false,
+        "attempts": 3,
+        "retry_exhausted": true,
+        "pending_entry_policy_enabled": true,
+        "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
+      }
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",
@@ -20063,7 +20223,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T22:56:10+00:00",
+    "observed_at_utc": "2026-11-01T23:22:47+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
