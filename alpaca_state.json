@@ -11308,14 +11308,14 @@
         "client_order_id": "csl2-b930a8f65d9a5f91005ccb7ef0d05689"
       },
       "cycle_id": "csl2-780492a0f3312914b3b6df5c4b1e98ac",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793512834.733597,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "17.284699358",
       "broker_order_id": "639a4d7d-610e-45cb-a2b2-f2fba0131f82",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-01T06:00:44.779925484Z"
+      "filled_avg_price": 11.64,
+      "filled_at": "2026-11-01T06:00:44.781342847Z",
+      "broker_updated_at": "2026-11-01T06:00:44.821839305Z"
     }
   },
   "cycles": [
@@ -12066,18 +12066,20 @@
       "hold_seconds": 3600,
       "id": "csl2-780492a0f3312914b3b6df5c4b1e98ac",
       "created_at": 1793502094.9897406,
-      "status": "open",
+      "status": "closed",
       "distance": 0.033094959774037945,
       "target_r": 2.0,
       "reference_ask": 11.542,
-      "remaining_qty": 17.284699358,
+      "remaining_qty": 0.0,
       "entry_price": 11.5471,
       "entry_qty": 17.328019407,
       "entry_notional_usd": 200.0883728945697,
       "tp": 11.613289919548077,
       "sl": 11.514005040225962,
       "entry_time_utc": "2026-11-01T03:01:45.22212818Z",
-      "exit_reason": "target"
+      "exit_reason": "target",
+      "closed_at": "2026-11-01T06:00:50+00:00",
+      "cashflow_pnl_before_usd_fees": 1.1055276325503485
     },
     {
       "symbol": "ETH/USD",
@@ -12377,7 +12379,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T06:00:43+00:00",
+    "observed_at_utc": "2026-11-01T06:00:50+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -12461,10 +12463,10 @@
       },
       {
         "symbol": "LINKUSD",
-        "filled_quantity": "17.370213500",
+        "filled_quantity": "0.085514142",
         "fee_quantity": "-0.042194093",
-        "expected_quantity": "17.328019407",
-        "broker_quantity": "17.284699358",
+        "expected_quantity": "0.043320049",
+        "broker_quantity": "0",
         "difference_quantity": "-0.043320049",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.043320049"
@@ -12508,7 +12510,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1793510400.2971568,
+  "last_entry_scan_at": 1793512850.5857618,
   "watchlist": {
     "observed_at_utc": "2026-11-01T05:20:01+00:00",
     "status": "partial",
