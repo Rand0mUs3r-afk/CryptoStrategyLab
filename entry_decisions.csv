@@ -1,9 +1,16 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AAVE/USD,1h,donchian_breakout,1793509200,skipped,symbol_already_active,{}
-AVAX/USD,15m,donchian_breakout,1793510100,order_result,broker_order_returned,"{""broker_order_id"": ""b5c1a5f9-673e-4fb2-a9c4-c614d8b87925"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-096f6aae7c67db7383cac73f760f0f6e"", ""quantity"": ""22.519479349"", ""reference_ask"": 8.8812}"
-AVAX/USD,1h,ema_cross,1793509200,skipped,symbol_already_active,{}
-AVAX/USD,1h,donchian_breakout,1793509200,skipped,symbol_already_active,{}
-AVAX/USD,1h,squeeze_breakout,1793509200,skipped,symbol_already_active,{}
-UNI/USD,15m,trend_pullback,1793510100,order_result,broker_order_returned,"{""broker_order_id"": ""672c045e-726e-487e-99fd-dcb452ab76df"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-d1f4a8dde84502794d586b7b8d600678"", ""quantity"": ""27.904924570"", ""reference_ask"": 7.167193715}"
-UNI/USD,15m,donchian_breakout,1793510100,skipped,symbol_already_active,{}
-UNI/USD,15m,macd_momentum,1793510100,skipped,symbol_already_active,{}
+AVAX/USD,15m,donchian_breakout,1793512800,skipped,symbol_already_active,{}
+AVAX/USD,1h,donchian_breakout,1793512800,skipped,symbol_already_active,{}
+BTC/USD,15m,squeeze_breakout,1793512800,skipped,symbol_already_active,{}
+BTC/USD,5m,squeeze_breakout,1793512800,skipped,symbol_already_active,{}
+UNI/USD,1h,trend_pullback,1793512800,skipped,symbol_already_active,{}
+UNI/USD,1h,donchian_breakout,1793512800,skipped,symbol_already_active,{}
+ETH/USD,15m,trend_pullback,1793512800,order_result,broker_order_returned,"{""broker_order_id"": ""2c9af011-f0a1-41c9-8f2a-22e51551de9c"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-3b621997dbd307489a637e92f0585a05"", ""quantity"": ""0.088187309"", ""reference_ask"": 2267.9}"
+ETH/USD,5m,trend_pullback,1793512800,skipped,symbol_already_active,{}
+ETH/USD,5m,macd_momentum,1793512800,skipped,symbol_already_active,{}
+ETH/USD,5m,squeeze_breakout,1793512800,skipped,symbol_already_active,{}
+LINK/USD,1h,trend_pullback,1793512800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+LTC/USD,15m,donchian_breakout,1793512800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+SOL/USD,5m,ema_cross,1793512800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+SOL/USD,5m,trend_pullback,1793512800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+SOL/USD,5m,squeeze_breakout,1793512800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
