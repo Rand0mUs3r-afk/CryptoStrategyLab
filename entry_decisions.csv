@@ -1,1 +1,8 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+AAVE/USD,1h,trend_pullback,1793566800,skipped,symbol_already_active,{}
+TRUMP/USD,15m,trend_pullback,1793569500,skipped,symbol_already_active,{}
+LINK/USD,1h,bollinger_reversion,1793566800,order_result,broker_order_returned,"{""broker_order_id"": ""d292bc6c-f6a8-4ec1-9d7e-794268ba27ce"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-9cc529c0a4a0406599c224af38485ffd"", ""quantity"": ""17.630465444"", ""reference_ask"": 11.344}"
+LTC/USD,1h,bollinger_reversion,1793566800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 58.9069488382245}"
+SOL/USD,1h,bollinger_reversion,1793566800,order_result,broker_order_returned,"{""broker_order_id"": ""f9399084-d833-4740-a669-dcf894f41170"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-f4b8fa35cb3083a1a7d7ffb3bc13b004"", ""quantity"": ""2.121115706"", ""reference_ask"": 94.29}"
+SOL/USD,1h,rsi_rebound,1793566800,skipped,symbol_already_active,{}
+UNI/USD,1h,trend_pullback,1793566800,order_result,broker_order_returned,"{""broker_order_id"": ""59ce5649-5fef-48d8-ada5-b8014576951e"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-783474dee241f30c89660624810eb724"", ""quantity"": ""27.882336539"", ""reference_ask"": 7.173}"
