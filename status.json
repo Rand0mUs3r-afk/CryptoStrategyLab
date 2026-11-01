@@ -4,19 +4,76 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [],
-  "entry_decisions": [],
-  "entry_pause_reasons": [
-    "entry_scan_interval_not_elapsed"
+  "data_errors": [
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "TRUMP/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    }
   ],
-  "candidates": 0,
+  "entry_decisions": [
+    {
+      "symbol": "TRUMP/USD",
+      "timeframe": "15m",
+      "strategy": "macd_momentum",
+      "signal_time": 1793576700,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "15m",
+      "strategy": "ema_cross",
+      "signal_time": 1793576700,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-79ab9689ff6eca33bf0e4820ab7006a5",
+        "quantity": "0.002556900",
+        "reference_ask": 78219.7,
+        "broker_status": "pending_new",
+        "broker_order_id": "81f5a2b5-38e6-4654-ba93-8a08501ae7fb"
+      }
+    },
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793576700,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    }
+  ],
+  "entry_pause_reasons": [],
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "not_due",
-  "next_entry_scan_at_utc": "2026-11-01T23:25:41+00:00",
-  "observed_at_utc": "2026-11-01T23:22:47+00:00",
+  "entry_scan_status": "completed_with_data_errors",
+  "next_entry_scan_at_utc": "2026-11-02T00:23:16+00:00",
+  "watchlist_status": "partial",
+  "watchlist_symbols": [
+    "AAVE/USD",
+    "LINK/USD",
+    "SOL/USD",
+    "TRUMP/USD",
+    "UNI/USD",
+    "AVAX/USD",
+    "BTC/USD",
+    "ETH/USD",
+    "LTC/USD"
+  ],
+  "observed_at_utc": "2026-11-01T23:53:49+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T23:22:47+00:00",
+    "observed_at_utc": "2026-11-01T23:53:48+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -50,13 +107,13 @@
       },
       {
         "symbol": "BTCUSD",
-        "filled_quantity": "0.000031682",
+        "filled_quantity": "0.002588582",
         "fee_quantity": "-0.000012395",
-        "expected_quantity": "0.000019287",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.000019287",
+        "expected_quantity": "0.002576187",
+        "broker_quantity": "0.002550504",
+        "difference_quantity": "-0.000025683",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.000019287"
+        "unconfirmed_shortfall": "0.000025683"
       },
       {
         "symbol": "DOTUSD",
