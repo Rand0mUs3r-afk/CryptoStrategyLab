@@ -8,27 +8,13 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 7. Skipped: 4. Broker order results: 3.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| AAVE/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| TRUMP/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| LINK/USD | 1h | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "d292bc6c-f6a8-4ec1-9d7e-794268ba27ce", "broker_status": "pending_new", "client_order_id": "csl2-9cc529c0a4a0406599c224af38485ffd", "quantity": "17.630465444", "reference_ask": 11.344} |
-| LTC/USD | 1h | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 58.9069488382245} |
-| SOL/USD | 1h | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "f9399084-d833-4740-a669-dcf894f41170", "broker_status": "pending_new", "client_order_id": "csl2-f4b8fa35cb3083a1a7d7ffb3bc13b004", "quantity": "2.121115706", "reference_ask": 94.29} |
-| SOL/USD | 1h | rsi_rebound | skipped | symbol_already_active | {} |
-| UNI/USD | 1h | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "59ce5649-5fef-48d8-ada5-b8014576951e", "broker_status": "pending_new", "client_order_id": "csl2-783474dee241f30c89660624810eb724", "quantity": "27.882336539", "reference_ask": 7.173} |
+Entries paused: entry_scan_interval_not_elapsed.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
-
-## Data errors
-
-| Coin | Bar | Stage | Error type |
-| --- | --- | --- | --- |
-| AAVE/USD | 5m | candles | ValueError |
-| TRUMP/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -37,7 +23,6 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | TRUMP/USD | 1h | rolling_vwap_reclaim | 1.6931 | 118.063754427 | 199.89374262035372 | 117.76859504 | 1.7820998552547356 | 1.6486000723726324 | open |
 | AAVE/USD | 15m | bollinger_reversion | 133.552 | 1.498228344 | 200.09139179788798 | 1.494482773 | 135.68555812265961 | 132.48522093867018 | open |
 | LINK/USD | 1h | bollinger_reversion | 11.351 | 17.630465444 | 200.123413254844 | 17.58638928 | 11.639403080819955 | 11.206798459590024 | open |
-| SOL/USD | 1h | bollinger_reversion | 94.3207 | 2.121115706 | 200.0651181709142 | 2.115812916 | 95.86473168713084 | 93.54868415643458 | open |
 | UNI/USD | 1h | trend_pullback | 7.1791 | 27.882336539 | 200.1700822471349 | 27.812630697 | 7.42161978344981 | 7.057840108275095 | open |
 ## Closed cycles
 
@@ -91,6 +76,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | UNI/USD | 1h | donchian_breakout | 7.3045 | 27.404768429 | 200.17813098963052 | 0.0 | 7.549550005739403 | 7.181974997130299 | closed |
 | SOL/USD | 1h | bollinger_reversion | 94.885 | 2.107477118 | 199.96796634142999 | 0.0 | 96.44891526039979 | 94.10304236980012 | closed |
 | TRUMP/USD | 1h | donchian_breakout | 1.70826 | 117.164616285 | 200.14762741501409 | 0.0 | 1.7793160226095484 | 1.6727319886952257 | closed |
+| SOL/USD | 1h | bollinger_reversion | 94.3207 | 2.121115706 | 200.0651181709142 | 0.0 | 95.86473168713084 | 93.54868415643458 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -115,7 +101,7 @@ Accounting final: False
 | HYPEUSD | 0 | 0 | 0 | 0 |
 | LINKUSD | 17.716411239 | 17.58638928 | -0.130021959 | 0.130021959 |
 | PEPEUSD | 0E-9 | 0 | 0E-9 | 0 |
-| SOLUSD | 2.126384399 | 2.115812916 | -0.010571483 | 0.010571483 |
+| SOLUSD | 0.010571483 | 0 | -0.010571483 | 0.010571483 |
 | TRUMPUSD | 118.356665968 | 117.76859504 | -0.588070928 | 0.588070928 |
 | UNIUSD | 28.090044610 | 27.812630697 | -0.277413913 | 0.277413913 |
 
@@ -123,7 +109,7 @@ PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
 New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
-Entry scan status: completed_with_data_errors
+Entry scan status: not_due
 Next entry scan eligible: 2026-11-01T22:25:25+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
