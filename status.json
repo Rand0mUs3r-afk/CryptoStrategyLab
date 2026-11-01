@@ -26,52 +26,58 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "SOL/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793545200,
+      "symbol": "BTC/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793549100,
       "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "TRUMP/USD",
+      "symbol": "ETH/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793549100,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "LINK/USD",
       "timeframe": "1h",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793545200,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
+      "strategy": "trend_pullback",
+      "signal_time": 1793548800,
+      "outcome": "skipped",
+      "reason": "max_positions",
       "details": {
-        "client_order_id": "csl2-65e52ac574af3d7acf007fbc7d45444b",
-        "quantity": "117.164616285",
-        "reference_ask": 1.707,
-        "broker_status": "pending_new",
-        "broker_order_id": "fe94c8d2-5b6b-4bad-909f-01373fa8f120"
+        "active_positions": 6,
+        "max_positions": 6
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-01T16:05:15+00:00",
+  "next_entry_scan_at_utc": "2026-11-01T16:38:53+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "AAVE/USD",
     "BTC/USD",
     "ETH/USD",
     "SOL/USD",
+    "TRUMP/USD",
     "UNI/USD",
     "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
-    "TRUMP/USD",
     "PEPE/USD"
   ],
-  "observed_at_utc": "2026-11-01T15:35:49+00:00",
+  "observed_at_utc": "2026-11-01T16:09:07+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T15:35:48+00:00",
+    "observed_at_utc": "2026-11-01T16:08:53+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

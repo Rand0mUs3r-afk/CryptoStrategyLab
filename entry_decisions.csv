@@ -1,3 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-SOL/USD,1h,bollinger_reversion,1793545200,skipped,already_seen,{}
-TRUMP/USD,1h,donchian_breakout,1793545200,order_result,broker_order_returned,"{""broker_order_id"": ""fe94c8d2-5b6b-4bad-909f-01373fa8f120"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-65e52ac574af3d7acf007fbc7d45444b"", ""quantity"": ""117.164616285"", ""reference_ask"": 1.707}"
+BTC/USD,5m,trend_pullback,1793549100,skipped,symbol_already_active,{}
+ETH/USD,5m,trend_pullback,1793549100,skipped,symbol_already_active,{}
+LINK/USD,1h,trend_pullback,1793548800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
