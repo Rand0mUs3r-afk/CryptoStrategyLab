@@ -1,3 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-LINK/USD,5m,trend_pullback,1793530500,order_result,broker_order_returned,"{""broker_order_id"": ""5f75393a-eeff-4ed9-8a8a-82b545863b4b"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-56fdcd4be7ef9b25e450917d1ce404f9"", ""quantity"": ""17.050298380"", ""reference_ask"": 11.73}"
-AAVE/USD,15m,trend_pullback,1793529900,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
