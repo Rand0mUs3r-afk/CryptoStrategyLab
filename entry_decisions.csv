@@ -1,6 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,1h,donchian_breakout,1793512800,skipped,already_seen,{}
-UNI/USD,1h,trend_pullback,1793512800,skipped,already_seen,{}
-UNI/USD,1h,donchian_breakout,1793512800,skipped,already_seen,{}
-LINK/USD,1h,trend_pullback,1793512800,skipped,already_seen,{}
-LINK/USD,5m,trend_pullback,1793515500,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+PEPE/USD,15m,bollinger_reversion,1793518200,skipped,symbol_already_active,{}
+UNI/USD,1h,donchian_breakout,1793516400,skipped,symbol_already_active,{}
+UNI/USD,5m,trend_pullback,1793518800,skipped,symbol_already_active,{}
+LINK/USD,1h,trend_pullback,1793516400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
