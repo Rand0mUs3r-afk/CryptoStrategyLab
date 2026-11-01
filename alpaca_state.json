@@ -14598,14 +14598,15 @@
         "client_order_id": "csl2-4b9fa2b60937113d7f5b9eafaecf0314"
       },
       "cycle_id": "csl2-4b9fa2b60937113d7f5b9eafaecf0314",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793543425.2509847,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "27.404768429",
       "broker_order_id": "79f568b7-31e7-492b-b839-e71a02fd05de",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-01T14:30:36.221691122Z"
+      "filled_avg_price": 7.3045,
+      "filled_at": "2026-11-01T14:30:36.223288354Z",
+      "broker_updated_at": "2026-11-01T14:30:36.27184914Z",
+      "reference_ask": 7.298
     }
   },
   "cycles": [
@@ -15690,11 +15691,17 @@
       "hold_seconds": 259200,
       "id": "csl2-4b9fa2b60937113d7f5b9eafaecf0314",
       "created_at": 1793543425.2509847,
-      "status": "pending",
+      "status": "open",
       "distance": 0.12252500286970151,
       "target_r": 2.0,
       "reference_ask": 7.298,
-      "remaining_qty": 0.0
+      "remaining_qty": 27.336256507,
+      "entry_price": 7.3045,
+      "entry_qty": 27.404768429,
+      "entry_notional_usd": 200.17813098963052,
+      "tp": 7.549550005739403,
+      "sl": 7.181974997130299,
+      "entry_time_utc": "2026-11-01T14:30:36.223288354Z"
     }
   ],
   "seen": {
@@ -15947,7 +15954,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T14:30:34+00:00",
+    "observed_at_utc": "2026-11-01T14:30:42+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -16061,13 +16068,13 @@
       },
       {
         "symbol": "UNIUSD",
-        "filled_quantity": "0.208199738",
+        "filled_quantity": "27.612968167",
         "fee_quantity": "-0.069003589",
-        "expected_quantity": "0.139196149",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.139196149",
+        "expected_quantity": "27.543964578",
+        "broker_quantity": "27.336256507",
+        "difference_quantity": "-0.207708071",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.139196149"
+        "unconfirmed_shortfall": "0.207708071"
       }
     ],
     "entries_blocked": false,
