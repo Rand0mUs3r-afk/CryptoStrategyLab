@@ -1,2 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,1h,macd_momentum,1793498400,skipped,symbol_already_active,{}
+AVAX/USD,15m,bollinger_reversion,1793502000,order_result,broker_order_returned,"{""broker_order_id"": ""118bd4d0-850b-4b5e-aece-8d85a22cc4f0"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-83bb47c8c3ad07880ce0c746f3acd79f"", ""quantity"": ""23.415639305"", ""reference_ask"": 8.5413}"
+LINK/USD,5m,bollinger_reversion,1793502000,order_result,broker_order_returned,"{""broker_order_id"": ""26ea384c-8745-4d45-a8a8-8f893fb73568"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-780492a0f3312914b3b6df5c4b1e98ac"", ""quantity"": ""17.328019407"", ""reference_ask"": 11.542}"
+AAVE/USD,15m,donchian_breakout,1793502000,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"

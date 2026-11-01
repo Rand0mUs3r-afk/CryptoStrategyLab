@@ -6,13 +6,13 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "AAVE/USD",
+      "symbol": "PEPE/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     },
     {
-      "symbol": "PEPE/USD",
+      "symbol": "AAVE/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -20,23 +20,54 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1793498400,
+      "symbol": "AVAX/USD",
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793502000,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-83bb47c8c3ad07880ce0c746f3acd79f",
+        "quantity": "23.415639305",
+        "reference_ask": 8.5413,
+        "broker_status": "pending_new",
+        "broker_order_id": "118bd4d0-850b-4b5e-aece-8d85a22cc4f0"
+      }
+    },
+    {
+      "symbol": "LINK/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793502000,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-780492a0f3312914b3b6df5c4b1e98ac",
+        "quantity": "17.328019407",
+        "reference_ask": 11.542,
+        "broker_status": "pending_new",
+        "broker_order_id": "26ea384c-8745-4d45-a8a8-8f893fb73568"
+      }
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793502000,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
+      "reason": "symbol_cooldown",
+      "details": {
+        "cooldown_seconds": 300
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-01T02:47:37+00:00",
+  "next_entry_scan_at_utc": "2026-11-01T03:31:05+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
-    "AAVE/USD",
     "PEPE/USD",
     "AVAX/USD",
     "BTC/USD",
@@ -44,20 +75,20 @@
     "LINK/USD",
     "LTC/USD",
     "SOL/USD",
-    "UNI/USD",
-    "HYPE/USD"
+    "AAVE/USD",
+    "UNI/USD"
   ],
-  "observed_at_utc": "2026-11-01T02:17:53+00:00",
+  "observed_at_utc": "2026-11-01T03:01:51+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T02:17:36+00:00",
+    "observed_at_utc": "2026-11-01T03:01:50+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
-        "filled_quantity": "1.487541837",
+        "filled_quantity": "0.003718855",
         "fee_quantity": "0",
-        "expected_quantity": "1.487541837",
-        "broker_quantity": "1.483822982",
+        "expected_quantity": "0.003718855",
+        "broker_quantity": "0",
         "difference_quantity": "-0.003718855",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.003718855"
@@ -74,13 +105,13 @@
       },
       {
         "symbol": "AVAXUSD",
-        "filled_quantity": "0.056598413",
+        "filled_quantity": "23.472237718",
         "fee_quantity": "-0.056598413",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "23.415639305",
+        "broker_quantity": "23.357100206",
+        "difference_quantity": "-0.058539099",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.058539099"
       },
       {
         "symbol": "BTCUSD",
@@ -134,13 +165,13 @@
       },
       {
         "symbol": "LINKUSD",
-        "filled_quantity": "0.042194093",
+        "filled_quantity": "17.370213500",
         "fee_quantity": "-0.042194093",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "17.328019407",
+        "broker_quantity": "17.284699358",
+        "difference_quantity": "-0.043320049",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.043320049"
       },
       {
         "symbol": "PEPEUSD",
