@@ -1,13 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AAVE/USD,15m,trend_pullback,1793538900,skipped,symbol_already_active,{}
-AAVE/USD,15m,donchian_breakout,1793538900,skipped,symbol_already_active,{}
-AAVE/USD,15m,squeeze_breakout,1793538900,skipped,symbol_already_active,{}
-BTC/USD,15m,trend_pullback,1793538900,skipped,symbol_already_active,{}
-LINK/USD,15m,bollinger_reversion,1793538900,skipped,symbol_already_active,{}
-AVAX/USD,15m,trend_pullback,1793538900,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 55.28870522600043}"
-ETH/USD,15m,trend_pullback,1793538900,order_result,broker_order_returned,"{""broker_order_id"": ""ff8f175e-aa42-455d-983d-c098f9c27f35"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-5be8ab76b133d54f7dcd47f613e5f906"", ""quantity"": ""0.088386070"", ""reference_ask"": 2262.8}"
-LTC/USD,15m,trend_pullback,1793538900,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 63.52046522030809}"
-UNI/USD,15m,trend_pullback,1793538900,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-UNI/USD,15m,donchian_breakout,1793538900,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-UNI/USD,15m,rolling_vwap_reclaim,1793538900,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-UNI/USD,5m,donchian_breakout,1793538900,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+UNI/USD,15m,macd_momentum,1793540700,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
