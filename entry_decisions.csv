@@ -1,8 +1,9 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,15m,trend_pullback,1793504700,skipped,symbol_already_active,{}
-AVAX/USD,15m,donchian_breakout,1793504700,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-AVAX/USD,15m,squeeze_breakout,1793504700,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-AVAX/USD,5m,donchian_breakout,1793504700,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-ETH/USD,5m,macd_momentum,1793504700,order_result,broker_order_returned,"{""broker_order_id"": ""bb1740dc-6e27-4782-bc5d-ae6ecf473e96"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-803c02dac03eb5eaa31557b0acd0e9e0"", ""quantity"": ""0.088206756"", ""reference_ask"": 2267.4}"
-LTC/USD,15m,squeeze_breakout,1793504700,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.51786332408252}"
-AAVE/USD,15m,donchian_breakout,1793504700,order_result,broker_order_returned,"{""broker_order_id"": ""e356c64a-d50b-4cdc-a641-9583ee41e507"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-9f29e4cbe5baa8709fa3a62cbc56bce6"", ""quantity"": ""1.444147591"", ""reference_ask"": 138.49}"
+AAVE/USD,1h,donchian_breakout,1793505600,skipped,symbol_already_active,{}
+AAVE/USD,1h,macd_momentum,1793505600,skipped,symbol_already_active,{}
+AAVE/USD,1h,squeeze_breakout,1793505600,skipped,symbol_already_active,{}
+ETH/USD,5m,trend_pullback,1793507400,skipped,symbol_already_active,{}
+LINK/USD,15m,bollinger_reversion,1793507400,skipped,symbol_already_active,{}
+BTC/USD,15m,trend_pullback,1793507400,order_result,broker_order_returned,"{""broker_order_id"": ""2a6e1285-d538-4c15-aa8b-c9e502d21b7c"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-4dc10ee41e2511291ec8864a5c8e3eb4"", ""quantity"": ""0.002574304"", ""reference_ask"": 77690.89}"
+BTC/USD,5m,trend_pullback,1793507400,skipped,symbol_already_active,{}
+LTC/USD,5m,trend_pullback,1793507400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.34767025089611}"
