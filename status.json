@@ -20,20 +20,32 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793556600,
+      "symbol": "ETH/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793558700,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "5m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1793558700,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 61.16913843845672,
+        "max_spread_bps": 50
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-01T18:40:11+00:00",
+  "next_entry_scan_at_utc": "2026-11-01T19:17:05+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -46,10 +58,10 @@
     "AAVE/USD",
     "UNI/USD"
   ],
-  "observed_at_utc": "2026-11-01T18:10:26+00:00",
+  "observed_at_utc": "2026-11-01T18:47:17+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T18:10:11+00:00",
+    "observed_at_utc": "2026-11-01T18:47:05+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
