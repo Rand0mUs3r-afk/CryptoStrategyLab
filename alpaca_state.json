@@ -12131,10 +12131,14 @@
         "client_order_id": "csl2-2240747f1efc82117a09fe33bc5ffea0"
       },
       "cycle_id": "csl2-096f6aae7c67db7383cac73f760f0f6e",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1793521554.659221,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "5d7e749b-7de8-4298-8c79-83e9aa4ee383",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-01T08:26:05.520223316Z"
     }
   },
   "cycles": [
