@@ -8,19 +8,12 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 8. Skipped: 6. Broker order results: 2.
+Candidates: 1. Skipped: 1. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| AVAX/USD | 5m | rsi_rebound | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
-| BTC/USD | 5m | bollinger_reversion | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
-| ETH/USD | 5m | rsi_rebound | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
-| SOL/USD | 5m | rsi_rebound | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
-| TRUMP/USD | 1h | rolling_vwap_reclaim | order_result | broker_order_returned | {"broker_order_id": "a0d716e7-90cf-4e04-9002-951de62b5396", "broker_status": "pending_new", "client_order_id": "csl2-42b95e2a0c801237032981dbb65b25b2", "quantity": "118.063754427", "reference_ask": 1.694} |
-| AAVE/USD | 15m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "84b55a38-00f6-48dc-b1e8-30b3e3419c31", "broker_status": "pending_new", "client_order_id": "csl2-b4ef591d9c5c9a8dd0e723d7f2411f54", "quantity": "1.498228344", "reference_ask": 133.491} |
-| UNI/USD | 5m | bollinger_reversion | skipped | stale_signal | {"age_seconds": 307.57745361328125, "max_age_seconds": 300} |
-| UNI/USD | 5m | rsi_rebound | skipped | stale_signal | {"age_seconds": 307.5774791240692, "max_age_seconds": 300} |
+| TRUMP/USD | 1h | rolling_vwap_reclaim | skipped | already_seen | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -28,8 +21,8 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
-| TRUMP/USD | 5m | candles | ValueError |
 | AAVE/USD | 5m | candles | ValueError |
+| TRUMP/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -122,15 +115,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-01T19:54:22+00:00
+Next entry scan eligible: 2026-11-01T20:26:11+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-01T19:24:23+00:00
+Last refresh: 2026-11-01T19:56:12+00:00
 Source status: partial
-Selected: AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, TRUMP/USD, AAVE/USD, UNI/USD
+Selected: AAVE/USD, TRUMP/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, UNI/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

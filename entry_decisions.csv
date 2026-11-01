@@ -1,9 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,5m,rsi_rebound,1793560800,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-BTC/USD,5m,bollinger_reversion,1793560800,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-ETH/USD,5m,rsi_rebound,1793560800,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-SOL/USD,5m,rsi_rebound,1793560800,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-TRUMP/USD,1h,rolling_vwap_reclaim,1793559600,order_result,broker_order_returned,"{""broker_order_id"": ""a0d716e7-90cf-4e04-9002-951de62b5396"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-42b95e2a0c801237032981dbb65b25b2"", ""quantity"": ""118.063754427"", ""reference_ask"": 1.694}"
-AAVE/USD,15m,bollinger_reversion,1793560500,order_result,broker_order_returned,"{""broker_order_id"": ""84b55a38-00f6-48dc-b1e8-30b3e3419c31"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-b4ef591d9c5c9a8dd0e723d7f2411f54"", ""quantity"": ""1.498228344"", ""reference_ask"": 133.491}"
-UNI/USD,5m,bollinger_reversion,1793560800,skipped,stale_signal,"{""age_seconds"": 307.57745361328125, ""max_age_seconds"": 300}"
-UNI/USD,5m,rsi_rebound,1793560800,skipped,stale_signal,"{""age_seconds"": 307.5774791240692, ""max_age_seconds"": 300}"
+TRUMP/USD,1h,rolling_vwap_reclaim,1793559600,skipped,already_seen,{}
