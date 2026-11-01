@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-01T16:08:53+00:00",
+  "observed_at_utc": "2026-11-01T16:41:06+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -114,10 +114,10 @@
     },
     {
       "symbol": "TRUMPUSD",
-      "filled_quantity": "117.164616285",
+      "filled_quantity": "0.292911541",
       "fee_quantity": "0",
-      "expected_quantity": "117.164616285",
-      "broker_quantity": "116.871704744",
+      "expected_quantity": "0.292911541",
+      "broker_quantity": "0",
       "difference_quantity": "-0.292911541",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.292911541"

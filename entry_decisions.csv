@@ -1,4 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,5m,trend_pullback,1793549100,skipped,symbol_already_active,{}
-ETH/USD,5m,trend_pullback,1793549100,skipped,symbol_already_active,{}
-LINK/USD,1h,trend_pullback,1793548800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+BTC/USD,15m,trend_pullback,1793550600,skipped,symbol_already_active,{}
+BTC/USD,15m,macd_momentum,1793550600,skipped,symbol_already_active,{}
+ETH/USD,15m,trend_pullback,1793550600,skipped,symbol_already_active,{}
+LINK/USD,1h,trend_pullback,1793548800,skipped,already_seen,{}
