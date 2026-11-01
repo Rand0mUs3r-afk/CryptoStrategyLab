@@ -6,13 +6,13 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "AAVE/USD",
+      "symbol": "TRUMP/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     },
     {
-      "symbol": "TRUMP/USD",
+      "symbol": "AAVE/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -26,72 +26,78 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793550600,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "15m",
-      "strategy": "macd_momentum",
-      "signal_time": 1793550600,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793550600,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "LINK/USD",
+      "symbol": "SOL/USD",
       "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793548800,
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793552400,
       "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793552400,
+      "outcome": "skipped",
+      "reason": "symbol_cooldown",
+      "details": {
+        "cooldown_seconds": 300
+      }
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793552400,
+      "outcome": "skipped",
+      "reason": "symbol_cooldown",
+      "details": {
+        "cooldown_seconds": 300
+      }
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793552400,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 61.79196704428365,
+        "max_spread_bps": 50
+      }
     }
   ],
   "entry_pause_reasons": [],
   "candidates": 4,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-01T17:11:07+00:00",
+  "next_entry_scan_at_utc": "2026-11-01T17:43:35+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
-    "AAVE/USD",
     "BTC/USD",
     "ETH/USD",
     "SOL/USD",
-    "UNI/USD",
     "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
     "TRUMP/USD",
-    "HYPE/USD",
+    "UNI/USD",
+    "AAVE/USD",
     "PEPE/USD"
   ],
-  "observed_at_utc": "2026-11-01T16:41:20+00:00",
+  "observed_at_utc": "2026-11-01T17:13:49+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T16:41:06+00:00",
+    "observed_at_utc": "2026-11-01T17:13:35+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
-        "filled_quantity": "1.461874678",
+        "filled_quantity": "0.010965588",
         "fee_quantity": "0",
-        "expected_quantity": "1.461874678",
-        "broker_quantity": "1.45090909",
+        "expected_quantity": "0.010965588",
+        "broker_quantity": "0",
         "difference_quantity": "-0.010965588",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.010965588"
@@ -208,10 +214,10 @@
       },
       {
         "symbol": "UNIUSD",
-        "filled_quantity": "27.612968167",
+        "filled_quantity": "0.276711660",
         "fee_quantity": "-0.069003589",
-        "expected_quantity": "27.543964578",
-        "broker_quantity": "27.336256507",
+        "expected_quantity": "0.207708071",
+        "broker_quantity": "0",
         "difference_quantity": "-0.207708071",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.207708071"

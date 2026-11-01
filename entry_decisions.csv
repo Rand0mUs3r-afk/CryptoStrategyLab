@@ -1,5 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,15m,trend_pullback,1793550600,skipped,symbol_already_active,{}
-BTC/USD,15m,macd_momentum,1793550600,skipped,symbol_already_active,{}
-ETH/USD,15m,trend_pullback,1793550600,skipped,symbol_already_active,{}
-LINK/USD,1h,trend_pullback,1793548800,skipped,already_seen,{}
+SOL/USD,1h,bollinger_reversion,1793552400,skipped,symbol_already_active,{}
+UNI/USD,15m,trend_pullback,1793552400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+AAVE/USD,15m,bollinger_reversion,1793552400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+PEPE/USD,1h,bollinger_reversion,1793552400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.79196704428365}"
