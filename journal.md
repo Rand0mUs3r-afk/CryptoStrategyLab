@@ -13,12 +13,12 @@ Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| BTC/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
-| BTC/USD | 5m | macd_momentum | skipped | symbol_already_active | {} |
-| ETH/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
-| AVAX/USD | 5m | bollinger_reversion | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
-| LTC/USD | 5m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 61.771158578285856} |
-| LTC/USD | 5m | rolling_vwap_reclaim | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 61.771158578285856} |
+| ETH/USD | 15m | donchian_breakout | skipped | symbol_already_active | {} |
+| ETH/USD | 15m | macd_momentum | skipped | symbol_already_active | {} |
+| ETH/USD | 15m | squeeze_breakout | skipped | symbol_already_active | {} |
+| PEPE/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
+| AVAX/USD | 15m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 56.80678590523451} |
+| BTC/USD | 15m | donchian_breakout | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -34,7 +34,6 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | PEPE/USD | 1h | trend_pullback | 5.03e-06 | 38668482.10735587 | 194.50246500000003 | 38571810.90208748 | 5.424840282494075e-06 | 4.832579858752963e-06 | open |
-| BTC/USD | 15m | trend_pullback | 77738.296008397 | 0.002574304 | 200.12200636760042 | 0.002567867 | 78049.059568397 | 77582.914228397 | open |
 | UNI/USD | 15m | trend_pullback | 7.181 | 27.90492457 | 200.38526333717 | 27.835162258 | 7.300773753751183 | 7.121113123124409 | open |
 | ETH/USD | 15m | trend_pullback | 2268.6 | 0.088187309 | 200.0617291974 | 0.08796684 | 2279.9521028114164 | 2262.9239485942917 | open |
 ## Closed cycles
@@ -74,6 +73,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | LINK/USD | 5m | bollinger_reversion | 11.5471 | 17.328019407 | 200.0883728945697 | 0.0 | 11.613289919548077 | 11.514005040225962 | closed |
 | ETH/USD | 5m | macd_momentum | 2267.56 | 0.088206756 | 200.01411163536 | 0.0 | 2276.6295999999998 | 2263.0252 | closed |
 | AAVE/USD | 15m | donchian_breakout | 138.6 | 1.444147591 | 200.15885611259998 | 0.0 | 140.91959811562253 | 137.44020094218874 | closed |
+| BTC/USD | 15m | trend_pullback | 77738.296008397 | 0.002574304 | 200.12200636760042 | 0.0 | 78049.059568397 | 77582.914228397 | closed |
 | AVAX/USD | 15m | donchian_breakout | 8.872 | 22.519479349 | 199.792820784328 | 0.0 | 9.01437007758712 | 8.80081496120644 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
@@ -92,7 +92,7 @@ Accounting final: False
 | AAVEUSD | 0.007329224 | 0 | -0.007329224 | 0.007329224 |
 | ARBUSD | 0E-9 | 0 | 0E-9 | 0 |
 | AVAXUSD | 0.114837798 | 0 | -0.114837798 | 0.114837798 |
-| BTCUSD | 0.002574304 | 0.002567867 | -0.000006437 | 0.000006437 |
+| BTCUSD | 0.000006437 | 0 | -0.000006437 | 0.000006437 |
 | DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
 | ETHUSD | 0.088407826 | 0.08796684 | -0.000440986 | 0.000440986 |
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -107,15 +107,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-01T08:56:11+00:00
+Next entry scan eligible: 2026-11-01T09:39:21+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-01T08:26:13+00:00
+Last refresh: 2026-11-01T09:09:22+00:00
 Source status: partial
-Selected: BTC/USD, ETH/USD, PEPE/USD, UNI/USD, AVAX/USD, LINK/USD, LTC/USD, SOL/USD, AAVE/USD
+Selected: ETH/USD, PEPE/USD, UNI/USD, AVAX/USD, BTC/USD, LINK/USD, LTC/USD, SOL/USD, AAVE/USD, HYPE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

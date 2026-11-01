@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-01T08:26:11+00:00",
+  "observed_at_utc": "2026-11-01T09:09:21+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -34,10 +34,10 @@
     },
     {
       "symbol": "BTCUSD",
-      "filled_quantity": "0.002586699",
+      "filled_quantity": "0.000018832",
       "fee_quantity": "-0.000012395",
-      "expected_quantity": "0.002574304",
-      "broker_quantity": "0.002567867",
+      "expected_quantity": "0.000006437",
+      "broker_quantity": "0",
       "difference_quantity": "-0.000006437",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.000006437"
