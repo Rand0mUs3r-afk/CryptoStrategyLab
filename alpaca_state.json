@@ -10427,6 +10427,21 @@
       "filled_at": "2026-11-01T03:45:39.393690576Z",
       "broker_updated_at": "2026-11-01T03:45:39.422241974Z",
       "reference_ask": 2267.4
+    },
+    "csl2-9f29e4cbe5baa8709fa3a62cbc56bce6": {
+      "payload": {
+        "symbol": "AAVE/USD",
+        "side": "buy",
+        "qty": "1.444147591",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-9f29e4cbe5baa8709fa3a62cbc56bce6"
+      },
+      "cycle_id": "csl2-9f29e4cbe5baa8709fa3a62cbc56bce6",
+      "status": "queued",
+      "created_at": 1793504745.6317956,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -11210,6 +11225,22 @@
       "tp": 2276.6295999999998,
       "sl": 2263.0252,
       "entry_time_utc": "2026-11-01T03:45:39.393690576Z"
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793504700,
+      "atr": 0.7731993718741752,
+      "signal_close": 138.45,
+      "hold_seconds": 21600,
+      "id": "csl2-9f29e4cbe5baa8709fa3a62cbc56bce6",
+      "created_at": 1793504745.6317956,
+      "status": "pending",
+      "distance": 1.159799057811263,
+      "target_r": 2.0,
+      "reference_ask": 138.49,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -11369,7 +11400,9 @@
     "AVAX/USD|15m|donchian_breakout|1793504700": 1793504729.9839118,
     "AVAX/USD|15m|squeeze_breakout|1793504700": 1793504729.9839563,
     "AVAX/USD|5m|donchian_breakout|1793504700": 1793504729.9839754,
-    "ETH/USD|5m|macd_momentum|1793504700": 1793504729.9839907
+    "ETH/USD|5m|macd_momentum|1793504700": 1793504729.9839907,
+    "LTC/USD|15m|squeeze_breakout|1793504700": 1793504745.612016,
+    "AAVE/USD|15m|donchian_breakout|1793504700": 1793504745.6317956
   },
   "day": "2026-11-01",
   "day_start_equity": 99931.72,
@@ -11378,7 +11411,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T03:45:44+00:00",
+    "observed_at_utc": "2026-11-01T03:45:53+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
