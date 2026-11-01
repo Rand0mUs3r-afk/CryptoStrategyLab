@@ -8,15 +8,12 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 4. Skipped: 3. Broker order results: 1.
+Candidates: 1. Skipped: 1. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| PEPE/USD | 15m | ema_cross | skipped | symbol_already_active | {} |
-| PEPE/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| AAVE/USD | 15m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "52ff01b3-7b73-4c32-9a12-d775f1cd763c", "broker_status": "pending_new", "client_order_id": "csl2-28ca080a68cafae1844360010f9eda10", "quantity": "1.487541837", "reference_ask": 134.45} |
-| AAVE/USD | 15m | macd_momentum | skipped | symbol_already_active | {} |
+| PEPE/USD | 1h | macd_momentum | skipped | symbol_already_active | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -24,8 +21,8 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
-| PEPE/USD | 5m | candles | ValueError |
 | AAVE/USD | 5m | candles | ValueError |
+| PEPE/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -97,15 +94,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-01T01:57:29+00:00
+Next entry scan eligible: 2026-11-01T02:47:37+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-01T01:27:31+00:00
+Last refresh: 2026-11-01T02:17:38+00:00
 Source status: partial
-Selected: PEPE/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, AAVE/USD, UNI/USD, HYPE/USD
+Selected: AAVE/USD, PEPE/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, UNI/USD, HYPE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
