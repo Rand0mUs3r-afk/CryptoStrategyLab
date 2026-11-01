@@ -8,26 +8,16 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 15. Skipped: 14. Broker order results: 1.
+Candidates: 5. Skipped: 5. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| AVAX/USD | 15m | donchian_breakout | skipped | symbol_already_active | {} |
-| AVAX/USD | 1h | donchian_breakout | skipped | symbol_already_active | {} |
-| BTC/USD | 15m | squeeze_breakout | skipped | symbol_already_active | {} |
-| BTC/USD | 5m | squeeze_breakout | skipped | symbol_already_active | {} |
-| UNI/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| UNI/USD | 1h | donchian_breakout | skipped | symbol_already_active | {} |
-| ETH/USD | 15m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "2c9af011-f0a1-41c9-8f2a-22e51551de9c", "broker_status": "pending_new", "client_order_id": "csl2-3b621997dbd307489a637e92f0585a05", "quantity": "0.088187309", "reference_ask": 2267.9} |
-| ETH/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
-| ETH/USD | 5m | macd_momentum | skipped | symbol_already_active | {} |
-| ETH/USD | 5m | squeeze_breakout | skipped | symbol_already_active | {} |
-| LINK/USD | 1h | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| LTC/USD | 15m | donchian_breakout | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| SOL/USD | 5m | ema_cross | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| SOL/USD | 5m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| SOL/USD | 5m | squeeze_breakout | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| AVAX/USD | 1h | donchian_breakout | skipped | already_seen | {} |
+| UNI/USD | 1h | trend_pullback | skipped | already_seen | {} |
+| UNI/USD | 1h | donchian_breakout | skipped | already_seen | {} |
+| LINK/USD | 1h | trend_pullback | skipped | already_seen | {} |
+| LINK/USD | 5m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -116,15 +106,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-01T06:30:50+00:00
+Next entry scan eligible: 2026-11-01T07:17:57+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-01T06:00:51+00:00
+Last refresh: 2026-11-01T06:47:58+00:00
 Source status: partial
-Selected: AAVE/USD, AVAX/USD, BTC/USD, PEPE/USD, UNI/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD
+Selected: AAVE/USD, AVAX/USD, BTC/USD, ETH/USD, PEPE/USD, UNI/USD, LINK/USD, LTC/USD, SOL/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

@@ -1,16 +1,6 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,15m,donchian_breakout,1793512800,skipped,symbol_already_active,{}
-AVAX/USD,1h,donchian_breakout,1793512800,skipped,symbol_already_active,{}
-BTC/USD,15m,squeeze_breakout,1793512800,skipped,symbol_already_active,{}
-BTC/USD,5m,squeeze_breakout,1793512800,skipped,symbol_already_active,{}
-UNI/USD,1h,trend_pullback,1793512800,skipped,symbol_already_active,{}
-UNI/USD,1h,donchian_breakout,1793512800,skipped,symbol_already_active,{}
-ETH/USD,15m,trend_pullback,1793512800,order_result,broker_order_returned,"{""broker_order_id"": ""2c9af011-f0a1-41c9-8f2a-22e51551de9c"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-3b621997dbd307489a637e92f0585a05"", ""quantity"": ""0.088187309"", ""reference_ask"": 2267.9}"
-ETH/USD,5m,trend_pullback,1793512800,skipped,symbol_already_active,{}
-ETH/USD,5m,macd_momentum,1793512800,skipped,symbol_already_active,{}
-ETH/USD,5m,squeeze_breakout,1793512800,skipped,symbol_already_active,{}
-LINK/USD,1h,trend_pullback,1793512800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-LTC/USD,15m,donchian_breakout,1793512800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-SOL/USD,5m,ema_cross,1793512800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-SOL/USD,5m,trend_pullback,1793512800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-SOL/USD,5m,squeeze_breakout,1793512800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+AVAX/USD,1h,donchian_breakout,1793512800,skipped,already_seen,{}
+UNI/USD,1h,trend_pullback,1793512800,skipped,already_seen,{}
+UNI/USD,1h,donchian_breakout,1793512800,skipped,already_seen,{}
+LINK/USD,1h,trend_pullback,1793512800,skipped,already_seen,{}
+LINK/USD,5m,trend_pullback,1793515500,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"

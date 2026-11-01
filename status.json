@@ -21,38 +21,11 @@
   "entry_decisions": [
     {
       "symbol": "AVAX/USD",
-      "timeframe": "15m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793512800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
       "timeframe": "1h",
       "strategy": "donchian_breakout",
       "signal_time": 1793512800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "15m",
-      "strategy": "squeeze_breakout",
-      "signal_time": 1793512800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "5m",
-      "strategy": "squeeze_breakout",
-      "signal_time": 1793512800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -61,7 +34,7 @@
       "strategy": "trend_pullback",
       "signal_time": 1793512800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -70,49 +43,7 @@
       "strategy": "donchian_breakout",
       "signal_time": 1793512800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793512800,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-3b621997dbd307489a637e92f0585a05",
-        "quantity": "0.088187309",
-        "reference_ask": 2267.9,
-        "broker_status": "pending_new",
-        "broker_order_id": "2c9af011-f0a1-41c9-8f2a-22e51551de9c"
-      }
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793512800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
-      "strategy": "macd_momentum",
-      "signal_time": 1793512800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
-      "strategy": "squeeze_breakout",
-      "signal_time": 1793512800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -121,53 +52,14 @@
       "strategy": "trend_pullback",
       "signal_time": 1793512800,
       "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
+      "reason": "already_seen",
+      "details": {}
     },
     {
-      "symbol": "LTC/USD",
-      "timeframe": "15m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793512800,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "ema_cross",
-      "signal_time": 1793512800,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "SOL/USD",
+      "symbol": "LINK/USD",
       "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1793512800,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "squeeze_breakout",
-      "signal_time": 1793512800,
+      "signal_time": 1793515500,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -177,26 +69,26 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 15,
+  "candidates": 5,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-01T06:30:50+00:00",
+  "next_entry_scan_at_utc": "2026-11-01T07:17:57+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "AAVE/USD",
     "AVAX/USD",
     "BTC/USD",
+    "ETH/USD",
     "PEPE/USD",
     "UNI/USD",
-    "ETH/USD",
     "LINK/USD",
     "LTC/USD",
     "SOL/USD"
   ],
-  "observed_at_utc": "2026-11-01T06:01:20+00:00",
+  "observed_at_utc": "2026-11-01T06:48:09+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T06:01:19+00:00",
+    "observed_at_utc": "2026-11-01T06:47:57+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
