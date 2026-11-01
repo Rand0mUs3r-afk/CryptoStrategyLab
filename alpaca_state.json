@@ -11010,14 +11010,15 @@
         "client_order_id": "csl2-096f6aae7c67db7383cac73f760f0f6e"
       },
       "cycle_id": "csl2-096f6aae7c67db7383cac73f760f0f6e",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793510412.8853106,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "22.519479349",
       "broker_order_id": "b5c1a5f9-673e-4fb2-a9c4-c614d8b87925",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-01T05:20:22.3768669Z"
+      "filled_avg_price": 8.872,
+      "filled_at": "2026-11-01T05:20:22.378316928Z",
+      "broker_updated_at": "2026-11-01T05:20:22.422150256Z",
+      "reference_ask": 8.8812
     }
   },
   "cycles": [
@@ -11859,11 +11860,17 @@
       "hold_seconds": 21600,
       "id": "csl2-096f6aae7c67db7383cac73f760f0f6e",
       "created_at": 1793510412.8853106,
-      "status": "pending",
+      "status": "open",
       "distance": 0.07118503879356033,
       "target_r": 2.0,
       "reference_ask": 8.8812,
-      "remaining_qty": 0.0
+      "remaining_qty": 22.46318065,
+      "entry_price": 8.872,
+      "entry_qty": 22.519479349,
+      "entry_notional_usd": 199.792820784328,
+      "tp": 9.01437007758712,
+      "sl": 8.80081496120644,
+      "entry_time_utc": "2026-11-01T05:20:22.378316928Z"
     }
   ],
   "seen": {
@@ -12044,7 +12051,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-01T05:20:21+00:00",
+    "observed_at_utc": "2026-11-01T05:20:27+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -12068,13 +12075,13 @@
       },
       {
         "symbol": "AVAXUSD",
-        "filled_quantity": "0.115137512",
+        "filled_quantity": "22.634616861",
         "fee_quantity": "-0.056598413",
-        "expected_quantity": "0.058539099",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.058539099",
+        "expected_quantity": "22.578018448",
+        "broker_quantity": "22.46318065",
+        "difference_quantity": "-0.114837798",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.058539099"
+        "unconfirmed_shortfall": "0.114837798"
       },
       {
         "symbol": "BTCUSD",
