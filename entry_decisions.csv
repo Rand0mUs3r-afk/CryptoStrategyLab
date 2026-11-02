@@ -1,3 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-UNI/USD,5m,trend_pullback,1793589000,skipped,symbol_already_active,{}
-BTC/USD,5m,trend_pullback,1793589000,order_result,broker_order_returned,"{""broker_order_id"": ""32d67e3d-2ecc-4b00-aeb9-63780854d925"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-6a68a154fbb6606d56da1a3545e2807a"", ""quantity"": ""0.002548899"", ""reference_ask"": 78465.231}"

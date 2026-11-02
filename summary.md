@@ -10,22 +10,13 @@ Reason: Position/fee reconciliation mismatch for AAVEUSD: expected=1.490616996, 
 
 ## Entry diagnostics
 
-Candidates: 3. Skipped: 1. Broker order results: 1.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| UNI/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
-| BTC/USD | 5m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "32d67e3d-2ecc-4b00-aeb9-63780854d925", "broker_status": "pending_new", "client_order_id": "csl2-6a68a154fbb6606d56da1a3545e2807a", "quantity": "0.002548899", "reference_ask": 78465.231} |
+No candidates recorded; check run status and data errors before concluding there were no signals.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
-
-## Data errors
-
-| Coin | Bar | Stage | Error type |
-| --- | --- | --- | --- |
-| AAVE/USD | 5m | candles | ValueError |
-| TRUMP/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -123,8 +114,8 @@ Accounting final: False
 
 UNRESOLVED: entries and automated exits blocked. Review the paper holding.
 
-Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-02T03:42:48+00:00
+Entry scan status: not_reached
+Next entry scan eligible: not_scheduled
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
