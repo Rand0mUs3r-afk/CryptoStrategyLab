@@ -1,4 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-UNI/USD,15m,ema_cross,1793583000,skipped,symbol_already_active,{}
-UNI/USD,15m,trend_pullback,1793583000,skipped,symbol_already_active,{}
-ETH/USD,15m,donchian_breakout,1793583000,order_result,broker_order_returned,"{""broker_order_id"": ""e5e64352-e1a4-46bd-9fc3-5ad6b74f5eb3"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-958c19e0e5bf827da47add74e49b849d"", ""quantity"": ""0.087416790"", ""reference_ask"": 2287.89}"
+UNI/USD,1h,trend_pullback,1793584800,skipped,symbol_already_active,{}
+LTC/USD,5m,macd_momentum,1793586000,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.58381761287464}"
+AAVE/USD,1h,trend_pullback,1793584800,order_result,broker_order_returned,"{""broker_order_id"": ""ddc950dc-00b1-44df-9e9a-6c3810e04c81"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-0d43208e1dbcedc02a5abac25672912f"", ""quantity"": ""1.475905837"", ""reference_ask"": 135.51}"
