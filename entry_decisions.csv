@@ -1,1 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+UNI/USD,15m,ema_cross,1793583000,skipped,symbol_already_active,{}
+UNI/USD,15m,trend_pullback,1793583000,skipped,symbol_already_active,{}
+ETH/USD,15m,donchian_breakout,1793583000,order_result,broker_order_returned,"{""broker_order_id"": ""e5e64352-e1a4-46bd-9fc3-5ad6b74f5eb3"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-958c19e0e5bf827da47add74e49b849d"", ""quantity"": ""0.087416790"", ""reference_ask"": 2287.89}"
