@@ -1,4 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-TRUMP/USD,15m,macd_momentum,1793576700,skipped,symbol_already_active,{}
-BTC/USD,15m,ema_cross,1793576700,order_result,broker_order_returned,"{""broker_order_id"": ""81f5a2b5-38e6-4654-ba93-8a08501ae7fb"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-79ab9689ff6eca33bf0e4820ab7006a5"", ""quantity"": ""0.002556900"", ""reference_ask"": 78219.7}"
-BTC/USD,15m,donchian_breakout,1793576700,skipped,symbol_already_active,{}
