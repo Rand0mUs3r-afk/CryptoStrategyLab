@@ -8,12 +8,11 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 1. Skipped: 0. Broker order results: 1.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| AAVE/USD | 5m | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "5b07b7b0-6b92-46b0-acfc-aa65a15afbee", "broker_status": "pending_new", "client_order_id": "csl2-575bf8ca6f5575dfeb28a0d620b7e294", "quantity": "1.560062402", "reference_ask": 128.2} |
+No candidates recorded; check run status and data errors before concluding there were no signals.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -124,15 +123,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-03T09:40:53+00:00
+Next entry scan eligible: 2026-11-03T10:28:15+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-03T09:10:54+00:00
+Last refresh: 2026-11-03T09:58:16+00:00
 Source status: partial
-Selected: AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, PAXG/USD, XRP/USD, TRUMP/USD, PEPE/USD, UNI/USD, AAVE/USD
+Selected: AAVE/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, PAXG/USD, BCH/USD, XRP/USD, TRUMP/USD, PEPE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

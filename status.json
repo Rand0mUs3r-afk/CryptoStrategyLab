@@ -18,30 +18,15 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "AAVE/USD",
-      "timeframe": "5m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793697000,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-575bf8ca6f5575dfeb28a0d620b7e294",
-        "quantity": "1.560062402",
-        "reference_ask": 128.2,
-        "broker_status": "pending_new",
-        "broker_order_id": "5b07b7b0-6b92-46b0-acfc-aa65a15afbee"
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-03T09:40:53+00:00",
+  "next_entry_scan_at_utc": "2026-11-03T10:28:15+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
+    "AAVE/USD",
     "AVAX/USD",
     "BTC/USD",
     "ETH/USD",
@@ -49,16 +34,15 @@
     "LTC/USD",
     "SOL/USD",
     "PAXG/USD",
+    "BCH/USD",
     "XRP/USD",
     "TRUMP/USD",
-    "PEPE/USD",
-    "UNI/USD",
-    "AAVE/USD"
+    "PEPE/USD"
   ],
-  "observed_at_utc": "2026-11-03T09:11:20+00:00",
+  "observed_at_utc": "2026-11-03T09:58:30+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-03T09:11:19+00:00",
+    "observed_at_utc": "2026-11-03T09:58:15+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

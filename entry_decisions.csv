@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AAVE/USD,5m,donchian_breakout,1793697000,order_result,broker_order_returned,"{""broker_order_id"": ""5b07b7b0-6b92-46b0-acfc-aa65a15afbee"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-575bf8ca6f5575dfeb28a0d620b7e294"", ""quantity"": ""1.560062402"", ""reference_ask"": 128.2}"
