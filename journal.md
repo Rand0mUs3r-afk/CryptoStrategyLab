@@ -1,18 +1,25 @@
 # Alpaca crypto PAPER bot
 
-Status: PAPER_TICK_COMPLETED
+Status: FAILED_CLOSED
 Dedicated paper account only. Broker fills, not virtual experiment fills.
 TP/SL are software checks at workflow runs, NOT standing bracket orders.
 Coinbase closed candles produce signals; fresh Alpaca quotes price decisions.
 Fees can post later. P&L below is before USD fees; no fabricated net performance.
 
+Reason: Position/fee reconciliation mismatch for AAVEUSD: expected=0.003900157, broker=0, difference=-0.003900157, recorded_fee_quantity=-0.018400924; BTCUSD: expected=0.002586804, broker=0.002580336, difference=-0.000006468, recorded_fee_quantity=-0.000044452; ETHUSD: expected=0.088233218, broker=0.088012634, difference=-0.000220584, recorded_fee_quantity=-0.001522297; TRUMPUSD: expected=0.312343829, broker=0, difference=-0.312343829, recorded_fee_quantity=-0.588070928; unresolved after read-only retries; entries and exits blocked
+
 ## Entry diagnostics
 
-Candidates: 0. Skipped: 0. Broker order results: 0.
+Candidates: 14. Skipped: 4. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
-No candidates recorded; check run status and data errors before concluding there were no signals.
-
+| Coin | Bar | Strategy | Outcome | Reason | Details |
+| --- | --- | --- | --- | --- | --- |
+| ETH/USD | 5m | donchian_breakout | skipped | symbol_already_active | {} |
+| ETH/USD | 5m | macd_momentum | skipped | symbol_already_active | {} |
+| ETH/USD | 5m | squeeze_breakout | skipped | symbol_already_active | {} |
+| AVAX/USD | 5m | donchian_breakout | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 62.98575597353339} |
+| BTC/USD | 5m | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "4b10e3b9-0d6c-4cca-bff0-ef0816b570e7", "broker_status": "pending_new", "client_order_id": "csl2-ae4fc2ddafcfa52be27eefe0cd5ed18b", "quantity": "0.002586804", "reference_ask": 77315.478} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -21,15 +28,16 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
 | ARB/USD | 5m | candles | ValueError |
+| PAXG/USD | 5m | candles | ValueError |
 | DOT/USD | 5m | candles | ValueError |
 | PEPE/USD | 5m | candles | ValueError |
-| AAVE/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | ETH/USD | 15m | donchian_breakout | 2268.428166476 | 0.088233218 | 200.1507169300172 | 0.088012634 | 2287.218323230117 | 2259.0330880989413 | open |
+| BTC/USD | 5m | donchian_breakout | n/a | n/a | n/a | 0.0 | n/a | n/a | pending |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -101,41 +109,39 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: fee_pending
-New entries blocked: False
-Exit checks allowed: True
+Status: mismatch
+New entries blocked: True
+Exit checks allowed: False
 Accounting final: False
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
-| AAVEUSD | 0.003900157 | 0 | -0.003900157 | 0.003900157 |
+| AAVEUSD | 0.003900157 | 0 | -0.003900157 | 0 |
 | ARBUSD | 0E-9 | 0 | 0E-9 | 0 |
 | AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
-| BTCUSD | 0E-9 | 0 | 0E-9 | 0 |
+| BTCUSD | 0.002586804 | 0.002580336 | -0.000006468 | 0 |
 | DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
-| ETHUSD | 0.088233218 | 0.088012634 | -0.000220584 | 0.000220584 |
+| ETHUSD | 0.088233218 | 0.088012634 | -0.000220584 | 0 |
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
 | HYPEUSD | 0 | 0 | 0 | 0 |
 | LINKUSD | 0E-9 | 0 | 0E-9 | 0 |
 | PEPEUSD | 0E-9 | 0 | 0E-9 | 0 |
 | SOLUSD | 0E-9 | 0 | 0E-9 | 0 |
-| TRUMPUSD | 0.312343829 | 0 | -0.312343829 | 0.312343829 |
+| TRUMPUSD | 0.312343829 | 0 | -0.312343829 | 0 |
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 
-PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
-New buys permitted by explicit paper policy; all entry checks still apply.
-Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
+UNRESOLVED: entries and automated exits blocked. Review the paper holding.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-03T12:06:23+00:00
+Next entry scan eligible: 2026-11-03T12:55:12+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-03T11:36:24+00:00
+Last refresh: 2026-11-03T12:25:13+00:00
 Source status: partial
-Selected: ETH/USD, AVAX/USD, BTC/USD, LINK/USD, LTC/USD, SOL/USD, UNI/USD, ARB/USD, DOT/USD, XRP/USD, PEPE/USD, AAVE/USD
+Selected: ETH/USD, AVAX/USD, BTC/USD, LINK/USD, LTC/USD, SOL/USD, ARB/USD, PAXG/USD, XRP/USD, DOT/USD, PEPE/USD, UNI/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

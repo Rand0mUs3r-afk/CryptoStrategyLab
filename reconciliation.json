@@ -1,6 +1,6 @@
 {
-  "status": "fee_pending",
-  "observed_at_utc": "2026-11-03T11:36:23+00:00",
+  "status": "mismatch",
+  "observed_at_utc": "2026-11-03T12:25:49+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -10,7 +10,7 @@
       "broker_quantity": "0",
       "difference_quantity": "-0.003900157",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.003900157"
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "ARBUSD",
@@ -34,11 +34,11 @@
     },
     {
       "symbol": "BTCUSD",
-      "filled_quantity": "0.000044452",
+      "filled_quantity": "0.002631256",
       "fee_quantity": "-0.000044452",
-      "expected_quantity": "0E-9",
-      "broker_quantity": "0",
-      "difference_quantity": "0E-9",
+      "expected_quantity": "0.002586804",
+      "broker_quantity": "0.002580336",
+      "difference_quantity": "-0.000006468",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0"
     },
@@ -60,7 +60,7 @@
       "broker_quantity": "0.088012634",
       "difference_quantity": "-0.000220584",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.000220584"
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "FILUSD",
@@ -120,7 +120,7 @@
       "broker_quantity": "0",
       "difference_quantity": "-0.312343829",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.312343829"
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "UNIUSD",
@@ -133,11 +133,9 @@
       "unconfirmed_shortfall": "0"
     }
   ],
-  "entries_blocked": false,
-  "exit_checks_allowed": true,
+  "entries_blocked": true,
+  "exit_checks_allowed": false,
   "accounting_final": false,
   "attempts": 3,
-  "retry_exhausted": true,
-  "pending_entry_policy_enabled": true,
-  "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
+  "retry_exhausted": true
 }
