@@ -1,6 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,5m,donchian_breakout,1793708700,skipped,symbol_already_active,{}
-ETH/USD,5m,macd_momentum,1793708700,skipped,symbol_already_active,{}
-ETH/USD,5m,squeeze_breakout,1793708700,skipped,symbol_already_active,{}
-AVAX/USD,5m,donchian_breakout,1793708700,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.98575597353339}"
-BTC/USD,5m,donchian_breakout,1793708700,order_result,broker_order_returned,"{""broker_order_id"": ""4b10e3b9-0d6c-4cca-bff0-ef0816b570e7"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-ae4fc2ddafcfa52be27eefe0cd5ed18b"", ""quantity"": ""0.002586804"", ""reference_ask"": 77315.478}"

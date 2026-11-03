@@ -10,27 +10,13 @@ Reason: Position/fee reconciliation mismatch for AAVEUSD: expected=0.003900157, 
 
 ## Entry diagnostics
 
-Candidates: 14. Skipped: 4. Broker order results: 1.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| ETH/USD | 5m | donchian_breakout | skipped | symbol_already_active | {} |
-| ETH/USD | 5m | macd_momentum | skipped | symbol_already_active | {} |
-| ETH/USD | 5m | squeeze_breakout | skipped | symbol_already_active | {} |
-| AVAX/USD | 5m | donchian_breakout | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 62.98575597353339} |
-| BTC/USD | 5m | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "4b10e3b9-0d6c-4cca-bff0-ef0816b570e7", "broker_status": "pending_new", "client_order_id": "csl2-ae4fc2ddafcfa52be27eefe0cd5ed18b", "quantity": "0.002586804", "reference_ask": 77315.478} |
+No candidates recorded; check run status and data errors before concluding there were no signals.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
-
-## Data errors
-
-| Coin | Bar | Stage | Error type |
-| --- | --- | --- | --- |
-| ARB/USD | 5m | candles | ValueError |
-| PAXG/USD | 5m | candles | ValueError |
-| DOT/USD | 5m | candles | ValueError |
-| PEPE/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -132,8 +118,8 @@ Accounting final: False
 
 UNRESOLVED: entries and automated exits blocked. Review the paper holding.
 
-Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-03T12:55:12+00:00
+Entry scan status: not_reached
+Next entry scan eligible: not_scheduled
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
