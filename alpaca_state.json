@@ -26494,14 +26494,15 @@
         "client_order_id": "csl2-9d6521d5c1df4196c52b6e5e9bc1622e"
       },
       "cycle_id": "csl2-9d6521d5c1df4196c52b6e5e9bc1622e",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793702915.8050818,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "124.937531234",
       "broker_order_id": "4e9ea71a-8205-4eeb-adcd-b6b1ac0a0695",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-03T10:48:49.776217761Z"
+      "filled_avg_price": 1.601,
+      "filled_at": "2026-11-03T10:48:49.7775583Z",
+      "broker_updated_at": "2026-11-03T10:48:49.822088518Z",
+      "reference_ask": 1.6008
     }
   },
   "cycles": [
@@ -27970,11 +27971,17 @@
       "hold_seconds": 3600,
       "id": "csl2-9d6521d5c1df4196c52b6e5e9bc1622e",
       "created_at": 1793702915.8050818,
-      "status": "pending",
+      "status": "open",
       "distance": 0.005052548934747805,
       "target_r": 2.0,
       "reference_ask": 1.6008,
-      "remaining_qty": 0.0
+      "remaining_qty": 124.625187405,
+      "entry_price": 1.601,
+      "entry_qty": 124.937531234,
+      "entry_notional_usd": 200.02498750563402,
+      "tp": 1.6111050978694956,
+      "sl": 1.5959474510652523,
+      "entry_time_utc": "2026-11-03T10:48:49.7775583Z"
     }
   ],
   "seen": {
@@ -28283,7 +28290,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-03T10:48:48+00:00",
+    "observed_at_utc": "2026-11-03T10:48:57+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -28397,13 +28404,13 @@
       },
       {
         "symbol": "TRUMPUSD",
-        "filled_quantity": "0.588070928",
+        "filled_quantity": "125.525602162",
         "fee_quantity": "-0.588070928",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "124.937531234",
+        "broker_quantity": "124.625187405",
+        "difference_quantity": "-0.312343829",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.312343829"
       },
       {
         "symbol": "UNIUSD",
