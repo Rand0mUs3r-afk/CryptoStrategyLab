@@ -25820,14 +25820,29 @@
         "client_order_id": "csl2-f6781d7a70128a3a8d63ac6f269259f3"
       },
       "cycle_id": "csl2-0d43208e1dbcedc02a5abac25672912f",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793693996.7085402,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "1.472216072",
       "broker_order_id": "4f5093b1-cfcf-46b5-b2ae-0a7abf15ff32",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-03T08:19:59.825334998Z"
+      "filled_avg_price": 126.72,
+      "filled_at": "2026-11-03T08:19:59.826468679Z",
+      "broker_updated_at": "2026-11-03T08:19:59.871812104Z"
+    },
+    "csl2-088e51e80c4c86dc37176a5ff68756a9": {
+      "payload": {
+        "symbol": "BTC/USD",
+        "side": "sell",
+        "qty": "0.002542525",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-088e51e80c4c86dc37176a5ff68756a9"
+      },
+      "cycle_id": "csl2-6a68a154fbb6606d56da1a3545e2807a",
+      "status": "queued",
+      "created_at": 1793694000.8968415,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -27224,7 +27239,8 @@
       "entry_notional_usd": 200.03258388500086,
       "tp": 78791.89551265999,
       "sl": 78321.10412666,
-      "entry_time_utc": "2026-11-02T03:13:15.161197933Z"
+      "entry_time_utc": "2026-11-02T03:13:15.161197933Z",
+      "exit_reason": "stop"
     }
   ],
   "seen": {
@@ -27527,14 +27543,14 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-03T08:19:58+00:00",
+    "observed_at_utc": "2026-11-03T08:20:02+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
-        "filled_quantity": "1.490616996",
+        "filled_quantity": "0.018400924",
         "fee_quantity": "-0.018400924",
-        "expected_quantity": "1.472216072",
-        "broker_quantity": "1.472216072",
+        "expected_quantity": "0E-9",
+        "broker_quantity": "0",
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
