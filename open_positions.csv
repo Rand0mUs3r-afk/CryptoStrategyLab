@@ -1,1 +1,2 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
+AAVE/USD,5m,donchian_breakout,2026-11-03T09:11:11.261623638Z,128.26,1.560062402,200.09360368051998,1.556162245,129.28408688045377,127.7479565597731,open,,,
