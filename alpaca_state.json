@@ -26483,6 +26483,21 @@
       "filled_at": "2026-11-03T10:48:26.456502201Z",
       "broker_updated_at": "2026-11-03T10:48:26.471968577Z",
       "reference_ask": 2266.72
+    },
+    "csl2-9d6521d5c1df4196c52b6e5e9bc1622e": {
+      "payload": {
+        "symbol": "TRUMP/USD",
+        "side": "buy",
+        "qty": "124.937531234",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-9d6521d5c1df4196c52b6e5e9bc1622e"
+      },
+      "cycle_id": "csl2-9d6521d5c1df4196c52b6e5e9bc1622e",
+      "status": "queued",
+      "created_at": 1793702915.8050818,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -27940,6 +27955,22 @@
       "tp": 2287.218323230117,
       "sl": 2259.0330880989413,
       "entry_time_utc": "2026-11-03T10:48:26.456502201Z"
+    },
+    {
+      "symbol": "TRUMP/USD",
+      "timeframe": "5m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793702700,
+      "atr": 0.0033683659564985365,
+      "signal_close": 1.6004,
+      "hold_seconds": 3600,
+      "id": "csl2-9d6521d5c1df4196c52b6e5e9bc1622e",
+      "created_at": 1793702915.8050818,
+      "status": "pending",
+      "distance": 0.005052548934747805,
+      "target_r": 2.0,
+      "reference_ask": 1.6008,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -28235,7 +28266,11 @@
     "UNI/USD|5m|trend_pullback|1793589000": 1793589184.2539642,
     "BTC/USD|5m|trend_pullback|1793589000": 1793589184.25399,
     "AAVE/USD|5m|donchian_breakout|1793697000": 1793697068.2058263,
-    "ETH/USD|15m|donchian_breakout|1793702700": 1793702892.6884031
+    "ETH/USD|15m|donchian_breakout|1793702700": 1793702892.6884031,
+    "ETH/USD|5m|macd_momentum|1793702700": 1793702915.7564209,
+    "PAXG/USD|1h|bollinger_reversion|1793700000": 1793702915.7564564,
+    "BCH/USD|5m|trend_pullback|1793702700": 1793702915.7796938,
+    "TRUMP/USD|5m|donchian_breakout|1793702700": 1793702915.8050818
   },
   "day": "2026-11-03",
   "day_start_equity": 99843.64,
@@ -28244,7 +28279,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-03T10:48:34+00:00",
+    "observed_at_utc": "2026-11-03T10:48:48+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
