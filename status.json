@@ -10,10 +10,10 @@
   "candidates": 0,
   "error_type": "PositionMismatch",
   "reason": "Position/fee reconciliation mismatch for AAVEUSD: expected=0.003900157, broker=0, difference=-0.003900157, recorded_fee_quantity=-0.018400924; BTCUSD: expected=0.002586804, broker=0.002580336, difference=-0.000006468, recorded_fee_quantity=-0.000044452; ETHUSD: expected=0.088233218, broker=0.088012634, difference=-0.000220584, recorded_fee_quantity=-0.001522297; TRUMPUSD: expected=0.312343829, broker=0, difference=-0.312343829, recorded_fee_quantity=-0.588070928; unresolved after read-only retries; entries and exits blocked",
-  "observed_at_utc": "2026-11-03T13:32:40+00:00",
+  "observed_at_utc": "2026-11-03T14:29:52+00:00",
   "reconciliation": {
     "status": "mismatch",
-    "observed_at_utc": "2026-11-03T13:32:40+00:00",
+    "observed_at_utc": "2026-11-03T14:29:52+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
