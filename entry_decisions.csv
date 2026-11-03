@@ -1,1 +1,6 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+ETH/USD,15m,donchian_breakout,1793702700,order_result,broker_order_returned,"{""broker_order_id"": ""fdde7d85-ed9a-4ccb-ac7e-4bc6ecfb7608"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-1fcea7f6d6864d29dab21791bbc1bae2"", ""quantity"": ""0.088233218"", ""reference_ask"": 2266.72}"
+ETH/USD,5m,macd_momentum,1793702700,skipped,symbol_already_active,{}
+PAXG/USD,1h,bollinger_reversion,1793700000,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 119.82758951566262}"
+BCH/USD,5m,trend_pullback,1793702700,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 63.478292303798284}"
+TRUMP/USD,5m,donchian_breakout,1793702700,order_result,broker_order_returned,"{""broker_order_id"": ""4e9ea71a-8205-4eeb-adcd-b6b1ac0a0695"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-9d6521d5c1df4196c52b6e5e9bc1622e"", ""quantity"": ""124.937531234"", ""reference_ask"": 1.6008}"
