@@ -6,7 +6,13 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "PAXG/USD",
+      "symbol": "ARB/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "DOT/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -16,97 +22,39 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "15m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793702700,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-1fcea7f6d6864d29dab21791bbc1bae2",
-        "quantity": "0.088233218",
-        "reference_ask": 2266.72,
-        "broker_status": "pending_new",
-        "broker_order_id": "fdde7d85-ed9a-4ccb-ac7e-4bc6ecfb7608"
-      }
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
-      "strategy": "macd_momentum",
-      "signal_time": 1793702700,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PAXG/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793700000,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 119.82758951566262,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "BCH/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793702700,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 63.478292303798284,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "TRUMP/USD",
-      "timeframe": "5m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793702700,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-9d6521d5c1df4196c52b6e5e9bc1622e",
-        "quantity": "124.937531234",
-        "reference_ask": 1.6008,
-        "broker_status": "pending_new",
-        "broker_order_id": "4e9ea71a-8205-4eeb-adcd-b6b1ac0a0695"
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 5,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-03T11:17:57+00:00",
+  "next_entry_scan_at_utc": "2026-11-03T12:06:23+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
+    "ETH/USD",
     "AVAX/USD",
     "BTC/USD",
-    "ETH/USD",
     "LINK/USD",
     "LTC/USD",
     "SOL/USD",
-    "PAXG/USD",
-    "BCH/USD",
+    "UNI/USD",
+    "ARB/USD",
+    "DOT/USD",
     "XRP/USD",
-    "TRUMP/USD",
     "PEPE/USD",
-    "UNI/USD"
+    "AAVE/USD"
   ],
-  "observed_at_utc": "2026-11-03T10:48:59+00:00",
+  "observed_at_utc": "2026-11-03T11:36:38+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-03T10:48:57+00:00",
+    "observed_at_utc": "2026-11-03T11:36:23+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -220,10 +168,10 @@
       },
       {
         "symbol": "TRUMPUSD",
-        "filled_quantity": "125.525602162",
+        "filled_quantity": "0.900414757",
         "fee_quantity": "-0.588070928",
-        "expected_quantity": "124.937531234",
-        "broker_quantity": "124.625187405",
+        "expected_quantity": "0.312343829",
+        "broker_quantity": "0",
         "difference_quantity": "-0.312343829",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.312343829"

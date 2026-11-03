@@ -1,3 +1,2 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
 ETH/USD,15m,donchian_breakout,2026-11-03T10:48:26.456502201Z,2268.428166476,0.088233218,200.1507169300172,0.088012634,2287.218323230117,2259.0330880989413,open,,,
-TRUMP/USD,5m,donchian_breakout,2026-11-03T10:48:49.7775583Z,1.601,124.937531234,200.02498750563402,124.625187405,1.6111050978694956,1.5959474510652523,open,,,
