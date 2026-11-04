@@ -1,15 +1,26 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,15m,bollinger_reversion,1793802600,skipped,symbol_already_active,{}
+PEPE/USD,15m,trend_pullback,1793805300,skipped,symbol_already_active,{}
+PEPE/USD,15m,donchian_breakout,1793805300,skipped,symbol_already_active,{}
+PEPE/USD,15m,macd_momentum,1793805300,skipped,symbol_already_active,{}
+PEPE/USD,1h,trend_pullback,1793804400,skipped,symbol_already_active,{}
+PEPE/USD,1h,rolling_vwap_reclaim,1793804400,skipped,symbol_already_active,{}
 PEPE/USD,6h,trend_pullback,1793793600,skipped,already_seen,{}
+UNI/USD,15m,donchian_breakout,1793805300,skipped,symbol_already_active,{}
+UNI/USD,1h,trend_pullback,1793804400,skipped,symbol_already_active,{}
 UNI/USD,6h,trend_pullback,1793793600,skipped,already_seen,{}
 UNI/USD,6h,donchian_breakout,1793793600,skipped,already_seen,{}
 UNI/USD,6h,squeeze_breakout,1793793600,skipped,already_seen,{}
-BTC/USD,5m,trend_pullback,1793802900,order_result,broker_order_returned,"{""broker_order_id"": ""c975f9ba-4a8d-46e4-a79a-9f8071de0faf"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-6509b554ab5beb737c99d143185b10fa"", ""quantity"": ""0.002546619"", ""reference_ask"": 78535.484}"
-BTC/USD,5m,donchian_breakout,1793802900,skipped,symbol_already_active,{}
-BTC/USD,5m,squeeze_breakout,1793802900,skipped,symbol_already_active,{}
-BTC/USD,5m,rolling_vwap_reclaim,1793802900,skipped,symbol_already_active,{}
-LINK/USD,5m,trend_pullback,1793802900,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-LINK/USD,5m,squeeze_breakout,1793802900,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-LTC/USD,15m,trend_pullback,1793802600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.905590350266706}"
-LTC/USD,15m,rolling_vwap_reclaim,1793802600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.905590350266706}"
-LTC/USD,5m,donchian_breakout,1793802900,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.905590350266706}"
+AVAX/USD,15m,donchian_breakout,1793805300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.76849854720977}"
+AVAX/USD,1h,donchian_breakout,1793804400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.76849854720977}"
+BTC/USD,15m,donchian_breakout,1793805300,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+BTC/USD,1h,donchian_breakout,1793804400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+ETH/USD,15m,donchian_breakout,1793805300,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+ETH/USD,1h,donchian_breakout,1793804400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+LINK/USD,15m,donchian_breakout,1793805300,order_result,broker_order_returned,"{""broker_order_id"": ""25a7269d-3348-4a25-b17b-fa9eba729095"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-d59d1bdfd7ac023567d4c2ce3cb34058"", ""quantity"": ""17.137960582"", ""reference_ask"": 11.67}"
+LTC/USD,15m,donchian_breakout,1793805300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.86125756342683}"
+LTC/USD,1h,ema_cross,1793804400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.86125756342683}"
+LTC/USD,1h,donchian_breakout,1793804400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.86125756342683}"
+SOL/USD,15m,donchian_breakout,1793805300,order_result,broker_order_returned,"{""broker_order_id"": ""5ebaadb0-e05d-4425-ac23-7f27d580db1f"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-cc9b86f7ed533df7ac8e0ad159c446fa"", ""quantity"": ""2.067758374"", ""reference_ask"": 96.7231}"
+BONK/USD,1h,donchian_breakout,1793804400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 96.00000000000044}"
+ONDO/USD,15m,donchian_breakout,1793805300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 53.48237731576283}"
+ONDO/USD,1h,donchian_breakout,1793804400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 53.48237731576283}"
