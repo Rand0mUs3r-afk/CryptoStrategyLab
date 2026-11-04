@@ -30683,10 +30683,14 @@
         "client_order_id": "csl2-da8b7247e8a8df189b834fc9cfaae790"
       },
       "cycle_id": "csl2-ae4fc2ddafcfa52be27eefe0cd5ed18b",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1793774239.5661018,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "ad8149bf-34aa-40b5-940c-1193afb3d598",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-04T06:37:32.826248508Z"
     }
   },
   "cycles": [
