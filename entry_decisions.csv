@@ -1,9 +1,15 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+PEPE/USD,15m,bollinger_reversion,1793802600,skipped,symbol_already_active,{}
 PEPE/USD,6h,trend_pullback,1793793600,skipped,already_seen,{}
-UNI/USD,15m,bollinger_reversion,1793799000,skipped,symbol_already_active,{}
 UNI/USD,6h,trend_pullback,1793793600,skipped,already_seen,{}
 UNI/USD,6h,donchian_breakout,1793793600,skipped,already_seen,{}
 UNI/USD,6h,squeeze_breakout,1793793600,skipped,already_seen,{}
-BTC/USD,15m,rolling_vwap_reclaim,1793799000,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-POL/USD,15m,trend_pullback,1793799000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-POL/USD,15m,rolling_vwap_reclaim,1793799000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+BTC/USD,5m,trend_pullback,1793802900,order_result,broker_order_returned,"{""broker_order_id"": ""c975f9ba-4a8d-46e4-a79a-9f8071de0faf"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-6509b554ab5beb737c99d143185b10fa"", ""quantity"": ""0.002546619"", ""reference_ask"": 78535.484}"
+BTC/USD,5m,donchian_breakout,1793802900,skipped,symbol_already_active,{}
+BTC/USD,5m,squeeze_breakout,1793802900,skipped,symbol_already_active,{}
+BTC/USD,5m,rolling_vwap_reclaim,1793802900,skipped,symbol_already_active,{}
+LINK/USD,5m,trend_pullback,1793802900,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+LINK/USD,5m,squeeze_breakout,1793802900,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+LTC/USD,15m,trend_pullback,1793802600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.905590350266706}"
+LTC/USD,15m,rolling_vwap_reclaim,1793802600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.905590350266706}"
+LTC/USD,5m,donchian_breakout,1793802900,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.905590350266706}"
