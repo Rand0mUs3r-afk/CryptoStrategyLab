@@ -1,8 +1,12 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,5m,trend_pullback,1793823900,skipped,symbol_already_active,{}
-BTC/USD,5m,macd_momentum,1793823900,skipped,symbol_already_active,{}
-ETH/USD,5m,trend_pullback,1793823900,skipped,symbol_already_active,{}
+BTC/USD,15m,trend_pullback,1793826900,skipped,symbol_already_active,{}
+ETH/USD,15m,trend_pullback,1793826900,skipped,symbol_already_active,{}
 PEPE/USD,6h,macd_momentum,1793815200,skipped,already_seen,{}
-SOL/USD,15m,bollinger_reversion,1793823300,skipped,symbol_already_active,{}
+SOL/USD,15m,trend_pullback,1793826900,skipped,symbol_already_active,{}
+UNI/USD,15m,trend_pullback,1793826900,skipped,symbol_already_active,{}
 UNI/USD,6h,donchian_breakout,1793815200,skipped,already_seen,{}
 UNI/USD,6h,squeeze_breakout,1793815200,skipped,already_seen,{}
+LINK/USD,15m,trend_pullback,1793826900,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+LTC/USD,15m,trend_pullback,1793826900,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 58.944360096454105}"
+ONDO/USD,15m,trend_pullback,1793826900,order_result,broker_order_returned,"{""broker_order_id"": ""c9663768-cb3b-480b-8a35-06523f34dc69"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-ddf2d830749512f18e09c7b545e41256"", ""quantity"": ""486.570650058"", ""reference_ask"": 0.41104}"
+ARB/USD,1h,trend_pullback,1793826000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"

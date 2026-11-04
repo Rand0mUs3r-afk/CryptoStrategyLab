@@ -18,18 +18,6 @@
       "error_type": "ValueError"
     },
     {
-      "symbol": "CRV/USD",
-      "timeframe": "15m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "CRV/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
       "symbol": "ARB/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -39,27 +27,18 @@
   "entry_decisions": [
     {
       "symbol": "BTC/USD",
-      "timeframe": "5m",
+      "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1793823900,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "5m",
-      "strategy": "macd_momentum",
-      "signal_time": 1793823900,
+      "signal_time": 1793826900,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
       "symbol": "ETH/USD",
-      "timeframe": "5m",
+      "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1793823900,
+      "signal_time": 1793826900,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -76,8 +55,17 @@
     {
       "symbol": "SOL/USD",
       "timeframe": "15m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793823300,
+      "strategy": "trend_pullback",
+      "signal_time": 1793826900,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793826900,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -99,13 +87,63 @@
       "outcome": "skipped",
       "reason": "already_seen",
       "details": {}
+    },
+    {
+      "symbol": "LINK/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793826900,
+      "outcome": "skipped",
+      "reason": "no_fresh_quote",
+      "details": {
+        "max_quote_age_seconds": 30
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793826900,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 58.944360096454105,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "ONDO/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793826900,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-ddf2d830749512f18e09c7b545e41256",
+        "quantity": "486.570650058",
+        "reference_ask": 0.41104,
+        "broker_status": "pending_new",
+        "broker_order_id": "c9663768-cb3b-480b-8a35-06523f34dc69"
+      }
+    },
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793826000,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 7,
+  "candidates": 11,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-04T20:59:12+00:00",
+  "next_entry_scan_at_utc": "2026-11-04T21:47:08+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -117,14 +155,14 @@
     "LINK/USD",
     "LTC/USD",
     "BONK/USD",
-    "CRV/USD",
+    "ONDO/USD",
     "TRUMP/USD",
     "ARB/USD"
   ],
-  "observed_at_utc": "2026-11-04T20:29:27+00:00",
+  "observed_at_utc": "2026-11-04T21:17:57+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T20:29:12+00:00",
+    "observed_at_utc": "2026-11-04T21:17:56+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -215,6 +253,16 @@
         "difference_quantity": "-0.087788723",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.087788723"
+      },
+      {
+        "symbol": "ONDOUSD",
+        "filled_quantity": "486.570650058",
+        "fee_quantity": "0",
+        "expected_quantity": "486.570650058",
+        "broker_quantity": "485.354223432",
+        "difference_quantity": "-1.216426626",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "1.216426626"
       },
       {
         "symbol": "PEPEUSD",
