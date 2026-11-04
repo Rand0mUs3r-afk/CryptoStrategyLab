@@ -8,19 +8,14 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 8. Skipped: 6. Broker order results: 2.
+Candidates: 3. Skipped: 2. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| UNI/USD | 15m | donchian_breakout | skipped | symbol_already_active | {} |
-| UNI/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| UNI/USD | 1h | macd_momentum | skipped | symbol_already_active | {} |
-| ETH/USD | 1h | macd_momentum | order_result | broker_order_returned | {"broker_order_id": "c2c88907-b9d5-4c99-a2cd-60003352c199", "broker_status": "pending_new", "client_order_id": "csl2-b7164a27c4ed693a7ae76c9b33246f44", "quantity": "0.086900074", "reference_ask": 2301.494} |
-| LINK/USD | 15m | ema_cross | order_result | broker_order_returned | {"broker_order_id": "52caf0c6-bed6-4226-829b-1c17903c5ad1", "broker_status": "pending_new", "client_order_id": "csl2-dd1dd1cda963f8f69616bcfcd51f048d", "quantity": "17.977528089", "reference_ask": 11.125} |
-| SOL/USD | 15m | ema_cross | skipped | stale_signal | {"age_seconds": 930.717663526535, "max_age_seconds": 900} |
-| POL/USD | 1h | macd_momentum | skipped | stale_signal | {"age_seconds": 3630.7176806926727, "max_age_seconds": 3600} |
-| PAXG/USD | 1h | donchian_breakout | skipped | stale_signal | {"age_seconds": 3630.7176942825317, "max_age_seconds": 3600} |
+| UNI/USD | 1h | donchian_breakout | skipped | symbol_already_active | {} |
+| HYPE/USD | 15m | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "e9c90dff-c259-41fe-b486-b92a37c41fcb", "broker_status": "pending_new", "client_order_id": "csl2-3e1590cf1bfd51bd88f6662cba8ec9aa", "quantity": "2.297712282", "reference_ask": 87.0431} |
+| HYPE/USD | 5m | donchian_breakout | skipped | symbol_already_active | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -28,8 +23,8 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
-| POL/USD | 5m | candles | ValueError |
 | PAXG/USD | 5m | candles | ValueError |
+| POL/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -39,6 +34,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | UNI/USD | 1h | trend_pullback | 7.379 | 27.118644067 | 200.108474570393 | 27.050847456 | 7.736090787573656 | 7.200454606213172 | open |
 | ETH/USD | 1h | macd_momentum | 2301.9 | 0.086900074 | 200.0352803406 | 0.086682823 | 2357.8940243716884 | 2273.902987814156 | open |
 | LINK/USD | 15m | ema_cross | 11.13 | 17.977528089 | 200.08988763057002 | 17.932584268 | 11.341471359945134 | 11.024264320027434 | open |
+| HYPE/USD | 15m | donchian_breakout | n/a | n/a | n/a | 0.0 | n/a | n/a | pending |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -139,15 +135,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-04T08:29:28+00:00
+Next entry scan eligible: 2026-11-04T09:20:18+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-04T07:59:29+00:00
+Last refresh: 2026-11-04T08:50:20+00:00
 Source status: partial
-Selected: PEPE/USD, UNI/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, HYPE/USD, POL/USD, PAXG/USD, ONDO/USD
+Selected: ETH/USD, LINK/USD, PEPE/USD, UNI/USD, AVAX/USD, BTC/USD, LTC/USD, SOL/USD, HYPE/USD, PAXG/USD, POL/USD, ONDO/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

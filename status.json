@@ -6,13 +6,13 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "POL/USD",
+      "symbol": "PAXG/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     },
     {
-      "symbol": "PAXG/USD",
+      "symbol": "POL/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -21,122 +21,62 @@
   "entry_decisions": [
     {
       "symbol": "UNI/USD",
+      "timeframe": "1h",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793779200,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "HYPE/USD",
       "timeframe": "15m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793778300,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "UNI/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793775600,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "UNI/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1793775600,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1793775600,
+      "signal_time": 1793781900,
       "outcome": "order_result",
       "reason": "broker_order_returned",
       "details": {
-        "client_order_id": "csl2-b7164a27c4ed693a7ae76c9b33246f44",
-        "quantity": "0.086900074",
-        "reference_ask": 2301.494,
+        "client_order_id": "csl2-3e1590cf1bfd51bd88f6662cba8ec9aa",
+        "quantity": "2.297712282",
+        "reference_ask": 87.0431,
         "broker_status": "pending_new",
-        "broker_order_id": "c2c88907-b9d5-4c99-a2cd-60003352c199"
+        "broker_order_id": "e9c90dff-c259-41fe-b486-b92a37c41fcb"
       }
     },
     {
-      "symbol": "LINK/USD",
-      "timeframe": "15m",
-      "strategy": "ema_cross",
-      "signal_time": 1793778300,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-dd1dd1cda963f8f69616bcfcd51f048d",
-        "quantity": "17.977528089",
-        "reference_ask": 11.125,
-        "broker_status": "pending_new",
-        "broker_order_id": "52caf0c6-bed6-4226-829b-1c17903c5ad1"
-      }
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "15m",
-      "strategy": "ema_cross",
-      "signal_time": 1793778300,
-      "outcome": "skipped",
-      "reason": "stale_signal",
-      "details": {
-        "age_seconds": 930.717663526535,
-        "max_age_seconds": 900
-      }
-    },
-    {
-      "symbol": "POL/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1793775600,
-      "outcome": "skipped",
-      "reason": "stale_signal",
-      "details": {
-        "age_seconds": 3630.7176806926727,
-        "max_age_seconds": 3600
-      }
-    },
-    {
-      "symbol": "PAXG/USD",
-      "timeframe": "1h",
+      "symbol": "HYPE/USD",
+      "timeframe": "5m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793775600,
+      "signal_time": 1793782200,
       "outcome": "skipped",
-      "reason": "stale_signal",
-      "details": {
-        "age_seconds": 3630.7176942825317,
-        "max_age_seconds": 3600
-      }
+      "reason": "symbol_already_active",
+      "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 8,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-04T08:29:28+00:00",
+  "next_entry_scan_at_utc": "2026-11-04T09:20:18+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
+    "ETH/USD",
+    "LINK/USD",
     "PEPE/USD",
     "UNI/USD",
     "AVAX/USD",
     "BTC/USD",
-    "ETH/USD",
-    "LINK/USD",
     "LTC/USD",
     "SOL/USD",
     "HYPE/USD",
-    "POL/USD",
     "PAXG/USD",
+    "POL/USD",
     "ONDO/USD"
   ],
-  "observed_at_utc": "2026-11-04T08:00:30+00:00",
+  "observed_at_utc": "2026-11-04T08:51:02+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T08:00:29+00:00",
+    "observed_at_utc": "2026-11-04T08:51:01+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
