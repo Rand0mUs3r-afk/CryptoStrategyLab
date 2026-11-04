@@ -1,7 +1,7 @@
 """Paper execution adapter: explicit pending fees, guarded exits and timed entries."""
 import argparse
 import copy
-from decimal import Decimal, ROUND_HALF_UP
+from decimal import Decimal, ROUND_CEILING
 import json
 from pathlib import Path
 import time
@@ -138,7 +138,7 @@ def allow_pending(api, store, mismatch):
         if any(o['cycle_id'] not in cycles or engine.canonical(cycles[o['cycle_id']]['symbol']) != key for o in buys):
             return False
         def fee_bound(order):
-            return (engine.dec(order['filled_qty']) * rate).quantize(Decimal('0.000000001'), rounding=ROUND_HALF_UP)
+            return (engine.dec(order['filled_qty']) * rate).quantize(Decimal('0.000000001'), rounding=ROUND_CEILING)
         gross_bound = sum((fee_bound(o) for o in buys), Decimal(0))
         recent_bound = sum((fee_bound(o) for o in buys if 0 <= now - engine.stamp(o['filled_at']) <= _POLICY['pending_fee_max_age_seconds']), Decimal(0))
         pending = gross_bound + engine.dec(row['fee_quantity'])
@@ -278,7 +278,7 @@ def report(state, status, quotes, output):
     if status.get('mode') != 'tick' or not diagnostic:
         return
     directory = Path(output)
-    fields = ['symbol', 'filled_quantity', 'fee_quantity', 'expected_quantity', 'broker_quantity', 'difference_quantity', 'tolerance_quantity', 'unconfirmed_shortfall']
+    fields = ['symbol', 'filled_quantity', 'fee_quantity', 'expected_quantity', 'broker_quantity', 'difference_quantity', 'unconfirmed_shortfall']
     engine.write_csv(directory / 'reconciliation.csv', diagnostic.get('quantities', []), fields)
     (directory / 'reconciliation.json').write_text(json.dumps(diagnostic, indent=2) + '\n')
     lines = ['\n## Reconciliation', '', 'Status: ' + diagnostic.get('status', 'unknown'),
