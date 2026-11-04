@@ -33498,6 +33498,21 @@
       "filled_at": "2026-11-04T15:26:47.278900793Z",
       "broker_updated_at": "2026-11-04T15:26:47.321920638Z",
       "reference_ask": 11.67
+    },
+    "csl2-cc9b86f7ed533df7ac8e0ad159c446fa": {
+      "payload": {
+        "symbol": "SOL/USD",
+        "side": "buy",
+        "qty": "2.067758374",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-cc9b86f7ed533df7ac8e0ad159c446fa"
+      },
+      "cycle_id": "csl2-cc9b86f7ed533df7ac8e0ad159c446fa",
+      "status": "queued",
+      "created_at": 1793806022.815452,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -35253,6 +35268,22 @@
       "tp": 11.971892183110988,
       "sl": 11.549053908444504,
       "entry_time_utc": "2026-11-04T15:26:47.278900793Z"
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793805300,
+      "atr": 0.7450159658657578,
+      "signal_close": 97.59,
+      "hold_seconds": 21600,
+      "id": "csl2-cc9b86f7ed533df7ac8e0ad159c446fa",
+      "created_at": 1793806022.815452,
+      "status": "pending",
+      "distance": 1.1175239487986368,
+      "target_r": 2.0,
+      "reference_ask": 96.7231,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -35626,7 +35657,11 @@
     "BTC/USD|1h|donchian_breakout|1793804400": 1793805986.3243513,
     "ETH/USD|15m|donchian_breakout|1793805300": 1793805986.3243988,
     "ETH/USD|1h|donchian_breakout|1793804400": 1793805986.3244343,
-    "LINK/USD|15m|donchian_breakout|1793805300": 1793805986.324468
+    "LINK/USD|15m|donchian_breakout|1793805300": 1793805986.324468,
+    "LTC/USD|15m|donchian_breakout|1793805300": 1793806022.4447157,
+    "LTC/USD|1h|ema_cross|1793804400": 1793806022.618308,
+    "LTC/USD|1h|donchian_breakout|1793804400": 1793806022.747,
+    "SOL/USD|15m|donchian_breakout|1793805300": 1793806022.815452
   },
   "day": "2026-11-04",
   "day_start_equity": 99839.57,
@@ -35635,7 +35670,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T15:26:59+00:00",
+    "observed_at_utc": "2026-11-04T15:27:22+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
