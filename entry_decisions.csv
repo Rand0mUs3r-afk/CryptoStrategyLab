@@ -1,4 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-UNI/USD,1h,donchian_breakout,1793779200,skipped,symbol_already_active,{}
-HYPE/USD,15m,donchian_breakout,1793781900,order_result,broker_order_returned,"{""broker_order_id"": ""e9c90dff-c259-41fe-b486-b92a37c41fcb"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-3e1590cf1bfd51bd88f6662cba8ec9aa"", ""quantity"": ""2.297712282"", ""reference_ask"": 87.0431}"
-HYPE/USD,5m,donchian_breakout,1793782200,skipped,symbol_already_active,{}
+SOL/USD,15m,donchian_breakout,1793791800,order_result,broker_order_returned,"{""broker_order_id"": ""e2a6a4d5-72af-4216-8fea-ad13e6749120"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-977f59e7fe42b1674bcc34db1d469b46"", ""quantity"": ""2.130814994"", ""reference_ask"": 93.8608}"
+POL/USD,1h,donchian_breakout,1793790000,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"

@@ -6,13 +6,25 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "PAXG/USD",
+      "symbol": "POL/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     },
     {
-      "symbol": "POL/USD",
+      "symbol": "BONK/USD",
+      "timeframe": "15m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "BONK/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "PAXG/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -20,44 +32,37 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "UNI/USD",
-      "timeframe": "1h",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793779200,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "HYPE/USD",
+      "symbol": "SOL/USD",
       "timeframe": "15m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793781900,
+      "signal_time": 1793791800,
       "outcome": "order_result",
       "reason": "broker_order_returned",
       "details": {
-        "client_order_id": "csl2-3e1590cf1bfd51bd88f6662cba8ec9aa",
-        "quantity": "2.297712282",
-        "reference_ask": 87.0431,
+        "client_order_id": "csl2-977f59e7fe42b1674bcc34db1d469b46",
+        "quantity": "2.130814994",
+        "reference_ask": 93.8608,
         "broker_status": "pending_new",
-        "broker_order_id": "e9c90dff-c259-41fe-b486-b92a37c41fcb"
+        "broker_order_id": "e2a6a4d5-72af-4216-8fea-ad13e6749120"
       }
     },
     {
-      "symbol": "HYPE/USD",
-      "timeframe": "5m",
+      "symbol": "POL/USD",
+      "timeframe": "1h",
       "strategy": "donchian_breakout",
-      "signal_time": 1793782200,
+      "signal_time": 1793790000,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
+      "reason": "symbol_cooldown",
+      "details": {
+        "cooldown_seconds": 300
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 3,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-04T09:20:18+00:00",
+  "next_entry_scan_at_utc": "2026-11-04T12:10:05+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ETH/USD",
@@ -68,15 +73,15 @@
     "BTC/USD",
     "LTC/USD",
     "SOL/USD",
-    "HYPE/USD",
-    "PAXG/USD",
     "POL/USD",
-    "ONDO/USD"
+    "BONK/USD",
+    "HYPE/USD",
+    "PAXG/USD"
   ],
-  "observed_at_utc": "2026-11-04T08:51:02+00:00",
+  "observed_at_utc": "2026-11-04T11:40:50+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T08:51:01+00:00",
+    "observed_at_utc": "2026-11-04T11:40:49+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -179,14 +184,24 @@
         "unconfirmed_shortfall": "0"
       },
       {
-        "symbol": "SOLUSD",
-        "filled_quantity": "0.040575696",
-        "fee_quantity": "-0.040575696",
-        "expected_quantity": "0E-9",
+        "symbol": "POLUSD",
+        "filled_quantity": "0",
+        "fee_quantity": "0",
+        "expected_quantity": "0",
         "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "difference_quantity": "0",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
+      },
+      {
+        "symbol": "SOLUSD",
+        "filled_quantity": "2.171390690",
+        "fee_quantity": "-0.040575696",
+        "expected_quantity": "2.130814994",
+        "broker_quantity": "2.125487956",
+        "difference_quantity": "-0.005327038",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "0.005327038"
       },
       {
         "symbol": "TRUMPUSD",
