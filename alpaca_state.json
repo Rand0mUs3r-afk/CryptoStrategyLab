@@ -30722,14 +30722,15 @@
         "client_order_id": "csl2-11695da611e16118f4a822b8495be01a"
       },
       "cycle_id": "csl2-11695da611e16118f4a822b8495be01a",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793774297.4348874,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "39920159.68063872",
       "broker_order_id": "65f20c9c-dced-49a6-94da-16e0bf4b5d78",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-04T06:38:30.778046742Z"
+      "filled_avg_price": 5.01e-06,
+      "filled_at": "2026-11-04T06:38:30.779371921Z",
+      "broker_updated_at": "2026-11-04T06:38:30.821890999Z",
+      "reference_ask": 5.01e-06
     }
   },
   "cycles": [
@@ -32267,11 +32268,17 @@
       "hold_seconds": 259200,
       "id": "csl2-11695da611e16118f4a822b8495be01a",
       "created_at": 1793774297.4348874,
-      "status": "pending",
+      "status": "open",
       "distance": 1.266765488365565e-07,
       "target_r": 2.0,
       "reference_ask": 5.01e-06,
-      "remaining_qty": 0.0
+      "remaining_qty": 39820359.28143712,
+      "entry_price": 5.01e-06,
+      "entry_qty": 39920159.68063872,
+      "entry_notional_usd": 200.00000000000003,
+      "tp": 5.263353097673113e-06,
+      "sl": 4.8833234511634434e-06,
+      "entry_time_utc": "2026-11-04T06:38:30.779371921Z"
     }
   ],
   "seen": {
@@ -32592,7 +32599,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T06:38:29+00:00",
+    "observed_at_utc": "2026-11-04T06:38:38+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -32686,13 +32693,13 @@
       },
       {
         "symbol": "PEPEUSD",
-        "filled_quantity": "596226.666535790",
+        "filled_quantity": "40516386.347174510",
         "fee_quantity": "-596226.666535790",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "39920159.680638720",
+        "broker_quantity": "39820359.281437123",
+        "difference_quantity": "-99800.399201597",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "99800.399201597"
       },
       {
         "symbol": "SOLUSD",
