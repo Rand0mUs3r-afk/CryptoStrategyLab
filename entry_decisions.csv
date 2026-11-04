@@ -1,12 +1,17 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,5m,trend_pullback,1793829600,skipped,symbol_already_active,{}
-ONDO/USD,15m,trend_pullback,1793829600,skipped,symbol_already_active,{}
-ONDO/USD,5m,trend_pullback,1793829600,skipped,symbol_already_active,{}
+BTC/USD,5m,donchian_breakout,1793832000,skipped,symbol_already_active,{}
+ETH/USD,5m,donchian_breakout,1793832000,skipped,symbol_already_active,{}
+ONDO/USD,5m,squeeze_breakout,1793832000,skipped,symbol_already_active,{}
 PEPE/USD,6h,macd_momentum,1793815200,skipped,already_seen,{}
-SOL/USD,15m,trend_pullback,1793829600,skipped,symbol_already_active,{}
-UNI/USD,15m,trend_pullback,1793829600,skipped,symbol_already_active,{}
+SOL/USD,15m,trend_pullback,1793831400,skipped,symbol_already_active,{}
+SOL/USD,5m,ema_cross,1793832000,skipped,symbol_already_active,{}
+SOL/USD,5m,donchian_breakout,1793832000,skipped,symbol_already_active,{}
+LINK/USD,15m,trend_pullback,1793831400,order_result,broker_order_returned,"{""broker_order_id"": ""57aa146f-3492-41f0-9b08-122c62459352"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-126fe626a48e8cc8064040938c8f413c"", ""quantity"": ""17.256255392"", ""reference_ask"": 11.59}"
+LTC/USD,15m,macd_momentum,1793831400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+LTC/USD,15m,squeeze_breakout,1793831400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+RENDER/USD,5m,donchian_breakout,1793832000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+UNI/USD,15m,macd_momentum,1793831400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+UNI/USD,15m,squeeze_breakout,1793831400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
 UNI/USD,6h,donchian_breakout,1793815200,skipped,already_seen,{}
 UNI/USD,6h,squeeze_breakout,1793815200,skipped,already_seen,{}
-AVAX/USD,15m,trend_pullback,1793829600,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-LTC/USD,15m,trend_pullback,1793829600,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-RENDER/USD,15m,macd_momentum,1793829600,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+UNI/USD,5m,donchian_breakout,1793832000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
