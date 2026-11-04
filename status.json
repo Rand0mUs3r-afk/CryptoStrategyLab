@@ -38,12 +38,48 @@
   ],
   "entry_decisions": [
     {
+      "symbol": "BTC/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793823900,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "5m",
+      "strategy": "macd_momentum",
+      "signal_time": 1793823900,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793823900,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
       "symbol": "PEPE/USD",
       "timeframe": "6h",
       "strategy": "macd_momentum",
       "signal_time": 1793815200,
       "outcome": "skipped",
       "reason": "already_seen",
+      "details": {}
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793823300,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
       "details": {}
     },
     {
@@ -63,47 +99,32 @@
       "outcome": "skipped",
       "reason": "already_seen",
       "details": {}
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793820600,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-2fb40d7566abb94649039eded1c14eca",
-        "quantity": "2.102607232",
-        "reference_ask": 95.12,
-        "broker_status": "pending_new",
-        "broker_order_id": "c8f10821-dc2b-446a-87a0-5fc4ff6c317c"
-      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 4,
+  "candidates": 7,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-04T20:11:48+00:00",
+  "next_entry_scan_at_utc": "2026-11-04T20:59:12+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
     "ETH/USD",
     "PEPE/USD",
+    "SOL/USD",
     "UNI/USD",
     "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
-    "SOL/USD",
     "BONK/USD",
     "CRV/USD",
     "TRUMP/USD",
     "ARB/USD"
   ],
-  "observed_at_utc": "2026-11-04T19:42:36+00:00",
+  "observed_at_utc": "2026-11-04T20:29:27+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T19:42:35+00:00",
+    "observed_at_utc": "2026-11-04T20:29:12+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
