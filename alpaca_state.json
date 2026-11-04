@@ -32062,14 +32062,14 @@
         "client_order_id": "csl2-f3851d7f26c6a558496423d773d35f6c"
       },
       "cycle_id": "csl2-f3851d7f26c6a558496423d773d35f6c",
-      "status": "pending_new",
+      "status": "new",
       "created_at": 1793789402.144882,
       "attempted": true,
       "filled_qty": "0",
       "broker_order_id": "82212131-84aa-4776-880e-8efae1856d91",
       "filled_avg_price": null,
       "filled_at": null,
-      "broker_updated_at": "2026-11-04T10:50:33.628257159Z"
+      "broker_updated_at": "2026-11-04T10:50:33.671733224Z"
     }
   },
   "cycles": [
@@ -34056,7 +34056,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T10:50:19+00:00",
+    "observed_at_utc": "2026-11-04T11:39:52+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -34155,6 +34155,16 @@
         "expected_quantity": "39820359.281437123",
         "broker_quantity": "39820359.281437123",
         "difference_quantity": "0E-9",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "0"
+      },
+      {
+        "symbol": "POLUSD",
+        "filled_quantity": "0",
+        "fee_quantity": "0",
+        "expected_quantity": "0",
+        "broker_quantity": "0",
+        "difference_quantity": "0",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
       },
