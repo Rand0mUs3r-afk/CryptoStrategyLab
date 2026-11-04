@@ -34016,6 +34016,21 @@
       "filled_at": "2026-11-04T16:18:53.009912187Z",
       "broker_updated_at": "2026-11-04T16:18:53.021242502Z",
       "reference_ask": 80558.076
+    },
+    "csl2-f31a77541e64c909792850d4fad2133b": {
+      "payload": {
+        "symbol": "ETH/USD",
+        "side": "buy",
+        "qty": "0.077328403",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-f31a77541e64c909792850d4fad2133b"
+      },
+      "cycle_id": "csl2-f31a77541e64c909792850d4fad2133b",
+      "status": "queued",
+      "created_at": 1793809147.0203664,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -35815,6 +35830,22 @@
       "tp": 82524.74630170345,
       "sl": 79638.99034914827,
       "entry_time_utc": "2026-11-04T16:18:53.009912187Z"
+    },
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "1h",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793808000,
+      "atr": 25.120230551873945,
+      "signal_close": 2423.88,
+      "hold_seconds": 259200,
+      "id": "csl2-f31a77541e64c909792850d4fad2133b",
+      "created_at": 1793809147.0203664,
+      "status": "pending",
+      "distance": 37.68034582781092,
+      "target_r": 2.0,
+      "reference_ask": 2439.297,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -36206,7 +36237,8 @@
     "UNI/USD|1h|donchian_breakout|1793808000": 1793809110.7294745,
     "AVAX/USD|1h|donchian_breakout|1793808000": 1793809110.729488,
     "AVAX/USD|5m|trend_pullback|1793808900": 1793809110.8020709,
-    "BTC/USD|1h|donchian_breakout|1793808000": 1793809110.892657
+    "BTC/USD|1h|donchian_breakout|1793808000": 1793809110.892657,
+    "ETH/USD|1h|donchian_breakout|1793808000": 1793809147.0203664
   },
   "day": "2026-11-04",
   "day_start_equity": 99839.57,
@@ -36215,7 +36247,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T16:19:05+00:00",
+    "observed_at_utc": "2026-11-04T16:19:27+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
