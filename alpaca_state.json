@@ -30731,6 +30731,21 @@
       "filled_at": "2026-11-04T06:38:30.779371921Z",
       "broker_updated_at": "2026-11-04T06:38:30.821890999Z",
       "reference_ask": 5.01e-06
+    },
+    "csl2-02782322ad5ff50461540219a71918a7": {
+      "payload": {
+        "symbol": "UNI/USD",
+        "side": "buy",
+        "qty": "27.118644067",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-02782322ad5ff50461540219a71918a7"
+      },
+      "cycle_id": "csl2-02782322ad5ff50461540219a71918a7",
+      "status": "queued",
+      "created_at": 1793774319.7029958,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -32279,6 +32294,22 @@
       "tp": 5.263353097673113e-06,
       "sl": 4.8833234511634434e-06,
       "entry_time_utc": "2026-11-04T06:38:30.779371921Z"
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793772000,
+      "atr": 0.1190302625245521,
+      "signal_close": 7.2869,
+      "hold_seconds": 259200,
+      "id": "csl2-02782322ad5ff50461540219a71918a7",
+      "created_at": 1793774319.7029958,
+      "status": "pending",
+      "distance": 0.17854539378682815,
+      "target_r": 2.0,
+      "reference_ask": 7.375,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -32590,7 +32621,10 @@
     "ETH/USD|1h|trend_pullback|1793772000": 1793774275.0324254,
     "HYPE/USD|5m|trend_pullback|1793774100": 1793774275.0324695,
     "POL/USD|15m|donchian_breakout|1793773800": 1793774297.4195192,
-    "PEPE/USD|1h|macd_momentum|1793772000": 1793774297.4348874
+    "PEPE/USD|1h|macd_momentum|1793772000": 1793774297.4348874,
+    "PAXG/USD|15m|donchian_breakout|1793773800": 1793774319.6817715,
+    "PAXG/USD|1h|donchian_breakout|1793772000": 1793774319.697224,
+    "UNI/USD|1h|trend_pullback|1793772000": 1793774319.7029958
   },
   "day": "2026-11-04",
   "day_start_equity": 99839.57,
@@ -32599,7 +32633,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T06:38:38+00:00",
+    "observed_at_utc": "2026-11-04T06:38:51+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
