@@ -8,14 +8,15 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 3. Skipped: 3. Broker order results: 0.
+Candidates: 4. Skipped: 3. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| PEPE/USD | 6h | macd_momentum | skipped | symbol_already_active | {} |
-| UNI/USD | 6h | donchian_breakout | skipped | symbol_already_active | {} |
-| UNI/USD | 6h | squeeze_breakout | skipped | symbol_already_active | {} |
+| PEPE/USD | 6h | macd_momentum | skipped | already_seen | {} |
+| UNI/USD | 6h | donchian_breakout | skipped | already_seen | {} |
+| UNI/USD | 6h | squeeze_breakout | skipped | already_seen | {} |
+| SOL/USD | 15m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "c8f10821-dc2b-446a-87a0-5fc4ff6c317c", "broker_status": "pending_new", "client_order_id": "csl2-2fb40d7566abb94649039eded1c14eca", "quantity": "2.102607232", "reference_ask": 95.12} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -25,6 +26,8 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | --- | --- | --- | --- |
 | BONK/USD | 15m | candles | ValueError |
 | BONK/USD | 5m | candles | ValueError |
+| CRV/USD | 15m | candles | ValueError |
+| CRV/USD | 5m | candles | ValueError |
 | ARB/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
@@ -35,6 +38,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | UNI/USD | 1h | trend_pullback | 7.379 | 27.118644067 | 200.108474570393 | 27.050847456 | 7.736090787573656 | 7.200454606213172 | open |
 | BTC/USD | 1h | donchian_breakout | 80600.909 | 0.00248268 | 200.10626475612 | 0.002476473 | 82524.74630170345 | 79638.99034914827 | open |
 | ETH/USD | 1h | donchian_breakout | 2441.927 | 0.077328403 | 188.83031515258102 | 0.077135081 | 2517.287691655622 | 2404.246654172189 | open |
+| SOL/USD | 15m | trend_pullback | 95.17 | 2.102607232 | 200.10513026944 | 2.097350713 | 97.03783371062269 | 94.23608314468865 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -136,7 +140,7 @@ Accounting final: False
 | LINKUSD | 0.087788723 | 0 | -0.087788723 | 0.087788723 |
 | PEPEUSD | 39820359.281437123 | 39820359.281437123 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
-| SOLUSD | 0.010496434 | 0 | -0.010496434 | 0.010496434 |
+| SOLUSD | 2.113103666 | 2.097350713 | -0.015752953 | 0.015752953 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
 | UNIUSD | 27.050847456 | 27.050847456 | 0E-9 | 0 |
 
@@ -145,15 +149,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-04T19:14:22+00:00
+Next entry scan eligible: 2026-11-04T20:11:48+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-04T18:44:24+00:00
+Last refresh: 2026-11-04T19:41:49+00:00
 Source status: partial
-Selected: BTC/USD, ETH/USD, PEPE/USD, UNI/USD, AVAX/USD, LINK/USD, LTC/USD, SOL/USD, BONK/USD, ONDO/USD, TRUMP/USD, ARB/USD
+Selected: BTC/USD, ETH/USD, PEPE/USD, UNI/USD, AVAX/USD, LINK/USD, LTC/USD, SOL/USD, BONK/USD, CRV/USD, TRUMP/USD, ARB/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

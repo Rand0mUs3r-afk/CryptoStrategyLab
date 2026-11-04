@@ -1,4 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,6h,macd_momentum,1793815200,skipped,symbol_already_active,{}
-UNI/USD,6h,donchian_breakout,1793815200,skipped,symbol_already_active,{}
-UNI/USD,6h,squeeze_breakout,1793815200,skipped,symbol_already_active,{}
+PEPE/USD,6h,macd_momentum,1793815200,skipped,already_seen,{}
+UNI/USD,6h,donchian_breakout,1793815200,skipped,already_seen,{}
+UNI/USD,6h,squeeze_breakout,1793815200,skipped,already_seen,{}
+SOL/USD,15m,trend_pullback,1793820600,order_result,broker_order_returned,"{""broker_order_id"": ""c8f10821-dc2b-446a-87a0-5fc4ff6c317c"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-2fb40d7566abb94649039eded1c14eca"", ""quantity"": ""2.102607232"", ""reference_ask"": 95.12}"
