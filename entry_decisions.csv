@@ -1,17 +1,9 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,5m,bollinger_reversion,1793794800,skipped,symbol_already_active,{}
-ETH/USD,5m,rsi_rebound,1793794800,skipped,symbol_already_active,{}
-PEPE/USD,6h,trend_pullback,1793793600,skipped,symbol_already_active,{}
-PEPE/USD,5m,bollinger_reversion,1793794800,skipped,symbol_already_active,{}
-PEPE/USD,5m,rsi_rebound,1793794800,skipped,symbol_already_active,{}
-UNI/USD,6h,trend_pullback,1793793600,skipped,symbol_already_active,{}
-UNI/USD,6h,donchian_breakout,1793793600,skipped,symbol_already_active,{}
-UNI/USD,6h,squeeze_breakout,1793793600,skipped,symbol_already_active,{}
-UNI/USD,5m,bollinger_reversion,1793794800,skipped,symbol_already_active,{}
-AVAX/USD,5m,bollinger_reversion,1793794800,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-BTC/USD,5m,bollinger_reversion,1793794800,order_result,broker_order_returned,"{""broker_order_id"": ""881957e4-d83c-4946-a2e4-a6fa59757e36"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-a9ffffeb4891f82a7d268b3571037318"", ""quantity"": ""0.002561208"", ""reference_ask"": 78088.13}"
-BTC/USD,5m,rsi_rebound,1793794800,skipped,stale_signal,"{""age_seconds"": 313.3612730503082, ""max_age_seconds"": 300}"
-LTC/USD,5m,bollinger_reversion,1793794800,skipped,stale_signal,"{""age_seconds"": 313.3612914085388, ""max_age_seconds"": 300}"
-SOL/USD,5m,bollinger_reversion,1793794800,skipped,stale_signal,"{""age_seconds"": 313.36129546165466, ""max_age_seconds"": 300}"
-SOL/USD,5m,rsi_rebound,1793794800,skipped,stale_signal,"{""age_seconds"": 313.36129879951477, ""max_age_seconds"": 300}"
-HYPE/USD,6h,trend_pullback,1793793600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 51.06083281979075}"
+PEPE/USD,6h,trend_pullback,1793793600,skipped,already_seen,{}
+UNI/USD,15m,bollinger_reversion,1793799000,skipped,symbol_already_active,{}
+UNI/USD,6h,trend_pullback,1793793600,skipped,already_seen,{}
+UNI/USD,6h,donchian_breakout,1793793600,skipped,already_seen,{}
+UNI/USD,6h,squeeze_breakout,1793793600,skipped,already_seen,{}
+BTC/USD,15m,rolling_vwap_reclaim,1793799000,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+POL/USD,15m,trend_pullback,1793799000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+POL/USD,15m,rolling_vwap_reclaim,1793799000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
