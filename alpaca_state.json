@@ -30653,6 +30653,21 @@
       "filled_at": "2026-11-03T12:25:41.465655441Z",
       "broker_updated_at": "2026-11-03T12:25:41.471230759Z",
       "reference_ask": 77315.478
+    },
+    "csl2-c6ac4f7a194b9ab1a45d8bc1121a91dc": {
+      "payload": {
+        "symbol": "ETH/USD",
+        "side": "sell",
+        "qty": "0.088012634",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-c6ac4f7a194b9ab1a45d8bc1121a91dc"
+      },
+      "cycle_id": "csl2-1fcea7f6d6864d29dab21791bbc1bae2",
+      "status": "queued",
+      "created_at": 1793774224.8430834,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -32109,7 +32124,8 @@
       "entry_notional_usd": 200.1507169300172,
       "tp": 2287.218323230117,
       "sl": 2259.0330880989413,
-      "entry_time_utc": "2026-11-03T10:48:26.456502201Z"
+      "entry_time_utc": "2026-11-03T10:48:26.456502201Z",
+      "exit_reason": "target"
     },
     {
       "symbol": "TRUMP/USD",
@@ -32146,11 +32162,17 @@
       "hold_seconds": 3600,
       "id": "csl2-ae4fc2ddafcfa52be27eefe0cd5ed18b",
       "created_at": 1793708727.0020247,
-      "status": "pending",
+      "status": "open",
       "distance": 154.633836867818,
       "target_r": 2.0,
       "reference_ask": 77315.478,
-      "remaining_qty": 0.0
+      "remaining_qty": 0.002580336,
+      "entry_price": 77384.18,
+      "entry_qty": 0.002586804,
+      "entry_notional_usd": 200.17770636071998,
+      "tp": 77693.44767373563,
+      "sl": 77229.54616313218,
+      "entry_time_utc": "2026-11-03T12:25:41.465655441Z"
     }
   ],
   "seen": {
@@ -32463,8 +32485,8 @@
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
-    "status": "mismatch",
-    "observed_at_utc": "2026-11-04T05:52:46+00:00",
+    "status": "fee_pending",
+    "observed_at_utc": "2026-11-04T06:37:17+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -32474,7 +32496,7 @@
         "broker_quantity": "0",
         "difference_quantity": "-0.003900157",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.003900157"
       },
       {
         "symbol": "ARBUSD",
@@ -32504,7 +32526,7 @@
         "broker_quantity": "0.002580336",
         "difference_quantity": "-0.000006468",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.000006468"
       },
       {
         "symbol": "DOTUSD",
@@ -32524,7 +32546,7 @@
         "broker_quantity": "0.088012634",
         "difference_quantity": "-0.000220584",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.000220584"
       },
       {
         "symbol": "FILUSD",
@@ -32584,7 +32606,7 @@
         "broker_quantity": "0",
         "difference_quantity": "-0.312343829",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.312343829"
       },
       {
         "symbol": "UNIUSD",
@@ -32597,11 +32619,13 @@
         "unconfirmed_shortfall": "0"
       }
     ],
-    "entries_blocked": true,
-    "exit_checks_allowed": false,
+    "entries_blocked": false,
+    "exit_checks_allowed": true,
     "accounting_final": false,
     "attempts": 3,
-    "retry_exhausted": true
+    "retry_exhausted": true,
+    "pending_entry_policy_enabled": true,
+    "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
   "last_entry_scan_at": 1793708712.0295117,
   "watchlist": {
