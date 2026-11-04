@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-04T16:19:42+00:00",
+  "observed_at_utc": "2026-11-04T17:12:33+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -84,10 +84,10 @@
     },
     {
       "symbol": "LINKUSD",
-      "filled_quantity": "17.355120455",
+      "filled_quantity": "0.260004775",
       "fee_quantity": "-0.172216052",
-      "expected_quantity": "17.182904403",
-      "broker_quantity": "17.09511568",
+      "expected_quantity": "0.087788723",
+      "broker_quantity": "0",
       "difference_quantity": "-0.087788723",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.087788723"
