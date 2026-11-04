@@ -37167,6 +37167,21 @@
       "filled_at": "2026-11-04T22:42:18.224080018Z",
       "broker_updated_at": "2026-11-04T22:42:18.271657865Z",
       "reference_ask": 11.59
+    },
+    "csl2-9e751d555c280620aa76bd79b30594d9": {
+      "payload": {
+        "symbol": "LINK/USD",
+        "side": "sell",
+        "qty": "17.213114753",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-9e751d555c280620aa76bd79b30594d9"
+      },
+      "cycle_id": "csl2-126fe626a48e8cc8064040938c8f413c",
+      "status": "queued",
+      "created_at": 1793836767.2556174,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -39062,7 +39077,8 @@
       "entry_notional_usd": 199.99999999328,
       "tp": 11.807369977836238,
       "sl": 11.48131501108188,
-      "entry_time_utc": "2026-11-04T22:42:18.224080018Z"
+      "entry_time_utc": "2026-11-04T22:42:18.224080018Z",
+      "exit_reason": "stop"
     }
   ],
   "seen": {
@@ -39512,7 +39528,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T23:24:55+00:00",
+    "observed_at_utc": "2026-11-04T23:59:43+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
