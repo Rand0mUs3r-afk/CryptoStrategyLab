@@ -30683,14 +30683,14 @@
         "client_order_id": "csl2-da8b7247e8a8df189b834fc9cfaae790"
       },
       "cycle_id": "csl2-ae4fc2ddafcfa52be27eefe0cd5ed18b",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793774239.5661018,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "0.002580336",
       "broker_order_id": "ad8149bf-34aa-40b5-940c-1193afb3d598",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-04T06:37:32.826248508Z"
+      "filled_avg_price": 77845.937250653,
+      "filled_at": "2026-11-04T06:37:32.827437011Z",
+      "broker_updated_at": "2026-11-04T06:37:32.87222928Z"
     }
   },
   "cycles": [
@@ -32137,18 +32137,20 @@
       "hold_seconds": 21600,
       "id": "csl2-1fcea7f6d6864d29dab21791bbc1bae2",
       "created_at": 1793702892.6884031,
-      "status": "open",
+      "status": "closed",
       "distance": 9.395078377058612,
       "target_r": 2.0,
       "reference_ask": 2266.72,
-      "remaining_qty": 0.088012634,
+      "remaining_qty": 0.0,
       "entry_price": 2268.428166476,
       "entry_qty": 0.088233218,
       "entry_notional_usd": 200.1507169300172,
       "tp": 2287.218323230117,
       "sl": 2259.0330880989413,
       "entry_time_utc": "2026-11-03T10:48:26.456502201Z",
-      "exit_reason": "target"
+      "exit_reason": "target",
+      "closed_at": "2026-11-04T06:37:40+00:00",
+      "cashflow_pnl_before_usd_fees": 1.6259916267748338
     },
     {
       "symbol": "TRUMP/USD",
@@ -32185,18 +32187,20 @@
       "hold_seconds": 3600,
       "id": "csl2-ae4fc2ddafcfa52be27eefe0cd5ed18b",
       "created_at": 1793708727.0020247,
-      "status": "open",
+      "status": "closed",
       "distance": 154.633836867818,
       "target_r": 2.0,
       "reference_ask": 77315.478,
-      "remaining_qty": 0.002580336,
+      "remaining_qty": 0.0,
       "entry_price": 77384.18,
       "entry_qty": 0.002586804,
       "entry_notional_usd": 200.17770636071998,
       "tp": 77693.44767373563,
       "sl": 77229.54616313218,
       "entry_time_utc": "2026-11-03T12:25:41.465655441Z",
-      "exit_reason": "target"
+      "exit_reason": "target",
+      "closed_at": "2026-11-04T06:37:40+00:00",
+      "cashflow_pnl_before_usd_fees": 0.6909679808809983
     }
   ],
   "seen": {
@@ -32503,14 +32507,14 @@
     "AVAX/USD|5m|donchian_breakout|1793708700": 1793708726.967357,
     "BTC/USD|5m|donchian_breakout|1793708700": 1793708727.0020247
   },
-  "day": "2026-11-03",
-  "day_start_equity": 99843.64,
+  "day": "2026-11-04",
+  "day_start_equity": 99839.57,
   "daily_paused": false,
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T06:37:31+00:00",
+    "observed_at_utc": "2026-11-04T06:37:40+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -32544,10 +32548,10 @@
       },
       {
         "symbol": "BTCUSD",
-        "filled_quantity": "0.002631256",
+        "filled_quantity": "0.000050920",
         "fee_quantity": "-0.000044452",
-        "expected_quantity": "0.002586804",
-        "broker_quantity": "0.002580336",
+        "expected_quantity": "0.000006468",
+        "broker_quantity": "0",
         "difference_quantity": "-0.000006468",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.000006468"
@@ -32651,7 +32655,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1793708712.0295117,
+  "last_entry_scan_at": 1793774260.6945477,
   "watchlist": {
     "observed_at_utc": "2026-11-03T12:25:13+00:00",
     "status": "partial",
