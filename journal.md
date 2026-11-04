@@ -8,13 +8,27 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 2. Skipped: 1. Broker order results: 1.
+Candidates: 16. Skipped: 15. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| SOL/USD | 15m | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "e2a6a4d5-72af-4216-8fea-ad13e6749120", "broker_status": "pending_new", "client_order_id": "csl2-977f59e7fe42b1674bcc34db1d469b46", "quantity": "2.130814994", "reference_ask": 93.8608} |
-| POL/USD | 1h | donchian_breakout | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
+| ETH/USD | 5m | bollinger_reversion | skipped | symbol_already_active | {} |
+| ETH/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
+| PEPE/USD | 6h | trend_pullback | skipped | symbol_already_active | {} |
+| PEPE/USD | 5m | bollinger_reversion | skipped | symbol_already_active | {} |
+| PEPE/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
+| UNI/USD | 6h | trend_pullback | skipped | symbol_already_active | {} |
+| UNI/USD | 6h | donchian_breakout | skipped | symbol_already_active | {} |
+| UNI/USD | 6h | squeeze_breakout | skipped | symbol_already_active | {} |
+| UNI/USD | 5m | bollinger_reversion | skipped | symbol_already_active | {} |
+| AVAX/USD | 5m | bollinger_reversion | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
+| BTC/USD | 5m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "881957e4-d83c-4946-a2e4-a6fa59757e36", "broker_status": "pending_new", "client_order_id": "csl2-a9ffffeb4891f82a7d268b3571037318", "quantity": "0.002561208", "reference_ask": 78088.13} |
+| BTC/USD | 5m | rsi_rebound | skipped | stale_signal | {"age_seconds": 313.3612730503082, "max_age_seconds": 300} |
+| LTC/USD | 5m | bollinger_reversion | skipped | stale_signal | {"age_seconds": 313.3612914085388, "max_age_seconds": 300} |
+| SOL/USD | 5m | bollinger_reversion | skipped | stale_signal | {"age_seconds": 313.36129546165466, "max_age_seconds": 300} |
+| SOL/USD | 5m | rsi_rebound | skipped | stale_signal | {"age_seconds": 313.36129879951477, "max_age_seconds": 300} |
+| HYPE/USD | 6h | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 51.06083281979075} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -23,9 +37,9 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
 | POL/USD | 5m | candles | ValueError |
+| PAXG/USD | 5m | candles | ValueError |
 | BONK/USD | 15m | candles | ValueError |
 | BONK/USD | 5m | candles | ValueError |
-| PAXG/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -35,7 +49,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | UNI/USD | 1h | trend_pullback | 7.379 | 27.118644067 | 200.108474570393 | 27.050847456 | 7.736090787573656 | 7.200454606213172 | open |
 | ETH/USD | 1h | macd_momentum | 2301.9 | 0.086900074 | 200.0352803406 | 0.086682823 | 2357.8940243716884 | 2273.902987814156 | open |
 | LINK/USD | 15m | ema_cross | 11.13 | 17.977528089 | 200.08988763057002 | 17.932584268 | 11.341471359945134 | 11.024264320027434 | open |
-| SOL/USD | 15m | donchian_breakout | 93.8938 | 2.130814994 | 200.07031688363722 | 2.125487956 | 95.06239491305311 | 93.30950254347344 | open |
+| BTC/USD | 5m | bollinger_reversion | 78071.2 | 0.002561208 | 199.9565820096 | 0.002554804 | 78432.69577880135 | 77890.45211059932 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -105,6 +119,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | HYPE/USD | 5m | trend_pullback | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
 | HYPE/USD | 15m | donchian_breakout | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
 | POL/USD | 15m | donchian_breakout | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
+| SOL/USD | 15m | donchian_breakout | 93.8938 | 2.130814994 | 200.07031688363722 | 0.0 | 95.06239491305311 | 93.30950254347344 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -122,7 +137,7 @@ Accounting final: False
 | AAVEUSD | 0E-9 | 0 | 0E-9 | 0 |
 | ARBUSD | 0E-9 | 0 | 0E-9 | 0 |
 | AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
-| BTCUSD | 0E-9 | 0 | 0E-9 | 0 |
+| BTCUSD | 0.002561208 | 0.002554804 | -0.000006404 | 0.000006404 |
 | DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
 | ETHUSD | 0.086900074 | 0.086682823 | -0.000217251 | 0.000217251 |
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -130,7 +145,7 @@ Accounting final: False
 | LINKUSD | 17.977528089 | 17.932584268 | -0.044943821 | 0.044943821 |
 | PEPEUSD | 39820359.281437123 | 39820359.281437123 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
-| SOLUSD | 2.130814994 | 2.125487956 | -0.005327038 | 0.005327038 |
+| SOLUSD | 0.005327038 | 0 | -0.005327038 | 0.005327038 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
 | UNIUSD | 27.050847456 | 27.050847456 | 0E-9 | 0 |
 
@@ -139,15 +154,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-04T12:10:05+00:00
+Next entry scan eligible: 2026-11-04T12:54:24+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-04T11:40:06+00:00
+Last refresh: 2026-11-04T12:24:25+00:00
 Source status: partial
-Selected: ETH/USD, LINK/USD, PEPE/USD, UNI/USD, AVAX/USD, BTC/USD, LTC/USD, SOL/USD, POL/USD, BONK/USD, HYPE/USD, PAXG/USD
+Selected: ETH/USD, LINK/USD, PEPE/USD, UNI/USD, AVAX/USD, BTC/USD, LTC/USD, SOL/USD, POL/USD, PAXG/USD, BONK/USD, HYPE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
