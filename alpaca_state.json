@@ -31510,6 +31510,21 @@
       "filled_at": "2026-11-04T07:59:47.366211848Z",
       "broker_updated_at": "2026-11-04T07:59:47.371538656Z",
       "reference_ask": 2301.494
+    },
+    "csl2-dd1dd1cda963f8f69616bcfcd51f048d": {
+      "payload": {
+        "symbol": "LINK/USD",
+        "side": "buy",
+        "qty": "17.977528089",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-dd1dd1cda963f8f69616bcfcd51f048d"
+      },
+      "cycle_id": "csl2-dd1dd1cda963f8f69616bcfcd51f048d",
+      "status": "queued",
+      "created_at": 1793779199.2242525,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -33104,6 +33119,22 @@
       "tp": 2357.8940243716884,
       "sl": 2273.902987814156,
       "entry_time_utc": "2026-11-04T07:59:47.366211848Z"
+    },
+    {
+      "symbol": "LINK/USD",
+      "timeframe": "15m",
+      "strategy": "ema_cross",
+      "signal_time": 1793778300,
+      "atr": 0.07049045331504447,
+      "signal_close": 11.125,
+      "hold_seconds": 21600,
+      "id": "csl2-dd1dd1cda963f8f69616bcfcd51f048d",
+      "created_at": 1793779199.2242525,
+      "status": "pending",
+      "distance": 0.1057356799725667,
+      "target_r": 2.0,
+      "reference_ask": 11.125,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -33423,7 +33454,8 @@
     "UNI/USD|15m|donchian_breakout|1793778300": 1793779183.1956215,
     "UNI/USD|1h|trend_pullback|1793775600": 1793779183.1956449,
     "UNI/USD|1h|macd_momentum|1793775600": 1793779183.1956534,
-    "ETH/USD|1h|macd_momentum|1793775600": 1793779183.195661
+    "ETH/USD|1h|macd_momentum|1793775600": 1793779183.195661,
+    "LINK/USD|15m|ema_cross|1793778300": 1793779199.2242525
   },
   "day": "2026-11-04",
   "day_start_equity": 99839.57,
@@ -33432,7 +33464,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T07:59:58+00:00",
+    "observed_at_utc": "2026-11-04T08:00:16+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
