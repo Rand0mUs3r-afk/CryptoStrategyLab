@@ -66,13 +66,25 @@
       "outcome": "skipped",
       "reason": "already_seen",
       "details": {}
+    },
+    {
+      "symbol": "ONDO/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793814900,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 51.507802487202184,
+        "max_spread_bps": 50
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 4,
+  "candidates": 5,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-04T17:42:33+00:00",
+  "next_entry_scan_at_utc": "2026-11-04T18:27:32+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -84,14 +96,14 @@
     "LINK/USD",
     "LTC/USD",
     "BONK/USD",
+    "ONDO/USD",
     "CRV/USD",
-    "RENDER/USD",
     "TRUMP/USD"
   ],
-  "observed_at_utc": "2026-11-04T17:12:48+00:00",
+  "observed_at_utc": "2026-11-04T17:57:50+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T17:12:33+00:00",
+    "observed_at_utc": "2026-11-04T17:57:32+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
