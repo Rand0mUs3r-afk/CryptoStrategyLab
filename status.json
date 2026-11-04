@@ -4,185 +4,19 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [
-    {
-      "symbol": "POL/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "PAXG/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    }
+  "data_errors": [],
+  "entry_decisions": [],
+  "entry_pause_reasons": [
+    "entry_scan_interval_not_elapsed"
   ],
-  "entry_decisions": [
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "15m",
-      "strategy": "ema_cross",
-      "signal_time": 1793773800,
-      "outcome": "skipped",
-      "reason": "no_fresh_quote",
-      "details": {
-        "max_quote_age_seconds": 30
-      }
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "15m",
-      "strategy": "ema_cross",
-      "signal_time": 1793773800,
-      "outcome": "skipped",
-      "reason": "symbol_cooldown",
-      "details": {
-        "cooldown_seconds": 300
-      }
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "15m",
-      "strategy": "ema_cross",
-      "signal_time": 1793773800,
-      "outcome": "skipped",
-      "reason": "symbol_cooldown",
-      "details": {
-        "cooldown_seconds": 300
-      }
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793772000,
-      "outcome": "skipped",
-      "reason": "symbol_cooldown",
-      "details": {
-        "cooldown_seconds": 300
-      }
-    },
-    {
-      "symbol": "HYPE/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793774100,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-019028b420b07a36c2599c12f8dc01bf",
-        "quantity": "2.362390739",
-        "reference_ask": 84.66,
-        "broker_status": "pending_new",
-        "broker_order_id": "bf0e53bc-91ce-4c36-adb9-34c61deee3ea"
-      }
-    },
-    {
-      "symbol": "POL/USD",
-      "timeframe": "15m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793773800,
-      "outcome": "skipped",
-      "reason": "no_fresh_quote",
-      "details": {
-        "max_quote_age_seconds": 30
-      }
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1793772000,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-11695da611e16118f4a822b8495be01a",
-        "quantity": "39920159.68063872",
-        "reference_ask": 5.01e-06,
-        "broker_status": "pending_new",
-        "broker_order_id": "65f20c9c-dced-49a6-94da-16e0bf4b5d78"
-      }
-    },
-    {
-      "symbol": "PAXG/USD",
-      "timeframe": "15m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793773800,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 114.14305325198647,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "PAXG/USD",
-      "timeframe": "1h",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793772000,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 114.14305325198647,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "UNI/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793772000,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-02782322ad5ff50461540219a71918a7",
-        "quantity": "27.118644067",
-        "reference_ask": 7.375,
-        "broker_status": "pending_new",
-        "broker_order_id": "9fa594b0-7636-4478-8b78-c8fb389a2f05"
-      }
-    },
-    {
-      "symbol": "UNI/USD",
-      "timeframe": "1h",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1793772000,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    }
-  ],
-  "entry_pause_reasons": [],
-  "candidates": 11,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "completed_with_data_errors",
+  "entry_scan_status": "not_due",
   "next_entry_scan_at_utc": "2026-11-04T07:07:40+00:00",
-  "watchlist_status": "partial",
-  "watchlist_symbols": [
-    "AVAX/USD",
-    "BTC/USD",
-    "ETH/USD",
-    "LINK/USD",
-    "LTC/USD",
-    "SOL/USD",
-    "HYPE/USD",
-    "POL/USD",
-    "PEPE/USD",
-    "PAXG/USD",
-    "UNI/USD",
-    "ARB/USD"
-  ],
-  "observed_at_utc": "2026-11-04T06:39:01+00:00",
+  "observed_at_utc": "2026-11-04T06:46:59+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T06:39:00+00:00",
+    "observed_at_utc": "2026-11-04T06:46:59+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

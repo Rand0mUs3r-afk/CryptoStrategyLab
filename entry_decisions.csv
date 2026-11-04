@@ -1,12 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,15m,ema_cross,1793773800,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-BTC/USD,15m,ema_cross,1793773800,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-ETH/USD,15m,ema_cross,1793773800,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-ETH/USD,1h,trend_pullback,1793772000,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-HYPE/USD,5m,trend_pullback,1793774100,order_result,broker_order_returned,"{""broker_order_id"": ""bf0e53bc-91ce-4c36-adb9-34c61deee3ea"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-019028b420b07a36c2599c12f8dc01bf"", ""quantity"": ""2.362390739"", ""reference_ask"": 84.66}"
-POL/USD,15m,donchian_breakout,1793773800,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-PEPE/USD,1h,macd_momentum,1793772000,order_result,broker_order_returned,"{""broker_order_id"": ""65f20c9c-dced-49a6-94da-16e0bf4b5d78"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-11695da611e16118f4a822b8495be01a"", ""quantity"": ""39920159.68063872"", ""reference_ask"": 5.01e-06}"
-PAXG/USD,15m,donchian_breakout,1793773800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 114.14305325198647}"
-PAXG/USD,1h,donchian_breakout,1793772000,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 114.14305325198647}"
-UNI/USD,1h,trend_pullback,1793772000,order_result,broker_order_returned,"{""broker_order_id"": ""9fa594b0-7636-4478-8b78-c8fb389a2f05"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-02782322ad5ff50461540219a71918a7"", ""quantity"": ""27.118644067"", ""reference_ask"": 7.375}"
-UNI/USD,1h,rolling_vwap_reclaim,1793772000,skipped,symbol_already_active,{}

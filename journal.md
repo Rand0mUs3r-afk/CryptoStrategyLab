@@ -8,38 +8,18 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 11. Skipped: 8. Broker order results: 3.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| AVAX/USD | 15m | ema_cross | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
-| BTC/USD | 15m | ema_cross | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
-| ETH/USD | 15m | ema_cross | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
-| ETH/USD | 1h | trend_pullback | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
-| HYPE/USD | 5m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "bf0e53bc-91ce-4c36-adb9-34c61deee3ea", "broker_status": "pending_new", "client_order_id": "csl2-019028b420b07a36c2599c12f8dc01bf", "quantity": "2.362390739", "reference_ask": 84.66} |
-| POL/USD | 15m | donchian_breakout | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
-| PEPE/USD | 1h | macd_momentum | order_result | broker_order_returned | {"broker_order_id": "65f20c9c-dced-49a6-94da-16e0bf4b5d78", "broker_status": "pending_new", "client_order_id": "csl2-11695da611e16118f4a822b8495be01a", "quantity": "39920159.68063872", "reference_ask": 5.01e-06} |
-| PAXG/USD | 15m | donchian_breakout | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 114.14305325198647} |
-| PAXG/USD | 1h | donchian_breakout | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 114.14305325198647} |
-| UNI/USD | 1h | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "9fa594b0-7636-4478-8b78-c8fb389a2f05", "broker_status": "pending_new", "client_order_id": "csl2-02782322ad5ff50461540219a71918a7", "quantity": "27.118644067", "reference_ask": 7.375} |
-| UNI/USD | 1h | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
+Entries paused: entry_scan_interval_not_elapsed.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
-
-## Data errors
-
-| Coin | Bar | Stage | Error type |
-| --- | --- | --- | --- |
-| POL/USD | 5m | candles | ValueError |
-| PAXG/USD | 5m | candles | ValueError |
-| ARB/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| HYPE/USD | 5m | trend_pullback | n/a | n/a | n/a | 0.0 | n/a | n/a | pending |
 | PEPE/USD | 1h | macd_momentum | 5.01e-06 | 39920159.68063872 | 200.00000000000003 | 39820359.28143712 | 5.263353097673113e-06 | 4.8833234511634434e-06 | open |
 | UNI/USD | 1h | trend_pullback | 7.379 | 27.118644067 | 200.108474570393 | 27.050847456 | 7.736090787573656 | 7.200454606213172 | open |
 ## Closed cycles
@@ -108,6 +88,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | ETH/USD | 15m | donchian_breakout | 2268.428166476 | 0.088233218 | 200.1507169300172 | 0.0 | 2287.218323230117 | 2259.0330880989413 | closed |
 | TRUMP/USD | 5m | donchian_breakout | 1.601 | 124.937531234 | 200.02498750563402 | 0.0 | 1.6111050978694956 | 1.5959474510652523 | closed |
 | BTC/USD | 5m | donchian_breakout | 77384.18 | 0.002586804 | 200.17770636071998 | 0.0 | 77693.44767373563 | 77229.54616313218 | closed |
+| HYPE/USD | 5m | trend_pullback | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -140,7 +121,7 @@ PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
 New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
-Entry scan status: completed_with_data_errors
+Entry scan status: not_due
 Next entry scan eligible: 2026-11-04T07:07:40+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
