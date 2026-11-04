@@ -18,13 +18,7 @@
       "error_type": "ValueError"
     },
     {
-      "symbol": "CRV/USD",
-      "timeframe": "15m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "CRV/USD",
+      "symbol": "ARB/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -34,76 +28,55 @@
     {
       "symbol": "PEPE/USD",
       "timeframe": "6h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793793600,
+      "strategy": "macd_momentum",
+      "signal_time": 1793815200,
       "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "UNI/USD",
-      "timeframe": "6h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793793600,
-      "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
     },
     {
       "symbol": "UNI/USD",
       "timeframe": "6h",
       "strategy": "donchian_breakout",
-      "signal_time": 1793793600,
+      "signal_time": 1793815200,
       "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
     },
     {
       "symbol": "UNI/USD",
       "timeframe": "6h",
       "strategy": "squeeze_breakout",
-      "signal_time": 1793793600,
+      "signal_time": 1793815200,
       "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
-    },
-    {
-      "symbol": "ONDO/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793814900,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 51.507802487202184,
-        "max_spread_bps": 50
-      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 5,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-04T18:27:32+00:00",
+  "next_entry_scan_at_utc": "2026-11-04T19:14:22+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
     "ETH/USD",
     "PEPE/USD",
-    "SOL/USD",
     "UNI/USD",
     "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
+    "SOL/USD",
     "BONK/USD",
     "ONDO/USD",
-    "CRV/USD",
-    "TRUMP/USD"
+    "TRUMP/USD",
+    "ARB/USD"
   ],
-  "observed_at_utc": "2026-11-04T17:57:50+00:00",
+  "observed_at_utc": "2026-11-04T18:44:37+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T17:57:32+00:00",
+    "observed_at_utc": "2026-11-04T18:44:22+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -217,10 +190,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.113661108",
+        "filled_quantity": "0.051072130",
         "fee_quantity": "-0.040575696",
-        "expected_quantity": "2.073085412",
-        "broker_quantity": "2.062588978",
+        "expected_quantity": "0.010496434",
+        "broker_quantity": "0",
         "difference_quantity": "-0.010496434",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.010496434"

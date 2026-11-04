@@ -1,6 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,6h,trend_pullback,1793793600,skipped,already_seen,{}
-UNI/USD,6h,trend_pullback,1793793600,skipped,already_seen,{}
-UNI/USD,6h,donchian_breakout,1793793600,skipped,already_seen,{}
-UNI/USD,6h,squeeze_breakout,1793793600,skipped,already_seen,{}
-ONDO/USD,5m,trend_pullback,1793814900,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 51.507802487202184}"
+PEPE/USD,6h,macd_momentum,1793815200,skipped,symbol_already_active,{}
+UNI/USD,6h,donchian_breakout,1793815200,skipped,symbol_already_active,{}
+UNI/USD,6h,squeeze_breakout,1793815200,skipped,symbol_already_active,{}
