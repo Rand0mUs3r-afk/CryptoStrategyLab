@@ -1,1 +1,9 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+UNI/USD,15m,donchian_breakout,1793778300,skipped,symbol_already_active,{}
+UNI/USD,1h,trend_pullback,1793775600,skipped,symbol_already_active,{}
+UNI/USD,1h,macd_momentum,1793775600,skipped,symbol_already_active,{}
+ETH/USD,1h,macd_momentum,1793775600,order_result,broker_order_returned,"{""broker_order_id"": ""c2c88907-b9d5-4c99-a2cd-60003352c199"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-b7164a27c4ed693a7ae76c9b33246f44"", ""quantity"": ""0.086900074"", ""reference_ask"": 2301.494}"
+LINK/USD,15m,ema_cross,1793778300,order_result,broker_order_returned,"{""broker_order_id"": ""52caf0c6-bed6-4226-829b-1c17903c5ad1"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-dd1dd1cda963f8f69616bcfcd51f048d"", ""quantity"": ""17.977528089"", ""reference_ask"": 11.125}"
+SOL/USD,15m,ema_cross,1793778300,skipped,stale_signal,"{""age_seconds"": 930.717663526535, ""max_age_seconds"": 900}"
+POL/USD,1h,macd_momentum,1793775600,skipped,stale_signal,"{""age_seconds"": 3630.7176806926727, ""max_age_seconds"": 3600}"
+PAXG/USD,1h,donchian_breakout,1793775600,skipped,stale_signal,"{""age_seconds"": 3630.7176942825317, ""max_age_seconds"": 3600}"

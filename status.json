@@ -4,29 +4,149 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [],
-  "entry_decisions": [],
-  "entry_pause_reasons": [
-    "entry_scan_interval_not_elapsed"
+  "data_errors": [
+    {
+      "symbol": "POL/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    }
   ],
-  "candidates": 0,
+  "entry_decisions": [
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793778300,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793775600,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "1h",
+      "strategy": "macd_momentum",
+      "signal_time": 1793775600,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "1h",
+      "strategy": "macd_momentum",
+      "signal_time": 1793775600,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-b7164a27c4ed693a7ae76c9b33246f44",
+        "quantity": "0.086900074",
+        "reference_ask": 2301.494,
+        "broker_status": "pending_new",
+        "broker_order_id": "c2c88907-b9d5-4c99-a2cd-60003352c199"
+      }
+    },
+    {
+      "symbol": "LINK/USD",
+      "timeframe": "15m",
+      "strategy": "ema_cross",
+      "signal_time": 1793778300,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-dd1dd1cda963f8f69616bcfcd51f048d",
+        "quantity": "17.977528089",
+        "reference_ask": 11.125,
+        "broker_status": "pending_new",
+        "broker_order_id": "52caf0c6-bed6-4226-829b-1c17903c5ad1"
+      }
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "15m",
+      "strategy": "ema_cross",
+      "signal_time": 1793778300,
+      "outcome": "skipped",
+      "reason": "stale_signal",
+      "details": {
+        "age_seconds": 930.717663526535,
+        "max_age_seconds": 900
+      }
+    },
+    {
+      "symbol": "POL/USD",
+      "timeframe": "1h",
+      "strategy": "macd_momentum",
+      "signal_time": 1793775600,
+      "outcome": "skipped",
+      "reason": "stale_signal",
+      "details": {
+        "age_seconds": 3630.7176806926727,
+        "max_age_seconds": 3600
+      }
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "1h",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793775600,
+      "outcome": "skipped",
+      "reason": "stale_signal",
+      "details": {
+        "age_seconds": 3630.7176942825317,
+        "max_age_seconds": 3600
+      }
+    }
+  ],
+  "entry_pause_reasons": [],
+  "candidates": 8,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "not_due",
-  "next_entry_scan_at_utc": "2026-11-04T07:07:40+00:00",
-  "observed_at_utc": "2026-11-04T06:46:59+00:00",
+  "entry_scan_status": "completed_with_data_errors",
+  "next_entry_scan_at_utc": "2026-11-04T08:29:28+00:00",
+  "watchlist_status": "partial",
+  "watchlist_symbols": [
+    "PEPE/USD",
+    "UNI/USD",
+    "AVAX/USD",
+    "BTC/USD",
+    "ETH/USD",
+    "LINK/USD",
+    "LTC/USD",
+    "SOL/USD",
+    "HYPE/USD",
+    "POL/USD",
+    "PAXG/USD",
+    "ONDO/USD"
+  ],
+  "observed_at_utc": "2026-11-04T08:00:30+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T06:46:59+00:00",
+    "observed_at_utc": "2026-11-04T08:00:29+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
         "filled_quantity": "0.022301081",
-        "fee_quantity": "-0.018400924",
-        "expected_quantity": "0.003900157",
+        "fee_quantity": "-0.022301081",
+        "expected_quantity": "0E-9",
         "broker_quantity": "0",
-        "difference_quantity": "-0.003900157",
+        "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.003900157"
+        "unconfirmed_shortfall": "0"
       },
       {
         "symbol": "ARBUSD",
@@ -51,12 +171,12 @@
       {
         "symbol": "BTCUSD",
         "filled_quantity": "0.000050920",
-        "fee_quantity": "-0.000044452",
-        "expected_quantity": "0.000006468",
+        "fee_quantity": "-0.000050920",
+        "expected_quantity": "0E-9",
         "broker_quantity": "0",
-        "difference_quantity": "-0.000006468",
+        "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.000006468"
+        "unconfirmed_shortfall": "0"
       },
       {
         "symbol": "DOTUSD",
@@ -70,13 +190,13 @@
       },
       {
         "symbol": "ETHUSD",
-        "filled_quantity": "0.001742881",
-        "fee_quantity": "-0.001522297",
-        "expected_quantity": "0.000220584",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.000220584",
+        "filled_quantity": "0.088642955",
+        "fee_quantity": "-0.001742881",
+        "expected_quantity": "0.086900074",
+        "broker_quantity": "0.086682823",
+        "difference_quantity": "-0.000217251",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.000220584"
+        "unconfirmed_shortfall": "0.000217251"
       },
       {
         "symbol": "FILUSD",
@@ -100,23 +220,23 @@
       },
       {
         "symbol": "LINKUSD",
-        "filled_quantity": "0.172216052",
+        "filled_quantity": "18.149744141",
         "fee_quantity": "-0.172216052",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "17.977528089",
+        "broker_quantity": "17.932584268",
+        "difference_quantity": "-0.044943821",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.044943821"
       },
       {
         "symbol": "PEPEUSD",
         "filled_quantity": "40516386.347174510",
-        "fee_quantity": "-596226.666535790",
-        "expected_quantity": "39920159.680638720",
+        "fee_quantity": "-696027.065737387",
+        "expected_quantity": "39820359.281437123",
         "broker_quantity": "39820359.281437123",
-        "difference_quantity": "-99800.399201597",
+        "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "99800.399201597"
+        "unconfirmed_shortfall": "0"
       },
       {
         "symbol": "SOLUSD",
@@ -131,22 +251,22 @@
       {
         "symbol": "TRUMPUSD",
         "filled_quantity": "0.900414757",
-        "fee_quantity": "-0.588070928",
-        "expected_quantity": "0.312343829",
+        "fee_quantity": "-0.900414757",
+        "expected_quantity": "0E-9",
         "broker_quantity": "0",
-        "difference_quantity": "-0.312343829",
+        "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.312343829"
+        "unconfirmed_shortfall": "0"
       },
       {
         "symbol": "UNIUSD",
         "filled_quantity": "27.465061569",
-        "fee_quantity": "-0.346417502",
-        "expected_quantity": "27.118644067",
+        "fee_quantity": "-0.414214113",
+        "expected_quantity": "27.050847456",
         "broker_quantity": "27.050847456",
-        "difference_quantity": "-0.067796611",
+        "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.067796611"
+        "unconfirmed_shortfall": "0"
       }
     ],
     "entries_blocked": false,
