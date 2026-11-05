@@ -44289,10 +44289,14 @@
         "client_order_id": "csl2-9d6da2938857f8e01cc413ea189b9f69"
       },
       "cycle_id": "csl2-9d6da2938857f8e01cc413ea189b9f69",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1793910766.6987667,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "fd49248a-c855-4340-9537-993e383fbefb",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-05T20:33:15.323761692Z"
     }
   },
   "cycles": [
