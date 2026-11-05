@@ -6,19 +6,19 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "PAXG/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "CRV/USD",
+      "symbol": "BONK/USD",
       "timeframe": "15m",
       "stage": "candles",
       "error_type": "ValueError"
     },
     {
-      "symbol": "CRV/USD",
+      "symbol": "BONK/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "PAXG/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -26,90 +26,64 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
+      "symbol": "LINK/USD",
       "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793843100,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793843100,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ONDO/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793843100,
+      "strategy": "macd_momentum",
+      "signal_time": 1793845800,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
       "symbol": "LINK/USD",
-      "timeframe": "15m",
+      "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1793843100,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-602d1a406760318b2bafe708a1f4076e",
-        "quantity": "17.404925593",
-        "reference_ask": 11.491,
-        "broker_status": "pending_new",
-        "broker_order_id": "66f19275-4a8b-45d7-8572-37089a4f718b"
-      }
+      "signal_time": 1793846400,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
-      "symbol": "LTC/USD",
-      "timeframe": "15m",
+      "symbol": "ONDO/USD",
+      "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1793843100,
+      "signal_time": 1793846400,
       "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 58.588548601865135,
-        "max_spread_bps": 50
-      }
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
-      "symbol": "SOL/USD",
-      "timeframe": "15m",
+      "symbol": "PEPE/USD",
+      "timeframe": "1h",
       "strategy": "trend_pullback",
-      "signal_time": 1793843100,
+      "signal_time": 1793844000,
       "outcome": "skipped",
-      "reason": "symbol_cooldown",
-      "details": {
-        "cooldown_seconds": 300
-      }
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "strategy": "macd_momentum",
+      "signal_time": 1793846400,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
       "symbol": "RENDER/USD",
-      "timeframe": "15m",
+      "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1793843100,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-3d5362085333d8f63194c4796a9889ac",
-        "quantity": "122.827488791",
-        "reference_ask": 1.6283,
-        "broker_status": "pending_new",
-        "broker_order_id": "dc41d823-300f-474b-8443-e4f3553ebdaa"
-      }
+      "signal_time": 1793846400,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
-      "symbol": "PAXG/USD",
+      "symbol": "AVAX/USD",
       "timeframe": "15m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793843100,
+      "strategy": "ema_cross",
+      "signal_time": 1793845800,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -118,10 +92,46 @@
       }
     },
     {
-      "symbol": "UNI/USD",
-      "timeframe": "15m",
+      "symbol": "LTC/USD",
+      "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1793843100,
+      "signal_time": 1793846400,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793846400,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "1h",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793844000,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "1h",
+      "strategy": "macd_momentum",
+      "signal_time": 1793844000,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -131,29 +141,29 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 9,
+  "candidates": 11,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T02:24:26+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T03:12:18+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
     "ETH/USD",
+    "LINK/USD",
     "ONDO/USD",
     "PEPE/USD",
+    "RENDER/USD",
     "AVAX/USD",
-    "LINK/USD",
     "LTC/USD",
     "SOL/USD",
-    "RENDER/USD",
+    "BONK/USD",
     "PAXG/USD",
-    "UNI/USD",
-    "CRV/USD"
+    "UNI/USD"
   ],
-  "observed_at_utc": "2026-11-05T01:55:40+00:00",
+  "observed_at_utc": "2026-11-05T02:42:33+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T01:55:39+00:00",
+    "observed_at_utc": "2026-11-05T02:42:18+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
