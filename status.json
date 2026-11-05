@@ -6,6 +6,18 @@
   "account_verified": true,
   "data_errors": [
     {
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
       "symbol": "PAXG/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -22,55 +34,45 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
-    }
-  ],
-  "entry_decisions": [
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1793851200,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
     },
     {
-      "symbol": "LTC/USD",
+      "symbol": "BONK/USD",
+      "timeframe": "15m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "BONK/USD",
       "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793852700,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 59.03927005993477,
-        "max_spread_bps": 50
-      }
+      "stage": "candles",
+      "error_type": "ValueError"
     }
   ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T04:58:04+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T05:57:39+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
     "ETH/USD",
     "LINK/USD",
     "PEPE/USD",
-    "RENDER/USD",
     "AVAX/USD",
     "LTC/USD",
     "SOL/USD",
+    "RENDER/USD",
     "PAXG/USD",
-    "UNI/USD",
     "CRV/USD",
-    "TRUMP/USD"
+    "TRUMP/USD",
+    "BONK/USD"
   ],
-  "observed_at_utc": "2026-11-05T04:28:19+00:00",
+  "observed_at_utc": "2026-11-05T05:27:56+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T04:28:04+00:00",
+    "observed_at_utc": "2026-11-05T05:27:39+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -194,10 +196,10 @@
       },
       {
         "symbol": "RENDERUSD",
-        "filled_quantity": "122.827488791",
+        "filled_quantity": "0.307068722",
         "fee_quantity": "0",
-        "expected_quantity": "122.827488791",
-        "broker_quantity": "122.520420069",
+        "expected_quantity": "0.307068722",
+        "broker_quantity": "0",
         "difference_quantity": "-0.307068722",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.307068722"
