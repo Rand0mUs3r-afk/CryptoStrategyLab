@@ -35550,6 +35550,329 @@
         "attempts": 1,
         "retry_exhausted": false
       }
+    },
+    {
+      "status": "PAPER_TICK_COMPLETED",
+      "paper_only": true,
+      "writes_enabled": true,
+      "mode": "tick",
+      "account_verified": true,
+      "data_errors": [
+        {
+          "symbol": "ARB/USD",
+          "timeframe": "5m",
+          "stage": "candles",
+          "error_type": "ValueError"
+        },
+        {
+          "symbol": "PEPE/USD",
+          "timeframe": "5m",
+          "stage": "candles",
+          "error_type": "ValueError"
+        },
+        {
+          "symbol": "RENDER/USD",
+          "timeframe": "5m",
+          "stage": "candles",
+          "error_type": "ValueError"
+        },
+        {
+          "symbol": "CRV/USD",
+          "timeframe": "15m",
+          "stage": "candles",
+          "error_type": "ValueError"
+        },
+        {
+          "symbol": "CRV/USD",
+          "timeframe": "5m",
+          "stage": "candles",
+          "error_type": "ValueError"
+        }
+      ],
+      "entry_decisions": [
+        {
+          "symbol": "ARB/USD",
+          "timeframe": "1h",
+          "strategy": "trend_pullback",
+          "signal_time": 1793869200,
+          "outcome": "skipped",
+          "reason": "symbol_already_active",
+          "details": {}
+        },
+        {
+          "symbol": "ETH/USD",
+          "timeframe": "15m",
+          "strategy": "bollinger_reversion",
+          "signal_time": 1793871000,
+          "outcome": "skipped",
+          "reason": "symbol_already_active",
+          "details": {}
+        },
+        {
+          "symbol": "LINK/USD",
+          "timeframe": "1h",
+          "strategy": "macd_momentum",
+          "signal_time": 1793869200,
+          "outcome": "skipped",
+          "reason": "symbol_already_active",
+          "details": {}
+        },
+        {
+          "symbol": "LINK/USD",
+          "timeframe": "5m",
+          "strategy": "trend_pullback",
+          "signal_time": 1793871300,
+          "outcome": "skipped",
+          "reason": "symbol_already_active",
+          "details": {}
+        },
+        {
+          "symbol": "PEPE/USD",
+          "timeframe": "1h",
+          "strategy": "trend_pullback",
+          "signal_time": 1793869200,
+          "outcome": "skipped",
+          "reason": "symbol_already_active",
+          "details": {}
+        },
+        {
+          "symbol": "RENDER/USD",
+          "timeframe": "15m",
+          "strategy": "squeeze_breakout",
+          "signal_time": 1793871000,
+          "outcome": "skipped",
+          "reason": "symbol_already_active",
+          "details": {}
+        },
+        {
+          "symbol": "LTC/USD",
+          "timeframe": "1h",
+          "strategy": "trend_pullback",
+          "signal_time": 1793869200,
+          "outcome": "skipped",
+          "reason": "max_positions",
+          "details": {
+            "active_positions": 6,
+            "max_positions": 6
+          }
+        },
+        {
+          "symbol": "SOL/USD",
+          "timeframe": "1h",
+          "strategy": "macd_momentum",
+          "signal_time": 1793869200,
+          "outcome": "skipped",
+          "reason": "max_positions",
+          "details": {
+            "active_positions": 6,
+            "max_positions": 6
+          }
+        },
+        {
+          "symbol": "SOL/USD",
+          "timeframe": "5m",
+          "strategy": "trend_pullback",
+          "signal_time": 1793871300,
+          "outcome": "skipped",
+          "reason": "max_positions",
+          "details": {
+            "active_positions": 6,
+            "max_positions": 6
+          }
+        }
+      ],
+      "entry_pause_reasons": [],
+      "candidates": 9,
+      "entry_scan_interval_seconds": 1800,
+      "entry_scan_status": "completed_with_data_errors",
+      "next_entry_scan_at_utc": "2026-11-05T10:07:07+00:00",
+      "watchlist_status": "partial",
+      "watchlist_symbols": [
+        "ARB/USD",
+        "BTC/USD",
+        "ETH/USD",
+        "LINK/USD",
+        "PEPE/USD",
+        "RENDER/USD",
+        "AVAX/USD",
+        "LTC/USD",
+        "SOL/USD",
+        "ADA/USD",
+        "BCH/USD",
+        "CRV/USD"
+      ],
+      "observed_at_utc": "2026-11-05T09:37:22+00:00",
+      "reconciliation": {
+        "status": "matched",
+        "observed_at_utc": "2026-11-05T09:37:07+00:00",
+        "quantities": [
+          {
+            "symbol": "AAVEUSD",
+            "filled_quantity": "0.022301081",
+            "fee_quantity": "-0.022301081",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "ARBUSD",
+            "filled_quantity": "1229.805723027",
+            "fee_quantity": "-11.857005079",
+            "expected_quantity": "1217.948717948",
+            "broker_quantity": "1217.948717948",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "AVAXUSD",
+            "filled_quantity": "0.171436211",
+            "fee_quantity": "-0.171436211",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "BTCUSD",
+            "filled_quantity": "0.002546371",
+            "fee_quantity": "-0.000069898",
+            "expected_quantity": "0.002476473",
+            "broker_quantity": "0.002476473",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "DOTUSD",
+            "filled_quantity": "0.515464449",
+            "fee_quantity": "-0.515464449",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "ETHUSD",
+            "filled_quantity": "0.079288535",
+            "fee_quantity": "-0.002153454",
+            "expected_quantity": "0.077135081",
+            "broker_quantity": "0.077135081",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "FILUSD",
+            "filled_quantity": "0.549710303",
+            "fee_quantity": "-0.549710303",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "HYPEUSD",
+            "filled_quantity": "0",
+            "fee_quantity": "0",
+            "expected_quantity": "0",
+            "broker_quantity": "0",
+            "difference_quantity": "0",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "LINKUSD",
+            "filled_quantity": "17.708071007",
+            "fee_quantity": "-0.346657728",
+            "expected_quantity": "17.361413279",
+            "broker_quantity": "17.361413279",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "ONDOUSD",
+            "filled_quantity": "1.216426626",
+            "fee_quantity": "-1.216426626",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "PEPEUSD",
+            "filled_quantity": "40516386.347174510",
+            "fee_quantity": "-696027.065737387",
+            "expected_quantity": "39820359.281437123",
+            "broker_quantity": "39820359.281437123",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "POLUSD",
+            "filled_quantity": "0",
+            "fee_quantity": "0",
+            "expected_quantity": "0",
+            "broker_quantity": "0",
+            "difference_quantity": "0",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "RENDERUSD",
+            "filled_quantity": "124.735475727",
+            "fee_quantity": "-0.618139740",
+            "expected_quantity": "124.117335987",
+            "broker_quantity": "124.117335987",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "SOLUSD",
+            "filled_quantity": "0.061501078",
+            "fee_quantity": "-0.061501078",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "TRUMPUSD",
+            "filled_quantity": "0.900414757",
+            "fee_quantity": "-0.900414757",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "UNIUSD",
+            "filled_quantity": "0.414214113",
+            "fee_quantity": "-0.414214113",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          }
+        ],
+        "entries_blocked": false,
+        "exit_checks_allowed": true,
+        "accounting_final": true,
+        "attempts": 1,
+        "retry_exhausted": false
+      }
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",
@@ -43355,7 +43678,16 @@
     "SOL/USD|15m|macd_momentum|1793867400": 1793868093.3900113,
     "SOL/USD|15m|squeeze_breakout|1793867400": 1793868093.390017,
     "SOL/USD|15m|rolling_vwap_reclaim|1793867400": 1793868093.3900232,
-    "BCH/USD|15m|donchian_breakout|1793867400": 1793868093.390029
+    "BCH/USD|15m|donchian_breakout|1793867400": 1793868093.390029,
+    "ARB/USD|1h|trend_pullback|1793869200": 1793871442.2952578,
+    "ETH/USD|15m|bollinger_reversion|1793871000": 1793871442.2952812,
+    "LINK/USD|1h|macd_momentum|1793869200": 1793871442.2952898,
+    "LINK/USD|5m|trend_pullback|1793871300": 1793871442.2952962,
+    "PEPE/USD|1h|trend_pullback|1793869200": 1793871442.2953022,
+    "RENDER/USD|15m|squeeze_breakout|1793871000": 1793871442.295307,
+    "LTC/USD|1h|trend_pullback|1793869200": 1793871442.2953122,
+    "SOL/USD|1h|macd_momentum|1793869200": 1793871442.2953253,
+    "SOL/USD|5m|trend_pullback|1793871300": 1793871442.2953331
   },
   "day": "2026-11-05",
   "day_start_equity": 99847.32,
@@ -43535,7 +43867,7 @@
   },
   "last_entry_scan_at": 1793871427.7499833,
   "watchlist": {
-    "observed_at_utc": "2026-11-05T08:41:20+00:00",
+    "observed_at_utc": "2026-11-05T09:37:09+00:00",
     "status": "partial",
     "selected": [
       "ARB/USD",
@@ -43547,34 +43879,17 @@
       "AVAX/USD",
       "LTC/USD",
       "SOL/USD",
+      "ADA/USD",
       "BCH/USD",
-      "CRV/USD",
-      "TRUMP/USD"
+      "CRV/USD"
     ],
     "ranked": [
       {
-        "symbol": "ETH/USD",
-        "change_24h_pct": 4.4405455736800326,
-        "range_24h_pct": 6.126323728938465,
-        "estimated_volume_usd": 406320653.1659741,
-        "relative_24h_volume": 1.799540811012987,
-        "news_count": 0,
-        "risk_headline": false,
-        "reasons": [
-          "top_gainer",
-          "emerging_momentum"
-        ],
-        "headlines": [],
-        "score": 7,
-        "eligible_dynamic": true,
-        "selected": true
-      },
-      {
         "symbol": "RENDER/USD",
-        "change_24h_pct": 5.699043653633473,
+        "change_24h_pct": 6.193363322250467,
         "range_24h_pct": 7.823800131492442,
-        "estimated_volume_usd": 1756990.2551739998,
-        "relative_24h_volume": 1.099057418799337,
+        "estimated_volume_usd": 1768790.9744959997,
+        "relative_24h_volume": 1.1027667238462495,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [
@@ -43588,10 +43903,10 @@
       },
       {
         "symbol": "LINK/USD",
-        "change_24h_pct": 4.229390681003586,
+        "change_24h_pct": 4.066942594925327,
         "range_24h_pct": 6.730072463768111,
-        "estimated_volume_usd": 17889148.13648,
-        "relative_24h_volume": 2.1182643128776606,
+        "estimated_volume_usd": 17709204.44874,
+        "relative_24h_volume": 2.107681278014795,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [
@@ -43604,10 +43919,26 @@
       },
       {
         "symbol": "SOL/USD",
-        "change_24h_pct": 3.8428510090167345,
+        "change_24h_pct": 3.968595396859542,
         "range_24h_pct": 6.194498592159414,
-        "estimated_volume_usd": 110164010.6242723,
-        "relative_24h_volume": 1.874981528094153,
+        "estimated_volume_usd": 108849864.23073962,
+        "relative_24h_volume": 1.85299652041447,
+        "news_count": 0,
+        "risk_headline": false,
+        "reasons": [
+          "emerging_momentum"
+        ],
+        "headlines": [],
+        "score": 4,
+        "eligible_dynamic": true,
+        "selected": true
+      },
+      {
+        "symbol": "ETH/USD",
+        "change_24h_pct": 4.063301783057716,
+        "range_24h_pct": 6.126323728938465,
+        "estimated_volume_usd": 409318467.9177074,
+        "relative_24h_volume": 1.8175551128755756,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [
@@ -43620,10 +43951,10 @@
       },
       {
         "symbol": "BTC/USD",
-        "change_24h_pct": 2.7238456536789357,
+        "change_24h_pct": 2.534285608801512,
         "range_24h_pct": 4.150430628888913,
-        "estimated_volume_usd": 810204572.409334,
-        "relative_24h_volume": 1.797894443287553,
+        "estimated_volume_usd": 798150896.5376673,
+        "relative_24h_volume": 1.7752479678561477,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [
@@ -43635,11 +43966,27 @@
         "selected": true
       },
       {
+        "symbol": "ADA/USD",
+        "change_24h_pct": 4.365828092243196,
+        "range_24h_pct": 6.877352987963303,
+        "estimated_volume_usd": 11729507.38095907,
+        "relative_24h_volume": 1.4012104015391333,
+        "news_count": 0,
+        "risk_headline": false,
+        "reasons": [
+          "top_gainer"
+        ],
+        "headlines": [],
+        "score": 3,
+        "eligible_dynamic": true,
+        "selected": true
+      },
+      {
         "symbol": "BCH/USD",
-        "change_24h_pct": 4.998910121339817,
-        "range_24h_pct": 6.42407741270834,
-        "estimated_volume_usd": 3662315.119624963,
-        "relative_24h_volume": 1.3573253104505394,
+        "change_24h_pct": 4.634918325026383,
+        "range_24h_pct": 6.563891239559938,
+        "estimated_volume_usd": 3692720.649360348,
+        "relative_24h_volume": 1.373613391652437,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [
@@ -43652,10 +43999,10 @@
       },
       {
         "symbol": "CRV/USD",
-        "change_24h_pct": 5.82191780821919,
-        "range_24h_pct": 7.314285714285718,
-        "estimated_volume_usd": 1117841.8023990002,
-        "relative_24h_volume": 0.7594469639892351,
+        "change_24h_pct": 4.718761796904469,
+        "range_24h_pct": 6.34201585503964,
+        "estimated_volume_usd": 1095244.586062,
+        "relative_24h_volume": 0.7457921058778701,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [
@@ -43668,10 +44015,10 @@
       },
       {
         "symbol": "TRUMP/USD",
-        "change_24h_pct": -16.00321134675854,
+        "change_24h_pct": -14.773795140287282,
         "range_24h_pct": 24.650000000000016,
-        "estimated_volume_usd": 7035524.7038775,
-        "relative_24h_volume": 5.653174573848438,
+        "estimated_volume_usd": 7066093.3791717,
+        "relative_24h_volume": 5.596389295681395,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [
@@ -43680,14 +44027,14 @@
         "headlines": [],
         "score": 2,
         "eligible_dynamic": true,
-        "selected": true
+        "selected": false
       },
       {
         "symbol": "UNI/USD",
-        "change_24h_pct": 2.369414473508069,
+        "change_24h_pct": 1.9074702544634947,
         "range_24h_pct": 7.853612744692007,
-        "estimated_volume_usd": 11917042.469837489,
-        "relative_24h_volume": 1.442196081295742,
+        "estimated_volume_usd": 11734844.234498268,
+        "relative_24h_volume": 1.4284896642192941,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [
@@ -43700,10 +44047,10 @@
       },
       {
         "symbol": "PEPE/USD",
-        "change_24h_pct": -0.982318271119853,
+        "change_24h_pct": -0.9881422924901129,
         "range_24h_pct": 9.259259259259256,
-        "estimated_volume_usd": 8180343.86625792,
-        "relative_24h_volume": 1.4097133816111669,
+        "estimated_volume_usd": 7856881.102284751,
+        "relative_24h_volume": 1.36136076691057,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [
@@ -43716,10 +44063,10 @@
       },
       {
         "symbol": "XTZ/USD",
-        "change_24h_pct": 6.042416966786712,
+        "change_24h_pct": 7.063048683160411,
         "range_24h_pct": 13.44064386317907,
-        "estimated_volume_usd": 308574.83245000005,
-        "relative_24h_volume": 2.222431776777392,
+        "estimated_volume_usd": 342386.207551,
+        "relative_24h_volume": 2.4176228319715647,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43731,10 +44078,10 @@
       },
       {
         "symbol": "LDO/USD",
-        "change_24h_pct": 2.7406907479679665,
+        "change_24h_pct": 2.9481720745852202,
         "range_24h_pct": 6.116098144823456,
-        "estimated_volume_usd": 548056.8608955,
-        "relative_24h_volume": 1.8254852818963498,
+        "estimated_volume_usd": 548449.4947791001,
+        "relative_24h_volume": 1.8237190815358297,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43746,10 +44093,10 @@
       },
       {
         "symbol": "HYPE/USD",
-        "change_24h_pct": -3.2202216066482103,
+        "change_24h_pct": -3.651068746389363,
         "range_24h_pct": 7.462506047411699,
-        "estimated_volume_usd": 53768887.21034999,
-        "relative_24h_volume": 1.750552614637012,
+        "estimated_volume_usd": 52803601.382479995,
+        "relative_24h_volume": 1.7273384025832894,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43760,10 +44107,10 @@
       },
       {
         "symbol": "PAXG/USD",
-        "change_24h_pct": 2.1226467791628068,
+        "change_24h_pct": 2.024947190902715,
         "range_24h_pct": 2.6616857342983913,
-        "estimated_volume_usd": 3056352.0701045,
-        "relative_24h_volume": 1.7129631289337766,
+        "estimated_volume_usd": 2995795.5435509994,
+        "relative_24h_volume": 1.6759291026574752,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43774,24 +44121,10 @@
       },
       {
         "symbol": "POL/USD",
-        "change_24h_pct": 4.107558755028573,
-        "range_24h_pct": 5.238400684199274,
-        "estimated_volume_usd": 1233929.9671644,
-        "relative_24h_volume": 1.4208725837585223,
-        "news_count": 0,
-        "risk_headline": false,
-        "reasons": [],
-        "headlines": [],
-        "score": 0,
-        "eligible_dynamic": true,
-        "selected": false
-      },
-      {
-        "symbol": "ADA/USD",
-        "change_24h_pct": 3.843546284224253,
-        "range_24h_pct": 6.877352987963303,
-        "estimated_volume_usd": 11876270.591112537,
-        "relative_24h_volume": 1.41969345613145,
+        "change_24h_pct": 4.359299134473282,
+        "range_24h_pct": 5.933290570878769,
+        "estimated_volume_usd": 1223142.2771911,
+        "relative_24h_volume": 1.3993486423472132,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43802,10 +44135,10 @@
       },
       {
         "symbol": "WIF/USD",
-        "change_24h_pct": -1.661468670258015,
+        "change_24h_pct": -2.0488081725312135,
         "range_24h_pct": 7.852412488174076,
-        "estimated_volume_usd": 462731.98516740004,
-        "relative_24h_volume": 1.3531237295105483,
+        "estimated_volume_usd": 452178.0973083,
+        "relative_24h_volume": 1.3284425017403045,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43817,10 +44150,10 @@
       },
       {
         "symbol": "GRT/USD",
-        "change_24h_pct": 3.0393325387365833,
+        "change_24h_pct": 3.049264998013501,
         "range_24h_pct": 6.0795168595873195,
-        "estimated_volume_usd": 470381.16875568,
-        "relative_24h_volume": 1.2922509711916927,
+        "estimated_volume_usd": 459687.161405,
+        "relative_24h_volume": 1.2613068789953263,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43832,10 +44165,10 @@
       },
       {
         "symbol": "AVAX/USD",
-        "change_24h_pct": 1.011726833754878,
+        "change_24h_pct": 0.9333947914266005,
         "range_24h_pct": 6.391632771644384,
-        "estimated_volume_usd": 6171066.403241356,
-        "relative_24h_volume": 1.251695111815573,
+        "estimated_volume_usd": 6078778.411976766,
+        "relative_24h_volume": 1.2361094609450718,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43846,10 +44179,10 @@
       },
       {
         "symbol": "AAVE/USD",
-        "change_24h_pct": 2.013883591425736,
+        "change_24h_pct": 1.9973980255605817,
         "range_24h_pct": 5.596294866846785,
-        "estimated_volume_usd": 4120716.101,
-        "relative_24h_volume": 1.2099120554134595,
+        "estimated_volume_usd": 4030082.78848,
+        "relative_24h_volume": 1.186933062373242,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43860,24 +44193,10 @@
       },
       {
         "symbol": "DOGE/USD",
-        "change_24h_pct": 2.4487623103540246,
+        "change_24h_pct": 2.557612894631678,
         "range_24h_pct": 5.356662180349936,
-        "estimated_volume_usd": 7071623.585742001,
-        "relative_24h_volume": 1.1261022395573228,
-        "news_count": 0,
-        "risk_headline": false,
-        "reasons": [],
-        "headlines": [],
-        "score": 0,
-        "eligible_dynamic": true,
-        "selected": false
-      },
-      {
-        "symbol": "BONK/USD",
-        "change_24h_pct": -0.32573289902280145,
-        "range_24h_pct": 6.35451505016722,
-        "estimated_volume_usd": 1399980.31537104,
-        "relative_24h_volume": 1.110492708839707,
+        "estimated_volume_usd": 7042781.81721,
+        "relative_24h_volume": 1.1208275736926303,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43888,10 +44207,38 @@
       },
       {
         "symbol": "XRP/USD",
-        "change_24h_pct": 3.550758642264995,
+        "change_24h_pct": 2.8881430021075793,
         "range_24h_pct": 5.122773986035933,
-        "estimated_volume_usd": 77266881.38944128,
-        "relative_24h_volume": 1.1028288018447066,
+        "estimated_volume_usd": 78100446.36820398,
+        "relative_24h_volume": 1.118674943535314,
+        "news_count": 0,
+        "risk_headline": false,
+        "reasons": [],
+        "headlines": [],
+        "score": 0,
+        "eligible_dynamic": true,
+        "selected": false
+      },
+      {
+        "symbol": "BONK/USD",
+        "change_24h_pct": -0.6514657980455918,
+        "range_24h_pct": 6.35451505016722,
+        "estimated_volume_usd": 1341740.3604997501,
+        "relative_24h_volume": 1.067528924719669,
+        "news_count": 0,
+        "risk_headline": false,
+        "reasons": [],
+        "headlines": [],
+        "score": 0,
+        "eligible_dynamic": true,
+        "selected": false
+      },
+      {
+        "symbol": "ONDO/USD",
+        "change_24h_pct": 1.3263126521285695,
+        "range_24h_pct": 5.948686899265865,
+        "estimated_volume_usd": 5205879.4415404,
+        "relative_24h_volume": 1.055168506530012,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43902,10 +44249,10 @@
       },
       {
         "symbol": "SHIB/USD",
-        "change_24h_pct": 1.93133047210301,
+        "change_24h_pct": 1.4989293361884481,
         "range_24h_pct": 4.761904761904767,
-        "estimated_volume_usd": 406192.56459375,
-        "relative_24h_volume": 1.075262665874622,
+        "estimated_volume_usd": 390657.95127726,
+        "relative_24h_volume": 1.0362157499520261,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43916,39 +44263,11 @@
         "exclusion": "insufficient_venue_volume"
       },
       {
-        "symbol": "ONDO/USD",
-        "change_24h_pct": 2.1106277190801714,
-        "range_24h_pct": 5.948686899265865,
-        "estimated_volume_usd": 5277871.9073102,
-        "relative_24h_volume": 1.0634878730505166,
-        "news_count": 0,
-        "risk_headline": false,
-        "reasons": [],
-        "headlines": [],
-        "score": 0,
-        "eligible_dynamic": true,
-        "selected": false
-      },
-      {
         "symbol": "ARB/USD",
-        "change_24h_pct": 2.116598588934271,
+        "change_24h_pct": 1.5067650676506839,
         "range_24h_pct": 7.773608505315832,
-        "estimated_volume_usd": 1561361.1568500001,
-        "relative_24h_volume": 0.9069807337381977,
-        "news_count": 0,
-        "risk_headline": false,
-        "reasons": [],
-        "headlines": [],
-        "score": 0,
-        "eligible_dynamic": true,
-        "selected": true
-      },
-      {
-        "symbol": "LTC/USD",
-        "change_24h_pct": 2.891094184854248,
-        "range_24h_pct": 4.797631525716706,
-        "estimated_volume_usd": 5587454.873865179,
-        "relative_24h_volume": 0.8471425270877446,
+        "estimated_volume_usd": 1548337.3757575,
+        "relative_24h_volume": 0.8987243326331739,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43959,10 +44278,10 @@
       },
       {
         "symbol": "SUSHI/USD",
-        "change_24h_pct": -0.15544041450776813,
+        "change_24h_pct": 0.7268951194184803,
         "range_24h_pct": 5.467928496319652,
-        "estimated_volume_usd": 61820.412663,
-        "relative_24h_volume": 0.834621601233074,
+        "estimated_volume_usd": 64867.052500000005,
+        "relative_24h_volume": 0.8680056724669718,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43973,11 +44292,25 @@
         "exclusion": "insufficient_venue_volume"
       },
       {
+        "symbol": "LTC/USD",
+        "change_24h_pct": 2.7385725007780026,
+        "range_24h_pct": 4.797631525716706,
+        "estimated_volume_usd": 5614207.576449667,
+        "relative_24h_volume": 0.851859320824425,
+        "news_count": 0,
+        "risk_headline": false,
+        "reasons": [],
+        "headlines": [],
+        "score": 0,
+        "eligible_dynamic": true,
+        "selected": true
+      },
+      {
         "symbol": "DOT/USD",
-        "change_24h_pct": -0.14682747771369575,
+        "change_24h_pct": 0.8425487098472795,
         "range_24h_pct": 6.20593890194403,
-        "estimated_volume_usd": 1691436.333063454,
-        "relative_24h_volume": 0.8324891847754353,
+        "estimated_volume_usd": 1740157.514013471,
+        "relative_24h_volume": 0.8505539557950743,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -43988,10 +44321,10 @@
       },
       {
         "symbol": "FIL/USD",
-        "change_24h_pct": 0.6365004050457257,
+        "change_24h_pct": 0.2771042604780227,
         "range_24h_pct": 6.245580956870134,
-        "estimated_volume_usd": 1640692.2555,
-        "relative_24h_volume": 0.7926186514243347,
+        "estimated_volume_usd": 1678524.7105215,
+        "relative_24h_volume": 0.8112868277193074,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -44002,10 +44335,10 @@
       },
       {
         "symbol": "SKY/USD",
-        "change_24h_pct": 2.769745852990413,
-        "range_24h_pct": 4.899709079773373,
-        "estimated_volume_usd": 137211.70163700002,
-        "relative_24h_volume": 0.5498583102370871,
+        "change_24h_pct": 2.752433090024331,
+        "range_24h_pct": 4.739336492891,
+        "estimated_volume_usd": 133514.677977,
+        "relative_24h_volume": 0.534610474554864,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -44017,10 +44350,10 @@
       },
       {
         "symbol": "YFI/USD",
-        "change_24h_pct": 1.1874474088006792,
+        "change_24h_pct": 1.6457983735639559,
         "range_24h_pct": 3.589784572966992,
-        "estimated_volume_usd": 83511.07818384,
-        "relative_24h_volume": 0.4932716831339736,
+        "estimated_volume_usd": 74059.25089927,
+        "relative_24h_volume": 0.4366951671249278,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],
@@ -44032,10 +44365,10 @@
       },
       {
         "symbol": "BAT/USD",
-        "change_24h_pct": 4.625940681717577,
-        "range_24h_pct": 11.843766243409814,
-        "estimated_volume_usd": 495264.1855995,
-        "relative_24h_volume": 0.4349661307964801,
+        "change_24h_pct": 3.3443586916574786,
+        "range_24h_pct": 11.644800237195163,
+        "estimated_volume_usd": 484575.79240599996,
+        "relative_24h_volume": 0.4291654868232677,
         "news_count": 0,
         "risk_headline": false,
         "reasons": [],

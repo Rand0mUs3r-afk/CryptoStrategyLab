@@ -8,30 +8,20 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 19. Skipped: 19. Broker order results: 0.
+Candidates: 9. Skipped: 9. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| ARB/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| BTC/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| BTC/USD | 15m | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
-| BTC/USD | 5m | ema_cross | skipped | symbol_already_active | {} |
-| ETH/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| LINK/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| LINK/USD | 15m | macd_momentum | skipped | symbol_already_active | {} |
-| LINK/USD | 15m | squeeze_breakout | skipped | symbol_already_active | {} |
-| LINK/USD | 15m | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
-| RENDER/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| RENDER/USD | 15m | macd_momentum | skipped | symbol_already_active | {} |
-| RENDER/USD | 15m | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
-| LTC/USD | 15m | ema_cross | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| LTC/USD | 15m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| SOL/USD | 15m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| SOL/USD | 15m | macd_momentum | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| SOL/USD | 15m | squeeze_breakout | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| SOL/USD | 15m | rolling_vwap_reclaim | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| BCH/USD | 15m | donchian_breakout | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| ARB/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
+| ETH/USD | 15m | bollinger_reversion | skipped | symbol_already_active | {} |
+| LINK/USD | 1h | macd_momentum | skipped | symbol_already_active | {} |
+| LINK/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
+| PEPE/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
+| RENDER/USD | 15m | squeeze_breakout | skipped | symbol_already_active | {} |
+| LTC/USD | 1h | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| SOL/USD | 1h | macd_momentum | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| SOL/USD | 5m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -169,15 +159,15 @@ Accounting final: True
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-05T09:11:18+00:00
+Next entry scan eligible: 2026-11-05T10:07:07+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-05T08:41:20+00:00
+Last refresh: 2026-11-05T09:37:09+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, RENDER/USD, AVAX/USD, LTC/USD, SOL/USD, BCH/USD, CRV/USD, TRUMP/USD
+Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, RENDER/USD, AVAX/USD, LTC/USD, SOL/USD, ADA/USD, BCH/USD, CRV/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
