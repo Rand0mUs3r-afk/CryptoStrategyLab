@@ -42052,10 +42052,14 @@
         "client_order_id": "csl2-a54978d4114940efe7ae4a4ef2a4895a"
       },
       "cycle_id": "csl2-facff103645c49b6b83534363d059493",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1793886001.1912694,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "fb261150-8b0a-4cdc-80db-74f9b65535eb",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-05T13:40:25.049080685Z"
     }
   },
   "cycles": [
