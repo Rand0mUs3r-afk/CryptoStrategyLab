@@ -20,14 +20,15 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "PAXG/USD",
-      "timeframe": "15m",
+      "symbol": "ONDO/USD",
+      "timeframe": "5m",
       "strategy": "bollinger_reversion",
-      "signal_time": 1793916000,
+      "signal_time": 1793918400,
       "outcome": "skipped",
-      "reason": "no_fresh_quote",
+      "reason": "spread_too_wide",
       "details": {
-        "max_quote_age_seconds": 30
+        "spread_bps": 51.721791207295844,
+        "max_spread_bps": 50
       }
     }
   ],
@@ -35,7 +36,7 @@
   "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T22:31:06+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T23:13:06+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -50,10 +51,10 @@
     "ONDO/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-05T22:01:20+00:00",
+  "observed_at_utc": "2026-11-05T22:43:21+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T22:01:06+00:00",
+    "observed_at_utc": "2026-11-05T22:43:06+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
