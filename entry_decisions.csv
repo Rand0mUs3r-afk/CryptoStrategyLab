@@ -1,7 +1,20 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,5m,bollinger_reversion,1793864700,skipped,symbol_already_active,{}
-LINK/USD,5m,trend_pullback,1793864700,skipped,symbol_already_active,{}
-LTC/USD,15m,trend_pullback,1793864700,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-LTC/USD,15m,macd_momentum,1793864700,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-LTC/USD,1h,trend_pullback,1793862000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-POL/USD,15m,trend_pullback,1793864700,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+ARB/USD,15m,trend_pullback,1793867400,skipped,symbol_already_active,{}
+BTC/USD,15m,trend_pullback,1793867400,skipped,symbol_already_active,{}
+BTC/USD,15m,rolling_vwap_reclaim,1793867400,skipped,symbol_already_active,{}
+BTC/USD,5m,ema_cross,1793868000,skipped,symbol_already_active,{}
+ETH/USD,15m,trend_pullback,1793867400,skipped,symbol_already_active,{}
+LINK/USD,15m,trend_pullback,1793867400,skipped,symbol_already_active,{}
+LINK/USD,15m,macd_momentum,1793867400,skipped,symbol_already_active,{}
+LINK/USD,15m,squeeze_breakout,1793867400,skipped,symbol_already_active,{}
+LINK/USD,15m,rolling_vwap_reclaim,1793867400,skipped,symbol_already_active,{}
+RENDER/USD,15m,trend_pullback,1793867400,skipped,symbol_already_active,{}
+RENDER/USD,15m,macd_momentum,1793867400,skipped,symbol_already_active,{}
+RENDER/USD,15m,rolling_vwap_reclaim,1793867400,skipped,symbol_already_active,{}
+LTC/USD,15m,ema_cross,1793867400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+LTC/USD,15m,trend_pullback,1793867400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+SOL/USD,15m,trend_pullback,1793867400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+SOL/USD,15m,macd_momentum,1793867400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+SOL/USD,15m,squeeze_breakout,1793867400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+SOL/USD,15m,rolling_vwap_reclaim,1793867400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+BCH/USD,15m,donchian_breakout,1793867400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
