@@ -1,4 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-LINK/USD,1h,rsi_rebound,1793908800,order_result,broker_order_returned,"{""broker_order_id"": ""fd49248a-c855-4340-9537-993e383fbefb"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-9d6da2938857f8e01cc413ea189b9f69"", ""quantity"": ""18.501387604"", ""reference_ask"": 10.81}"
-LTC/USD,1h,rsi_rebound,1793908800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 56.573480847956056}"
-PAXG/USD,1h,trend_pullback,1793908800,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+ETH/USD,5m,bollinger_reversion,1793913300,skipped,symbol_already_active,{}
+AVAX/USD,5m,bollinger_reversion,1793913300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 64.80697090675498}"
+TRUMP/USD,5m,trend_pullback,1793913300,order_result,broker_order_returned,"{""broker_order_id"": ""95c352d3-e0cd-4050-860c-3e70c303fb9c"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-43289130f36079c7949667eb61750913"", ""quantity"": ""165.498522925"", ""reference_ask"": 1.20847}"

@@ -20,41 +20,39 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "LINK/USD",
-      "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1793908800,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-9d6da2938857f8e01cc413ea189b9f69",
-        "quantity": "18.501387604",
-        "reference_ask": 10.81,
-        "broker_status": "pending_new",
-        "broker_order_id": "fd49248a-c855-4340-9537-993e383fbefb"
-      }
+      "symbol": "ETH/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793913300,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
-      "symbol": "LTC/USD",
-      "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1793908800,
+      "symbol": "AVAX/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793913300,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 56.573480847956056,
+        "spread_bps": 64.80697090675498,
         "max_spread_bps": 50
       }
     },
     {
-      "symbol": "PAXG/USD",
-      "timeframe": "1h",
+      "symbol": "TRUMP/USD",
+      "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1793908800,
-      "outcome": "skipped",
-      "reason": "no_fresh_quote",
+      "signal_time": 1793913300,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
       "details": {
-        "max_quote_age_seconds": 30
+        "client_order_id": "csl2-43289130f36079c7949667eb61750913",
+        "quantity": "165.498522925",
+        "reference_ask": 1.20847,
+        "broker_status": "pending_new",
+        "broker_order_id": "95c352d3-e0cd-4050-860c-3e70c303fb9c"
       }
     }
   ],
@@ -62,26 +60,25 @@
   "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T21:02:28+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T21:48:21+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
     "ETH/USD",
+    "LINK/USD",
     "SOL/USD",
     "AVAX/USD",
-    "LINK/USD",
     "LTC/USD",
     "PAXG/USD",
-    "AAVE/USD",
     "TRUMP/USD",
     "UNI/USD",
     "ONDO/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-05T20:33:33+00:00",
+  "observed_at_utc": "2026-11-05T21:19:19+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T20:33:32+00:00",
+    "observed_at_utc": "2026-11-05T21:19:18+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -225,13 +222,13 @@
       },
       {
         "symbol": "TRUMPUSD",
-        "filled_quantity": "1.306291858",
+        "filled_quantity": "166.804814783",
         "fee_quantity": "-0.900414757",
-        "expected_quantity": "0.405877101",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.405877101",
+        "expected_quantity": "165.904400026",
+        "broker_quantity": "165.084776617",
+        "difference_quantity": "-0.819623409",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.405877101"
+        "unconfirmed_shortfall": "0.819623409"
       },
       {
         "symbol": "UNIUSD",
