@@ -20,88 +20,57 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
-      "timeframe": "15m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1793907900,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793905200,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "15m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1793907900,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793905200,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793905200,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
+      "symbol": "LINK/USD",
       "timeframe": "1h",
       "strategy": "rsi_rebound",
-      "signal_time": 1793905200,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "15m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1793907900,
+      "signal_time": 1793908800,
       "outcome": "order_result",
       "reason": "broker_order_returned",
       "details": {
-        "client_order_id": "csl2-bdfe2b5f932c61efdb647e40b64919f1",
-        "quantity": "2.222222222",
-        "reference_ask": 90.0,
+        "client_order_id": "csl2-9d6da2938857f8e01cc413ea189b9f69",
+        "quantity": "18.501387604",
+        "reference_ask": 10.81,
         "broker_status": "pending_new",
-        "broker_order_id": "4cd077f0-d7cf-404d-b0d6-33a408079cf6"
+        "broker_order_id": "fd49248a-c855-4340-9537-993e383fbefb"
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "1h",
+      "strategy": "rsi_rebound",
+      "signal_time": 1793908800,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 56.573480847956056,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793908800,
+      "outcome": "skipped",
+      "reason": "no_fresh_quote",
+      "details": {
+        "max_quote_age_seconds": 30
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 7,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T20:20:31+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T21:02:28+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
     "ETH/USD",
+    "SOL/USD",
     "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
-    "SOL/USD",
     "PAXG/USD",
     "AAVE/USD",
     "TRUMP/USD",
@@ -109,10 +78,10 @@
     "ONDO/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-05T19:51:36+00:00",
+  "observed_at_utc": "2026-11-05T20:33:33+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T19:51:35+00:00",
+    "observed_at_utc": "2026-11-05T20:33:32+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -196,13 +165,13 @@
       },
       {
         "symbol": "LINKUSD",
-        "filled_quantity": "0.346657728",
+        "filled_quantity": "18.848045332",
         "fee_quantity": "-0.346657728",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "18.501387604",
+        "broker_quantity": "18.455134134",
+        "difference_quantity": "-0.046253470",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.046253470"
       },
       {
         "symbol": "ONDOUSD",

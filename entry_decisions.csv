@@ -1,8 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,15m,rsi_rebound,1793907900,skipped,symbol_already_active,{}
-BTC/USD,1h,bollinger_reversion,1793905200,skipped,already_seen,{}
-ETH/USD,15m,rsi_rebound,1793907900,skipped,symbol_already_active,{}
-ETH/USD,1h,bollinger_reversion,1793905200,skipped,already_seen,{}
-AVAX/USD,1h,bollinger_reversion,1793905200,skipped,already_seen,{}
-AVAX/USD,1h,rsi_rebound,1793905200,skipped,already_seen,{}
-SOL/USD,15m,rsi_rebound,1793907900,order_result,broker_order_returned,"{""broker_order_id"": ""4cd077f0-d7cf-404d-b0d6-33a408079cf6"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-bdfe2b5f932c61efdb647e40b64919f1"", ""quantity"": ""2.222222222"", ""reference_ask"": 90.0}"
+LINK/USD,1h,rsi_rebound,1793908800,order_result,broker_order_returned,"{""broker_order_id"": ""fd49248a-c855-4340-9537-993e383fbefb"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-9d6da2938857f8e01cc413ea189b9f69"", ""quantity"": ""18.501387604"", ""reference_ask"": 10.81}"
+LTC/USD,1h,rsi_rebound,1793908800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 56.573480847956056}"
+PAXG/USD,1h,trend_pullback,1793908800,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
