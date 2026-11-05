@@ -20,47 +20,22 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
+      "symbol": "PAXG/USD",
+      "timeframe": "15m",
       "strategy": "bollinger_reversion",
-      "signal_time": 1793913300,
+      "signal_time": 1793916000,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793913300,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
+      "reason": "no_fresh_quote",
       "details": {
-        "spread_bps": 64.80697090675498,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "TRUMP/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793913300,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-43289130f36079c7949667eb61750913",
-        "quantity": "165.498522925",
-        "reference_ask": 1.20847,
-        "broker_status": "pending_new",
-        "broker_order_id": "95c352d3-e0cd-4050-860c-3e70c303fb9c"
+        "max_quote_age_seconds": 30
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 3,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T21:48:21+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T22:31:06+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -75,10 +50,10 @@
     "ONDO/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-05T21:19:19+00:00",
+  "observed_at_utc": "2026-11-05T22:01:20+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T21:19:18+00:00",
+    "observed_at_utc": "2026-11-05T22:01:06+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -222,10 +197,10 @@
       },
       {
         "symbol": "TRUMPUSD",
-        "filled_quantity": "166.804814783",
+        "filled_quantity": "1.720038166",
         "fee_quantity": "-0.900414757",
-        "expected_quantity": "165.904400026",
-        "broker_quantity": "165.084776617",
+        "expected_quantity": "0.819623409",
+        "broker_quantity": "0",
         "difference_quantity": "-0.819623409",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.819623409"
