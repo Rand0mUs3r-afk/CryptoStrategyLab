@@ -8,13 +8,12 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 2. Skipped: 1. Broker order results: 1.
+Candidates: 1. Skipped: 1. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| AVAX/USD | 5m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 58.700310307368156} |
-| SOL/USD | 5m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "809fcbe1-d40a-48e3-8e1b-fc2f995aab0c", "broker_status": "pending_new", "client_order_id": "csl2-e7d75036e8aff5c68924e8570d03d5b2", "quantity": "2.194040984", "reference_ask": 91.156} |
+| AVAX/USD | 15m | rsi_rebound | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 62.44114694275636} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -23,15 +22,12 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
 | PAXG/USD | 5m | candles | ValueError |
-| BONK/USD | 15m | candles | ValueError |
-| BONK/USD | 5m | candles | ValueError |
-| FIL/USD | 5m | candles | ValueError |
+| CRV/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| SOL/USD | 5m | bollinger_reversion | 91.1844 | 2.194040984 | 200.06231070144958 | 2.188555881 | 93.16621511791254 | 90.19349244104373 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -123,6 +119,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | TRUMP/USD | 5m | bollinger_reversion | 1.23045 | 162.350840165 | 199.76459128102425 | 0.0 | 1.2518833942425258 | 1.2197333028787372 | closed |
 | BTC/USD | 15m | bollinger_reversion | 79059.09 | 0.002528717 | 199.91806488753 | 0.0 | 79687.8388062688 | 78744.71559686559 | closed |
 | UNI/USD | 15m | rsi_rebound | 7.22543 | 27.693159789 | 200.09498753423426 | 0.0 | 7.370993364755867 | 7.1526483176220665 | closed |
+| SOL/USD | 5m | bollinger_reversion | 91.1844 | 2.194040984 | 200.06231070144958 | 0.0 | 93.16621511791254 | 90.19349244104373 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -150,7 +147,7 @@ Accounting final: False
 | PEPEUSD | 0E-9 | 0 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
-| SOLUSD | 2.194040984 | 2.188555881 | -0.005485103 | 0.005485103 |
+| SOLUSD | 0.005485103 | 0 | -0.005485103 | 0.005485103 |
 | TRUMPUSD | 0.405877101 | 0 | -0.405877101 | 0.405877101 |
 | UNIUSD | 0.069232900 | 0 | -0.069232900 | 0.069232900 |
 
@@ -159,15 +156,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-05T16:01:44+00:00
+Next entry scan eligible: 2026-11-05T17:03:31+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-05T15:31:45+00:00
+Last refresh: 2026-11-05T16:33:33+00:00
 Source status: partial
-Selected: AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, PAXG/USD, BCH/USD, TRUMP/USD, UNI/USD, BONK/USD, FIL/USD
+Selected: AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, PAXG/USD, TRUMP/USD, UNI/USD, ONDO/USD, CRV/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

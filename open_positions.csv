@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
-SOL/USD,5m,bollinger_reversion,2026-11-05T15:32:27.619374789Z,91.1844,2.194040984,200.06231070144958,2.188555881,93.16621511791254,90.19349244104373,open,,,

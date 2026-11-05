@@ -12,19 +12,7 @@
       "error_type": "ValueError"
     },
     {
-      "symbol": "BONK/USD",
-      "timeframe": "15m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "BONK/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "FIL/USD",
+      "symbol": "CRV/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -33,37 +21,22 @@
   "entry_decisions": [
     {
       "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793892600,
+      "timeframe": "15m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1793896200,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 58.700310307368156,
+        "spread_bps": 62.44114694275636,
         "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793892600,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-e7d75036e8aff5c68924e8570d03d5b2",
-        "quantity": "2.194040984",
-        "reference_ask": 91.156,
-        "broker_status": "pending_new",
-        "broker_order_id": "809fcbe1-d40a-48e3-8e1b-fc2f995aab0c"
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T16:01:44+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T17:03:31+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "AVAX/USD",
@@ -73,16 +46,15 @@
     "LTC/USD",
     "SOL/USD",
     "PAXG/USD",
-    "BCH/USD",
     "TRUMP/USD",
     "UNI/USD",
-    "BONK/USD",
-    "FIL/USD"
+    "ONDO/USD",
+    "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-05T15:32:46+00:00",
+  "observed_at_utc": "2026-11-05T16:33:48+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T15:32:44+00:00",
+    "observed_at_utc": "2026-11-05T16:33:31+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -216,10 +188,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.255542062",
+        "filled_quantity": "0.066986181",
         "fee_quantity": "-0.061501078",
-        "expected_quantity": "2.194040984",
-        "broker_quantity": "2.188555881",
+        "expected_quantity": "0.005485103",
+        "broker_quantity": "0",
         "difference_quantity": "-0.005485103",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.005485103"

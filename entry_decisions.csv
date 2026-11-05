@@ -1,3 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,5m,bollinger_reversion,1793892600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 58.700310307368156}"
-SOL/USD,5m,bollinger_reversion,1793892600,order_result,broker_order_returned,"{""broker_order_id"": ""809fcbe1-d40a-48e3-8e1b-fc2f995aab0c"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-e7d75036e8aff5c68924e8570d03d5b2"", ""quantity"": ""2.194040984"", ""reference_ask"": 91.156}"
+AVAX/USD,15m,rsi_rebound,1793896200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.44114694275636}"
