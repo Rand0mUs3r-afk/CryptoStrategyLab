@@ -1,2 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,15m,rsi_rebound,1793896200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.44114694275636}"
+PAXG/USD,1h,trend_pullback,1793898000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+PAXG/USD,1h,rolling_vwap_reclaim,1793898000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"

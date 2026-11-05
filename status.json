@@ -20,23 +20,33 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "AVAX/USD",
-      "timeframe": "15m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1793896200,
+      "symbol": "PAXG/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793898000,
       "outcome": "skipped",
-      "reason": "spread_too_wide",
+      "reason": "no_fresh_quote",
       "details": {
-        "spread_bps": 62.44114694275636,
-        "max_spread_bps": 50
+        "max_quote_age_seconds": 30
+      }
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "1h",
+      "strategy": "rolling_vwap_reclaim",
+      "signal_time": 1793898000,
+      "outcome": "skipped",
+      "reason": "no_fresh_quote",
+      "details": {
+        "max_quote_age_seconds": 30
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T17:03:31+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T18:03:53+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "AVAX/USD",
@@ -51,10 +61,10 @@
     "ONDO/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-05T16:33:48+00:00",
+  "observed_at_utc": "2026-11-05T17:34:08+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T16:33:31+00:00",
+    "observed_at_utc": "2026-11-05T17:33:52+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
