@@ -41694,14 +41694,14 @@
         "client_order_id": "csl2-fc16aa7cc029b441f146639cf6b85f8e"
       },
       "cycle_id": "csl2-602d1a406760318b2bafe708a1f4076e",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793881314.3656394,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "17.361413279",
       "broker_order_id": "d03aaf3e-ea7c-4a86-9400-37e4aebc3a9b",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-05T12:22:00.686769312Z"
+      "filled_avg_price": 11.5,
+      "filled_at": "2026-11-05T12:22:00.688042447Z",
+      "broker_updated_at": "2026-11-05T12:22:00.721448832Z"
     }
   },
   "cycles": [
@@ -43618,18 +43618,20 @@
       "hold_seconds": 21600,
       "id": "csl2-602d1a406760318b2bafe708a1f4076e",
       "created_at": 1793843681.144711,
-      "status": "open",
+      "status": "closed",
       "distance": 0.09502003624821803,
       "target_r": 2.0,
       "reference_ask": 11.491,
-      "remaining_qty": 17.361413279,
+      "remaining_qty": 0.0,
       "entry_price": 11.477331943,
       "entry_qty": 17.404925593,
       "entry_notional_usd": 199.7621084740771,
       "tp": 11.667372015496435,
       "sl": 11.38231190675178,
       "entry_time_utc": "2026-11-05T01:54:58.987158652Z",
-      "exit_reason": "time"
+      "exit_reason": "time",
+      "closed_at": "2026-11-05T12:22:07+00:00",
+      "cashflow_pnl_before_usd_fees": -0.10585576557710397
     },
     {
       "symbol": "RENDER/USD",
@@ -44263,7 +44265,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-05T12:21:59+00:00",
+    "observed_at_utc": "2026-11-05T12:22:07+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -44347,10 +44349,10 @@
       },
       {
         "symbol": "LINKUSD",
-        "filled_quantity": "17.708071007",
+        "filled_quantity": "0.346657728",
         "fee_quantity": "-0.346657728",
-        "expected_quantity": "17.361413279",
-        "broker_quantity": "17.361413279",
+        "expected_quantity": "0E-9",
+        "broker_quantity": "0",
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
@@ -44432,7 +44434,7 @@
     "attempts": 1,
     "retry_exhausted": false
   },
-  "last_entry_scan_at": 1793878148.5177026,
+  "last_entry_scan_at": 1793881327.4023247,
   "watchlist": {
     "observed_at_utc": "2026-11-05T11:29:09+00:00",
     "status": "partial",
