@@ -22,80 +22,32 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
-    },
-    {
-      "symbol": "CRV/USD",
-      "timeframe": "15m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "CRV/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
     {
-      "symbol": "ARB/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793869200,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
+      "symbol": "BTC/USD",
       "timeframe": "15m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793871000,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1793869200,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1793871300,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793869200,
+      "signal_time": 1793874600,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
       "symbol": "RENDER/USD",
-      "timeframe": "15m",
-      "strategy": "squeeze_breakout",
-      "signal_time": 1793871000,
+      "timeframe": "1h",
+      "strategy": "macd_momentum",
+      "signal_time": 1793872800,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "LTC/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793869200,
+      "symbol": "AVAX/USD",
+      "timeframe": "15m",
+      "strategy": "ema_cross",
+      "signal_time": 1793874600,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -104,22 +56,22 @@
       }
     },
     {
-      "symbol": "SOL/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1793869200,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "SOL/USD",
+      "symbol": "UNI/USD",
       "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793871300,
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793874900,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "5m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1793874900,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -129,10 +81,10 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 9,
+  "candidates": 5,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T10:07:07+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T11:06:46+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -144,14 +96,14 @@
     "AVAX/USD",
     "LTC/USD",
     "SOL/USD",
-    "ADA/USD",
     "BCH/USD",
-    "CRV/USD"
+    "TRUMP/USD",
+    "UNI/USD"
   ],
-  "observed_at_utc": "2026-11-05T09:37:22+00:00",
+  "observed_at_utc": "2026-11-05T10:37:00+00:00",
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-05T09:37:07+00:00",
+    "observed_at_utc": "2026-11-05T10:36:46+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
