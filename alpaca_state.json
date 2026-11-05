@@ -44564,10 +44564,14 @@
         "client_order_id": "csl2-43289130f36079c7949667eb61750913"
       },
       "cycle_id": "csl2-43289130f36079c7949667eb61750913",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1793913519.5943494,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "95c352d3-e0cd-4050-860c-3e70c303fb9c",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-05T21:19:03.541066448Z"
     }
   },
   "cycles": [
