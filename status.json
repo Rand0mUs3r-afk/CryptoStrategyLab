@@ -6,6 +6,12 @@
   "account_verified": true,
   "data_errors": [
     {
+      "symbol": "PAXG/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
       "symbol": "CRV/USD",
       "timeframe": "15m",
       "stage": "candles",
@@ -21,9 +27,18 @@
   "entry_decisions": [
     {
       "symbol": "BTC/USD",
-      "timeframe": "5m",
+      "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1793839500,
+      "signal_time": 1793843100,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793843100,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -32,57 +47,113 @@
       "symbol": "ONDO/USD",
       "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1793839500,
+      "signal_time": 1793843100,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "macd_momentum",
-      "signal_time": 1793839500,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
+      "symbol": "LINK/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793843100,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-602d1a406760318b2bafe708a1f4076e",
+        "quantity": "17.404925593",
+        "reference_ask": 11.491,
+        "broker_status": "pending_new",
+        "broker_order_id": "66f19275-4a8b-45d7-8572-37089a4f718b"
+      }
     },
     {
       "symbol": "LTC/USD",
-      "timeframe": "5m",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1793839500,
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793843100,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 62.06843871407762,
+        "spread_bps": 58.588548601865135,
         "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793843100,
+      "outcome": "skipped",
+      "reason": "symbol_cooldown",
+      "details": {
+        "cooldown_seconds": 300
+      }
+    },
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793843100,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-3d5362085333d8f63194c4796a9889ac",
+        "quantity": "122.827488791",
+        "reference_ask": 1.6283,
+        "broker_status": "pending_new",
+        "broker_order_id": "dc41d823-300f-474b-8443-e4f3553ebdaa"
+      }
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793843100,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793843100,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 4,
+  "candidates": 9,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T01:18:34+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T02:24:26+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
     "ETH/USD",
     "ONDO/USD",
     "PEPE/USD",
-    "SOL/USD",
     "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
+    "SOL/USD",
     "RENDER/USD",
-    "HYPE/USD",
+    "PAXG/USD",
     "UNI/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-05T00:48:52+00:00",
+  "observed_at_utc": "2026-11-05T01:55:40+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T00:48:34+00:00",
+    "observed_at_utc": "2026-11-05T01:55:39+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -166,13 +237,13 @@
       },
       {
         "symbol": "LINKUSD",
-        "filled_quantity": "0.303145414",
+        "filled_quantity": "17.708071007",
         "fee_quantity": "-0.172216052",
-        "expected_quantity": "0.130929362",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.130929362",
+        "expected_quantity": "17.535854955",
+        "broker_quantity": "17.361413279",
+        "difference_quantity": "-0.174441676",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.130929362"
+        "unconfirmed_shortfall": "0.174441676"
       },
       {
         "symbol": "ONDOUSD",
@@ -205,11 +276,21 @@
         "unconfirmed_shortfall": "0"
       },
       {
+        "symbol": "RENDERUSD",
+        "filled_quantity": "122.827488791",
+        "fee_quantity": "0",
+        "expected_quantity": "122.827488791",
+        "broker_quantity": "122.520420069",
+        "difference_quantity": "-0.307068722",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "0.307068722"
+      },
+      {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.153679362",
+        "filled_quantity": "0.056328649",
         "fee_quantity": "-0.040575696",
-        "expected_quantity": "2.113103666",
-        "broker_quantity": "2.097350713",
+        "expected_quantity": "0.015752953",
+        "broker_quantity": "0",
         "difference_quantity": "-0.015752953",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.015752953"
