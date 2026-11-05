@@ -1,3 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PAXG/USD,1h,trend_pullback,1793898000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-PAXG/USD,1h,rolling_vwap_reclaim,1793898000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+UNI/USD,1h,bollinger_reversion,1793901600,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
