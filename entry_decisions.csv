@@ -1,15 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,15m,trend_pullback,1793849400,skipped,symbol_already_active,{}
-LINK/USD,15m,trend_pullback,1793849400,skipped,symbol_already_active,{}
-LINK/USD,15m,squeeze_breakout,1793849400,skipped,symbol_already_active,{}
-PEPE/USD,1h,trend_pullback,1793847600,skipped,symbol_already_active,{}
-AVAX/USD,1h,trend_pullback,1793847600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 58.85681946802645}"
-AVAX/USD,1h,rolling_vwap_reclaim,1793847600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 58.85681946802645}"
-LTC/USD,15m,trend_pullback,1793849400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.416120844204784}"
-SOL/USD,15m,donchian_breakout,1793849400,order_result,broker_order_returned,"{""broker_order_id"": ""2c97956d-af69-43bc-bb00-e4887536ed80"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-7916c61dab1c1b8a821b1014e1db3ff4"", ""quantity"": ""2.068971224"", ""reference_ask"": 96.6664}"
-SOL/USD,15m,squeeze_breakout,1793849400,skipped,symbol_already_active,{}
-UNI/USD,15m,trend_pullback,1793849400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-UNI/USD,15m,macd_momentum,1793849400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-UNI/USD,5m,donchian_breakout,1793849400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-ONDO/USD,15m,donchian_breakout,1793849400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-ONDO/USD,15m,squeeze_breakout,1793849400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+LINK/USD,1h,macd_momentum,1793851200,skipped,symbol_already_active,{}
+LTC/USD,5m,bollinger_reversion,1793852700,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.03927005993477}"
