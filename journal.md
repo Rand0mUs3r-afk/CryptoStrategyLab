@@ -8,22 +8,25 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 11. Skipped: 11. Broker order results: 0.
+Candidates: 14. Skipped: 13. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| LINK/USD | 15m | macd_momentum | skipped | symbol_already_active | {} |
-| LINK/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
-| ONDO/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
+| BTC/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
+| LINK/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
+| LINK/USD | 15m | squeeze_breakout | skipped | symbol_already_active | {} |
 | PEPE/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| PEPE/USD | 5m | macd_momentum | skipped | symbol_already_active | {} |
-| RENDER/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
-| AVAX/USD | 15m | ema_cross | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| LTC/USD | 5m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| SOL/USD | 5m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| PAXG/USD | 1h | donchian_breakout | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| PAXG/USD | 1h | macd_momentum | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| AVAX/USD | 1h | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 58.85681946802645} |
+| AVAX/USD | 1h | rolling_vwap_reclaim | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 58.85681946802645} |
+| LTC/USD | 15m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 61.416120844204784} |
+| SOL/USD | 15m | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "2c97956d-af69-43bc-bb00-e4887536ed80", "broker_status": "pending_new", "client_order_id": "csl2-7916c61dab1c1b8a821b1014e1db3ff4", "quantity": "2.068971224", "reference_ask": 96.6664} |
+| SOL/USD | 15m | squeeze_breakout | skipped | symbol_already_active | {} |
+| UNI/USD | 15m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| UNI/USD | 15m | macd_momentum | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| UNI/USD | 5m | donchian_breakout | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| ONDO/USD | 15m | donchian_breakout | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| ONDO/USD | 15m | squeeze_breakout | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -31,9 +34,9 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
-| BONK/USD | 15m | candles | ValueError |
-| BONK/USD | 5m | candles | ValueError |
 | PAXG/USD | 5m | candles | ValueError |
+| CRV/USD | 15m | candles | ValueError |
+| CRV/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -42,9 +45,9 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | PEPE/USD | 1h | macd_momentum | 5.01e-06 | 39920159.68063872 | 200.00000000000003 | 39820359.28143712 | 5.263353097673113e-06 | 4.8833234511634434e-06 | open |
 | BTC/USD | 1h | donchian_breakout | 80600.909 | 0.00248268 | 200.10626475612 | 0.002476473 | 82524.74630170345 | 79638.99034914827 | open |
 | ETH/USD | 1h | donchian_breakout | 2441.927 | 0.077328403 | 188.83031515258102 | 0.077135081 | 2517.287691655622 | 2404.246654172189 | open |
-| ONDO/USD | 15m | trend_pullback | 0.410972 | 486.570650058 | 199.96691319563638 | 485.354223432 | 0.42140262376781346 | 0.4057566881160933 | open |
 | LINK/USD | 15m | trend_pullback | 11.477331943 | 17.404925593 | 199.7621084740771 | 17.361413279 | 11.667372015496435 | 11.38231190675178 | open |
 | RENDER/USD | 15m | trend_pullback | 1.62653 | 122.827488791 | 199.7825953432252 | 122.520420069 | 1.6700577053551326 | 1.6047661473224337 | open |
+| SOL/USD | 15m | donchian_breakout | 96.6316 | 2.068971224 | 199.92799972907844 | 2.063798795 | 97.98171627061451 | 95.95654186469275 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -123,6 +126,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | LINK/USD | 15m | donchian_breakout | 11.69 | 17.137960582 | 200.34275920358002 | 0.0 | 11.971892183110988 | 11.549053908444504 | closed |
 | SOL/USD | 15m | donchian_breakout | 96.523 | 2.067758374 | 199.58624153360196 | 0.0 | 98.75804789759727 | 95.40547605120136 | closed |
 | SOL/USD | 15m | trend_pullback | 95.17 | 2.102607232 | 200.10513026944 | 0.0 | 97.03783371062269 | 94.23608314468865 | closed |
+| ONDO/USD | 15m | trend_pullback | 0.410972 | 486.570650058 | 199.96691319563638 | 0.0 | 0.42140262376781346 | 0.4057566881160933 | closed |
 | LINK/USD | 15m | trend_pullback | 11.59 | 17.256255392 | 199.99999999328 | 0.0 | 11.807369977836238 | 11.48131501108188 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
@@ -147,11 +151,11 @@ Accounting final: False
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
 | HYPEUSD | 0 | 0 | 0 | 0 |
 | LINKUSD | 17.535854955 | 17.361413279 | -0.174441676 | 0.174441676 |
-| ONDOUSD | 486.570650058 | 485.354223432 | -1.216426626 | 1.216426626 |
+| ONDOUSD | 1.216426626 | 0 | -1.216426626 | 1.216426626 |
 | PEPEUSD | 39820359.281437123 | 39820359.281437123 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 122.827488791 | 122.520420069 | -0.307068722 | 0.307068722 |
-| SOLUSD | 0.015752953 | 0 | -0.015752953 | 0.015752953 |
+| SOLUSD | 2.084724177 | 2.063798795 | -0.020925382 | 0.020925382 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 
@@ -160,15 +164,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-05T03:12:18+00:00
+Next entry scan eligible: 2026-11-05T04:00:50+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-05T02:42:19+00:00
+Last refresh: 2026-11-05T03:30:51+00:00
 Source status: partial
-Selected: BTC/USD, ETH/USD, LINK/USD, ONDO/USD, PEPE/USD, RENDER/USD, AVAX/USD, LTC/USD, SOL/USD, BONK/USD, PAXG/USD, UNI/USD
+Selected: BTC/USD, ETH/USD, LINK/USD, PEPE/USD, RENDER/USD, AVAX/USD, LTC/USD, SOL/USD, PAXG/USD, UNI/USD, ONDO/USD, CRV/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

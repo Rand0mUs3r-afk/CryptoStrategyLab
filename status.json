@@ -6,19 +6,19 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "BONK/USD",
-      "timeframe": "15m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "BONK/USD",
+      "symbol": "PAXG/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     },
     {
-      "symbol": "PAXG/USD",
+      "symbol": "CRV/USD",
+      "timeframe": "15m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "CRV/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -26,28 +26,28 @@
   ],
   "entry_decisions": [
     {
+      "symbol": "BTC/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793849400,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
       "symbol": "LINK/USD",
       "timeframe": "15m",
-      "strategy": "macd_momentum",
-      "signal_time": 1793845800,
+      "strategy": "trend_pullback",
+      "signal_time": 1793849400,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
       "symbol": "LINK/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793846400,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ONDO/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793846400,
+      "timeframe": "15m",
+      "strategy": "squeeze_breakout",
+      "signal_time": 1793849400,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -56,70 +56,76 @@
       "symbol": "PEPE/USD",
       "timeframe": "1h",
       "strategy": "trend_pullback",
-      "signal_time": 1793844000,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "strategy": "macd_momentum",
-      "signal_time": 1793846400,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793846400,
+      "signal_time": 1793847600,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
       "symbol": "AVAX/USD",
-      "timeframe": "15m",
-      "strategy": "ema_cross",
-      "signal_time": 1793845800,
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1793847600,
       "outcome": "skipped",
-      "reason": "max_positions",
+      "reason": "spread_too_wide",
       "details": {
-        "active_positions": 6,
-        "max_positions": 6
+        "spread_bps": 58.85681946802645,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "1h",
+      "strategy": "rolling_vwap_reclaim",
+      "signal_time": 1793847600,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 58.85681946802645,
+        "max_spread_bps": 50
       }
     },
     {
       "symbol": "LTC/USD",
-      "timeframe": "5m",
+      "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1793846400,
+      "signal_time": 1793849400,
       "outcome": "skipped",
-      "reason": "max_positions",
+      "reason": "spread_too_wide",
       "details": {
-        "active_positions": 6,
-        "max_positions": 6
+        "spread_bps": 61.416120844204784,
+        "max_spread_bps": 50
       }
     },
     {
       "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793846400,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "PAXG/USD",
-      "timeframe": "1h",
+      "timeframe": "15m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793844000,
+      "signal_time": 1793849400,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-7916c61dab1c1b8a821b1014e1db3ff4",
+        "quantity": "2.068971224",
+        "reference_ask": 96.6664,
+        "broker_status": "pending_new",
+        "broker_order_id": "2c97956d-af69-43bc-bb00-e4887536ed80"
+      }
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "15m",
+      "strategy": "squeeze_breakout",
+      "signal_time": 1793849400,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793849400,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -128,10 +134,46 @@
       }
     },
     {
-      "symbol": "PAXG/USD",
-      "timeframe": "1h",
+      "symbol": "UNI/USD",
+      "timeframe": "15m",
       "strategy": "macd_momentum",
-      "signal_time": 1793844000,
+      "signal_time": 1793849400,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "5m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793849400,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "ONDO/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793849400,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "ONDO/USD",
+      "timeframe": "15m",
+      "strategy": "squeeze_breakout",
+      "signal_time": 1793849400,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -141,29 +183,29 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 11,
+  "candidates": 14,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T03:12:18+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T04:00:50+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
     "ETH/USD",
     "LINK/USD",
-    "ONDO/USD",
     "PEPE/USD",
     "RENDER/USD",
     "AVAX/USD",
     "LTC/USD",
     "SOL/USD",
-    "BONK/USD",
     "PAXG/USD",
-    "UNI/USD"
+    "UNI/USD",
+    "ONDO/USD",
+    "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-05T02:42:33+00:00",
+  "observed_at_utc": "2026-11-05T03:31:39+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T02:42:18+00:00",
+    "observed_at_utc": "2026-11-05T03:31:37+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -257,10 +299,10 @@
       },
       {
         "symbol": "ONDOUSD",
-        "filled_quantity": "486.570650058",
+        "filled_quantity": "1.216426626",
         "fee_quantity": "0",
-        "expected_quantity": "486.570650058",
-        "broker_quantity": "485.354223432",
+        "expected_quantity": "1.216426626",
+        "broker_quantity": "0",
         "difference_quantity": "-1.216426626",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "1.216426626"
@@ -297,13 +339,13 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "0.056328649",
+        "filled_quantity": "2.125299873",
         "fee_quantity": "-0.040575696",
-        "expected_quantity": "0.015752953",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.015752953",
+        "expected_quantity": "2.084724177",
+        "broker_quantity": "2.063798795",
+        "difference_quantity": "-0.020925382",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.015752953"
+        "unconfirmed_shortfall": "0.020925382"
       },
       {
         "symbol": "TRUMPUSD",
