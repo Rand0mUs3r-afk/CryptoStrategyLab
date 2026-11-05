@@ -26,28 +26,28 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
+      "symbol": "ETH/USD",
       "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1793874600,
+      "signal_time": 1793877300,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "RENDER/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1793872800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
+      "symbol": "ETH/USD",
       "timeframe": "15m",
-      "strategy": "ema_cross",
-      "signal_time": 1793874600,
+      "strategy": "macd_momentum",
+      "signal_time": 1793877300,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793877900,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -56,22 +56,10 @@
       }
     },
     {
-      "symbol": "UNI/USD",
+      "symbol": "BCH/USD",
       "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793874900,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "UNI/USD",
-      "timeframe": "5m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1793874900,
+      "strategy": "rolling_vwap_reclaim",
+      "signal_time": 1793877900,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -81,10 +69,10 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 5,
+  "candidates": 4,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T11:06:46+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T11:59:08+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -96,14 +84,14 @@
     "AVAX/USD",
     "LTC/USD",
     "SOL/USD",
+    "ADA/USD",
     "BCH/USD",
-    "TRUMP/USD",
-    "UNI/USD"
+    "TRUMP/USD"
   ],
-  "observed_at_utc": "2026-11-05T10:37:00+00:00",
+  "observed_at_utc": "2026-11-05T11:29:23+00:00",
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-05T10:36:46+00:00",
+    "observed_at_utc": "2026-11-05T11:29:08+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
