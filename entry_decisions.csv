@@ -1,4 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BCH/USD,5m,trend_pullback,1793881200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.28846668173639}"
-BCH/USD,5m,macd_momentum,1793881200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.28846668173639}"
-TRUMP/USD,5m,bollinger_reversion,1793881200,order_result,broker_order_returned,"{""broker_order_id"": ""ee03bec4-0392-40fa-a8e9-1ad64dbf3d51"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-4e5c7da11d857ff3496a4f8873038ad5"", ""quantity"": ""162.350840165"", ""reference_ask"": 1.2319}"
+BTC/USD,15m,bollinger_reversion,1793885400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+BCH/USD,5m,trend_pullback,1793886000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
