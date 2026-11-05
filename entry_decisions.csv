@@ -1,2 +1,12 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ONDO/USD,5m,bollinger_reversion,1793918400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 51.721791207295844}"
+BTC/USD,5m,rsi_rebound,1793921100,skipped,symbol_already_active,{}
+ETH/USD,5m,rsi_rebound,1793921100,skipped,symbol_already_active,{}
+LINK/USD,5m,bollinger_reversion,1793921100,skipped,symbol_already_active,{}
+LINK/USD,5m,rsi_rebound,1793921100,skipped,symbol_already_active,{}
+SOL/USD,5m,bollinger_reversion,1793921100,skipped,symbol_already_active,{}
+SOL/USD,5m,rsi_rebound,1793921100,skipped,symbol_already_active,{}
+AVAX/USD,5m,bollinger_reversion,1793921100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.599933405478666}"
+AVAX/USD,5m,rsi_rebound,1793921100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.599933405478666}"
+LTC/USD,5m,bollinger_reversion,1793921100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.69241983212311}"
+LTC/USD,5m,rsi_rebound,1793921100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.69241983212311}"
+ONDO/USD,5m,rsi_rebound,1793921100,order_result,broker_order_returned,"{""broker_order_id"": ""55e7a336-face-4b98-b91b-f48b594c69db"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-68bfd96d8af89fbeefc3cf1d32344c33"", ""quantity"": ""545.348450392"", ""reference_ask"": 0.366738}"

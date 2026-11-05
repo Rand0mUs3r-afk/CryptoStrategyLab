@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-05T22:43:06+00:00",
+  "observed_at_utc": "2026-11-05T23:26:55+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -94,13 +94,13 @@
     },
     {
       "symbol": "ONDOUSD",
-      "filled_quantity": "1.216426626",
+      "filled_quantity": "546.564877018",
       "fee_quantity": "-1.216426626",
-      "expected_quantity": "0E-9",
-      "broker_quantity": "0",
-      "difference_quantity": "0E-9",
+      "expected_quantity": "545.348450392",
+      "broker_quantity": "543.985079266",
+      "difference_quantity": "-1.363371126",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0"
+      "unconfirmed_shortfall": "1.363371126"
     },
     {
       "symbol": "PEPEUSD",

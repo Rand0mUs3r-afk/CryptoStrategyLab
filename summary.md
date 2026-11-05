@@ -8,12 +8,22 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 1. Skipped: 1. Broker order results: 0.
+Candidates: 11. Skipped: 10. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| ONDO/USD | 5m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 51.721791207295844} |
+| BTC/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
+| ETH/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
+| LINK/USD | 5m | bollinger_reversion | skipped | symbol_already_active | {} |
+| LINK/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
+| SOL/USD | 5m | bollinger_reversion | skipped | symbol_already_active | {} |
+| SOL/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
+| AVAX/USD | 5m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 61.599933405478666} |
+| AVAX/USD | 5m | rsi_rebound | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 61.599933405478666} |
+| LTC/USD | 5m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 60.69241983212311} |
+| LTC/USD | 5m | rsi_rebound | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 60.69241983212311} |
+| ONDO/USD | 5m | rsi_rebound | order_result | broker_order_returned | {"broker_order_id": "55e7a336-face-4b98-b91b-f48b594c69db", "broker_status": "pending_new", "client_order_id": "csl2-68bfd96d8af89fbeefc3cf1d32344c33", "quantity": "545.348450392", "reference_ask": 0.366738} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -32,6 +42,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | ETH/USD | 1h | bollinger_reversion | 2246.47 | 0.08904323 | 200.0329448981 | 0.088820621 | 2326.647858081802 | 2206.3810709590985 | open |
 | SOL/USD | 15m | rsi_rebound | 90.05 | 2.222222222 | 200.1111110911 | 2.216666666 | 92.24357750062816 | 88.9532112496859 | open |
 | LINK/USD | 1h | rsi_rebound | 10.82 | 18.501387604 | 200.18501387528002 | 18.455134134 | 11.344656284249725 | 10.557671857875139 | open |
+| ONDO/USD | 5m | rsi_rebound | 0.366236 | 545.348450392 | 199.72623507776453 | 543.985079266 | 0.37229023919876864 | 0.36320888040061566 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -148,7 +159,7 @@ Accounting final: False
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
 | HYPEUSD | 0 | 0 | 0 | 0 |
 | LINKUSD | 18.501387604 | 18.455134134 | -0.046253470 | 0.046253470 |
-| ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
+| ONDOUSD | 545.348450392 | 543.985079266 | -1.363371126 | 1.363371126 |
 | PEPEUSD | 0E-9 | 0 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -161,13 +172,13 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-05T23:13:06+00:00
+Next entry scan eligible: 2026-11-05T23:56:02+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-05T22:43:07+00:00
+Last refresh: 2026-11-05T23:26:04+00:00
 Source status: partial
 Selected: BTC/USD, ETH/USD, LINK/USD, SOL/USD, AVAX/USD, LTC/USD, PAXG/USD, TRUMP/USD, UNI/USD, ONDO/USD, CRV/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
