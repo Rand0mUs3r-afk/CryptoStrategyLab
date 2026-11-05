@@ -42666,10 +42666,14 @@
         "client_order_id": "csl2-2d5cda864a34261eb09729dc2c169e02"
       },
       "cycle_id": "csl2-4a994be4d905a3478ff1638eab21faa7",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1793892656.9950516,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "b1bcc4a1-6528-4fb2-b1df-9477d21de09d",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-05T15:31:26.303904735Z"
     }
   },
   "cycles": [
