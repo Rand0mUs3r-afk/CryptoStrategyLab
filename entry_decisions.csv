@@ -1,9 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,1h,trend_pullback,1793833200,skipped,symbol_already_active,{}
-PEPE/USD,1h,rolling_vwap_reclaim,1793833200,skipped,symbol_already_active,{}
-PEPE/USD,6h,macd_momentum,1793815200,skipped,already_seen,{}
-AVAX/USD,1h,trend_pullback,1793833200,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-RENDER/USD,5m,trend_pullback,1793834700,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-UNI/USD,6h,donchian_breakout,1793815200,skipped,already_seen,{}
-UNI/USD,6h,squeeze_breakout,1793815200,skipped,already_seen,{}
-BONK/USD,1h,rolling_vwap_reclaim,1793833200,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
