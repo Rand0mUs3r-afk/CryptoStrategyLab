@@ -6,24 +6,64 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "BONK/USD",
+      "symbol": "CRV/USD",
       "timeframe": "15m",
       "stage": "candles",
       "error_type": "ValueError"
     },
     {
-      "symbol": "BONK/USD",
+      "symbol": "CRV/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [],
+  "entry_decisions": [
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793839500,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "ONDO/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793839500,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "5m",
+      "strategy": "macd_momentum",
+      "signal_time": 1793839500,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "5m",
+      "strategy": "rolling_vwap_reclaim",
+      "signal_time": 1793839500,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 62.06843871407762,
+        "max_spread_bps": 50
+      }
+    }
+  ],
   "entry_pause_reasons": [],
-  "candidates": 0,
+  "candidates": 4,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T00:29:56+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T01:18:34+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -34,15 +74,15 @@
     "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
-    "BONK/USD",
     "RENDER/USD",
+    "HYPE/USD",
     "UNI/USD",
-    "TRUMP/USD"
+    "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-05T00:00:11+00:00",
+  "observed_at_utc": "2026-11-05T00:48:52+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T23:59:56+00:00",
+    "observed_at_utc": "2026-11-05T00:48:34+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

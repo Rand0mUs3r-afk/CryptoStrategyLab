@@ -1,1 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+BTC/USD,5m,trend_pullback,1793839500,skipped,symbol_already_active,{}
+ONDO/USD,15m,trend_pullback,1793839500,skipped,symbol_already_active,{}
+SOL/USD,5m,macd_momentum,1793839500,skipped,symbol_already_active,{}
+LTC/USD,5m,rolling_vwap_reclaim,1793839500,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.06843871407762}"
