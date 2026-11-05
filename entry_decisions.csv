@@ -1,3 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,15m,bollinger_reversion,1793885400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-BCH/USD,5m,trend_pullback,1793886000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+BTC/USD,15m,bollinger_reversion,1793889000,order_result,broker_order_returned,"{""broker_order_id"": ""ad5ec562-6456-4754-970e-522abfdd1d4d"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-e596c897d6d5265def9a796b205d69cc"", ""quantity"": ""0.002528717"", ""reference_ask"": 79091.482}"
+LTC/USD,15m,rsi_rebound,1793889000,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.10542608128899}"
+UNI/USD,15m,rsi_rebound,1793889000,order_result,broker_order_returned,"{""broker_order_id"": ""42e385db-8205-4bde-8f71-1f001a2e0349"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-4a994be4d905a3478ff1638eab21faa7"", ""quantity"": ""27.693159789"", ""reference_ask"": 7.222}"
