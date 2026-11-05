@@ -39733,14 +39733,14 @@
     "RENDER/USD|5m|trend_pullback|1793834700": 1793834713.7659893,
     "BONK/USD|1h|rolling_vwap_reclaim|1793833200": 1793834713.7660046
   },
-  "day": "2026-11-04",
-  "day_start_equity": 99839.57,
+  "day": "2026-11-05",
+  "day_start_equity": 99847.32,
   "daily_paused": false,
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-04T23:59:56+00:00",
+    "observed_at_utc": "2026-11-05T00:48:34+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -39901,7 +39901,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1793836796.3808982,
+  "last_entry_scan_at": 1793839714.6137564,
   "watchlist": {
     "observed_at_utc": "2026-11-04T23:59:58+00:00",
     "status": "partial",
