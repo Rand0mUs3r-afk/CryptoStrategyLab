@@ -1,2 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-UNI/USD,1h,bollinger_reversion,1793901600,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+AVAX/USD,1h,bollinger_reversion,1793905200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 58.541295754245915}"
+AVAX/USD,1h,rsi_rebound,1793905200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 58.541295754245915}"
+BTC/USD,1h,bollinger_reversion,1793905200,order_result,broker_order_returned,"{""broker_order_id"": ""306067cb-cc2f-430f-b958-d8347582697a"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-a2b6f1d0852b95f377af09fb7cc3486c"", ""quantity"": ""0.002632171"", ""reference_ask"": 75982.9}"
+ETH/USD,1h,bollinger_reversion,1793905200,order_result,broker_order_returned,"{""broker_order_id"": ""f311d8e6-62fa-4555-87ed-c1038e485b5d"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-a51098139a2e0c8454a0f7827acfa2a8"", ""quantity"": ""0.089043230"", ""reference_ask"": 2246.1}"

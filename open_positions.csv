@@ -1,1 +1,3 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
+BTC/USD,1h,bollinger_reversion,2026-11-05T19:03:07.476741654Z,75995.880171653,0.002632171,200.03415190730004,0.002625588,78167.06678227903,74910.28686633999,open,,,
+ETH/USD,1h,bollinger_reversion,2026-11-05T19:03:54.23451084Z,2246.47,0.08904323,200.0329448981,0.088820621,2326.647858081802,2206.3810709590985,open,,,

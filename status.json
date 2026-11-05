@@ -20,22 +20,65 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "UNI/USD",
+      "symbol": "AVAX/USD",
       "timeframe": "1h",
       "strategy": "bollinger_reversion",
-      "signal_time": 1793901600,
+      "signal_time": 1793905200,
       "outcome": "skipped",
-      "reason": "no_fresh_quote",
+      "reason": "spread_too_wide",
       "details": {
-        "max_quote_age_seconds": 30
+        "spread_bps": 58.541295754245915,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "1h",
+      "strategy": "rsi_rebound",
+      "signal_time": 1793905200,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 58.541295754245915,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793905200,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-a2b6f1d0852b95f377af09fb7cc3486c",
+        "quantity": "0.002632171",
+        "reference_ask": 75982.9,
+        "broker_status": "pending_new",
+        "broker_order_id": "306067cb-cc2f-430f-b958-d8347582697a"
+      }
+    },
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793905200,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-a51098139a2e0c8454a0f7827acfa2a8",
+        "quantity": "0.089043230",
+        "reference_ask": 2246.1,
+        "broker_status": "pending_new",
+        "broker_order_id": "f311d8e6-62fa-4555-87ed-c1038e485b5d"
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 4,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-05T18:43:09+00:00",
+  "next_entry_scan_at_utc": "2026-11-05T19:32:21+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "AVAX/USD",
@@ -50,10 +93,10 @@
     "ONDO/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-05T18:13:24+00:00",
+  "observed_at_utc": "2026-11-05T19:04:13+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T18:13:09+00:00",
+    "observed_at_utc": "2026-11-05T19:04:11+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -87,13 +130,13 @@
       },
       {
         "symbol": "BTCUSD",
-        "filled_quantity": "0.000076220",
+        "filled_quantity": "0.002708391",
         "fee_quantity": "-0.000069898",
-        "expected_quantity": "0.000006322",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.000006322",
+        "expected_quantity": "0.002638493",
+        "broker_quantity": "0.002625588",
+        "difference_quantity": "-0.000012905",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.000006322"
+        "unconfirmed_shortfall": "0.000012905"
       },
       {
         "symbol": "DOTUSD",
@@ -107,13 +150,13 @@
       },
       {
         "symbol": "ETHUSD",
-        "filled_quantity": "0.002153454",
+        "filled_quantity": "0.091196684",
         "fee_quantity": "-0.002153454",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "0.089043230",
+        "broker_quantity": "0.088820621",
+        "difference_quantity": "-0.000222609",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.000222609"
       },
       {
         "symbol": "FILUSD",
