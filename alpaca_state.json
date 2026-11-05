@@ -37638,6 +37638,21 @@
       "filled_avg_price": 11.42,
       "filled_at": "2026-11-04T23:59:45.398166529Z",
       "broker_updated_at": "2026-11-04T23:59:45.421970107Z"
+    },
+    "csl2-197a6ca2ae928b8d4d721b01233f7701": {
+      "payload": {
+        "symbol": "SOL/USD",
+        "side": "sell",
+        "qty": "2.097350713",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-197a6ca2ae928b8d4d721b01233f7701"
+      },
+      "cycle_id": "csl2-2fb40d7566abb94649039eded1c14eca",
+      "status": "queued",
+      "created_at": 1793843637.5131142,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -39489,7 +39504,8 @@
       "entry_notional_usd": 200.10513026944,
       "tp": 97.03783371062269,
       "sl": 94.23608314468865,
-      "entry_time_utc": "2026-11-04T19:42:23.123790943Z"
+      "entry_time_utc": "2026-11-04T19:42:23.123790943Z",
+      "exit_reason": "time"
     },
     {
       "symbol": "ONDO/USD",
@@ -39990,7 +40006,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T00:48:34+00:00",
+    "observed_at_utc": "2026-11-05T01:54:14+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
