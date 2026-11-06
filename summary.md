@@ -8,15 +8,15 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 4. Skipped: 4. Broker order results: 0.
+Candidates: 4. Skipped: 3. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| ETH/USD | 1h | rsi_rebound | skipped | symbol_already_active | {} |
-| PEPE/USD | 1h | ema_cross | skipped | symbol_already_active | {} |
-| PEPE/USD | 1h | donchian_breakout | skipped | symbol_already_active | {} |
+| ARB/USD | 1h | donchian_breakout | skipped | symbol_already_active | {} |
 | PEPE/USD | 6h | trend_pullback | skipped | already_seen | {} |
+| SOL/USD | 5m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "6f6530f9-37d4-4282-a6c1-5e9323f7b658", "broker_status": "pending_new", "client_order_id": "csl2-f7438e552b15e55ddb545984a6aca5b1", "quantity": "2.184292716", "reference_ask": 90.234} |
+| SOL/USD | 5m | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -29,6 +29,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | LINK/USD | 1h | rsi_rebound | 10.82 | 18.501387604 | 200.18501387528002 | 18.455134134 | 11.344656284249725 | 10.557671857875139 | open |
 | ARB/USD | 1h | ema_cross | 0.165593 | 1207.802403526 | 200.0036234070809 | 1204.782897517 | 0.17492801982768363 | 0.16092549008615817 | open |
 | PEPE/USD | 6h | trend_pullback | 4.93e-06 | 40567951.318458416 | 200.0 | 40466531.44016227 | 5.6313488264385755e-06 | 4.579325586780713e-06 | open |
+| SOL/USD | 5m | trend_pullback | 90.22 | 2.184292716 | 197.06688883752 | 2.178831984 | 90.71425254043615 | 89.97287372978192 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -132,10 +133,10 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: matched
+Status: fee_pending
 New entries blocked: False
 Exit checks allowed: True
-Accounting final: True
+Accounting final: False
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
@@ -152,19 +153,23 @@ Accounting final: True
 | PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
-| SOLUSD | 0E-9 | 0 | 0E-9 | 0 |
+| SOLUSD | 2.184292716 | 2.178831984 | -0.005460732 | 0.005460732 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
+PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
+New buys permitted by explicit paper policy; all entry checks still apply.
+Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
+
 Entry scan status: completed
-Next entry scan eligible: 2026-11-06T10:59:12+00:00
+Next entry scan eligible: 2026-11-06T11:53:03+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-06T10:29:13+00:00
+Last refresh: 2026-11-06T11:23:04+00:00
 Source status: partial
 Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, AVAX/USD, LTC/USD, SOL/USD, TRUMP/USD, UNI/USD, XRP/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
