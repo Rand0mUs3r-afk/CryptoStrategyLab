@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-06T20:23:53+00:00",
+  "observed_at_utc": "2026-11-06T21:06:31+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -124,10 +124,10 @@
     },
     {
       "symbol": "RENDERUSD",
-      "filled_quantity": "122.664729051",
+      "filled_quantity": "0.923256214",
       "fee_quantity": "-0.618139740",
-      "expected_quantity": "122.046589311",
-      "broker_quantity": "121.741472837",
+      "expected_quantity": "0.305116474",
+      "broker_quantity": "0",
       "difference_quantity": "-0.305116474",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.305116474"

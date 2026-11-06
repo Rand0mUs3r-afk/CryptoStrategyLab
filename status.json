@@ -23,7 +23,7 @@
   "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-06T20:53:53+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T21:36:31+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -31,17 +31,16 @@
     "ETH/USD",
     "LINK/USD",
     "PEPE/USD",
-    "RENDER/USD",
     "AVAX/USD",
     "LTC/USD",
     "SOL/USD",
     "TRUMP/USD",
-    "ADA/USD"
+    "RENDER/USD"
   ],
-  "observed_at_utc": "2026-11-06T20:24:10+00:00",
+  "observed_at_utc": "2026-11-06T21:06:46+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T20:23:53+00:00",
+    "observed_at_utc": "2026-11-06T21:06:31+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -165,10 +164,10 @@
       },
       {
         "symbol": "RENDERUSD",
-        "filled_quantity": "122.664729051",
+        "filled_quantity": "0.923256214",
         "fee_quantity": "-0.618139740",
-        "expected_quantity": "122.046589311",
-        "broker_quantity": "121.741472837",
+        "expected_quantity": "0.305116474",
+        "broker_quantity": "0",
         "difference_quantity": "-0.305116474",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.305116474"
