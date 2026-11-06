@@ -48498,14 +48498,14 @@
     "LTC/USD|5m|rsi_rebound|1793921100": 1793921177.2728271,
     "ONDO/USD|5m|rsi_rebound|1793921100": 1793921177.3173234
   },
-  "day": "2026-11-05",
-  "day_start_equity": 99847.32,
+  "day": "2026-11-06",
+  "day_start_equity": 99782.09,
   "daily_paused": false,
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-05T23:26:55+00:00",
+    "observed_at_utc": "2026-11-06T00:02:43+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -48676,7 +48676,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1793921162.6735408,
+  "last_entry_scan_at": 1793923363.516053,
   "watchlist": {
     "observed_at_utc": "2026-11-05T23:26:04+00:00",
     "status": "partial",
