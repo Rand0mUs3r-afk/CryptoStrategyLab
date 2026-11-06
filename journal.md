@@ -8,23 +8,15 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 4. Skipped: 2. Broker order results: 2.
+Candidates: 2. Skipped: 2. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| PEPE/USD | 6h | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "4c914f18-7ec9-4ed5-bf48-f0d491a0b0a8", "broker_status": "pending_new", "client_order_id": "csl2-30c2de28e2b150fd67ef931510e84e53", "quantity": "40567951.318458416", "reference_ask": 4.93e-06} |
-| PEPE/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
-| XRP/USD | 5m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "ba62e0ed-8fb6-482d-a701-c59ee7eb448f", "broker_status": "pending_new", "client_order_id": "csl2-2d8eee44da6f80d841e3b5fd88979d55", "quantity": "168.918918918", "reference_ask": 1.184} |
-| XRP/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
+| PEPE/USD | 15m | donchian_breakout | skipped | symbol_already_active | {} |
+| PEPE/USD | 6h | trend_pullback | skipped | already_seen | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
-
-## Data errors
-
-| Coin | Bar | Stage | Error type |
-| --- | --- | --- | --- |
-| ARB/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -138,45 +130,41 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: fee_pending
+Status: matched
 New entries blocked: False
 Exit checks allowed: True
-Accounting final: False
+Accounting final: True
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
 | AAVEUSD | 0E-9 | 0 | 0E-9 | 0 |
-| ARBUSD | 1207.802403526 | 1204.782897517 | -3.019506009 | 3.019506009 |
+| ARBUSD | 1204.782897517 | 1204.782897517 | 0E-9 | 0 |
 | AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
-| BTCUSD | 0.002638493 | 0.002625588 | -0.000012905 | 0.000012905 |
+| BTCUSD | 0.002625588 | 0.002625588 | 0E-9 | 0 |
 | DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
-| ETHUSD | 0.089043230 | 0.088820621 | -0.000222609 | 0.000222609 |
+| ETHUSD | 0.088820621 | 0.088820621 | 0E-9 | 0 |
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
 | HYPEUSD | 0 | 0 | 0 | 0 |
-| LINKUSD | 18.501387604 | 18.455134134 | -0.046253470 | 0.046253470 |
-| ONDOUSD | 1.363371126 | 0 | -1.363371126 | 1.363371126 |
-| PEPEUSD | 40567951.318458416 | 40466531.440162269 | -101419.878296147 | 101419.878296147 |
+| LINKUSD | 18.455134134 | 18.455134134 | 0E-9 | 0 |
+| ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
+| PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
-| SOLUSD | 0.011040659 | 0 | -0.011040659 | 0.011040659 |
-| TRUMPUSD | 0.819623409 | 0 | -0.819623409 | 0.819623409 |
-| UNIUSD | 0.069232900 | 0 | -0.069232900 | 0.069232900 |
-| XRPUSD | 168.918918918 | 168.49662162 | -0.422297298 | 0.422297298 |
+| SOLUSD | 0E-9 | 0 | 0E-9 | 0 |
+| TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
+| UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
+| XRPUSD | 168.496621620 | 168.49662162 | 0E-9 | 0 |
 
-PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
-New buys permitted by explicit paper policy; all entry checks still apply.
-Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
-
-Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-06T08:13:04+00:00
+Entry scan status: completed
+Next entry scan eligible: 2026-11-06T09:06:33+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-06T07:43:05+00:00
+Last refresh: 2026-11-06T08:36:34+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, AVAX/USD, LTC/USD, SOL/USD, PEPE/USD, TRUMP/USD, UNI/USD, XRP/USD, ONDO/USD
+Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, XRP/USD, AVAX/USD, LTC/USD, SOL/USD, TRUMP/USD, UNI/USD, ONDO/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

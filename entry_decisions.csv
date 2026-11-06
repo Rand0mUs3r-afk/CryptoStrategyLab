@@ -1,5 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,6h,trend_pullback,1793944800,order_result,broker_order_returned,"{""broker_order_id"": ""4c914f18-7ec9-4ed5-bf48-f0d491a0b0a8"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-30c2de28e2b150fd67ef931510e84e53"", ""quantity"": ""40567951.318458416"", ""reference_ask"": 4.93e-06}"
-PEPE/USD,5m,trend_pullback,1793950800,skipped,symbol_already_active,{}
-XRP/USD,5m,bollinger_reversion,1793950800,order_result,broker_order_returned,"{""broker_order_id"": ""ba62e0ed-8fb6-482d-a701-c59ee7eb448f"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-2d8eee44da6f80d841e3b5fd88979d55"", ""quantity"": ""168.918918918"", ""reference_ask"": 1.184}"
-XRP/USD,5m,rsi_rebound,1793950800,skipped,symbol_already_active,{}
+PEPE/USD,15m,donchian_breakout,1793953800,skipped,symbol_already_active,{}
+PEPE/USD,6h,trend_pullback,1793944800,skipped,already_seen,{}
