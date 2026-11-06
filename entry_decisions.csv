@@ -1,1 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+ARB/USD,1h,trend_pullback,1794002400,skipped,symbol_already_active,{}
+SOL/USD,5m,ema_cross,1794003600,order_result,broker_order_returned,"{""broker_order_id"": ""90e229b5-20b6-4cd9-8190-d4b44e3a78fa"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-eff3bb3de31bcc28697c1420589f82fa"", ""quantity"": ""2.175210665"", ""reference_ask"": 90.2}"
