@@ -52084,6 +52084,21 @@
       "filled_at": "2026-11-06T16:31:00.231214623Z",
       "broker_updated_at": "2026-11-06T16:31:00.271396118Z",
       "reference_ask": 1.6073
+    },
+    "csl2-030b068adbada584bade92341f52f211": {
+      "payload": {
+        "symbol": "RENDER/USD",
+        "side": "sell",
+        "qty": "121.741472837",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-030b068adbada584bade92341f52f211"
+      },
+      "cycle_id": "csl2-54c12f4276911af7475647b93058a233",
+      "status": "queued",
+      "created_at": 1793999140.2841945,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -54479,7 +54494,8 @@
       "entry_notional_usd": 195.9213898209483,
       "tp": 1.6539345533305592,
       "sl": 1.5809827233347205,
-      "entry_time_utc": "2026-11-06T16:31:00.231214623Z"
+      "entry_time_utc": "2026-11-06T16:31:00.231214623Z",
+      "exit_reason": "stop"
     }
   ],
   "seen": {
@@ -55108,7 +55124,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T20:23:53+00:00",
+    "observed_at_utc": "2026-11-06T21:06:10+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
