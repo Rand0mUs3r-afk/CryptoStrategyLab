@@ -6,12 +6,6 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "SafetyError"
-    },
-    {
       "symbol": "ARB/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -24,25 +18,12 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1793926800,
-      "outcome": "skipped",
-      "reason": "stale_signal",
-      "details": {
-        "age_seconds": 3606.837232351303,
-        "max_age_seconds": 3600
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-06T02:29:50+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T03:15:57+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -57,10 +38,10 @@
     "ONDO/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-06T02:00:06+00:00",
+  "observed_at_utc": "2026-11-06T02:46:11+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T01:59:50+00:00",
+    "observed_at_utc": "2026-11-06T02:45:57+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,1h,rsi_rebound,1793926800,skipped,stale_signal,"{""age_seconds"": 3606.837232351303, ""max_age_seconds"": 3600}"
