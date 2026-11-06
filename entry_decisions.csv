@@ -1,5 +1,10 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,1h,donchian_breakout,1793962800,skipped,symbol_already_active,{}
-PEPE/USD,6h,trend_pullback,1793944800,skipped,already_seen,{}
-SOL/USD,5m,trend_pullback,1793964000,order_result,broker_order_returned,"{""broker_order_id"": ""6f6530f9-37d4-4282-a6c1-5e9323f7b658"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-f7438e552b15e55ddb545984a6aca5b1"", ""quantity"": ""2.184292716"", ""reference_ask"": 90.234}"
-SOL/USD,5m,rolling_vwap_reclaim,1793964000,skipped,symbol_already_active,{}
+ARB/USD,5m,trend_pullback,1793966700,skipped,symbol_already_active,{}
+BTC/USD,5m,trend_pullback,1793966700,skipped,symbol_already_active,{}
+BTC/USD,5m,rolling_vwap_reclaim,1793966700,skipped,symbol_already_active,{}
+PEPE/USD,6h,trend_pullback,1793966400,skipped,symbol_already_active,{}
+PEPE/USD,6h,macd_momentum,1793966400,skipped,symbol_already_active,{}
+PEPE/USD,5m,trend_pullback,1793966700,skipped,symbol_already_active,{}
+PEPE/USD,5m,macd_momentum,1793966700,skipped,symbol_already_active,{}
+PEPE/USD,5m,squeeze_breakout,1793966700,skipped,symbol_already_active,{}
+AVAX/USD,5m,macd_momentum,1793966700,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
