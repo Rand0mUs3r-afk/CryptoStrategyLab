@@ -6,6 +6,18 @@
   "account_verified": true,
   "data_errors": [
     {
+      "symbol": "PAXG/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
       "symbol": "CRV/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -19,7 +31,7 @@
       "strategy": "rsi_rebound",
       "signal_time": 1793923200,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     }
   ],
@@ -27,7 +39,7 @@
   "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-06T00:32:43+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T01:28:35+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -37,14 +49,16 @@
     "SOL/USD",
     "AVAX/USD",
     "LTC/USD",
+    "PAXG/USD",
+    "ARB/USD",
     "TRUMP/USD",
     "UNI/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-06T00:02:59+00:00",
+  "observed_at_utc": "2026-11-06T00:58:50+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T00:02:43+00:00",
+    "observed_at_utc": "2026-11-06T00:58:35+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

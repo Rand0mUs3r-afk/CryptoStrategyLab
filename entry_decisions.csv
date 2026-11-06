@@ -1,2 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,1h,rsi_rebound,1793923200,skipped,symbol_already_active,{}
+BTC/USD,1h,rsi_rebound,1793923200,skipped,already_seen,{}
