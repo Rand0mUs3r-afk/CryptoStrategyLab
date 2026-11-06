@@ -18,12 +18,31 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [],
+  "entry_decisions": [
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "1h",
+      "strategy": "rsi_rebound",
+      "signal_time": 1793934000,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793935800,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    }
+  ],
   "entry_pause_reasons": [],
-  "candidates": 0,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-06T03:15:57+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T04:04:16+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -38,10 +57,10 @@
     "ONDO/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-06T02:46:11+00:00",
+  "observed_at_utc": "2026-11-06T03:34:30+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T02:45:57+00:00",
+    "observed_at_utc": "2026-11-06T03:34:16+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
