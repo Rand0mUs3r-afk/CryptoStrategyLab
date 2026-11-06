@@ -18,46 +18,30 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "1h",
-      "strategy": "ema_cross",
-      "signal_time": 1793937600,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-46e9577e0be9b7151e515160de29a9eb",
-        "quantity": "1207.802403526",
-        "reference_ask": 0.16559,
-        "broker_status": "pending_new",
-        "broker_order_id": "98df9b1e-3339-4671-be6c-141d5746b557"
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-06T05:00:30+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T05:57:45+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
+    "ARB/USD",
     "BTC/USD",
     "ETH/USD",
     "LINK/USD",
     "AVAX/USD",
     "LTC/USD",
     "SOL/USD",
-    "ARB/USD",
     "TRUMP/USD",
     "UNI/USD",
     "ONDO/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-06T04:31:20+00:00",
+  "observed_at_utc": "2026-11-06T05:27:59+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T04:31:19+00:00",
+    "observed_at_utc": "2026-11-06T05:27:45+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

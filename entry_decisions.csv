@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,1h,ema_cross,1793937600,order_result,broker_order_returned,"{""broker_order_id"": ""98df9b1e-3339-4671-be6c-141d5746b557"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-46e9577e0be9b7151e515160de29a9eb"", ""quantity"": ""1207.802403526"", ""reference_ask"": 0.16559}"

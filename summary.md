@@ -8,12 +8,11 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 1. Skipped: 0. Broker order results: 1.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| ARB/USD | 1h | ema_cross | order_result | broker_order_returned | {"broker_order_id": "98df9b1e-3339-4671-be6c-141d5746b557", "broker_status": "pending_new", "client_order_id": "csl2-46e9577e0be9b7151e515160de29a9eb", "quantity": "1207.802403526", "reference_ask": 0.16559} |
+No candidates recorded; check run status and data errors before concluding there were no signals.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -163,15 +162,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-06T05:00:30+00:00
+Next entry scan eligible: 2026-11-06T05:57:45+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-06T04:30:31+00:00
+Last refresh: 2026-11-06T05:27:46+00:00
 Source status: partial
-Selected: BTC/USD, ETH/USD, LINK/USD, AVAX/USD, LTC/USD, SOL/USD, ARB/USD, TRUMP/USD, UNI/USD, ONDO/USD, CRV/USD
+Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, AVAX/USD, LTC/USD, SOL/USD, TRUMP/USD, UNI/USD, ONDO/USD, CRV/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
