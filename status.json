@@ -7,10 +7,28 @@
   "data_errors": [],
   "entry_decisions": [
     {
+      "symbol": "ARB/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793957400,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "1h",
+      "strategy": "rsi_rebound",
+      "signal_time": 1793955600,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
       "symbol": "PEPE/USD",
       "timeframe": "15m",
       "strategy": "donchian_breakout",
-      "signal_time": 1793953800,
+      "signal_time": 1793957400,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -23,13 +41,25 @@
       "outcome": "skipped",
       "reason": "already_seen",
       "details": {}
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "5m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1793957400,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 57.95428585169904,
+        "max_spread_bps": 50
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 5,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed",
-  "next_entry_scan_at_utc": "2026-11-06T09:06:33+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T10:00:02+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -37,7 +67,6 @@
     "ETH/USD",
     "LINK/USD",
     "PEPE/USD",
-    "XRP/USD",
     "AVAX/USD",
     "LTC/USD",
     "SOL/USD",
@@ -45,10 +74,10 @@
     "UNI/USD",
     "ONDO/USD"
   ],
-  "observed_at_utc": "2026-11-06T08:36:48+00:00",
+  "observed_at_utc": "2026-11-06T09:30:17+00:00",
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-06T08:36:33+00:00",
+    "observed_at_utc": "2026-11-06T09:30:02+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -212,10 +241,10 @@
       },
       {
         "symbol": "XRPUSD",
-        "filled_quantity": "168.918918918",
+        "filled_quantity": "0.422297298",
         "fee_quantity": "-0.422297298",
-        "expected_quantity": "168.496621620",
-        "broker_quantity": "168.49662162",
+        "expected_quantity": "0E-9",
+        "broker_quantity": "0",
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"

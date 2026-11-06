@@ -1,6 +1,6 @@
 {
   "status": "matched",
-  "observed_at_utc": "2026-11-06T08:36:33+00:00",
+  "observed_at_utc": "2026-11-06T09:30:02+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -164,10 +164,10 @@
     },
     {
       "symbol": "XRPUSD",
-      "filled_quantity": "168.918918918",
+      "filled_quantity": "0.422297298",
       "fee_quantity": "-0.422297298",
-      "expected_quantity": "168.496621620",
-      "broker_quantity": "168.49662162",
+      "expected_quantity": "0E-9",
+      "broker_quantity": "0",
       "difference_quantity": "0E-9",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0"
