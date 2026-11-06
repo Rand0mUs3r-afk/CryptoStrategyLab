@@ -1,1 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+ETH/USD,5m,trend_pullback,1794007800,skipped,symbol_already_active,{}
