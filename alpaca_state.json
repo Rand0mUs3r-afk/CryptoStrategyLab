@@ -49535,10 +49535,14 @@
         "client_order_id": "csl2-817162b27e19b7adff6afb8a70303c97"
       },
       "cycle_id": "csl2-f7438e552b15e55ddb545984a6aca5b1",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1793970392.470228,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "49cb1220-1efa-406b-a538-20e033e02502",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-06T13:07:03.364081874Z"
     }
   },
   "cycles": [
