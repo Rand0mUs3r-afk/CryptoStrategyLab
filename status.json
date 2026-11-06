@@ -23,7 +23,7 @@
   "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-06T20:07:47+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T20:53:53+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -38,10 +38,10 @@
     "TRUMP/USD",
     "ADA/USD"
   ],
-  "observed_at_utc": "2026-11-06T19:38:01+00:00",
+  "observed_at_utc": "2026-11-06T20:24:10+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T19:37:47+00:00",
+    "observed_at_utc": "2026-11-06T20:23:53+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
