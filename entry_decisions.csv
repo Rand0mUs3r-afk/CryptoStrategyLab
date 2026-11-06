@@ -1,7 +1,6 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-LINK/USD,5m,macd_momentum,1793985300,skipped,stale_signal,"{""age_seconds"": 303.26623916625977, ""max_age_seconds"": 300}"
-LINK/USD,5m,rolling_vwap_reclaim,1793985300,skipped,stale_signal,"{""age_seconds"": 303.2662544250488, ""max_age_seconds"": 300}"
-PEPE/USD,6h,trend_pullback,1793966400,skipped,already_seen,{}
-PEPE/USD,6h,macd_momentum,1793966400,skipped,already_seen,{}
-RENDER/USD,1h,donchian_breakout,1793984400,skipped,symbol_already_active,{}
-AVAX/USD,5m,donchian_breakout,1793985600,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+AVAX/USD,5m,ema_cross,1793988000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+AVAX/USD,5m,trend_pullback,1793988000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+LTC/USD,5m,trend_pullback,1793988000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+SOL/USD,5m,bollinger_reversion,1793988000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+AAVE/USD,5m,trend_pullback,1793988000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"

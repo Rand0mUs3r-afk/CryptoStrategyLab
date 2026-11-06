@@ -6,12 +6,6 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "SafetyError"
-    },
-    {
       "symbol": "RENDER/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -20,61 +14,58 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "LINK/USD",
+      "symbol": "AVAX/USD",
       "timeframe": "5m",
-      "strategy": "macd_momentum",
-      "signal_time": 1793985300,
+      "strategy": "ema_cross",
+      "signal_time": 1793988000,
       "outcome": "skipped",
-      "reason": "stale_signal",
+      "reason": "max_positions",
       "details": {
-        "age_seconds": 303.26623916625977,
-        "max_age_seconds": 300
+        "active_positions": 6,
+        "max_positions": 6
       }
-    },
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "5m",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1793985300,
-      "outcome": "skipped",
-      "reason": "stale_signal",
-      "details": {
-        "age_seconds": 303.2662544250488,
-        "max_age_seconds": 300
-      }
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "6h",
-      "strategy": "trend_pullback",
-      "signal_time": 1793966400,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "6h",
-      "strategy": "macd_momentum",
-      "signal_time": 1793966400,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "1h",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793984400,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
     },
     {
       "symbol": "AVAX/USD",
       "timeframe": "5m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793985600,
+      "strategy": "trend_pullback",
+      "signal_time": 1793988000,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793988000,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1793988000,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1793988000,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -84,10 +75,10 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 6,
+  "candidates": 5,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-06T17:49:49+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T18:31:16+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -99,12 +90,13 @@
     "AVAX/USD",
     "LTC/USD",
     "SOL/USD",
-    "TRUMP/USD"
+    "TRUMP/USD",
+    "AAVE/USD"
   ],
-  "observed_at_utc": "2026-11-06T17:20:03+00:00",
+  "observed_at_utc": "2026-11-06T18:01:31+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T17:19:49+00:00",
+    "observed_at_utc": "2026-11-06T18:01:16+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
