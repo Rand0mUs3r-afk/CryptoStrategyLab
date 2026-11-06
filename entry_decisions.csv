@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,15m,trend_pullback,1793990700,skipped,symbol_already_active,{}

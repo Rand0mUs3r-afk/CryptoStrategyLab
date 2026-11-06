@@ -6,28 +6,24 @@
   "account_verified": true,
   "data_errors": [
     {
+      "symbol": "ARB/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
       "symbol": "RENDER/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793990700,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-06T19:16:05+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T20:07:47+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -42,10 +38,10 @@
     "TRUMP/USD",
     "ADA/USD"
   ],
-  "observed_at_utc": "2026-11-06T18:46:22+00:00",
+  "observed_at_utc": "2026-11-06T19:38:01+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T18:46:05+00:00",
+    "observed_at_utc": "2026-11-06T19:37:47+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
