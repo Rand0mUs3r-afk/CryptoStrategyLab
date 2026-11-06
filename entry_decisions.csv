@@ -1,4 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,15m,trend_pullback,1793970000,skipped,symbol_already_active,{}
+ETH/USD,5m,bollinger_reversion,1793974500,skipped,symbol_already_active,{}
 PEPE/USD,6h,trend_pullback,1793966400,skipped,already_seen,{}
 PEPE/USD,6h,macd_momentum,1793966400,skipped,already_seen,{}
+BCH/USD,5m,rsi_rebound,1793974500,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.893738535146795}"
