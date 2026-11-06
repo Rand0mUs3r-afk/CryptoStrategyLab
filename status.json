@@ -18,37 +18,12 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1794002400,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "ema_cross",
-      "signal_time": 1794003600,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-eff3bb3de31bcc28697c1420589f82fa",
-        "quantity": "2.175210665",
-        "reference_ask": 90.2,
-        "broker_status": "pending_new",
-        "broker_order_id": "90e229b5-20b6-4cd9-8190-d4b44e3a78fa"
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-06T22:51:36+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T23:30:28+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -62,10 +37,10 @@
     "TRUMP/USD",
     "RENDER/USD"
   ],
-  "observed_at_utc": "2026-11-06T22:22:38+00:00",
+  "observed_at_utc": "2026-11-06T23:00:42+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T22:22:37+00:00",
+    "observed_at_utc": "2026-11-06T23:00:28+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -199,10 +174,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.253213134",
+        "filled_quantity": "0.083440496",
         "fee_quantity": "-0.072541737",
-        "expected_quantity": "2.180671397",
-        "broker_quantity": "2.169772638",
+        "expected_quantity": "0.010898759",
+        "broker_quantity": "0",
         "difference_quantity": "-0.010898759",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.010898759"

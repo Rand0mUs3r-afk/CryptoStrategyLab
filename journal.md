@@ -8,13 +8,11 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 2. Skipped: 1. Broker order results: 1.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| ARB/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| SOL/USD | 5m | ema_cross | order_result | broker_order_returned | {"broker_order_id": "90e229b5-20b6-4cd9-8190-d4b44e3a78fa", "broker_status": "pending_new", "client_order_id": "csl2-eff3bb3de31bcc28697c1420589f82fa", "quantity": "2.175210665", "reference_ask": 90.2} |
+No candidates recorded; check run status and data errors before concluding there were no signals.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -34,7 +32,6 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | LINK/USD | 1h | rsi_rebound | 10.82 | 18.501387604 | 200.18501387528002 | 18.455134134 | 11.344656284249725 | 10.557671857875139 | open |
 | ARB/USD | 1h | ema_cross | 0.165593 | 1207.802403526 | 200.0036234070809 | 1204.782897517 | 0.17492801982768363 | 0.16092549008615817 | open |
 | PEPE/USD | 6h | trend_pullback | 4.93e-06 | 40567951.318458416 | 200.0 | 40466531.44016227 | 5.6313488264385755e-06 | 4.579325586780713e-06 | open |
-| SOL/USD | 5m | ema_cross | 90.1754 | 2.175210665 | 196.15049180064096 | 2.169772638 | 90.68566924307164 | 89.92026537846418 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -133,6 +130,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | XRP/USD | 5m | bollinger_reversion | 1.18303 | 168.918918918 | 199.83614864756154 | 0.0 | 1.1944162928606987 | 1.1773368535696507 | closed |
 | SOL/USD | 5m | trend_pullback | 90.22 | 2.184292716 | 197.06688883752 | 0.0 | 90.71425254043615 | 89.97287372978192 | closed |
 | RENDER/USD | 15m | trend_pullback | 1.6053 | 122.046589311 | 195.9213898209483 | 0.0 | 1.6539345533305592 | 1.5809827233347205 | closed |
+| SOL/USD | 5m | ema_cross | 90.1754 | 2.175210665 | 196.15049180064096 | 0.0 | 90.68566924307164 | 89.92026537846418 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -160,7 +158,7 @@ Accounting final: False
 | PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 0.305116474 | 0 | -0.305116474 | 0.305116474 |
-| SOLUSD | 2.180671397 | 2.169772638 | -0.010898759 | 0.010898759 |
+| SOLUSD | 0.010898759 | 0 | -0.010898759 | 0.010898759 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -170,13 +168,13 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-06T22:51:36+00:00
+Next entry scan eligible: 2026-11-06T23:30:28+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-06T22:21:37+00:00
+Last refresh: 2026-11-06T23:00:30+00:00
 Source status: partial
 Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, AVAX/USD, LTC/USD, SOL/USD, TRUMP/USD, RENDER/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
