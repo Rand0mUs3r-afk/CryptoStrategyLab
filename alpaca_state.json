@@ -48432,10 +48432,14 @@
         "client_order_id": "csl2-6c8c7fb5c7879feb54a92f4a2ed0c4d2"
       },
       "cycle_id": "csl2-2d8eee44da6f80d841e3b5fd88979d55",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1793957387.5305686,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "10bc4fd1-87b1-484c-a430-e68a846c554d",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-06T09:29:55.167768805Z"
     }
   },
   "cycles": [
