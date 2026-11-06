@@ -46113,14 +46113,29 @@
         "client_order_id": "csl2-3dbcb00902a8f2b6250b8e5712b6cdf8"
       },
       "cycle_id": "csl2-bdfe2b5f932c61efdb647e40b64919f1",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1793930325.9125526,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "2.216666666",
       "broker_order_id": "a4f4191e-a178-4959-81ec-be5efe71e614",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-06T01:59:10.551102357Z"
+      "filled_avg_price": 90.1027,
+      "filled_at": "2026-11-06T01:59:10.552411088Z",
+      "broker_updated_at": "2026-11-06T01:59:10.571826183Z"
+    },
+    "csl2-38f0bfbcbdbcc2c1880fa97d8b74c106": {
+      "payload": {
+        "symbol": "ONDO/USD",
+        "side": "sell",
+        "qty": "543.985079266",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-38f0bfbcbdbcc2c1880fa97d8b74c106"
+      },
+      "cycle_id": "csl2-68bfd96d8af89fbeefc3cf1d32344c33",
+      "status": "queued",
+      "created_at": 1793930351.9071531,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -48395,7 +48410,8 @@
       "entry_notional_usd": 199.72623507776453,
       "tp": 0.37229023919876864,
       "sl": 0.36320888040061566,
-      "entry_time_utc": "2026-11-05T23:26:41.170058658Z"
+      "entry_time_utc": "2026-11-05T23:26:41.170058658Z",
+      "exit_reason": "target"
     }
   ],
   "seen": {
@@ -48976,7 +48992,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T01:59:08+00:00",
+    "observed_at_utc": "2026-11-06T01:59:34+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -49110,10 +49126,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.289208403",
+        "filled_quantity": "0.072541737",
         "fee_quantity": "-0.061501078",
-        "expected_quantity": "2.227707325",
-        "broker_quantity": "2.216666666",
+        "expected_quantity": "0.011040659",
+        "broker_quantity": "0",
         "difference_quantity": "-0.011040659",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.011040659"
