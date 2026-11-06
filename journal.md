@@ -161,13 +161,13 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed
-Next entry scan eligible: 2026-11-06T15:30:53+00:00
+Next entry scan eligible: 2026-11-06T16:13:02+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-06T15:00:55+00:00
+Last refresh: 2026-11-06T15:43:04+00:00
 Source status: partial
 Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, AVAX/USD, LTC/USD, SOL/USD, TRUMP/USD, DOGE/USD, AAVE/USD, BCH/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.

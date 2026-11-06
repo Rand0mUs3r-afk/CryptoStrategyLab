@@ -29,7 +29,7 @@
   "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed",
-  "next_entry_scan_at_utc": "2026-11-06T15:30:53+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T16:13:02+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -45,10 +45,10 @@
     "AAVE/USD",
     "BCH/USD"
   ],
-  "observed_at_utc": "2026-11-06T15:01:08+00:00",
+  "observed_at_utc": "2026-11-06T15:43:19+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T15:00:53+00:00",
+    "observed_at_utc": "2026-11-06T15:43:02+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
