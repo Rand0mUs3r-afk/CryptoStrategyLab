@@ -15,27 +15,9 @@
   "entry_decisions": [
     {
       "symbol": "ARB/USD",
-      "timeframe": "5m",
+      "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1793966700,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793966700,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "5m",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1793966700,
+      "signal_time": 1793970000,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -46,7 +28,7 @@
       "strategy": "trend_pullback",
       "signal_time": 1793966400,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -55,54 +37,15 @@
       "strategy": "macd_momentum",
       "signal_time": 1793966400,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793966700,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "strategy": "macd_momentum",
-      "signal_time": 1793966700,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "strategy": "squeeze_breakout",
-      "signal_time": 1793966700,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "macd_momentum",
-      "signal_time": 1793966700,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 9,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-06T12:39:34+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T13:37:21+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -110,16 +53,16 @@
     "ETH/USD",
     "LINK/USD",
     "PEPE/USD",
-    "SOL/USD",
     "AVAX/USD",
     "LTC/USD",
+    "SOL/USD",
     "TRUMP/USD",
     "FIL/USD"
   ],
-  "observed_at_utc": "2026-11-06T12:09:48+00:00",
+  "observed_at_utc": "2026-11-06T13:07:36+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T12:09:34+00:00",
+    "observed_at_utc": "2026-11-06T13:07:21+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -253,10 +196,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.256834453",
+        "filled_quantity": "0.078002469",
         "fee_quantity": "-0.072541737",
-        "expected_quantity": "2.184292716",
-        "broker_quantity": "2.178831984",
+        "expected_quantity": "0.005460732",
+        "broker_quantity": "0",
         "difference_quantity": "-0.005460732",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.005460732"

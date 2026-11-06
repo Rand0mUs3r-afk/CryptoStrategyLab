@@ -1,10 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,5m,trend_pullback,1793966700,skipped,symbol_already_active,{}
-BTC/USD,5m,trend_pullback,1793966700,skipped,symbol_already_active,{}
-BTC/USD,5m,rolling_vwap_reclaim,1793966700,skipped,symbol_already_active,{}
-PEPE/USD,6h,trend_pullback,1793966400,skipped,symbol_already_active,{}
-PEPE/USD,6h,macd_momentum,1793966400,skipped,symbol_already_active,{}
-PEPE/USD,5m,trend_pullback,1793966700,skipped,symbol_already_active,{}
-PEPE/USD,5m,macd_momentum,1793966700,skipped,symbol_already_active,{}
-PEPE/USD,5m,squeeze_breakout,1793966700,skipped,symbol_already_active,{}
-AVAX/USD,5m,macd_momentum,1793966700,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+ARB/USD,15m,trend_pullback,1793970000,skipped,symbol_already_active,{}
+PEPE/USD,6h,trend_pullback,1793966400,skipped,already_seen,{}
+PEPE/USD,6h,macd_momentum,1793966400,skipped,already_seen,{}
