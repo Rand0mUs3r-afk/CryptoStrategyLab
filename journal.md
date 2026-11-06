@@ -8,20 +8,17 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 9. Skipped: 8. Broker order results: 1.
+Candidates: 6. Skipped: 6. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| PEPE/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
+| LINK/USD | 5m | macd_momentum | skipped | stale_signal | {"age_seconds": 303.26623916625977, "max_age_seconds": 300} |
+| LINK/USD | 5m | rolling_vwap_reclaim | skipped | stale_signal | {"age_seconds": 303.2662544250488, "max_age_seconds": 300} |
 | PEPE/USD | 6h | trend_pullback | skipped | already_seen | {} |
 | PEPE/USD | 6h | macd_momentum | skipped | already_seen | {} |
-| LTC/USD | 5m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 60.57503867243964} |
-| LTC/USD | 5m | macd_momentum | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 60.57503867243964} |
-| RENDER/USD | 15m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "3e2ed457-59e9-41ae-9197-d8075fcf7922", "broker_status": "pending_new", "client_order_id": "csl2-54c12f4276911af7475647b93058a233", "quantity": "122.046589311", "reference_ask": 1.6073} |
-| RENDER/USD | 15m | donchian_breakout | skipped | symbol_already_active | {} |
-| RENDER/USD | 15m | macd_momentum | skipped | symbol_already_active | {} |
-| RENDER/USD | 1h | ema_cross | skipped | symbol_already_active | {} |
+| RENDER/USD | 1h | donchian_breakout | skipped | symbol_already_active | {} |
+| AVAX/USD | 5m | donchian_breakout | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -29,6 +26,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
+| PEPE/USD | 5m | candles | SafetyError |
 | RENDER/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
@@ -175,15 +173,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-06T17:00:13+00:00
+Next entry scan eligible: 2026-11-06T17:49:49+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-06T16:30:15+00:00
+Last refresh: 2026-11-06T17:19:50+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, AVAX/USD, LTC/USD, SOL/USD, TRUMP/USD, RENDER/USD
+Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, RENDER/USD, AVAX/USD, LTC/USD, SOL/USD, TRUMP/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

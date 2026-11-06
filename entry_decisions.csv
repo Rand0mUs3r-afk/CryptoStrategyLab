@@ -1,10 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,15m,trend_pullback,1793982600,skipped,symbol_already_active,{}
+LINK/USD,5m,macd_momentum,1793985300,skipped,stale_signal,"{""age_seconds"": 303.26623916625977, ""max_age_seconds"": 300}"
+LINK/USD,5m,rolling_vwap_reclaim,1793985300,skipped,stale_signal,"{""age_seconds"": 303.2662544250488, ""max_age_seconds"": 300}"
 PEPE/USD,6h,trend_pullback,1793966400,skipped,already_seen,{}
 PEPE/USD,6h,macd_momentum,1793966400,skipped,already_seen,{}
-LTC/USD,5m,trend_pullback,1793982600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.57503867243964}"
-LTC/USD,5m,macd_momentum,1793982600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.57503867243964}"
-RENDER/USD,15m,trend_pullback,1793982600,order_result,broker_order_returned,"{""broker_order_id"": ""3e2ed457-59e9-41ae-9197-d8075fcf7922"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-54c12f4276911af7475647b93058a233"", ""quantity"": ""122.046589311"", ""reference_ask"": 1.6073}"
-RENDER/USD,15m,donchian_breakout,1793982600,skipped,symbol_already_active,{}
-RENDER/USD,15m,macd_momentum,1793982600,skipped,symbol_already_active,{}
-RENDER/USD,1h,ema_cross,1793980800,skipped,symbol_already_active,{}
+RENDER/USD,1h,donchian_breakout,1793984400,skipped,symbol_already_active,{}
+AVAX/USD,5m,donchian_breakout,1793985600,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
