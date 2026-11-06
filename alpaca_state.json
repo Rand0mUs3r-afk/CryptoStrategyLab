@@ -48421,6 +48421,21 @@
       "filled_at": "2026-11-06T07:44:15.807518232Z",
       "broker_updated_at": "2026-11-06T07:44:15.821907839Z",
       "reference_ask": 1.184
+    },
+    "csl2-6c8c7fb5c7879feb54a92f4a2ed0c4d2": {
+      "payload": {
+        "symbol": "XRP/USD",
+        "side": "sell",
+        "qty": "168.49662162",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-6c8c7fb5c7879feb54a92f4a2ed0c4d2"
+      },
+      "cycle_id": "csl2-2d8eee44da6f80d841e3b5fd88979d55",
+      "status": "queued",
+      "created_at": 1793957387.5305686,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -50766,7 +50781,8 @@
       "entry_notional_usd": 199.83614864756154,
       "tp": 1.1944162928606987,
       "sl": 1.1773368535696507,
-      "entry_time_utc": "2026-11-06T07:44:15.807518232Z"
+      "entry_time_utc": "2026-11-06T07:44:15.807518232Z",
+      "exit_reason": "target"
     }
   ],
   "seen": {
@@ -51356,7 +51372,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-06T08:36:33+00:00",
+    "observed_at_utc": "2026-11-06T09:29:53+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
