@@ -20,29 +20,26 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "ETH/USD",
+      "symbol": "ARB/USD",
       "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1793934000,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793935800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
+      "strategy": "ema_cross",
+      "signal_time": 1793937600,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-46e9577e0be9b7151e515160de29a9eb",
+        "quantity": "1207.802403526",
+        "reference_ask": 0.16559,
+        "broker_status": "pending_new",
+        "broker_order_id": "98df9b1e-3339-4671-be6c-141d5746b557"
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-06T04:04:16+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T05:00:30+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -57,10 +54,10 @@
     "ONDO/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-06T03:34:30+00:00",
+  "observed_at_utc": "2026-11-06T04:31:20+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T03:34:16+00:00",
+    "observed_at_utc": "2026-11-06T04:31:19+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -74,13 +71,13 @@
       },
       {
         "symbol": "ARBUSD",
-        "filled_quantity": "11.857005079",
+        "filled_quantity": "1219.659408605",
         "fee_quantity": "-11.857005079",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "1207.802403526",
+        "broker_quantity": "1204.782897517",
+        "difference_quantity": "-3.019506009",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "3.019506009"
       },
       {
         "symbol": "AVAXUSD",

@@ -8,13 +8,12 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 2. Skipped: 2. Broker order results: 0.
+Candidates: 1. Skipped: 0. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| ETH/USD | 1h | rsi_rebound | skipped | symbol_already_active | {} |
-| ETH/USD | 5m | bollinger_reversion | skipped | symbol_already_active | {} |
+| ARB/USD | 1h | ema_cross | order_result | broker_order_returned | {"broker_order_id": "98df9b1e-3339-4671-be6c-141d5746b557", "broker_status": "pending_new", "client_order_id": "csl2-46e9577e0be9b7151e515160de29a9eb", "quantity": "1207.802403526", "reference_ask": 0.16559} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -32,6 +31,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | BTC/USD | 1h | bollinger_reversion | 75995.880171653 | 0.002632171 | 200.03415190730004 | 0.002625588 | 78167.06678227903 | 74910.28686633999 | open |
 | ETH/USD | 1h | bollinger_reversion | 2246.47 | 0.08904323 | 200.0329448981 | 0.088820621 | 2326.647858081802 | 2206.3810709590985 | open |
 | LINK/USD | 1h | rsi_rebound | 10.82 | 18.501387604 | 200.18501387528002 | 18.455134134 | 11.344656284249725 | 10.557671857875139 | open |
+| ARB/USD | 1h | ema_cross | 0.165593 | 1207.802403526 | 200.0036234070809 | 1204.782897517 | 0.17492801982768363 | 0.16092549008615817 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -142,7 +142,7 @@ Accounting final: False
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
 | AAVEUSD | 0E-9 | 0 | 0E-9 | 0 |
-| ARBUSD | 0E-9 | 0 | 0E-9 | 0 |
+| ARBUSD | 1207.802403526 | 1204.782897517 | -3.019506009 | 3.019506009 |
 | AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
 | BTCUSD | 0.002638493 | 0.002625588 | -0.000012905 | 0.000012905 |
 | DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -163,13 +163,13 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-06T04:04:16+00:00
+Next entry scan eligible: 2026-11-06T05:00:30+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-06T03:34:17+00:00
+Last refresh: 2026-11-06T04:30:31+00:00
 Source status: partial
 Selected: BTC/USD, ETH/USD, LINK/USD, AVAX/USD, LTC/USD, SOL/USD, ARB/USD, TRUMP/USD, UNI/USD, ONDO/USD, CRV/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
