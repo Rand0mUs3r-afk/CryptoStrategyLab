@@ -8,16 +8,12 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 5. Skipped: 5. Broker order results: 0.
+Candidates: 1. Skipped: 1. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| AVAX/USD | 5m | ema_cross | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| AVAX/USD | 5m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| LTC/USD | 5m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| SOL/USD | 5m | bollinger_reversion | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| AAVE/USD | 5m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| PEPE/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -171,15 +167,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-06T18:31:16+00:00
+Next entry scan eligible: 2026-11-06T19:16:05+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-06T18:01:17+00:00
+Last refresh: 2026-11-06T18:46:06+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, RENDER/USD, AVAX/USD, LTC/USD, SOL/USD, TRUMP/USD, AAVE/USD
+Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, RENDER/USD, AVAX/USD, LTC/USD, SOL/USD, TRUMP/USD, ADA/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

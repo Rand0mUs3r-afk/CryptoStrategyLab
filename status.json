@@ -14,71 +14,20 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "ema_cross",
-      "signal_time": 1793988000,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
+      "symbol": "PEPE/USD",
+      "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1793988000,
+      "signal_time": 1793990700,
       "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793988000,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1793988000,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "AAVE/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793988000,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
+      "reason": "symbol_already_active",
+      "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 5,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-06T18:31:16+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T19:16:05+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -91,12 +40,12 @@
     "LTC/USD",
     "SOL/USD",
     "TRUMP/USD",
-    "AAVE/USD"
+    "ADA/USD"
   ],
-  "observed_at_utc": "2026-11-06T18:01:31+00:00",
+  "observed_at_utc": "2026-11-06T18:46:22+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T18:01:16+00:00",
+    "observed_at_utc": "2026-11-06T18:46:05+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
