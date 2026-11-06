@@ -1,6 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,15m,trend_pullback,1793957400,skipped,symbol_already_active,{}
-BTC/USD,1h,rsi_rebound,1793955600,skipped,symbol_already_active,{}
-PEPE/USD,15m,donchian_breakout,1793957400,skipped,symbol_already_active,{}
+ETH/USD,1h,rsi_rebound,1793959200,skipped,symbol_already_active,{}
+PEPE/USD,1h,ema_cross,1793959200,skipped,symbol_already_active,{}
+PEPE/USD,1h,donchian_breakout,1793959200,skipped,symbol_already_active,{}
 PEPE/USD,6h,trend_pullback,1793944800,skipped,already_seen,{}
-AVAX/USD,5m,donchian_breakout,1793957400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.95428585169904}"

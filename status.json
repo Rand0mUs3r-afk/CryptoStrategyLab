@@ -7,28 +7,28 @@
   "data_errors": [],
   "entry_decisions": [
     {
-      "symbol": "ARB/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1793957400,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
+      "symbol": "ETH/USD",
       "timeframe": "1h",
       "strategy": "rsi_rebound",
-      "signal_time": 1793955600,
+      "signal_time": 1793959200,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
       "symbol": "PEPE/USD",
-      "timeframe": "15m",
+      "timeframe": "1h",
+      "strategy": "ema_cross",
+      "signal_time": 1793959200,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "1h",
       "strategy": "donchian_breakout",
-      "signal_time": 1793957400,
+      "signal_time": 1793959200,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -41,25 +41,13 @@
       "outcome": "skipped",
       "reason": "already_seen",
       "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1793957400,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 57.95428585169904,
-        "max_spread_bps": 50
-      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 5,
+  "candidates": 4,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed",
-  "next_entry_scan_at_utc": "2026-11-06T10:00:02+00:00",
+  "next_entry_scan_at_utc": "2026-11-06T10:59:12+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -72,12 +60,12 @@
     "SOL/USD",
     "TRUMP/USD",
     "UNI/USD",
-    "ONDO/USD"
+    "XRP/USD"
   ],
-  "observed_at_utc": "2026-11-06T09:30:17+00:00",
+  "observed_at_utc": "2026-11-06T10:29:27+00:00",
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-06T09:30:02+00:00",
+    "observed_at_utc": "2026-11-06T10:29:11+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
