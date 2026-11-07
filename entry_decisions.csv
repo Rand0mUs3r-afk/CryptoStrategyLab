@@ -1,5 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,5m,bollinger_reversion,1794085500,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.05260576935009}"
-LTC/USD,5m,bollinger_reversion,1794085500,order_result,broker_order_returned,"{""broker_order_id"": ""a40892de-7ec2-4030-b1d3-a80bf68c6575"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-890c2701a792a8b0addab2915590a1ca"", ""quantity"": ""3.852080123"", ""reference_ask"": 51.92}"
-SOL/USD,5m,bollinger_reversion,1794085500,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-BCH/USD,5m,bollinger_reversion,1794085500,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+ETH/USD,15m,rsi_rebound,1794087000,skipped,symbol_already_active,{}
+LINK/USD,5m,rsi_rebound,1794087300,skipped,symbol_already_active,{}
+LTC/USD,5m,rsi_rebound,1794087300,skipped,symbol_already_active,{}
+PEPE/USD,15m,rsi_rebound,1794087000,skipped,symbol_already_active,{}
+AVAX/USD,15m,bollinger_reversion,1794087000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+AVAX/USD,15m,rsi_rebound,1794087000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"

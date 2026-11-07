@@ -38,37 +38,46 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794085500,
+      "symbol": "ETH/USD",
+      "timeframe": "15m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794087000,
       "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 61.05260576935009,
-        "max_spread_bps": 50
-      }
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "LINK/USD",
+      "timeframe": "5m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794087300,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
       "symbol": "LTC/USD",
       "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794085500,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-890c2701a792a8b0addab2915590a1ca",
-        "quantity": "3.852080123",
-        "reference_ask": 51.92,
-        "broker_status": "pending_new",
-        "broker_order_id": "a40892de-7ec2-4030-b1d3-a80bf68c6575"
-      }
+      "strategy": "rsi_rebound",
+      "signal_time": 1794087300,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
+      "symbol": "PEPE/USD",
+      "timeframe": "15m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794087000,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "15m",
       "strategy": "bollinger_reversion",
-      "signal_time": 1794085500,
+      "signal_time": 1794087000,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -77,10 +86,10 @@
       }
     },
     {
-      "symbol": "BCH/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794085500,
+      "symbol": "AVAX/USD",
+      "timeframe": "15m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794087000,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -90,29 +99,29 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 4,
+  "candidates": 6,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T21:36:29+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T22:08:31+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
     "BTC/USD",
     "ETH/USD",
     "LINK/USD",
+    "LTC/USD",
     "PEPE/USD",
     "AVAX/USD",
-    "LTC/USD",
     "SOL/USD",
     "UNI/USD",
     "PAXG/USD",
     "BCH/USD",
     "TRUMP/USD"
   ],
-  "observed_at_utc": "2026-11-07T21:07:03+00:00",
+  "observed_at_utc": "2026-11-07T21:38:46+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T21:07:02+00:00",
+    "observed_at_utc": "2026-11-07T21:38:31+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
