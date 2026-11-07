@@ -1,2 +1,6 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,1h,bollinger_reversion,1794060000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+AAVE/USD,15m,trend_pullback,1794062700,skipped,symbol_already_active,{}
+AVAX/USD,1h,bollinger_reversion,1794060000,skipped,already_seen,{}
+SOL/USD,5m,ema_cross,1794062700,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+UNI/USD,15m,trend_pullback,1794062700,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+UNI/USD,15m,donchian_breakout,1794062700,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
