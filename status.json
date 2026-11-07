@@ -4,19 +4,115 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [],
-  "entry_decisions": [],
-  "entry_pause_reasons": [
-    "entry_scan_interval_not_elapsed"
+  "data_errors": [
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "15m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "TRUMP/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    }
   ],
-  "candidates": 0,
+  "entry_decisions": [
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794085500,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 61.05260576935009,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794085500,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-890c2701a792a8b0addab2915590a1ca",
+        "quantity": "3.852080123",
+        "reference_ask": 51.92,
+        "broker_status": "pending_new",
+        "broker_order_id": "a40892de-7ec2-4030-b1d3-a80bf68c6575"
+      }
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794085500,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "BCH/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794085500,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    }
+  ],
+  "entry_pause_reasons": [],
+  "candidates": 4,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "not_due",
-  "next_entry_scan_at_utc": "2026-11-07T20:30:20+00:00",
-  "observed_at_utc": "2026-11-07T20:29:54+00:00",
+  "entry_scan_status": "completed_with_data_errors",
+  "next_entry_scan_at_utc": "2026-11-07T21:36:29+00:00",
+  "watchlist_status": "partial",
+  "watchlist_symbols": [
+    "ARB/USD",
+    "BTC/USD",
+    "ETH/USD",
+    "LINK/USD",
+    "PEPE/USD",
+    "AVAX/USD",
+    "LTC/USD",
+    "SOL/USD",
+    "UNI/USD",
+    "PAXG/USD",
+    "BCH/USD",
+    "TRUMP/USD"
+  ],
+  "observed_at_utc": "2026-11-07T21:07:03+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T20:29:54+00:00",
+    "observed_at_utc": "2026-11-07T21:07:02+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -109,6 +205,16 @@
         "unconfirmed_shortfall": "0"
       },
       {
+        "symbol": "LTCUSD",
+        "filled_quantity": "3.852080123",
+        "fee_quantity": "0",
+        "expected_quantity": "3.852080123",
+        "broker_quantity": "3.842449922",
+        "difference_quantity": "-0.009630201",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "0.009630201"
+      },
+      {
         "symbol": "ONDOUSD",
         "filled_quantity": "2.579797752",
         "fee_quantity": "-2.579797752",
@@ -150,10 +256,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.318404923",
+        "filled_quantity": "0.094572575",
         "fee_quantity": "-0.088999060",
-        "expected_quantity": "2.229405863",
-        "broker_quantity": "2.223832348",
+        "expected_quantity": "0.005573515",
+        "broker_quantity": "0",
         "difference_quantity": "-0.005573515",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.005573515"
