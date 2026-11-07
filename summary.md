@@ -6,7 +6,7 @@ TP/SL are software checks at workflow runs, NOT standing bracket orders.
 Coinbase closed candles produce signals; fresh Alpaca quotes price decisions.
 Fees can post later. P&L below is before USD fees; no fabricated net performance.
 
-Reason: Broker transport error; order outcome may be unknown; reconcile next run
+Reason: Broker HTTP 500; response body withheld
 
 ## Entry diagnostics
 
@@ -137,7 +137,7 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: not_started
+Status: failed_closed
 New entries blocked: True
 Exit checks allowed: False
 Accounting final: False

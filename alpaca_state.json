@@ -51534,6 +51534,28 @@
         "exit_checks_allowed": false,
         "accounting_final": false
       }
+    },
+    {
+      "status": "FAILED_CLOSED",
+      "paper_only": true,
+      "writes_enabled": true,
+      "mode": "tick",
+      "account_verified": true,
+      "data_errors": [],
+      "entry_decisions": [],
+      "entry_pause_reasons": [],
+      "candidates": 0,
+      "error_type": "BrokerHTTPError",
+      "reason": "Broker HTTP 500; response body withheld",
+      "observed_at_utc": "2026-11-07T13:28:45+00:00",
+      "reconciliation": {
+        "status": "failed_closed",
+        "quantities": [],
+        "entries_blocked": true,
+        "exit_checks_allowed": false,
+        "accounting_final": false,
+        "attempts": 1
+      }
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",
@@ -61252,11 +61274,12 @@
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
-    "status": "not_started",
+    "status": "failed_closed",
     "quantities": [],
     "entries_blocked": true,
     "exit_checks_allowed": false,
-    "accounting_final": false
+    "accounting_final": false,
+    "attempts": 1
   },
   "last_entry_scan_at": 1794052695.9732094,
   "watchlist": {

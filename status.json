@@ -1,16 +1,22 @@
 {
   "status": "FAILED_CLOSED",
   "paper_only": true,
-  "writes_enabled": false,
+  "writes_enabled": true,
   "mode": "tick",
-  "error_type": "SafetyError",
-  "reason": "Broker transport error; order outcome may be unknown; reconcile next run",
-  "observed_at_utc": "2026-11-07T12:35:12+00:00",
+  "account_verified": true,
+  "data_errors": [],
+  "entry_decisions": [],
+  "entry_pause_reasons": [],
+  "candidates": 0,
+  "error_type": "BrokerHTTPError",
+  "reason": "Broker HTTP 500; response body withheld",
+  "observed_at_utc": "2026-11-07T13:28:45+00:00",
   "reconciliation": {
-    "status": "not_started",
+    "status": "failed_closed",
     "quantities": [],
     "entries_blocked": true,
     "exit_checks_allowed": false,
-    "accounting_final": false
+    "accounting_final": false,
+    "attempts": 1
   }
 }

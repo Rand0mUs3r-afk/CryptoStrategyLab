@@ -1,7 +1,8 @@
 {
-  "status": "not_started",
+  "status": "failed_closed",
   "quantities": [],
   "entries_blocked": true,
   "exit_checks_allowed": false,
-  "accounting_final": false
+  "accounting_final": false,
+  "attempts": 1
 }
