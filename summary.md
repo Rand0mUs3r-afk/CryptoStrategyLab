@@ -1,37 +1,22 @@
 # Alpaca crypto PAPER bot
 
-Status: PAPER_TICK_COMPLETED
+Status: FAILED_CLOSED
 Dedicated paper account only. Broker fills, not virtual experiment fills.
 TP/SL are software checks at workflow runs, NOT standing bracket orders.
 Coinbase closed candles produce signals; fresh Alpaca quotes price decisions.
 Fees can post later. P&L below is before USD fees; no fabricated net performance.
 
+Reason: Broker transport error; order outcome may be unknown; reconcile next run
+
 ## Entry diagnostics
 
-Candidates: 6. Skipped: 5. Broker order results: 1.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| ARB/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| ARB/USD | 15m | macd_momentum | skipped | symbol_already_active | {} |
-| ARB/USD | 15m | squeeze_breakout | skipped | symbol_already_active | {} |
-| ARB/USD | 15m | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
-| AAVE/USD | 15m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "1b83e9e7-da36-409f-9299-75a428c5ae5e", "broker_status": "pending_new", "client_order_id": "csl2-9a6a48361600154cb18ef28adadb2c39", "quantity": "1.516622179", "reference_ask": 131.872} |
-| AAVE/USD | 15m | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
+No candidates recorded; check run status and data errors before concluding there were no signals.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
-
-## Data errors
-
-| Coin | Bar | Stage | Error type |
-| --- | --- | --- | --- |
-| ARB/USD | 5m | candles | ValueError |
-| PEPE/USD | 5m | candles | ValueError |
-| PAXG/USD | 15m | candles | ValueError |
-| PAXG/USD | 5m | candles | ValueError |
-| AAVE/USD | 5m | candles | ValueError |
-| TRUMP/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -152,37 +137,18 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: fee_pending
-New entries blocked: False
-Exit checks allowed: True
+Status: not_started
+New entries blocked: True
+Exit checks allowed: False
 Accounting final: False
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
-| AAVEUSD | 1.516622179 | 1.512830623 | -0.003791556 | 0.003791556 |
-| ARBUSD | 1204.782897517 | 1204.782897517 | 0E-9 | 0 |
-| AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
-| BTCUSD | 0.002625588 | 0.002625588 | 0E-9 | 0 |
-| DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
-| ETHUSD | 0.088820621 | 0.088820621 | 0E-9 | 0 |
-| FILUSD | 0E-9 | 0 | 0E-9 | 0 |
-| HYPEUSD | 0 | 0 | 0 | 0 |
-| LINKUSD | 18.455134134 | 18.455134134 | 0E-9 | 0 |
-| ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
-| PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
-| POLUSD | 0 | 0 | 0 | 0 |
-| RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
-| SOLUSD | 0E-9 | 0 | 0E-9 | 0 |
-| TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
-| UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
-| XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
-PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
-New buys permitted by explicit paper policy; all entry checks still apply.
-Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
+UNRESOLVED: entries and automated exits blocked. Review the paper holding.
 
-Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-07T12:28:15+00:00
+Entry scan status: not_reached
+Next entry scan eligible: not_scheduled
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
