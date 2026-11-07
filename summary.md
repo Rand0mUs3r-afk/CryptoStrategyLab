@@ -8,28 +8,13 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 3. Skipped: 3. Broker order results: 0.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| LINK/USD | 15m | bollinger_reversion | skipped | symbol_already_active | {} |
-| AVAX/USD | 15m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 62.57451147703721} |
-| LTC/USD | 15m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 59.150815386888816} |
+Entries paused: entry_scan_interval_not_elapsed.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
-
-## Data errors
-
-| Coin | Bar | Stage | Error type |
-| --- | --- | --- | --- |
-| ARB/USD | 5m | candles | ValueError |
-| PEPE/USD | 5m | candles | ValueError |
-| PAXG/USD | 15m | candles | ValueError |
-| PAXG/USD | 5m | candles | ValueError |
-| RENDER/USD | 5m | candles | ValueError |
-| AAVE/USD | 5m | candles | ValueError |
-| TRUMP/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -174,7 +159,7 @@ Accounting final: True
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
-Entry scan status: completed_with_data_errors
+Entry scan status: not_due
 Next entry scan eligible: 2026-11-07T11:26:06+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.

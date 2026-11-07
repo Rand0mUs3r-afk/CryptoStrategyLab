@@ -1,4 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-LINK/USD,15m,bollinger_reversion,1794048300,skipped,symbol_already_active,{}
-AVAX/USD,15m,bollinger_reversion,1794048300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.57451147703721}"
-LTC/USD,15m,bollinger_reversion,1794048300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.150815386888816}"
