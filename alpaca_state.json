@@ -61358,10 +61358,14 @@
         "client_order_id": "csl2-890c2701a792a8b0addab2915590a1ca"
       },
       "cycle_id": "csl2-890c2701a792a8b0addab2915590a1ca",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794085604.6026397,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "a40892de-7ec2-4030-b1d3-a80bf68c6575",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-07T21:06:56.115531807Z"
     }
   },
   "cycles": [
