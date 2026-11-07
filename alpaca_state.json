@@ -61358,14 +61358,15 @@
         "client_order_id": "csl2-890c2701a792a8b0addab2915590a1ca"
       },
       "cycle_id": "csl2-890c2701a792a8b0addab2915590a1ca",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1794085604.6026397,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "3.852080123",
       "broker_order_id": "a40892de-7ec2-4030-b1d3-a80bf68c6575",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-07T21:06:56.115531807Z"
+      "filled_avg_price": 51.796,
+      "filled_at": "2026-11-07T21:06:56.117101Z",
+      "broker_updated_at": "2026-11-07T21:06:56.160383039Z",
+      "reference_ask": 51.92
     }
   },
   "cycles": [
@@ -63919,11 +63920,17 @@
       "hold_seconds": 3600,
       "id": "csl2-890c2701a792a8b0addab2915590a1ca",
       "created_at": 1794085604.6026397,
-      "status": "pending",
+      "status": "open",
       "distance": 0.13191756669352803,
       "target_r": 2.0,
       "reference_ask": 51.92,
-      "remaining_qty": 0.0
+      "remaining_qty": 3.842449922,
+      "entry_price": 51.796,
+      "entry_qty": 3.852080123,
+      "entry_notional_usd": 199.52234205090798,
+      "tp": 52.059835133387054,
+      "sl": 51.66408243330647,
+      "entry_time_utc": "2026-11-07T21:06:56.117101Z"
     }
   ],
   "seen": {
@@ -64622,7 +64629,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T21:06:54+00:00",
+    "observed_at_utc": "2026-11-07T21:07:02+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -64713,6 +64720,16 @@
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
+      },
+      {
+        "symbol": "LTCUSD",
+        "filled_quantity": "3.852080123",
+        "fee_quantity": "0",
+        "expected_quantity": "3.852080123",
+        "broker_quantity": "3.842449922",
+        "difference_quantity": "-0.009630201",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "0.009630201"
       },
       {
         "symbol": "ONDOUSD",
