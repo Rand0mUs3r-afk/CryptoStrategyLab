@@ -12,6 +12,12 @@
       "error_type": "ValueError"
     },
     {
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
       "symbol": "RENDER/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -32,12 +38,21 @@
   ],
   "entry_decisions": [
     {
+      "symbol": "ARB/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794041100,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
       "symbol": "PEPE/USD",
       "timeframe": "1h",
       "strategy": "trend_pullback",
       "signal_time": 1794038400,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -46,18 +61,15 @@
       "strategy": "trend_pullback",
       "signal_time": 1794038400,
       "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
+      "reason": "already_seen",
+      "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T08:41:56+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T09:26:37+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -73,10 +85,10 @@
     "AAVE/USD",
     "TRUMP/USD"
   ],
-  "observed_at_utc": "2026-11-07T08:12:10+00:00",
+  "observed_at_utc": "2026-11-07T08:56:51+00:00",
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-07T08:11:56+00:00",
+    "observed_at_utc": "2026-11-07T08:56:37+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
