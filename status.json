@@ -28,6 +28,12 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
@@ -37,11 +43,83 @@
       "strategy": "trend_pullback",
       "signal_time": 1794092400,
       "outcome": "skipped",
+      "reason": "already_seen",
+      "details": {}
+    },
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "5m",
+      "strategy": "squeeze_breakout",
+      "signal_time": 1794095100,
+      "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
+      "symbol": "SOL/USD",
+      "timeframe": "5m",
+      "strategy": "ema_cross",
+      "signal_time": 1794095100,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "5m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1794095100,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "5m",
+      "strategy": "squeeze_breakout",
+      "signal_time": 1794095100,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
       "symbol": "UNI/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1794092400,
+      "outcome": "skipped",
+      "reason": "already_seen",
+      "details": {}
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "5m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1794095100,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "5m",
+      "strategy": "squeeze_breakout",
+      "signal_time": 1794095100,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "AAVE/USD",
       "timeframe": "1h",
       "strategy": "trend_pullback",
       "signal_time": 1794092400,
@@ -54,10 +132,10 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 9,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T23:45:52+00:00",
+  "next_entry_scan_at_utc": "2026-11-08T00:16:25+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -70,13 +148,13 @@
     "LTC/USD",
     "UNI/USD",
     "PAXG/USD",
-    "BCH/USD",
-    "HYPE/USD"
+    "AAVE/USD",
+    "BCH/USD"
   ],
-  "observed_at_utc": "2026-11-07T23:16:09+00:00",
+  "observed_at_utc": "2026-11-07T23:46:42+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T23:15:52+00:00",
+    "observed_at_utc": "2026-11-07T23:46:25+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
