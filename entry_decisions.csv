@@ -1,4 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,15m,trend_pullback,1794041100,skipped,symbol_already_active,{}
-PEPE/USD,1h,trend_pullback,1794038400,skipped,already_seen,{}
-RENDER/USD,1h,trend_pullback,1794038400,skipped,already_seen,{}
+PEPE/USD,1h,trend_pullback,1794042000,skipped,symbol_already_active,{}
