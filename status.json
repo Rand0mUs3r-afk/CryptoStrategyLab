@@ -28,14 +28,54 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [],
+  "entry_decisions": [
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1794031200,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "15m",
+      "strategy": "ema_cross",
+      "signal_time": 1794032100,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1794031200,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    }
+  ],
   "entry_pause_reasons": [],
-  "candidates": 0,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T06:00:56+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T06:46:31+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -48,13 +88,13 @@
     "LTC/USD",
     "RENDER/USD",
     "PAXG/USD",
-    "UNI/USD",
-    "HYPE/USD"
+    "HYPE/USD",
+    "AAVE/USD"
   ],
-  "observed_at_utc": "2026-11-07T05:31:10+00:00",
+  "observed_at_utc": "2026-11-07T06:16:47+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T05:30:56+00:00",
+    "observed_at_utc": "2026-11-07T06:16:31+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
