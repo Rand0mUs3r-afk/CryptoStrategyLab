@@ -1,5 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,15m,trend_pullback,1794072600,skipped,symbol_already_active,{}
-BTC/USD,1h,bollinger_reversion,1794070800,skipped,already_seen,{}
-UNI/USD,15m,trend_pullback,1794072600,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-UNI/USD,15m,macd_momentum,1794072600,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+ARB/USD,1h,trend_pullback,1794074400,skipped,symbol_already_active,{}
+ARB/USD,1h,macd_momentum,1794074400,skipped,symbol_already_active,{}
+ETH/USD,1h,bollinger_reversion,1794074400,skipped,symbol_already_active,{}
+PEPE/USD,1h,bollinger_reversion,1794074400,skipped,symbol_already_active,{}
+AVAX/USD,1h,bollinger_reversion,1794074400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.4533332200109}"
+SOL/USD,1h,bollinger_reversion,1794074400,order_result,broker_order_returned,"{""broker_order_id"": ""840f628a-9616-4e3a-8dc8-c49ddbd3171d"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-1531fb1ed13cdb8c9386046ae26d7019"", ""quantity"": ""2.229405863"", ""reference_ask"": 89.71}"
