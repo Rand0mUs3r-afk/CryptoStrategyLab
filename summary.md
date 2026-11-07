@@ -1,22 +1,32 @@
 # Alpaca crypto PAPER bot
 
-Status: FAILED_CLOSED
+Status: PAPER_TICK_COMPLETED
 Dedicated paper account only. Broker fills, not virtual experiment fills.
 TP/SL are software checks at workflow runs, NOT standing bracket orders.
 Coinbase closed candles produce signals; fresh Alpaca quotes price decisions.
 Fees can post later. P&L below is before USD fees; no fabricated net performance.
 
-Reason: Broker HTTP 500; response body withheld
-
 ## Entry diagnostics
 
-Candidates: 0. Skipped: 0. Broker order results: 0.
+Candidates: 1. Skipped: 1. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-No candidates recorded; check run status and data errors before concluding there were no signals.
-
+| Coin | Bar | Strategy | Outcome | Reason | Details |
+| --- | --- | --- | --- | --- | --- |
+| AVAX/USD | 1h | bollinger_reversion | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
+
+## Data errors
+
+| Coin | Bar | Stage | Error type |
+| --- | --- | --- | --- |
+| AAVE/USD | 5m | candles | ValueError |
+| ARB/USD | 5m | candles | ValueError |
+| PEPE/USD | 5m | candles | ValueError |
+| PAXG/USD | 15m | candles | ValueError |
+| PAXG/USD | 5m | candles | ValueError |
+| TRUMP/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -137,26 +147,45 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: failed_closed
-New entries blocked: True
-Exit checks allowed: False
+Status: fee_pending
+New entries blocked: False
+Exit checks allowed: True
 Accounting final: False
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
+| AAVEUSD | 1.516622179 | 1.512830623 | -0.003791556 | 0.003791556 |
+| ARBUSD | 1204.782897517 | 1204.782897517 | 0E-9 | 0 |
+| AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
+| BTCUSD | 0.002625588 | 0.002625588 | 0E-9 | 0 |
+| DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
+| ETHUSD | 0.088820621 | 0.088820621 | 0E-9 | 0 |
+| FILUSD | 0E-9 | 0 | 0E-9 | 0 |
+| HYPEUSD | 0 | 0 | 0 | 0 |
+| LINKUSD | 18.455134134 | 18.455134134 | 0E-9 | 0 |
+| ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
+| PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
+| POLUSD | 0 | 0 | 0 | 0 |
+| RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
+| SOLUSD | 0E-9 | 0 | 0E-9 | 0 |
+| TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
+| UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
+| XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
-UNRESOLVED: entries and automated exits blocked. Review the paper holding.
+PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
+New buys permitted by explicit paper policy; all entry checks still apply.
+Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
-Entry scan status: not_reached
-Next entry scan eligible: not_scheduled
+Entry scan status: completed_with_data_errors
+Next entry scan eligible: 2026-11-07T14:43:27+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-07T11:58:17+00:00
+Last refresh: 2026-11-07T14:13:29+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, AVAX/USD, LTC/USD, SOL/USD, PAXG/USD, UNI/USD, AAVE/USD, TRUMP/USD
+Selected: AAVE/USD, ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, AVAX/USD, LTC/USD, SOL/USD, PAXG/USD, TRUMP/USD, BCH/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

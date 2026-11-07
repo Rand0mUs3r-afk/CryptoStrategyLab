@@ -1,1 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+AVAX/USD,1h,bollinger_reversion,1794060000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
