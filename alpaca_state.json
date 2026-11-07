@@ -56911,14 +56911,15 @@
         "client_order_id": "csl2-21eb6cfd74529c3c91d23da5f326951e"
       },
       "cycle_id": "csl2-21eb6cfd74529c3c91d23da5f326951e",
-      "status": "pending_new",
+      "status": "new",
       "created_at": 1794046658.0675485,
       "attempted": true,
       "filled_qty": "0",
       "broker_order_id": "11aa0085-6052-4b88-a56e-e336cb21120a",
       "filled_avg_price": null,
       "filled_at": null,
-      "broker_updated_at": "2026-11-07T10:17:46.618764848Z"
+      "broker_updated_at": "2026-11-07T10:17:46.67151237Z",
+      "reference_ask": 78.5558
     }
   },
   "cycles": [
@@ -60072,7 +60073,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-07T10:17:45+00:00",
+    "observed_at_utc": "2026-11-07T10:17:55+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
