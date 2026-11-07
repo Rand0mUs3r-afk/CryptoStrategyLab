@@ -1,7 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,1h,bollinger_reversion,1794088800,skipped,already_seen,{}
-LINK/USD,1h,bollinger_reversion,1794088800,skipped,already_seen,{}
-SOL/USD,1h,bollinger_reversion,1794088800,skipped,already_seen,{}
-AVAX/USD,1h,bollinger_reversion,1794088800,skipped,already_seen,{}
-UNI/USD,15m,macd_momentum,1794091500,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-UNI/USD,1h,ema_cross,1794088800,skipped,already_seen,{}
+ARB/USD,1h,trend_pullback,1794092400,skipped,symbol_already_active,{}
+UNI/USD,1h,trend_pullback,1794092400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"

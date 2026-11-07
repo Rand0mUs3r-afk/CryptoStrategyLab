@@ -32,68 +32,32 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "ETH/USD",
+      "symbol": "ARB/USD",
       "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794088800,
+      "strategy": "trend_pullback",
+      "signal_time": 1794092400,
       "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794088800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794088800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794088800,
-      "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
     },
     {
       "symbol": "UNI/USD",
-      "timeframe": "15m",
-      "strategy": "macd_momentum",
-      "signal_time": 1794091500,
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1794092400,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
         "active_positions": 6,
         "max_positions": 6
       }
-    },
-    {
-      "symbol": "UNI/USD",
-      "timeframe": "1h",
-      "strategy": "ema_cross",
-      "signal_time": 1794088800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 6,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T23:15:24+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T23:45:52+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -109,10 +73,10 @@
     "BCH/USD",
     "HYPE/USD"
   ],
-  "observed_at_utc": "2026-11-07T22:45:39+00:00",
+  "observed_at_utc": "2026-11-07T23:16:09+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T22:45:24+00:00",
+    "observed_at_utc": "2026-11-07T23:15:52+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
