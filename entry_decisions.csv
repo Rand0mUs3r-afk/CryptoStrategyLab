@@ -1,1 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+ARB/USD,15m,trend_pullback,1794051900,skipped,symbol_already_active,{}
+ARB/USD,15m,macd_momentum,1794051900,skipped,symbol_already_active,{}
+ARB/USD,15m,squeeze_breakout,1794051900,skipped,symbol_already_active,{}
+ARB/USD,15m,rolling_vwap_reclaim,1794051900,skipped,symbol_already_active,{}
+AAVE/USD,15m,trend_pullback,1794051900,order_result,broker_order_returned,"{""broker_order_id"": ""1b83e9e7-da36-409f-9299-75a428c5ae5e"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-9a6a48361600154cb18ef28adadb2c39"", ""quantity"": ""1.516622179"", ""reference_ask"": 131.872}"
+AAVE/USD,15m,rolling_vwap_reclaim,1794051900,skipped,symbol_already_active,{}

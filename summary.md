@@ -8,13 +8,30 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 0. Skipped: 0. Broker order results: 0.
+Candidates: 6. Skipped: 5. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
-Entries paused: entry_scan_interval_not_elapsed.
-
+| Coin | Bar | Strategy | Outcome | Reason | Details |
+| --- | --- | --- | --- | --- | --- |
+| ARB/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
+| ARB/USD | 15m | macd_momentum | skipped | symbol_already_active | {} |
+| ARB/USD | 15m | squeeze_breakout | skipped | symbol_already_active | {} |
+| ARB/USD | 15m | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
+| AAVE/USD | 15m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "1b83e9e7-da36-409f-9299-75a428c5ae5e", "broker_status": "pending_new", "client_order_id": "csl2-9a6a48361600154cb18ef28adadb2c39", "quantity": "1.516622179", "reference_ask": 131.872} |
+| AAVE/USD | 15m | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
+
+## Data errors
+
+| Coin | Bar | Stage | Error type |
+| --- | --- | --- | --- |
+| ARB/USD | 5m | candles | ValueError |
+| PEPE/USD | 5m | candles | ValueError |
+| PAXG/USD | 15m | candles | ValueError |
+| PAXG/USD | 5m | candles | ValueError |
+| AAVE/USD | 5m | candles | ValueError |
+| TRUMP/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -25,6 +42,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | LINK/USD | 1h | rsi_rebound | 10.82 | 18.501387604 | 200.18501387528002 | 18.455134134 | 11.344656284249725 | 10.557671857875139 | open |
 | ARB/USD | 1h | ema_cross | 0.165593 | 1207.802403526 | 200.0036234070809 | 1204.782897517 | 0.17492801982768363 | 0.16092549008615817 | open |
 | PEPE/USD | 6h | trend_pullback | 4.93e-06 | 40567951.318458416 | 200.0 | 40466531.44016227 | 5.6313488264385755e-06 | 4.579325586780713e-06 | open |
+| AAVE/USD | 15m | trend_pullback | 131.9 | 1.516622179 | 200.04246541010002 | 1.512830623 | 133.52356834455492 | 131.08821582772254 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -134,14 +152,14 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: matched
+Status: fee_pending
 New entries blocked: False
 Exit checks allowed: True
-Accounting final: True
+Accounting final: False
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
-| AAVEUSD | 0E-9 | 0 | 0E-9 | 0 |
+| AAVEUSD | 1.516622179 | 1.512830623 | -0.003791556 | 0.003791556 |
 | ARBUSD | 1204.782897517 | 1204.782897517 | 0E-9 | 0 |
 | AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
 | BTCUSD | 0.002625588 | 0.002625588 | 0E-9 | 0 |
@@ -159,16 +177,20 @@ Accounting final: True
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
-Entry scan status: not_due
-Next entry scan eligible: 2026-11-07T11:26:06+00:00
+PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
+New buys permitted by explicit paper policy; all entry checks still apply.
+Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
+
+Entry scan status: completed_with_data_errors
+Next entry scan eligible: 2026-11-07T12:28:15+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-07T10:56:08+00:00
+Last refresh: 2026-11-07T11:58:17+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, AVAX/USD, LTC/USD, SOL/USD, PAXG/USD, RENDER/USD, AAVE/USD, TRUMP/USD
+Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, AVAX/USD, LTC/USD, SOL/USD, PAXG/USD, UNI/USD, AAVE/USD, TRUMP/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
