@@ -18,6 +18,18 @@
       "error_type": "ValueError"
     },
     {
+      "symbol": "PAXG/USD",
+      "timeframe": "15m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
       "symbol": "AAVE/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -32,65 +44,23 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "ARB/USD",
+      "symbol": "AAVE/USD",
       "timeframe": "1h",
       "strategy": "trend_pullback",
-      "signal_time": 1794074400,
+      "signal_time": 1794078000,
       "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1794074400,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794074400,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794074400,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794074400,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794074400,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 6,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T19:16:06+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T19:56:49+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -102,14 +72,14 @@
     "AVAX/USD",
     "LTC/USD",
     "UNI/USD",
+    "PAXG/USD",
     "AAVE/USD",
-    "TRUMP/USD",
-    "BCH/USD"
+    "TRUMP/USD"
   ],
-  "observed_at_utc": "2026-11-07T18:46:21+00:00",
+  "observed_at_utc": "2026-11-07T19:27:03+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T18:46:06+00:00",
+    "observed_at_utc": "2026-11-07T19:26:48+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

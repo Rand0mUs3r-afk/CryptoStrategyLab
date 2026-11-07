@@ -1,7 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,1h,trend_pullback,1794074400,skipped,already_seen,{}
-ARB/USD,1h,macd_momentum,1794074400,skipped,already_seen,{}
-ETH/USD,1h,bollinger_reversion,1794074400,skipped,already_seen,{}
-PEPE/USD,1h,bollinger_reversion,1794074400,skipped,already_seen,{}
-SOL/USD,1h,bollinger_reversion,1794074400,skipped,already_seen,{}
-AVAX/USD,1h,bollinger_reversion,1794074400,skipped,already_seen,{}
+AAVE/USD,1h,trend_pullback,1794078000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
