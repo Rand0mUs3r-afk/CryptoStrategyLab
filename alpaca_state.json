@@ -61988,6 +61988,21 @@
       "filled_at": "2026-11-07T21:06:56.117101Z",
       "broker_updated_at": "2026-11-07T21:06:56.160383039Z",
       "reference_ask": 51.92
+    },
+    "csl2-740795af018b152c37c0fc5cee205a05": {
+      "payload": {
+        "symbol": "LTC/USD",
+        "side": "sell",
+        "qty": "3.842449922",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-740795af018b152c37c0fc5cee205a05"
+      },
+      "cycle_id": "csl2-890c2701a792a8b0addab2915590a1ca",
+      "status": "queued",
+      "created_at": 1794089620.0860288,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -64551,7 +64566,8 @@
       "entry_notional_usd": 199.52234205090798,
       "tp": 52.059835133387054,
       "sl": 51.66408243330647,
-      "entry_time_utc": "2026-11-07T21:06:56.117101Z"
+      "entry_time_utc": "2026-11-07T21:06:56.117101Z",
+      "exit_reason": "time"
     }
   ],
   "seen": {
@@ -65258,7 +65274,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T21:38:31+00:00",
+    "observed_at_utc": "2026-11-07T22:13:50+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
