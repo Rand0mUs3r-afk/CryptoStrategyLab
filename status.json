@@ -20,25 +20,40 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "RENDER/USD",
-      "timeframe": "15m",
+      "symbol": "BTC/USD",
+      "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1794009600,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
+      "signal_time": 1794012900,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "ETH/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794012900,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794012900,
+      "outcome": "skipped",
+      "reason": "max_positions",
       "details": {
-        "client_order_id": "csl2-a9ee8dfe80c10e31d139648292342694",
-        "quantity": "125.296740202",
-        "reference_ask": 1.582,
-        "broker_status": "pending_new",
-        "broker_order_id": "81a0b3d5-0165-430f-8d92-1b872a114f26"
+        "active_positions": 6,
+        "max_positions": 6
       }
     },
     {
-      "symbol": "TRUMP/USD",
+      "symbol": "HYPE/USD",
       "timeframe": "5m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794009600,
+      "strategy": "donchian_breakout",
+      "signal_time": 1794012900,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -48,10 +63,10 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 4,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T00:32:52+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T01:25:47+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -59,18 +74,18 @@
     "ETH/USD",
     "LINK/USD",
     "PEPE/USD",
+    "RENDER/USD",
     "AVAX/USD",
     "LTC/USD",
     "SOL/USD",
-    "RENDER/USD",
     "HYPE/USD",
     "TRUMP/USD",
     "BCH/USD"
   ],
-  "observed_at_utc": "2026-11-07T00:03:56+00:00",
+  "observed_at_utc": "2026-11-07T00:56:04+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T00:03:55+00:00",
+    "observed_at_utc": "2026-11-07T00:55:46+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
