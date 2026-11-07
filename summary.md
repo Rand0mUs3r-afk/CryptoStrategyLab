@@ -8,14 +8,13 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 3. Skipped: 3. Broker order results: 0.
+Candidates: 2. Skipped: 2. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| LINK/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
-| SOL/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
-| AAVE/USD | 1h | macd_momentum | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| PEPE/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
+| RENDER/USD | 1h | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -25,9 +24,8 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | --- | --- | --- | --- |
 | ARB/USD | 5m | candles | ValueError |
 | RENDER/USD | 5m | candles | ValueError |
-| PAXG/USD | 15m | candles | ValueError |
-| PAXG/USD | 5m | candles | ValueError |
 | AAVE/USD | 5m | candles | ValueError |
+| TRUMP/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -146,10 +144,10 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: fee_pending
+Status: matched
 New entries blocked: False
 Exit checks allowed: True
-Accounting final: False
+Accounting final: True
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
@@ -165,26 +163,22 @@ Accounting final: False
 | ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
 | PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
-| RENDERUSD | 0.618358325 | 0 | -0.618358325 | 0.618358325 |
-| SOLUSD | 2.234324101 | 2.217866778 | -0.016457323 | 0.016457323 |
+| RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
+| SOLUSD | 2.217866778 | 2.217866778 | 0E-9 | 0 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
-PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
-New buys permitted by explicit paper policy; all entry checks still apply.
-Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
-
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-07T07:45:42+00:00
+Next entry scan eligible: 2026-11-07T08:41:56+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-07T07:15:43+00:00
+Last refresh: 2026-11-07T08:11:57+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, SOL/USD, AVAX/USD, LTC/USD, RENDER/USD, PAXG/USD, HYPE/USD, AAVE/USD
+Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, SOL/USD, AVAX/USD, LTC/USD, RENDER/USD, HYPE/USD, AAVE/USD, TRUMP/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
