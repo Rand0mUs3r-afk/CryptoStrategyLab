@@ -1,2 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,1h,trend_pullback,1794042000,skipped,symbol_already_active,{}
+ARB/USD,15m,ema_cross,1794046500,skipped,symbol_already_active,{}
+ARB/USD,15m,trend_pullback,1794046500,skipped,symbol_already_active,{}
+ETH/USD,5m,macd_momentum,1794046500,skipped,symbol_already_active,{}
+LTC/USD,5m,rsi_rebound,1794046500,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.89408169021135}"
+HYPE/USD,15m,bollinger_reversion,1794046500,order_result,broker_order_returned,"{""broker_order_id"": ""11aa0085-6052-4b88-a56e-e336cb21120a"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-21eb6cfd74529c3c91d23da5f326951e"", ""quantity"": ""2.545960960"", ""reference_ask"": 78.5558}"
+HYPE/USD,15m,rsi_rebound,1794046500,skipped,symbol_already_active,{}
