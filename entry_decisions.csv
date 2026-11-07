@@ -1,2 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AAVE/USD,1h,trend_pullback,1794078000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+UNI/USD,5m,trend_pullback,1794081600,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"

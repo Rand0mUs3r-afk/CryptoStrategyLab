@@ -34,20 +34,14 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
-    },
-    {
-      "symbol": "TRUMP/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
     {
-      "symbol": "AAVE/USD",
-      "timeframe": "1h",
+      "symbol": "UNI/USD",
+      "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1794078000,
+      "signal_time": 1794081600,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -60,7 +54,7 @@
   "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T19:56:49+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T20:30:20+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -74,12 +68,12 @@
     "UNI/USD",
     "PAXG/USD",
     "AAVE/USD",
-    "TRUMP/USD"
+    "BCH/USD"
   ],
-  "observed_at_utc": "2026-11-07T19:27:03+00:00",
+  "observed_at_utc": "2026-11-07T20:00:38+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T19:26:48+00:00",
+    "observed_at_utc": "2026-11-07T20:00:20+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
