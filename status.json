@@ -16,44 +16,35 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "15m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
-      "timeframe": "5m",
+      "symbol": "RENDER/USD",
+      "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1794012900,
+      "signal_time": 1794015900,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
+      "symbol": "PAXG/USD",
+      "timeframe": "1h",
       "strategy": "trend_pullback",
-      "signal_time": 1794012900,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794012900,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "HYPE/USD",
-      "timeframe": "5m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1794012900,
+      "signal_time": 1794013200,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -63,10 +54,10 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 4,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T01:25:47+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T02:16:11+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -78,14 +69,14 @@
     "AVAX/USD",
     "LTC/USD",
     "SOL/USD",
-    "HYPE/USD",
-    "TRUMP/USD",
-    "BCH/USD"
+    "PAXG/USD",
+    "DOGE/USD",
+    "HYPE/USD"
   ],
-  "observed_at_utc": "2026-11-07T00:56:04+00:00",
+  "observed_at_utc": "2026-11-07T01:46:26+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T00:55:46+00:00",
+    "observed_at_utc": "2026-11-07T01:46:11+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
