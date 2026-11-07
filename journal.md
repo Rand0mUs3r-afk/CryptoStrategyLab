@@ -8,17 +8,17 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 6. Skipped: 5. Broker order results: 1.
+Candidates: 6. Skipped: 6. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| ETH/USD | 1h | bollinger_reversion | skipped | symbol_already_active | {} |
-| LINK/USD | 1h | bollinger_reversion | skipped | symbol_already_active | {} |
-| AVAX/USD | 1h | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 63.86326323195956} |
-| SOL/USD | 1h | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "7a8f20d1-87a2-4d09-b8cc-e7bd671f8af7", "broker_status": "pending_new", "client_order_id": "csl2-68848768593d33f95b9c262c64cd706b", "quantity": "2.244920866", "reference_ask": 89.09} |
-| UNI/USD | 15m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| UNI/USD | 1h | ema_cross | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| ETH/USD | 1h | bollinger_reversion | skipped | already_seen | {} |
+| LINK/USD | 1h | bollinger_reversion | skipped | already_seen | {} |
+| SOL/USD | 1h | bollinger_reversion | skipped | already_seen | {} |
+| AVAX/USD | 1h | bollinger_reversion | skipped | already_seen | {} |
+| UNI/USD | 15m | macd_momentum | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| UNI/USD | 1h | ema_cross | skipped | already_seen | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -184,15 +184,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-07T22:43:59+00:00
+Next entry scan eligible: 2026-11-07T23:15:24+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-07T22:14:00+00:00
+Last refresh: 2026-11-07T22:45:25+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, AVAX/USD, LTC/USD, SOL/USD, UNI/USD, PAXG/USD, BCH/USD, HYPE/USD
+Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, SOL/USD, AVAX/USD, LTC/USD, UNI/USD, PAXG/USD, BCH/USD, HYPE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

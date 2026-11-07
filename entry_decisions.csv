@@ -1,7 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,1h,bollinger_reversion,1794088800,skipped,symbol_already_active,{}
-LINK/USD,1h,bollinger_reversion,1794088800,skipped,symbol_already_active,{}
-AVAX/USD,1h,bollinger_reversion,1794088800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 63.86326323195956}"
-SOL/USD,1h,bollinger_reversion,1794088800,order_result,broker_order_returned,"{""broker_order_id"": ""7a8f20d1-87a2-4d09-b8cc-e7bd671f8af7"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-68848768593d33f95b9c262c64cd706b"", ""quantity"": ""2.244920866"", ""reference_ask"": 89.09}"
-UNI/USD,15m,trend_pullback,1794088800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-UNI/USD,1h,ema_cross,1794088800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+ETH/USD,1h,bollinger_reversion,1794088800,skipped,already_seen,{}
+LINK/USD,1h,bollinger_reversion,1794088800,skipped,already_seen,{}
+SOL/USD,1h,bollinger_reversion,1794088800,skipped,already_seen,{}
+AVAX/USD,1h,bollinger_reversion,1794088800,skipped,already_seen,{}
+UNI/USD,15m,macd_momentum,1794091500,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+UNI/USD,1h,ema_cross,1794088800,skipped,already_seen,{}

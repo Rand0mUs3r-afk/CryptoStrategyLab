@@ -37,7 +37,7 @@
       "strategy": "bollinger_reversion",
       "signal_time": 1794088800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -46,7 +46,16 @@
       "strategy": "bollinger_reversion",
       "signal_time": 1794088800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
+      "details": {}
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794088800,
+      "outcome": "skipped",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -55,32 +64,14 @@
       "strategy": "bollinger_reversion",
       "signal_time": 1794088800,
       "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 63.86326323195956,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794088800,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-68848768593d33f95b9c262c64cd706b",
-        "quantity": "2.244920866",
-        "reference_ask": 89.09,
-        "broker_status": "pending_new",
-        "broker_order_id": "7a8f20d1-87a2-4d09-b8cc-e7bd671f8af7"
-      }
+      "reason": "already_seen",
+      "details": {}
     },
     {
       "symbol": "UNI/USD",
       "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794088800,
+      "strategy": "macd_momentum",
+      "signal_time": 1794091500,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -94,18 +85,15 @@
       "strategy": "ema_cross",
       "signal_time": 1794088800,
       "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
+      "reason": "already_seen",
+      "details": {}
     }
   ],
   "entry_pause_reasons": [],
   "candidates": 6,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T22:43:59+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T23:15:24+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -113,18 +101,18 @@
     "ETH/USD",
     "LINK/USD",
     "PEPE/USD",
+    "SOL/USD",
     "AVAX/USD",
     "LTC/USD",
-    "SOL/USD",
     "UNI/USD",
     "PAXG/USD",
     "BCH/USD",
     "HYPE/USD"
   ],
-  "observed_at_utc": "2026-11-07T22:14:38+00:00",
+  "observed_at_utc": "2026-11-07T22:45:39+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T22:14:36+00:00",
+    "observed_at_utc": "2026-11-07T22:45:24+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
