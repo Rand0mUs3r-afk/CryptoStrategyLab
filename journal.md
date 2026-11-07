@@ -8,18 +8,11 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 7. Skipped: 6. Broker order results: 1.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| ETH/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
-| LINK/USD | 15m | bollinger_reversion | skipped | symbol_already_active | {} |
-| LINK/USD | 15m | rsi_rebound | skipped | symbol_already_active | {} |
-| AVAX/USD | 15m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 61.449484908729644} |
-| LTC/USD | 15m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 57.93665210283361} |
-| SOL/USD | 15m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "23cd197e-746c-48e9-940c-f8935eb854c7", "broker_status": "pending_new", "client_order_id": "csl2-9748c46dc8a9ffa2cb15d899c536e7e7", "quantity": "2.223425342", "reference_ask": 89.9513} |
-| RENDER/USD | 15m | bollinger_reversion | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+No candidates recorded; check run status and data errors before concluding there were no signals.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -179,15 +172,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-07T04:31:43+00:00
+Next entry scan eligible: 2026-11-07T05:16:41+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-07T04:01:44+00:00
+Last refresh: 2026-11-07T04:46:42+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, AVAX/USD, LTC/USD, SOL/USD, RENDER/USD, PAXG/USD, UNI/USD, HYPE/USD
+Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, SOL/USD, AVAX/USD, LTC/USD, RENDER/USD, PAXG/USD, UNI/USD, HYPE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

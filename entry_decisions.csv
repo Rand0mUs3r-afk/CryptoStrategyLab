@@ -1,8 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,5m,trend_pullback,1794024000,skipped,symbol_already_active,{}
-LINK/USD,15m,bollinger_reversion,1794024000,skipped,symbol_already_active,{}
-LINK/USD,15m,rsi_rebound,1794024000,skipped,symbol_already_active,{}
-AVAX/USD,15m,bollinger_reversion,1794024000,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.449484908729644}"
-LTC/USD,15m,bollinger_reversion,1794024000,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.93665210283361}"
-SOL/USD,15m,bollinger_reversion,1794024000,order_result,broker_order_returned,"{""broker_order_id"": ""23cd197e-746c-48e9-940c-f8935eb854c7"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-9748c46dc8a9ffa2cb15d899c536e7e7"", ""quantity"": ""2.223425342"", ""reference_ask"": 89.9513}"
-RENDER/USD,15m,bollinger_reversion,1794024000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
