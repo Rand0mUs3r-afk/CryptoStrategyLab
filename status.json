@@ -40,78 +40,54 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
+    },
+    {
+      "symbol": "TRUMP/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
     {
-      "symbol": "ARB/USD",
+      "symbol": "LINK/USD",
       "timeframe": "15m",
-      "strategy": "ema_cross",
-      "signal_time": 1794046500,
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794048300,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "ARB/USD",
+      "symbol": "AVAX/USD",
       "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794046500,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
-      "strategy": "macd_momentum",
-      "signal_time": 1794046500,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "5m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794046500,
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794048300,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 61.89408169021135,
+        "spread_bps": 62.57451147703721,
         "max_spread_bps": 50
       }
     },
     {
-      "symbol": "HYPE/USD",
+      "symbol": "LTC/USD",
       "timeframe": "15m",
       "strategy": "bollinger_reversion",
-      "signal_time": 1794046500,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-21eb6cfd74529c3c91d23da5f326951e",
-        "quantity": "2.545960960",
-        "reference_ask": 78.5558,
-        "broker_status": "pending_new",
-        "broker_order_id": "11aa0085-6052-4b88-a56e-e336cb21120a"
-      }
-    },
-    {
-      "symbol": "HYPE/USD",
-      "timeframe": "15m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794046500,
+      "signal_time": 1794048300,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 59.150815386888816,
+        "max_spread_bps": 50
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 6,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T10:47:23+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T11:26:06+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -124,13 +100,13 @@
     "SOL/USD",
     "PAXG/USD",
     "RENDER/USD",
-    "HYPE/USD",
-    "AAVE/USD"
+    "AAVE/USD",
+    "TRUMP/USD"
   ],
-  "observed_at_utc": "2026-11-07T10:17:56+00:00",
+  "observed_at_utc": "2026-11-07T10:56:21+00:00",
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-07T10:17:55+00:00",
+    "observed_at_utc": "2026-11-07T10:56:06+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
