@@ -1,4 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-LINK/USD,5m,bollinger_reversion,1794066900,skipped,symbol_already_active,{}
-AVAX/USD,5m,rsi_rebound,1794066900,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-UNI/USD,5m,bollinger_reversion,1794066900,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
