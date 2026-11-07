@@ -32,32 +32,29 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "RENDER/USD",
-      "timeframe": "15m",
+      "symbol": "PEPE/USD",
+      "timeframe": "1h",
       "strategy": "trend_pullback",
-      "signal_time": 1794015900,
+      "signal_time": 1794016800,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "PAXG/USD",
+      "symbol": "RENDER/USD",
       "timeframe": "1h",
       "strategy": "trend_pullback",
-      "signal_time": 1794013200,
+      "signal_time": 1794016800,
       "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
+      "reason": "symbol_already_active",
+      "details": {}
     }
   ],
   "entry_pause_reasons": [],
   "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T02:16:11+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T02:58:48+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -73,10 +70,10 @@
     "DOGE/USD",
     "HYPE/USD"
   ],
-  "observed_at_utc": "2026-11-07T01:46:26+00:00",
+  "observed_at_utc": "2026-11-07T02:29:04+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T01:46:11+00:00",
+    "observed_at_utc": "2026-11-07T02:28:48+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

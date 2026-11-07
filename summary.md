@@ -13,8 +13,8 @@ Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| RENDER/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| PAXG/USD | 1h | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| PEPE/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
+| RENDER/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -173,13 +173,13 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-07T02:16:11+00:00
+Next entry scan eligible: 2026-11-07T02:58:48+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-07T01:46:12+00:00
+Last refresh: 2026-11-07T02:28:49+00:00
 Source status: partial
 Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, RENDER/USD, AVAX/USD, LTC/USD, SOL/USD, PAXG/USD, DOGE/USD, HYPE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
