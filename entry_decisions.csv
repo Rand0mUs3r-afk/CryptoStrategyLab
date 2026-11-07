@@ -1,4 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,1h,trend_pullback,1794031200,skipped,symbol_already_active,{}
-AAVE/USD,15m,ema_cross,1794032100,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-AAVE/USD,1h,trend_pullback,1794031200,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+LINK/USD,5m,trend_pullback,1794035700,skipped,symbol_already_active,{}
+SOL/USD,5m,trend_pullback,1794035700,skipped,symbol_already_active,{}
+AAVE/USD,1h,macd_momentum,1794034800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
