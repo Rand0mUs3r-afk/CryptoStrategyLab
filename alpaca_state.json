@@ -57223,14 +57223,14 @@
         "client_order_id": "csl2-21eb6cfd74529c3c91d23da5f326951e"
       },
       "cycle_id": "csl2-21eb6cfd74529c3c91d23da5f326951e",
-      "status": "new",
+      "status": "canceled",
       "created_at": 1794046658.0675485,
       "attempted": true,
       "filled_qty": "0",
       "broker_order_id": "11aa0085-6052-4b88-a56e-e336cb21120a",
       "filled_avg_price": null,
       "filled_at": null,
-      "broker_updated_at": "2026-11-07T10:17:46.67151237Z",
+      "broker_updated_at": "2026-11-07T10:55:58.372008978Z",
       "reference_ask": 78.5558,
       "cancel_requested_at": 1794048957.0863655
     }
@@ -59718,11 +59718,13 @@
       "hold_seconds": 21600,
       "id": "csl2-21eb6cfd74529c3c91d23da5f326951e",
       "created_at": 1794046658.0675485,
-      "status": "pending",
+      "status": "closed",
       "distance": 0.3303809854274861,
       "target_r": 2.0,
       "reference_ask": 78.5558,
-      "remaining_qty": 0.0
+      "remaining_qty": 0.0,
+      "exit_reason": "unfilled_entry",
+      "closed_at": "2026-11-07T10:56:06+00:00"
     }
   ],
   "seen": {
@@ -60387,7 +60389,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-07T10:55:56+00:00",
+    "observed_at_utc": "2026-11-07T10:56:06+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -60566,7 +60568,7 @@
     "attempts": 1,
     "retry_exhausted": false
   },
-  "last_entry_scan_at": 1794046643.367884,
+  "last_entry_scan_at": 1794048966.9976404,
   "watchlist": {
     "observed_at_utc": "2026-11-07T10:17:24+00:00",
     "status": "partial",
