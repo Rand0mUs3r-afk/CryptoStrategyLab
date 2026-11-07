@@ -44,19 +44,10 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794064800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
       "symbol": "LINK/USD",
       "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794064800,
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794066900,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -64,8 +55,20 @@
     {
       "symbol": "AVAX/USD",
       "timeframe": "5m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794066900,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "5m",
       "strategy": "bollinger_reversion",
-      "signal_time": 1794064800,
+      "signal_time": 1794066900,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -78,7 +81,7 @@
   "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T15:52:57+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T16:27:51+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "AAVE/USD",
@@ -94,10 +97,10 @@
     "UNI/USD",
     "TRUMP/USD"
   ],
-  "observed_at_utc": "2026-11-07T15:23:15+00:00",
+  "observed_at_utc": "2026-11-07T15:58:08+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T15:22:57+00:00",
+    "observed_at_utc": "2026-11-07T15:57:51+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
