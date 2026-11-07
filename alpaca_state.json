@@ -59486,7 +59486,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-07T08:11:56+00:00",
+    "observed_at_utc": "2026-11-07T08:56:37+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -59665,7 +59665,7 @@
     "attempts": 1,
     "retry_exhausted": false
   },
-  "last_entry_scan_at": 1794039116.4984212,
+  "last_entry_scan_at": 1794041797.1489418,
   "watchlist": {
     "observed_at_utc": "2026-11-07T08:11:57+00:00",
     "status": "partial",
