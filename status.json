@@ -20,20 +20,38 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
+      "symbol": "RENDER/USD",
+      "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1794007800,
+      "signal_time": 1794009600,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-a9ee8dfe80c10e31d139648292342694",
+        "quantity": "125.296740202",
+        "reference_ask": 1.582,
+        "broker_status": "pending_new",
+        "broker_order_id": "81a0b3d5-0165-430f-8d92-1b872a114f26"
+      }
+    },
+    {
+      "symbol": "TRUMP/USD",
+      "timeframe": "5m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794009600,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-07T00:00:36+00:00",
+  "next_entry_scan_at_utc": "2026-11-07T00:32:52+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -44,14 +62,15 @@
     "AVAX/USD",
     "LTC/USD",
     "SOL/USD",
-    "TRUMP/USD",
     "RENDER/USD",
-    "HYPE/USD"
+    "HYPE/USD",
+    "TRUMP/USD",
+    "BCH/USD"
   ],
-  "observed_at_utc": "2026-11-06T23:30:54+00:00",
+  "observed_at_utc": "2026-11-07T00:03:56+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-06T23:30:36+00:00",
+    "observed_at_utc": "2026-11-07T00:03:55+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -175,13 +194,13 @@
       },
       {
         "symbol": "RENDERUSD",
-        "filled_quantity": "0.923256214",
+        "filled_quantity": "126.219996416",
         "fee_quantity": "-0.618139740",
-        "expected_quantity": "0.305116474",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.305116474",
+        "expected_quantity": "125.601856676",
+        "broker_quantity": "124.983498351",
+        "difference_quantity": "-0.618358325",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.305116474"
+        "unconfirmed_shortfall": "0.618358325"
       },
       {
         "symbol": "SOLUSD",

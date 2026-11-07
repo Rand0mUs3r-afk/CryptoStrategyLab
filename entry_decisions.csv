@@ -1,2 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,5m,trend_pullback,1794007800,skipped,symbol_already_active,{}
+RENDER/USD,15m,trend_pullback,1794009600,order_result,broker_order_returned,"{""broker_order_id"": ""81a0b3d5-0165-430f-8d92-1b872a114f26"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-a9ee8dfe80c10e31d139648292342694"", ""quantity"": ""125.296740202"", ""reference_ask"": 1.582}"
+TRUMP/USD,5m,rsi_rebound,1794009600,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
