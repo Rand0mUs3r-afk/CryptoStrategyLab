@@ -4,19 +4,79 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [],
-  "entry_decisions": [],
-  "entry_pause_reasons": [
-    "entry_scan_interval_not_elapsed"
+  "data_errors": [
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "15m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "PAXG/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "TRUMP/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    }
   ],
-  "candidates": 0,
+  "entry_decisions": [
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794070800,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    }
+  ],
+  "entry_pause_reasons": [],
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "not_due",
-  "next_entry_scan_at_utc": "2026-11-07T16:27:51+00:00",
-  "observed_at_utc": "2026-11-07T16:27:39+00:00",
+  "entry_scan_status": "completed_with_data_errors",
+  "next_entry_scan_at_utc": "2026-11-07T17:34:00+00:00",
+  "watchlist_status": "partial",
+  "watchlist_symbols": [
+    "AAVE/USD",
+    "ARB/USD",
+    "BTC/USD",
+    "ETH/USD",
+    "LINK/USD",
+    "PEPE/USD",
+    "AVAX/USD",
+    "LTC/USD",
+    "SOL/USD",
+    "PAXG/USD",
+    "UNI/USD",
+    "TRUMP/USD"
+  ],
+  "observed_at_utc": "2026-11-07T17:04:15+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T16:27:38+00:00",
+    "observed_at_utc": "2026-11-07T17:04:00+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
