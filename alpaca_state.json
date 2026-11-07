@@ -57231,7 +57231,8 @@
       "filled_avg_price": null,
       "filled_at": null,
       "broker_updated_at": "2026-11-07T10:17:46.67151237Z",
-      "reference_ask": 78.5558
+      "reference_ask": 78.5558,
+      "cancel_requested_at": 1794048957.0863655
     }
   },
   "cycles": [
