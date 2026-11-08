@@ -1,4 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,1h,trend_pullback,1794124800,skipped,already_seen,{}
-LTC/USD,15m,bollinger_reversion,1794127500,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-UNI/USD,1h,trend_pullback,1794124800,skipped,already_seen,{}
+ETH/USD,5m,trend_pullback,1794130200,skipped,symbol_already_active,{}
+AVAX/USD,5m,bollinger_reversion,1794130200,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+LTC/USD,5m,rsi_rebound,1794130200,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
