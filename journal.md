@@ -8,11 +8,13 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 0. Skipped: 0. Broker order results: 0.
+Candidates: 2. Skipped: 2. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-No candidates recorded; check run status and data errors before concluding there were no signals.
-
+| Coin | Bar | Strategy | Outcome | Reason | Details |
+| --- | --- | --- | --- | --- | --- |
+| PEPE/USD | 15m | bollinger_reversion | skipped | symbol_already_active | {} |
+| AVAX/USD | 15m | bollinger_reversion | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -177,15 +179,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-08T02:49:30+00:00
+Next entry scan eligible: 2026-11-08T03:39:51+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-08T02:19:31+00:00
+Last refresh: 2026-11-08T03:09:52+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, SOL/USD, AVAX/USD, LTC/USD, UNI/USD, AAVE/USD, BCH/USD, HYPE/USD
+Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, SOL/USD, AVAX/USD, LTC/USD, UNI/USD, XRP/USD, AAVE/USD, BCH/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
