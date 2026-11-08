@@ -8,13 +8,31 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 0. Skipped: 0. Broker order results: 0.
+Candidates: 9. Skipped: 5. Broker order results: 4.
 Broker order results are not proof of fills; see orders.csv.
 
-Entries paused: entry_scan_interval_not_elapsed.
-
+| Coin | Bar | Strategy | Outcome | Reason | Details |
+| --- | --- | --- | --- | --- | --- |
+| ARB/USD | 1h | bollinger_reversion | skipped | symbol_already_active | {} |
+| ARB/USD | 1h | rsi_rebound | skipped | symbol_already_active | {} |
+| PEPE/USD | 6h | trend_pullback | skipped | already_seen | {} |
+| PEPE/USD | 6h | macd_momentum | skipped | already_seen | {} |
+| ETH/USD | 15m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "50e0fc6e-4044-4d17-b93a-dce598a55620", "broker_status": "pending_new", "client_order_id": "csl2-c089e7f414733112c28bcb3f5e2785b7", "quantity": "0.093763331", "reference_ask": 2133.03} |
+| LINK/USD | 15m | rsi_rebound | order_result | broker_order_returned | {"broker_order_id": "84f8c79e-f19a-4682-98ad-206693e1a40d", "broker_status": "pending_new", "client_order_id": "csl2-a522e8b7c74f204c5cf97420c727724b", "quantity": "19.193857965", "reference_ask": 10.42} |
+| SOL/USD | 15m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "eb3870db-db11-463e-b3a8-8d8b81bf8c2b", "broker_status": "pending_new", "client_order_id": "csl2-66aad832a65932c1922f05e50a616d4d", "quantity": "2.306326252", "reference_ask": 86.718} |
+| UNI/USD | 1h | rsi_rebound | order_result | broker_order_returned | {"broker_order_id": "825114a7-5fe3-415a-a7cc-7d5e696c5903", "broker_status": "pending_new", "client_order_id": "csl2-d527ed5cfc021066645bea0122133bae", "quantity": "29.273147741", "reference_ask": 6.8322} |
+| RENDER/USD | 1h | bollinger_reversion | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
+
+## Data errors
+
+| Coin | Bar | Stage | Error type |
+| --- | --- | --- | --- |
+| ARB/USD | 5m | candles | ValueError |
+| PEPE/USD | 5m | candles | ValueError |
+| TRUMP/USD | 5m | candles | ValueError |
+| RENDER/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -22,6 +40,10 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | ARB/USD | 1h | ema_cross | 0.165593 | 1207.802403526 | 200.0036234070809 | 1204.782897517 | 0.17492801982768363 | 0.16092549008615817 | open |
 | PEPE/USD | 6h | trend_pullback | 4.93e-06 | 40567951.318458416 | 200.0 | 40466531.44016227 | 5.6313488264385755e-06 | 4.579325586780713e-06 | open |
+| ETH/USD | 15m | bollinger_reversion | 2133.87 | 0.093763331 | 200.07875912097 | 0.093528922 | 2178.221243509793 | 2111.6943782451035 | open |
+| LINK/USD | 15m | rsi_rebound | 10.4317 | 19.193857965 | 200.2245681334905 | 19.14587332 | 10.648976580034741 | 10.323061709982628 | open |
+| SOL/USD | 15m | bollinger_reversion | 86.759 | 2.306326252 | 200.09455929726798 | 2.300560436 | 88.57139041511181 | 85.8528047924441 | open |
+| UNI/USD | 1h | rsi_rebound | 6.843 | 29.273147741 | 200.316149991663 | 29.199964871 | 7.098091022852047 | 6.715454488573976 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -151,32 +173,32 @@ Accounting final: False
 | AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
 | BTCUSD | 0E-9 | 0 | 0E-9 | 0 |
 | DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
-| ETHUSD | 0E-9 | 0 | 0E-9 | 0 |
+| ETHUSD | 0.093763331 | 0.093528922 | -0.000234409 | 0.000234409 |
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
 | HYPEUSD | 0 | 0 | 0 | 0 |
-| LINKUSD | 0E-9 | 0 | 0E-9 | 0 |
+| LINKUSD | 19.193857965 | 19.14587332 | -0.047984645 | 0.047984645 |
 | LTCUSD | 0.009630201 | 0 | -0.009630201 | 0.009630201 |
 | ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
 | PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
-| SOLUSD | 0.011185818 | 0 | -0.011185818 | 0.011185818 |
+| SOLUSD | 2.317512070 | 2.300560436 | -0.016951634 | 0.016951634 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
-| UNIUSD | 0.071711217 | 0 | -0.071711217 | 0.071711217 |
+| UNIUSD | 29.344858958 | 29.199964871 | -0.144894087 | 0.144894087 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
 PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
 New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
-Entry scan status: not_due
-Next entry scan eligible: 2026-11-08T22:29:16+00:00
+Entry scan status: completed_with_data_errors
+Next entry scan eligible: 2026-11-08T23:31:34+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-08T21:59:17+00:00
+Last refresh: 2026-11-08T23:01:35+00:00
 Source status: partial
 Selected: ARB/USD, PEPE/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, TRUMP/USD, UNI/USD, RENDER/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
