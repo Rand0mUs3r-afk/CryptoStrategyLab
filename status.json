@@ -20,28 +20,10 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "ARB/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794114900,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794114900,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
       "symbol": "BCH/USD",
       "timeframe": "15m",
       "strategy": "bollinger_reversion",
-      "signal_time": 1794114900,
+      "signal_time": 1794117600,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -51,10 +33,10 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 3,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-08T05:58:08+00:00",
+  "next_entry_scan_at_utc": "2026-11-08T06:44:40+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -66,14 +48,13 @@
     "AVAX/USD",
     "LTC/USD",
     "UNI/USD",
-    "XRP/USD",
     "BCH/USD",
     "ONDO/USD"
   ],
-  "observed_at_utc": "2026-11-08T05:28:23+00:00",
+  "observed_at_utc": "2026-11-08T06:14:57+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T05:28:08+00:00",
+    "observed_at_utc": "2026-11-08T06:14:40+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

@@ -1,4 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,15m,trend_pullback,1794114900,skipped,symbol_already_active,{}
-BTC/USD,15m,trend_pullback,1794114900,skipped,symbol_already_active,{}
-BCH/USD,15m,bollinger_reversion,1794114900,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+BCH/USD,15m,bollinger_reversion,1794117600,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
