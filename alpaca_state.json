@@ -72301,10 +72301,14 @@
         "client_order_id": "csl2-d527ed5cfc021066645bea0122133bae"
       },
       "cycle_id": "csl2-d527ed5cfc021066645bea0122133bae",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794178964.263636,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "825114a7-5fe3-415a-a7cc-7d5e696c5903",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-08T23:02:55.365098241Z"
     }
   },
   "cycles": [
