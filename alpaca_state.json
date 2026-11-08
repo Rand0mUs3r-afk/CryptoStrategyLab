@@ -70720,7 +70720,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T11:59:00+00:00",
+    "observed_at_utc": "2026-11-08T12:35:52+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -70911,7 +70911,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1794139141.0263271,
+  "last_entry_scan_at": 1794141352.9429274,
   "watchlist": {
     "observed_at_utc": "2026-11-08T11:59:02+00:00",
     "status": "partial",
