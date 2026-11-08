@@ -71726,6 +71726,21 @@
       "filled_avg_price": 6.935256685,
       "filled_at": "2026-11-08T21:25:46.223037113Z",
       "broker_updated_at": "2026-11-08T21:25:46.236631379Z"
+    },
+    "csl2-0ac23a52ccc09ed828dec19fc4d0630e": {
+      "payload": {
+        "symbol": "SOL/USD",
+        "side": "sell",
+        "qty": "2.239308563",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-0ac23a52ccc09ed828dec19fc4d0630e"
+      },
+      "cycle_id": "csl2-68848768593d33f95b9c262c64cd706b",
+      "status": "queued",
+      "created_at": 1794175137.0106928,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -74323,7 +74338,8 @@
       "entry_notional_usd": 199.99999995194003,
       "tp": 90.60555763529119,
       "sl": 88.33222118235442,
-      "entry_time_utc": "2026-11-07T22:14:29.618930045Z"
+      "entry_time_utc": "2026-11-07T22:14:29.618930045Z",
+      "exit_reason": "stop"
     },
     {
       "symbol": "UNI/USD",
@@ -75133,7 +75149,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T21:25:53+00:00",
+    "observed_at_utc": "2026-11-08T21:59:07+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
