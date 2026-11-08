@@ -1,4 +1,9 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,5m,trend_pullback,1794147000,skipped,symbol_already_active,{}
-ETH/USD,5m,trend_pullback,1794147000,skipped,symbol_already_active,{}
+ARB/USD,15m,trend_pullback,1794149100,skipped,symbol_already_active,{}
+BTC/USD,15m,trend_pullback,1794149100,skipped,symbol_already_active,{}
+BTC/USD,15m,rolling_vwap_reclaim,1794149100,skipped,symbol_already_active,{}
+ETH/USD,15m,trend_pullback,1794149100,skipped,symbol_already_active,{}
+ETH/USD,15m,rolling_vwap_reclaim,1794149100,skipped,symbol_already_active,{}
 PEPE/USD,6h,trend_pullback,1794139200,skipped,already_seen,{}
+AVAX/USD,5m,ema_cross,1794149100,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+LTC/USD,15m,bollinger_reversion,1794149100,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"

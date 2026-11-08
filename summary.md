@@ -8,14 +8,19 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 3. Skipped: 3. Broker order results: 0.
+Candidates: 8. Skipped: 8. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| BTC/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
-| ETH/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
+| ARB/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
+| BTC/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
+| BTC/USD | 15m | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
+| ETH/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
+| ETH/USD | 15m | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
 | PEPE/USD | 6h | trend_pullback | skipped | already_seen | {} |
+| AVAX/USD | 5m | ema_cross | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| LTC/USD | 15m | bollinger_reversion | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -25,6 +30,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | --- | --- | --- | --- |
 | ARB/USD | 5m | candles | ValueError |
 | PEPE/USD | 5m | candles | ValueError |
+| AAVE/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -179,15 +185,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-08T14:42:00+00:00
+Next entry scan eligible: 2026-11-08T15:16:32+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-08T14:12:02+00:00
+Last refresh: 2026-11-08T14:46:33+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, SOL/USD, AVAX/USD, LTC/USD, BCH/USD, UNI/USD
+Selected: ARB/USD, BTC/USD, ETH/USD, LINK/USD, PEPE/USD, SOL/USD, AVAX/USD, LTC/USD, BCH/USD, UNI/USD, AAVE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
