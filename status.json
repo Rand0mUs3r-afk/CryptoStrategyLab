@@ -25,53 +25,20 @@
       "strategy": "trend_pullback",
       "signal_time": 1794124800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
-      "symbol": "BTC/USD",
+      "symbol": "LTC/USD",
       "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794124800,
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794127500,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "15m",
-      "strategy": "macd_momentum",
-      "signal_time": 1794124800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "15m",
-      "strategy": "squeeze_breakout",
-      "signal_time": 1794124800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794124800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
-      "strategy": "macd_momentum",
-      "signal_time": 1794124800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
     },
     {
       "symbol": "UNI/USD",
@@ -79,18 +46,15 @@
       "strategy": "trend_pullback",
       "signal_time": 1794124800,
       "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
+      "reason": "already_seen",
+      "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 7,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-08T08:40:18+00:00",
+  "next_entry_scan_at_utc": "2026-11-08T09:25:17+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -104,10 +68,10 @@
     "UNI/USD",
     "BCH/USD"
   ],
-  "observed_at_utc": "2026-11-08T08:10:33+00:00",
+  "observed_at_utc": "2026-11-08T08:55:32+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T08:10:18+00:00",
+    "observed_at_utc": "2026-11-08T08:55:16+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

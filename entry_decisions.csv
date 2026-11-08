@@ -1,8 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,1h,trend_pullback,1794124800,skipped,symbol_already_active,{}
-BTC/USD,15m,trend_pullback,1794124800,skipped,symbol_already_active,{}
-BTC/USD,15m,macd_momentum,1794124800,skipped,symbol_already_active,{}
-BTC/USD,15m,squeeze_breakout,1794124800,skipped,symbol_already_active,{}
-PEPE/USD,15m,trend_pullback,1794124800,skipped,symbol_already_active,{}
-PEPE/USD,15m,macd_momentum,1794124800,skipped,symbol_already_active,{}
-UNI/USD,1h,trend_pullback,1794124800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+ARB/USD,1h,trend_pullback,1794124800,skipped,already_seen,{}
+LTC/USD,15m,bollinger_reversion,1794127500,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+UNI/USD,1h,trend_pullback,1794124800,skipped,already_seen,{}
