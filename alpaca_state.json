@@ -71737,10 +71737,14 @@
         "client_order_id": "csl2-0ac23a52ccc09ed828dec19fc4d0630e"
       },
       "cycle_id": "csl2-68848768593d33f95b9c262c64cd706b",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794175137.0106928,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "f6a94860-14c3-4c80-a2e7-19f0d6b7bba7",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-08T21:59:09.339650396Z"
     }
   },
   "cycles": [
