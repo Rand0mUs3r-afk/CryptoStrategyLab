@@ -16,42 +16,9 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
-    },
-    {
-      "symbol": "AAVE/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794152700,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "ema_cross",
-      "signal_time": 1794150000,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "donchian_breakout",
-      "signal_time": 1794150000,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
     {
       "symbol": "PEPE/USD",
       "timeframe": "6h",
@@ -62,29 +29,23 @@
       "details": {}
     },
     {
-      "symbol": "UNI/USD",
+      "symbol": "LTC/USD",
       "timeframe": "1h",
       "strategy": "bollinger_reversion",
-      "signal_time": 1794150000,
+      "signal_time": 1794153600,
       "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "AAVE/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794150000,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 6,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-08T16:23:23+00:00",
+  "next_entry_scan_at_utc": "2026-11-08T16:53:44+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -96,13 +57,12 @@
     "AVAX/USD",
     "LTC/USD",
     "BCH/USD",
-    "UNI/USD",
-    "AAVE/USD"
+    "UNI/USD"
   ],
-  "observed_at_utc": "2026-11-08T15:53:37+00:00",
+  "observed_at_utc": "2026-11-08T16:24:00+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T15:53:22+00:00",
+    "observed_at_utc": "2026-11-08T16:23:44+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
