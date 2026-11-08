@@ -1,2 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AAVE/USD,15m,ema_cross,1794109500,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+BTC/USD,15m,ema_cross,1794112200,skipped,symbol_already_active,{}

@@ -26,23 +26,20 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "AAVE/USD",
+      "symbol": "BTC/USD",
       "timeframe": "15m",
       "strategy": "ema_cross",
-      "signal_time": 1794109500,
+      "signal_time": 1794112200,
       "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
+      "reason": "symbol_already_active",
+      "details": {}
     }
   ],
   "entry_pause_reasons": [],
   "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-08T04:26:17+00:00",
+  "next_entry_scan_at_utc": "2026-11-08T05:10:19+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -54,14 +51,14 @@
     "AVAX/USD",
     "LTC/USD",
     "UNI/USD",
+    "XRP/USD",
     "AAVE/USD",
-    "BCH/USD",
-    "HYPE/USD"
+    "BCH/USD"
   ],
-  "observed_at_utc": "2026-11-08T03:56:32+00:00",
+  "observed_at_utc": "2026-11-08T04:40:34+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T03:56:17+00:00",
+    "observed_at_utc": "2026-11-08T04:40:19+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
