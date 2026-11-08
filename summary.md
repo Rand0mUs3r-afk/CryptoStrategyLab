@@ -8,13 +8,25 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 0. Skipped: 0. Broker order results: 0.
+Candidates: 3. Skipped: 3. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-Entries paused: entry_scan_interval_not_elapsed.
-
+| Coin | Bar | Strategy | Outcome | Reason | Details |
+| --- | --- | --- | --- | --- | --- |
+| ARB/USD | 1h | bollinger_reversion | skipped | symbol_already_active | {} |
+| PEPE/USD | 6h | trend_pullback | skipped | already_seen | {} |
+| PEPE/USD | 6h | macd_momentum | skipped | already_seen | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
+
+## Data errors
+
+| Coin | Bar | Stage | Error type |
+| --- | --- | --- | --- |
+| ARB/USD | 5m | candles | ValueError |
+| PEPE/USD | 5m | candles | ValueError |
+| TRUMP/USD | 5m | candles | ValueError |
+| RENDER/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -22,7 +34,6 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | ARB/USD | 1h | ema_cross | 0.165593 | 1207.802403526 | 200.0036234070809 | 1204.782897517 | 0.17492801982768363 | 0.16092549008615817 | open |
 | PEPE/USD | 6h | trend_pullback | 4.93e-06 | 40567951.318458416 | 200.0 | 40466531.44016227 | 5.6313488264385755e-06 | 4.579325586780713e-06 | open |
-| SOL/USD | 1h | bollinger_reversion | 89.09 | 2.244920866 | 199.99999995194003 | 2.239308563 | 90.60555763529119 | 88.33222118235442 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -131,6 +142,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | AAVE/USD | 15m | trend_pullback | 131.9 | 1.516622179 | 200.04246541010002 | 0.0 | 133.52356834455492 | 131.08821582772254 | closed |
 | SOL/USD | 1h | bollinger_reversion | 89.75232266 | 2.229405863 | 200.0943543560718 | 0.0 | 91.2379270674575 | 89.00952045627125 | closed |
 | LTC/USD | 5m | bollinger_reversion | 51.796 | 3.852080123 | 199.52234205090798 | 0.0 | 52.059835133387054 | 51.66408243330647 | closed |
+| SOL/USD | 1h | bollinger_reversion | 89.09 | 2.244920866 | 199.99999995194003 | 0.0 | 90.60555763529119 | 88.33222118235442 | closed |
 | UNI/USD | 5m | bollinger_reversion | 6.977 | 28.684486425 | 200.131661787225 | 0.0 | 7.026001862545989 | 6.952499068727006 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
@@ -160,7 +172,7 @@ Accounting final: False
 | PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
-| SOLUSD | 2.250494381 | 2.239308563 | -0.011185818 | 0.011185818 |
+| SOLUSD | 0.011185818 | 0 | -0.011185818 | 0.011185818 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
 | UNIUSD | 0.071711217 | 0 | -0.071711217 | 0.071711217 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -169,16 +181,16 @@ PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
 New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
-Entry scan status: not_due
-Next entry scan eligible: 2026-11-08T21:26:37+00:00
+Entry scan status: completed_with_data_errors
+Next entry scan eligible: 2026-11-08T22:29:16+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-08T20:56:39+00:00
+Last refresh: 2026-11-08T21:59:17+00:00
 Source status: partial
-Selected: ARB/USD, LINK/USD, PEPE/USD, SOL/USD, AVAX/USD, BTC/USD, ETH/USD, LTC/USD, BCH/USD, UNI/USD, AAVE/USD
+Selected: ARB/USD, PEPE/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, TRUMP/USD, UNI/USD, RENDER/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

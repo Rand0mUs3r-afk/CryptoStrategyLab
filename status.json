@@ -4,19 +4,84 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [],
-  "entry_decisions": [],
-  "entry_pause_reasons": [
-    "entry_scan_interval_not_elapsed"
+  "data_errors": [
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "TRUMP/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    }
   ],
-  "candidates": 0,
+  "entry_decisions": [
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794171600,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "6h",
+      "strategy": "trend_pullback",
+      "signal_time": 1794160800,
+      "outcome": "skipped",
+      "reason": "already_seen",
+      "details": {}
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "6h",
+      "strategy": "macd_momentum",
+      "signal_time": 1794160800,
+      "outcome": "skipped",
+      "reason": "already_seen",
+      "details": {}
+    }
+  ],
+  "entry_pause_reasons": [],
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "not_due",
-  "next_entry_scan_at_utc": "2026-11-08T21:26:37+00:00",
-  "observed_at_utc": "2026-11-08T21:25:53+00:00",
+  "entry_scan_status": "completed_with_data_errors",
+  "next_entry_scan_at_utc": "2026-11-08T22:29:16+00:00",
+  "watchlist_status": "partial",
+  "watchlist_symbols": [
+    "ARB/USD",
+    "PEPE/USD",
+    "AVAX/USD",
+    "BTC/USD",
+    "ETH/USD",
+    "LINK/USD",
+    "LTC/USD",
+    "SOL/USD",
+    "TRUMP/USD",
+    "UNI/USD",
+    "RENDER/USD"
+  ],
+  "observed_at_utc": "2026-11-08T21:59:34+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T21:25:53+00:00",
+    "observed_at_utc": "2026-11-08T21:59:16+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -160,10 +225,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.339493441",
+        "filled_quantity": "0.100184878",
         "fee_quantity": "-0.088999060",
-        "expected_quantity": "2.250494381",
-        "broker_quantity": "2.239308563",
+        "expected_quantity": "0.011185818",
+        "broker_quantity": "0",
         "difference_quantity": "-0.011185818",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.011185818"
