@@ -26,46 +26,19 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "ARB/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794149100,
+      "symbol": "PEPE/USD",
+      "timeframe": "1h",
+      "strategy": "ema_cross",
+      "signal_time": 1794150000,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "BTC/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794149100,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "15m",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1794149100,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794149100,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "15m",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1794149100,
+      "symbol": "PEPE/USD",
+      "timeframe": "1h",
+      "strategy": "donchian_breakout",
+      "signal_time": 1794150000,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -80,10 +53,10 @@
       "details": {}
     },
     {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "ema_cross",
-      "signal_time": 1794149100,
+      "symbol": "UNI/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794150000,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -92,10 +65,10 @@
       }
     },
     {
-      "symbol": "LTC/USD",
-      "timeframe": "15m",
+      "symbol": "AAVE/USD",
+      "timeframe": "1h",
       "strategy": "bollinger_reversion",
-      "signal_time": 1794149100,
+      "signal_time": 1794150000,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -105,10 +78,10 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 8,
+  "candidates": 5,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-08T15:16:32+00:00",
+  "next_entry_scan_at_utc": "2026-11-08T15:48:28+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -123,10 +96,10 @@
     "UNI/USD",
     "AAVE/USD"
   ],
-  "observed_at_utc": "2026-11-08T14:46:49+00:00",
+  "observed_at_utc": "2026-11-08T15:18:42+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T14:46:32+00:00",
+    "observed_at_utc": "2026-11-08T15:18:28+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
