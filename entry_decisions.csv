@@ -1,3 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,6h,trend_pullback,1794139200,skipped,already_seen,{}
-LTC/USD,1h,bollinger_reversion,1794153600,skipped,already_seen,{}

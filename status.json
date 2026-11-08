@@ -4,69 +4,19 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "TRUMP/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    }
+  "data_errors": [],
+  "entry_decisions": [],
+  "entry_pause_reasons": [
+    "entry_scan_interval_not_elapsed"
   ],
-  "entry_decisions": [
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "6h",
-      "strategy": "trend_pullback",
-      "signal_time": 1794139200,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794153600,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    }
-  ],
-  "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "completed_with_data_errors",
+  "entry_scan_status": "not_due",
   "next_entry_scan_at_utc": "2026-11-08T17:28:25+00:00",
-  "watchlist_status": "partial",
-  "watchlist_symbols": [
-    "ARB/USD",
-    "BTC/USD",
-    "ETH/USD",
-    "LINK/USD",
-    "PEPE/USD",
-    "SOL/USD",
-    "AVAX/USD",
-    "LTC/USD",
-    "BCH/USD",
-    "TRUMP/USD",
-    "UNI/USD"
-  ],
-  "observed_at_utc": "2026-11-08T16:58:42+00:00",
+  "observed_at_utc": "2026-11-08T17:26:07+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T16:58:25+00:00",
+    "observed_at_utc": "2026-11-08T17:26:07+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
