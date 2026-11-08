@@ -26,19 +26,10 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "PEPE/USD",
+      "symbol": "AAVE/USD",
       "timeframe": "15m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794106800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "15m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794106800,
+      "strategy": "ema_cross",
+      "signal_time": 1794109500,
       "outcome": "skipped",
       "reason": "max_positions",
       "details": {
@@ -48,10 +39,10 @@
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-08T03:39:51+00:00",
+  "next_entry_scan_at_utc": "2026-11-08T04:26:17+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -63,14 +54,14 @@
     "AVAX/USD",
     "LTC/USD",
     "UNI/USD",
-    "XRP/USD",
     "AAVE/USD",
-    "BCH/USD"
+    "BCH/USD",
+    "HYPE/USD"
   ],
-  "observed_at_utc": "2026-11-08T03:10:07+00:00",
+  "observed_at_utc": "2026-11-08T03:56:32+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T03:09:51+00:00",
+    "observed_at_utc": "2026-11-08T03:56:17+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
