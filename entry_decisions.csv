@@ -1,10 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,1h,trend_pullback,1794092400,skipped,already_seen,{}
-BTC/USD,5m,squeeze_breakout,1794095100,skipped,symbol_already_active,{}
-SOL/USD,5m,ema_cross,1794095100,skipped,symbol_already_active,{}
-SOL/USD,5m,donchian_breakout,1794095100,skipped,symbol_already_active,{}
-LTC/USD,5m,squeeze_breakout,1794095100,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-UNI/USD,1h,trend_pullback,1794092400,skipped,already_seen,{}
-UNI/USD,5m,donchian_breakout,1794095100,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-UNI/USD,5m,squeeze_breakout,1794095100,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-AAVE/USD,1h,trend_pullback,1794092400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+UNI/USD,1h,donchian_breakout,1794096000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+UNI/USD,1h,squeeze_breakout,1794096000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+AAVE/USD,1h,trend_pullback,1794096000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
