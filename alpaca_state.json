@@ -72270,6 +72270,21 @@
       "filled_at": "2026-11-08T23:02:18.465563363Z",
       "broker_updated_at": "2026-11-08T23:02:18.486990923Z",
       "reference_ask": 10.42
+    },
+    "csl2-66aad832a65932c1922f05e50a616d4d": {
+      "payload": {
+        "symbol": "SOL/USD",
+        "side": "buy",
+        "qty": "2.306326252",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-66aad832a65932c1922f05e50a616d4d"
+      },
+      "cycle_id": "csl2-66aad832a65932c1922f05e50a616d4d",
+      "status": "queued",
+      "created_at": 1794178945.8646648,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -74940,6 +74955,22 @@
       "tp": 10.648976580034741,
       "sl": 10.323061709982628,
       "entry_time_utc": "2026-11-08T23:02:18.465563363Z"
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794178800,
+      "atr": 0.6041301383706015,
+      "signal_close": 86.24,
+      "hold_seconds": 21600,
+      "id": "csl2-66aad832a65932c1922f05e50a616d4d",
+      "created_at": 1794178945.8646648,
+      "status": "pending",
+      "distance": 0.9061952075559022,
+      "target_r": 2.0,
+      "reference_ask": 86.718,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -75720,7 +75751,8 @@
     "ARB/USD|1h|bollinger_reversion|1794178800": 1794178908.6494915,
     "ARB/USD|1h|rsi_rebound|1794178800": 1794178908.6495242,
     "ETH/USD|15m|bollinger_reversion|1794178800": 1794178908.6495543,
-    "LINK/USD|15m|rsi_rebound|1794178800": 1794178927.460061
+    "LINK/USD|15m|rsi_rebound|1794178800": 1794178927.460061,
+    "SOL/USD|15m|bollinger_reversion|1794178800": 1794178945.8646648
   },
   "day": "2026-11-08",
   "day_start_equity": 99777.39,
@@ -75729,7 +75761,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T23:02:24+00:00",
+    "observed_at_utc": "2026-11-08T23:02:35+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
