@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-08T20:21:22+00:00",
+  "observed_at_utc": "2026-11-08T20:57:13+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -164,13 +164,13 @@
     },
     {
       "symbol": "UNIUSD",
-      "filled_quantity": "0.483447013",
+      "filled_quantity": "29.167933438",
       "fee_quantity": "-0.483447013",
-      "expected_quantity": "0E-9",
-      "broker_quantity": "0",
-      "difference_quantity": "0E-9",
+      "expected_quantity": "28.684486425",
+      "broker_quantity": "28.612775208",
+      "difference_quantity": "-0.071711217",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0"
+      "unconfirmed_shortfall": "0.071711217"
     },
     {
       "symbol": "XRPUSD",
