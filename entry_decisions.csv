@@ -1,3 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,6h,trend_pullback,1794160800,skipped,symbol_already_active,{}
-PEPE/USD,6h,macd_momentum,1794160800,skipped,symbol_already_active,{}
+PEPE/USD,6h,trend_pullback,1794160800,skipped,already_seen,{}
+PEPE/USD,6h,macd_momentum,1794160800,skipped,already_seen,{}
+LTC/USD,1h,bollinger_reversion,1794164400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 58.13953488372037}"

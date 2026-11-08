@@ -31,7 +31,7 @@
       "strategy": "trend_pullback",
       "signal_time": 1794160800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -40,33 +40,45 @@
       "strategy": "macd_momentum",
       "signal_time": 1794160800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794164400,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 58.13953488372037,
+        "max_spread_bps": 50
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-08T18:56:59+00:00",
+  "next_entry_scan_at_utc": "2026-11-08T19:44:39+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
-    "BTC/USD",
-    "ETH/USD",
     "LINK/USD",
     "PEPE/USD",
     "SOL/USD",
     "AVAX/USD",
+    "BTC/USD",
+    "ETH/USD",
     "LTC/USD",
     "BCH/USD",
     "UNI/USD",
     "AAVE/USD"
   ],
-  "observed_at_utc": "2026-11-08T18:27:13+00:00",
+  "observed_at_utc": "2026-11-08T19:14:56+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T18:26:59+00:00",
+    "observed_at_utc": "2026-11-08T19:14:39+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -100,10 +112,10 @@
       },
       {
         "symbol": "BTCUSD",
-        "filled_quantity": "0.002708391",
+        "filled_quantity": "0.000082803",
         "fee_quantity": "-0.000082803",
-        "expected_quantity": "0.002625588",
-        "broker_quantity": "0.002625588",
+        "expected_quantity": "0E-9",
+        "broker_quantity": "0",
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
@@ -120,10 +132,10 @@
       },
       {
         "symbol": "ETHUSD",
-        "filled_quantity": "0.091196684",
+        "filled_quantity": "0.002376063",
         "fee_quantity": "-0.002376063",
-        "expected_quantity": "0.088820621",
-        "broker_quantity": "0.088820621",
+        "expected_quantity": "0E-9",
+        "broker_quantity": "0",
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
