@@ -72250,6 +72250,21 @@
       "filled_at": "2026-11-08T23:01:59.941469873Z",
       "broker_updated_at": "2026-11-08T23:01:59.987018507Z",
       "reference_ask": 2133.03
+    },
+    "csl2-a522e8b7c74f204c5cf97420c727724b": {
+      "payload": {
+        "symbol": "LINK/USD",
+        "side": "buy",
+        "qty": "19.193857965",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-a522e8b7c74f204c5cf97420c727724b"
+      },
+      "cycle_id": "csl2-a522e8b7c74f204c5cf97420c727724b",
+      "status": "queued",
+      "created_at": 1794178927.460061,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -74898,6 +74913,22 @@
       "tp": 2178.221243509793,
       "sl": 2111.6943782451035,
       "entry_time_utc": "2026-11-08T23:01:59.941469873Z"
+    },
+    {
+      "symbol": "LINK/USD",
+      "timeframe": "15m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794178800,
+      "atr": 0.07242552667824707,
+      "signal_close": 10.367,
+      "hold_seconds": 21600,
+      "id": "csl2-a522e8b7c74f204c5cf97420c727724b",
+      "created_at": 1794178927.460061,
+      "status": "pending",
+      "distance": 0.1086382900173706,
+      "target_r": 2.0,
+      "reference_ask": 10.42,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -75677,7 +75708,8 @@
     "ARB/USD|1h|bollinger_reversion|1794171600": 1794175174.110622,
     "ARB/USD|1h|bollinger_reversion|1794178800": 1794178908.6494915,
     "ARB/USD|1h|rsi_rebound|1794178800": 1794178908.6495242,
-    "ETH/USD|15m|bollinger_reversion|1794178800": 1794178908.6495543
+    "ETH/USD|15m|bollinger_reversion|1794178800": 1794178908.6495543,
+    "LINK/USD|15m|rsi_rebound|1794178800": 1794178927.460061
   },
   "day": "2026-11-08",
   "day_start_equity": 99777.39,
@@ -75686,7 +75718,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T23:02:06+00:00",
+    "observed_at_utc": "2026-11-08T23:02:17+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
