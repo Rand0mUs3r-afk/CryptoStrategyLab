@@ -20,44 +20,20 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
+      "symbol": "PEPE/USD",
+      "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1794130200,
+      "signal_time": 1794132900,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794130200,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
-    },
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "5m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794130200,
-      "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 3,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-08T10:01:54+00:00",
+  "next_entry_scan_at_utc": "2026-11-08T10:46:34+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -68,13 +44,13 @@
     "SOL/USD",
     "AVAX/USD",
     "LTC/USD",
-    "UNI/USD",
-    "BCH/USD"
+    "BCH/USD",
+    "UNI/USD"
   ],
-  "observed_at_utc": "2026-11-08T09:32:07+00:00",
+  "observed_at_utc": "2026-11-08T10:16:49+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T09:31:54+00:00",
+    "observed_at_utc": "2026-11-08T10:16:34+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
