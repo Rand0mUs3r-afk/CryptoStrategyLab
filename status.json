@@ -4,96 +4,19 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
-      "symbol": "AAVE/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    }
+  "data_errors": [],
+  "entry_decisions": [],
+  "entry_pause_reasons": [
+    "entry_scan_interval_not_elapsed"
   ],
-  "entry_decisions": [
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794167100,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "6h",
-      "strategy": "trend_pullback",
-      "signal_time": 1794160800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "6h",
-      "strategy": "macd_momentum",
-      "signal_time": 1794160800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794167100,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794164400,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    }
-  ],
-  "entry_pause_reasons": [],
-  "candidates": 5,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "completed_with_data_errors",
+  "entry_scan_status": "not_due",
   "next_entry_scan_at_utc": "2026-11-08T20:21:53+00:00",
-  "watchlist_status": "partial",
-  "watchlist_symbols": [
-    "ARB/USD",
-    "LINK/USD",
-    "PEPE/USD",
-    "SOL/USD",
-    "AVAX/USD",
-    "BTC/USD",
-    "ETH/USD",
-    "LTC/USD",
-    "BCH/USD",
-    "UNI/USD",
-    "AAVE/USD"
-  ],
-  "observed_at_utc": "2026-11-08T19:52:07+00:00",
+  "observed_at_utc": "2026-11-08T20:21:22+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T19:51:53+00:00",
+    "observed_at_utc": "2026-11-08T20:21:22+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

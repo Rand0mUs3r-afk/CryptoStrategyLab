@@ -1,6 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,15m,trend_pullback,1794167100,skipped,symbol_already_active,{}
-PEPE/USD,6h,trend_pullback,1794160800,skipped,already_seen,{}
-PEPE/USD,6h,macd_momentum,1794160800,skipped,already_seen,{}
-SOL/USD,15m,trend_pullback,1794167100,skipped,symbol_already_active,{}
-LTC/USD,1h,bollinger_reversion,1794164400,skipped,already_seen,{}
