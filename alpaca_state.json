@@ -66573,14 +66573,14 @@
     "UNI/USD|5m|squeeze_breakout|1794095100": 1794095202.1122568,
     "AAVE/USD|1h|trend_pullback|1794092400": 1794095202.112264
   },
-  "day": "2026-11-07",
-  "day_start_equity": 99793.71,
+  "day": "2026-11-08",
+  "day_start_equity": 99777.39,
   "daily_paused": false,
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-07T23:46:25+00:00",
+    "observed_at_utc": "2026-11-08T00:17:51+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -66771,7 +66771,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1794095185.6274755,
+  "last_entry_scan_at": 1794097071.9017174,
   "watchlist": {
     "observed_at_utc": "2026-11-07T23:46:26+00:00",
     "status": "partial",
