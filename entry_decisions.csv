@@ -1,5 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,15m,trend_pullback,1794100500,skipped,symbol_already_active,{}
-ETH/USD,5m,bollinger_reversion,1794101100,skipped,symbol_already_active,{}
-LINK/USD,5m,bollinger_reversion,1794101100,skipped,symbol_already_active,{}
-UNI/USD,15m,trend_pullback,1794100500,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
