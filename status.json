@@ -20,23 +20,29 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BCH/USD",
+      "symbol": "ARB/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794121200,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "LINK/USD",
       "timeframe": "15m",
       "strategy": "bollinger_reversion",
-      "signal_time": 1794117600,
+      "signal_time": 1794121200,
       "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
+      "reason": "symbol_already_active",
+      "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-08T06:44:40+00:00",
+  "next_entry_scan_at_utc": "2026-11-08T07:43:32+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -51,10 +57,10 @@
     "BCH/USD",
     "ONDO/USD"
   ],
-  "observed_at_utc": "2026-11-08T06:14:57+00:00",
+  "observed_at_utc": "2026-11-08T07:13:48+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T06:14:40+00:00",
+    "observed_at_utc": "2026-11-08T07:13:32+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

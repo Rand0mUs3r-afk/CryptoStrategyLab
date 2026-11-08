@@ -1,2 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BCH/USD,15m,bollinger_reversion,1794117600,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+ARB/USD,15m,trend_pullback,1794121200,skipped,symbol_already_active,{}
+LINK/USD,15m,bollinger_reversion,1794121200,skipped,symbol_already_active,{}
