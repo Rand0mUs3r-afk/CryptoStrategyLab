@@ -27,6 +27,15 @@
   "entry_decisions": [
     {
       "symbol": "PEPE/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794167100,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "PEPE/USD",
       "timeframe": "6h",
       "strategy": "trend_pullback",
       "signal_time": 1794160800,
@@ -44,23 +53,29 @@
       "details": {}
     },
     {
+      "symbol": "SOL/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794167100,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
       "symbol": "LTC/USD",
       "timeframe": "1h",
       "strategy": "bollinger_reversion",
       "signal_time": 1794164400,
       "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 58.13953488372037,
-        "max_spread_bps": 50
-      }
+      "reason": "already_seen",
+      "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 3,
+  "candidates": 5,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-08T19:44:39+00:00",
+  "next_entry_scan_at_utc": "2026-11-08T20:21:53+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -75,10 +90,10 @@
     "UNI/USD",
     "AAVE/USD"
   ],
-  "observed_at_utc": "2026-11-08T19:14:56+00:00",
+  "observed_at_utc": "2026-11-08T19:52:07+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T19:14:39+00:00",
+    "observed_at_utc": "2026-11-08T19:51:53+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
