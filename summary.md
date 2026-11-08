@@ -8,34 +8,21 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 3. Skipped: 2. Broker order results: 1.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| PEPE/USD | 6h | trend_pullback | skipped | already_seen | {} |
-| PEPE/USD | 6h | macd_momentum | skipped | already_seen | {} |
-| UNI/USD | 5m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "47ad6d26-0f47-40f6-861f-e11543354edb", "broker_status": "pending_new", "client_order_id": "csl2-5626485a75392db005574c11092fcfdd", "quantity": "28.684486425", "reference_ask": 6.97241} |
+Entries paused: entry_scan_interval_not_elapsed.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
-
-## Data errors
-
-| Coin | Bar | Stage | Error type |
-| --- | --- | --- | --- |
-| ARB/USD | 5m | candles | ValueError |
-| PEPE/USD | 5m | candles | ValueError |
-| AAVE/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| LINK/USD | 1h | rsi_rebound | 10.82 | 18.501387604 | 200.18501387528002 | 18.455134134 | 11.344656284249725 | 10.557671857875139 | open |
 | ARB/USD | 1h | ema_cross | 0.165593 | 1207.802403526 | 200.0036234070809 | 1204.782897517 | 0.17492801982768363 | 0.16092549008615817 | open |
 | PEPE/USD | 6h | trend_pullback | 4.93e-06 | 40567951.318458416 | 200.0 | 40466531.44016227 | 5.6313488264385755e-06 | 4.579325586780713e-06 | open |
 | SOL/USD | 1h | bollinger_reversion | 89.09 | 2.244920866 | 199.99999995194003 | 2.239308563 | 90.60555763529119 | 88.33222118235442 | open |
-| UNI/USD | 5m | bollinger_reversion | 6.977 | 28.684486425 | 200.131661787225 | 28.612775208 | 7.026001862545989 | 6.952499068727006 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -131,6 +118,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | BTC/USD | 1h | bollinger_reversion | 75995.880171653 | 0.002632171 | 200.03415190730004 | 0.0 | 78167.06678227903 | 74910.28686633999 | closed |
 | ETH/USD | 1h | bollinger_reversion | 2246.47 | 0.08904323 | 200.0329448981 | 0.0 | 2326.647858081802 | 2206.3810709590985 | closed |
 | SOL/USD | 15m | rsi_rebound | 90.05 | 2.222222222 | 200.1111110911 | 0.0 | 92.24357750062816 | 88.9532112496859 | closed |
+| LINK/USD | 1h | rsi_rebound | 10.82 | 18.501387604 | 200.18501387528002 | 0.0 | 11.344656284249725 | 10.557671857875139 | closed |
 | TRUMP/USD | 5m | trend_pullback | 1.2087 | 165.498522925 | 200.0380646594475 | 0.0 | 1.2504055615895013 | 1.1878472192052494 | closed |
 | ONDO/USD | 5m | rsi_rebound | 0.366236 | 545.348450392 | 199.72623507776453 | 0.0 | 0.37229023919876864 | 0.36320888040061566 | closed |
 | XRP/USD | 5m | bollinger_reversion | 1.18303 | 168.918918918 | 199.83614864756154 | 0.0 | 1.1944162928606987 | 1.1773368535696507 | closed |
@@ -143,6 +131,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | AAVE/USD | 15m | trend_pullback | 131.9 | 1.516622179 | 200.04246541010002 | 0.0 | 133.52356834455492 | 131.08821582772254 | closed |
 | SOL/USD | 1h | bollinger_reversion | 89.75232266 | 2.229405863 | 200.0943543560718 | 0.0 | 91.2379270674575 | 89.00952045627125 | closed |
 | LTC/USD | 5m | bollinger_reversion | 51.796 | 3.852080123 | 199.52234205090798 | 0.0 | 52.059835133387054 | 51.66408243330647 | closed |
+| UNI/USD | 5m | bollinger_reversion | 6.977 | 28.684486425 | 200.131661787225 | 0.0 | 7.026001862545989 | 6.952499068727006 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -165,7 +154,7 @@ Accounting final: False
 | ETHUSD | 0E-9 | 0 | 0E-9 | 0 |
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
 | HYPEUSD | 0 | 0 | 0 | 0 |
-| LINKUSD | 18.455134134 | 18.455134134 | 0E-9 | 0 |
+| LINKUSD | 0E-9 | 0 | 0E-9 | 0 |
 | LTCUSD | 0.009630201 | 0 | -0.009630201 | 0.009630201 |
 | ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
 | PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
@@ -173,14 +162,14 @@ Accounting final: False
 | RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
 | SOLUSD | 2.250494381 | 2.239308563 | -0.011185818 | 0.011185818 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
-| UNIUSD | 28.684486425 | 28.612775208 | -0.071711217 | 0.071711217 |
+| UNIUSD | 0.071711217 | 0 | -0.071711217 | 0.071711217 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
 PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
 New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
-Entry scan status: completed_with_data_errors
+Entry scan status: not_due
 Next entry scan eligible: 2026-11-08T21:26:37+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.

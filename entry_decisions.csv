@@ -1,4 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,6h,trend_pullback,1794160800,skipped,already_seen,{}
-PEPE/USD,6h,macd_momentum,1794160800,skipped,already_seen,{}
-UNI/USD,5m,bollinger_reversion,1794171300,order_result,broker_order_returned,"{""broker_order_id"": ""47ad6d26-0f47-40f6-861f-e11543354edb"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-5626485a75392db005574c11092fcfdd"", ""quantity"": ""28.684486425"", ""reference_ask"": 6.97241}"
