@@ -26,37 +26,10 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
-      "timeframe": "15m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794159900,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "15m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794159900,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "15m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794159900,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "15m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794159900,
+      "symbol": "PEPE/USD",
+      "timeframe": "6h",
+      "strategy": "trend_pullback",
+      "signal_time": 1794160800,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -64,18 +37,18 @@
     {
       "symbol": "PEPE/USD",
       "timeframe": "6h",
-      "strategy": "trend_pullback",
-      "signal_time": 1794139200,
+      "strategy": "macd_momentum",
+      "signal_time": 1794160800,
       "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 5,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-08T18:26:24+00:00",
+  "next_entry_scan_at_utc": "2026-11-08T18:56:59+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -90,10 +63,10 @@
     "UNI/USD",
     "AAVE/USD"
   ],
-  "observed_at_utc": "2026-11-08T17:56:38+00:00",
+  "observed_at_utc": "2026-11-08T18:27:13+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T17:56:24+00:00",
+    "observed_at_utc": "2026-11-08T18:26:59+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
