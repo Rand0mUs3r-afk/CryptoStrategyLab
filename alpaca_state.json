@@ -76918,14 +76918,15 @@
         "client_order_id": "csl2-46e7cf0998b374cb3baab8a3683aab28"
       },
       "cycle_id": "csl2-46e7cf0998b374cb3baab8a3683aab28",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1794223974.8527281,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "183.994332974",
       "broker_order_id": "4c944efd-b208-4bf2-bc98-5012cd47acf2",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-09T11:33:06.816605418Z"
+      "filled_avg_price": 1.086,
+      "filled_at": "2026-11-09T11:33:06.818136697Z",
+      "broker_updated_at": "2026-11-09T11:33:06.836534219Z",
+      "reference_ask": 1.08699
     }
   },
   "cycles": [
@@ -79854,11 +79855,17 @@
       "hold_seconds": 21600,
       "id": "csl2-46e7cf0998b374cb3baab8a3683aab28",
       "created_at": 1794223974.8527281,
-      "status": "pending",
+      "status": "open",
       "distance": 0.010974872609751394,
       "target_r": 2.0,
       "reference_ask": 1.08699,
-      "remaining_qty": 0.0
+      "remaining_qty": 183.534347141,
+      "entry_price": 1.086,
+      "entry_qty": 183.994332974,
+      "entry_notional_usd": 199.81784560976402,
+      "tp": 1.1079497452195028,
+      "sl": 1.0750251273902487,
+      "entry_time_utc": "2026-11-09T11:33:06.818136697Z"
     }
   ],
   "seen": {
@@ -80702,7 +80709,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-09T11:33:05+00:00",
+    "observed_at_utc": "2026-11-09T11:33:13+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -80876,13 +80883,13 @@
       },
       {
         "symbol": "XRPUSD",
-        "filled_quantity": "0.422297298",
+        "filled_quantity": "184.416630272",
         "fee_quantity": "-0.422297298",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "183.994332974",
+        "broker_quantity": "183.534347141",
+        "difference_quantity": "-0.459985833",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.459985833"
       }
     ],
     "entries_blocked": false,
