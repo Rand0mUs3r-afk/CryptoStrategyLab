@@ -1,6 +1,6 @@
 {
-  "status": "fee_pending",
-  "observed_at_utc": "2026-11-09T11:33:13+00:00",
+  "status": "mismatch",
+  "observed_at_utc": "2026-11-09T12:29:25+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -10,7 +10,7 @@
       "broker_quantity": "0",
       "difference_quantity": "-0.003791556",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.003791556"
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "ARBUSD",
@@ -20,7 +20,7 @@
       "broker_quantity": "1066.130641934",
       "difference_quantity": "-2.672006622",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "2.672006622"
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "AVAXUSD",
@@ -40,7 +40,7 @@
       "broker_quantity": "0.002679124",
       "difference_quantity": "-0.000013449",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.000013449"
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "DOTUSD",
@@ -60,7 +60,7 @@
       "broker_quantity": "0",
       "difference_quantity": "-0.000471569",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.000471569"
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "FILUSD",
@@ -90,7 +90,7 @@
       "broker_quantity": "0",
       "difference_quantity": "-0.096538706",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.096538706"
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "LTCUSD",
@@ -100,7 +100,7 @@
       "broker_quantity": "0",
       "difference_quantity": "-0.009630201",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.009630201"
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "ONDOUSD",
@@ -140,7 +140,7 @@
       "broker_quantity": "125.629722921",
       "difference_quantity": "-0.633739013",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.633739013"
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "SOLUSD",
@@ -150,7 +150,7 @@
       "broker_quantity": "2.293179886",
       "difference_quantity": "-0.022698953",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.022698953"
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "TRUMPUSD",
@@ -170,7 +170,7 @@
       "broker_quantity": "0",
       "difference_quantity": "-0.144894087",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.144894087"
+      "unconfirmed_shortfall": "0"
     },
     {
       "symbol": "XRPUSD",
@@ -180,14 +180,12 @@
       "broker_quantity": "183.534347141",
       "difference_quantity": "-0.459985833",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.459985833"
+      "unconfirmed_shortfall": "0"
     }
   ],
-  "entries_blocked": false,
-  "exit_checks_allowed": true,
+  "entries_blocked": true,
+  "exit_checks_allowed": false,
   "accounting_final": false,
   "attempts": 3,
-  "retry_exhausted": true,
-  "pending_entry_policy_enabled": true,
-  "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
+  "retry_exhausted": true
 }

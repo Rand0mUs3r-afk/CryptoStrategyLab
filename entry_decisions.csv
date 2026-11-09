@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-XRP/USD,15m,bollinger_reversion,1794223800,order_result,broker_order_returned,"{""broker_order_id"": ""4c944efd-b208-4bf2-bc98-5012cd47acf2"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-46e7cf0998b374cb3baab8a3683aab28"", ""quantity"": ""183.994332974"", ""reference_ask"": 1.08699}"
