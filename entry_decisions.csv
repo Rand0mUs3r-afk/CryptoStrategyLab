@@ -1,7 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-UNI/USD,5m,bollinger_reversion,1794202800,skipped,symbol_already_active,{}
-UNI/USD,5m,rsi_rebound,1794202800,skipped,symbol_already_active,{}
-BTC/USD,5m,bollinger_reversion,1794202800,order_result,broker_order_returned,"{""broker_order_id"": ""3de6d8e7-f7dc-4da7-8911-2c1838e9f032"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-811fbc9d35a2d6e5753d72d63e701096"", ""quantity"": ""0.002693468"", ""reference_ask"": 74253.7}"
-LINK/USD,5m,bollinger_reversion,1794202800,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-LINK/USD,5m,rsi_rebound,1794202800,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-RENDER/USD,1h,ema_cross,1794200400,order_result,broker_order_returned,"{""broker_order_id"": ""80617aef-4d5d-44ed-9a67-70f81551d476"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-fae63c20d183c8a72087cc4b826a1c75"", ""quantity"": ""127.551020408"", ""reference_ask"": 1.568}"
+ETH/USD,5m,bollinger_reversion,1794206400,order_result,broker_order_returned,"{""broker_order_id"": ""f7c03bc0-6e38-4324-99e4-8c8a63417603"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-14c0a1da2211b54726ad35df7059caa9"", ""quantity"": ""0.094863699"", ""reference_ask"": 2108.288}"
