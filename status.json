@@ -16,12 +16,6 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
-    },
-    {
-      "symbol": "TRUMP/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
@@ -31,7 +25,7 @@
       "strategy": "trend_pullback",
       "signal_time": 1794189600,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -40,7 +34,7 @@
       "strategy": "donchian_breakout",
       "signal_time": 1794189600,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -49,25 +43,7 @@
       "strategy": "macd_momentum",
       "signal_time": 1794189600,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794189600,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1794189600,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -76,7 +52,7 @@
       "strategy": "trend_pullback",
       "signal_time": 1794189600,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -85,7 +61,7 @@
       "strategy": "donchian_breakout",
       "signal_time": 1794189600,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -94,15 +70,15 @@
       "strategy": "macd_momentum",
       "signal_time": 1794189600,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 8,
+  "candidates": 6,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-09T02:40:33+00:00",
+  "next_entry_scan_at_utc": "2026-11-09T03:24:52+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -114,13 +90,12 @@
     "AVAX/USD",
     "BTC/USD",
     "LTC/USD",
-    "RENDER/USD",
-    "TRUMP/USD"
+    "RENDER/USD"
   ],
-  "observed_at_utc": "2026-11-09T02:10:52+00:00",
+  "observed_at_utc": "2026-11-09T02:55:07+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-09T02:10:33+00:00",
+    "observed_at_utc": "2026-11-09T02:54:52+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

@@ -1,9 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,1h,trend_pullback,1794189600,skipped,symbol_already_active,{}
-ARB/USD,1h,donchian_breakout,1794189600,skipped,symbol_already_active,{}
-ARB/USD,1h,macd_momentum,1794189600,skipped,symbol_already_active,{}
-PEPE/USD,15m,trend_pullback,1794189600,skipped,symbol_already_active,{}
-PEPE/USD,15m,donchian_breakout,1794189600,skipped,symbol_already_active,{}
-PEPE/USD,1h,trend_pullback,1794189600,skipped,symbol_already_active,{}
-PEPE/USD,1h,donchian_breakout,1794189600,skipped,symbol_already_active,{}
-PEPE/USD,1h,macd_momentum,1794189600,skipped,symbol_already_active,{}
+ARB/USD,1h,trend_pullback,1794189600,skipped,already_seen,{}
+ARB/USD,1h,donchian_breakout,1794189600,skipped,already_seen,{}
+ARB/USD,1h,macd_momentum,1794189600,skipped,already_seen,{}
+PEPE/USD,1h,trend_pullback,1794189600,skipped,already_seen,{}
+PEPE/USD,1h,donchian_breakout,1794189600,skipped,already_seen,{}
+PEPE/USD,1h,macd_momentum,1794189600,skipped,already_seen,{}
