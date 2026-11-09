@@ -76487,14 +76487,14 @@
     "PEPE/USD|15m|trend_pullback|1794180600": 1794180771.092722,
     "PEPE/USD|15m|macd_momentum|1794180600": 1794180771.0927444
   },
-  "day": "2026-11-08",
-  "day_start_equity": 99777.39,
+  "day": "2026-11-09",
+  "day_start_equity": 99754.09,
   "daily_paused": false,
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T23:32:32+00:00",
+    "observed_at_utc": "2026-11-09T00:06:52+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -76685,7 +76685,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1794180752.878318,
+  "last_entry_scan_at": 1794182813.0188982,
   "watchlist": {
     "observed_at_utc": "2026-11-08T23:32:34+00:00",
     "status": "partial",
