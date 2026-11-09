@@ -74811,10 +74811,14 @@
         "client_order_id": "csl2-fae63c20d183c8a72087cc4b826a1c75"
       },
       "cycle_id": "csl2-fae63c20d183c8a72087cc4b826a1c75",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794202898.560427,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "80617aef-4d5d-44ed-9a67-70f81551d476",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-09T05:41:50.172038332Z"
     }
   },
   "cycles": [
