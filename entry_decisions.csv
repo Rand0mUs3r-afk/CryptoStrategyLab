@@ -1,5 +1,9 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,1h,trend_pullback,1794182400,skipped,symbol_already_active,{}
-UNI/USD,1h,bollinger_reversion,1794182400,skipped,symbol_already_active,{}
-BTC/USD,1h,bollinger_reversion,1794182400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-BTC/USD,1h,rsi_rebound,1794182400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+ARB/USD,1h,trend_pullback,1794186000,skipped,symbol_already_active,{}
+ARB/USD,1h,rolling_vwap_reclaim,1794186000,skipped,symbol_already_active,{}
+PEPE/USD,1h,rolling_vwap_reclaim,1794186000,skipped,symbol_already_active,{}
+SOL/USD,1h,bollinger_reversion,1794186000,skipped,symbol_already_active,{}
+SOL/USD,1h,rsi_rebound,1794186000,skipped,symbol_already_active,{}
+UNI/USD,5m,ema_cross,1794186300,skipped,symbol_already_active,{}
+UNI/USD,5m,donchian_breakout,1794186300,skipped,symbol_already_active,{}
+AVAX/USD,1h,bollinger_reversion,1794186000,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
