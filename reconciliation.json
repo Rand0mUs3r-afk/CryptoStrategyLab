@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-09T06:42:31+00:00",
+  "observed_at_utc": "2026-11-09T08:01:54+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -54,10 +54,10 @@
     },
     {
       "symbol": "ETHUSD",
-      "filled_quantity": "0.097474171",
+      "filled_quantity": "0.002847632",
       "fee_quantity": "-0.002376063",
-      "expected_quantity": "0.095098108",
-      "broker_quantity": "0.094626539",
+      "expected_quantity": "0.000471569",
+      "broker_quantity": "0",
       "difference_quantity": "-0.000471569",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.000471569"
@@ -84,13 +84,13 @@
     },
     {
       "symbol": "LINKUSD",
-      "filled_quantity": "0.440895843",
+      "filled_quantity": "19.862519879",
       "fee_quantity": "-0.392911198",
-      "expected_quantity": "0.047984645",
-      "broker_quantity": "0",
-      "difference_quantity": "-0.047984645",
+      "expected_quantity": "19.469608681",
+      "broker_quantity": "19.373069975",
+      "difference_quantity": "-0.096538706",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.047984645"
+      "unconfirmed_shortfall": "0.096538706"
     },
     {
       "symbol": "LTCUSD",
@@ -134,10 +134,10 @@
     },
     {
       "symbol": "RENDERUSD",
-      "filled_quantity": "128.787518473",
+      "filled_quantity": "1.555375617",
       "fee_quantity": "-1.236498065",
-      "expected_quantity": "127.551020408",
-      "broker_quantity": "127.232142856",
+      "expected_quantity": "0.318877552",
+      "broker_quantity": "0",
       "difference_quantity": "-0.318877552",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.318877552"
@@ -164,10 +164,10 @@
     },
     {
       "symbol": "UNIUSD",
-      "filled_quantity": "29.828305971",
+      "filled_quantity": "0.628341100",
       "fee_quantity": "-0.483447013",
-      "expected_quantity": "29.344858958",
-      "broker_quantity": "29.199964871",
+      "expected_quantity": "0.144894087",
+      "broker_quantity": "0",
       "difference_quantity": "-0.144894087",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.144894087"
