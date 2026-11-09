@@ -75857,6 +75857,21 @@
       "filled_at": "2026-11-09T09:01:57.74064574Z",
       "broker_updated_at": "2026-11-09T09:01:57.787011172Z",
       "reference_ask": 1.588
+    },
+    "csl2-6f7bdc878c1508156d5031f547c84f78": {
+      "payload": {
+        "symbol": "ARB/USD",
+        "side": "buy",
+        "qty": "1068.802648556",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-6f7bdc878c1508156d5031f547c84f78"
+      },
+      "cycle_id": "csl2-6f7bdc878c1508156d5031f547c84f78",
+      "status": "queued",
+      "created_at": 1794214925.958195,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -78749,6 +78764,22 @@
       "tp": 1.6429052297457325,
       "sl": 1.5696973851271339,
       "entry_time_utc": "2026-11-09T09:01:57.74064574Z"
+    },
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1794214800,
+      "atr": 0.0015956636443211509,
+      "signal_close": 0.17534,
+      "hold_seconds": 21600,
+      "id": "csl2-6f7bdc878c1508156d5031f547c84f78",
+      "created_at": 1794214925.958195,
+      "status": "pending",
+      "distance": 0.0023934954664817263,
+      "target_r": 2.0,
+      "reference_ask": 0.1767,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -79570,7 +79601,14 @@
     "PEPE/USD|1h|rolling_vwap_reclaim|1794214800": 1794214865.0432446,
     "BTC/USD|1h|rsi_rebound|1794214800": 1794214865.0432525,
     "SOL/USD|1h|rsi_rebound|1794214800": 1794214885.3870184,
-    "RENDER/USD|15m|ema_cross|1794214800": 1794214905.6454632
+    "RENDER/USD|15m|ema_cross|1794214800": 1794214905.6454632,
+    "RENDER/USD|15m|trend_pullback|1794214800": 1794214925.9580815,
+    "RENDER/USD|15m|macd_momentum|1794214800": 1794214925.9581478,
+    "RENDER/USD|1h|ema_cross|1794214800": 1794214925.95816,
+    "RENDER/USD|1h|trend_pullback|1794214800": 1794214925.95817,
+    "RENDER/USD|1h|macd_momentum|1794214800": 1794214925.9581783,
+    "RENDER/USD|5m|ema_cross|1794214800": 1794214925.9581861,
+    "ARB/USD|15m|donchian_breakout|1794214800": 1794214925.958195
   },
   "day": "2026-11-09",
   "day_start_equity": 99754.09,
@@ -79579,7 +79617,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-09T09:02:04+00:00",
+    "observed_at_utc": "2026-11-09T09:02:16+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
