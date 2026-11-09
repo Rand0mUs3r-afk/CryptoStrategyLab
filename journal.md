@@ -20,15 +20,16 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
-| ARB/USD | 5m | candles | ValueError |
 | RENDER/USD | 5m | candles | ValueError |
+| ARB/USD | 5m | candles | ValueError |
+| PAXG/USD | 15m | candles | ValueError |
+| PAXG/USD | 5m | candles | ValueError |
 | TRUMP/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ARB/USD | 1h | ema_cross | 0.165593 | 1207.802403526 | 200.0036234070809 | 1204.782897517 | 0.17492801982768363 | 0.16092549008615817 | open |
 | PEPE/USD | 6h | trend_pullback | 4.93e-06 | 40567951.318458416 | 200.0 | 40466531.44016227 | 5.6313488264385755e-06 | 4.579325586780713e-06 | open |
 | ETH/USD | 15m | bollinger_reversion | 2133.87 | 0.093763331 | 200.07875912097 | 0.093528922 | 2178.221243509793 | 2111.6943782451035 | open |
 | LINK/USD | 15m | rsi_rebound | 10.4317 | 19.193857965 | 200.2245681334905 | 19.14587332 | 10.648976580034741 | 10.323061709982628 | open |
@@ -132,6 +133,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | LINK/USD | 1h | rsi_rebound | 10.82 | 18.501387604 | 200.18501387528002 | 0.0 | 11.344656284249725 | 10.557671857875139 | closed |
 | TRUMP/USD | 5m | trend_pullback | 1.2087 | 165.498522925 | 200.0380646594475 | 0.0 | 1.2504055615895013 | 1.1878472192052494 | closed |
 | ONDO/USD | 5m | rsi_rebound | 0.366236 | 545.348450392 | 199.72623507776453 | 0.0 | 0.37229023919876864 | 0.36320888040061566 | closed |
+| ARB/USD | 1h | ema_cross | 0.165593 | 1207.802403526 | 200.0036234070809 | 0.0 | 0.17492801982768363 | 0.16092549008615817 | closed |
 | XRP/USD | 5m | bollinger_reversion | 1.18303 | 168.918918918 | 199.83614864756154 | 0.0 | 1.1944162928606987 | 1.1773368535696507 | closed |
 | SOL/USD | 5m | trend_pullback | 90.22 | 2.184292716 | 197.06688883752 | 0.0 | 90.71425254043615 | 89.97287372978192 | closed |
 | RENDER/USD | 15m | trend_pullback | 1.6053 | 122.046589311 | 195.9213898209483 | 0.0 | 1.6539345533305592 | 1.5809827233347205 | closed |
@@ -159,7 +161,7 @@ Accounting final: False
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
 | AAVEUSD | 0.003791556 | 0 | -0.003791556 | 0.003791556 |
-| ARBUSD | 1204.782897517 | 1204.782897517 | 0E-9 | 0 |
+| ARBUSD | 0E-9 | 0 | 0E-9 | 0 |
 | AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
 | BTCUSD | 0E-9 | 0 | 0E-9 | 0 |
 | DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -182,15 +184,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-09T04:10:39+00:00
+Next entry scan eligible: 2026-11-09T05:12:04+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-09T03:40:40+00:00
+Last refresh: 2026-11-09T04:42:06+00:00
 Source status: partial
-Selected: ARB/USD, ETH/USD, LINK/USD, PEPE/USD, SOL/USD, UNI/USD, AVAX/USD, BTC/USD, LTC/USD, RENDER/USD, TRUMP/USD
+Selected: ETH/USD, LINK/USD, PEPE/USD, SOL/USD, UNI/USD, AVAX/USD, BTC/USD, LTC/USD, RENDER/USD, ARB/USD, PAXG/USD, TRUMP/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
