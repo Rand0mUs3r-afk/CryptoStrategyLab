@@ -8,28 +8,21 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 17. Skipped: 13. Broker order results: 4.
+Candidates: 10. Skipped: 10. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| PEPE/USD | 15m | donchian_breakout | skipped | symbol_already_active | {} |
-| PEPE/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| PEPE/USD | 1h | macd_momentum | skipped | symbol_already_active | {} |
-| PEPE/USD | 1h | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
-| BTC/USD | 1h | rsi_rebound | order_result | broker_order_returned | {"broker_order_id": "ba9db17b-43f1-4e43-bf48-38e602bd981a", "broker_status": "pending_new", "client_order_id": "csl2-d61606080577059cd2fd19443b2c2ec7", "quantity": "0.002685839", "reference_ask": 74464.6} |
-| SOL/USD | 1h | rsi_rebound | order_result | broker_order_returned | {"broker_order_id": "a5bb5593-b765-4954-8f44-0cc85840bb1c", "broker_status": "pending_new", "client_order_id": "csl2-4e2d2bc17b7a9aa2229dbc504d2d71a8", "quantity": "2.298927205", "reference_ask": 86.9971} |
-| RENDER/USD | 15m | ema_cross | order_result | broker_order_returned | {"broker_order_id": "d019a008-bd38-4346-b827-774528931371", "broker_status": "pending_new", "client_order_id": "csl2-555463a3aacd52c03ccdfc6060a03099", "quantity": "125.944584382", "reference_ask": 1.588} |
-| RENDER/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| RENDER/USD | 15m | macd_momentum | skipped | symbol_already_active | {} |
-| RENDER/USD | 1h | ema_cross | skipped | symbol_already_active | {} |
-| RENDER/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| RENDER/USD | 1h | macd_momentum | skipped | symbol_already_active | {} |
-| RENDER/USD | 5m | ema_cross | skipped | symbol_already_active | {} |
-| ARB/USD | 15m | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "cc038c0e-98fa-4588-bc36-c3564dfc5e91", "broker_status": "pending_new", "client_order_id": "csl2-6f7bdc878c1508156d5031f547c84f78", "quantity": "1068.802648556", "reference_ask": 0.1767} |
-| ARB/USD | 15m | macd_momentum | skipped | symbol_already_active | {} |
-| ARB/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| ARB/USD | 1h | donchian_breakout | skipped | symbol_already_active | {} |
+| ARB/USD | 1h | trend_pullback | skipped | already_seen | {} |
+| ARB/USD | 1h | donchian_breakout | skipped | already_seen | {} |
+| BTC/USD | 1h | rsi_rebound | skipped | already_seen | {} |
+| PEPE/USD | 1h | trend_pullback | skipped | already_seen | {} |
+| PEPE/USD | 1h | macd_momentum | skipped | already_seen | {} |
+| PEPE/USD | 1h | rolling_vwap_reclaim | skipped | already_seen | {} |
+| RENDER/USD | 1h | ema_cross | skipped | already_seen | {} |
+| RENDER/USD | 1h | trend_pullback | skipped | already_seen | {} |
+| RENDER/USD | 1h | macd_momentum | skipped | already_seen | {} |
+| SOL/USD | 1h | rsi_rebound | skipped | already_seen | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -207,15 +200,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-09T09:30:50+00:00
+Next entry scan eligible: 2026-11-09T10:27:34+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-09T09:00:52+00:00
+Last refresh: 2026-11-09T09:57:37+00:00
 Source status: partial
-Selected: LINK/USD, PEPE/USD, AVAX/USD, BTC/USD, ETH/USD, LTC/USD, SOL/USD, RENDER/USD, ARB/USD, PAXG/USD, XRP/USD
+Selected: ARB/USD, BTC/USD, LINK/USD, PEPE/USD, RENDER/USD, SOL/USD, AVAX/USD, ETH/USD, LTC/USD, PAXG/USD, XRP/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

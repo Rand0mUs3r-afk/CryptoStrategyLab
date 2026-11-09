@@ -26,12 +26,30 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
+      "symbol": "ARB/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1794214800,
+      "outcome": "skipped",
+      "reason": "already_seen",
+      "details": {}
+    },
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "1h",
       "strategy": "donchian_breakout",
       "signal_time": 1794214800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
+      "details": {}
+    },
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "1h",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794214800,
+      "outcome": "skipped",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -40,7 +58,7 @@
       "strategy": "trend_pullback",
       "signal_time": 1794214800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -49,7 +67,7 @@
       "strategy": "macd_momentum",
       "signal_time": 1794214800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
@@ -58,174 +76,69 @@
       "strategy": "rolling_vwap_reclaim",
       "signal_time": 1794214800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     },
     {
-      "symbol": "BTC/USD",
+      "symbol": "RENDER/USD",
       "timeframe": "1h",
-      "strategy": "rsi_rebound",
+      "strategy": "ema_cross",
       "signal_time": 1794214800,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-d61606080577059cd2fd19443b2c2ec7",
-        "quantity": "0.002685839",
-        "reference_ask": 74464.6,
-        "broker_status": "pending_new",
-        "broker_order_id": "ba9db17b-43f1-4e43-bf48-38e602bd981a"
-      }
+      "outcome": "skipped",
+      "reason": "already_seen",
+      "details": {}
+    },
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1794214800,
+      "outcome": "skipped",
+      "reason": "already_seen",
+      "details": {}
+    },
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "1h",
+      "strategy": "macd_momentum",
+      "signal_time": 1794214800,
+      "outcome": "skipped",
+      "reason": "already_seen",
+      "details": {}
     },
     {
       "symbol": "SOL/USD",
       "timeframe": "1h",
       "strategy": "rsi_rebound",
       "signal_time": 1794214800,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-4e2d2bc17b7a9aa2229dbc504d2d71a8",
-        "quantity": "2.298927205",
-        "reference_ask": 86.9971,
-        "broker_status": "pending_new",
-        "broker_order_id": "a5bb5593-b765-4954-8f44-0cc85840bb1c"
-      }
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "15m",
-      "strategy": "ema_cross",
-      "signal_time": 1794214800,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-555463a3aacd52c03ccdfc6060a03099",
-        "quantity": "125.944584382",
-        "reference_ask": 1.588,
-        "broker_status": "pending_new",
-        "broker_order_id": "d019a008-bd38-4346-b827-774528931371"
-      }
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794214800,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "15m",
-      "strategy": "macd_momentum",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "1h",
-      "strategy": "ema_cross",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "5m",
-      "strategy": "ema_cross",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "15m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1794214800,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-6f7bdc878c1508156d5031f547c84f78",
-        "quantity": "1068.802648556",
-        "reference_ask": 0.1767,
-        "broker_status": "pending_new",
-        "broker_order_id": "cc038c0e-98fa-4588-bc36-c3564dfc5e91"
-      }
-    },
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "15m",
-      "strategy": "macd_momentum",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "1h",
-      "strategy": "donchian_breakout",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
+      "reason": "already_seen",
       "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 17,
+  "candidates": 10,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-09T09:30:50+00:00",
+  "next_entry_scan_at_utc": "2026-11-09T10:27:34+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
+    "ARB/USD",
+    "BTC/USD",
     "LINK/USD",
     "PEPE/USD",
+    "RENDER/USD",
+    "SOL/USD",
     "AVAX/USD",
-    "BTC/USD",
     "ETH/USD",
     "LTC/USD",
-    "SOL/USD",
-    "RENDER/USD",
-    "ARB/USD",
     "PAXG/USD",
     "XRP/USD"
   ],
-  "observed_at_utc": "2026-11-09T09:02:26+00:00",
+  "observed_at_utc": "2026-11-09T09:57:51+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-09T09:02:24+00:00",
+    "observed_at_utc": "2026-11-09T09:57:34+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
