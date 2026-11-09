@@ -1,9 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,1h,bollinger_reversion,1794178800,skipped,already_seen,{}
-ARB/USD,1h,rsi_rebound,1794178800,skipped,already_seen,{}
-PEPE/USD,15m,trend_pullback,1794180600,skipped,symbol_already_active,{}
-PEPE/USD,15m,macd_momentum,1794180600,skipped,symbol_already_active,{}
-PEPE/USD,6h,trend_pullback,1794160800,skipped,already_seen,{}
-PEPE/USD,6h,macd_momentum,1794160800,skipped,already_seen,{}
-UNI/USD,1h,rsi_rebound,1794178800,skipped,already_seen,{}
-RENDER/USD,1h,bollinger_reversion,1794178800,skipped,already_seen,{}
+ARB/USD,1h,trend_pullback,1794182400,skipped,symbol_already_active,{}
+UNI/USD,1h,bollinger_reversion,1794182400,skipped,symbol_already_active,{}
+BTC/USD,1h,bollinger_reversion,1794182400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+BTC/USD,1h,rsi_rebound,1794182400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"

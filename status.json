@@ -34,81 +34,51 @@
     {
       "symbol": "ARB/USD",
       "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794178800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794178800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1794180600,
+      "signal_time": 1794182400,
       "outcome": "skipped",
       "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
-      "strategy": "macd_momentum",
-      "signal_time": 1794180600,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "6h",
-      "strategy": "trend_pullback",
-      "signal_time": 1794160800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "6h",
-      "strategy": "macd_momentum",
-      "signal_time": 1794160800,
-      "outcome": "skipped",
-      "reason": "already_seen",
       "details": {}
     },
     {
       "symbol": "UNI/USD",
       "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794178800,
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794182400,
       "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "RENDER/USD",
+      "symbol": "BTC/USD",
       "timeframe": "1h",
       "strategy": "bollinger_reversion",
-      "signal_time": 1794178800,
+      "signal_time": 1794182400,
       "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
+    },
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "1h",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794182400,
+      "outcome": "skipped",
+      "reason": "max_positions",
+      "details": {
+        "active_positions": 6,
+        "max_positions": 6
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 8,
+  "candidates": 4,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-09T00:02:32+00:00",
+  "next_entry_scan_at_utc": "2026-11-09T00:36:53+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -123,10 +93,10 @@
     "RENDER/USD",
     "TRUMP/USD"
   ],
-  "observed_at_utc": "2026-11-08T23:32:51+00:00",
+  "observed_at_utc": "2026-11-09T00:07:07+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-08T23:32:32+00:00",
+    "observed_at_utc": "2026-11-09T00:06:52+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
