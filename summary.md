@@ -14,13 +14,13 @@ Broker order results are not proof of fills; see orders.csv.
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
 | ARB/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| ARB/USD | 1h | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
-| PEPE/USD | 1h | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
-| SOL/USD | 1h | bollinger_reversion | skipped | symbol_already_active | {} |
-| SOL/USD | 1h | rsi_rebound | skipped | symbol_already_active | {} |
-| UNI/USD | 5m | ema_cross | skipped | symbol_already_active | {} |
-| UNI/USD | 5m | donchian_breakout | skipped | symbol_already_active | {} |
-| AVAX/USD | 1h | bollinger_reversion | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| ARB/USD | 1h | donchian_breakout | skipped | symbol_already_active | {} |
+| ARB/USD | 1h | macd_momentum | skipped | symbol_already_active | {} |
+| PEPE/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
+| PEPE/USD | 15m | donchian_breakout | skipped | symbol_already_active | {} |
+| PEPE/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
+| PEPE/USD | 1h | donchian_breakout | skipped | symbol_already_active | {} |
+| PEPE/USD | 1h | macd_momentum | skipped | symbol_already_active | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -29,10 +29,8 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
 | ARB/USD | 5m | candles | ValueError |
-| PEPE/USD | 5m | candles | ValueError |
 | RENDER/USD | 5m | candles | ValueError |
 | TRUMP/USD | 5m | candles | ValueError |
-| DOT/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -192,15 +190,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-09T01:35:34+00:00
+Next entry scan eligible: 2026-11-09T02:40:33+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-09T01:05:35+00:00
+Last refresh: 2026-11-09T02:10:35+00:00
 Source status: partial
-Selected: ARB/USD, ETH/USD, LINK/USD, PEPE/USD, SOL/USD, UNI/USD, AVAX/USD, BTC/USD, LTC/USD, RENDER/USD, TRUMP/USD, DOT/USD
+Selected: ARB/USD, ETH/USD, LINK/USD, PEPE/USD, SOL/USD, UNI/USD, AVAX/USD, BTC/USD, LTC/USD, RENDER/USD, TRUMP/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

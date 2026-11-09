@@ -12,12 +12,6 @@
       "error_type": "ValueError"
     },
     {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
       "symbol": "RENDER/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -28,12 +22,6 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
-    },
-    {
-      "symbol": "DOT/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
@@ -41,7 +29,7 @@
       "symbol": "ARB/USD",
       "timeframe": "1h",
       "strategy": "trend_pullback",
-      "signal_time": 1794186000,
+      "signal_time": 1794189600,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -49,8 +37,35 @@
     {
       "symbol": "ARB/USD",
       "timeframe": "1h",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1794186000,
+      "strategy": "donchian_breakout",
+      "signal_time": 1794189600,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "1h",
+      "strategy": "macd_momentum",
+      "signal_time": 1794189600,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794189600,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1794189600,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -58,66 +73,36 @@
     {
       "symbol": "PEPE/USD",
       "timeframe": "1h",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1794186000,
+      "strategy": "trend_pullback",
+      "signal_time": 1794189600,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "SOL/USD",
+      "symbol": "PEPE/USD",
       "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794186000,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794186000,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "UNI/USD",
-      "timeframe": "5m",
-      "strategy": "ema_cross",
-      "signal_time": 1794186300,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "UNI/USD",
-      "timeframe": "5m",
       "strategy": "donchian_breakout",
-      "signal_time": 1794186300,
+      "signal_time": 1794189600,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "AVAX/USD",
+      "symbol": "PEPE/USD",
       "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794186000,
+      "strategy": "macd_momentum",
+      "signal_time": 1794189600,
       "outcome": "skipped",
-      "reason": "max_positions",
-      "details": {
-        "active_positions": 6,
-        "max_positions": 6
-      }
+      "reason": "symbol_already_active",
+      "details": {}
     }
   ],
   "entry_pause_reasons": [],
   "candidates": 8,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-09T01:35:34+00:00",
+  "next_entry_scan_at_utc": "2026-11-09T02:40:33+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -130,13 +115,12 @@
     "BTC/USD",
     "LTC/USD",
     "RENDER/USD",
-    "TRUMP/USD",
-    "DOT/USD"
+    "TRUMP/USD"
   ],
-  "observed_at_utc": "2026-11-09T01:05:51+00:00",
+  "observed_at_utc": "2026-11-09T02:10:52+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-09T01:05:34+00:00",
+    "observed_at_utc": "2026-11-09T02:10:33+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
