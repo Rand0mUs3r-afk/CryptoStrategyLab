@@ -75808,10 +75808,14 @@
         "client_order_id": "csl2-d61606080577059cd2fd19443b2c2ec7"
       },
       "cycle_id": "csl2-d61606080577059cd2fd19443b2c2ec7",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794214865.0432525,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "ba9db17b-43f1-4e43-bf48-38e602bd981a",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-09T09:01:17.182650206Z"
     }
   },
   "cycles": [
