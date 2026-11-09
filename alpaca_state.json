@@ -75868,14 +75868,15 @@
         "client_order_id": "csl2-6f7bdc878c1508156d5031f547c84f78"
       },
       "cycle_id": "csl2-6f7bdc878c1508156d5031f547c84f78",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1794214925.958195,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "1068.802648556",
       "broker_order_id": "cc038c0e-98fa-4588-bc36-c3564dfc5e91",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-09T09:02:18.077260685Z"
+      "filled_avg_price": 0.176522,
+      "filled_at": "2026-11-09T09:02:18.078428444Z",
+      "broker_updated_at": "2026-11-09T09:02:18.086453644Z",
+      "reference_ask": 0.1767
     }
   },
   "cycles": [
@@ -78779,11 +78780,17 @@
       "hold_seconds": 21600,
       "id": "csl2-6f7bdc878c1508156d5031f547c84f78",
       "created_at": 1794214925.958195,
-      "status": "pending",
+      "status": "open",
       "distance": 0.0023934954664817263,
       "target_r": 2.0,
       "reference_ask": 0.1767,
-      "remaining_qty": 0.0
+      "remaining_qty": 1066.130641934,
+      "entry_price": 0.176522,
+      "entry_qty": 1068.802648556,
+      "entry_notional_usd": 188.66718112840223,
+      "tp": 0.18130899093296346,
+      "sl": 0.17412850453351827,
+      "entry_time_utc": "2026-11-09T09:02:18.078428444Z"
     }
   ],
   "seen": {
@@ -79621,7 +79628,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-09T09:02:16+00:00",
+    "observed_at_utc": "2026-11-09T09:02:24+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -79635,13 +79642,13 @@
       },
       {
         "symbol": "ARBUSD",
-        "filled_quantity": "14.876511088",
+        "filled_quantity": "1083.679159644",
         "fee_quantity": "-14.876511088",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "1068.802648556",
+        "broker_quantity": "1066.130641934",
+        "difference_quantity": "-2.672006622",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "2.672006622"
       },
       {
         "symbol": "AVAXUSD",
