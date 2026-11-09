@@ -26,101 +26,29 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "ARB/USD",
+      "symbol": "RENDER/USD",
       "timeframe": "1h",
       "strategy": "trend_pullback",
-      "signal_time": 1794214800,
+      "signal_time": 1794218400,
       "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "ARB/USD",
+      "symbol": "RENDER/USD",
       "timeframe": "1h",
       "strategy": "donchian_breakout",
-      "signal_time": 1794214800,
+      "signal_time": 1794218400,
       "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "1h",
-      "strategy": "ema_cross",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "already_seen",
-      "details": {}
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794214800,
-      "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 10,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-09T10:27:34+00:00",
+  "next_entry_scan_at_utc": "2026-11-09T11:13:03+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -135,10 +63,10 @@
     "PAXG/USD",
     "XRP/USD"
   ],
-  "observed_at_utc": "2026-11-09T09:57:51+00:00",
+  "observed_at_utc": "2026-11-09T10:43:19+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-09T09:57:34+00:00",
+    "observed_at_utc": "2026-11-09T10:43:03+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

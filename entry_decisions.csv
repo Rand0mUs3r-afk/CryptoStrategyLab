@@ -1,11 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ARB/USD,1h,trend_pullback,1794214800,skipped,already_seen,{}
-ARB/USD,1h,donchian_breakout,1794214800,skipped,already_seen,{}
-BTC/USD,1h,rsi_rebound,1794214800,skipped,already_seen,{}
-PEPE/USD,1h,trend_pullback,1794214800,skipped,already_seen,{}
-PEPE/USD,1h,macd_momentum,1794214800,skipped,already_seen,{}
-PEPE/USD,1h,rolling_vwap_reclaim,1794214800,skipped,already_seen,{}
-RENDER/USD,1h,ema_cross,1794214800,skipped,already_seen,{}
-RENDER/USD,1h,trend_pullback,1794214800,skipped,already_seen,{}
-RENDER/USD,1h,macd_momentum,1794214800,skipped,already_seen,{}
-SOL/USD,1h,rsi_rebound,1794214800,skipped,already_seen,{}
+RENDER/USD,1h,trend_pullback,1794218400,skipped,symbol_already_active,{}
+RENDER/USD,1h,donchian_breakout,1794218400,skipped,symbol_already_active,{}
