@@ -1,4 +1,9 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,1h,donchian_breakout,1794322800,skipped,symbol_already_active,{}
-UNI/USD,1h,trend_pullback,1794322800,order_result,broker_order_returned,"{""broker_order_id"": ""c8db01ac-47c3-44a2-866b-9a9109655e54"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-ffaac42435943ac8b32c35f6c6c638eb"", ""quantity"": ""24.784504868"", ""reference_ask"": 7.087}"
-UNI/USD,1h,rolling_vwap_reclaim,1794322800,skipped,symbol_already_active,{}
+AAVE/USD,15m,bollinger_reversion,1794326400,skipped,symbol_already_active,{}
+AAVE/USD,15m,rsi_rebound,1794326400,skipped,symbol_already_active,{}
+AVAX/USD,15m,bollinger_reversion,1794326400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 55.11397743258466}"
+AVAX/USD,15m,rsi_rebound,1794326400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 55.11397743258466}"
+LINK/USD,15m,bollinger_reversion,1794326400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+LINK/USD,15m,rsi_rebound,1794326400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+LTC/USD,15m,rsi_rebound,1794326400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.770994188099074}"
+SOL/USD,15m,rsi_rebound,1794326400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
