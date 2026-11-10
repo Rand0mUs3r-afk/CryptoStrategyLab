@@ -82766,10 +82766,14 @@
         "client_order_id": "csl2-b39577c89a50610e16163515ec17cb18"
       },
       "cycle_id": "csl2-b39577c89a50610e16163515ec17cb18",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794302243.6540823,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "77ed720b-1be9-4e91-8a71-6d39689d4b2f",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-10T09:17:35.331965942Z"
     }
   },
   "cycles": [
