@@ -10,53 +10,39 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
+    },
+    {
+      "symbol": "TRUMP/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
     {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
+      "symbol": "TRUMP/USD",
+      "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1794337200,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794337200,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 66.32571519897729,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "ARB/USD",
-      "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794337200,
+      "signal_time": 1794341700,
       "outcome": "order_result",
       "reason": "broker_order_returned",
       "details": {
-        "client_order_id": "csl2-6c16d1f4809a85c618fe3c73465ea4ac",
-        "quantity": "1246.882793017",
-        "reference_ask": 0.1604,
+        "client_order_id": "csl2-7406cfc0cdfb75331f440152677ace9f",
+        "quantity": "176.511601224",
+        "reference_ask": 1.13307,
         "broker_status": "pending_new",
-        "broker_order_id": "918a7449-cdbe-4dd3-891c-4ecedebc8e70"
+        "broker_order_id": "9afeab0f-e366-4772-a9ca-f48a38c5a4bf"
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 3,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-10T20:13:22+00:00",
+  "next_entry_scan_at_utc": "2026-11-10T20:57:57+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
+    "ARB/USD",
     "BTC/USD",
     "PEPE/USD",
     "SOL/USD",
@@ -64,13 +50,13 @@
     "ETH/USD",
     "LINK/USD",
     "LTC/USD",
-    "AAVE/USD",
-    "ARB/USD"
+    "TRUMP/USD",
+    "AAVE/USD"
   ],
-  "observed_at_utc": "2026-11-10T19:44:00+00:00",
+  "observed_at_utc": "2026-11-10T20:28:34+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-10T19:43:58+00:00",
+    "observed_at_utc": "2026-11-10T20:28:32+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -224,13 +210,13 @@
       },
       {
         "symbol": "TRUMPUSD",
-        "filled_quantity": "1.720038166",
+        "filled_quantity": "178.231639390",
         "fee_quantity": "-1.720038166",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "176.511601224",
+        "broker_quantity": "176.07032222",
+        "difference_quantity": "-0.441279004",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.441279004"
       },
       {
         "symbol": "UNIUSD",

@@ -1,4 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,1h,trend_pullback,1794337200,skipped,symbol_already_active,{}
-LTC/USD,1h,bollinger_reversion,1794337200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 66.32571519897729}"
-ARB/USD,1h,rsi_rebound,1794337200,order_result,broker_order_returned,"{""broker_order_id"": ""918a7449-cdbe-4dd3-891c-4ecedebc8e70"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-6c16d1f4809a85c618fe3c73465ea4ac"", ""quantity"": ""1246.882793017"", ""reference_ask"": 0.1604}"
+TRUMP/USD,15m,trend_pullback,1794341700,order_result,broker_order_returned,"{""broker_order_id"": ""9afeab0f-e366-4772-a9ca-f48a38c5a4bf"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-7406cfc0cdfb75331f440152677ace9f"", ""quantity"": ""176.511601224"", ""reference_ask"": 1.13307}"
