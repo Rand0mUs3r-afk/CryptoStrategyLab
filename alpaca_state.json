@@ -84485,10 +84485,14 @@
         "client_order_id": "csl2-836badeb2aa49ea0df135d64c6b2042c"
       },
       "cycle_id": "csl2-d61606080577059cd2fd19443b2c2ec7",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794321013.6420922,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "5cd3258f-98a4-4dad-a8b8-5538695892ed",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-10T14:30:26.2279946Z"
     }
   },
   "cycles": [
