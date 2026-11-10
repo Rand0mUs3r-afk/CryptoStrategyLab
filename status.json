@@ -10,10 +10,10 @@
   "candidates": 0,
   "error_type": "PositionMismatch",
   "reason": "Position/fee reconciliation mismatch for AAVEUSD: expected=0.003791556, broker=0, difference=-0.003791556, recorded_fee_quantity=-0.022301081; ARBUSD: expected=1068.802648556, broker=1066.130641934, difference=-2.672006622, recorded_fee_quantity=-14.876511088; BTCUSD: expected=0.002692573, broker=0.002679124, difference=-0.000013449, recorded_fee_quantity=-0.000082803; ETHUSD: expected=0.000471569, broker=0, difference=-0.000471569, recorded_fee_quantity=-0.002376063; LINKUSD: expected=0.096538706, broker=0, difference=-0.096538706, recorded_fee_quantity=-0.392911198; LTCUSD: expected=0.009630201, broker=0, difference=-0.009630201, recorded_fee_quantity=0; RENDERUSD: expected=126.263461934, broker=125.629722921, difference=-0.633739013, recorded_fee_quantity=-1.236498065; SOLUSD: expected=2.315878839, broker=2.293179886, difference=-0.022698953, recorded_fee_quantity=-0.088999060; UNIUSD: expected=0.144894087, broker=0, difference=-0.144894087, recorded_fee_quantity=-0.483447013; XRPUSD: expected=183.994332974, broker=183.534347141, difference=-0.459985833, recorded_fee_quantity=-0.422297298; unresolved after read-only retries; entries and exits blocked",
-  "observed_at_utc": "2026-11-10T00:13:15+00:00",
+  "observed_at_utc": "2026-11-10T01:10:48+00:00",
   "reconciliation": {
     "status": "mismatch",
-    "observed_at_utc": "2026-11-10T00:13:15+00:00",
+    "observed_at_utc": "2026-11-10T01:10:48+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

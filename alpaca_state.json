@@ -73064,6 +73064,211 @@
         "attempts": 3,
         "retry_exhausted": true
       }
+    },
+    {
+      "status": "FAILED_CLOSED",
+      "paper_only": true,
+      "writes_enabled": true,
+      "mode": "tick",
+      "account_verified": true,
+      "data_errors": [],
+      "entry_decisions": [],
+      "entry_pause_reasons": [],
+      "candidates": 0,
+      "error_type": "PositionMismatch",
+      "reason": "Position/fee reconciliation mismatch for AAVEUSD: expected=0.003791556, broker=0, difference=-0.003791556, recorded_fee_quantity=-0.022301081; ARBUSD: expected=1068.802648556, broker=1066.130641934, difference=-2.672006622, recorded_fee_quantity=-14.876511088; BTCUSD: expected=0.002692573, broker=0.002679124, difference=-0.000013449, recorded_fee_quantity=-0.000082803; ETHUSD: expected=0.000471569, broker=0, difference=-0.000471569, recorded_fee_quantity=-0.002376063; LINKUSD: expected=0.096538706, broker=0, difference=-0.096538706, recorded_fee_quantity=-0.392911198; LTCUSD: expected=0.009630201, broker=0, difference=-0.009630201, recorded_fee_quantity=0; RENDERUSD: expected=126.263461934, broker=125.629722921, difference=-0.633739013, recorded_fee_quantity=-1.236498065; SOLUSD: expected=2.315878839, broker=2.293179886, difference=-0.022698953, recorded_fee_quantity=-0.088999060; UNIUSD: expected=0.144894087, broker=0, difference=-0.144894087, recorded_fee_quantity=-0.483447013; XRPUSD: expected=183.994332974, broker=183.534347141, difference=-0.459985833, recorded_fee_quantity=-0.422297298; unresolved after read-only retries; entries and exits blocked",
+      "observed_at_utc": "2026-11-10T01:10:48+00:00",
+      "reconciliation": {
+        "status": "mismatch",
+        "observed_at_utc": "2026-11-10T01:10:48+00:00",
+        "quantities": [
+          {
+            "symbol": "AAVEUSD",
+            "filled_quantity": "0.026092637",
+            "fee_quantity": "-0.022301081",
+            "expected_quantity": "0.003791556",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.003791556",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "ARBUSD",
+            "filled_quantity": "1083.679159644",
+            "fee_quantity": "-14.876511088",
+            "expected_quantity": "1068.802648556",
+            "broker_quantity": "1066.130641934",
+            "difference_quantity": "-2.672006622",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "AVAXUSD",
+            "filled_quantity": "0.171436211",
+            "fee_quantity": "-0.171436211",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "BTCUSD",
+            "filled_quantity": "0.002775376",
+            "fee_quantity": "-0.000082803",
+            "expected_quantity": "0.002692573",
+            "broker_quantity": "0.002679124",
+            "difference_quantity": "-0.000013449",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "DOTUSD",
+            "filled_quantity": "0.515464449",
+            "fee_quantity": "-0.515464449",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "ETHUSD",
+            "filled_quantity": "0.002847632",
+            "fee_quantity": "-0.002376063",
+            "expected_quantity": "0.000471569",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.000471569",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "FILUSD",
+            "filled_quantity": "0.549710303",
+            "fee_quantity": "-0.549710303",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "HYPEUSD",
+            "filled_quantity": "0",
+            "fee_quantity": "0",
+            "expected_quantity": "0",
+            "broker_quantity": "0",
+            "difference_quantity": "0",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "LINKUSD",
+            "filled_quantity": "0.489449904",
+            "fee_quantity": "-0.392911198",
+            "expected_quantity": "0.096538706",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.096538706",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "LTCUSD",
+            "filled_quantity": "0.009630201",
+            "fee_quantity": "0",
+            "expected_quantity": "0.009630201",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.009630201",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "ONDOUSD",
+            "filled_quantity": "2.579797752",
+            "fee_quantity": "-2.579797752",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "PEPEUSD",
+            "filled_quantity": "41263978.384195803",
+            "fee_quantity": "-797446.944033534",
+            "expected_quantity": "40466531.440162269",
+            "broker_quantity": "40466531.440162269",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "POLUSD",
+            "filled_quantity": "0",
+            "fee_quantity": "0",
+            "expected_quantity": "0",
+            "broker_quantity": "0",
+            "difference_quantity": "0",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "RENDERUSD",
+            "filled_quantity": "127.499959999",
+            "fee_quantity": "-1.236498065",
+            "expected_quantity": "126.263461934",
+            "broker_quantity": "125.629722921",
+            "difference_quantity": "-0.633739013",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "SOLUSD",
+            "filled_quantity": "2.404877899",
+            "fee_quantity": "-0.088999060",
+            "expected_quantity": "2.315878839",
+            "broker_quantity": "2.293179886",
+            "difference_quantity": "-0.022698953",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "TRUMPUSD",
+            "filled_quantity": "1.720038166",
+            "fee_quantity": "-1.720038166",
+            "expected_quantity": "0E-9",
+            "broker_quantity": "0",
+            "difference_quantity": "0E-9",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "UNIUSD",
+            "filled_quantity": "0.628341100",
+            "fee_quantity": "-0.483447013",
+            "expected_quantity": "0.144894087",
+            "broker_quantity": "0",
+            "difference_quantity": "-0.144894087",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          },
+          {
+            "symbol": "XRPUSD",
+            "filled_quantity": "184.416630272",
+            "fee_quantity": "-0.422297298",
+            "expected_quantity": "183.994332974",
+            "broker_quantity": "183.534347141",
+            "difference_quantity": "-0.459985833",
+            "tolerance_quantity": "1E-8",
+            "unconfirmed_shortfall": "0"
+          }
+        ],
+        "entries_blocked": true,
+        "exit_checks_allowed": false,
+        "accounting_final": false,
+        "attempts": 3,
+        "retry_exhausted": true
+      }
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",
@@ -84041,7 +84246,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "mismatch",
-    "observed_at_utc": "2026-11-10T00:13:15+00:00",
+    "observed_at_utc": "2026-11-10T01:10:48+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
