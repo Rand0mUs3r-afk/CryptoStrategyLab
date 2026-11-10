@@ -82462,14 +82462,14 @@
         "client_order_id": "csl2-a7392904bab62b80dba2cd105fa6f1ec"
       },
       "cycle_id": "csl2-6f7bdc878c1508156d5031f547c84f78",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1794299293.5335696,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "1066.130641934",
       "broker_order_id": "c5b9ccc9-7ede-4510-8ded-d551473b0959",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-10T08:28:15.305390243Z"
+      "filled_avg_price": 0.16659,
+      "filled_at": "2026-11-10T08:28:15.306314024Z",
+      "broker_updated_at": "2026-11-10T08:28:15.336437008Z"
     }
   },
   "cycles": [
@@ -85332,18 +85332,20 @@
       "hold_seconds": 259200,
       "id": "csl2-4e2d2bc17b7a9aa2229dbc504d2d71a8",
       "created_at": 1794214885.3870184,
-      "status": "open",
+      "status": "closed",
       "distance": 1.463530495518176,
       "target_r": 2.0,
       "reference_ask": 86.9971,
-      "remaining_qty": 2.293179886,
+      "remaining_qty": 0.0,
       "entry_price": 86.99,
       "entry_qty": 2.298927205,
       "entry_notional_usd": 199.98367756295,
       "tp": 89.91706099103635,
       "sl": 85.52646950448182,
       "entry_time_utc": "2026-11-09T09:01:37.47235249Z",
-      "exit_reason": "stop"
+      "exit_reason": "stop",
+      "closed_at": "2026-11-10T08:28:16+00:00",
+      "cashflow_pnl_before_usd_fees": -3.8115403531826075
     },
     {
       "symbol": "RENDER/USD",
@@ -85355,18 +85357,20 @@
       "hold_seconds": 21600,
       "id": "csl2-555463a3aacd52c03ccdfc6060a03099",
       "created_at": 1794214905.6454632,
-      "status": "open",
+      "status": "closed",
       "distance": 0.02440261487286617,
       "target_r": 2.0,
       "reference_ask": 1.588,
-      "remaining_qty": 125.629722921,
+      "remaining_qty": 0.0,
       "entry_price": 1.5941,
       "entry_qty": 125.944584382,
       "entry_notional_usd": 200.76826196334622,
       "tp": 1.6429052297457325,
       "sl": 1.5696973851271339,
       "entry_time_utc": "2026-11-09T09:01:57.74064574Z",
-      "exit_reason": "time"
+      "exit_reason": "time",
+      "closed_at": "2026-11-10T08:28:16+00:00",
+      "cashflow_pnl_before_usd_fees": -3.27833753153422
     },
     {
       "symbol": "ARB/USD",
@@ -85378,18 +85382,20 @@
       "hold_seconds": 21600,
       "id": "csl2-6f7bdc878c1508156d5031f547c84f78",
       "created_at": 1794214925.958195,
-      "status": "open",
+      "status": "closed",
       "distance": 0.0023934954664817263,
       "target_r": 2.0,
       "reference_ask": 0.1767,
-      "remaining_qty": 1066.130641934,
+      "remaining_qty": 0.0,
       "entry_price": 0.176522,
       "entry_qty": 1068.802648556,
       "entry_notional_usd": 188.66718112840223,
       "tp": 0.18130899093296346,
       "sl": 0.17412850453351827,
       "entry_time_utc": "2026-11-09T09:02:18.078428444Z",
-      "exit_reason": "stop"
+      "exit_reason": "stop",
+      "closed_at": "2026-11-10T08:28:16+00:00",
+      "cashflow_pnl_before_usd_fees": -11.060477488617181
     },
     {
       "symbol": "XRP/USD",
@@ -86248,14 +86254,14 @@
     "RENDER/USD|1h|donchian_breakout|1794218400": 1794220999.9217641,
     "XRP/USD|15m|bollinger_reversion|1794223800": 1794223974.8527281
   },
-  "day": "2026-11-09",
-  "day_start_equity": 99754.09,
+  "day": "2026-11-10",
+  "day_start_equity": 99749.42,
   "daily_paused": false,
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-10T08:28:13+00:00",
+    "observed_at_utc": "2026-11-10T08:28:16+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -86269,10 +86275,10 @@
       },
       {
         "symbol": "ARBUSD",
-        "filled_quantity": "1083.679159644",
+        "filled_quantity": "17.548517710",
         "fee_quantity": "-17.548517710",
-        "expected_quantity": "1066.130641934",
-        "broker_quantity": "1066.130641934",
+        "expected_quantity": "0E-9",
+        "broker_quantity": "0",
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
@@ -86444,7 +86450,7 @@
     "attempts": 1,
     "retry_exhausted": false
   },
-  "last_entry_scan_at": 1794223960.122381,
+  "last_entry_scan_at": 1794299296.955154,
   "watchlist": {
     "observed_at_utc": "2026-11-09T11:32:41+00:00",
     "status": "partial",
