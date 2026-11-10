@@ -1,4 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-LTC/USD,5m,bollinger_reversion,1794321000,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.62330804189196}"
-SOL/USD,5m,bollinger_reversion,1794321000,order_result,broker_order_returned,"{""broker_order_id"": ""7af39dd3-2f51-4bc9-828d-41da824a0899"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-107b68da5aae3592bdbea919db411266"", ""quantity"": ""2.392974227"", ""reference_ask"": 83.578}"
-ONDO/USD,5m,bollinger_reversion,1794321000,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 52.137077065116415}"
+PEPE/USD,1h,donchian_breakout,1794322800,skipped,symbol_already_active,{}
+UNI/USD,1h,trend_pullback,1794322800,order_result,broker_order_returned,"{""broker_order_id"": ""c8db01ac-47c3-44a2-866b-9a9109655e54"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-ffaac42435943ac8b32c35f6c6c638eb"", ""quantity"": ""24.784504868"", ""reference_ask"": 7.087}"
+UNI/USD,1h,rolling_vwap_reclaim,1794322800,skipped,symbol_already_active,{}
