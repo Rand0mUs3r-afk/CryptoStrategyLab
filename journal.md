@@ -8,17 +8,13 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 6. Skipped: 4. Broker order results: 2.
+Candidates: 2. Skipped: 2. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| BTC/USD | 5m | bollinger_reversion | skipped | symbol_already_active | {} |
-| BTC/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
-| ETH/USD | 5m | rsi_rebound | order_result | broker_order_returned | {"broker_order_id": "b8df5e7a-0fbf-43ca-9a73-a0a74515fff5", "broker_status": "pending_new", "client_order_id": "csl2-a82189bb74e8023b8a3a9bc662773509", "quantity": "0.095162871", "reference_ask": 2101.66} |
-| LTC/USD | 5m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 59.51939840943559} |
-| SOL/USD | 5m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "77ed720b-1be9-4e91-8a71-6d39689d4b2f", "broker_status": "pending_new", "client_order_id": "csl2-b39577c89a50610e16163515ec17cb18", "quantity": "2.344127257", "reference_ask": 85.3196} |
-| ONDO/USD | 5m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 50.89345845650152} |
+| ETH/USD | 15m | bollinger_reversion | skipped | symbol_already_active | {} |
+| LTC/USD | 15m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 58.98130115439316} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -198,15 +194,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-10T09:46:57+00:00
+Next entry scan eligible: 2026-11-10T10:38:55+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-10T09:16:58+00:00
+Last refresh: 2026-11-10T10:08:56+00:00
 Source status: partial
-Selected: BTC/USD, PEPE/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, ONDO/USD, UNI/USD, AAVE/USD, ARB/USD
+Selected: BTC/USD, ETH/USD, PEPE/USD, SOL/USD, AVAX/USD, LINK/USD, LTC/USD, ONDO/USD, UNI/USD, AAVE/USD, ARB/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

@@ -20,101 +20,50 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794302100,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "5m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794302100,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
       "symbol": "ETH/USD",
-      "timeframe": "5m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794302100,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-a82189bb74e8023b8a3a9bc662773509",
-        "quantity": "0.095162871",
-        "reference_ask": 2101.66,
-        "broker_status": "pending_new",
-        "broker_order_id": "b8df5e7a-0fbf-43ca-9a73-a0a74515fff5"
-      }
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794304800,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
       "symbol": "LTC/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794302100,
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794304800,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 59.51939840943559,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794302100,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-b39577c89a50610e16163515ec17cb18",
-        "quantity": "2.344127257",
-        "reference_ask": 85.3196,
-        "broker_status": "pending_new",
-        "broker_order_id": "77ed720b-1be9-4e91-8a71-6d39689d4b2f"
-      }
-    },
-    {
-      "symbol": "ONDO/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794302100,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 50.89345845650152,
+        "spread_bps": 58.98130115439316,
         "max_spread_bps": 50
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 6,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-10T09:46:57+00:00",
+  "next_entry_scan_at_utc": "2026-11-10T10:38:55+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
-    "PEPE/USD",
-    "AVAX/USD",
     "ETH/USD",
+    "PEPE/USD",
+    "SOL/USD",
+    "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
-    "SOL/USD",
     "ONDO/USD",
     "UNI/USD",
     "AAVE/USD",
     "ARB/USD"
   ],
-  "observed_at_utc": "2026-11-10T09:17:43+00:00",
+  "observed_at_utc": "2026-11-10T10:09:11+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-10T09:17:41+00:00",
+    "observed_at_utc": "2026-11-10T10:08:55+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
