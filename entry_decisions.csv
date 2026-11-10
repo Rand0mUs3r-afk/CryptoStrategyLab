@@ -1,7 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,1h,bollinger_reversion,1794315600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.12675378432438}"
-LINK/USD,1h,bollinger_reversion,1794315600,order_result,broker_order_returned,"{""broker_order_id"": ""c3e58344-7d65-4aeb-9581-52802dc55944"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-36b09106ec4ea07bf182386b134a6cd4"", ""quantity"": ""19.138755980"", ""reference_ask"": 10.45}"
-ONDO/USD,15m,ema_cross,1794317400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 51.54016618243113}"
-AAVE/USD,1h,rsi_rebound,1794315600,order_result,broker_order_returned,"{""broker_order_id"": ""ab4e4531-0ba0-4a1d-9ee4-82116da6b67e"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-a8f3c8a55c5e481f183e454a8738d1f7"", ""quantity"": ""1.6"", ""reference_ask"": 125.0}"
-ARB/USD,1h,bollinger_reversion,1794315600,order_result,broker_order_returned,"{""broker_order_id"": ""ee0ff4f1-d0a5-459d-9151-a64de854a66b"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-cf4e63dfa0e5ce14de87431ed060cbaf"", ""quantity"": ""1221.001221001"", ""reference_ask"": 0.1638}"
-ARB/USD,1h,rsi_rebound,1794315600,skipped,symbol_already_active,{}
+LTC/USD,5m,bollinger_reversion,1794321000,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.62330804189196}"
+SOL/USD,5m,bollinger_reversion,1794321000,order_result,broker_order_returned,"{""broker_order_id"": ""7af39dd3-2f51-4bc9-828d-41da824a0899"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-107b68da5aae3592bdbea919db411266"", ""quantity"": ""2.392974227"", ""reference_ask"": 83.578}"
+ONDO/USD,5m,bollinger_reversion,1794321000,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 52.137077065116415}"
