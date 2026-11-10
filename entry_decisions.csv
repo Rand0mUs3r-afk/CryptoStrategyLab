@@ -1,4 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,15m,ema_cross,1794351600,skipped,symbol_already_active,{}
-RENDER/USD,1h,trend_pullback,1794351600,skipped,symbol_already_active,{}
-TRUMP/USD,15m,trend_pullback,1794351600,skipped,symbol_already_active,{}
+PEPE/USD,15m,trend_pullback,1794353400,skipped,symbol_already_active,{}
+RENDER/USD,1h,trend_pullback,1794351600,skipped,already_seen,{}
