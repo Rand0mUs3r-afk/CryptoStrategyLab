@@ -85106,10 +85106,14 @@
         "client_order_id": "csl2-74386445d0087a22f97b9e263dd729bc"
       },
       "cycle_id": "csl2-107b68da5aae3592bdbea919db411266",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794326366.2039387,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "15f6b33e-f985-431b-b9a0-1379c99dc8fb",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-10T15:59:39.398620979Z"
     }
   },
   "cycles": [
