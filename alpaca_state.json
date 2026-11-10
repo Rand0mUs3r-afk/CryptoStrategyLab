@@ -85125,14 +85125,14 @@
         "client_order_id": "csl2-e10c1ed22a06adb3819a11c0990509d4"
       },
       "cycle_id": "csl2-ffaac42435943ac8b32c35f6c6c638eb",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1794326380.9210308,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "24.722543605",
       "broker_order_id": "1a7f1d98-d185-4df2-9410-cbf2641ec28e",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-10T15:59:54.175809798Z"
+      "filled_avg_price": 6.81778,
+      "filled_at": "2026-11-10T15:59:54.176820756Z",
+      "broker_updated_at": "2026-11-10T15:59:54.186936967Z"
     }
   },
   "cycles": [
@@ -88148,18 +88148,20 @@
       "hold_seconds": 259200,
       "id": "csl2-36b09106ec4ea07bf182386b134a6cd4",
       "created_at": 1794317943.5937963,
-      "status": "open",
+      "status": "closed",
       "distance": 0.14349718024605385,
       "target_r": 2.0,
       "reference_ask": 10.45,
-      "remaining_qty": 19.09090909,
+      "remaining_qty": 0.0,
       "entry_price": 10.447,
       "entry_qty": 19.13875598,
       "entry_notional_usd": 199.94258372305998,
       "tp": 10.733994360492106,
       "sl": 10.303502819753945,
       "entry_time_utc": "2026-11-10T13:39:15.10386897Z",
-      "exit_reason": "stop"
+      "exit_reason": "stop",
+      "closed_at": "2026-11-10T16:00:04+00:00",
+      "cashflow_pnl_before_usd_fees": -4.463129186913989
     },
     {
       "symbol": "AAVE/USD",
@@ -88215,18 +88217,20 @@
       "hold_seconds": 3600,
       "id": "csl2-107b68da5aae3592bdbea919db411266",
       "created_at": 1794321047.8974857,
-      "status": "open",
+      "status": "closed",
       "distance": 0.49889345844296545,
       "target_r": 2.0,
       "reference_ask": 83.578,
-      "remaining_qty": 2.386991791,
+      "remaining_qty": 0.0,
       "entry_price": 83.557,
       "entry_qty": 2.392974227,
       "entry_notional_usd": 199.949747485439,
       "tp": 84.55478691688593,
       "sl": 83.05810654155704,
       "entry_time_utc": "2026-11-10T14:30:59.72566636Z",
-      "exit_reason": "stop"
+      "exit_reason": "stop",
+      "closed_at": "2026-11-10T16:00:04+00:00",
+      "cashflow_pnl_before_usd_fees": -3.7564473053133156
     },
     {
       "symbol": "UNI/USD",
@@ -88238,18 +88242,20 @@
       "hold_seconds": 259200,
       "id": "csl2-ffaac42435943ac8b32c35f6c6c638eb",
       "created_at": 1794323752.6207113,
-      "status": "open",
+      "status": "closed",
       "distance": 0.16118742061773003,
       "target_r": 2.0,
       "reference_ask": 7.087,
-      "remaining_qty": 24.722543605,
+      "remaining_qty": 0.0,
       "entry_price": 7.078,
       "entry_qty": 24.784504868,
       "entry_notional_usd": 175.424725455704,
       "tp": 7.40037484123546,
       "sl": 6.91681257938227,
       "entry_time_utc": "2026-11-10T15:16:06.685995511Z",
-      "exit_reason": "stop"
+      "exit_reason": "stop",
+      "closed_at": "2026-11-10T16:00:04+00:00",
+      "cashflow_pnl_before_usd_fees": -6.871862116407101
     }
   ],
   "seen": {
@@ -89115,7 +89121,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-10T15:59:52+00:00",
+    "observed_at_utc": "2026-11-10T16:00:03+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -89279,10 +89285,10 @@
       },
       {
         "symbol": "UNIUSD",
-        "filled_quantity": "25.412845968",
+        "filled_quantity": "0.690302363",
         "fee_quantity": "-0.628341100",
-        "expected_quantity": "24.784504868",
-        "broker_quantity": "24.722543605",
+        "expected_quantity": "0.061961263",
+        "broker_quantity": "0",
         "difference_quantity": "-0.061961263",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.061961263"
@@ -89306,7 +89312,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1794323735.4976566,
+  "last_entry_scan_at": 1794326404.4772964,
   "watchlist": {
     "observed_at_utc": "2026-11-10T15:15:37+00:00",
     "status": "partial",
