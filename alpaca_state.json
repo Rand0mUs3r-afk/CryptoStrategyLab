@@ -83351,10 +83351,14 @@
         "client_order_id": "csl2-219203b4441205ad1ee0adac2fae0576"
       },
       "cycle_id": "csl2-a82189bb74e8023b8a3a9bc662773509",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794308155.735017,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "d760fe98-d5d6-4d09-8120-c8938dbb1708",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-10T10:56:09.233821015Z"
     }
   },
   "cycles": [
