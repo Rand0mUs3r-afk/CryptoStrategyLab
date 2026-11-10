@@ -82746,14 +82746,15 @@
         "client_order_id": "csl2-a82189bb74e8023b8a3a9bc662773509"
       },
       "cycle_id": "csl2-a82189bb74e8023b8a3a9bc662773509",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1794302233.4037678,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "0.095162871",
       "broker_order_id": "b8df5e7a-0fbf-43ca-9a73-a0a74515fff5",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-10T09:17:15.545619995Z"
+      "filled_avg_price": 2102.24,
+      "filled_at": "2026-11-10T09:17:15.547051193Z",
+      "broker_updated_at": "2026-11-10T09:17:15.587280792Z",
+      "reference_ask": 2101.66
     }
   },
   "cycles": [
@@ -85716,11 +85717,17 @@
       "hold_seconds": 3600,
       "id": "csl2-a82189bb74e8023b8a3a9bc662773509",
       "created_at": 1794302233.4037678,
-      "status": "pending",
+      "status": "open",
       "distance": 8.154292023906725,
       "target_r": 2.0,
       "reference_ask": 2101.66,
-      "remaining_qty": 0.0
+      "remaining_qty": 0.094924963,
+      "entry_price": 2102.24,
+      "entry_qty": 0.095162871,
+      "entry_notional_usd": 200.05519393103998,
+      "tp": 2118.548584047813,
+      "sl": 2094.085707976093,
+      "entry_time_utc": "2026-11-10T09:17:15.547051193Z"
     }
   ],
   "seen": {
@@ -86567,8 +86574,8 @@
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
-    "status": "matched",
-    "observed_at_utc": "2026-11-10T09:17:14+00:00",
+    "status": "fee_pending",
+    "observed_at_utc": "2026-11-10T09:17:22+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -86622,13 +86629,13 @@
       },
       {
         "symbol": "ETHUSD",
-        "filled_quantity": "0.002847632",
+        "filled_quantity": "0.098010503",
         "fee_quantity": "-0.002847632",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "0.095162871",
+        "broker_quantity": "0.094924963",
+        "difference_quantity": "-0.000237908",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.000237908"
       },
       {
         "symbol": "FILUSD",
@@ -86753,9 +86760,11 @@
     ],
     "entries_blocked": false,
     "exit_checks_allowed": true,
-    "accounting_final": true,
-    "attempts": 1,
-    "retry_exhausted": false
+    "accounting_final": false,
+    "attempts": 3,
+    "retry_exhausted": true,
+    "pending_entry_policy_enabled": true,
+    "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
   "last_entry_scan_at": 1794302217.299679,
   "watchlist": {
