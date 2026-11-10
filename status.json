@@ -6,24 +6,67 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "ARB/USD",
+      "symbol": "TRUMP/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     },
     {
-      "symbol": "TRUMP/USD",
+      "symbol": "RENDER/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [],
+  "entry_decisions": [
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "15m",
+      "strategy": "ema_cross",
+      "signal_time": 1794348900,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-498a2f37c8a6e2416c4dda5a8169ff02",
+        "quantity": "116.713172607",
+        "reference_ask": 1.599,
+        "broker_status": "pending_new",
+        "broker_order_id": "a0b4559c-61c5-4d36-b060-fd4b791a9063"
+      }
+    },
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1794348900,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1794348000,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "1h",
+      "strategy": "macd_momentum",
+      "signal_time": 1794348000,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    }
+  ],
   "entry_pause_reasons": [],
-  "candidates": 0,
+  "candidates": 4,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-10T22:20:02+00:00",
+  "next_entry_scan_at_utc": "2026-11-10T22:55:43+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -35,12 +78,13 @@
     "ETH/USD",
     "LINK/USD",
     "LTC/USD",
+    "RENDER/USD",
     "AAVE/USD"
   ],
-  "observed_at_utc": "2026-11-10T21:50:16+00:00",
+  "observed_at_utc": "2026-11-10T22:26:15+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-10T21:50:02+00:00",
+    "observed_at_utc": "2026-11-10T22:26:14+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -174,13 +218,13 @@
       },
       {
         "symbol": "RENDERUSD",
-        "filled_quantity": "1.870237078",
+        "filled_quantity": "118.583409685",
         "fee_quantity": "-1.870237078",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "116.713172607",
+        "broker_quantity": "116.421389675",
+        "difference_quantity": "-0.291782932",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.291782932"
       },
       {
         "symbol": "SOLUSD",
