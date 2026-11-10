@@ -85454,6 +85454,21 @@
       "filled_avg_price": 6.81778,
       "filled_at": "2026-11-10T15:59:54.176820756Z",
       "broker_updated_at": "2026-11-10T15:59:54.186936967Z"
+    },
+    "csl2-f31dfff905da5e98b75c60eec7825398": {
+      "payload": {
+        "symbol": "AAVE/USD",
+        "side": "sell",
+        "qty": "1.596",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-f31dfff905da5e98b75c60eec7825398"
+      },
+      "cycle_id": "csl2-a8f3c8a55c5e481f183e454a8738d1f7",
+      "status": "queued",
+      "created_at": 1794328967.6803489,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -88504,7 +88519,8 @@
       "entry_notional_usd": 200.01600000000002,
       "tp": 129.788577246973,
       "sl": 122.62071137651351,
-      "entry_time_utc": "2026-11-10T13:39:34.440489787Z"
+      "entry_time_utc": "2026-11-10T13:39:34.440489787Z",
+      "exit_reason": "stop"
     },
     {
       "symbol": "ARB/USD",
@@ -89450,7 +89466,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-10T16:00:03+00:00",
+    "observed_at_utc": "2026-11-10T16:42:57+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
