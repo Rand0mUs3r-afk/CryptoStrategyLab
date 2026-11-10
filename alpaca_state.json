@@ -84133,6 +84133,21 @@
       "filled_at": "2026-11-10T13:39:34.440489787Z",
       "broker_updated_at": "2026-11-10T13:39:34.486807541Z",
       "reference_ask": 125.0
+    },
+    "csl2-cf4e63dfa0e5ce14de87431ed060cbaf": {
+      "payload": {
+        "symbol": "ARB/USD",
+        "side": "buy",
+        "qty": "1221.001221001",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-cf4e63dfa0e5ce14de87431ed060cbaf"
+      },
+      "cycle_id": "csl2-cf4e63dfa0e5ce14de87431ed060cbaf",
+      "status": "queued",
+      "created_at": 1794317982.464779,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -87178,6 +87193,22 @@
       "tp": 129.788577246973,
       "sl": 122.62071137651351,
       "entry_time_utc": "2026-11-10T13:39:34.440489787Z"
+    },
+    {
+      "symbol": "ARB/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794315600,
+      "atr": 0.0027425026808925224,
+      "signal_close": 0.16403,
+      "hold_seconds": 259200,
+      "id": "csl2-cf4e63dfa0e5ce14de87431ed060cbaf",
+      "created_at": 1794317982.464779,
+      "status": "pending",
+      "distance": 0.004113754021338784,
+      "target_r": 2.0,
+      "reference_ask": 0.1638,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -88026,7 +88057,8 @@
     "AVAX/USD|1h|bollinger_reversion|1794315600": 1794317943.5539734,
     "LINK/USD|1h|bollinger_reversion|1794315600": 1794317943.5937963,
     "ONDO/USD|15m|ema_cross|1794317400": 1794317963.0230432,
-    "AAVE/USD|1h|rsi_rebound|1794315600": 1794317963.0516114
+    "AAVE/USD|1h|rsi_rebound|1794315600": 1794317963.0516114,
+    "ARB/USD|1h|bollinger_reversion|1794315600": 1794317982.464779
   },
   "day": "2026-11-10",
   "day_start_equity": 99749.42,
@@ -88035,7 +88067,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-10T13:39:40+00:00",
+    "observed_at_utc": "2026-11-10T13:39:52+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
