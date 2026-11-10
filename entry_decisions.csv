@@ -1,2 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-TRUMP/USD,15m,trend_pullback,1794341700,order_result,broker_order_returned,"{""broker_order_id"": ""9afeab0f-e366-4772-a9ca-f48a38c5a4bf"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-7406cfc0cdfb75331f440152677ace9f"", ""quantity"": ""176.511601224"", ""reference_ask"": 1.13307}"
+BTC/USD,5m,donchian_breakout,1794345000,skipped,symbol_already_active,{}
