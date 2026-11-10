@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,5m,donchian_breakout,1794345000,skipped,symbol_already_active,{}
