@@ -6,12 +6,6 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "TRUMP/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
       "symbol": "AAVE/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -26,31 +20,26 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "PEPE/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794331800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
+      "symbol": "BTC/USD",
       "timeframe": "1h",
       "strategy": "bollinger_reversion",
-      "signal_time": 1794330000,
-      "outcome": "skipped",
-      "reason": "no_fresh_quote",
+      "signal_time": 1794333600,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
       "details": {
-        "max_quote_age_seconds": 30
+        "client_order_id": "csl2-103d3095a05f7071c3e29fc8983c12f2",
+        "quantity": "0.002733599",
+        "reference_ask": 73163.6,
+        "broker_status": "pending_new",
+        "broker_order_id": "233ff49c-cb2d-40eb-82a8-7db6ca4cbcda"
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-10T17:59:54+00:00",
+  "next_entry_scan_at_utc": "2026-11-10T18:42:09+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "PEPE/USD",
@@ -60,14 +49,13 @@
     "ETH/USD",
     "LINK/USD",
     "LTC/USD",
-    "TRUMP/USD",
     "AAVE/USD",
     "ARB/USD"
   ],
-  "observed_at_utc": "2026-11-10T17:30:09+00:00",
+  "observed_at_utc": "2026-11-10T18:12:44+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-10T17:29:54+00:00",
+    "observed_at_utc": "2026-11-10T18:12:43+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -101,13 +89,13 @@
       },
       {
         "symbol": "BTCUSD",
-        "filled_quantity": "0.000096252",
+        "filled_quantity": "0.002829851",
         "fee_quantity": "-0.000096252",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "0.002733599",
+        "broker_quantity": "0.002726765",
+        "difference_quantity": "-0.000006834",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.000006834"
       },
       {
         "symbol": "DOTUSD",

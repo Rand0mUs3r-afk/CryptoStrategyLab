@@ -1,3 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,15m,trend_pullback,1794331800,skipped,symbol_already_active,{}
-AVAX/USD,1h,bollinger_reversion,1794330000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+BTC/USD,1h,bollinger_reversion,1794333600,order_result,broker_order_returned,"{""broker_order_id"": ""233ff49c-cb2d-40eb-82a8-7db6ca4cbcda"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-103d3095a05f7071c3e29fc8983c12f2"", ""quantity"": ""0.002733599"", ""reference_ask"": 73163.6}"
