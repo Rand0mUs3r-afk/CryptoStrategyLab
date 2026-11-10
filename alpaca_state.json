@@ -84113,6 +84113,21 @@
       "filled_at": "2026-11-10T13:39:15.10386897Z",
       "broker_updated_at": "2026-11-10T13:39:15.137100439Z",
       "reference_ask": 10.45
+    },
+    "csl2-a8f3c8a55c5e481f183e454a8738d1f7": {
+      "payload": {
+        "symbol": "AAVE/USD",
+        "side": "buy",
+        "qty": "1.6",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-a8f3c8a55c5e481f183e454a8738d1f7"
+      },
+      "cycle_id": "csl2-a8f3c8a55c5e481f183e454a8738d1f7",
+      "status": "queued",
+      "created_at": 1794317963.0516114,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -87136,6 +87151,22 @@
       "tp": 10.733994360492106,
       "sl": 10.303502819753945,
       "entry_time_utc": "2026-11-10T13:39:15.10386897Z"
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "1h",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794315600,
+      "atr": 1.5928590823243305,
+      "signal_close": 125.76,
+      "hold_seconds": 259200,
+      "id": "csl2-a8f3c8a55c5e481f183e454a8738d1f7",
+      "created_at": 1794317963.0516114,
+      "status": "pending",
+      "distance": 2.389288623486496,
+      "target_r": 2.0,
+      "reference_ask": 125.0,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -87982,7 +88013,9 @@
     "LTC/USD|15m|trend_pullback|1794304800": 1794305351.416116,
     "BTC/USD|1h|bollinger_reversion|1794312000": 1794313881.0607626,
     "AVAX/USD|1h|bollinger_reversion|1794315600": 1794317943.5539734,
-    "LINK/USD|1h|bollinger_reversion|1794315600": 1794317943.5937963
+    "LINK/USD|1h|bollinger_reversion|1794315600": 1794317943.5937963,
+    "ONDO/USD|15m|ema_cross|1794317400": 1794317963.0230432,
+    "AAVE/USD|1h|rsi_rebound|1794315600": 1794317963.0516114
   },
   "day": "2026-11-10",
   "day_start_equity": 99749.42,
@@ -87991,7 +88024,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-10T13:39:21+00:00",
+    "observed_at_utc": "2026-11-10T13:39:32+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
