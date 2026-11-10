@@ -1,1 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+AAVE/USD,1h,bollinger_reversion,1794297600,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
