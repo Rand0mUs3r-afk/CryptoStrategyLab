@@ -85503,10 +85503,14 @@
         "client_order_id": "csl2-d82694372d53fb49ae39a5806756e573"
       },
       "cycle_id": "csl2-d82694372d53fb49ae39a5806756e573",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794329016.171498,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "4be7321d-b415-40b4-a4e1-07c1ed8a64b9",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-10T16:43:49.420362523Z"
     }
   },
   "cycles": [
