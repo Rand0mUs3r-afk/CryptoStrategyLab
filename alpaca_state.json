@@ -84124,10 +84124,14 @@
         "client_order_id": "csl2-a8f3c8a55c5e481f183e454a8738d1f7"
       },
       "cycle_id": "csl2-a8f3c8a55c5e481f183e454a8738d1f7",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794317963.0516114,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "ab4e4531-0ba0-4a1d-9ee4-82116da6b67e",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-10T13:39:34.439241798Z"
     }
   },
   "cycles": [
