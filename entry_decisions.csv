@@ -1,3 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,15m,bollinger_reversion,1794304800,skipped,symbol_already_active,{}
-LTC/USD,15m,trend_pullback,1794304800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 58.98130115439316}"

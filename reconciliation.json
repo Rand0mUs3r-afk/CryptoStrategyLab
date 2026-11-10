@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-10T10:08:55+00:00",
+  "observed_at_utc": "2026-11-10T10:56:31+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -54,10 +54,10 @@
     },
     {
       "symbol": "ETHUSD",
-      "filled_quantity": "0.098010503",
+      "filled_quantity": "0.003085540",
       "fee_quantity": "-0.002847632",
-      "expected_quantity": "0.095162871",
-      "broker_quantity": "0.094924963",
+      "expected_quantity": "0.000237908",
+      "broker_quantity": "0",
       "difference_quantity": "-0.000237908",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.000237908"
@@ -144,10 +144,10 @@
     },
     {
       "symbol": "SOLUSD",
-      "filled_quantity": "2.455825270",
+      "filled_quantity": "0.117558332",
       "fee_quantity": "-0.111698013",
-      "expected_quantity": "2.344127257",
-      "broker_quantity": "2.338266938",
+      "expected_quantity": "0.005860319",
+      "broker_quantity": "0",
       "difference_quantity": "-0.005860319",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.005860319"
