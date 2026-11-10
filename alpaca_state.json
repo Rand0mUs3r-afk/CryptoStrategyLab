@@ -84799,10 +84799,14 @@
         "client_order_id": "csl2-ffaac42435943ac8b32c35f6c6c638eb"
       },
       "cycle_id": "csl2-ffaac42435943ac8b32c35f6c6c638eb",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794323752.6207113,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "c8db01ac-47c3-44a2-866b-9a9109655e54",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-10T15:16:06.68489435Z"
     }
   },
   "cycles": [
