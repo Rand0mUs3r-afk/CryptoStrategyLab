@@ -1,9 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AAVE/USD,15m,bollinger_reversion,1794326400,skipped,symbol_already_active,{}
-AAVE/USD,15m,rsi_rebound,1794326400,skipped,symbol_already_active,{}
-AVAX/USD,15m,bollinger_reversion,1794326400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 55.11397743258466}"
-AVAX/USD,15m,rsi_rebound,1794326400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 55.11397743258466}"
-LINK/USD,15m,bollinger_reversion,1794326400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-LINK/USD,15m,rsi_rebound,1794326400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-LTC/USD,15m,rsi_rebound,1794326400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.770994188099074}"
-SOL/USD,15m,rsi_rebound,1794326400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+SOL/USD,15m,bollinger_reversion,1794328200,order_result,broker_order_returned,"{""broker_order_id"": ""4be7321d-b415-40b4-a4e1-07c1ed8a64b9"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-d82694372d53fb49ae39a5806756e573"", ""quantity"": ""2.435163764"", ""reference_ask"": 82.13}"
+SOL/USD,15m,rsi_rebound,1794328200,skipped,symbol_already_active,{}
