@@ -1,5 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-RENDER/USD,15m,ema_cross,1794348900,order_result,broker_order_returned,"{""broker_order_id"": ""a0b4559c-61c5-4d36-b060-fd4b791a9063"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-498a2f37c8a6e2416c4dda5a8169ff02"", ""quantity"": ""116.713172607"", ""reference_ask"": 1.599}"
-RENDER/USD,15m,donchian_breakout,1794348900,skipped,symbol_already_active,{}
-RENDER/USD,1h,trend_pullback,1794348000,skipped,symbol_already_active,{}
-RENDER/USD,1h,macd_momentum,1794348000,skipped,symbol_already_active,{}
+PEPE/USD,15m,ema_cross,1794351600,skipped,symbol_already_active,{}
+RENDER/USD,1h,trend_pullback,1794351600,skipped,symbol_already_active,{}
+TRUMP/USD,15m,trend_pullback,1794351600,skipped,symbol_already_active,{}

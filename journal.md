@@ -8,15 +8,14 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 4. Skipped: 3. Broker order results: 1.
+Candidates: 3. Skipped: 3. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| RENDER/USD | 15m | ema_cross | order_result | broker_order_returned | {"broker_order_id": "a0b4559c-61c5-4d36-b060-fd4b791a9063", "broker_status": "pending_new", "client_order_id": "csl2-498a2f37c8a6e2416c4dda5a8169ff02", "quantity": "116.713172607", "reference_ask": 1.599} |
-| RENDER/USD | 15m | donchian_breakout | skipped | symbol_already_active | {} |
+| PEPE/USD | 15m | ema_cross | skipped | symbol_already_active | {} |
 | RENDER/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| RENDER/USD | 1h | macd_momentum | skipped | symbol_already_active | {} |
+| TRUMP/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -24,15 +23,15 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
-| TRUMP/USD | 5m | candles | ValueError |
+| ARB/USD | 5m | candles | ValueError |
 | RENDER/USD | 5m | candles | ValueError |
+| TRUMP/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | PEPE/USD | 6h | trend_pullback | 4.93e-06 | 40567951.318458416 | 200.0 | 40466531.44016227 | 5.6313488264385755e-06 | 4.579325586780713e-06 | open |
-| SOL/USD | 15m | bollinger_reversion | 82.15 | 2.435163764 | 200.0487032126 | 2.429075854 | 84.32456114821323 | 81.06271942589339 | open |
 | BTC/USD | 1h | bollinger_reversion | 73174.0 | 0.002733599 | 200.028373226 | 0.002726765 | 75066.4026904474 | 72227.7986547763 | open |
 | ARB/USD | 1h | rsi_rebound | 0.160405 | 1246.882793017 | 200.0062344138919 | 1243.765586034 | 0.17037393093457043 | 0.1554205345327148 | open |
 | TRUMP/USD | 15m | trend_pullback | 1.13441 | 176.511601224 | 200.23652554451783 | 176.07032222 | 1.1648626556677402 | 1.11918367216613 | open |
@@ -168,6 +167,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | ARB/USD | 1h | bollinger_reversion | 0.16403 | 1221.001221001 | 200.28083028079405 | 0.0 | 0.1722575080426776 | 0.15991624597866122 | closed |
 | SOL/USD | 5m | bollinger_reversion | 83.557 | 2.392974227 | 199.949747485439 | 0.0 | 84.55478691688593 | 83.05810654155704 | closed |
 | UNI/USD | 1h | trend_pullback | 7.078 | 24.784504868 | 175.424725455704 | 0.0 | 7.40037484123546 | 6.91681257938227 | closed |
+| SOL/USD | 15m | bollinger_reversion | 82.15 | 2.435163764 | 200.0487032126 | 0.0 | 84.32456114821323 | 81.06271942589339 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -196,7 +196,7 @@ Accounting final: False
 | PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 116.713172607 | 116.421389675 | -0.291782932 | 0.291782932 |
-| SOLUSD | 2.447006519 | 2.429075854 | -0.017930665 | 0.017930665 |
+| SOLUSD | 0.017930665 | 0 | -0.017930665 | 0.017930665 |
 | TRUMPUSD | 176.511601224 | 176.07032222 | -0.441279004 | 0.441279004 |
 | UNIUSD | 0.061961263 | 0 | -0.061961263 | 0.061961263 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -206,15 +206,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-10T22:55:43+00:00
+Next entry scan eligible: 2026-11-10T23:34:05+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-10T22:25:44+00:00
+Last refresh: 2026-11-10T23:04:07+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, PEPE/USD, SOL/USD, TRUMP/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, RENDER/USD, AAVE/USD
+Selected: ARB/USD, BTC/USD, PEPE/USD, RENDER/USD, TRUMP/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, AAVE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
