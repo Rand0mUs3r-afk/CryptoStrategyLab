@@ -1,2 +1,16 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,1h,ema_cross,1794362400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.24256834986139}"
+PEPE/USD,15m,trend_pullback,1794365100,skipped,symbol_already_active,{}
+RENDER/USD,15m,trend_pullback,1794365100,skipped,symbol_already_active,{}
+AVAX/USD,15m,donchian_breakout,1794365100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.6726957296426}"
+AVAX/USD,1h,ema_cross,1794362400,skipped,already_seen,{}
+LINK/USD,5m,macd_momentum,1794365100,order_result,broker_order_returned,"{""broker_order_id"": ""9d0e6675-68cc-451a-a241-eff6ebeaaa9e"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-8e7ff50521c1085d90599ca26bd07474"", ""quantity"": ""19.230769230"", ""reference_ask"": 10.4}"
+LTC/USD,15m,trend_pullback,1794365100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.16666699310493}"
+LTC/USD,15m,macd_momentum,1794365100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.16666699310493}"
+LTC/USD,5m,trend_pullback,1794365100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.16666699310493}"
+LTC/USD,5m,macd_momentum,1794365100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.16666699310493}"
+TRUMP/USD,15m,trend_pullback,1794365100,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+FIL/USD,15m,trend_pullback,1794365100,order_result,broker_order_returned,"{""broker_order_id"": ""17c65c63-6123-4fcf-8455-400ccad97970"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-ccb212e84e814cfdd38831c4f4650253"", ""quantity"": ""254.411535039"", ""reference_ask"": 0.76428}"
+FIL/USD,15m,macd_momentum,1794365100,skipped,symbol_already_active,{}
+FIL/USD,15m,rolling_vwap_reclaim,1794365100,skipped,symbol_already_active,{}
+AAVE/USD,5m,ema_cross,1794365100,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+AAVE/USD,5m,macd_momentum,1794365100,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
