@@ -1,3 +1,17 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,5m,bollinger_reversion,1794436800,skipped,symbol_already_active,{}
-ETH/USD,5m,bollinger_reversion,1794436800,order_result,broker_order_returned,"{""broker_order_id"": ""917fbbef-58ec-4eae-b117-56062988440a"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-c5c8818c84a05d6ba88ef2ba94e21219"", ""quantity"": ""0.097214796"", ""reference_ask"": 2057.3}"
+BTC/USD,15m,bollinger_reversion,1794439800,skipped,symbol_already_active,{}
+BTC/USD,15m,rsi_rebound,1794439800,skipped,symbol_already_active,{}
+BTC/USD,5m,rsi_rebound,1794439800,skipped,symbol_already_active,{}
+AVAX/USD,15m,bollinger_reversion,1794439800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.512766070385254}"
+AVAX/USD,15m,rsi_rebound,1794439800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.512766070385254}"
+AVAX/USD,5m,rsi_rebound,1794439800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.512766070385254}"
+ETH/USD,15m,bollinger_reversion,1794439800,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+ETH/USD,15m,rsi_rebound,1794439800,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+LINK/USD,15m,bollinger_reversion,1794439800,order_result,broker_order_returned,"{""broker_order_id"": ""5f44f4fa-e98b-44bc-a6ce-d2d2e64bd845"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-5509b590cf47f1bd51b7c92dafc513dd"", ""quantity"": ""19.732817649"", ""reference_ask"": 10.1354}"
+LINK/USD,5m,rsi_rebound,1794439800,skipped,symbol_already_active,{}
+LTC/USD,15m,bollinger_reversion,1794439800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 64.28759905007807}"
+LTC/USD,5m,rsi_rebound,1794439800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 64.28759905007807}"
+SOL/USD,15m,rsi_rebound,1794439800,order_result,broker_order_returned,"{""broker_order_id"": ""3932b883-b188-4288-89f7-305a49fa7737"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-92439bb678aef8b12a0e5e3d031603b6"", ""quantity"": ""2.414138158"", ""reference_ask"": 82.8453}"
+SOL/USD,5m,rsi_rebound,1794439800,skipped,symbol_already_active,{}
+RENDER/USD,15m,bollinger_reversion,1794439800,order_result,broker_order_returned,"{""broker_order_id"": ""52ccefbd-d048-4acd-86ef-c49a581c532b"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-79a56661a028bbaaa330a4d9cefa74fb"", ""quantity"": ""128.865979381"", ""reference_ask"": 1.552}"
+RENDER/USD,15m,rsi_rebound,1794439800,skipped,symbol_already_active,{}
