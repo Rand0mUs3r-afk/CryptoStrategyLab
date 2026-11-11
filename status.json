@@ -26,53 +26,20 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
-      "timeframe": "5m",
-      "strategy": "ema_cross",
-      "signal_time": 1794412800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "15m",
-      "strategy": "ema_cross",
-      "signal_time": 1794412800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "15m",
-      "strategy": "macd_momentum",
-      "signal_time": 1794412800,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 63.44559740725866,
-        "max_spread_bps": 50
-      }
-    },
-    {
       "symbol": "AVAX/USD",
       "timeframe": "1h",
       "strategy": "trend_pullback",
       "signal_time": 1794412800,
       "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 63.44559740725866,
-        "max_spread_bps": 50
-      }
+      "reason": "already_seen",
+      "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 4,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-11T16:33:23+00:00",
+  "next_entry_scan_at_utc": "2026-11-11T17:25:03+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -88,10 +55,10 @@
     "ONDO/USD",
     "HYPE/USD"
   ],
-  "observed_at_utc": "2026-11-11T16:03:41+00:00",
+  "observed_at_utc": "2026-11-11T16:55:20+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-11T16:03:23+00:00",
+    "observed_at_utc": "2026-11-11T16:55:02+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
