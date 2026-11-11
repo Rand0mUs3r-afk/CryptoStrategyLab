@@ -90733,10 +90733,14 @@
         "client_order_id": "csl2-a4293d19609addad7f8b3a5e87867126"
       },
       "cycle_id": "csl2-30a6e9c44575abf939f07ff9dd5e0fc8",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794378218.2871957,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "c93144cc-9d00-4bf7-99b2-7b8f6cbeac5d",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-11T06:23:51.809625426Z"
     }
   },
   "cycles": [
