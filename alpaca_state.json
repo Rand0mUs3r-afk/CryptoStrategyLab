@@ -95971,10 +95971,14 @@
         "client_order_id": "csl2-5509b590cf47f1bd51b7c92dafc513dd"
       },
       "cycle_id": "csl2-5509b590cf47f1bd51b7c92dafc513dd",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794439911.800573,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "5f44f4fa-e98b-44bc-a6ce-d2d2e64bd845",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-11T23:32:05.52591976Z"
     }
   },
   "cycles": [
