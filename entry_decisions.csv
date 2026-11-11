@@ -1,3 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,5m,bollinger_reversion,1794396000,skipped,symbol_already_active,{}
-AVAX/USD,1h,donchian_breakout,1794394800,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+RENDER/USD,5m,trend_pullback,1794399000,skipped,stale_signal,"{""age_seconds"": 301.801283121109, ""max_age_seconds"": 300}"
+LTC/USD,15m,trend_pullback,1794398400,skipped,stale_signal,"{""age_seconds"": 901.801295042038, ""max_age_seconds"": 900}"
