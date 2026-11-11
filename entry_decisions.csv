@@ -1,6 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,5m,trend_pullback,1794374700,skipped,symbol_already_active,{}
-ETH/USD,5m,trend_pullback,1794374700,skipped,symbol_already_active,{}
-PEPE/USD,5m,rsi_rebound,1794374700,skipped,symbol_already_active,{}
-SOL/USD,15m,bollinger_reversion,1794374100,skipped,symbol_already_active,{}
-LINK/USD,5m,trend_pullback,1794374700,order_result,broker_order_returned,"{""broker_order_id"": ""61be3c74-b88c-4cec-8f66-d2f7162ef5d5"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-1936504bce660514150e10b011fe85c1"", ""quantity"": ""18.338224587"", ""reference_ask"": 10.3897}"

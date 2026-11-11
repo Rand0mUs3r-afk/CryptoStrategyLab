@@ -12,12 +12,6 @@
       "error_type": "ValueError"
     },
     {
-      "symbol": "RENDER/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
       "symbol": "CRV/USD",
       "timeframe": "15m",
       "stage": "candles",
@@ -30,83 +24,30 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "BTC/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794374700,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794374700,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794374700,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "15m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794374100,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794374700,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-1936504bce660514150e10b011fe85c1",
-        "quantity": "18.338224587",
-        "reference_ask": 10.3897,
-        "broker_status": "pending_new",
-        "broker_order_id": "61be3c74-b88c-4cec-8f66-d2f7162ef5d5"
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 5,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-11T05:58:19+00:00",
+  "next_entry_scan_at_utc": "2026-11-11T06:54:14+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
     "BTC/USD",
-    "ETH/USD",
-    "PEPE/USD",
-    "SOL/USD",
-    "AVAX/USD",
     "LINK/USD",
+    "PEPE/USD",
+    "AVAX/USD",
+    "ETH/USD",
     "LTC/USD",
+    "SOL/USD",
     "TRUMP/USD",
-    "RENDER/USD",
     "UNI/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-11T05:28:57+00:00",
+  "observed_at_utc": "2026-11-11T06:24:30+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-11T05:28:56+00:00",
+    "observed_at_utc": "2026-11-11T06:24:14+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -160,10 +101,10 @@
       },
       {
         "symbol": "ETHUSD",
-        "filled_quantity": "0.100020457",
+        "filled_quantity": "0.003327878",
         "fee_quantity": "-0.002847632",
-        "expected_quantity": "0.097172825",
-        "broker_quantity": "0.096692579",
+        "expected_quantity": "0.000480246",
+        "broker_quantity": "0",
         "difference_quantity": "-0.000480246",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.000480246"
@@ -250,10 +191,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.432185922",
+        "filled_quantity": "0.135385072",
         "fee_quantity": "-0.111698013",
-        "expected_quantity": "2.320487909",
-        "broker_quantity": "2.29680085",
+        "expected_quantity": "0.023687059",
+        "broker_quantity": "0",
         "difference_quantity": "-0.023687059",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.023687059"
