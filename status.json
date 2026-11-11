@@ -12,13 +12,19 @@
       "error_type": "ValueError"
     },
     {
-      "symbol": "FIL/USD",
+      "symbol": "RENDER/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     },
     {
-      "symbol": "RENDER/USD",
+      "symbol": "CRV/USD",
+      "timeframe": "15m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
+      "symbol": "CRV/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -26,68 +32,54 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "AVAX/USD",
+      "symbol": "BTC/USD",
       "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1794371400,
+      "signal_time": 1794374700,
       "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 56.45014005801671,
-        "max_spread_bps": 50
-      }
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
       "symbol": "ETH/USD",
       "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1794371400,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-30a6e9c44575abf939f07ff9dd5e0fc8",
-        "quantity": "0.096934917",
-        "reference_ask": 2063.24,
-        "broker_status": "pending_new",
-        "broker_order_id": "f318b9b1-4072-49df-ac3e-642c1205ba9d"
-      }
+      "signal_time": 1794374700,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794374700,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794374100,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
       "symbol": "LINK/USD",
       "timeframe": "5m",
       "strategy": "trend_pullback",
-      "signal_time": 1794371400,
-      "outcome": "skipped",
-      "reason": "symbol_cooldown",
-      "details": {
-        "cooldown_seconds": 300
-      }
-    },
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794371400,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 60.14477847326343,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794371400,
+      "signal_time": 1794374700,
       "outcome": "order_result",
       "reason": "broker_order_returned",
       "details": {
-        "client_order_id": "csl2-50407a52a59368c118af5a3f7cf529a1",
-        "quantity": "2.302557244",
-        "reference_ask": 83.03,
+        "client_order_id": "csl2-1936504bce660514150e10b011fe85c1",
+        "quantity": "18.338224587",
+        "reference_ask": 10.3897,
         "broker_status": "pending_new",
-        "broker_order_id": "3d9ae098-5bb5-4a56-9efb-ae2982016f8e"
+        "broker_order_id": "61be3c74-b88c-4cec-8f66-d2f7162ef5d5"
       }
     }
   ],
@@ -95,26 +87,26 @@
   "candidates": 5,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-11T05:01:34+00:00",
+  "next_entry_scan_at_utc": "2026-11-11T05:58:19+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
     "BTC/USD",
-    "FIL/USD",
-    "PEPE/USD",
-    "AVAX/USD",
     "ETH/USD",
+    "PEPE/USD",
+    "SOL/USD",
+    "AVAX/USD",
     "LINK/USD",
     "LTC/USD",
-    "SOL/USD",
     "TRUMP/USD",
     "RENDER/USD",
-    "UNI/USD"
+    "UNI/USD",
+    "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-11T04:32:24+00:00",
+  "observed_at_utc": "2026-11-11T05:28:57+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-11T04:32:23+00:00",
+    "observed_at_utc": "2026-11-11T05:28:56+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -178,10 +170,10 @@
       },
       {
         "symbol": "FILUSD",
-        "filled_quantity": "254.961245342",
+        "filled_quantity": "1.185739141",
         "fee_quantity": "-0.549710303",
-        "expected_quantity": "254.411535039",
-        "broker_quantity": "253.775506201",
+        "expected_quantity": "0.636028838",
+        "broker_quantity": "0",
         "difference_quantity": "-0.636028838",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.636028838"
@@ -198,13 +190,13 @@
       },
       {
         "symbol": "LINKUSD",
-        "filled_quantity": "0.585373718",
+        "filled_quantity": "18.923598305",
         "fee_quantity": "-0.489449904",
-        "expected_quantity": "0.095923814",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.095923814",
+        "expected_quantity": "18.434148401",
+        "broker_quantity": "18.292379025",
+        "difference_quantity": "-0.141769376",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.095923814"
+        "unconfirmed_shortfall": "0.141769376"
       },
       {
         "symbol": "LTCUSD",
