@@ -1,1 +1,6 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+AVAX/USD,5m,trend_pullback,1794371400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 56.45014005801671}"
+ETH/USD,5m,trend_pullback,1794371400,order_result,broker_order_returned,"{""broker_order_id"": ""f318b9b1-4072-49df-ac3e-642c1205ba9d"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-30a6e9c44575abf939f07ff9dd5e0fc8"", ""quantity"": ""0.096934917"", ""reference_ask"": 2063.24}"
+LINK/USD,5m,trend_pullback,1794371400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+LTC/USD,5m,trend_pullback,1794371400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.14477847326343}"
+SOL/USD,5m,bollinger_reversion,1794371400,order_result,broker_order_returned,"{""broker_order_id"": ""3d9ae098-5bb5-4a56-9efb-ae2982016f8e"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-50407a52a59368c118af5a3f7cf529a1"", ""quantity"": ""2.302557244"", ""reference_ask"": 83.03}"
