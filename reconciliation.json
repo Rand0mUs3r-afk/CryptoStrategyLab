@@ -1,6 +1,6 @@
 {
-  "status": "matched",
-  "observed_at_utc": "2026-11-11T09:29:41+00:00",
+  "status": "fee_pending",
+  "observed_at_utc": "2026-11-11T10:28:32+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -134,23 +134,23 @@
     },
     {
       "symbol": "RENDERUSD",
-      "filled_quantity": "2.162020010",
+      "filled_quantity": "124.769115781",
       "fee_quantity": "-2.162020010",
-      "expected_quantity": "0E-9",
-      "broker_quantity": "0",
-      "difference_quantity": "0E-9",
+      "expected_quantity": "122.607095771",
+      "broker_quantity": "122.300578031",
+      "difference_quantity": "-0.306517740",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0"
+      "unconfirmed_shortfall": "0.306517740"
     },
     {
       "symbol": "SOLUSD",
-      "filled_quantity": "0.135385072",
+      "filled_quantity": "2.525236805",
       "fee_quantity": "-0.135385072",
-      "expected_quantity": "0E-9",
-      "broker_quantity": "0",
-      "difference_quantity": "0E-9",
+      "expected_quantity": "2.389851733",
+      "broker_quantity": "2.383877103",
+      "difference_quantity": "-0.005974630",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0"
+      "unconfirmed_shortfall": "0.005974630"
     },
     {
       "symbol": "TRUMPUSD",
@@ -185,7 +185,9 @@
   ],
   "entries_blocked": false,
   "exit_checks_allowed": true,
-  "accounting_final": true,
-  "attempts": 1,
-  "retry_exhausted": false
+  "accounting_final": false,
+  "attempts": 3,
+  "retry_exhausted": true,
+  "pending_entry_policy_enabled": true,
+  "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
 }

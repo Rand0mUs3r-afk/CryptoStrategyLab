@@ -8,13 +8,17 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 2. Skipped: 2. Broker order results: 0.
+Candidates: 6. Skipped: 4. Broker order results: 2.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| PEPE/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
-| AVAX/USD | 5m | trend_pullback | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
+| AVAX/USD | 5m | donchian_breakout | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 61.5326348703776} |
+| AVAX/USD | 5m | squeeze_breakout | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 61.5326348703776} |
+| LINK/USD | 5m | trend_pullback | skipped | no_fresh_quote | {"max_quote_age_seconds": 30} |
+| SOL/USD | 5m | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "3eef8db1-722c-46c9-af5e-8260eba6afd4", "broker_status": "pending_new", "client_order_id": "csl2-bbf8784b1955ff1c78b7ce0be2caf192", "quantity": "2.389851733", "reference_ask": 83.6872} |
+| RENDER/USD | 1h | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "b7753eba-6db1-4a3b-8b0d-33a1cedb37f0", "broker_status": "pending_new", "client_order_id": "csl2-430e0c800b94a88c14d085ed9471624d", "quantity": "122.607095771", "reference_ask": 1.608} |
+| RENDER/USD | 1h | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -23,8 +27,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
 | ARB/USD | 5m | candles | ValueError |
-| CRV/USD | 15m | candles | ValueError |
-| CRV/USD | 5m | candles | ValueError |
+| DOT/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -34,6 +37,8 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | BTC/USD | 1h | bollinger_reversion | 73174.0 | 0.002733599 | 200.028373226 | 0.002726765 | 75066.4026904474 | 72227.7986547763 | open |
 | ARB/USD | 1h | rsi_rebound | 0.160405 | 1246.882793017 | 200.0062344138919 | 1243.765586034 | 0.17037393093457043 | 0.1554205345327148 | open |
 | UNI/USD | 15m | bollinger_reversion | 6.4357 | 31.110924445 | 200.22057645068648 | 31.033147133 | 6.621025015838152 | 6.343037492080924 | open |
+| SOL/USD | 5m | donchian_breakout | 83.7 | 2.389851733 | 200.0305900521 | 2.383877103 | 84.34990754624235 | 83.37504622687884 | open |
+| RENDER/USD | 1h | trend_pullback | 1.611 | 122.607095771 | 197.520031287081 | 122.300578031 | 1.6850784662255254 | 1.5739607668872373 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -180,10 +185,10 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: matched
+Status: fee_pending
 New entries blocked: False
 Exit checks allowed: True
-Accounting final: True
+Accounting final: False
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
@@ -200,22 +205,26 @@ Accounting final: True
 | ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
 | PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
-| RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
-| SOLUSD | 0E-9 | 0 | 0E-9 | 0 |
+| RENDERUSD | 122.607095771 | 122.300578031 | -0.306517740 | 0.306517740 |
+| SOLUSD | 2.389851733 | 2.383877103 | -0.005974630 | 0.005974630 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
 | UNIUSD | 31.033147133 | 31.033147133 | 0E-9 | 0 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
+PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
+New buys permitted by explicit paper policy; all entry checks still apply.
+Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
+
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-11T09:59:41+00:00
+Next entry scan eligible: 2026-11-11T10:57:40+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-11T09:29:43+00:00
+Last refresh: 2026-11-11T10:27:41+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, PEPE/USD, UNI/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, CRV/USD
+Selected: ARB/USD, BTC/USD, PEPE/USD, UNI/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, RENDER/USD, TRUMP/USD, DOT/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

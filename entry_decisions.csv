@@ -1,3 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,5m,rsi_rebound,1794389100,skipped,symbol_already_active,{}
-AVAX/USD,5m,trend_pullback,1794389100,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+AVAX/USD,5m,donchian_breakout,1794392700,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.5326348703776}"
+AVAX/USD,5m,squeeze_breakout,1794392700,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.5326348703776}"
+LINK/USD,5m,trend_pullback,1794392700,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+SOL/USD,5m,donchian_breakout,1794392700,order_result,broker_order_returned,"{""broker_order_id"": ""3eef8db1-722c-46c9-af5e-8260eba6afd4"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-bbf8784b1955ff1c78b7ce0be2caf192"", ""quantity"": ""2.389851733"", ""reference_ask"": 83.6872}"
+RENDER/USD,1h,trend_pullback,1794391200,order_result,broker_order_returned,"{""broker_order_id"": ""b7753eba-6db1-4a3b-8b0d-33a1cedb37f0"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-430e0c800b94a88c14d085ed9471624d"", ""quantity"": ""122.607095771"", ""reference_ask"": 1.608}"
+RENDER/USD,1h,rolling_vwap_reclaim,1794391200,skipped,symbol_already_active,{}
