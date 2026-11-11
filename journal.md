@@ -8,11 +8,16 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 0. Skipped: 0. Broker order results: 0.
+Candidates: 5. Skipped: 4. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
-No candidates recorded; check run status and data errors before concluding there were no signals.
-
+| Coin | Bar | Strategy | Outcome | Reason | Details |
+| --- | --- | --- | --- | --- | --- |
+| BTC/USD | 5m | trend_pullback | skipped | symbol_already_active | {} |
+| ETH/USD | 5m | trend_pullback | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
+| LINK/USD | 5m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "4a558043-acc6-4a26-89d0-f0cc5987ae8b", "broker_status": "pending_new", "client_order_id": "csl2-7288cb7090eec0f41325b657ec3e9ef7", "quantity": "19.123932645", "reference_ask": 10.4581} |
+| SOL/USD | 5m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| UNI/USD | 5m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -33,7 +38,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | ARB/USD | 1h | rsi_rebound | 0.160405 | 1246.882793017 | 200.0062344138919 | 1243.765586034 | 0.17037393093457043 | 0.1554205345327148 | open |
 | RENDER/USD | 1h | trend_pullback | 1.611 | 122.607095771 | 197.520031287081 | 122.300578031 | 1.6850784662255254 | 1.5739607668872373 | open |
 | DOT/USD | 15m | donchian_breakout | 0.86092 | 232.349025412 | 200.03392295769905 | 231.768152848 | 0.874996369143577 | 0.8538818154282115 | open |
-| ETH/USD | 15m | donchian_breakout | 2095.29 | 0.094640123 | 198.29850332067002 | 0.094403522 | 2127.650414780107 | 2079.1097926099465 | open |
+| LINK/USD | 5m | trend_pullback | 10.4569 | 19.123932645 | 199.9770512755005 | 19.076122813 | 10.548678477460657 | 10.41101076126967 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -176,6 +181,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | UNI/USD | 15m | bollinger_reversion | 6.4357 | 31.110924445 | 200.22057645068648 | 0.0 | 6.621025015838152 | 6.343037492080924 | closed |
 | SOL/USD | 5m | donchian_breakout | 83.7 | 2.389851733 | 200.0305900521 | 0.0 | 84.34990754624235 | 83.37504622687884 | closed |
 | SOL/USD | 5m | trend_pullback | 83.82 | 2.383790226 | 199.80929674331998 | 0.0 | 84.73291538334783 | 83.36354230832607 | closed |
+| ETH/USD | 15m | donchian_breakout | 2095.29 | 0.094640123 | 198.29850332067002 | 0.0 | 2127.650414780107 | 2079.1097926099465 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -195,10 +201,10 @@ Accounting final: False
 | AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
 | BTCUSD | 0.002726765 | 0.002726765 | 0E-9 | 0 |
 | DOTUSD | 232.349025412 | 231.768152848 | -0.580872564 | 0.580872564 |
-| ETHUSD | 0.094640123 | 0.094403522 | -0.000236601 | 0.000236601 |
+| ETHUSD | 0.000236601 | 0 | -0.000236601 | 0.000236601 |
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
 | HYPEUSD | 0 | 0 | 0 | 0 |
-| LINKUSD | 0E-9 | 0 | 0E-9 | 0 |
+| LINKUSD | 19.123932645 | 19.076122813 | -0.047809832 | 0.047809832 |
 | LTCUSD | 0E-9 | 0 | 0E-9 | 0 |
 | ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
 | PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
@@ -214,15 +220,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-11T19:01:13+00:00
+Next entry scan eligible: 2026-11-11T20:01:18+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-11T18:31:14+00:00
+Last refresh: 2026-11-11T19:31:19+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, DOT/USD, ETH/USD, PEPE/USD, RENDER/USD, AVAX/USD, LINK/USD, LTC/USD, SOL/USD, HYPE/USD, ADA/USD
+Selected: ARB/USD, BTC/USD, DOT/USD, PEPE/USD, RENDER/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, ADA/USD, UNI/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
