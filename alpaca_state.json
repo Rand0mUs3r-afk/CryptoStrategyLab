@@ -95895,10 +95895,14 @@
         "client_order_id": "csl2-811fb4ce0e70339c9c1f154f7554de09"
       },
       "cycle_id": "csl2-30c2de28e2b150fd67ef931510e84e53",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794439827.7724233,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "15759531-8c1b-4ac6-b560-63449ad0ccab",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-11T23:30:41.789883019Z"
     }
   },
   "cycles": [
