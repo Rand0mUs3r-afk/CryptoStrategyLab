@@ -89322,6 +89322,21 @@
       "filled_at": "2026-11-11T02:47:34.252197885Z",
       "broker_updated_at": "2026-11-11T02:47:34.28685746Z",
       "reference_ask": 10.4
+    },
+    "csl2-ccb212e84e814cfdd38831c4f4650253": {
+      "payload": {
+        "symbol": "FIL/USD",
+        "side": "buy",
+        "qty": "254.411535039",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-ccb212e84e814cfdd38831c4f4650253"
+      },
+      "cycle_id": "csl2-ccb212e84e814cfdd38831c4f4650253",
+      "status": "queued",
+      "created_at": 1794365261.6367636,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -92589,6 +92604,22 @@
       "tp": 10.493761997901364,
       "sl": 10.36346900104932,
       "entry_time_utc": "2026-11-11T02:47:34.252197885Z"
+    },
+    {
+      "symbol": "FIL/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794365100,
+      "atr": 0.004176635376842736,
+      "signal_close": 0.7615,
+      "hold_seconds": 21600,
+      "id": "csl2-ccb212e84e814cfdd38831c4f4650253",
+      "created_at": 1794365261.6367636,
+      "status": "pending",
+      "distance": 0.006264953065264105,
+      "target_r": 2.0,
+      "reference_ask": 0.76428,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -93488,7 +93519,13 @@
     "PEPE/USD|15m|trend_pullback|1794365100": 1794365243.5980206,
     "RENDER/USD|15m|trend_pullback|1794365100": 1794365243.5980704,
     "AVAX/USD|15m|donchian_breakout|1794365100": 1794365243.598083,
-    "LINK/USD|5m|macd_momentum|1794365100": 1794365243.6045127
+    "LINK/USD|5m|macd_momentum|1794365100": 1794365243.6045127,
+    "LTC/USD|15m|trend_pullback|1794365100": 1794365261.610924,
+    "LTC/USD|15m|macd_momentum|1794365100": 1794365261.6176689,
+    "LTC/USD|5m|trend_pullback|1794365100": 1794365261.6237547,
+    "LTC/USD|5m|macd_momentum|1794365100": 1794365261.6313436,
+    "TRUMP/USD|15m|trend_pullback|1794365100": 1794365261.6367173,
+    "FIL/USD|15m|trend_pullback|1794365100": 1794365261.6367636
   },
   "day": "2026-11-11",
   "day_start_equity": 99708.85,
@@ -93497,7 +93534,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-11T02:47:40+00:00",
+    "observed_at_utc": "2026-11-11T02:47:50+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
