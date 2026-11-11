@@ -8,16 +8,14 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 5. Skipped: 5. Broker order results: 0.
+Candidates: 3. Skipped: 3. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| PEPE/USD | 15m | donchian_breakout | skipped | symbol_already_active | {} |
 | PEPE/USD | 1h | trend_pullback | skipped | symbol_already_active | {} |
-| PEPE/USD | 5m | donchian_breakout | skipped | symbol_already_active | {} |
-| AVAX/USD | 5m | macd_momentum | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 57.05967699509569} |
-| LTC/USD | 5m | squeeze_breakout | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 57.42153700935941} |
+| PEPE/USD | 1h | macd_momentum | skipped | symbol_already_active | {} |
+| RENDER/USD | 1h | donchian_breakout | skipped | symbol_already_active | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -28,7 +26,6 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | ARB/USD | 5m | candles | ValueError |
 | RENDER/USD | 5m | candles | ValueError |
 | TRUMP/USD | 5m | candles | ValueError |
-| FIL/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -209,15 +206,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-11T00:39:03+00:00
+Next entry scan eligible: 2026-11-11T01:36:07+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-11T00:09:04+00:00
+Last refresh: 2026-11-11T01:06:09+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, PEPE/USD, RENDER/USD, TRUMP/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, FIL/USD, AAVE/USD
+Selected: ARB/USD, BTC/USD, PEPE/USD, RENDER/USD, TRUMP/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, UNI/USD, AAVE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

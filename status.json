@@ -22,20 +22,14 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
-    },
-    {
-      "symbol": "FIL/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
     {
       "symbol": "PEPE/USD",
-      "timeframe": "15m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1794355200,
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1794358800,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
@@ -43,51 +37,27 @@
     {
       "symbol": "PEPE/USD",
       "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1794355200,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1794355500,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
       "strategy": "macd_momentum",
-      "signal_time": 1794355500,
+      "signal_time": 1794358800,
       "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 57.05967699509569,
-        "max_spread_bps": 50
-      }
+      "reason": "symbol_already_active",
+      "details": {}
     },
     {
-      "symbol": "LTC/USD",
-      "timeframe": "5m",
-      "strategy": "squeeze_breakout",
-      "signal_time": 1794355500,
+      "symbol": "RENDER/USD",
+      "timeframe": "1h",
+      "strategy": "donchian_breakout",
+      "signal_time": 1794358800,
       "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 57.42153700935941,
-        "max_spread_bps": 50
-      }
+      "reason": "symbol_already_active",
+      "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 5,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-11T00:39:03+00:00",
+  "next_entry_scan_at_utc": "2026-11-11T01:36:07+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -100,13 +70,13 @@
     "LINK/USD",
     "LTC/USD",
     "SOL/USD",
-    "FIL/USD",
+    "UNI/USD",
     "AAVE/USD"
   ],
-  "observed_at_utc": "2026-11-11T00:09:18+00:00",
+  "observed_at_utc": "2026-11-11T01:06:25+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-11T00:09:03+00:00",
+    "observed_at_utc": "2026-11-11T01:06:07+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
