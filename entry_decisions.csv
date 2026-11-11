@@ -1,3 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-RENDER/USD,5m,trend_pullback,1794399000,skipped,stale_signal,"{""age_seconds"": 301.801283121109, ""max_age_seconds"": 300}"
-LTC/USD,15m,trend_pullback,1794398400,skipped,stale_signal,"{""age_seconds"": 901.801295042038, ""max_age_seconds"": 900}"
+PEPE/USD,1h,bollinger_reversion,1794402000,skipped,symbol_already_active,{}
+RENDER/USD,5m,trend_pullback,1794403200,skipped,symbol_already_active,{}
+DOT/USD,15m,donchian_breakout,1794402900,order_result,broker_order_returned,"{""broker_order_id"": ""63c89990-c39f-4b8a-b43d-b48f0eef1a06"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-0407f6e407f955309371b356819eaf4b"", ""quantity"": ""232.349025412"", ""reference_ask"": 0.860774}"
