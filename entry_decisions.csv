@@ -1,2 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-RENDER/USD,1h,macd_momentum,1794405600,skipped,symbol_already_active,{}
+LTC/USD,15m,rolling_vwap_reclaim,1794410100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 64.78845587513463}"
+LTC/USD,5m,trend_pullback,1794410100,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 64.78845587513463}"
+SOL/USD,5m,trend_pullback,1794410100,order_result,broker_order_returned,"{""broker_order_id"": ""e9a20294-3782-42eb-a590-12f6b982e1f6"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-ea99731fd778064eaaf1f2e053b985ec"", ""quantity"": ""2.383790226"", ""reference_ask"": 83.9}"
+ADA/USD,15m,macd_momentum,1794410100,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+ADA/USD,5m,trend_pullback,1794410100,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+ADA/USD,5m,rolling_vwap_reclaim,1794410100,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"

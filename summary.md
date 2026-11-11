@@ -8,12 +8,17 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 1. Skipped: 1. Broker order results: 0.
+Candidates: 6. Skipped: 5. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| RENDER/USD | 1h | macd_momentum | skipped | symbol_already_active | {} |
+| LTC/USD | 15m | rolling_vwap_reclaim | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 64.78845587513463} |
+| LTC/USD | 5m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 64.78845587513463} |
+| SOL/USD | 5m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "e9a20294-3782-42eb-a590-12f6b982e1f6", "broker_status": "pending_new", "client_order_id": "csl2-ea99731fd778064eaaf1f2e053b985ec", "quantity": "2.383790226", "reference_ask": 83.9} |
+| ADA/USD | 15m | macd_momentum | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| ADA/USD | 5m | trend_pullback | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+| ADA/USD | 5m | rolling_vwap_reclaim | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -34,6 +39,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | ARB/USD | 1h | rsi_rebound | 0.160405 | 1246.882793017 | 200.0062344138919 | 1243.765586034 | 0.17037393093457043 | 0.1554205345327148 | open |
 | RENDER/USD | 1h | trend_pullback | 1.611 | 122.607095771 | 197.520031287081 | 122.300578031 | 1.6850784662255254 | 1.5739607668872373 | open |
 | DOT/USD | 15m | donchian_breakout | 0.86092 | 232.349025412 | 200.03392295769905 | 231.768152848 | 0.874996369143577 | 0.8538818154282115 | open |
+| SOL/USD | 5m | trend_pullback | 83.82 | 2.383790226 | 199.80929674331998 | 2.37783075 | 84.73291538334783 | 83.36354230832607 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -203,7 +209,7 @@ Accounting final: False
 | PEPEUSD | 40466531.440162269 | 40466531.440162269 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 122.607095771 | 122.300578031 | -0.306517740 | 0.306517740 |
-| SOLUSD | 0.005974630 | 0 | -0.005974630 | 0.005974630 |
+| SOLUSD | 2.389764856 | 2.37783075 | -0.011934106 | 0.011934106 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -213,15 +219,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-11T15:02:47+00:00
+Next entry scan eligible: 2026-11-11T15:47:47+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-11T14:32:49+00:00
+Last refresh: 2026-11-11T15:17:49+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, DOT/USD, PEPE/USD, RENDER/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, TRUMP/USD, UNI/USD
+Selected: ARB/USD, BTC/USD, DOT/USD, PEPE/USD, RENDER/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, TRUMP/USD, ADA/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
