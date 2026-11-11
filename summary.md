@@ -8,26 +8,11 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 15. Skipped: 13. Broker order results: 2.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| PEPE/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| RENDER/USD | 15m | trend_pullback | skipped | symbol_already_active | {} |
-| AVAX/USD | 15m | donchian_breakout | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 57.6726957296426} |
-| AVAX/USD | 1h | ema_cross | skipped | already_seen | {} |
-| LINK/USD | 5m | macd_momentum | order_result | broker_order_returned | {"broker_order_id": "9d0e6675-68cc-451a-a241-eff6ebeaaa9e", "broker_status": "pending_new", "client_order_id": "csl2-8e7ff50521c1085d90599ca26bd07474", "quantity": "19.230769230", "reference_ask": 10.4} |
-| LTC/USD | 15m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 62.16666699310493} |
-| LTC/USD | 15m | macd_momentum | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 62.16666699310493} |
-| LTC/USD | 5m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 62.16666699310493} |
-| LTC/USD | 5m | macd_momentum | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 62.16666699310493} |
-| TRUMP/USD | 15m | trend_pullback | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
-| FIL/USD | 15m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "17c65c63-6123-4fcf-8455-400ccad97970", "broker_status": "pending_new", "client_order_id": "csl2-ccb212e84e814cfdd38831c4f4650253", "quantity": "254.411535039", "reference_ask": 0.76428} |
-| FIL/USD | 15m | macd_momentum | skipped | symbol_already_active | {} |
-| FIL/USD | 15m | rolling_vwap_reclaim | skipped | symbol_already_active | {} |
-| AAVE/USD | 5m | ema_cross | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
-| AAVE/USD | 5m | macd_momentum | skipped | max_positions | {"active_positions": 6, "max_positions": 6} |
+No candidates recorded; check run status and data errors before concluding there were no signals.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -36,8 +21,8 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
 | ARB/USD | 5m | candles | ValueError |
-| RENDER/USD | 5m | candles | ValueError |
 | FIL/USD | 5m | candles | ValueError |
+| RENDER/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -220,15 +205,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-11T03:17:08+00:00
+Next entry scan eligible: 2026-11-11T04:05:07+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-11T02:47:10+00:00
+Last refresh: 2026-11-11T03:35:09+00:00
 Source status: partial
-Selected: ARB/USD, BTC/USD, PEPE/USD, RENDER/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, TRUMP/USD, FIL/USD, AAVE/USD
+Selected: ARB/USD, BTC/USD, FIL/USD, LINK/USD, PEPE/USD, RENDER/USD, AVAX/USD, ETH/USD, LTC/USD, SOL/USD, ONDO/USD, TRUMP/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
