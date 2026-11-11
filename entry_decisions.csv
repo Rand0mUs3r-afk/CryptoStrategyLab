@@ -1,8 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,15m,donchian_breakout,1794418200,skipped,symbol_already_active,{}
-RENDER/USD,1h,trend_pullback,1794416400,skipped,symbol_already_active,{}
-RENDER/USD,1h,macd_momentum,1794416400,skipped,symbol_already_active,{}
-RENDER/USD,1h,rolling_vwap_reclaim,1794416400,skipped,symbol_already_active,{}
-AVAX/USD,15m,donchian_breakout,1794418200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.318526693337624}"
-ETH/USD,15m,donchian_breakout,1794418200,order_result,broker_order_returned,"{""broker_order_id"": ""a43c244c-d5ee-4da5-9e25-b2aa95ec7671"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-3da1f0458c922aa977b389a767e3a604"", ""quantity"": ""0.094640123"", ""reference_ask"": 2091.65}"
-SOL/USD,15m,donchian_breakout,1794418200,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
