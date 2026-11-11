@@ -95884,6 +95884,21 @@
       "filled_at": "2026-11-11T22:42:58.375015756Z",
       "broker_updated_at": "2026-11-11T22:42:58.386295008Z",
       "reference_ask": 2057.3
+    },
+    "csl2-811fb4ce0e70339c9c1f154f7554de09": {
+      "payload": {
+        "symbol": "PEPE/USD",
+        "side": "sell",
+        "qty": "40466531.440162269",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-811fb4ce0e70339c9c1f154f7554de09"
+      },
+      "cycle_id": "csl2-30c2de28e2b150fd67ef931510e84e53",
+      "status": "queued",
+      "created_at": 1794439827.7724233,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -98219,7 +98234,8 @@
       "entry_notional_usd": 200.0,
       "tp": 5.6313488264385755e-06,
       "sl": 4.579325586780713e-06,
-      "entry_time_utc": "2026-11-06T07:43:40.456100472Z"
+      "entry_time_utc": "2026-11-06T07:43:40.456100472Z",
+      "exit_reason": "stop"
     },
     {
       "symbol": "XRP/USD",
@@ -100427,7 +100443,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-11T22:43:05+00:00",
+    "observed_at_utc": "2026-11-11T23:30:39+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
