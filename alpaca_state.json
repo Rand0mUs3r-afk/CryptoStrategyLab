@@ -89313,10 +89313,14 @@
         "client_order_id": "csl2-8e7ff50521c1085d90599ca26bd07474"
       },
       "cycle_id": "csl2-8e7ff50521c1085d90599ca26bd07474",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794365243.6045127,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "9d0e6675-68cc-451a-a241-eff6ebeaaa9e",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-11T02:47:34.250912315Z"
     }
   },
   "cycles": [
