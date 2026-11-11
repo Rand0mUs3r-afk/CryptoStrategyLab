@@ -1,6 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,5m,trend_pullback,1794425400,skipped,symbol_already_active,{}
-ETH/USD,5m,trend_pullback,1794425400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-LINK/USD,5m,trend_pullback,1794425400,order_result,broker_order_returned,"{""broker_order_id"": ""4a558043-acc6-4a26-89d0-f0cc5987ae8b"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-7288cb7090eec0f41325b657ec3e9ef7"", ""quantity"": ""19.123932645"", ""reference_ask"": 10.4581}"
-SOL/USD,5m,trend_pullback,1794425400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
-UNI/USD,5m,trend_pullback,1794425400,skipped,max_positions,"{""active_positions"": 6, ""max_positions"": 6}"
+BTC/USD,5m,bollinger_reversion,1794436800,skipped,symbol_already_active,{}
+ETH/USD,5m,bollinger_reversion,1794436800,order_result,broker_order_returned,"{""broker_order_id"": ""917fbbef-58ec-4eae-b117-56062988440a"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-c5c8818c84a05d6ba88ef2ba94e21219"", ""quantity"": ""0.097214796"", ""reference_ask"": 2057.3}"
