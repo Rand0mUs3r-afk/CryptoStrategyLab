@@ -91012,10 +91012,14 @@
         "client_order_id": "csl2-cb42ae102c9e0e24e44ee645790516c3"
       },
       "cycle_id": "csl2-1936504bce660514150e10b011fe85c1",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794382868.2043695,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "c408164c-d9cf-4558-bfd9-1730a329722c",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-11T07:41:21.140874998Z"
     }
   },
   "cycles": [
