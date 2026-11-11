@@ -22,33 +22,72 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
+    },
+    {
+      "symbol": "FIL/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
     {
       "symbol": "PEPE/USD",
       "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794353400,
+      "strategy": "donchian_breakout",
+      "signal_time": 1794355200,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "RENDER/USD",
+      "symbol": "PEPE/USD",
       "timeframe": "1h",
       "strategy": "trend_pullback",
-      "signal_time": 1794351600,
+      "signal_time": 1794355200,
       "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1794355500,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "5m",
+      "strategy": "macd_momentum",
+      "signal_time": 1794355500,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 57.05967699509569,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "5m",
+      "strategy": "squeeze_breakout",
+      "signal_time": 1794355500,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 57.42153700935941,
+        "max_spread_bps": 50
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 5,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-11T00:05:45+00:00",
+  "next_entry_scan_at_utc": "2026-11-11T00:39:03+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -61,12 +100,13 @@
     "LINK/USD",
     "LTC/USD",
     "SOL/USD",
+    "FIL/USD",
     "AAVE/USD"
   ],
-  "observed_at_utc": "2026-11-10T23:36:03+00:00",
+  "observed_at_utc": "2026-11-11T00:09:18+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-10T23:35:45+00:00",
+    "observed_at_utc": "2026-11-11T00:09:03+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

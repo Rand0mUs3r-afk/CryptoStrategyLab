@@ -1,3 +1,6 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,15m,trend_pullback,1794353400,skipped,symbol_already_active,{}
-RENDER/USD,1h,trend_pullback,1794351600,skipped,already_seen,{}
+PEPE/USD,15m,donchian_breakout,1794355200,skipped,symbol_already_active,{}
+PEPE/USD,1h,trend_pullback,1794355200,skipped,symbol_already_active,{}
+PEPE/USD,5m,donchian_breakout,1794355500,skipped,symbol_already_active,{}
+AVAX/USD,5m,macd_momentum,1794355500,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.05967699509569}"
+LTC/USD,5m,squeeze_breakout,1794355500,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.42153700935941}"
