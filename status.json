@@ -26,38 +26,23 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "PEPE/USD",
+      "symbol": "AVAX/USD",
       "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1794358800,
+      "strategy": "ema_cross",
+      "signal_time": 1794362400,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1794358800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "1h",
-      "strategy": "donchian_breakout",
-      "signal_time": 1794358800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 62.24256834986139,
+        "max_spread_bps": 50
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 3,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-11T01:36:07+00:00",
+  "next_entry_scan_at_utc": "2026-11-11T02:32:22+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -70,13 +55,13 @@
     "LINK/USD",
     "LTC/USD",
     "SOL/USD",
-    "UNI/USD",
-    "AAVE/USD"
+    "AAVE/USD",
+    "UNI/USD"
   ],
-  "observed_at_utc": "2026-11-11T01:06:25+00:00",
+  "observed_at_utc": "2026-11-11T02:02:37+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-11T01:06:07+00:00",
+    "observed_at_utc": "2026-11-11T02:02:21+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

@@ -1,4 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,1h,trend_pullback,1794358800,skipped,symbol_already_active,{}
-PEPE/USD,1h,macd_momentum,1794358800,skipped,symbol_already_active,{}
-RENDER/USD,1h,donchian_breakout,1794358800,skipped,symbol_already_active,{}
+AVAX/USD,1h,ema_cross,1794362400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.24256834986139}"
