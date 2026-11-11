@@ -28,27 +28,29 @@
     {
       "symbol": "PEPE/USD",
       "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794386100,
+      "strategy": "rsi_rebound",
+      "signal_time": 1794389100,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "PEPE/USD",
+      "symbol": "AVAX/USD",
       "timeframe": "5m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794386100,
+      "strategy": "trend_pullback",
+      "signal_time": 1794389100,
       "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
+      "reason": "no_fresh_quote",
+      "details": {
+        "max_quote_age_seconds": 30
+      }
     }
   ],
   "entry_pause_reasons": [],
   "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-11T09:06:24+00:00",
+  "next_entry_scan_at_utc": "2026-11-11T09:59:41+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ARB/USD",
@@ -60,13 +62,12 @@
     "LINK/USD",
     "LTC/USD",
     "SOL/USD",
-    "RENDER/USD",
     "CRV/USD"
   ],
-  "observed_at_utc": "2026-11-11T08:36:41+00:00",
+  "observed_at_utc": "2026-11-11T09:29:57+00:00",
   "reconciliation": {
     "status": "matched",
-    "observed_at_utc": "2026-11-11T08:36:24+00:00",
+    "observed_at_utc": "2026-11-11T09:29:41+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
