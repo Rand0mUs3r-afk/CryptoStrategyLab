@@ -89283,6 +89283,21 @@
       "filled_avg_price": 82.66,
       "filled_at": "2026-11-10T23:03:59.815432521Z",
       "broker_updated_at": "2026-11-10T23:03:59.836904374Z"
+    },
+    "csl2-a96683e678b14ab0ac9494820202965e": {
+      "payload": {
+        "symbol": "TRUMP/USD",
+        "side": "sell",
+        "qty": "176.07032222",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-a96683e678b14ab0ac9494820202965e"
+      },
+      "cycle_id": "csl2-7406cfc0cdfb75331f440152677ace9f",
+      "status": "queued",
+      "created_at": 1794365211.9743526,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -92502,7 +92517,8 @@
       "entry_notional_usd": 200.23652554451783,
       "tp": 1.1648626556677402,
       "sl": 1.11918367216613,
-      "entry_time_utc": "2026-11-10T20:28:25.930521306Z"
+      "entry_time_utc": "2026-11-10T20:28:25.930521306Z",
+      "exit_reason": "time"
     },
     {
       "symbol": "RENDER/USD",
@@ -93429,7 +93445,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-11T02:02:21+00:00",
+    "observed_at_utc": "2026-11-11T02:47:01+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
