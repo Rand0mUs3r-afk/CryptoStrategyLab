@@ -90752,10 +90752,14 @@
         "client_order_id": "csl2-3c898b7a7ff7e6c46a8145dd51cafa6a"
       },
       "cycle_id": "csl2-50407a52a59368c118af5a3f7cf529a1",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794378233.2392087,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "1245976e-1a58-4ba0-8d5b-df3b445e91e2",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-11T06:24:06.709740984Z"
     }
   },
   "cycles": [
