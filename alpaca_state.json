@@ -91031,10 +91031,14 @@
         "client_order_id": "csl2-0261a8be1d4d24f36549f2625d08d675"
       },
       "cycle_id": "csl2-0261a8be1d4d24f36549f2625d08d675",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794382904.573966,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "922d565c-30d4-4568-9035-dbb94dce9bde",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-11T07:41:57.829933525Z"
     }
   },
   "cycles": [
