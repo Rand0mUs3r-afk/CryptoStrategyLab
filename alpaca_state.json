@@ -98324,10 +98324,14 @@
         "client_order_id": "csl2-fe995cbb978eb6ded10b4325631af604"
       },
       "cycle_id": "csl2-fe995cbb978eb6ded10b4325631af604",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794466960.8511438,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "543ec130-8e62-4bcb-8ab0-6e39edaf800c",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-12T07:02:51.926714883Z"
     }
   },
   "cycles": [
