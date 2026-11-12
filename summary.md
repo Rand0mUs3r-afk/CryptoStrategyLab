@@ -8,27 +8,12 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 16. Skipped: 13. Broker order results: 3.
+Candidates: 1. Skipped: 1. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| BTC/USD | 15m | bollinger_reversion | skipped | symbol_already_active | {} |
-| BTC/USD | 15m | rsi_rebound | skipped | symbol_already_active | {} |
-| BTC/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
-| AVAX/USD | 15m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 60.512766070385254} |
-| AVAX/USD | 15m | rsi_rebound | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 60.512766070385254} |
-| AVAX/USD | 5m | rsi_rebound | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 60.512766070385254} |
-| ETH/USD | 15m | bollinger_reversion | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
-| ETH/USD | 15m | rsi_rebound | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
-| LINK/USD | 15m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "5f44f4fa-e98b-44bc-a6ce-d2d2e64bd845", "broker_status": "pending_new", "client_order_id": "csl2-5509b590cf47f1bd51b7c92dafc513dd", "quantity": "19.732817649", "reference_ask": 10.1354} |
-| LINK/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
-| LTC/USD | 15m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 64.28759905007807} |
-| LTC/USD | 5m | rsi_rebound | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 64.28759905007807} |
-| SOL/USD | 15m | rsi_rebound | order_result | broker_order_returned | {"broker_order_id": "3932b883-b188-4288-89f7-305a49fa7737", "broker_status": "pending_new", "client_order_id": "csl2-92439bb678aef8b12a0e5e3d031603b6", "quantity": "2.414138158", "reference_ask": 82.8453} |
-| SOL/USD | 5m | rsi_rebound | skipped | symbol_already_active | {} |
-| RENDER/USD | 15m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "52ccefbd-d048-4acd-86ef-c49a581c532b", "broker_status": "pending_new", "client_order_id": "csl2-79a56661a028bbaaa330a4d9cefa74fb", "quantity": "128.865979381", "reference_ask": 1.552} |
-| RENDER/USD | 15m | rsi_rebound | skipped | symbol_already_active | {} |
+| RENDER/USD | 1h | bollinger_reversion | skipped | symbol_already_active | {} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -36,8 +21,8 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
-| ARB/USD | 5m | candles | ValueError |
 | RENDER/USD | 5m | candles | ValueError |
+| ARB/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -234,15 +219,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-12T00:01:35+00:00
+Next entry scan eligible: 2026-11-12T00:47:46+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-11T23:31:37+00:00
+Last refresh: 2026-11-12T00:17:47+00:00
 Source status: partial
-Selected: BTC/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, PEPE/USD, ARB/USD, UNI/USD, RENDER/USD
+Selected: BTC/USD, LINK/USD, RENDER/USD, SOL/USD, AVAX/USD, ETH/USD, LTC/USD, HYPE/USD, PEPE/USD, ARB/USD, UNI/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
