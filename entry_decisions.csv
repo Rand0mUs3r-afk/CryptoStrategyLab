@@ -1,3 +1,6 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,1h,bollinger_reversion,1794488400,skipped,symbol_already_active,{}
-AVAX/USD,5m,rsi_rebound,1794489900,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.53758268189971}"
+AVAX/USD,5m,rsi_rebound,1794493800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.344147900861564}"
+LINK/USD,5m,bollinger_reversion,1794493800,order_result,broker_order_returned,"{""broker_order_id"": ""55379e33-a996-4df3-bf1d-14fa0d530c7b"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-c26bc2d414eec7a3aaa82ef6a6a7da24"", ""quantity"": ""20.290149132"", ""reference_ask"": 9.857}"
+LINK/USD,5m,rsi_rebound,1794493800,skipped,symbol_already_active,{}
+LTC/USD,5m,bollinger_reversion,1794493800,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.52167374208332}"
+SOL/USD,5m,bollinger_reversion,1794493800,order_result,broker_order_returned,"{""broker_order_id"": ""39ec60c1-65ae-4d13-b318-8cf63b784fb5"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-a8c508842dcf3ae69a2f8bdb0b919ebb"", ""quantity"": ""2.472768635"", ""reference_ask"": 80.881}"
