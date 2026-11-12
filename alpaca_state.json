@@ -99316,10 +99316,14 @@
         "client_order_id": "csl2-21a6fc25db55127f82a50961ed20af76"
       },
       "cycle_id": "csl2-21a6fc25db55127f82a50961ed20af76",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794475235.5076146,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "33c5b543-0007-4146-9c25-fb3cfbfa591c",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-12T09:20:37.850466914Z"
     }
   },
   "cycles": [
