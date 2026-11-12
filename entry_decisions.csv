@@ -1,3 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,1h,bollinger_reversion,1794499200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.13816936113832}"
-BTC/USD,15m,rsi_rebound,1794500100,order_result,broker_order_returned,"{""broker_order_id"": ""cc47f796-8e83-4ff1-aae6-067391f98e00"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-96c7f209f88d773b2cbbd50ead7dfee2"", ""quantity"": ""0.002786979"", ""reference_ask"": 71762.288}"
+BTC/USD,1h,bollinger_reversion,1794502800,skipped,symbol_already_active,{}
