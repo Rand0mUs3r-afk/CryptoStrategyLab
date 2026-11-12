@@ -1,12 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,15m,bollinger_reversion,1794485700,skipped,symbol_already_active,{}
-BTC/USD,15m,rsi_rebound,1794485700,skipped,symbol_already_active,{}
-BTC/USD,5m,rsi_rebound,1794485700,skipped,symbol_already_active,{}
-AVAX/USD,1h,bollinger_reversion,1794484800,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-ETH/USD,15m,bollinger_reversion,1794485700,order_result,broker_order_returned,"{""broker_order_id"": ""5e9ec6cf-7891-4269-8bd2-69dc0a2c33b3"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-61989d4953c1d7bc59e535992e1dd28d"", ""quantity"": ""0.098783530"", ""reference_ask"": 2024.629}"
-ETH/USD,15m,rsi_rebound,1794485700,skipped,symbol_already_active,{}
-ETH/USD,5m,rsi_rebound,1794485700,skipped,symbol_already_active,{}
-LINK/USD,15m,bollinger_reversion,1794485700,order_result,broker_order_returned,"{""broker_order_id"": ""924bfd54-646f-4439-9e89-b49f04619fa4"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-1a718ab2ec6b7c6c5032bc7afc6fc1ff"", ""quantity"": ""20.020020020"", ""reference_ask"": 9.99}"
-LTC/USD,15m,bollinger_reversion,1794485700,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.11696760826588}"
-LTC/USD,15m,rsi_rebound,1794485700,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.11696760826588}"
-SOL/USD,15m,bollinger_reversion,1794485700,order_result,broker_order_returned,"{""broker_order_id"": ""4747c21f-e4bf-4bb5-9783-2077fd588b7f"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-cd83648e12a4fa1162f5ae7c158eeb1e"", ""quantity"": ""2.425418384"", ""reference_ask"": 82.46}"
+BTC/USD,1h,bollinger_reversion,1794488400,skipped,symbol_already_active,{}
+AVAX/USD,5m,rsi_rebound,1794489900,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.53758268189971}"
