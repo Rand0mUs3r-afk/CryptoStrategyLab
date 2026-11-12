@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
-PEPE/USD,5m,trend_pullback,2026-11-12T22:47:36.616514601Z,4.56e-06,43859649.12280701,200.0,43749999.99999999,4.619714154376828e-06,4.530142922811586e-06,open,,,
