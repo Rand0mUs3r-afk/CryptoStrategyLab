@@ -101066,14 +101066,14 @@
     "RENDER/USD|15m|bollinger_reversion|1794439800": 1794439958.0659182,
     "RENDER/USD|15m|rsi_rebound|1794439800": 1794439981.006096
   },
-  "day": "2026-11-11",
-  "day_start_equity": 99708.85,
+  "day": "2026-11-12",
+  "day_start_equity": 99636.58,
   "daily_paused": false,
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-11T23:32:59+00:00",
+    "observed_at_utc": "2026-11-12T00:17:45+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -101264,7 +101264,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1794439895.6984892,
+  "last_entry_scan_at": 1794442666.100024,
   "watchlist": {
     "observed_at_utc": "2026-11-11T23:31:37+00:00",
     "status": "partial",
