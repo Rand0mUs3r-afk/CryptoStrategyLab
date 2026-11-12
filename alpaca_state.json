@@ -100908,10 +100908,14 @@
         "client_order_id": "csl2-70edff17e98033d6a78c4b3f284a0489"
       },
       "cycle_id": "csl2-103d3095a05f7071c3e29fc8983c12f2",
-      "status": "queued",
+      "status": "pending_new",
       "created_at": 1794493784.3457232,
       "attempted": true,
-      "filled_qty": "0"
+      "filled_qty": "0",
+      "broker_order_id": "af9f51dc-7199-415e-8c7b-2b16cbc5a7a1",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "broker_updated_at": "2026-11-12T14:29:55.934058738Z"
     }
   },
   "cycles": [
