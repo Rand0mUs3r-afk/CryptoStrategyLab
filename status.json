@@ -12,16 +12,44 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [],
+  "entry_decisions": [
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794523500,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 57.094153394823664,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794523500,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-93ae7d20fa87986dbf6c0cedc827a906",
+        "quantity": "43859649.12280701",
+        "reference_ask": 4.56e-06,
+        "broker_status": "pending_new",
+        "broker_order_id": "c645e318-3286-4345-a41f-afec27e5a4a2"
+      }
+    }
+  ],
   "entry_pause_reasons": [],
-  "candidates": 0,
+  "candidates": 2,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-12T22:35:53+00:00",
+  "next_entry_scan_at_utc": "2026-11-12T23:17:10+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
-    "BTC/USD",
     "AVAX/USD",
+    "BTC/USD",
     "ETH/USD",
     "LINK/USD",
     "LTC/USD",
@@ -32,10 +60,10 @@
     "ARB/USD",
     "PEPE/USD"
   ],
-  "observed_at_utc": "2026-11-12T22:06:08+00:00",
+  "observed_at_utc": "2026-11-12T22:47:44+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T22:05:53+00:00",
+    "observed_at_utc": "2026-11-12T22:47:43+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -69,10 +97,10 @@
       },
       {
         "symbol": "BTCUSD",
-        "filled_quantity": "0.002890065",
+        "filled_quantity": "0.000110054",
         "fee_quantity": "-0.000103086",
-        "expected_quantity": "0.002786979",
-        "broker_quantity": "0.002780011",
+        "expected_quantity": "0.000006968",
+        "broker_quantity": "0",
         "difference_quantity": "-0.000006968",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.000006968"
@@ -149,13 +177,13 @@
       },
       {
         "symbol": "PEPEUSD",
-        "filled_quantity": "797446.944033534",
+        "filled_quantity": "44657096.066840544",
         "fee_quantity": "-797446.944033534",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "43859649.122807010",
+        "broker_quantity": "43749999.999999992",
+        "difference_quantity": "-109649.122807018",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "109649.122807018"
       },
       {
         "symbol": "POLUSD",
