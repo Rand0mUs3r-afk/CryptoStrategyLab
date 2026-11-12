@@ -12,12 +12,24 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [],
+  "entry_decisions": [
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794459600,
+      "outcome": "skipped",
+      "reason": "no_fresh_quote",
+      "details": {
+        "max_quote_age_seconds": 30
+      }
+    }
+  ],
   "entry_pause_reasons": [],
-  "candidates": 0,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-12T04:40:39+00:00",
+  "next_entry_scan_at_utc": "2026-11-12T05:34:36+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -27,16 +39,14 @@
     "AVAX/USD",
     "ETH/USD",
     "LTC/USD",
-    "HYPE/USD",
-    "BCH/USD",
     "PEPE/USD",
     "UNI/USD",
     "ARB/USD"
   ],
-  "observed_at_utc": "2026-11-12T04:10:58+00:00",
+  "observed_at_utc": "2026-11-12T05:04:50+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T04:10:39+00:00",
+    "observed_at_utc": "2026-11-12T05:04:35+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
