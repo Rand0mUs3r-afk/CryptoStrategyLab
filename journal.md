@@ -8,12 +8,12 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 1. Skipped: 1. Broker order results: 0.
+Candidates: 1. Skipped: 0. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| BTC/USD | 1h | bollinger_reversion | skipped | symbol_already_active | {} |
+| LINK/USD | 5m | macd_momentum | order_result | broker_order_returned | {"broker_order_id": "a6a1b776-6944-455c-b385-77d8f54ee40f", "broker_status": "pending_new", "client_order_id": "csl2-ffb86adb07660a3f632dae3fa92ec4a7", "quantity": "19.960079840", "reference_ask": 10.02} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -28,6 +28,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | BTC/USD | 15m | rsi_rebound | 71789.62 | 0.002786979 | 200.07616335798 | 0.002780011 | 72867.39960341778 | 71250.7301982911 | open |
+| LINK/USD | 5m | macd_momentum | 10.02 | 19.96007984 | 199.99999999679997 | 19.91017964 | 10.122913115319868 | 9.968543442340065 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -214,7 +215,7 @@ Accounting final: False
 | ETHUSD | 0.000246959 | 0 | -0.000246959 | 0.000246959 |
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
 | HYPEUSD | 0 | 0 | 0 | 0 |
-| LINKUSD | 0.100775424 | 0 | -0.100775424 | 0.100775424 |
+| LINKUSD | 20.060855264 | 19.91017964 | -0.150675624 | 0.150675624 |
 | LTCUSD | 0E-9 | 0 | 0E-9 | 0 |
 | ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
 | PEPEUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -230,13 +231,13 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-12T17:51:35+00:00
+Next entry scan eligible: 2026-11-12T18:39:24+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-12T17:21:37+00:00
+Last refresh: 2026-11-12T18:09:26+00:00
 Source status: partial
 Selected: BTC/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, AAVE/USD, UNI/USD, ARB/USD, PEPE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.

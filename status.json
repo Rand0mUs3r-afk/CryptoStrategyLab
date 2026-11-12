@@ -14,20 +14,26 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794502800,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
+      "symbol": "LINK/USD",
+      "timeframe": "5m",
+      "strategy": "macd_momentum",
+      "signal_time": 1794506700,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-ffb86adb07660a3f632dae3fa92ec4a7",
+        "quantity": "19.960079840",
+        "reference_ask": 10.02,
+        "broker_status": "pending_new",
+        "broker_order_id": "a6a1b776-6944-455c-b385-77d8f54ee40f"
+      }
     }
   ],
   "entry_pause_reasons": [],
   "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-12T17:51:35+00:00",
+  "next_entry_scan_at_utc": "2026-11-12T18:39:24+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -41,10 +47,10 @@
     "ARB/USD",
     "PEPE/USD"
   ],
-  "observed_at_utc": "2026-11-12T17:21:50+00:00",
+  "observed_at_utc": "2026-11-12T18:10:03+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T17:21:34+00:00",
+    "observed_at_utc": "2026-11-12T18:10:01+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -128,13 +134,13 @@
       },
       {
         "symbol": "LINKUSD",
-        "filled_quantity": "0.829136581",
+        "filled_quantity": "20.789216421",
         "fee_quantity": "-0.728361157",
-        "expected_quantity": "0.100775424",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.100775424",
+        "expected_quantity": "20.060855264",
+        "broker_quantity": "19.91017964",
+        "difference_quantity": "-0.150675624",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.100775424"
+        "unconfirmed_shortfall": "0.150675624"
       },
       {
         "symbol": "LTCUSD",
