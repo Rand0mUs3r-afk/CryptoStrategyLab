@@ -100936,6 +100936,21 @@
       "filled_at": "2026-11-12T14:30:30.835938568Z",
       "broker_updated_at": "2026-11-12T14:30:30.886554566Z",
       "reference_ask": 9.857
+    },
+    "csl2-a8c508842dcf3ae69a2f8bdb0b919ebb": {
+      "payload": {
+        "symbol": "SOL/USD",
+        "side": "buy",
+        "qty": "2.472768635",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-a8c508842dcf3ae69a2f8bdb0b919ebb"
+      },
+      "cycle_id": "csl2-a8c508842dcf3ae69a2f8bdb0b919ebb",
+      "status": "queued",
+      "created_at": 1794493839.7757668,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -104840,6 +104855,22 @@
       "tp": 9.976557600444568,
       "sl": 9.785851199777717,
       "entry_time_utc": "2026-11-12T14:30:30.835938568Z"
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794493800,
+      "atr": 0.3211464778586119,
+      "signal_close": 80.68,
+      "hold_seconds": 3600,
+      "id": "csl2-a8c508842dcf3ae69a2f8bdb0b919ebb",
+      "created_at": 1794493839.7757668,
+      "status": "pending",
+      "distance": 0.4817197167879178,
+      "target_r": 2.0,
+      "reference_ask": 80.881,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -105862,7 +105893,10 @@
     "BTC/USD|1h|bollinger_reversion|1794488400": 1794490132.5718908,
     "AVAX/USD|5m|rsi_rebound|1794489900": 1794490132.5719206,
     "AVAX/USD|5m|rsi_rebound|1794493800": 1794493819.009022,
-    "LINK/USD|5m|bollinger_reversion|1794493800": 1794493819.0208788
+    "LINK/USD|5m|bollinger_reversion|1794493800": 1794493819.0208788,
+    "LINK/USD|5m|rsi_rebound|1794493800": 1794493839.7596054,
+    "LTC/USD|5m|bollinger_reversion|1794493800": 1794493839.7596533,
+    "SOL/USD|5m|bollinger_reversion|1794493800": 1794493839.7757668
   },
   "day": "2026-11-12",
   "day_start_equity": 99636.58,
@@ -105871,7 +105905,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T14:30:37+00:00",
+    "observed_at_utc": "2026-11-12T14:30:49+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
