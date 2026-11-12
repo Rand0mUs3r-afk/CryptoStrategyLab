@@ -6,7 +6,7 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "RENDER/USD",
+      "symbol": "TRUMP/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -20,38 +20,104 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "RENDER/USD",
+      "symbol": "LINK/USD",
       "timeframe": "1h",
       "strategy": "bollinger_reversion",
-      "signal_time": 1794441600,
+      "signal_time": 1794445200,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1794445200,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 63.59872240252982,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794445200,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 60.09615384615328,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794447000,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 60.09615384615328,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794447000,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-6491f31cb99bf52c380a8748a98377da",
+        "quantity": "32.388663967",
+        "reference_ask": 6.175,
+        "broker_status": "pending_new",
+        "broker_order_id": "f115b1c7-7787-4060-aec5-1cced09fadda"
+      }
+    },
+    {
+      "symbol": "ONDO/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794445200,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-33a95d7ce112ceda6e67a5e7c1e70151",
+        "quantity": "557.103064066",
+        "reference_ask": 0.359,
+        "broker_status": "pending_new",
+        "broker_order_id": "129591b4-8ed0-476e-8791-0dba95f6f0a7"
+      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 6,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-12T00:47:46+00:00",
+  "next_entry_scan_at_utc": "2026-11-12T02:01:00+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
     "LINK/USD",
-    "RENDER/USD",
     "SOL/USD",
     "AVAX/USD",
     "ETH/USD",
     "LTC/USD",
-    "HYPE/USD",
+    "TRUMP/USD",
     "PEPE/USD",
     "ARB/USD",
-    "UNI/USD"
+    "UNI/USD",
+    "ONDO/USD"
   ],
-  "observed_at_utc": "2026-11-12T00:18:00+00:00",
+  "observed_at_utc": "2026-11-12T01:31:52+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T00:17:45+00:00",
+    "observed_at_utc": "2026-11-12T01:31:50+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -155,13 +221,13 @@
       },
       {
         "symbol": "ONDOUSD",
-        "filled_quantity": "2.579797752",
+        "filled_quantity": "559.682861818",
         "fee_quantity": "-2.579797752",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "557.103064066",
+        "broker_quantity": "555.710306405",
+        "difference_quantity": "-1.392757661",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "1.392757661"
       },
       {
         "symbol": "PEPEUSD",
@@ -185,10 +251,10 @@
       },
       {
         "symbol": "RENDERUSD",
-        "filled_quantity": "131.334517131",
+        "filled_quantity": "2.790702699",
         "fee_quantity": "-2.162020010",
-        "expected_quantity": "129.172497121",
-        "broker_quantity": "128.543814432",
+        "expected_quantity": "0.628682689",
+        "broker_quantity": "0",
         "difference_quantity": "-0.628682689",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.628682689"
@@ -215,13 +281,13 @@
       },
       {
         "symbol": "UNIUSD",
-        "filled_quantity": "0.768079675",
+        "filled_quantity": "33.156743642",
         "fee_quantity": "-0.768079675",
-        "expected_quantity": "0E-9",
-        "broker_quantity": "0",
-        "difference_quantity": "0E-9",
+        "expected_quantity": "32.388663967",
+        "broker_quantity": "32.307692307",
+        "difference_quantity": "-0.080971660",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0"
+        "unconfirmed_shortfall": "0.080971660"
       },
       {
         "symbol": "XRPUSD",

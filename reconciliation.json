@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-12T00:17:45+00:00",
+  "observed_at_utc": "2026-11-12T01:31:50+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -104,13 +104,13 @@
     },
     {
       "symbol": "ONDOUSD",
-      "filled_quantity": "2.579797752",
+      "filled_quantity": "559.682861818",
       "fee_quantity": "-2.579797752",
-      "expected_quantity": "0E-9",
-      "broker_quantity": "0",
-      "difference_quantity": "0E-9",
+      "expected_quantity": "557.103064066",
+      "broker_quantity": "555.710306405",
+      "difference_quantity": "-1.392757661",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0"
+      "unconfirmed_shortfall": "1.392757661"
     },
     {
       "symbol": "PEPEUSD",
@@ -134,10 +134,10 @@
     },
     {
       "symbol": "RENDERUSD",
-      "filled_quantity": "131.334517131",
+      "filled_quantity": "2.790702699",
       "fee_quantity": "-2.162020010",
-      "expected_quantity": "129.172497121",
-      "broker_quantity": "128.543814432",
+      "expected_quantity": "0.628682689",
+      "broker_quantity": "0",
       "difference_quantity": "-0.628682689",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.628682689"
@@ -164,13 +164,13 @@
     },
     {
       "symbol": "UNIUSD",
-      "filled_quantity": "0.768079675",
+      "filled_quantity": "33.156743642",
       "fee_quantity": "-0.768079675",
-      "expected_quantity": "0E-9",
-      "broker_quantity": "0",
-      "difference_quantity": "0E-9",
+      "expected_quantity": "32.388663967",
+      "broker_quantity": "32.307692307",
+      "difference_quantity": "-0.080971660",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0"
+      "unconfirmed_shortfall": "0.080971660"
     },
     {
       "symbol": "XRPUSD",
