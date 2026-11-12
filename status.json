@@ -6,6 +6,12 @@
   "account_verified": true,
   "data_errors": [
     {
+      "symbol": "DOT/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    },
+    {
       "symbol": "ARB/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -15,38 +21,35 @@
   "entry_decisions": [
     {
       "symbol": "ONDO/USD",
-      "timeframe": "15m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794474900,
+      "timeframe": "1h",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794477600,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     },
     {
-      "symbol": "LTC/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794475200,
+      "symbol": "AVAX/USD",
+      "timeframe": "1h",
+      "strategy": "macd_momentum",
+      "signal_time": 1794477600,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 60.52692841020647,
+        "spread_bps": 60.808858568739225,
         "max_spread_bps": 50
       }
     },
     {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794475200,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
+      "symbol": "AVAX/USD",
+      "timeframe": "1h",
+      "strategy": "squeeze_breakout",
+      "signal_time": 1794477600,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
       "details": {
-        "client_order_id": "csl2-21a6fc25db55127f82a50961ed20af76",
-        "quantity": "2.419353863",
-        "reference_ask": 82.6667,
-        "broker_status": "pending_new",
-        "broker_order_id": "33c5b543-0007-4146-9c25-fb3cfbfa591c"
+        "spread_bps": 60.808858568739225,
+        "max_spread_bps": 50
       }
     }
   ],
@@ -54,7 +57,7 @@
   "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-12T09:50:21+00:00",
+  "next_entry_scan_at_utc": "2026-11-12T10:53:30+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -69,10 +72,10 @@
     "UNI/USD",
     "ARB/USD"
   ],
-  "observed_at_utc": "2026-11-12T09:20:46+00:00",
+  "observed_at_utc": "2026-11-12T10:23:44+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T09:20:44+00:00",
+    "observed_at_utc": "2026-11-12T10:23:30+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -216,10 +219,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.578744119",
+        "filled_quantity": "0.165438641",
         "fee_quantity": "-0.159390256",
-        "expected_quantity": "2.419353863",
-        "broker_quantity": "2.413305478",
+        "expected_quantity": "0.006048385",
+        "broker_quantity": "0",
         "difference_quantity": "-0.006048385",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.006048385"
