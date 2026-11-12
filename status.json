@@ -14,41 +14,63 @@
   ],
   "entry_decisions": [
     {
+      "symbol": "ONDO/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794452400,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
       "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "ema_cross",
-      "signal_time": 1794450300,
+      "timeframe": "1h",
+      "strategy": "trend_pullback",
+      "signal_time": 1794452400,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 59.223131858561416,
+        "spread_bps": 59.49781977167265,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794452400,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 59.34480131521041,
         "max_spread_bps": 50
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-12T02:58:21+00:00",
+  "next_entry_scan_at_utc": "2026-11-12T03:47:17+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
     "LINK/USD",
     "ONDO/USD",
     "SOL/USD",
-    "UNI/USD",
     "AVAX/USD",
     "ETH/USD",
     "LTC/USD",
     "DOT/USD",
+    "HYPE/USD",
     "PEPE/USD",
+    "UNI/USD",
     "ARB/USD"
   ],
-  "observed_at_utc": "2026-11-12T02:28:36+00:00",
+  "observed_at_utc": "2026-11-12T03:17:34+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T02:28:21+00:00",
+    "observed_at_utc": "2026-11-12T03:17:17+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -212,10 +234,10 @@
       },
       {
         "symbol": "UNIUSD",
-        "filled_quantity": "33.156743642",
+        "filled_quantity": "0.849051335",
         "fee_quantity": "-0.768079675",
-        "expected_quantity": "32.388663967",
-        "broker_quantity": "32.307692307",
+        "expected_quantity": "0.080971660",
+        "broker_quantity": "0",
         "difference_quantity": "-0.080971660",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.080971660"

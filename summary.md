@@ -8,12 +8,14 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 1. Skipped: 1. Broker order results: 0.
+Candidates: 3. Skipped: 3. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| AVAX/USD | 5m | ema_cross | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 59.223131858561416} |
+| ONDO/USD | 1h | bollinger_reversion | skipped | symbol_already_active | {} |
+| AVAX/USD | 1h | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 59.49781977167265} |
+| LTC/USD | 1h | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 59.34480131521041} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -30,7 +32,6 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | BTC/USD | 1h | bollinger_reversion | 73174.0 | 0.002733599 | 200.028373226 | 0.002726765 | 75066.4026904474 | 72227.7986547763 | open |
 | LINK/USD | 15m | bollinger_reversion | 10.152 | 19.732817649 | 200.327564772648 | 19.683485604 | 10.396733497568604 | 10.029633251215696 | open |
 | SOL/USD | 15m | rsi_rebound | 82.8979 | 2.414138158 | 200.12698360806823 | 2.408102812 | 84.384954133019 | 82.15437293349052 | open |
-| UNI/USD | 5m | bollinger_reversion | 6.179 | 32.388663967 | 200.129554652093 | 32.307692307 | 6.298095073060007 | 6.1194524634699965 | open |
 | ONDO/USD | 1h | bollinger_reversion | 0.35887 | 557.103064066 | 199.92757660136544 | 555.710306405 | 0.3755464471402786 | 0.3505317764298607 | open |
 ## Closed cycles
 
@@ -182,6 +183,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | LINK/USD | 5m | trend_pullback | 10.4569 | 19.123932645 | 199.9770512755005 | 0.0 | 10.548678477460657 | 10.41101076126967 | closed |
 | ETH/USD | 5m | bollinger_reversion | 2056.78 | 0.097214796 | 199.94944811688003 | 0.0 | 2070.459176056234 | 2049.9404119718833 | closed |
 | RENDER/USD | 15m | bollinger_reversion | 1.55194 | 128.865979381 | 199.99226804054913 | 0.0 | 1.5872792964138849 | 1.5342703517930576 | closed |
+| UNI/USD | 5m | bollinger_reversion | 6.179 | 32.388663967 | 200.129554652093 | 0.0 | 6.298095073060007 | 6.1194524634699965 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -212,7 +214,7 @@ Accounting final: False
 | RENDERUSD | 0.628682689 | 0 | -0.628682689 | 0.628682689 |
 | SOLUSD | 2.426072264 | 2.408102812 | -0.017969452 | 0.017969452 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
-| UNIUSD | 32.388663967 | 32.307692307 | -0.080971660 | 0.080971660 |
+| UNIUSD | 0.080971660 | 0 | -0.080971660 | 0.080971660 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
 PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
@@ -220,15 +222,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-12T02:58:21+00:00
+Next entry scan eligible: 2026-11-12T03:47:17+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-12T02:28:22+00:00
+Last refresh: 2026-11-12T03:17:18+00:00
 Source status: partial
-Selected: BTC/USD, LINK/USD, ONDO/USD, SOL/USD, UNI/USD, AVAX/USD, ETH/USD, LTC/USD, DOT/USD, PEPE/USD, ARB/USD
+Selected: BTC/USD, LINK/USD, ONDO/USD, SOL/USD, AVAX/USD, ETH/USD, LTC/USD, DOT/USD, HYPE/USD, PEPE/USD, UNI/USD, ARB/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
