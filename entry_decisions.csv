@@ -1,2 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-LINK/USD,5m,macd_momentum,1794506700,order_result,broker_order_returned,"{""broker_order_id"": ""a6a1b776-6944-455c-b385-77d8f54ee40f"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-ffb86adb07660a3f632dae3fa92ec4a7"", ""quantity"": ""19.960079840"", ""reference_ask"": 10.02}"
+BTC/USD,5m,bollinger_reversion,1794509700,skipped,symbol_already_active,{}
+LINK/USD,5m,trend_pullback,1794509700,skipped,symbol_already_active,{}
