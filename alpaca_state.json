@@ -98344,14 +98344,15 @@
         "client_order_id": "csl2-5c38ccc4bcef145ffa82eba30b422baa"
       },
       "cycle_id": "csl2-5c38ccc4bcef145ffa82eba30b422baa",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1794466979.4452474,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "237.23751152",
       "broker_order_id": "1ed0e546-464d-4a9d-99ad-87fcfc646197",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-12T07:03:10.505652971Z"
+      "filled_avg_price": 0.843608,
+      "filled_at": "2026-11-12T07:03:10.50680484Z",
+      "broker_updated_at": "2026-11-12T07:03:10.537288643Z",
+      "reference_ask": 0.843037
     }
   },
   "cycles": [
@@ -102086,11 +102087,17 @@
       "hold_seconds": 21600,
       "id": "csl2-5c38ccc4bcef145ffa82eba30b422baa",
       "created_at": 1794466979.4452474,
-      "status": "pending",
+      "status": "open",
       "distance": 0.00543752033126606,
       "target_r": 2.0,
       "reference_ask": 0.843037,
-      "remaining_qty": 0.0
+      "remaining_qty": 236.644417741,
+      "entry_price": 0.843608,
+      "entry_qty": 237.23751152,
+      "entry_notional_usd": 200.13546261836416,
+      "tp": 0.8544830406625321,
+      "sl": 0.8381704796687339,
+      "entry_time_utc": "2026-11-12T07:03:10.50680484Z"
     }
   ],
   "seen": {
@@ -103098,7 +103105,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T07:03:09+00:00",
+    "observed_at_utc": "2026-11-12T07:03:16+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -103142,13 +103149,13 @@
       },
       {
         "symbol": "DOTUSD",
-        "filled_quantity": "1.096337013",
+        "filled_quantity": "238.333848533",
         "fee_quantity": "-0.515464449",
-        "expected_quantity": "0.580872564",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.580872564",
+        "expected_quantity": "237.818384084",
+        "broker_quantity": "236.644417741",
+        "difference_quantity": "-1.173966343",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.580872564"
+        "unconfirmed_shortfall": "1.173966343"
       },
       {
         "symbol": "ETHUSD",
