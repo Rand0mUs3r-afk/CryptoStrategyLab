@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,15m,trend_pullback,1794459600,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
