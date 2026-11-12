@@ -97293,6 +97293,21 @@
       "filled_at": "2026-11-12T01:31:44.516599014Z",
       "broker_updated_at": "2026-11-12T01:31:44.537011169Z",
       "reference_ask": 0.359
+    },
+    "csl2-ac21b3a098b30a2e721e91b0e36107a0": {
+      "payload": {
+        "symbol": "UNI/USD",
+        "side": "sell",
+        "qty": "32.307692307",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-ac21b3a098b30a2e721e91b0e36107a0"
+      },
+      "cycle_id": "csl2-6491f31cb99bf52c380a8748a98377da",
+      "status": "queued",
+      "created_at": 1794453415.4126961,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -100962,7 +100977,8 @@
       "entry_notional_usd": 200.129554652093,
       "tp": 6.298095073060007,
       "sl": 6.1194524634699965,
-      "entry_time_utc": "2026-11-12T01:31:25.608932614Z"
+      "entry_time_utc": "2026-11-12T01:31:25.608932614Z",
+      "exit_reason": "time"
     },
     {
       "symbol": "ONDO/USD",
@@ -101985,7 +102001,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T02:28:21+00:00",
+    "observed_at_utc": "2026-11-12T03:17:07+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
