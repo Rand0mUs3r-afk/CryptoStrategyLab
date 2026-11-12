@@ -1,3 +1,2 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
 BTC/USD,15m,rsi_rebound,2026-11-12T16:27:11.815794156Z,71789.62,0.002786979,200.07616335798,0.002780011,72867.39960341778,71250.7301982911,open,,,
-LINK/USD,5m,macd_momentum,2026-11-12T18:09:54.02331791Z,10.02,19.96007984,199.99999999679997,19.91017964,10.122913115319868,9.968543442340065,open,,,
