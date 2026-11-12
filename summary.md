@@ -8,14 +8,11 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 3. Skipped: 3. Broker order results: 0.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| ONDO/USD | 1h | bollinger_reversion | skipped | symbol_already_active | {} |
-| AVAX/USD | 1h | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 59.49781977167265} |
-| LTC/USD | 1h | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 59.34480131521041} |
+No candidates recorded; check run status and data errors before concluding there were no signals.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -222,15 +219,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-12T03:47:17+00:00
+Next entry scan eligible: 2026-11-12T04:40:39+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-12T03:17:18+00:00
+Last refresh: 2026-11-12T04:10:40+00:00
 Source status: partial
-Selected: BTC/USD, LINK/USD, ONDO/USD, SOL/USD, AVAX/USD, ETH/USD, LTC/USD, DOT/USD, HYPE/USD, PEPE/USD, UNI/USD, ARB/USD
+Selected: BTC/USD, LINK/USD, ONDO/USD, SOL/USD, AVAX/USD, ETH/USD, LTC/USD, HYPE/USD, BCH/USD, PEPE/USD, UNI/USD, ARB/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

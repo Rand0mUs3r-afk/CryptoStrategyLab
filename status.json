@@ -12,46 +12,12 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "ONDO/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794452400,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "1h",
-      "strategy": "trend_pullback",
-      "signal_time": 1794452400,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 59.49781977167265,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794452400,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 59.34480131521041,
-        "max_spread_bps": 50
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 3,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-12T03:47:17+00:00",
+  "next_entry_scan_at_utc": "2026-11-12T04:40:39+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -61,16 +27,16 @@
     "AVAX/USD",
     "ETH/USD",
     "LTC/USD",
-    "DOT/USD",
     "HYPE/USD",
+    "BCH/USD",
     "PEPE/USD",
     "UNI/USD",
     "ARB/USD"
   ],
-  "observed_at_utc": "2026-11-12T03:17:34+00:00",
+  "observed_at_utc": "2026-11-12T04:10:58+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T03:17:17+00:00",
+    "observed_at_utc": "2026-11-12T04:10:39+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

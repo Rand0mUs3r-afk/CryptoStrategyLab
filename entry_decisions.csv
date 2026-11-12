@@ -1,4 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ONDO/USD,1h,bollinger_reversion,1794452400,skipped,symbol_already_active,{}
-AVAX/USD,1h,trend_pullback,1794452400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.49781977167265}"
-LTC/USD,1h,bollinger_reversion,1794452400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.34480131521041}"
