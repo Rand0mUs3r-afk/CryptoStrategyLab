@@ -8,11 +8,14 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 0. Skipped: 0. Broker order results: 0.
+Candidates: 3. Skipped: 2. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
-No candidates recorded; check run status and data errors before concluding there were no signals.
-
+| Coin | Bar | Strategy | Outcome | Reason | Details |
+| --- | --- | --- | --- | --- | --- |
+| ONDO/USD | 15m | bollinger_reversion | skipped | symbol_already_active | {} |
+| LTC/USD | 5m | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 60.52692841020647} |
+| SOL/USD | 5m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "33c5b543-0007-4146-9c25-fb3cfbfa591c", "broker_status": "pending_new", "client_order_id": "csl2-21a6fc25db55127f82a50961ed20af76", "quantity": "2.419353863", "reference_ask": 82.6667} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -20,8 +23,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
-| TRUMP/USD | 5m | candles | ValueError |
-| AAVE/USD | 5m | candles | ValueError |
+| ARB/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -30,6 +32,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | BTC/USD | 1h | bollinger_reversion | 73174.0 | 0.002733599 | 200.028373226 | 0.002726765 | 75066.4026904474 | 72227.7986547763 | open |
 | ONDO/USD | 1h | bollinger_reversion | 0.35887 | 557.103064066 | 199.92757660136544 | 555.710306405 | 0.3755464471402786 | 0.3505317764298607 | open |
 | DOT/USD | 15m | bollinger_reversion | 0.843608 | 237.23751152 | 200.13546261836416 | 236.644417741 | 0.8544830406625321 | 0.8381704796687339 | open |
+| SOL/USD | 5m | bollinger_reversion | 82.6727 | 2.419353863 | 200.0145161096401 | 2.413305478 | 83.02951044662264 | 82.49429477668869 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -192,10 +195,10 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: matched
+Status: fee_pending
 New entries blocked: False
 Exit checks allowed: True
-Accounting final: True
+Accounting final: False
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
@@ -213,21 +216,25 @@ Accounting final: True
 | PEPEUSD | 0E-9 | 0 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
-| SOLUSD | 0E-9 | 0 | 0E-9 | 0 |
+| SOLUSD | 2.419353863 | 2.413305478 | -0.006048385 | 0.006048385 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
+PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
+New buys permitted by explicit paper policy; all entry checks still apply.
+Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
+
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-12T08:49:16+00:00
+Next entry scan eligible: 2026-11-12T09:50:21+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-12T08:19:17+00:00
+Last refresh: 2026-11-12T09:20:22+00:00
 Source status: partial
-Selected: BTC/USD, DOT/USD, ONDO/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, TRUMP/USD, PEPE/USD, UNI/USD, AAVE/USD
+Selected: BTC/USD, DOT/USD, ONDO/USD, AVAX/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, PEPE/USD, UNI/USD, ARB/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
