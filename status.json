@@ -12,25 +12,12 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794512700,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 57.757099310124296,
-        "max_spread_bps": 50
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-12T20:15:59+00:00",
+  "next_entry_scan_at_utc": "2026-11-12T21:01:55+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
@@ -44,10 +31,10 @@
     "ARB/USD",
     "PEPE/USD"
   ],
-  "observed_at_utc": "2026-11-12T19:46:15+00:00",
+  "observed_at_utc": "2026-11-12T20:32:09+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T19:45:59+00:00",
+    "observed_at_utc": "2026-11-12T20:31:55+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

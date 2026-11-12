@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-LTC/USD,5m,trend_pullback,1794512700,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.757099310124296}"
