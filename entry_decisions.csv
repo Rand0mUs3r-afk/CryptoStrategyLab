@@ -1,4 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ONDO/USD,1h,rsi_rebound,1794477600,skipped,symbol_already_active,{}
-AVAX/USD,1h,macd_momentum,1794477600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.808858568739225}"
-AVAX/USD,1h,squeeze_breakout,1794477600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.808858568739225}"
+AVAX/USD,15m,bollinger_reversion,1794482100,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"

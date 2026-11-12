@@ -6,7 +6,7 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "DOT/USD",
+      "symbol": "AAVE/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -20,62 +20,40 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "ONDO/USD",
-      "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794477600,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
       "symbol": "AVAX/USD",
-      "timeframe": "1h",
-      "strategy": "macd_momentum",
-      "signal_time": 1794477600,
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794482100,
       "outcome": "skipped",
-      "reason": "spread_too_wide",
+      "reason": "no_fresh_quote",
       "details": {
-        "spread_bps": 60.808858568739225,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "1h",
-      "strategy": "squeeze_breakout",
-      "signal_time": 1794477600,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 60.808858568739225,
-        "max_spread_bps": 50
+        "max_quote_age_seconds": 30
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 3,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-12T10:53:30+00:00",
+  "next_entry_scan_at_utc": "2026-11-12T11:52:48+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "BTC/USD",
-    "DOT/USD",
     "ONDO/USD",
     "AVAX/USD",
     "ETH/USD",
     "LINK/USD",
     "LTC/USD",
     "SOL/USD",
+    "AAVE/USD",
     "PEPE/USD",
     "UNI/USD",
     "ARB/USD"
   ],
-  "observed_at_utc": "2026-11-12T10:23:44+00:00",
+  "observed_at_utc": "2026-11-12T11:23:02+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T10:23:30+00:00",
+    "observed_at_utc": "2026-11-12T11:22:47+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -119,10 +97,10 @@
       },
       {
         "symbol": "DOTUSD",
-        "filled_quantity": "238.333848533",
+        "filled_quantity": "1.689430792",
         "fee_quantity": "-1.689430792",
-        "expected_quantity": "236.644417741",
-        "broker_quantity": "236.644417741",
+        "expected_quantity": "0E-9",
+        "broker_quantity": "0",
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
