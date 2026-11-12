@@ -1,6 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-BTC/USD,5m,bollinger_reversion,1794466800,skipped,symbol_already_active,{}
-SOL/USD,5m,bollinger_reversion,1794466800,order_result,broker_order_returned,"{""broker_order_id"": ""543ec130-8e62-4bcb-8ab0-6e39edaf800c"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-fe995cbb978eb6ded10b4325631af604"", ""quantity"": ""2.414292612"", ""reference_ask"": 82.84}"
-DOT/USD,15m,bollinger_reversion,1794466800,order_result,broker_order_returned,"{""broker_order_id"": ""1ed0e546-464d-4a9d-99ad-87fcfc646197"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-5c38ccc4bcef145ffa82eba30b422baa"", ""quantity"": ""237.237511520"", ""reference_ask"": 0.843037}"
-UNI/USD,5m,bollinger_reversion,1794466800,order_result,broker_order_returned,"{""broker_order_id"": ""afc03949-0610-4a4e-9f6b-ca36da9f3e7a"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-1c59aefa52dda92a25bc81bf47e8b407"", ""quantity"": ""32.509752925"", ""reference_ask"": 6.152}"
-UNI/USD,5m,rsi_rebound,1794466800,skipped,symbol_already_active,{}
