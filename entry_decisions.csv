@@ -1,1 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+HYPE/USD,5m,trend_pullback,1794558900,skipped,stale_signal,"{""age_seconds"": 301.2308759689331, ""max_age_seconds"": 300}"

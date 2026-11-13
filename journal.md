@@ -8,13 +8,20 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 0. Skipped: 0. Broker order results: 0.
+Candidates: 1. Skipped: 1. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-No candidates recorded; check run status and data errors before concluding there were no signals.
-
+| Coin | Bar | Strategy | Outcome | Reason | Details |
+| --- | --- | --- | --- | --- | --- |
+| HYPE/USD | 5m | trend_pullback | skipped | stale_signal | {"age_seconds": 301.2308759689331, "max_age_seconds": 300} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
+
+## Data errors
+
+| Coin | Bar | Stage | Error type |
+| --- | --- | --- | --- |
+| RENDER/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -203,47 +210,43 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: fee_pending
+Status: matched
 New entries blocked: False
 Exit checks allowed: True
-Accounting final: False
+Accounting final: True
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
 | AAVEUSD | 0E-9 | 0 | 0E-9 | 0 |
-| ADAUSD | 2.852253281 | 0 | -2.852253281 | 2.852253281 |
+| ADAUSD | 0E-9 | 0 | 0E-9 | 0 |
 | ARBUSD | 0E-9 | 0 | 0E-9 | 0 |
 | AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
-| BTCUSD | 0.000021198 | 0 | -0.000021198 | 0.000021198 |
+| BTCUSD | 0E-9 | 0 | 0E-9 | 0 |
 | DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
-| ETHUSD | 0.103766627 | 0.103260868 | -0.000505759 | 0.000505759 |
+| ETHUSD | 0.103260868 | 0.103260868 | 0E-9 | 0 |
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
 | HYPEUSD | 0 | 0 | 0 | 0 |
-| LINKUSD | 0.251305408 | 0 | -0.251305408 | 0.251305408 |
+| LINKUSD | 0E-9 | 0 | 0E-9 | 0 |
 | LTCUSD | 0E-9 | 0 | 0E-9 | 0 |
 | ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
-| PEPEUSD | 44162512.558930368 | 43942731.277533041 | -219781.281397327 | 219781.281397327 |
+| PEPEUSD | 43942731.277533041 | 43942731.277533041 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
-| SOLUSD | 2.564280741 | 2.53962192 | -0.024658821 | 0.024658821 |
+| SOLUSD | 2.539621920 | 2.53962192 | 0E-9 | 0 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
-| UNIUSD | 0.087534402 | 0 | -0.087534402 | 0.087534402 |
+| UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
-PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
-New buys permitted by explicit paper policy; all entry checks still apply.
-Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
-
-Entry scan status: completed
-Next entry scan eligible: 2026-11-13T08:15:15+00:00
+Entry scan status: completed_with_data_errors
+Next entry scan eligible: 2026-11-13T09:09:47+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-13T07:45:17+00:00
+Last refresh: 2026-11-13T08:39:48+00:00
 Source status: partial
-Selected: ETH/USD, PEPE/USD, SOL/USD, AVAX/USD, BTC/USD, LINK/USD, LTC/USD, HYPE/USD, UNI/USD
+Selected: ETH/USD, PEPE/USD, SOL/USD, AVAX/USD, BTC/USD, LINK/USD, LTC/USD, HYPE/USD, RENDER/USD, UNI/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
