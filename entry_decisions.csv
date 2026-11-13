@@ -1,8 +1,6 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
 PEPE/USD,6h,bollinger_reversion,1794528000,skipped,already_seen,{}
-BTC/USD,15m,bollinger_reversion,1794531600,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-LTC/USD,15m,trend_pullback,1794531600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.586354624343976}"
-LTC/USD,15m,donchian_breakout,1794531600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.586354624343976}"
-LTC/USD,15m,squeeze_breakout,1794531600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.586354624343976}"
-LTC/USD,15m,rolling_vwap_reclaim,1794531600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.586354624343976}"
-ADA/USD,15m,donchian_breakout,1794531600,order_result,broker_order_returned,"{""broker_order_id"": ""3cd30fd4-418a-4d32-9c30-ee07e64e0a51"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-65ad03187e07b12cacd84d99f351c069"", ""quantity"": ""1140.901312036"", ""reference_ask"": 0.1753}"
+PEPE/USD,5m,macd_momentum,1794535200,skipped,symbol_already_active,{}
+LINK/USD,5m,trend_pullback,1794535200,order_result,broker_order_returned,"{""broker_order_id"": ""545f6677-40a3-449a-98eb-11301f091474"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-1413fa0a6c2dd0a5fe2468f44d8a8895"", ""quantity"": ""19.845207382"", ""reference_ask"": 10.078}"
+LTC/USD,5m,trend_pullback,1794535200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 58.29354004858103}"
+HYPE/USD,5m,trend_pullback,1794535200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 51.25320849496335}"
