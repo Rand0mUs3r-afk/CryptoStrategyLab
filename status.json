@@ -5,46 +5,12 @@
   "mode": "tick",
   "account_verified": true,
   "data_errors": [],
-  "entry_decisions": [
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "15m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794550500,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "1h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794549600,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 64.49572572344073,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "1h",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794549600,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 64.49572572344073,
-        "max_spread_bps": 50
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 3,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed",
-  "next_entry_scan_at_utc": "2026-11-13T06:56:24+00:00",
+  "next_entry_scan_at_utc": "2026-11-13T08:15:15+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ETH/USD",
@@ -57,10 +23,10 @@
     "HYPE/USD",
     "UNI/USD"
   ],
-  "observed_at_utc": "2026-11-13T06:26:37+00:00",
+  "observed_at_utc": "2026-11-13T07:45:29+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T06:26:23+00:00",
+    "observed_at_utc": "2026-11-13T07:45:15+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

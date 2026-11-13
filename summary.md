@@ -8,14 +8,11 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 3. Skipped: 3. Broker order results: 0.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| SOL/USD | 15m | rsi_rebound | skipped | symbol_already_active | {} |
-| AVAX/USD | 1h | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 64.49572572344073} |
-| AVAX/USD | 1h | rsi_rebound | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 64.49572572344073} |
+No candidates recorded; check run status and data errors before concluding there were no signals.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -238,13 +235,13 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed
-Next entry scan eligible: 2026-11-13T06:56:24+00:00
+Next entry scan eligible: 2026-11-13T08:15:15+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-13T06:26:25+00:00
+Last refresh: 2026-11-13T07:45:17+00:00
 Source status: partial
 Selected: ETH/USD, PEPE/USD, SOL/USD, AVAX/USD, BTC/USD, LINK/USD, LTC/USD, HYPE/USD, UNI/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
