@@ -105362,14 +105362,15 @@
         "client_order_id": "csl2-70c095612dc571920029729488adff09"
       },
       "cycle_id": "csl2-70c095612dc571920029729488adff09",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1794540863.8239968,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "0.002891323",
       "broker_order_id": "a7c2aa4e-b54e-48f0-93db-c7d1c14df89b",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-13T03:34:35.167156277Z"
+      "filled_avg_price": 69218.71,
+      "filled_at": "2026-11-13T03:34:35.168433282Z",
+      "broker_updated_at": "2026-11-13T03:34:35.186670416Z",
+      "reference_ask": 69172.485
     }
   },
   "cycles": [
@@ -109485,11 +109486,17 @@
       "hold_seconds": 3600,
       "id": "csl2-70c095612dc571920029729488adff09",
       "created_at": 1794540863.8239968,
-      "status": "pending",
+      "status": "open",
       "distance": 407.04848962853225,
       "target_r": 2.0,
       "reference_ask": 69172.485,
-      "remaining_qty": 0.0
+      "remaining_qty": 0.002884094,
+      "entry_price": 69218.71,
+      "entry_qty": 0.002891323,
+      "entry_notional_usd": 200.13364825333002,
+      "tp": 70032.80697925707,
+      "sl": 68811.66151037147,
+      "entry_time_utc": "2026-11-13T03:34:35.168433282Z"
     }
   ],
   "seen": {
@@ -110548,7 +110555,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T03:34:33+00:00",
+    "observed_at_utc": "2026-11-13T03:34:41+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -110592,13 +110599,13 @@
       },
       {
         "symbol": "BTCUSD",
-        "filled_quantity": "0.000117055",
+        "filled_quantity": "0.003008378",
         "fee_quantity": "-0.000103086",
-        "expected_quantity": "0.000013969",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.000013969",
+        "expected_quantity": "0.002905292",
+        "broker_quantity": "0.002884094",
+        "difference_quantity": "-0.000021198",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.000013969"
+        "unconfirmed_shortfall": "0.000021198"
       },
       {
         "symbol": "DOTUSD",
