@@ -8,20 +8,14 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 1. Skipped: 1. Broker order results: 0.
+Candidates: 1. Skipped: 0. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| HYPE/USD | 5m | trend_pullback | skipped | stale_signal | {"age_seconds": 301.2308759689331, "max_age_seconds": 300} |
+| LINK/USD | 5m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "b3d734e3-10c8-4fbf-8389-ea15b50d7966", "broker_status": "pending_new", "client_order_id": "csl2-7c93659175abecbe8332675a5d890ab4", "quantity": "20.128399057", "reference_ask": 9.93621} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
-
-## Data errors
-
-| Coin | Bar | Stage | Error type |
-| --- | --- | --- | --- |
-| RENDER/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -30,6 +24,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | PEPE/USD | 6h | bollinger_reversion | 4.55e-06 | 44052863.43612335 | 200.44052863436121 | 43942731.27753304 | 5.2531468577303116e-06 | 4.198426571134844e-06 | open |
 | ETH/USD | 15m | bollinger_reversion | 1934.349 | 0.103519668 | 200.24316627613197 | 0.103260868 | 1977.8675798250274 | 1912.589710087486 | open |
 | SOL/USD | 15m | bollinger_reversion | 78.537 | 2.545986888 | 199.95417222285602 | 2.53962192 | 80.28689104970933 | 77.66205447514534 | open |
+| LINK/USD | 5m | trend_pullback | 9.945 | 20.128399057 | 200.176928621865 | 20.078078059 | 10.034608889034732 | 9.900195555482634 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -210,10 +205,10 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: matched
+Status: fee_pending
 New entries blocked: False
 Exit checks allowed: True
-Accounting final: True
+Accounting final: False
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
@@ -226,7 +221,7 @@ Accounting final: True
 | ETHUSD | 0.103260868 | 0.103260868 | 0E-9 | 0 |
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
 | HYPEUSD | 0 | 0 | 0 | 0 |
-| LINKUSD | 0E-9 | 0 | 0E-9 | 0 |
+| LINKUSD | 20.128399057 | 20.078078059 | -0.050320998 | 0.050320998 |
 | LTCUSD | 0E-9 | 0 | 0E-9 | 0 |
 | ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
 | PEPEUSD | 43942731.277533041 | 43942731.277533041 | 0E-9 | 0 |
@@ -237,16 +232,20 @@ Accounting final: True
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
-Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-13T09:09:47+00:00
+PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
+New buys permitted by explicit paper policy; all entry checks still apply.
+Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
+
+Entry scan status: completed
+Next entry scan eligible: 2026-11-13T10:04:11+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-13T08:39:48+00:00
+Last refresh: 2026-11-13T09:34:12+00:00
 Source status: partial
-Selected: ETH/USD, PEPE/USD, SOL/USD, AVAX/USD, BTC/USD, LINK/USD, LTC/USD, HYPE/USD, RENDER/USD, UNI/USD
+Selected: ETH/USD, PEPE/USD, SOL/USD, AVAX/USD, BTC/USD, LINK/USD, LTC/USD, HYPE/USD, UNI/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
