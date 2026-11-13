@@ -105775,6 +105775,21 @@
       "filled_at": "2026-11-13T04:33:11.740134631Z",
       "broker_updated_at": "2026-11-13T04:33:11.786924219Z",
       "reference_ask": 78.555
+    },
+    "csl2-351a052fa54b1ca6694d07c6e5408cae": {
+      "payload": {
+        "symbol": "UNI/USD",
+        "side": "buy",
+        "qty": "35.013760407",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-351a052fa54b1ca6694d07c6e5408cae"
+      },
+      "cycle_id": "csl2-351a052fa54b1ca6694d07c6e5408cae",
+      "status": "queued",
+      "created_at": 1794544400.9457753,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -109970,6 +109985,22 @@
       "tp": 80.28689104970933,
       "sl": 77.66205447514534,
       "entry_time_utc": "2026-11-13T04:33:11.740134631Z"
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "5m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794544200,
+      "atr": 0.03785645140218564,
+      "signal_close": 5.7105,
+      "hold_seconds": 3600,
+      "id": "csl2-351a052fa54b1ca6694d07c6e5408cae",
+      "created_at": 1794544400.9457753,
+      "status": "pending",
+      "distance": 0.05678467710327846,
+      "target_r": 2.0,
+      "reference_ask": 5.71204,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -111029,7 +111060,8 @@
     "LINK/USD|5m|rsi_rebound|1794544200": 1794544377.8282053,
     "LTC/USD|15m|bollinger_reversion|1794544200": 1794544377.8282654,
     "LTC/USD|5m|rsi_rebound|1794544200": 1794544377.9013133,
-    "SOL/USD|15m|bollinger_reversion|1794544200": 1794544377.9696798
+    "SOL/USD|15m|bollinger_reversion|1794544200": 1794544377.9696798,
+    "UNI/USD|5m|bollinger_reversion|1794544200": 1794544400.9457753
   },
   "day": "2026-11-13",
   "day_start_equity": 99587.81,
@@ -111038,7 +111070,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T04:33:19+00:00",
+    "observed_at_utc": "2026-11-13T04:33:33+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
