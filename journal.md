@@ -245,15 +245,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-13T16:28:01+00:00
+Next entry scan eligible: 2026-11-13T17:13:55+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-13T15:58:02+00:00
+Last refresh: 2026-11-13T16:44:00+00:00
 Source status: partial
-Selected: PEPE/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, HYPE/USD, RENDER/USD, ADA/USD, TRUMP/USD, UNI/USD
+Selected: PEPE/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, ADA/USD, HYPE/USD, RENDER/USD, UNI/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.
