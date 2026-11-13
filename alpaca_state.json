@@ -111625,6 +111625,21 @@
       "filled_at": null,
       "broker_updated_at": "2026-11-13T21:38:13.336774412Z",
       "reference_ask": 72.662
+    },
+    "csl2-fe60a4bf55dac2b4b6a236f95edf611f": {
+      "payload": {
+        "symbol": "RENDER/USD",
+        "side": "buy",
+        "qty": "130.293159609",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-fe60a4bf55dac2b4b6a236f95edf611f"
+      },
+      "cycle_id": "csl2-fe60a4bf55dac2b4b6a236f95edf611f",
+      "status": "queued",
+      "created_at": 1794605902.7675028,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -116056,6 +116071,22 @@
       "target_r": 2.0,
       "reference_ask": 72.662,
       "remaining_qty": 0.0
+    },
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794605400,
+      "atr": 0.010429071948977953,
+      "signal_close": 1.5369,
+      "hold_seconds": 21600,
+      "id": "csl2-fe60a4bf55dac2b4b6a236f95edf611f",
+      "created_at": 1794605902.7675028,
+      "status": "pending",
+      "distance": 0.015643607923466932,
+      "target_r": 2.0,
+      "reference_ask": 1.535,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -117141,7 +117172,8 @@
     "BCH/USD|5m|macd_momentum|1794600600": 1794600674.1730607,
     "ETH/USD|5m|trend_pullback|1794603300": 1794603457.0563858,
     "ETH/USD|5m|rolling_vwap_reclaim|1794603300": 1794603478.0300303,
-    "HYPE/USD|15m|macd_momentum|1794605400": 1794605878.8654656
+    "HYPE/USD|15m|macd_momentum|1794605400": 1794605878.8654656,
+    "RENDER/USD|15m|trend_pullback|1794605400": 1794605902.7675028
   },
   "day": "2026-11-13",
   "day_start_equity": 99587.81,
@@ -117150,7 +117182,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T21:38:21+00:00",
+    "observed_at_utc": "2026-11-13T21:38:35+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
