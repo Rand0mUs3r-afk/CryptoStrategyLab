@@ -105755,6 +105755,21 @@
       "filled_at": "2026-11-13T04:32:48.753592135Z",
       "broker_updated_at": "2026-11-13T04:32:48.787065596Z",
       "reference_ask": 1932.0
+    },
+    "csl2-c3430d0baaf641c2583f777b385fbca3": {
+      "payload": {
+        "symbol": "SOL/USD",
+        "side": "buy",
+        "qty": "2.545986888",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-c3430d0baaf641c2583f777b385fbca3"
+      },
+      "cycle_id": "csl2-c3430d0baaf641c2583f777b385fbca3",
+      "status": "queued",
+      "created_at": 1794544377.9696798,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -109928,6 +109943,22 @@
       "tp": 1977.8675798250274,
       "sl": 1912.589710087486,
       "entry_time_utc": "2026-11-13T04:32:48.753592135Z"
+    },
+    {
+      "symbol": "SOL/USD",
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794544200,
+      "atr": 0.5832970165697738,
+      "signal_close": 78.29,
+      "hold_seconds": 21600,
+      "id": "csl2-c3430d0baaf641c2583f777b385fbca3",
+      "created_at": 1794544377.9696798,
+      "status": "pending",
+      "distance": 0.8749455248546607,
+      "target_r": 2.0,
+      "reference_ask": 78.555,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -110982,7 +111013,12 @@
     "LTC/USD|5m|bollinger_reversion|1794540600": 1794540901.9273536,
     "SOL/USD|5m|bollinger_reversion|1794540600": 1794540901.9273698,
     "AVAX/USD|15m|bollinger_reversion|1794544200": 1794544354.8357503,
-    "ETH/USD|15m|bollinger_reversion|1794544200": 1794544354.9040637
+    "ETH/USD|15m|bollinger_reversion|1794544200": 1794544354.9040637,
+    "LINK/USD|15m|bollinger_reversion|1794544200": 1794544377.828066,
+    "LINK/USD|5m|rsi_rebound|1794544200": 1794544377.8282053,
+    "LTC/USD|15m|bollinger_reversion|1794544200": 1794544377.8282654,
+    "LTC/USD|5m|rsi_rebound|1794544200": 1794544377.9013133,
+    "SOL/USD|15m|bollinger_reversion|1794544200": 1794544377.9696798
   },
   "day": "2026-11-13",
   "day_start_equity": 99587.81,
@@ -110991,7 +111027,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T04:32:56+00:00",
+    "observed_at_utc": "2026-11-13T04:33:10+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
