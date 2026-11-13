@@ -1,2 +1,1 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-LINK/USD,5m,trend_pullback,1794562200,order_result,broker_order_returned,"{""broker_order_id"": ""b3d734e3-10c8-4fbf-8389-ea15b50d7966"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-7c93659175abecbe8332675a5d890ab4"", ""quantity"": ""20.128399057"", ""reference_ask"": 9.93621}"
