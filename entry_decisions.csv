@@ -1,7 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,5m,bollinger_reversion,1794600600,skipped,symbol_already_active,{}
-AVAX/USD,5m,trend_pullback,1794600600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.08166930183735}"
-SOL/USD,5m,squeeze_breakout,1794600600,order_result,broker_order_returned,"{""broker_order_id"": ""32fe2260-9b19-4c44-8e00-3501e964ee87"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-50b09999a753dcf4ba7ce3cf2569f5bc"", ""quantity"": ""2.485707183"", ""reference_ask"": 80.46}"
-HYPE/USD,15m,trend_pullback,1794600000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-HYPE/USD,15m,macd_momentum,1794600000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
-BCH/USD,5m,macd_momentum,1794600600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 56.328111248019766}"
+ETH/USD,5m,trend_pullback,1794603300,order_result,broker_order_returned,"{""broker_order_id"": ""47cb497e-86b2-460b-b0b6-fd79b68ed569"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-e86c762a01e6ccc28a0d55c9a44fb1e2"", ""quantity"": ""0.102737597"", ""reference_ask"": 1946.707}"
+ETH/USD,5m,rolling_vwap_reclaim,1794603300,skipped,symbol_already_active,{}
