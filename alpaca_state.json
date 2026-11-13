@@ -112041,6 +112041,21 @@
       "filled_at": "2026-11-13T22:24:07.278239061Z",
       "broker_updated_at": "2026-11-13T22:24:07.286291883Z",
       "reference_ask": 78.35
+    },
+    "csl2-068111a0cefe96371ecedf27707c8c87": {
+      "payload": {
+        "symbol": "UNI/USD",
+        "side": "buy",
+        "qty": "34.989503149",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-068111a0cefe96371ecedf27707c8c87"
+      },
+      "cycle_id": "csl2-068111a0cefe96371ecedf27707c8c87",
+      "status": "queued",
+      "created_at": 1794608656.6326017,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -116587,6 +116602,22 @@
       "tp": 79.335336119911,
       "sl": 77.9323319400445,
       "entry_time_utc": "2026-11-13T22:24:07.278239061Z"
+    },
+    {
+      "symbol": "UNI/USD",
+      "timeframe": "5m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794608400,
+      "atr": 0.024308789411628545,
+      "signal_close": 5.7094,
+      "hold_seconds": 3600,
+      "id": "csl2-068111a0cefe96371ecedf27707c8c87",
+      "created_at": 1794608656.6326017,
+      "status": "pending",
+      "distance": 0.036463184117442815,
+      "target_r": 2.0,
+      "reference_ask": 5.716,
+      "remaining_qty": 0.0
     }
   ],
   "seen": {
@@ -117683,7 +117714,10 @@
     "LINK/USD|5m|bollinger_reversion|1794608400": 1794608610.262247,
     "LTC/USD|5m|bollinger_reversion|1794608400": 1794608633.4271107,
     "LTC/USD|5m|rsi_rebound|1794608400": 1794608633.4832342,
-    "SOL/USD|5m|rsi_rebound|1794608400": 1794608633.5403244
+    "SOL/USD|5m|rsi_rebound|1794608400": 1794608633.5403244,
+    "HYPE/USD|5m|bollinger_reversion|1794608400": 1794608656.632426,
+    "HYPE/USD|5m|rsi_rebound|1794608400": 1794608656.6325579,
+    "UNI/USD|5m|rsi_rebound|1794608400": 1794608656.6326017
   },
   "day": "2026-11-13",
   "day_start_equity": 99587.81,
@@ -117692,7 +117726,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T22:24:14+00:00",
+    "observed_at_utc": "2026-11-13T22:24:28+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
