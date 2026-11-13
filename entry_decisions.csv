@@ -1,2 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-HYPE/USD,15m,donchian_breakout,1794568500,order_result,broker_order_returned,"{""broker_order_id"": ""386f226a-7007-46dd-a2a7-deeaecf80e4b"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-1862da9559a459e6150c42366dd6a3e3"", ""quantity"": ""2.713262426"", ""reference_ask"": 73.712}"
+HYPE/USD,15m,donchian_breakout,1794572100,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+RENDER/USD,15m,donchian_breakout,1794572100,order_result,broker_order_returned,"{""broker_order_id"": ""24c517aa-cb70-4db0-8502-00e17720ab14"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-373c79cb596944535e8c94055549b3ec"", ""quantity"": ""130.199856780"", ""reference_ask"": 1.5361}"
