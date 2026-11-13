@@ -117492,7 +117492,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T21:38:45+00:00",
+    "observed_at_utc": "2026-11-13T22:22:03+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
