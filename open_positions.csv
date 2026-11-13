@@ -1,3 +1,2 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
 PEPE/USD,6h,bollinger_reversion,2026-11-13T00:04:39.063108487Z,4.55e-06,44052863.43612335,200.44052863436121,43942731.27753304,5.2531468577303116e-06,4.198426571134844e-06,open,,,
-RENDER/USD,15m,donchian_breakout,2026-11-13T12:17:24.166906125Z,1.5368,130.19985678,200.091139899504,129.874357138,1.5655810190498758,1.522409490475062,open,,,

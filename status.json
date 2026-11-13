@@ -12,7 +12,7 @@
       "error_type": "ValueError"
     },
     {
-      "symbol": "AAVE/USD",
+      "symbol": "PAXG/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -23,26 +23,26 @@
   "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-13T14:58:41+00:00",
+  "next_entry_scan_at_utc": "2026-11-13T15:44:43+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "PEPE/USD",
-    "RENDER/USD",
     "AVAX/USD",
     "BTC/USD",
     "ETH/USD",
     "LINK/USD",
     "LTC/USD",
     "SOL/USD",
-    "AAVE/USD",
+    "HYPE/USD",
+    "RENDER/USD",
     "XRP/USD",
-    "ONDO/USD",
-    "ADA/USD"
+    "ADA/USD",
+    "PAXG/USD"
   ],
-  "observed_at_utc": "2026-11-13T14:28:56+00:00",
+  "observed_at_utc": "2026-11-13T15:15:00+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T14:28:41+00:00",
+    "observed_at_utc": "2026-11-13T15:14:43+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -186,10 +186,10 @@
       },
       {
         "symbol": "RENDERUSD",
-        "filled_quantity": "132.990559479",
+        "filled_quantity": "3.116202341",
         "fee_quantity": "-2.790702699",
-        "expected_quantity": "130.199856780",
-        "broker_quantity": "129.874357138",
+        "expected_quantity": "0.325499642",
+        "broker_quantity": "0",
         "difference_quantity": "-0.325499642",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.325499642"
