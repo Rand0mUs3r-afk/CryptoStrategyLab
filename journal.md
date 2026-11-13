@@ -8,13 +8,15 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 2. Skipped: 1. Broker order results: 1.
+Candidates: 4. Skipped: 3. Broker order results: 1.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| HYPE/USD | 15m | donchian_breakout | skipped | symbol_cooldown | {"cooldown_seconds": 300} |
-| RENDER/USD | 15m | donchian_breakout | order_result | broker_order_returned | {"broker_order_id": "24c517aa-cb70-4db0-8502-00e17720ab14", "broker_status": "pending_new", "client_order_id": "csl2-373c79cb596944535e8c94055549b3ec", "quantity": "130.199856780", "reference_ask": 1.5361} |
+| AVAX/USD | 5m | donchian_breakout | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 57.342066118481064} |
+| AVAX/USD | 5m | squeeze_breakout | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 57.342066118481064} |
+| LTC/USD | 5m | trend_pullback | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 61.11701002387863} |
+| SOL/USD | 5m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "82afb3e1-85ca-420b-a304-28558d5d76ce", "broker_status": "pending_new", "client_order_id": "csl2-6bf39c5e397796715c62077a9d2a85fc", "quantity": "2.475523263", "reference_ask": 80.791} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -23,6 +25,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
 | RENDER/USD | 5m | candles | ValueError |
+| AAVE/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -30,6 +33,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | PEPE/USD | 6h | bollinger_reversion | 4.55e-06 | 44052863.43612335 | 200.44052863436121 | 43942731.27753304 | 5.2531468577303116e-06 | 4.198426571134844e-06 | open |
 | RENDER/USD | 15m | donchian_breakout | 1.5368 | 130.19985678 | 200.091139899504 | 129.874357138 | 1.5655810190498758 | 1.522409490475062 | open |
+| SOL/USD | 5m | trend_pullback | 80.8151 | 2.475523263 | 200.0596600516713 | 2.469334454 | 81.27703109392311 | 80.58413445303844 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -236,7 +240,7 @@ Accounting final: False
 | PEPEUSD | 43942731.277533041 | 43942731.277533041 | 0E-9 | 0 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 130.199856780 | 129.874357138 | -0.325499642 | 0.325499642 |
-| SOLUSD | 0E-9 | 0 | 0E-9 | 0 |
+| SOLUSD | 2.475523263 | 2.469334454 | -0.006188809 | 0.006188809 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
 | UNIUSD | 0E-9 | 0 | 0E-9 | 0 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -246,15 +250,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-13T12:46:57+00:00
+Next entry scan eligible: 2026-11-13T13:56:34+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-13T12:16:58+00:00
+Last refresh: 2026-11-13T13:26:36+00:00
 Source status: partial
-Selected: PEPE/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, ADA/USD, HYPE/USD, ARB/USD, RENDER/USD, ONDO/USD
+Selected: PEPE/USD, RENDER/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, AAVE/USD, ADA/USD, HYPE/USD, ONDO/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

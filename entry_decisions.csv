@@ -1,3 +1,5 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-HYPE/USD,15m,donchian_breakout,1794572100,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
-RENDER/USD,15m,donchian_breakout,1794572100,order_result,broker_order_returned,"{""broker_order_id"": ""24c517aa-cb70-4db0-8502-00e17720ab14"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-373c79cb596944535e8c94055549b3ec"", ""quantity"": ""130.199856780"", ""reference_ask"": 1.5361}"
+AVAX/USD,5m,donchian_breakout,1794576300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.342066118481064}"
+AVAX/USD,5m,squeeze_breakout,1794576300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.342066118481064}"
+LTC/USD,5m,trend_pullback,1794576300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.11701002387863}"
+SOL/USD,5m,trend_pullback,1794576300,order_result,broker_order_returned,"{""broker_order_id"": ""82afb3e1-85ca-420b-a304-28558d5d76ce"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-6bf39c5e397796715c62077a9d2a85fc"", ""quantity"": ""2.475523263"", ""reference_ask"": 80.791}"
