@@ -10,45 +10,72 @@
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
-    },
-    {
-      "symbol": "PAXG/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
     }
   ],
   "entry_decisions": [
     {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794603300,
+      "symbol": "HYPE/USD",
+      "timeframe": "15m",
+      "strategy": "macd_momentum",
+      "signal_time": 1794605400,
       "outcome": "order_result",
       "reason": "broker_order_returned",
       "details": {
-        "client_order_id": "csl2-e86c762a01e6ccc28a0d55c9a44fb1e2",
-        "quantity": "0.102737597",
-        "reference_ask": 1946.707,
+        "client_order_id": "csl2-1b1ec0ae1c1c447e3de00b95af6b2bee",
+        "quantity": "2.752470342",
+        "reference_ask": 72.662,
         "broker_status": "pending_new",
-        "broker_order_id": "47cb497e-86b2-460b-b0b6-fd79b68ed569"
+        "broker_order_id": "3275b629-cfc8-4d6e-9a67-313745a03a7f"
       }
     },
     {
-      "symbol": "ETH/USD",
-      "timeframe": "5m",
+      "symbol": "RENDER/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794605400,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
+      "details": {
+        "client_order_id": "csl2-fe60a4bf55dac2b4b6a236f95edf611f",
+        "quantity": "130.293159609",
+        "reference_ask": 1.535,
+        "broker_status": "pending_new",
+        "broker_order_id": "2c9ddc7d-d0f8-49cb-84d8-cb9eb0ee7a49"
+      }
+    },
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1794605400,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "15m",
+      "strategy": "squeeze_breakout",
+      "signal_time": 1794605400,
+      "outcome": "skipped",
+      "reason": "symbol_already_active",
+      "details": {}
+    },
+    {
+      "symbol": "RENDER/USD",
+      "timeframe": "15m",
       "strategy": "rolling_vwap_reclaim",
-      "signal_time": 1794603300,
+      "signal_time": 1794605400,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 5,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-13T21:27:22+00:00",
+  "next_entry_scan_at_utc": "2026-11-13T22:07:43+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "PEPE/USD",
@@ -60,13 +87,12 @@
     "SOL/USD",
     "HYPE/USD",
     "RENDER/USD",
-    "PAXG/USD",
     "UNI/USD"
   ],
-  "observed_at_utc": "2026-11-13T20:57:58+00:00",
+  "observed_at_utc": "2026-11-13T21:38:46+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T20:57:56+00:00",
+    "observed_at_utc": "2026-11-13T21:38:45+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -130,10 +156,10 @@
       },
       {
         "symbol": "ETHUSD",
-        "filled_quantity": "0.107050872",
+        "filled_quantity": "0.004570119",
         "fee_quantity": "-0.004313275",
-        "expected_quantity": "0.102737597",
-        "broker_quantity": "0.102480753",
+        "expected_quantity": "0.000256844",
+        "broker_quantity": "0",
         "difference_quantity": "-0.000256844",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.000256844"
@@ -210,13 +236,13 @@
       },
       {
         "symbol": "RENDERUSD",
-        "filled_quantity": "3.116202341",
+        "filled_quantity": "133.409361950",
         "fee_quantity": "-2.790702699",
-        "expected_quantity": "0.325499642",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.325499642",
+        "expected_quantity": "130.618659251",
+        "broker_quantity": "129.967426709",
+        "difference_quantity": "-0.651232542",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.325499642"
+        "unconfirmed_shortfall": "0.651232542"
       },
       {
         "symbol": "SOLUSD",

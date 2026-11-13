@@ -1,3 +1,4 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
 PEPE/USD,6h,bollinger_reversion,2026-11-13T00:04:39.063108487Z,4.55e-06,44052863.43612335,200.44052863436121,43942731.27753304,5.2531468577303116e-06,4.198426571134844e-06,open,,,
-ETH/USD,5m,trend_pullback,2026-11-13T20:57:49.565523419Z,1947.3,0.102737597,200.06092263809998,0.102480753,1959.505833356921,1941.1970833215394,open,,,
+HYPE/USD,15m,macd_momentum,,,,,0.0,,,pending,,,
+RENDER/USD,15m,trend_pullback,2026-11-13T21:38:37.276841613Z,1.536,130.293159609,200.130293159424,129.967426709,1.567287215846934,1.520356392076533,open,,,

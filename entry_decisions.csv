@@ -1,3 +1,6 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-ETH/USD,5m,trend_pullback,1794603300,order_result,broker_order_returned,"{""broker_order_id"": ""47cb497e-86b2-460b-b0b6-fd79b68ed569"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-e86c762a01e6ccc28a0d55c9a44fb1e2"", ""quantity"": ""0.102737597"", ""reference_ask"": 1946.707}"
-ETH/USD,5m,rolling_vwap_reclaim,1794603300,skipped,symbol_already_active,{}
+HYPE/USD,15m,macd_momentum,1794605400,order_result,broker_order_returned,"{""broker_order_id"": ""3275b629-cfc8-4d6e-9a67-313745a03a7f"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-1b1ec0ae1c1c447e3de00b95af6b2bee"", ""quantity"": ""2.752470342"", ""reference_ask"": 72.662}"
+RENDER/USD,15m,trend_pullback,1794605400,order_result,broker_order_returned,"{""broker_order_id"": ""2c9ddc7d-d0f8-49cb-84d8-cb9eb0ee7a49"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-fe60a4bf55dac2b4b6a236f95edf611f"", ""quantity"": ""130.293159609"", ""reference_ask"": 1.535}"
+RENDER/USD,15m,donchian_breakout,1794605400,skipped,symbol_already_active,{}
+RENDER/USD,15m,squeeze_breakout,1794605400,skipped,symbol_already_active,{}
+RENDER/USD,15m,rolling_vwap_reclaim,1794605400,skipped,symbol_already_active,{}
