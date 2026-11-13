@@ -111992,14 +111992,15 @@
         "client_order_id": "csl2-af58bd4c4dc58861643f476131f25e72"
       },
       "cycle_id": "csl2-af58bd4c4dc58861643f476131f25e72",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1794608586.8311055,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "0.103991181",
       "broker_order_id": "8ee98fa9-2fcf-458c-b1bd-b800e3aef4cf",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-13T22:23:20.838115521Z"
+      "filled_avg_price": 1923.919,
+      "filled_at": "2026-11-13T22:23:20.839331693Z",
+      "broker_updated_at": "2026-11-13T22:23:20.88720432Z",
+      "reference_ask": 1923.24
     }
   },
   "cycles": [
@@ -116491,11 +116492,17 @@
       "hold_seconds": 3600,
       "id": "csl2-af58bd4c4dc58861643f476131f25e72",
       "created_at": 1794608586.8311055,
-      "status": "pending",
+      "status": "open",
       "distance": 8.501013517558517,
       "target_r": 2.0,
       "reference_ask": 1923.24,
-      "remaining_qty": 0.0
+      "remaining_qty": 0.103731203,
+      "entry_price": 1923.919,
+      "entry_qty": 0.103991181,
+      "entry_notional_usd": 200.07060895833902,
+      "tp": 1940.921027035117,
+      "sl": 1915.4179864824416,
+      "entry_time_utc": "2026-11-13T22:23:20.839331693Z"
     }
   ],
   "seen": {
@@ -117597,7 +117604,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T22:23:18+00:00",
+    "observed_at_utc": "2026-11-13T22:23:28+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -117661,13 +117668,13 @@
       },
       {
         "symbol": "ETHUSD",
-        "filled_quantity": "0.004570119",
+        "filled_quantity": "0.108561300",
         "fee_quantity": "-0.004313275",
-        "expected_quantity": "0.000256844",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.000256844",
+        "expected_quantity": "0.104248025",
+        "broker_quantity": "0.103731203",
+        "difference_quantity": "-0.000516822",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.000256844"
+        "unconfirmed_shortfall": "0.000516822"
       },
       {
         "symbol": "FILUSD",
