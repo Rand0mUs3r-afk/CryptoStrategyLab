@@ -12,12 +12,6 @@
       "error_type": "ValueError"
     },
     {
-      "symbol": "ARB/USD",
-      "timeframe": "5m",
-      "stage": "candles",
-      "error_type": "ValueError"
-    },
-    {
       "symbol": "RENDER/USD",
       "timeframe": "5m",
       "stage": "candles",
@@ -33,61 +27,13 @@
       "outcome": "skipped",
       "reason": "already_seen",
       "details": {}
-    },
-    {
-      "symbol": "PEPE/USD",
-      "timeframe": "5m",
-      "strategy": "macd_momentum",
-      "signal_time": 1794535200,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    },
-    {
-      "symbol": "LINK/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794535200,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-1413fa0a6c2dd0a5fe2468f44d8a8895",
-        "quantity": "19.845207382",
-        "reference_ask": 10.078,
-        "broker_status": "pending_new",
-        "broker_order_id": "545f6677-40a3-449a-98eb-11301f091474"
-      }
-    },
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794535200,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 58.29354004858103,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "HYPE/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794535200,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 51.25320849496335,
-        "max_spread_bps": 50
-      }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 5,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-13T02:32:46+00:00",
+  "next_entry_scan_at_utc": "2026-11-13T03:16:00+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "PEPE/USD",
@@ -97,16 +43,15 @@
     "LINK/USD",
     "LTC/USD",
     "SOL/USD",
-    "ADA/USD",
     "HYPE/USD",
     "AAVE/USD",
-    "ARB/USD",
+    "UNI/USD",
     "RENDER/USD"
   ],
-  "observed_at_utc": "2026-11-13T02:03:20+00:00",
+  "observed_at_utc": "2026-11-13T02:46:15+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T02:03:19+00:00",
+    "observed_at_utc": "2026-11-13T02:46:00+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -200,10 +145,10 @@
       },
       {
         "symbol": "LINKUSD",
-        "filled_quantity": "20.724244163",
+        "filled_quantity": "0.928649800",
         "fee_quantity": "-0.728361157",
-        "expected_quantity": "19.995883006",
-        "broker_quantity": "19.795594363",
+        "expected_quantity": "0.200288643",
+        "broker_quantity": "0",
         "difference_quantity": "-0.200288643",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.200288643"

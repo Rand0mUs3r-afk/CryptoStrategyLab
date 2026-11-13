@@ -1,6 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
 PEPE/USD,6h,bollinger_reversion,1794528000,skipped,already_seen,{}
-PEPE/USD,5m,macd_momentum,1794535200,skipped,symbol_already_active,{}
-LINK/USD,5m,trend_pullback,1794535200,order_result,broker_order_returned,"{""broker_order_id"": ""545f6677-40a3-449a-98eb-11301f091474"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-1413fa0a6c2dd0a5fe2468f44d8a8895"", ""quantity"": ""19.845207382"", ""reference_ask"": 10.078}"
-LTC/USD,5m,trend_pullback,1794535200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 58.29354004858103}"
-HYPE/USD,5m,trend_pullback,1794535200,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 51.25320849496335}"
