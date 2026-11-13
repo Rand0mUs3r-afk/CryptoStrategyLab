@@ -112690,6 +112690,21 @@
       "filled_avg_price": 77.234,
       "filled_at": "2026-11-13T23:02:31.519520604Z",
       "broker_updated_at": "2026-11-13T23:02:31.537001886Z"
+    },
+    "csl2-90591961a5e31bab5037eeb739df5363": {
+      "payload": {
+        "symbol": "BTC/USD",
+        "side": "sell",
+        "qty": "0.002923406",
+        "type": "market",
+        "time_in_force": "gtc",
+        "client_order_id": "csl2-90591961a5e31bab5037eeb739df5363"
+      },
+      "cycle_id": "csl2-c9023f3b995bb607c25e04e2537e5ff0",
+      "status": "queued",
+      "created_at": 1794613110.221453,
+      "attempted": true,
+      "filled_qty": "0"
     }
   },
   "cycles": [
@@ -117169,7 +117184,8 @@
       "entry_notional_usd": 200.05359301980002,
       "tp": 68734.65345481489,
       "sl": 68023.57327259256,
-      "entry_time_utc": "2026-11-13T22:22:57.389525382Z"
+      "entry_time_utc": "2026-11-13T22:22:57.389525382Z",
+      "exit_reason": "time"
     },
     {
       "symbol": "ETH/USD",
@@ -118369,7 +118385,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T23:02:37+00:00",
+    "observed_at_utc": "2026-11-13T23:38:42+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
