@@ -8,13 +8,14 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 2. Skipped: 2. Broker order results: 0.
+Candidates: 3. Skipped: 3. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| PEPE/USD | 6h | bollinger_reversion | skipped | already_seen | {} |
-| AVAX/USD | 15m | rsi_rebound | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 60.58732612055578} |
+| SOL/USD | 15m | rsi_rebound | skipped | symbol_already_active | {} |
+| AVAX/USD | 1h | bollinger_reversion | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 64.49572572344073} |
+| AVAX/USD | 1h | rsi_rebound | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 64.49572572344073} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -25,7 +26,6 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | PEPE/USD | 6h | bollinger_reversion | 4.55e-06 | 44052863.43612335 | 200.44052863436121 | 43942731.27753304 | 5.2531468577303116e-06 | 4.198426571134844e-06 | open |
 | ETH/USD | 15m | bollinger_reversion | 1934.349 | 0.103519668 | 200.24316627613197 | 0.103260868 | 1977.8675798250274 | 1912.589710087486 | open |
 | SOL/USD | 15m | bollinger_reversion | 78.537 | 2.545986888 | 199.95417222285602 | 2.53962192 | 80.28689104970933 | 77.66205447514534 | open |
-| UNI/USD | 5m | bollinger_reversion | 5.72526 | 35.013760407 | 200.4628819077808 | 34.926226005 | 5.838829354206556 | 5.668475322896721 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -198,6 +198,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | LINK/USD | 5m | trend_pullback | 10.08 | 19.845207382 | 200.03969041056 | 0.0 | 10.159292191908689 | 10.040353904045656 | closed |
 | BTC/USD | 5m | bollinger_reversion | 69218.71 | 0.002891323 | 200.13364825333002 | 0.0 | 70032.80697925707 | 68811.66151037147 | closed |
 | LINK/USD | 5m | bollinger_reversion | 9.802 | 20.406705643 | 200.02652871268597 | 0.0 | 9.958411708972267 | 9.723794145513866 | closed |
+| UNI/USD | 5m | bollinger_reversion | 5.72526 | 35.013760407 | 200.4628819077808 | 0.0 | 5.838829354206556 | 5.668475322896721 | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -229,7 +230,7 @@ Accounting final: False
 | RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
 | SOLUSD | 2.564280741 | 2.53962192 | -0.024658821 | 0.024658821 |
 | TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
-| UNIUSD | 35.013760407 | 34.926226005 | -0.087534402 | 0.087534402 |
+| UNIUSD | 0.087534402 | 0 | -0.087534402 | 0.087534402 |
 | XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
 PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
@@ -237,15 +238,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed
-Next entry scan eligible: 2026-11-13T05:59:36+00:00
+Next entry scan eligible: 2026-11-13T06:56:24+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-13T05:29:37+00:00
+Last refresh: 2026-11-13T06:26:25+00:00
 Source status: partial
-Selected: ETH/USD, PEPE/USD, SOL/USD, UNI/USD, AVAX/USD, BTC/USD, LINK/USD, LTC/USD, ONDO/USD
+Selected: ETH/USD, PEPE/USD, SOL/USD, AVAX/USD, BTC/USD, LINK/USD, LTC/USD, HYPE/USD, UNI/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

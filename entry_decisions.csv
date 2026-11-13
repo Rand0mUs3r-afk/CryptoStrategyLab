@@ -1,3 +1,4 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,6h,bollinger_reversion,1794528000,skipped,already_seen,{}
-AVAX/USD,15m,rsi_rebound,1794546900,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.58732612055578}"
+SOL/USD,15m,rsi_rebound,1794550500,skipped,symbol_already_active,{}
+AVAX/USD,1h,bollinger_reversion,1794549600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 64.49572572344073}"
+AVAX/USD,1h,rsi_rebound,1794549600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 64.49572572344073}"

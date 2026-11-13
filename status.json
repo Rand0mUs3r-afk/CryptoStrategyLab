@@ -7,48 +7,60 @@
   "data_errors": [],
   "entry_decisions": [
     {
-      "symbol": "PEPE/USD",
-      "timeframe": "6h",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794528000,
+      "symbol": "SOL/USD",
+      "timeframe": "15m",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794550500,
       "outcome": "skipped",
-      "reason": "already_seen",
+      "reason": "symbol_already_active",
       "details": {}
     },
     {
       "symbol": "AVAX/USD",
-      "timeframe": "15m",
-      "strategy": "rsi_rebound",
-      "signal_time": 1794546900,
+      "timeframe": "1h",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794549600,
       "outcome": "skipped",
       "reason": "spread_too_wide",
       "details": {
-        "spread_bps": 60.58732612055578,
+        "spread_bps": 64.49572572344073,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "AVAX/USD",
+      "timeframe": "1h",
+      "strategy": "rsi_rebound",
+      "signal_time": 1794549600,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 64.49572572344073,
         "max_spread_bps": 50
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 3,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed",
-  "next_entry_scan_at_utc": "2026-11-13T05:59:36+00:00",
+  "next_entry_scan_at_utc": "2026-11-13T06:56:24+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ETH/USD",
     "PEPE/USD",
     "SOL/USD",
-    "UNI/USD",
     "AVAX/USD",
     "BTC/USD",
     "LINK/USD",
     "LTC/USD",
-    "ONDO/USD"
+    "HYPE/USD",
+    "UNI/USD"
   ],
-  "observed_at_utc": "2026-11-13T05:29:48+00:00",
+  "observed_at_utc": "2026-11-13T06:26:37+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T05:29:35+00:00",
+    "observed_at_utc": "2026-11-13T06:26:23+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -222,10 +234,10 @@
       },
       {
         "symbol": "UNIUSD",
-        "filled_quantity": "35.944086125",
+        "filled_quantity": "1.017860120",
         "fee_quantity": "-0.930325718",
-        "expected_quantity": "35.013760407",
-        "broker_quantity": "34.926226005",
+        "expected_quantity": "0.087534402",
+        "broker_quantity": "0",
         "difference_quantity": "-0.087534402",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.087534402"
