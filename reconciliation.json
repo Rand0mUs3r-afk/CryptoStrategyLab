@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-13T23:02:37+00:00",
+  "observed_at_utc": "2026-11-13T23:40:39+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -44,10 +44,10 @@
     },
     {
       "symbol": "BTCUSD",
-      "filled_quantity": "0.003055017",
+      "filled_quantity": "0.000131611",
       "fee_quantity": "-0.000124284",
-      "expected_quantity": "0.002930733",
-      "broker_quantity": "0.002923406",
+      "expected_quantity": "0.000007327",
+      "broker_quantity": "0",
       "difference_quantity": "-0.000007327",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.000007327"
@@ -64,10 +64,10 @@
     },
     {
       "symbol": "ETHUSD",
-      "filled_quantity": "0.108561300",
+      "filled_quantity": "0.004830097",
       "fee_quantity": "-0.004313275",
-      "expected_quantity": "0.104248025",
-      "broker_quantity": "0.103731203",
+      "expected_quantity": "0.000516822",
+      "broker_quantity": "0",
       "difference_quantity": "-0.000516822",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.000516822"
@@ -94,10 +94,10 @@
     },
     {
       "symbol": "LINKUSD",
-      "filled_quantity": "21.468892609",
+      "filled_quantity": "1.081084826",
       "fee_quantity": "-0.979666565",
-      "expected_quantity": "20.489226044",
-      "broker_quantity": "20.387807783",
+      "expected_quantity": "0.101418261",
+      "broker_quantity": "0",
       "difference_quantity": "-0.101418261",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.101418261"
@@ -154,13 +154,13 @@
     },
     {
       "symbol": "SOLUSD",
-      "filled_quantity": "0.202833776",
+      "filled_quantity": "2.769832441",
       "fee_quantity": "-0.184049077",
-      "expected_quantity": "0.018784699",
-      "broker_quantity": "0",
-      "difference_quantity": "-0.018784699",
+      "expected_quantity": "2.585783364",
+      "broker_quantity": "2.560581168",
+      "difference_quantity": "-0.025202196",
       "tolerance_quantity": "1E-8",
-      "unconfirmed_shortfall": "0.018784699"
+      "unconfirmed_shortfall": "0.025202196"
     },
     {
       "symbol": "TRUMPUSD",
@@ -174,10 +174,10 @@
     },
     {
       "symbol": "UNIUSD",
-      "filled_quantity": "36.092491387",
+      "filled_quantity": "1.190461996",
       "fee_quantity": "-1.017860120",
-      "expected_quantity": "35.074631267",
-      "broker_quantity": "34.902029391",
+      "expected_quantity": "0.172601876",
+      "broker_quantity": "0",
       "difference_quantity": "-0.172601876",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.172601876"
