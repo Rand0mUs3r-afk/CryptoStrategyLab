@@ -104383,14 +104383,15 @@
         "client_order_id": "csl2-65ad03187e07b12cacd84d99f351c069"
       },
       "cycle_id": "csl2-65ad03187e07b12cacd84d99f351c069",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1794531770.560197,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "1140.901312036",
       "broker_order_id": "3cd30fd4-418a-4d32-9c30-ee07e64e0a51",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-13T01:03:01.68012799Z"
+      "filled_avg_price": 0.17523,
+      "filled_at": "2026-11-13T01:03:01.6814004Z",
+      "broker_updated_at": "2026-11-13T01:03:01.686722521Z",
+      "reference_ask": 0.1753
     }
   },
   "cycles": [
@@ -108456,11 +108457,17 @@
       "hold_seconds": 21600,
       "id": "csl2-65ad03187e07b12cacd84d99f351c069",
       "created_at": 1794531770.560197,
-      "status": "pending",
+      "status": "open",
       "distance": 0.0012975336917333035,
       "target_r": 2.0,
       "reference_ask": 0.1753,
-      "remaining_qty": 0.0
+      "remaining_qty": 1138.049058755,
+      "entry_price": 0.17523,
+      "entry_qty": 1140.901312036,
+      "entry_notional_usd": 199.9201369080683,
+      "tp": 0.1778250673834666,
+      "sl": 0.1739324663082667,
+      "entry_time_utc": "2026-11-13T01:03:01.6814004Z"
     }
   ],
   "seen": {
@@ -109512,7 +109519,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T01:03:00+00:00",
+    "observed_at_utc": "2026-11-13T01:03:07+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -109523,6 +109530,16 @@
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
+      },
+      {
+        "symbol": "ADAUSD",
+        "filled_quantity": "1140.901312036",
+        "fee_quantity": "0",
+        "expected_quantity": "1140.901312036",
+        "broker_quantity": "1138.049058755",
+        "difference_quantity": "-2.852253281",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "2.852253281"
       },
       {
         "symbol": "ARBUSD",
