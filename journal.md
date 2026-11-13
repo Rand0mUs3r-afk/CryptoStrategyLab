@@ -8,11 +8,13 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 0. Skipped: 0. Broker order results: 0.
+Candidates: 2. Skipped: 0. Broker order results: 2.
 Broker order results are not proof of fills; see orders.csv.
 
-No candidates recorded; check run status and data errors before concluding there were no signals.
-
+| Coin | Bar | Strategy | Outcome | Reason | Details |
+| --- | --- | --- | --- | --- | --- |
+| BTC/USD | 15m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "80a89fca-4ef0-4cf8-bd5d-98e94f7f2b33", "broker_status": "pending_new", "client_order_id": "csl2-1c5ed6705a76d4efa8802fc6de1ef100", "quantity": "0.002800078", "reference_ask": 71426.574} |
+| PEPE/USD | 6h | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "1104384f-1476-4736-80c0-407bf2a09aee", "broker_status": "pending_new", "client_order_id": "csl2-9be6931c18aa9d3c4eedf74664e384e5", "quantity": "44052863.43612335", "reference_ask": 4.54e-06} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -20,6 +22,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 
 | Coin | Bar | Stage | Error type |
 | --- | --- | --- | --- |
+| AAVE/USD | 5m | candles | ValueError |
 | ARB/USD | 5m | candles | ValueError |
 | RENDER/USD | 5m | candles | ValueError |
 
@@ -27,6 +30,8 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| BTC/USD | 15m | bollinger_reversion | 71448.21 | 0.002800078 | 200.06056096038003 | 0.002793077 | 72105.5651435224 | 71119.5324282388 | open |
+| PEPE/USD | 6h | bollinger_reversion | 4.55e-06 | 44052863.43612335 | 200.44052863436121 | 43942731.27753304 | 5.2531468577303116e-06 | 4.198426571134844e-06 | open |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -211,7 +216,7 @@ Accounting final: False
 | AAVEUSD | 0E-9 | 0 | 0E-9 | 0 |
 | ARBUSD | 0E-9 | 0 | 0E-9 | 0 |
 | AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
-| BTCUSD | 0.000006968 | 0 | -0.000006968 | 0.000006968 |
+| BTCUSD | 0.002807046 | 0.002793077 | -0.000013969 | 0.000013969 |
 | DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
 | ETHUSD | 0.000246959 | 0 | -0.000246959 | 0.000246959 |
 | FILUSD | 0E-9 | 0 | 0E-9 | 0 |
@@ -219,7 +224,7 @@ Accounting final: False
 | LINKUSD | 0.150675624 | 0 | -0.150675624 | 0.150675624 |
 | LTCUSD | 0E-9 | 0 | 0E-9 | 0 |
 | ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
-| PEPEUSD | 109649.122807018 | 0 | -109649.122807018 | 109649.122807018 |
+| PEPEUSD | 44162512.558930368 | 43942731.277533041 | -219781.281397327 | 219781.281397327 |
 | POLUSD | 0 | 0 | 0 | 0 |
 | RENDERUSD | 0E-9 | 0 | 0E-9 | 0 |
 | SOLUSD | 0.018293853 | 0 | -0.018293853 | 0.018293853 |
@@ -232,15 +237,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-12T23:55:30+00:00
+Next entry scan eligible: 2026-11-13T00:33:49+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-12T23:25:31+00:00
+Last refresh: 2026-11-13T00:03:54+00:00
 Source status: partial
-Selected: AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, HYPE/USD, AAVE/USD, ARB/USD, RENDER/USD, PEPE/USD
+Selected: AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, ADA/USD, HYPE/USD, AAVE/USD, ARB/USD, RENDER/USD, PEPE/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

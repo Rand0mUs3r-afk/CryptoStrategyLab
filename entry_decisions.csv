@@ -1,1 +1,3 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+BTC/USD,15m,bollinger_reversion,1794528000,order_result,broker_order_returned,"{""broker_order_id"": ""80a89fca-4ef0-4cf8-bd5d-98e94f7f2b33"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-1c5ed6705a76d4efa8802fc6de1ef100"", ""quantity"": ""0.002800078"", ""reference_ask"": 71426.574}"
+PEPE/USD,6h,bollinger_reversion,1794528000,order_result,broker_order_returned,"{""broker_order_id"": ""1104384f-1476-4736-80c0-407bf2a09aee"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-9be6931c18aa9d3c4eedf74664e384e5"", ""quantity"": ""44052863.43612335"", ""reference_ask"": 4.54e-06}"

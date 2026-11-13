@@ -1,1 +1,3 @@
 symbol,timeframe,strategy,entry_time_utc,entry_price,entry_qty,entry_notional_usd,remaining_qty,tp,sl,status,closed_at,exit_reason,cashflow_pnl_before_usd_fees
+BTC/USD,15m,bollinger_reversion,2026-11-13T00:04:19.008819329Z,71448.21,0.002800078,200.06056096038003,0.002793077,72105.5651435224,71119.5324282388,open,,,
+PEPE/USD,6h,bollinger_reversion,2026-11-13T00:04:39.063108487Z,4.55e-06,44052863.43612335,200.44052863436121,43942731.27753304,5.2531468577303116e-06,4.198426571134844e-06,open,,,
