@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-13T00:04:45+00:00",
+  "observed_at_utc": "2026-11-13T01:03:07+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -11,6 +11,16 @@
       "difference_quantity": "0E-9",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0"
+    },
+    {
+      "symbol": "ADAUSD",
+      "filled_quantity": "1140.901312036",
+      "fee_quantity": "0",
+      "expected_quantity": "1140.901312036",
+      "broker_quantity": "1138.049058755",
+      "difference_quantity": "-2.852253281",
+      "tolerance_quantity": "1E-8",
+      "unconfirmed_shortfall": "2.852253281"
     },
     {
       "symbol": "ARBUSD",
@@ -34,10 +44,10 @@
     },
     {
       "symbol": "BTCUSD",
-      "filled_quantity": "0.002910132",
+      "filled_quantity": "0.000117055",
       "fee_quantity": "-0.000103086",
-      "expected_quantity": "0.002807046",
-      "broker_quantity": "0.002793077",
+      "expected_quantity": "0.000013969",
+      "broker_quantity": "0",
       "difference_quantity": "-0.000013969",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.000013969"

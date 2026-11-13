@@ -6,13 +6,13 @@
   "account_verified": true,
   "data_errors": [
     {
-      "symbol": "AAVE/USD",
+      "symbol": "ARB/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
     },
     {
-      "symbol": "ARB/USD",
+      "symbol": "AAVE/USD",
       "timeframe": "5m",
       "stage": "candles",
       "error_type": "ValueError"
@@ -26,43 +26,97 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "BTC/USD",
-      "timeframe": "15m",
-      "strategy": "bollinger_reversion",
-      "signal_time": 1794528000,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-1c5ed6705a76d4efa8802fc6de1ef100",
-        "quantity": "0.002800078",
-        "reference_ask": 71426.574,
-        "broker_status": "pending_new",
-        "broker_order_id": "80a89fca-4ef0-4cf8-bd5d-98e94f7f2b33"
-      }
-    },
-    {
       "symbol": "PEPE/USD",
       "timeframe": "6h",
       "strategy": "bollinger_reversion",
       "signal_time": 1794528000,
+      "outcome": "skipped",
+      "reason": "already_seen",
+      "details": {}
+    },
+    {
+      "symbol": "BTC/USD",
+      "timeframe": "15m",
+      "strategy": "bollinger_reversion",
+      "signal_time": 1794531600,
+      "outcome": "skipped",
+      "reason": "symbol_cooldown",
+      "details": {
+        "cooldown_seconds": 300
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "15m",
+      "strategy": "trend_pullback",
+      "signal_time": 1794531600,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 57.586354624343976,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1794531600,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 57.586354624343976,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "15m",
+      "strategy": "squeeze_breakout",
+      "signal_time": 1794531600,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 57.586354624343976,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "timeframe": "15m",
+      "strategy": "rolling_vwap_reclaim",
+      "signal_time": 1794531600,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
+      "details": {
+        "spread_bps": 57.586354624343976,
+        "max_spread_bps": 50
+      }
+    },
+    {
+      "symbol": "ADA/USD",
+      "timeframe": "15m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1794531600,
       "outcome": "order_result",
       "reason": "broker_order_returned",
       "details": {
-        "client_order_id": "csl2-9be6931c18aa9d3c4eedf74664e384e5",
-        "quantity": "44052863.43612335",
-        "reference_ask": 4.54e-06,
+        "client_order_id": "csl2-65ad03187e07b12cacd84d99f351c069",
+        "quantity": "1140.901312036",
+        "reference_ask": 0.1753,
         "broker_status": "pending_new",
-        "broker_order_id": "1104384f-1476-4736-80c0-407bf2a09aee"
+        "broker_order_id": "3cd30fd4-418a-4d32-9c30-ee07e64e0a51"
       }
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 7,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-13T00:33:49+00:00",
+  "next_entry_scan_at_utc": "2026-11-13T01:32:35+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
+    "PEPE/USD",
     "AVAX/USD",
     "BTC/USD",
     "ETH/USD",
@@ -70,16 +124,15 @@
     "LTC/USD",
     "SOL/USD",
     "ADA/USD",
+    "ARB/USD",
     "HYPE/USD",
     "AAVE/USD",
-    "ARB/USD",
-    "RENDER/USD",
-    "PEPE/USD"
+    "RENDER/USD"
   ],
-  "observed_at_utc": "2026-11-13T00:04:47+00:00",
+  "observed_at_utc": "2026-11-13T01:03:09+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T00:04:45+00:00",
+    "observed_at_utc": "2026-11-13T01:03:07+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -90,6 +143,16 @@
         "difference_quantity": "0E-9",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0"
+      },
+      {
+        "symbol": "ADAUSD",
+        "filled_quantity": "1140.901312036",
+        "fee_quantity": "0",
+        "expected_quantity": "1140.901312036",
+        "broker_quantity": "1138.049058755",
+        "difference_quantity": "-2.852253281",
+        "tolerance_quantity": "1E-8",
+        "unconfirmed_shortfall": "2.852253281"
       },
       {
         "symbol": "ARBUSD",
@@ -113,10 +176,10 @@
       },
       {
         "symbol": "BTCUSD",
-        "filled_quantity": "0.002910132",
+        "filled_quantity": "0.000117055",
         "fee_quantity": "-0.000103086",
-        "expected_quantity": "0.002807046",
-        "broker_quantity": "0.002793077",
+        "expected_quantity": "0.000013969",
+        "broker_quantity": "0",
         "difference_quantity": "-0.000013969",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.000013969"
