@@ -109083,14 +109083,14 @@
     "LTC/USD|5m|trend_pullback|1794523500": 1794523644.3883054,
     "PEPE/USD|5m|trend_pullback|1794523500": 1794523644.430105
   },
-  "day": "2026-11-12",
-  "day_start_equity": 99636.58,
+  "day": "2026-11-13",
+  "day_start_equity": 99587.81,
   "daily_paused": false,
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-12T23:25:30+00:00",
+    "observed_at_utc": "2026-11-13T00:03:49+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -109281,7 +109281,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1794525930.7541108,
+  "last_entry_scan_at": 1794528229.5005534,
   "watchlist": {
     "observed_at_utc": "2026-11-12T23:25:31+00:00",
     "status": "partial",
