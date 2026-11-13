@@ -1,6 +1,11 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-HYPE/USD,15m,macd_momentum,1794605400,order_result,broker_order_returned,"{""broker_order_id"": ""3275b629-cfc8-4d6e-9a67-313745a03a7f"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-1b1ec0ae1c1c447e3de00b95af6b2bee"", ""quantity"": ""2.752470342"", ""reference_ask"": 72.662}"
-RENDER/USD,15m,trend_pullback,1794605400,order_result,broker_order_returned,"{""broker_order_id"": ""2c9ddc7d-d0f8-49cb-84d8-cb9eb0ee7a49"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-fe60a4bf55dac2b4b6a236f95edf611f"", ""quantity"": ""130.293159609"", ""reference_ask"": 1.535}"
-RENDER/USD,15m,donchian_breakout,1794605400,skipped,symbol_already_active,{}
-RENDER/USD,15m,squeeze_breakout,1794605400,skipped,symbol_already_active,{}
-RENDER/USD,15m,rolling_vwap_reclaim,1794605400,skipped,symbol_already_active,{}
+AVAX/USD,5m,bollinger_reversion,1794608400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 60.68656243526085}"
+BTC/USD,5m,rsi_rebound,1794608400,order_result,broker_order_returned,"{""broker_order_id"": ""d37b6522-c42d-41d0-a498-b88450aa7dc4"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-c9023f3b995bb607c25e04e2537e5ff0"", ""quantity"": ""0.002930733"", ""reference_ask"": 68242.3}"
+ETH/USD,5m,rsi_rebound,1794608400,order_result,broker_order_returned,"{""broker_order_id"": ""8ee98fa9-2fcf-458c-b1bd-b800e3aef4cf"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-af58bd4c4dc58861643f476131f25e72"", ""quantity"": ""0.103991181"", ""reference_ask"": 1923.24}"
+LINK/USD,5m,bollinger_reversion,1794608400,order_result,broker_order_returned,"{""broker_order_id"": ""8262a636-c5a6-4b72-8c30-ddf6e9b4cf0d"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-3cf0eaa5cb8fd3dcd522e01da3ae7d7f"", ""quantity"": ""20.438905046"", ""reference_ask"": 9.78526}"
+LTC/USD,5m,bollinger_reversion,1794608400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.60999035078481}"
+LTC/USD,5m,rsi_rebound,1794608400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.60999035078481}"
+SOL/USD,5m,rsi_rebound,1794608400,order_result,broker_order_returned,"{""broker_order_id"": ""290fb5ea-d28c-441d-9ddc-e9dd6c5805a1"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-761662e24ad32030d16c882bf8e89cd9"", ""quantity"": ""2.552648372"", ""reference_ask"": 78.35}"
+HYPE/USD,5m,bollinger_reversion,1794608400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+HYPE/USD,5m,rsi_rebound,1794608400,skipped,symbol_cooldown,"{""cooldown_seconds"": 300}"
+UNI/USD,5m,rsi_rebound,1794608400,order_result,broker_order_returned,"{""broker_order_id"": ""cfcb9274-aabc-469c-8a27-9d4393f0a0bc"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-068111a0cefe96371ecedf27707c8c87"", ""quantity"": ""34.989503149"", ""reference_ask"": 5.716}"
