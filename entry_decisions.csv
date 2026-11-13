@@ -1,2 +1,7 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-UNI/USD,5m,donchian_breakout,1794597600,order_result,broker_order_returned,"{""broker_order_id"": ""e99c3f80-883f-4a79-b0a1-79187732707c"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-e21bcf652b3177d76dd605f79d434900"", ""quantity"": ""34.051247126"", ""reference_ask"": 5.8735}"
+PEPE/USD,5m,bollinger_reversion,1794600600,skipped,symbol_already_active,{}
+AVAX/USD,5m,trend_pullback,1794600600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 62.08166930183735}"
+SOL/USD,5m,squeeze_breakout,1794600600,order_result,broker_order_returned,"{""broker_order_id"": ""32fe2260-9b19-4c44-8e00-3501e964ee87"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-50b09999a753dcf4ba7ce3cf2569f5bc"", ""quantity"": ""2.485707183"", ""reference_ask"": 80.46}"
+HYPE/USD,15m,trend_pullback,1794600000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+HYPE/USD,15m,macd_momentum,1794600000,skipped,no_fresh_quote,"{""max_quote_age_seconds"": 30}"
+BCH/USD,5m,macd_momentum,1794600600,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 56.328111248019766}"
