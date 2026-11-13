@@ -8,12 +8,12 @@ Fees can post later. P&L below is before USD fees; no fabricated net performance
 
 ## Entry diagnostics
 
-Candidates: 1. Skipped: 0. Broker order results: 1.
+Candidates: 1. Skipped: 1. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
 | Coin | Bar | Strategy | Outcome | Reason | Details |
 | --- | --- | --- | --- | --- | --- |
-| HYPE/USD | 15m | trend_pullback | order_result | broker_order_returned | {"broker_order_id": "d9a213d2-f7ef-43fe-90b4-22d8ee6a0144", "broker_status": "pending_new", "client_order_id": "csl2-5d1c3372a13455260c5b79c8b1db13c8", "quantity": "2.746535931", "reference_ask": 72.819} |
+| LTC/USD | 5m | donchian_breakout | skipped | spread_too_wide | {"max_spread_bps": 50, "spread_bps": 64.19251302398285} |
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
 
@@ -29,7 +29,6 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | PEPE/USD | 6h | bollinger_reversion | 4.55e-06 | 44052863.43612335 | 200.44052863436121 | 43942731.27753304 | 5.2531468577303116e-06 | 4.198426571134844e-06 | open |
-| HYPE/USD | 15m | trend_pullback | n/a | n/a | n/a | 0.0 | n/a | n/a | pending |
 ## Closed cycles
 
 | Coin | Bar | Strategy | Entry | Filled qty | Entry dollars | Remaining | TP | SL | Status |
@@ -209,6 +208,7 @@ Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes
 | HYPE/USD | 15m | donchian_breakout | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
 | RENDER/USD | 15m | donchian_breakout | 1.5368 | 130.19985678 | 200.091139899504 | 0.0 | 1.5655810190498758 | 1.522409490475062 | closed |
 | SOL/USD | 5m | trend_pullback | 80.8151 | 2.475523263 | 200.0596600516713 | 0.0 | 81.27703109392311 | 80.58413445303844 | closed |
+| HYPE/USD | 15m | trend_pullback | n/a | n/a | n/a | 0.0 | n/a | n/a | closed |
 
 Order IDs, fill prices/times and quantities: orders.csv.
 Closed trade cashflows: closed_trades.csv. Broker-reported fees: fees.csv.
@@ -248,15 +248,15 @@ New buys permitted by explicit paper policy; all entry checks still apply.
 Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
 
 Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-13T18:04:27+00:00
+Next entry scan eligible: 2026-11-13T18:52:30+00:00
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
 ## Discovery watchlist
 
-Last refresh: 2026-11-13T17:34:29+00:00
+Last refresh: 2026-11-13T18:22:32+00:00
 Source status: partial
-Selected: PEPE/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, PAXG/USD, HYPE/USD, RENDER/USD, UNI/USD
+Selected: PEPE/USD, AVAX/USD, BTC/USD, ETH/USD, LINK/USD, LTC/USD, SOL/USD, HYPE/USD, PAXG/USD, UNI/USD, RENDER/USD
 Emerging momentum is a screening label, not an undervaluation or profit claim.
 News is attention/risk context, not a buy signal. Existing strategy, quote and risk checks still apply.
 USD volume is estimated from Coinbase base volume times last price, not broker liquidity.

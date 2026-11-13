@@ -20,18 +20,15 @@
   ],
   "entry_decisions": [
     {
-      "symbol": "HYPE/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794591000,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
+      "symbol": "LTC/USD",
+      "timeframe": "5m",
+      "strategy": "donchian_breakout",
+      "signal_time": 1794594000,
+      "outcome": "skipped",
+      "reason": "spread_too_wide",
       "details": {
-        "client_order_id": "csl2-5d1c3372a13455260c5b79c8b1db13c8",
-        "quantity": "2.746535931",
-        "reference_ask": 72.819,
-        "broker_status": "pending_new",
-        "broker_order_id": "d9a213d2-f7ef-43fe-90b4-22d8ee6a0144"
+        "spread_bps": 64.19251302398285,
+        "max_spread_bps": 50
       }
     }
   ],
@@ -39,7 +36,7 @@
   "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-13T18:04:27+00:00",
+  "next_entry_scan_at_utc": "2026-11-13T18:52:30+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "PEPE/USD",
@@ -49,15 +46,15 @@
     "LINK/USD",
     "LTC/USD",
     "SOL/USD",
-    "PAXG/USD",
     "HYPE/USD",
-    "RENDER/USD",
-    "UNI/USD"
+    "PAXG/USD",
+    "UNI/USD",
+    "RENDER/USD"
   ],
-  "observed_at_utc": "2026-11-13T17:35:05+00:00",
+  "observed_at_utc": "2026-11-13T18:22:46+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T17:35:03+00:00",
+    "observed_at_utc": "2026-11-13T18:22:30+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

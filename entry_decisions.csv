@@ -1,2 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-HYPE/USD,15m,trend_pullback,1794591000,order_result,broker_order_returned,"{""broker_order_id"": ""d9a213d2-f7ef-43fe-90b4-22d8ee6a0144"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-5d1c3372a13455260c5b79c8b1db13c8"", ""quantity"": ""2.746535931"", ""reference_ask"": 72.819}"
+LTC/USD,5m,donchian_breakout,1794594000,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 64.19251302398285}"
