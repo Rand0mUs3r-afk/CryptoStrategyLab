@@ -18,64 +18,12 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "donchian_breakout",
-      "signal_time": 1794576300,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 57.342066118481064,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "AVAX/USD",
-      "timeframe": "5m",
-      "strategy": "squeeze_breakout",
-      "signal_time": 1794576300,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 57.342066118481064,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "LTC/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794576300,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
-      "details": {
-        "spread_bps": 61.11701002387863,
-        "max_spread_bps": 50
-      }
-    },
-    {
-      "symbol": "SOL/USD",
-      "timeframe": "5m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794576300,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-6bf39c5e397796715c62077a9d2a85fc",
-        "quantity": "2.475523263",
-        "reference_ask": 80.791,
-        "broker_status": "pending_new",
-        "broker_order_id": "82afb3e1-85ca-420b-a304-28558d5d76ce"
-      }
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 4,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-13T13:56:34+00:00",
+  "next_entry_scan_at_utc": "2026-11-13T14:58:41+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "PEPE/USD",
@@ -87,14 +35,14 @@
     "LTC/USD",
     "SOL/USD",
     "AAVE/USD",
-    "ADA/USD",
-    "HYPE/USD",
-    "ONDO/USD"
+    "XRP/USD",
+    "ONDO/USD",
+    "ADA/USD"
   ],
-  "observed_at_utc": "2026-11-13T13:27:12+00:00",
+  "observed_at_utc": "2026-11-13T14:28:56+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T13:27:10+00:00",
+    "observed_at_utc": "2026-11-13T14:28:41+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -248,10 +196,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.659572340",
+        "filled_quantity": "0.190237886",
         "fee_quantity": "-0.184049077",
-        "expected_quantity": "2.475523263",
-        "broker_quantity": "2.469334454",
+        "expected_quantity": "0.006188809",
+        "broker_quantity": "0",
         "difference_quantity": "-0.006188809",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.006188809"
