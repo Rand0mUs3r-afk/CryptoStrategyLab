@@ -111953,14 +111953,14 @@
         "client_order_id": "csl2-4b790fa2effc15f316042f47f3cbd408"
       },
       "cycle_id": "csl2-fe60a4bf55dac2b4b6a236f95edf611f",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1794608527.2974677,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "129.967426709",
       "broker_order_id": "2123ce87-0fe8-40d3-ac8a-d9b2b9393563",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-13T22:22:20.906130891Z"
+      "filled_avg_price": 1.51611,
+      "filled_at": "2026-11-13T22:22:20.909167171Z",
+      "broker_updated_at": "2026-11-13T22:22:20.936749256Z"
     }
   },
   "cycles": [
@@ -116387,11 +116387,13 @@
       "hold_seconds": 21600,
       "id": "csl2-1b1ec0ae1c1c447e3de00b95af6b2bee",
       "created_at": 1794605878.8654656,
-      "status": "pending",
+      "status": "closed",
       "distance": 0.6713435068301596,
       "target_r": 2.0,
       "reference_ask": 72.662,
-      "remaining_qty": 0.0
+      "remaining_qty": 0.0,
+      "exit_reason": "unfilled_entry",
+      "closed_at": "2026-11-13T22:22:28+00:00"
     },
     {
       "symbol": "RENDER/USD",
@@ -116403,18 +116405,20 @@
       "hold_seconds": 21600,
       "id": "csl2-fe60a4bf55dac2b4b6a236f95edf611f",
       "created_at": 1794605902.7675028,
-      "status": "open",
+      "status": "closed",
       "distance": 0.015643607923466932,
       "target_r": 2.0,
       "reference_ask": 1.535,
-      "remaining_qty": 129.967426709,
+      "remaining_qty": 0.0,
       "entry_price": 1.536,
       "entry_qty": 130.293159609,
       "entry_notional_usd": 200.130293159424,
       "tp": 1.567287215846934,
       "sl": 1.520356392076533,
       "entry_time_utc": "2026-11-13T21:38:37.276841613Z",
-      "exit_reason": "stop"
+      "exit_reason": "stop",
+      "closed_at": "2026-11-13T22:22:28+00:00",
+      "cashflow_pnl_before_usd_fees": -3.085377851642022
     }
   ],
   "seen": {
@@ -117513,7 +117517,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-13T22:22:19+00:00",
+    "observed_at_utc": "2026-11-13T22:22:28+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -117657,10 +117661,10 @@
       },
       {
         "symbol": "RENDERUSD",
-        "filled_quantity": "133.409361950",
+        "filled_quantity": "3.441935241",
         "fee_quantity": "-2.790702699",
-        "expected_quantity": "130.618659251",
-        "broker_quantity": "129.967426709",
+        "expected_quantity": "0.651232542",
+        "broker_quantity": "0",
         "difference_quantity": "-0.651232542",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.651232542"
@@ -117714,7 +117718,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1794605863.7423396,
+  "last_entry_scan_at": 1794608548.9136562,
   "watchlist": {
     "observed_at_utc": "2026-11-13T21:37:45+00:00",
     "status": "partial",
