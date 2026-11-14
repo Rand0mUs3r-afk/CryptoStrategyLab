@@ -104152,6 +104152,22 @@
         "exit_checks_allowed": false,
         "accounting_final": false
       }
+    },
+    {
+      "status": "FAILED_CLOSED",
+      "paper_only": true,
+      "writes_enabled": false,
+      "mode": "tick",
+      "error_type": "BrokerHTTPError",
+      "reason": "Broker HTTP 401; response body withheld",
+      "observed_at_utc": "2026-11-14T10:05:40+00:00",
+      "reconciliation": {
+        "status": "not_started",
+        "quantities": [],
+        "entries_blocked": true,
+        "exit_checks_allowed": false,
+        "accounting_final": false
+      }
     }
   ],
   "account_id": "2b50df62-a9e7-4b2d-a7d0-3b6bd5fa26fa",

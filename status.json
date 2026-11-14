@@ -5,7 +5,7 @@
   "mode": "tick",
   "error_type": "BrokerHTTPError",
   "reason": "Broker HTTP 401; response body withheld",
-  "observed_at_utc": "2026-11-14T09:20:29+00:00",
+  "observed_at_utc": "2026-11-14T10:05:40+00:00",
   "reconciliation": {
     "status": "not_started",
     "quantities": [],
