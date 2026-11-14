@@ -1,1 +1,13 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
+PEPE/USD,15m,rsi_rebound,1794624300,skipped,symbol_already_active,{}
+AVAX/USD,15m,bollinger_reversion,1794624300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.97194286080342}"
+AVAX/USD,15m,rsi_rebound,1794624300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.97194286080342}"
+BTC/USD,15m,rsi_rebound,1794624300,order_result,broker_order_returned,"{""broker_order_id"": ""2af17a9f-c7b8-45da-8a61-67241c13733a"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-a6071e5d559f740c616c5e358cbd558d"", ""quantity"": ""0.002960700"", ""reference_ask"": 67551.586}"
+BTC/USD,5m,rsi_rebound,1794624600,skipped,stale_signal,"{""age_seconds"": 314.4724066257477, ""max_age_seconds"": 300}"
+ETH/USD,15m,rsi_rebound,1794624300,order_result,broker_order_returned,"{""broker_order_id"": ""8ad9087b-894a-4759-bf3f-736ccdfab7b0"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-a980d03b5a4498409da1d0b0f79724be"", ""quantity"": ""0.104717524"", ""reference_ask"": 1909.9}"
+LINK/USD,15m,rsi_rebound,1794624300,order_result,broker_order_returned,"{""broker_order_id"": ""5e6e3fbb-2519-4b30-9c0b-b1bff0c6353b"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-7bc7d4022ff828ad76ff2cddc094f8f0"", ""quantity"": ""20.607934054"", ""reference_ask"": 9.705}"
+LINK/USD,5m,rsi_rebound,1794624600,skipped,stale_signal,"{""age_seconds"": 360.2188799381256, ""max_age_seconds"": 300}"
+LTC/USD,15m,bollinger_reversion,1794624300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.5977484516509}"
+LTC/USD,15m,rsi_rebound,1794624300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 57.5977484516509}"
+SOL/USD,5m,rsi_rebound,1794624600,skipped,stale_signal,"{""age_seconds"": 360.36028027534485, ""max_age_seconds"": 300}"
+ONDO/USD,15m,rsi_rebound,1794624300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 50.86454680892763}"
