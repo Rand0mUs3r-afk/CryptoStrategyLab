@@ -1,6 +1,6 @@
 {
   "status": "fee_pending",
-  "observed_at_utc": "2026-11-14T02:55:58+00:00",
+  "observed_at_utc": "2026-11-14T03:34:48+00:00",
   "quantities": [
     {
       "symbol": "AAVEUSD",
@@ -44,10 +44,10 @@
     },
     {
       "symbol": "BTCUSD",
-      "filled_quantity": "0.003092311",
+      "filled_quantity": "0.000139013",
       "fee_quantity": "-0.000124284",
-      "expected_quantity": "0.002968027",
-      "broker_quantity": "0.002953298",
+      "expected_quantity": "0.000014729",
+      "broker_quantity": "0",
       "difference_quantity": "-0.000014729",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.000014729"
@@ -64,10 +64,10 @@
     },
     {
       "symbol": "ETHUSD",
-      "filled_quantity": "0.109547621",
+      "filled_quantity": "0.005091891",
       "fee_quantity": "-0.004313275",
-      "expected_quantity": "0.105234346",
-      "broker_quantity": "0.10445573",
+      "expected_quantity": "0.000778616",
+      "broker_quantity": "0",
       "difference_quantity": "-0.000778616",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.000778616"
@@ -94,10 +94,10 @@
     },
     {
       "symbol": "LINKUSD",
-      "filled_quantity": "21.689018880",
+      "filled_quantity": "1.132604662",
       "fee_quantity": "-0.979666565",
-      "expected_quantity": "20.709352315",
-      "broker_quantity": "20.556414218",
+      "expected_quantity": "0.152938097",
+      "broker_quantity": "0",
       "difference_quantity": "-0.152938097",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.152938097"
@@ -144,10 +144,10 @@
     },
     {
       "symbol": "RENDERUSD",
-      "filled_quantity": "133.950199676",
+      "filled_quantity": "3.768205903",
       "fee_quantity": "-2.790702699",
-      "expected_quantity": "131.159496977",
-      "broker_quantity": "130.181993773",
+      "expected_quantity": "0.977503204",
+      "broker_quantity": "0",
       "difference_quantity": "-0.977503204",
       "tolerance_quantity": "1E-8",
       "unconfirmed_shortfall": "0.977503204"
