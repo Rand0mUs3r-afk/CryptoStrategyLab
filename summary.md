@@ -1,27 +1,22 @@
 # Alpaca crypto PAPER bot
 
-Status: PAPER_TICK_COMPLETED
+Status: FAILED_CLOSED
 Dedicated paper account only. Broker fills, not virtual experiment fills.
 TP/SL are software checks at workflow runs, NOT standing bracket orders.
 Coinbase closed candles produce signals; fresh Alpaca quotes price decisions.
 Fees can post later. P&L below is before USD fees; no fabricated net performance.
 
+Reason: Broker HTTP 401; response body withheld
+
 ## Entry diagnostics
 
-Candidates: 1. Skipped: 0. Broker order results: 1.
+Candidates: 0. Skipped: 0. Broker order results: 0.
 Broker order results are not proof of fills; see orders.csv.
 
-| Coin | Bar | Strategy | Outcome | Reason | Details |
-| --- | --- | --- | --- | --- | --- |
-| BTC/USD | 5m | bollinger_reversion | order_result | broker_order_returned | {"broker_order_id": "68f78701-04c4-4c8c-bb05-817ad9bc4e57", "broker_status": "pending_new", "client_order_id": "csl2-a8f3139554c91ba434fafbefe3f79bfd", "quantity": "0.002985494", "reference_ask": 66990.569} |
+No candidates recorded; check run status and data errors before concluding there were no signals.
+
 
 Per-candidate decisions: entry_decisions.csv. Quotes checked for entries: quotes.csv.
-
-## Data errors
-
-| Coin | Bar | Stage | Error type |
-| --- | --- | --- | --- |
-| PEPE/USD | 5m | candles | ValueError |
 
 ## Open / pending positions
 
@@ -234,39 +229,18 @@ Dust is kept in the ledger; it is not silently written off or counted as a win.
 
 ## Reconciliation
 
-Status: fee_pending
-New entries blocked: False
-Exit checks allowed: True
+Status: not_started
+New entries blocked: True
+Exit checks allowed: False
 Accounting final: False
 
 | Coin | Expected | Broker | Difference | Unconfirmed |
 | --- | --- | --- | --- | --- |
-| AAVEUSD | 0E-9 | 0 | 0E-9 | 0 |
-| ADAUSD | 0E-9 | 0 | 0E-9 | 0 |
-| ARBUSD | 0E-9 | 0 | 0E-9 | 0 |
-| AVAXUSD | 0E-9 | 0 | 0E-9 | 0 |
-| BTCUSD | 0.003000223 | 0.00297803 | -0.000022193 | 0.000022193 |
-| DOTUSD | 0E-9 | 0 | 0E-9 | 0 |
-| ETHUSD | 0.106357398 | 0.105314835 | -0.001042563 | 0.001042563 |
-| FILUSD | 0E-9 | 0 | 0E-9 | 0 |
-| HYPEUSD | 0 | 0 | 0 | 0 |
-| LINKUSD | 20.928273618 | 20.723397182 | -0.204876436 | 0.204876436 |
-| LTCUSD | 0E-9 | 0 | 0E-9 | 0 |
-| ONDOUSD | 0E-9 | 0 | 0E-9 | 0 |
-| PEPEUSD | 43942731.277533041 | 43942731.277533041 | 0E-9 | 0 |
-| POLUSD | 0 | 0 | 0 | 0 |
-| RENDERUSD | 0.977503204 | 0 | -0.977503204 | 0.977503204 |
-| SOLUSD | 0.025202196 | 0 | -0.025202196 | 0.025202196 |
-| TRUMPUSD | 0E-9 | 0 | 0E-9 | 0 |
-| UNIUSD | 0.172601876 | 0 | -0.172601876 | 0.172601876 |
-| XRPUSD | 0E-9 | 0 | 0E-9 | 0 |
 
-PENDING, NOT CONFIRMED: fee-sized shortfall. No fee record invented.
-New buys permitted by explicit paper policy; all entry checks still apply.
-Guarded software exits remain active. Trade accounting is provisional until broker records reconcile.
+UNRESOLVED: entries and automated exits blocked. Review the paper holding.
 
-Entry scan status: completed_with_data_errors
-Next entry scan eligible: 2026-11-14T08:20:31+00:00
+Entry scan status: not_reached
+Next entry scan eligible: not_scheduled
 Entry scans: at most once every 30 minutes. Software exits: every successful workflow tick, not standing orders.
 Full diagnostics: reconciliation.csv and reconciliation.json.
 
