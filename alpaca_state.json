@@ -114413,14 +114413,14 @@
         "client_order_id": "csl2-c67fc4e6d50247369a4f61ed441064a6"
       },
       "cycle_id": "csl2-7bc7d4022ff828ad76ff2cddc094f8f0",
-      "status": "pending_new",
+      "status": "filled",
       "created_at": 1794627267.1338508,
       "attempted": true,
-      "filled_qty": "0",
+      "filled_qty": "20.556414218",
       "broker_order_id": "ad3459c5-03e7-4676-94af-8fcd361dd428",
-      "filled_avg_price": null,
-      "filled_at": null,
-      "broker_updated_at": "2026-11-14T03:34:41.066381016Z"
+      "filled_avg_price": 9.558,
+      "filled_at": "2026-11-14T03:34:41.068384498Z",
+      "broker_updated_at": "2026-11-14T03:34:41.086603889Z"
     }
   },
   "cycles": [
@@ -119058,18 +119058,20 @@
       "hold_seconds": 21600,
       "id": "csl2-5a3a5891e40500634278bfeb2a280d58",
       "created_at": 1794615271.8054204,
-      "status": "open",
+      "status": "closed",
       "distance": 0.01578412987612026,
       "target_r": 2.0,
       "reference_ask": 1.53247,
-      "remaining_qty": 130.181993773,
+      "remaining_qty": 0.0,
       "entry_price": 1.53192,
       "entry_qty": 130.508264435,
       "entry_notional_usd": 199.9282204532652,
       "tp": 1.5634882597522404,
       "sl": 1.5161358701238796,
       "entry_time_utc": "2026-11-14T00:14:43.272459824Z",
-      "exit_reason": "stop"
+      "exit_reason": "stop",
+      "closed_at": "2026-11-14T03:34:49+00:00",
+      "cashflow_pnl_before_usd_fees": -4.4209022049738
     },
     {
       "symbol": "BTC/USD",
@@ -119081,18 +119083,20 @@
       "hold_seconds": 21600,
       "id": "csl2-a6071e5d559f740c616c5e358cbd558d",
       "created_at": 1794624891.255866,
-      "status": "open",
+      "status": "closed",
       "distance": 480.9409247471758,
       "target_r": 2.0,
       "reference_ask": 67551.586,
-      "remaining_qty": 0.002953298,
+      "remaining_qty": 0.0,
       "entry_price": 67628.987,
       "entry_qty": 0.0029607,
       "entry_notional_usd": 200.2291418109,
       "tp": 68590.86884949435,
       "sl": 67148.04607525282,
       "entry_time_utc": "2026-11-14T02:55:05.24378492Z",
-      "exit_reason": "stop"
+      "exit_reason": "stop",
+      "closed_at": "2026-11-14T03:34:49+00:00",
+      "cashflow_pnl_before_usd_fees": -3.2728122014999883
     },
     {
       "symbol": "ETH/USD",
@@ -119104,18 +119108,20 @@
       "hold_seconds": 21600,
       "id": "csl2-a980d03b5a4498409da1d0b0f79724be",
       "created_at": 1794624914.4724274,
-      "status": "open",
+      "status": "closed",
       "distance": 17.015485114285173,
       "target_r": 2.0,
       "reference_ask": 1909.9,
-      "remaining_qty": 0.10445573,
+      "remaining_qty": 0.0,
       "entry_price": 1910.5,
       "entry_qty": 0.104717524,
       "entry_notional_usd": 200.06282960200002,
       "tp": 1944.5309702285704,
       "sl": 1893.4845148857148,
       "entry_time_utc": "2026-11-14T02:55:28.253910963Z",
-      "exit_reason": "stop"
+      "exit_reason": "stop",
+      "closed_at": "2026-11-14T03:34:49+00:00",
+      "cashflow_pnl_before_usd_fees": -3.0342534468000224
     },
     {
       "symbol": "LINK/USD",
@@ -119127,18 +119133,20 @@
       "hold_seconds": 21600,
       "id": "csl2-7bc7d4022ff828ad76ff2cddc094f8f0",
       "created_at": 1794624937.371499,
-      "status": "open",
+      "status": "closed",
       "distance": 0.09887965264268281,
       "target_r": 2.0,
       "reference_ask": 9.705,
-      "remaining_qty": 20.556414218,
+      "remaining_qty": 0.0,
       "entry_price": 9.7052,
       "entry_qty": 20.607934054,
       "entry_notional_usd": 200.0041215808808,
       "tp": 9.902959305285366,
       "sl": 9.606320347357316,
       "entry_time_utc": "2026-11-14T02:55:51.089583288Z",
-      "exit_reason": "stop"
+      "exit_reason": "stop",
+      "closed_at": "2026-11-14T03:34:49+00:00",
+      "cashflow_pnl_before_usd_fees": -3.5259144852367967
     }
   ],
   "seen": {
@@ -120267,7 +120275,7 @@
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-14T03:34:39+00:00",
+    "observed_at_utc": "2026-11-14T03:34:48+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -120361,10 +120369,10 @@
       },
       {
         "symbol": "LINKUSD",
-        "filled_quantity": "21.689018880",
+        "filled_quantity": "1.132604662",
         "fee_quantity": "-0.979666565",
-        "expected_quantity": "20.709352315",
-        "broker_quantity": "20.556414218",
+        "expected_quantity": "0.152938097",
+        "broker_quantity": "0",
         "difference_quantity": "-0.152938097",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.152938097"
@@ -120468,7 +120476,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1794624876.5264537,
+  "last_entry_scan_at": 1794627289.0959325,
   "watchlist": {
     "observed_at_utc": "2026-11-14T02:54:37+00:00",
     "status": "partial",
