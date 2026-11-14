@@ -1,3 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-AVAX/USD,1h,bollinger_reversion,1794632400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.27535873941076}"
-LTC/USD,1h,bollinger_reversion,1794632400,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 59.929843221075515}"
+PEPE/USD,15m,rsi_rebound,1794636000,skipped,symbol_already_active,{}
