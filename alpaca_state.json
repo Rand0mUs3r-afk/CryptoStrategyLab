@@ -113099,14 +113099,14 @@
         "client_order_id": "csl2-47f8f5314a6b179019e5342fa5adce65"
       },
       "cycle_id": "csl2-47f8f5314a6b179019e5342fa5adce65",
-      "status": "new",
+      "status": "canceled",
       "created_at": 1794613217.0781307,
       "attempted": true,
       "filled_qty": "0",
       "broker_order_id": "c87187b0-3603-4cf0-af0e-d49183ba9826",
       "filled_avg_price": null,
       "filled_at": null,
-      "broker_updated_at": "2026-11-13T23:40:31.287126005Z",
+      "broker_updated_at": "2026-11-14T00:14:11.886526745Z",
       "reference_ask": 71.5923,
       "cancel_requested_at": 1794615250.4790623
     }
@@ -117725,11 +117725,13 @@
       "hold_seconds": 21600,
       "id": "csl2-47f8f5314a6b179019e5342fa5adce65",
       "created_at": 1794613217.0781307,
-      "status": "pending",
+      "status": "closed",
       "distance": 0.7501611914172408,
       "target_r": 2.0,
       "reference_ask": 71.5923,
-      "remaining_qty": 0.0
+      "remaining_qty": 0.0,
+      "exit_reason": "unfilled_entry",
+      "closed_at": "2026-11-14T00:14:18+00:00"
     }
   ],
   "seen": {
@@ -118836,14 +118838,14 @@
     "SOL/USD|15m|rsi_rebound|1794612600": 1794613217.078079,
     "HYPE/USD|15m|bollinger_reversion|1794612600": 1794613217.0781307
   },
-  "day": "2026-11-13",
-  "day_start_equity": 99587.81,
+  "day": "2026-11-14",
+  "day_start_equity": 99550.43,
   "daily_paused": false,
   "high_water": 100000.0,
   "drawdown_paused": false,
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-14T00:14:10+00:00",
+    "observed_at_utc": "2026-11-14T00:14:18+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -119044,7 +119046,7 @@
     "pending_entry_policy_enabled": true,
     "warning": "Unconfirmed fee-sized shortfall; entry eligibility follows explicit paper policy. Broker balances and all other safeguards remain authoritative."
   },
-  "last_entry_scan_at": 1794613178.6671195,
+  "last_entry_scan_at": 1794615258.3762052,
   "watchlist": {
     "observed_at_utc": "2026-11-13T23:39:39+00:00",
     "status": "partial",
