@@ -12,38 +12,29 @@
       "error_type": "ValueError"
     }
   ],
-  "entry_decisions": [
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "15m",
-      "strategy": "trend_pullback",
-      "signal_time": 1794618000,
-      "outcome": "skipped",
-      "reason": "symbol_already_active",
-      "details": {}
-    }
-  ],
+  "entry_decisions": [],
   "entry_pause_reasons": [],
-  "candidates": 1,
+  "candidates": 0,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-14T01:43:06+00:00",
+  "next_entry_scan_at_utc": "2026-11-14T02:40:08+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "PEPE/USD",
     "RENDER/USD",
-    "SOL/USD",
     "AVAX/USD",
     "BTC/USD",
     "ETH/USD",
     "LINK/USD",
     "LTC/USD",
-    "HYPE/USD"
+    "SOL/USD",
+    "HYPE/USD",
+    "ONDO/USD"
   ],
-  "observed_at_utc": "2026-11-14T01:13:21+00:00",
+  "observed_at_utc": "2026-11-14T02:10:22+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-14T01:13:06+00:00",
+    "observed_at_utc": "2026-11-14T02:10:08+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -197,10 +188,10 @@
       },
       {
         "symbol": "SOLUSD",
-        "filled_quantity": "2.769832441",
+        "filled_quantity": "0.209251273",
         "fee_quantity": "-0.184049077",
-        "expected_quantity": "2.585783364",
-        "broker_quantity": "2.560581168",
+        "expected_quantity": "0.025202196",
+        "broker_quantity": "0",
         "difference_quantity": "-0.025202196",
         "tolerance_quantity": "1E-8",
         "unconfirmed_shortfall": "0.025202196"
