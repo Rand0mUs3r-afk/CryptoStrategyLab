@@ -1,2 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-PEPE/USD,15m,rsi_rebound,1794636000,skipped,symbol_already_active,{}
+LTC/USD,5m,bollinger_reversion,1794639300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.40308416094941}"
