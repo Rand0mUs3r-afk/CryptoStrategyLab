@@ -17,49 +17,33 @@
       "symbol": "RENDER/USD",
       "timeframe": "15m",
       "strategy": "trend_pullback",
-      "signal_time": 1794614400,
-      "outcome": "order_result",
-      "reason": "broker_order_returned",
-      "details": {
-        "client_order_id": "csl2-5a3a5891e40500634278bfeb2a280d58",
-        "quantity": "130.508264435",
-        "reference_ask": 1.53247,
-        "broker_status": "pending_new",
-        "broker_order_id": "d5ea3c74-9837-4b75-9c53-4f431ff14fd7"
-      }
-    },
-    {
-      "symbol": "RENDER/USD",
-      "timeframe": "15m",
-      "strategy": "macd_momentum",
-      "signal_time": 1794614400,
+      "signal_time": 1794618000,
       "outcome": "skipped",
       "reason": "symbol_already_active",
       "details": {}
     }
   ],
   "entry_pause_reasons": [],
-  "candidates": 2,
+  "candidates": 1,
   "entry_scan_interval_seconds": 1800,
   "entry_scan_status": "completed_with_data_errors",
-  "next_entry_scan_at_utc": "2026-11-14T00:44:18+00:00",
+  "next_entry_scan_at_utc": "2026-11-14T01:43:06+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "PEPE/USD",
+    "RENDER/USD",
     "SOL/USD",
     "AVAX/USD",
     "BTC/USD",
     "ETH/USD",
     "LINK/USD",
     "LTC/USD",
-    "RENDER/USD",
-    "HYPE/USD",
-    "UNI/USD"
+    "HYPE/USD"
   ],
-  "observed_at_utc": "2026-11-14T00:14:51+00:00",
+  "observed_at_utc": "2026-11-14T01:13:21+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-14T00:14:49+00:00",
+    "observed_at_utc": "2026-11-14T01:13:06+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",

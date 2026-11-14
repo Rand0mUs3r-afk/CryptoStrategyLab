@@ -1,3 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-RENDER/USD,15m,trend_pullback,1794614400,order_result,broker_order_returned,"{""broker_order_id"": ""d5ea3c74-9837-4b75-9c53-4f431ff14fd7"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-5a3a5891e40500634278bfeb2a280d58"", ""quantity"": ""130.508264435"", ""reference_ask"": 1.53247}"
-RENDER/USD,15m,macd_momentum,1794614400,skipped,symbol_already_active,{}
+RENDER/USD,15m,trend_pullback,1794618000,skipped,symbol_already_active,{}
