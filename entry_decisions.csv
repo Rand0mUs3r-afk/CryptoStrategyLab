@@ -1,2 +1,2 @@
 symbol,timeframe,strategy,signal_time,outcome,reason,details
-LTC/USD,5m,bollinger_reversion,1794639300,skipped,spread_too_wide,"{""max_spread_bps"": 50, ""spread_bps"": 61.40308416094941}"
+BTC/USD,5m,bollinger_reversion,1794642600,order_result,broker_order_returned,"{""broker_order_id"": ""68f78701-04c4-4c8c-bb05-817ad9bc4e57"", ""broker_status"": ""pending_new"", ""client_order_id"": ""csl2-a8f3139554c91ba434fafbefe3f79bfd"", ""quantity"": ""0.002985494"", ""reference_ask"": 66990.569}"

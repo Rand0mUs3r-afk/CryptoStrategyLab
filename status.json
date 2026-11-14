@@ -4,26 +4,36 @@
   "writes_enabled": true,
   "mode": "tick",
   "account_verified": true,
-  "data_errors": [],
+  "data_errors": [
+    {
+      "symbol": "PEPE/USD",
+      "timeframe": "5m",
+      "stage": "candles",
+      "error_type": "ValueError"
+    }
+  ],
   "entry_decisions": [
     {
-      "symbol": "LTC/USD",
+      "symbol": "BTC/USD",
       "timeframe": "5m",
       "strategy": "bollinger_reversion",
-      "signal_time": 1794639300,
-      "outcome": "skipped",
-      "reason": "spread_too_wide",
+      "signal_time": 1794642600,
+      "outcome": "order_result",
+      "reason": "broker_order_returned",
       "details": {
-        "spread_bps": 61.40308416094941,
-        "max_spread_bps": 50
+        "client_order_id": "csl2-a8f3139554c91ba434fafbefe3f79bfd",
+        "quantity": "0.002985494",
+        "reference_ask": 66990.569,
+        "broker_status": "pending_new",
+        "broker_order_id": "68f78701-04c4-4c8c-bb05-817ad9bc4e57"
       }
     }
   ],
   "entry_pause_reasons": [],
   "candidates": 1,
   "entry_scan_interval_seconds": 1800,
-  "entry_scan_status": "completed",
-  "next_entry_scan_at_utc": "2026-11-14T07:26:49+00:00",
+  "entry_scan_status": "completed_with_data_errors",
+  "next_entry_scan_at_utc": "2026-11-14T08:20:31+00:00",
   "watchlist_status": "partial",
   "watchlist_symbols": [
     "ETH/USD",
@@ -36,10 +46,10 @@
     "HYPE/USD",
     "UNI/USD"
   ],
-  "observed_at_utc": "2026-11-14T06:57:03+00:00",
+  "observed_at_utc": "2026-11-14T07:51:07+00:00",
   "reconciliation": {
     "status": "fee_pending",
-    "observed_at_utc": "2026-11-14T06:56:49+00:00",
+    "observed_at_utc": "2026-11-14T07:51:05+00:00",
     "quantities": [
       {
         "symbol": "AAVEUSD",
@@ -83,13 +93,13 @@
       },
       {
         "symbol": "BTCUSD",
-        "filled_quantity": "0.000139013",
+        "filled_quantity": "0.003124507",
         "fee_quantity": "-0.000124284",
-        "expected_quantity": "0.000014729",
-        "broker_quantity": "0",
-        "difference_quantity": "-0.000014729",
+        "expected_quantity": "0.003000223",
+        "broker_quantity": "0.00297803",
+        "difference_quantity": "-0.000022193",
         "tolerance_quantity": "1E-8",
-        "unconfirmed_shortfall": "0.000014729"
+        "unconfirmed_shortfall": "0.000022193"
       },
       {
         "symbol": "DOTUSD",
